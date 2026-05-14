@@ -9,38 +9,168 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as HelpRouteImport } from './routes/help'
+import { Route as GlossaryRouteImport } from './routes/glossary'
+import { Route as ChecklistsRouteImport } from './routes/checklists'
+import { Route as AppsRouteImport } from './routes/apps'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AgeGuidesIndexRouteImport } from './routes/age-guides.index'
+import { Route as AgeGuidesAgeRouteImport } from './routes/age-guides.$age'
 
+const HelpRoute = HelpRouteImport.update({
+  id: '/help',
+  path: '/help',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GlossaryRoute = GlossaryRouteImport.update({
+  id: '/glossary',
+  path: '/glossary',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChecklistsRoute = ChecklistsRouteImport.update({
+  id: '/checklists',
+  path: '/checklists',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AppsRoute = AppsRouteImport.update({
+  id: '/apps',
+  path: '/apps',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AgeGuidesIndexRoute = AgeGuidesIndexRouteImport.update({
+  id: '/age-guides/',
+  path: '/age-guides/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AgeGuidesAgeRoute = AgeGuidesAgeRouteImport.update({
+  id: '/age-guides/$age',
+  path: '/age-guides/$age',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/apps': typeof AppsRoute
+  '/checklists': typeof ChecklistsRoute
+  '/glossary': typeof GlossaryRoute
+  '/help': typeof HelpRoute
+  '/age-guides/$age': typeof AgeGuidesAgeRoute
+  '/age-guides/': typeof AgeGuidesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/apps': typeof AppsRoute
+  '/checklists': typeof ChecklistsRoute
+  '/glossary': typeof GlossaryRoute
+  '/help': typeof HelpRoute
+  '/age-guides/$age': typeof AgeGuidesAgeRoute
+  '/age-guides': typeof AgeGuidesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/apps': typeof AppsRoute
+  '/checklists': typeof ChecklistsRoute
+  '/glossary': typeof GlossaryRoute
+  '/help': typeof HelpRoute
+  '/age-guides/$age': typeof AgeGuidesAgeRoute
+  '/age-guides/': typeof AgeGuidesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/apps'
+    | '/checklists'
+    | '/glossary'
+    | '/help'
+    | '/age-guides/$age'
+    | '/age-guides/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/apps'
+    | '/checklists'
+    | '/glossary'
+    | '/help'
+    | '/age-guides/$age'
+    | '/age-guides'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/apps'
+    | '/checklists'
+    | '/glossary'
+    | '/help'
+    | '/age-guides/$age'
+    | '/age-guides/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AppsRoute: typeof AppsRoute
+  ChecklistsRoute: typeof ChecklistsRoute
+  GlossaryRoute: typeof GlossaryRoute
+  HelpRoute: typeof HelpRoute
+  AgeGuidesAgeRoute: typeof AgeGuidesAgeRoute
+  AgeGuidesIndexRoute: typeof AgeGuidesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/help': {
+      id: '/help'
+      path: '/help'
+      fullPath: '/help'
+      preLoaderRoute: typeof HelpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/glossary': {
+      id: '/glossary'
+      path: '/glossary'
+      fullPath: '/glossary'
+      preLoaderRoute: typeof GlossaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/checklists': {
+      id: '/checklists'
+      path: '/checklists'
+      fullPath: '/checklists'
+      preLoaderRoute: typeof ChecklistsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/apps': {
+      id: '/apps'
+      path: '/apps'
+      fullPath: '/apps'
+      preLoaderRoute: typeof AppsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,12 +178,43 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/age-guides/': {
+      id: '/age-guides/'
+      path: '/age-guides'
+      fullPath: '/age-guides/'
+      preLoaderRoute: typeof AgeGuidesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/age-guides/$age': {
+      id: '/age-guides/$age'
+      path: '/age-guides/$age'
+      fullPath: '/age-guides/$age'
+      preLoaderRoute: typeof AgeGuidesAgeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AppsRoute: AppsRoute,
+  ChecklistsRoute: ChecklistsRoute,
+  GlossaryRoute: GlossaryRoute,
+  HelpRoute: HelpRoute,
+  AgeGuidesAgeRoute: AgeGuidesAgeRoute,
+  AgeGuidesIndexRoute: AgeGuidesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
