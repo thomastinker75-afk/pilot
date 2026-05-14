@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as HelpRouteImport } from './routes/help'
 import { Route as GlossaryRouteImport } from './routes/glossary'
 import { Route as ChecklistsRouteImport } from './routes/checklists'
@@ -18,6 +19,11 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AgeGuidesIndexRouteImport } from './routes/age-guides.index'
 import { Route as AgeGuidesAgeRouteImport } from './routes/age-guides.$age'
 
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const HelpRoute = HelpRouteImport.update({
   id: '/help',
   path: '/help',
@@ -66,6 +72,7 @@ export interface FileRoutesByFullPath {
   '/checklists': typeof ChecklistsRoute
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
   '/age-guides/': typeof AgeGuidesIndexRoute
 }
@@ -76,6 +83,7 @@ export interface FileRoutesByTo {
   '/checklists': typeof ChecklistsRoute
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
   '/age-guides': typeof AgeGuidesIndexRoute
 }
@@ -87,6 +95,7 @@ export interface FileRoutesById {
   '/checklists': typeof ChecklistsRoute
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
   '/age-guides/': typeof AgeGuidesIndexRoute
 }
@@ -99,6 +108,7 @@ export interface FileRouteTypes {
     | '/checklists'
     | '/glossary'
     | '/help'
+    | '/sitemap.xml'
     | '/age-guides/$age'
     | '/age-guides/'
   fileRoutesByTo: FileRoutesByTo
@@ -109,6 +119,7 @@ export interface FileRouteTypes {
     | '/checklists'
     | '/glossary'
     | '/help'
+    | '/sitemap.xml'
     | '/age-guides/$age'
     | '/age-guides'
   id:
@@ -119,6 +130,7 @@ export interface FileRouteTypes {
     | '/checklists'
     | '/glossary'
     | '/help'
+    | '/sitemap.xml'
     | '/age-guides/$age'
     | '/age-guides/'
   fileRoutesById: FileRoutesById
@@ -130,12 +142,20 @@ export interface RootRouteChildren {
   ChecklistsRoute: typeof ChecklistsRoute
   GlossaryRoute: typeof GlossaryRoute
   HelpRoute: typeof HelpRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   AgeGuidesAgeRoute: typeof AgeGuidesAgeRoute
   AgeGuidesIndexRoute: typeof AgeGuidesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/help': {
       id: '/help'
       path: '/help'
@@ -202,6 +222,7 @@ const rootRouteChildren: RootRouteChildren = {
   ChecklistsRoute: ChecklistsRoute,
   GlossaryRoute: GlossaryRoute,
   HelpRoute: HelpRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   AgeGuidesAgeRoute: AgeGuidesAgeRoute,
   AgeGuidesIndexRoute: AgeGuidesIndexRoute,
 }
