@@ -22,7 +22,7 @@ const STEPS = [
 const linkClass =
   "font-medium text-primary underline decoration-primary/40 underline-offset-2 hover:decoration-primary";
 
-const ROUTES: { icon: JSX.Element; t: string; d: React.ReactNode }[] = [
+const ROUTES: { icon: ReactNode; t: string; d: ReactNode }[] = [
   {
     icon: <ShieldAlert />,
     t: "Immediate danger or grooming",
