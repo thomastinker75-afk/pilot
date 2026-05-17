@@ -18,11 +18,86 @@ const STEPS = [
   { n: "04", t: "Decide: report, restrict, or talk.", d: "Most situations need all three — in that order. Reporting first preserves evidence." },
 ];
 
-const ROUTES = [
-  { icon: <ShieldAlert />, t: "Immediate danger or grooming", d: "If you believe a child is in immediate danger, contact your local emergency services. For online sexual exploitation in the UK, report to CEOP." },
-  { icon: <FileWarning />, t: "Sexual images shared of your child", d: "Report to the platform. In the UK, the IWF (Take It Down) and Report Remove (NSPCC + IWF) can help remove images of under-18s." },
-  { icon: <MessageSquareHeart />, t: "Self-harm or suicide content", d: "Reach out to your GP or a child mental health line (e.g. Samaritans, YoungMinds in the UK). Remove access to the source content while you get support." },
-  { icon: <PhoneCall />, t: "Bullying or coercion in chats", d: "Save screenshots. Report inside the app. If it involves another child, contact the school. If it involves an adult or threats, contact police." },
+const linkClass =
+  "font-medium text-primary underline decoration-primary/40 underline-offset-2 hover:decoration-primary";
+
+const ROUTES: { icon: JSX.Element; t: string; d: React.ReactNode }[] = [
+  {
+    icon: <ShieldAlert />,
+    t: "Immediate danger or grooming",
+    d: (
+      <>
+        If you believe a child is in immediate danger, contact your local
+        emergency services (in the UK,{" "}
+        <a className={linkClass} href="tel:999">999</a>). For online sexual
+        exploitation in the UK, report to{" "}
+        <a className={linkClass} href="https://www.ceop.police.uk/safety-centre/" target="_blank" rel="noopener noreferrer">
+          CEOP
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    icon: <FileWarning />,
+    t: "Sexual images shared of your child",
+    d: (
+      <>
+        Report to the platform. In the UK,{" "}
+        <a className={linkClass} href="https://www.iwf.org.uk/" target="_blank" rel="noopener noreferrer">
+          IWF
+        </a>{" "}
+        (
+        <a className={linkClass} href="https://takeitdown.ncmec.org/" target="_blank" rel="noopener noreferrer">
+          Take It Down
+        </a>
+        ) and{" "}
+        <a className={linkClass} href="https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/remove-nude-image-shared-online/" target="_blank" rel="noopener noreferrer">
+          Report Remove
+        </a>{" "}
+        (
+        <a className={linkClass} href="https://www.nspcc.org.uk/" target="_blank" rel="noopener noreferrer">
+          NSPCC
+        </a>{" "}
+        +{" "}
+        <a className={linkClass} href="https://www.iwf.org.uk/" target="_blank" rel="noopener noreferrer">
+          IWF
+        </a>
+        ) can help remove images of under-18s.
+      </>
+    ),
+  },
+  {
+    icon: <MessageSquareHeart />,
+    t: "Self-harm or suicide content",
+    d: (
+      <>
+        Reach out to your GP or a child mental health line (e.g.{" "}
+        <a className={linkClass} href="https://www.samaritans.org/" target="_blank" rel="noopener noreferrer">
+          Samaritans
+        </a>{" "}
+        —{" "}
+        <a className={linkClass} href="tel:116123">116 123</a>,{" "}
+        <a className={linkClass} href="https://www.youngminds.org.uk/" target="_blank" rel="noopener noreferrer">
+          YoungMinds
+        </a>{" "}
+        in the UK). Remove access to the source content while you get support.
+      </>
+    ),
+  },
+  {
+    icon: <PhoneCall />,
+    t: "Bullying or coercion in chats",
+    d: (
+      <>
+        Save screenshots. Report inside the app. If it involves another child,
+        contact the school. If it involves an adult or threats, contact police
+        (in the UK,{" "}
+        <a className={linkClass} href="tel:101">101</a> non-emergency or{" "}
+        <a className={linkClass} href="tel:999">999</a>).
+      </>
+    ),
+  },
 ];
 
 function Help() {
