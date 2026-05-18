@@ -70,6 +70,10 @@ function Glossary() {
         page so you can keep up without doom-scrolling.
       </p>
 
+      <Translator />
+
+
+
       <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex gap-2 overflow-x-auto">
           {TABS.map((t) => (
