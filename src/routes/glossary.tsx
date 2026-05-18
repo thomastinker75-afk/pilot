@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { GLOSSARY, REVIEWED, type GlossaryEntry } from "@/content/data";
 import { RiskPill } from "@/routes/index";
-import { Search } from "lucide-react";
+import { ArrowLeftRight, Loader2, Search, Sparkles } from "lucide-react";
 
 export const Route = createFileRoute("/glossary")({
   component: Glossary,
@@ -69,6 +69,10 @@ function Glossary() {
         Common Sense Media, Internet Matters and NSPCC Net Aware, and update this
         page so you can keep up without doom-scrolling.
       </p>
+
+      <Translator />
+
+
 
       <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex gap-2 overflow-x-auto">
@@ -179,3 +183,174 @@ function Glossary() {
     </div>
   );
 }
+
+type Direction = "slangToEnglish" | "englishToSlang";
+
+const DIRECTION_META: Record<
+  Direction,
+  { from: string; to: string; placeholder: string }
+> = {
+  slangToEnglish: {
+    from: "Teen slang",
+    to: "Plain English",
+    placeholder:
+      "Paste a message, e.g. “fr fr that fit is mid ngl, but the rizz is wild 💀🔥”",
+  },
+  englishToSlang: {
+    from: "Plain English",
+    to: "Teen slang",
+    placeholder:
+      "Type something in plain English, e.g. “That outfit is honestly amazing.”",
+  },
+};
+
+function Translator() {
+  const [direction, setDirection] = useState<Direction>("slangToEnglish");
+  const [input, setInput] = useState("");
+  const [output, setOutput] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const meta = DIRECTION_META[direction];
+
+  async function translate() {
+    const text = input.trim();
+    if (!text || loading) return;
+    setLoading(true);
+    setError(null);
+    setOutput("");
+    try {
+      const res = await fetch("/api/translate-slang", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ text, direction }),
+      });
+      const data = (await res.json().catch(() => ({}))) as {
+        translation?: string;
+        error?: string;
+      };
+      if (!res.ok) {
+        setError(data.error ?? "Something went wrong. Please try again.");
+      } else {
+        setOutput(data.translation ?? "");
+      }
+    } catch {
+      setError("Network error. Please check your connection and try again.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  function swap() {
+    setDirection((d) =>
+      d === "slangToEnglish" ? "englishToSlang" : "slangToEnglish",
+    );
+    setInput(output);
+    setOutput(input);
+    setError(null);
+  }
+
+  return (
+    <section
+      aria-labelledby="translator-heading"
+      className="mt-10 rounded-3xl border border-border bg-card p-6 md:p-8"
+    >
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <p className="eyebrow flex items-center gap-2">
+            <Sparkles className="size-3.5" /> AI translator
+          </p>
+          <h2
+            id="translator-heading"
+            className="mt-2 font-display text-3xl tracking-tight md:text-4xl"
+          >
+            Slang ⇄ plain English.
+          </h2>
+          <p className="mt-2 max-w-xl text-sm text-muted-foreground">
+            Paste a message you’ve seen and get a calm, plain-English
+            translation — with a flag if anything sounds risky. Powered by AI;
+            always double-check tone and context.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-6 grid gap-3 md:grid-cols-[1fr_auto_1fr] md:items-stretch">
+        <div className="rounded-2xl border border-border bg-background p-4">
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+            {meta.from}
+          </p>
+          <textarea
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder={meta.placeholder}
+            maxLength={2000}
+            rows={6}
+            className="mt-2 w-full resize-none bg-transparent text-sm outline-none placeholder:text-muted-foreground/70"
+          />
+          <div className="mt-2 flex items-center justify-between text-xs text-muted-foreground">
+            <span>{input.length}/2000</span>
+            <button
+              type="button"
+              onClick={() => {
+                setInput("");
+                setOutput("");
+                setError(null);
+              }}
+              className="hover:text-foreground"
+            >
+              Clear
+            </button>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center md:flex-col">
+          <button
+            type="button"
+            onClick={swap}
+            aria-label="Swap translation direction"
+            className="rounded-full border border-border bg-background p-2 transition-colors hover:bg-secondary"
+          >
+            <ArrowLeftRight className="size-4" />
+          </button>
+        </div>
+
+        <div className="rounded-2xl border border-border bg-background p-4">
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+            {meta.to}
+          </p>
+          <div className="mt-2 min-h-[9rem] whitespace-pre-wrap text-sm">
+            {loading ? (
+              <span className="inline-flex items-center gap-2 text-muted-foreground">
+                <Loader2 className="size-4 animate-spin" /> Translating…
+              </span>
+            ) : error ? (
+              <span className="text-destructive">{error}</span>
+            ) : output ? (
+              output
+            ) : (
+              <span className="text-muted-foreground/70">
+                Translation will appear here.
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+        <p className="text-xs text-muted-foreground">
+          Nothing you type is stored. Avoid pasting personal information.
+        </p>
+        <button
+          type="button"
+          onClick={translate}
+          disabled={loading || !input.trim()}
+          className="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity disabled:opacity-50"
+        >
+          {loading && <Loader2 className="size-4 animate-spin" />}
+          Translate
+        </button>
+      </div>
+    </section>
+  );
+}
+
