@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { GLOSSARY, REVIEWED, type GlossaryEntry } from "@/content/data";
 import { RiskPill } from "@/routes/index";
-import { Search } from "lucide-react";
+import { ArrowLeftRight, Loader2, Search, Sparkles } from "lucide-react";
 
 export const Route = createFileRoute("/glossary")({
   component: Glossary,
