@@ -196,6 +196,15 @@ export const AGE_BANDS: AgeBand[] = [
   },
 ];
 
+export type Evidence = {
+  claim: string;
+  publisher: string;
+  title: string;
+  url: string;
+  year?: string;
+  type: "Peer-reviewed" | "Regulator" | "Health authority" | "Charity / NGO" | "Investigative journalism" | "Platform policy";
+};
+
 export type AppGuide = {
   slug: string;
   name: string;
@@ -204,6 +213,13 @@ export type AppGuide = {
   why: string;
   risks: string[];
   settings: string[];
+  detail: {
+    overview: string;
+    ageRationale: string;
+    evidence: Evidence[];
+    parentTalkingPoints: string[];
+    settingsHowTo: { label: string; url: string }[];
+  };
 };
 
 export const APPS: AppGuide[] = [
@@ -212,48 +228,180 @@ export const APPS: AppGuide[] = [
     why: "Short videos, trends, humour. The default ‘scrollable’ app for many teens.",
     risks: ["Endless algorithmic feed", "Body image / dieting content", "DMs from strangers on public accounts"],
     settings: ["Private account", "Restricted Mode", "Disable DMs from non-friends", "Family Pairing"],
+    detail: {
+      overview: "TikTok serves a personalised, never-ending feed of short videos. The ‘For You’ algorithm learns from how long a user lingers, not just what they like, which can rapidly narrow content towards intense or harmful themes.",
+      ageRationale: "TikTok’s own terms set a minimum age of 13 (with a separate, more restricted ‘Under 13’ experience in some regions). The limit is driven by US COPPA and UK Age-Appropriate Design Code data-protection rules, not by a developmental assessment.",
+      evidence: [
+        { claim: "Independent audit found TikTok’s algorithm can push self-harm and eating-disorder content to accounts registered as 13-year-olds within minutes.", publisher: "Center for Countering Digital Hate", title: "Deadly by Design", year: "2022", url: "https://counterhate.com/research/deadly-by-design/", type: "Charity / NGO" },
+        { claim: "Ofcom finds a majority of UK teenagers — and many under-13s — use TikTok, well below the platform’s own age limit.", publisher: "Ofcom (UK communications regulator)", title: "Children and parents: media use and attitudes report", year: "2024", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/", type: "Regulator" },
+        { claim: "Ireland’s Data Protection Commission fined TikTok €345m for failing to protect children’s data, including default public accounts for under-16s.", publisher: "Data Protection Commission (Ireland)", title: "DPC announces €345 million fine of TikTok", year: "2023", url: "https://www.dataprotection.ie/en/news-media/press-releases/DPC-announces-345-million-euro-fine-of-TikTok", type: "Regulator" },
+      ],
+      parentTalkingPoints: [
+        "Ask to see their ‘For You’ feed together — it’s the clearest window into what TikTok thinks of them.",
+        "Agree a ‘no phones in bedroom overnight’ rule — TikTok sessions are strongly linked to sleep loss.",
+      ],
+      settingsHowTo: [
+        { label: "TikTok Family Pairing guide", url: "https://www.tiktok.com/safety/en/guardians-guide/" },
+        { label: "Internet Matters: TikTok safety guide", url: "https://www.internetmatters.org/parental-controls/social-media/tiktok-privacy-and-safety-settings/" },
+      ],
+    },
   },
   {
     slug: "snapchat", name: "Snapchat", category: "Messaging", minAge: "13+",
     why: "Photo messages that ‘disappear’ and Snap Map for live location sharing.",
     risks: ["False sense of privacy (screenshots exist)", "Live location with anyone added", "Streaks driving compulsive use"],
     settings: ["Ghost Mode on Snap Map", "Contact Me: Friends only", "Family Center"],
+    detail: {
+      overview: "Snapchat is built around disappearing photos, ‘Snap streaks’ that reward daily exchanges, and Snap Map which broadcasts a user’s live location to chosen friends.",
+      ageRationale: "Minimum age 13 under Snap’s terms. The disappearing-message design and live location features are why regulators and child-safety charities treat it as higher risk than the age limit suggests.",
+      evidence: [
+        { claim: "US state lawsuit alleges Snapchat’s design facilitates the supply of fentanyl and illegal drugs to minors via disappearing messages.", publisher: "New Mexico Department of Justice", title: "AG Torrez lawsuit against Snap Inc.", year: "2024", url: "https://nmdoj.gov/press-release/attorney-general-torrez-files-lawsuit-against-snap-inc/", type: "Regulator" },
+        { claim: "NSPCC data shows Snapchat is the platform most often used in recorded child sexual communication offences in England and Wales.", publisher: "NSPCC", title: "Snapchat now the most used app in grooming crimes", year: "2024", url: "https://www.nspcc.org.uk/about-us/news-opinion/2024/snapchat-grooming-crimes/", type: "Charity / NGO" },
+        { claim: "CEOP Education warns that Snap Map can expose children’s real-time location to anyone they’ve accepted as a friend.", publisher: "CEOP Education (NCA)", title: "Snap Map: advice for parents", year: "2023", url: "https://www.ceopeducation.co.uk/parents/articles/snap-map-what-parents-need-to-know/", type: "Regulator" },
+      ],
+      parentTalkingPoints: [
+        "Open Snap Map together and switch on Ghost Mode — it takes about 30 seconds.",
+        "Talk about screenshots: ‘disappearing’ doesn’t mean gone. Anything sent can be saved.",
+      ],
+      settingsHowTo: [
+        { label: "Snapchat Family Center", url: "https://parents.snapchat.com/" },
+        { label: "NSPCC Net Aware: Snapchat", url: "https://www.net-aware.org.uk/networks/snapchat/" },
+      ],
+    },
   },
   {
     slug: "instagram", name: "Instagram", category: "Social", minAge: "13+",
     why: "Photos, reels, stories. Heavy on social comparison.",
     risks: ["Public profiles inviting DMs", "Reels algorithm rabbit holes", "Hidden ‘close friends’ accounts"],
     settings: ["Private account", "Sensitive Content Control: Less", "Hidden Words filter", "Family Center supervision"],
+    detail: {
+      overview: "Instagram combines a photo grid, Stories, and an algorithmic Reels feed. ‘Teen Accounts’ are now default-private for under-18s, but adult content, DMs and comparison pressure remain core issues.",
+      ageRationale: "Minimum age 13. Meta’s own internal research, leaked in 2021, documented appearance-related harm to teenage girls — a key driver of subsequent Teen Account safeguards.",
+      evidence: [
+        { claim: "Internal Meta research found Instagram makes body-image issues worse for 1 in 3 teenage girls.", publisher: "The Wall Street Journal (investigative)", title: "Facebook Knows Instagram Is Toxic for Teen Girls", year: "2021", url: "https://www.wsj.com/articles/facebook-knows-instagram-is-toxic-for-teen-girls-company-documents-show-11631620739", type: "Investigative journalism" },
+        { claim: "US Surgeon General formally advised that social media use including Instagram poses a ‘profound risk of harm’ to youth mental health.", publisher: "US Surgeon General", title: "Social Media and Youth Mental Health Advisory", year: "2023", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html", type: "Health authority" },
+        { claim: "41 US states and DC sued Meta, alleging Instagram features (infinite scroll, likes, beauty filters) were designed to be addictive to minors.", publisher: "US Attorneys General coalition", title: "State of California et al. v. Meta Platforms", year: "2023", url: "https://oag.ca.gov/news/press-releases/attorney-general-bonta-co-leads-bipartisan-coalition-suing-meta-harming-youth", type: "Regulator" },
+      ],
+      parentTalkingPoints: [
+        "Sit together and switch the account to Teen Account / private — and check whether a ‘finsta’ also exists.",
+        "Mute, don’t unfollow: muting accounts that trigger comparison spirals avoids social fallout.",
+      ],
+      settingsHowTo: [
+        { label: "Instagram Family Center", url: "https://familycenter.instagram.com/" },
+        { label: "Internet Matters: Instagram safety guide", url: "https://www.internetmatters.org/parental-controls/social-media/instagram-privacy-and-safety-settings/" },
+      ],
+    },
   },
   {
     slug: "youtube", name: "YouTube", category: "Video", minAge: "13+ (Kids: under 13)",
     why: "Where most kids actually watch ‘TV’. Includes gaming streams and shorts.",
     risks: ["Auto-play into unrelated content", "Shorts — fast, addictive feed", "Comments containing strangers"],
     settings: ["Restricted Mode", "Supervised Account for under-13s", "Disable autoplay", "YouTube Kids for younger kids"],
+    detail: {
+      overview: "Standard YouTube is 13+, with a separate YouTube Kids app and Supervised Account option for younger children. Shorts (vertical short videos) behave more like TikTok than traditional YouTube.",
+      ageRationale: "13+ is set by Google to comply with US COPPA and equivalent data-protection rules. YouTube Kids exists because the main platform isn’t designed for under-13s — but YouTube Kids itself has been criticised for moderation gaps.",
+      evidence: [
+        { claim: "US FTC fined YouTube $170 million for illegally collecting children’s data on the main platform.", publisher: "Federal Trade Commission (US)", title: "Google and YouTube Will Pay Record $170 Million for Alleged Violations of COPPA", year: "2019", url: "https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law", type: "Regulator" },
+        { claim: "Mozilla’s crowdsourced study found YouTube’s recommendation algorithm is the main driver of regretful viewing experiences.", publisher: "Mozilla Foundation", title: "YouTube Regrets", year: "2021", url: "https://foundation.mozilla.org/en/youtube/findings/", type: "Charity / NGO" },
+        { claim: "Ofcom finds YouTube is the most-used online platform among UK children aged 3–17.", publisher: "Ofcom", title: "Children and parents: media use and attitudes report", year: "2024", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/", type: "Regulator" },
+      ],
+      parentTalkingPoints: [
+        "Auto-play is the single biggest setting to switch off for younger kids.",
+        "For under-13s, use YouTube Kids or a Supervised Account rather than the main app.",
+      ],
+      settingsHowTo: [
+        { label: "Google Family Link", url: "https://families.google/familylink/" },
+        { label: "YouTube: Supervised experiences for kids and teens", url: "https://support.google.com/youtubekids/answer/10314940" },
+      ],
+    },
   },
   {
     slug: "whatsapp", name: "WhatsApp", category: "Messaging", minAge: "13+",
     why: "School class group chats live here. Used by every age.",
     risks: ["Being added to groups by strangers", "Forwarded misinformation", "Disappearing messages hiding bullying"],
     settings: ["Groups: My Contacts", "Last Seen: Contacts", "Two-step verification"],
+    detail: {
+      overview: "End-to-end encrypted messenger. The risk for children is rarely the encryption itself — it’s group chats with classmates that escalate quickly, and forwarded content from outside the group.",
+      ageRationale: "WhatsApp’s minimum age is 13 in the UK and EU (lowered from 16 to align with most peers in 2024). The age limit is data-protection driven, not a developmental assessment of group-chat dynamics.",
+      evidence: [
+        { claim: "Internet Matters reports group chats are one of the most common settings for cyberbullying experienced by UK 9–16s.", publisher: "Internet Matters", title: "Cyberbullying: Children’s experiences", year: "2023", url: "https://www.internetmatters.org/issues/cyberbullying/", type: "Charity / NGO" },
+        { claim: "UK Safer Internet Centre advises that WhatsApp groups are a key vector for sharing harmful and illegal content between peers.", publisher: "UK Safer Internet Centre", title: "Parent and carer resources", year: "2024", url: "https://saferinternet.org.uk/guide-and-resource/parents-and-carers", type: "Charity / NGO" },
+      ],
+      parentTalkingPoints: [
+        "Agree that they can leave any group, any time, no questions asked — and you’ll back them up with other parents.",
+        "Set ‘Groups: My Contacts’ so strangers can’t add them to chats.",
+      ],
+      settingsHowTo: [
+        { label: "WhatsApp privacy settings", url: "https://faq.whatsapp.com/3196575617535613" },
+        { label: "NSPCC Net Aware: WhatsApp", url: "https://www.net-aware.org.uk/networks/whatsapp/" },
+      ],
+    },
   },
   {
     slug: "discord", name: "Discord", category: "Messaging", minAge: "13+",
     why: "Voice and text servers, especially for gamers and fandoms.",
     risks: ["Public servers with adult content", "Strangers in voice chat", "Crypto/scam DMs"],
     settings: ["Safe Direct Messaging: Filter all", "Disable DMs from server members", "Restrict friend requests"],
+    detail: {
+      overview: "Discord is organised into ‘servers’ — anything from a 5-friend chat to a 200,000-member public community. Voice channels, DMs and file sharing are all default features.",
+      ageRationale: "Discord requires users to be 13+. Many public servers are 18+ themed and rely on self-declaration, which is why charities flag it as a higher-risk environment for under-16s.",
+      evidence: [
+        { claim: "NBC News investigation documented dozens of prosecutions over six years for grooming, kidnapping or sexual assault facilitated through Discord.", publisher: "NBC News (investigative)", title: "Discord struggles with child safety", year: "2023", url: "https://www.nbcnews.com/tech/social-media/discord-child-safety-grooming-extortion-rcna101620", type: "Investigative journalism" },
+        { claim: "UK Safer Internet Centre highlights that Discord servers can expose children to explicit, extremist, and harmful content via communities they join voluntarily.", publisher: "UK Safer Internet Centre", title: "Parent and carer resources", year: "2024", url: "https://saferinternet.org.uk/guide-and-resource/parents-and-carers", type: "Charity / NGO" },
+      ],
+      parentTalkingPoints: [
+        "Ask which servers they’re in and who runs them — public vs friends-only matters more than the app itself.",
+        "Switch Safe Direct Messaging to ‘Filter all’ and turn off DMs from server members.",
+      ],
+      settingsHowTo: [
+        { label: "Discord Family Centre", url: "https://discord.com/family-center" },
+        { label: "Discord safety: Parent hub", url: "https://discord.com/safety-parents" },
+      ],
+    },
   },
   {
     slug: "roblox", name: "Roblox", category: "Game", minAge: "All ages (rated by experience)",
     why: "Millions of user-made games and a social hangout for under-12s.",
     risks: ["Stranger chat in experiences", "User-made games with adult themes", "Robux scams and ‘free Robux’ links"],
     settings: ["Account Restrictions on", "Allowed Experiences: appropriate age", "Disable chat", "Spend controls"],
+    detail: {
+      overview: "Roblox is a platform of user-created ‘experiences’, not a single game. Content quality and risk vary wildly between experiences, and the in-game currency Robux drives much of the platform economy.",
+      ageRationale: "Roblox itself has no minimum age but applies experience age ratings (Minors, 9+, 13+, 17+). The mismatch between marketing (‘for kids’) and content reality is the central concern for parents and regulators.",
+      evidence: [
+        { claim: "BBC News investigation documented sexual and gambling-style content accessible to child accounts on Roblox.", publisher: "BBC News (investigative)", title: "Roblox: The children’s game with a sex problem", year: "2024", url: "https://www.bbc.co.uk/news/technology-67772670", type: "Investigative journalism" },
+        { claim: "Internet Matters flags Roblox as ‘worth a chat’ risk for under-13s due to user-generated content moderation gaps and in-game chat.", publisher: "Internet Matters", title: "Roblox parental controls guide", year: "2024", url: "https://www.internetmatters.org/parental-controls/gaming-consoles/roblox-parental-controls/", type: "Charity / NGO" },
+      ],
+      parentTalkingPoints: [
+        "Treat Roblox like an app store, not a game — agree which experiences are okay and which aren’t.",
+        "Turn on Account Restrictions for under-9s; this limits chat and curated experiences only.",
+      ],
+      settingsHowTo: [
+        { label: "Roblox: Parent and caregiver guide", url: "https://en.help.roblox.com/hc/en-us/articles/203313120-Parents-Safety-and-Moderation-Guide" },
+        { label: "Internet Matters: Roblox controls", url: "https://www.internetmatters.org/parental-controls/gaming-consoles/roblox-parental-controls/" },
+      ],
+    },
   },
   {
     slug: "fortnite", name: "Fortnite", category: "Game", minAge: "12+",
     why: "Battle royale with voice chat and live in-game events.",
     risks: ["Voice chat with strangers in squads", "Spending on V-Bucks / Battle Pass", "Long sessions, late nights"],
     settings: ["Cabined Account for under-13s", "Voice chat: friends only", "Parental controls PIN"],
+    detail: {
+      overview: "Fortnite is a free-to-play battle royale with seasonal updates, a paid Battle Pass, and live concert/film events. ‘Cabined Accounts’ limit features for under-13s until a parent verifies.",
+      ageRationale: "PEGI rates Fortnite 12+ for frequent mild violence. Epic’s own ‘Cabined Account’ rules apply to under-13s and disable voice chat, friend lists, and purchases by default.",
+      evidence: [
+        { claim: "US FTC fined Epic Games $520 million for violating COPPA and using ‘dark patterns’ to trick children and parents into purchases.", publisher: "Federal Trade Commission (US)", title: "Fortnite maker Epic Games to pay more than half a billion dollars over FTC allegations", year: "2022", url: "https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations", type: "Regulator" },
+        { claim: "Common Sense Media review highlights voice chat with strangers as the primary concern for under-13s playing Fortnite.", publisher: "Common Sense Media", title: "Fortnite parents’ guide", year: "2024", url: "https://www.commonsensemedia.org/game-reviews/fortnite", type: "Charity / NGO" },
+      ],
+      parentTalkingPoints: [
+        "Set a hard rule: voice chat with friends only, never ‘open’ to squad fill.",
+        "Use the Epic Games parental PIN to require approval for any V-Bucks purchase.",
+      ],
+      settingsHowTo: [
+        { label: "Epic Games parental controls", url: "https://www.epicgames.com/site/en-US/parental-controls" },
+        { label: "Internet Matters: Fortnite guide", url: "https://www.internetmatters.org/hub/guidance/fortnite-battle-royale-parents-guide/" },
+      ],
+    },
   },
 ];
 
