@@ -44,7 +44,7 @@ function evidenceIcon(t: Evidence["type"]) {
 }
 
 function AppDetail() {
-  const { app } = Route.useLoaderData();
+  const { app } = Route.useLoaderData() as { app: AppGuide };
 
   return (
     <div className="mx-auto max-w-4xl px-5 py-16 md:px-8 md:py-24">
