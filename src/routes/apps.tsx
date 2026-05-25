@@ -1,6 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { APPS } from "@/content/data";
-import { Gamepad2, MessageSquare, Smartphone, Sparkles } from "lucide-react";
+import { ArrowUpRight, Gamepad2, MessageSquare, Smartphone, Sparkles } from "lucide-react";
 
 export const Route = createFileRoute("/apps")({
   component: AppsIndex,
