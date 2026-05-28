@@ -13,9 +13,9 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as HelpRouteImport } from './routes/help'
 import { Route as GlossaryRouteImport } from './routes/glossary'
 import { Route as ChecklistsRouteImport } from './routes/checklists'
-import { Route as AppsRouteImport } from './routes/apps'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AppsIndexRouteImport } from './routes/apps.index'
 import { Route as AgeGuidesIndexRouteImport } from './routes/age-guides.index'
 import { Route as AppsSlugRouteImport } from './routes/apps.$slug'
 import { Route as ApiTranslateSlangRouteImport } from './routes/api/translate-slang'
@@ -41,11 +41,6 @@ const ChecklistsRoute = ChecklistsRouteImport.update({
   path: '/checklists',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AppsRoute = AppsRouteImport.update({
-  id: '/apps',
-  path: '/apps',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -54,6 +49,11 @@ const AboutRoute = AboutRouteImport.update({
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AppsIndexRoute = AppsIndexRouteImport.update({
+  id: '/apps/',
+  path: '/apps/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AgeGuidesIndexRoute = AgeGuidesIndexRouteImport.update({
@@ -80,7 +80,6 @@ const AgeGuidesAgeRoute = AgeGuidesAgeRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/apps': typeof AppsRouteWithChildren
   '/checklists': typeof ChecklistsRoute
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
@@ -89,11 +88,11 @@ export interface FileRoutesByFullPath {
   '/api/translate-slang': typeof ApiTranslateSlangRoute
   '/apps/$slug': typeof AppsSlugRoute
   '/age-guides/': typeof AgeGuidesIndexRoute
+  '/apps/': typeof AppsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/apps': typeof AppsRouteWithChildren
   '/checklists': typeof ChecklistsRoute
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
@@ -102,12 +101,12 @@ export interface FileRoutesByTo {
   '/api/translate-slang': typeof ApiTranslateSlangRoute
   '/apps/$slug': typeof AppsSlugRoute
   '/age-guides': typeof AgeGuidesIndexRoute
+  '/apps': typeof AppsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/apps': typeof AppsRouteWithChildren
   '/checklists': typeof ChecklistsRoute
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
@@ -116,13 +115,13 @@ export interface FileRoutesById {
   '/api/translate-slang': typeof ApiTranslateSlangRoute
   '/apps/$slug': typeof AppsSlugRoute
   '/age-guides/': typeof AgeGuidesIndexRoute
+  '/apps/': typeof AppsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/about'
-    | '/apps'
     | '/checklists'
     | '/glossary'
     | '/help'
@@ -131,11 +130,11 @@ export interface FileRouteTypes {
     | '/api/translate-slang'
     | '/apps/$slug'
     | '/age-guides/'
+    | '/apps/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
-    | '/apps'
     | '/checklists'
     | '/glossary'
     | '/help'
@@ -144,11 +143,11 @@ export interface FileRouteTypes {
     | '/api/translate-slang'
     | '/apps/$slug'
     | '/age-guides'
+    | '/apps'
   id:
     | '__root__'
     | '/'
     | '/about'
-    | '/apps'
     | '/checklists'
     | '/glossary'
     | '/help'
@@ -157,12 +156,12 @@ export interface FileRouteTypes {
     | '/api/translate-slang'
     | '/apps/$slug'
     | '/age-guides/'
+    | '/apps/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  AppsRoute: typeof AppsRouteWithChildren
   ChecklistsRoute: typeof ChecklistsRoute
   GlossaryRoute: typeof GlossaryRoute
   HelpRoute: typeof HelpRoute
@@ -170,6 +169,7 @@ export interface RootRouteChildren {
   AgeGuidesAgeRoute: typeof AgeGuidesAgeRoute
   ApiTranslateSlangRoute: typeof ApiTranslateSlangRoute
   AgeGuidesIndexRoute: typeof AgeGuidesIndexRoute
+  AppsIndexRoute: typeof AppsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -202,13 +202,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ChecklistsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/apps': {
-      id: '/apps'
-      path: '/apps'
-      fullPath: '/apps'
-      preLoaderRoute: typeof AppsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -221,6 +214,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/apps/': {
+      id: '/apps/'
+      path: '/apps'
+      fullPath: '/apps/'
+      preLoaderRoute: typeof AppsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/age-guides/': {
@@ -254,20 +254,9 @@ declare module '@tanstack/react-router' {
   }
 }
 
-interface AppsRouteChildren {
-  AppsSlugRoute: typeof AppsSlugRoute
-}
-
-const AppsRouteChildren: AppsRouteChildren = {
-  AppsSlugRoute: AppsSlugRoute,
-}
-
-const AppsRouteWithChildren = AppsRoute._addFileChildren(AppsRouteChildren)
-
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  AppsRoute: AppsRouteWithChildren,
   ChecklistsRoute: ChecklistsRoute,
   GlossaryRoute: GlossaryRoute,
   HelpRoute: HelpRoute,
@@ -275,7 +264,18 @@ const rootRouteChildren: RootRouteChildren = {
   AgeGuidesAgeRoute: AgeGuidesAgeRoute,
   ApiTranslateSlangRoute: ApiTranslateSlangRoute,
   AgeGuidesIndexRoute: AgeGuidesIndexRoute,
+  AppsIndexRoute: AppsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

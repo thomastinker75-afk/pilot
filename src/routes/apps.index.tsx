@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { APPS } from "@/content/data";
 import { ArrowUpRight, Gamepad2, MessageSquare, Smartphone, Sparkles } from "lucide-react";
 
-export const Route = createFileRoute("/apps")({
+export const Route = createFileRoute("/apps/")({
   component: AppsIndex,
   head: () => ({
     meta: [
