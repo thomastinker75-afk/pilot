@@ -219,6 +219,7 @@ export type AppGuide = {
     evidence: Evidence[];
     parentTalkingPoints: string[];
     settingsHowTo: { label: string; url: string }[];
+    videoTutorials: { title: string; channel: string; url: string }[];
   };
 };
 
