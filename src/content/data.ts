@@ -301,6 +301,11 @@ export const APPS: AppGuide[] = [
         { label: "Instagram Family Center", url: "https://familycenter.instagram.com/" },
         { label: "Internet Matters: Instagram safety guide", url: "https://www.internetmatters.org/parental-controls/social-media/instagram-privacy-and-safety-settings/" },
       ],
+      videoTutorials: [
+        { title: "Instagram Teen Accounts & supervision setup", channel: "Meta (official)", url: "https://www.youtube.com/results?search_query=Instagram+Teen+Accounts+supervision+setup" },
+        { title: "How to make Instagram private + hide story", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Instagram+private+account" },
+        { title: "Instagram parents’ ultimate guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Instagram+parents+guide" },
+      ],
     },
   },
   {
