@@ -245,6 +245,11 @@ export const APPS: AppGuide[] = [
         { label: "TikTok Family Pairing guide", url: "https://www.tiktok.com/safety/en/guardians-guide/" },
         { label: "Internet Matters: TikTok safety guide", url: "https://www.internetmatters.org/parental-controls/social-media/tiktok-privacy-and-safety-settings/" },
       ],
+      videoTutorials: [
+        { title: "TikTok Family Pairing — set up parental controls", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+TikTok+Family+Pairing+parental+controls" },
+        { title: "How to make a TikTok account private", channel: "TikTok (official)", url: "https://www.youtube.com/results?search_query=TikTok+official+how+to+make+account+private" },
+        { title: "TikTok parents’ guide — what you need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+TikTok+parents+guide" },
+      ],
     },
   },
   {
