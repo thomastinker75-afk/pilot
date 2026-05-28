@@ -373,6 +373,11 @@ export const APPS: AppGuide[] = [
         { label: "Discord Family Centre", url: "https://discord.com/family-center" },
         { label: "Discord safety: Parent hub", url: "https://discord.com/safety-parents" },
       ],
+      videoTutorials: [
+        { title: "Discord Family Centre — setup walkthrough", channel: "Discord (official)", url: "https://www.youtube.com/results?search_query=Discord+Family+Center+setup" },
+        { title: "Discord safety settings for parents", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Discord+parents+guide" },
+        { title: "Discord — parents’ ultimate guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Discord+parents+guide" },
+      ],
     },
   },
   {
