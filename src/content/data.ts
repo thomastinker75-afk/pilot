@@ -219,6 +219,7 @@ export type AppGuide = {
     evidence: Evidence[];
     parentTalkingPoints: string[];
     settingsHowTo: { label: string; url: string }[];
+    videoTutorials: { title: string; channel: string; url: string }[];
   };
 };
 
@@ -244,6 +245,11 @@ export const APPS: AppGuide[] = [
         { label: "TikTok Family Pairing guide", url: "https://www.tiktok.com/safety/en/guardians-guide/" },
         { label: "Internet Matters: TikTok safety guide", url: "https://www.internetmatters.org/parental-controls/social-media/tiktok-privacy-and-safety-settings/" },
       ],
+      videoTutorials: [
+        { title: "TikTok Family Pairing — set up parental controls", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+TikTok+Family+Pairing+parental+controls" },
+        { title: "How to make a TikTok account private", channel: "TikTok (official)", url: "https://www.youtube.com/results?search_query=TikTok+official+how+to+make+account+private" },
+        { title: "TikTok parents’ guide — what you need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+TikTok+parents+guide" },
+      ],
     },
   },
   {
@@ -266,6 +272,11 @@ export const APPS: AppGuide[] = [
       settingsHowTo: [
         { label: "Snapchat Family Center", url: "https://parents.snapchat.com/" },
         { label: "NSPCC Net Aware: Snapchat", url: "https://www.net-aware.org.uk/networks/snapchat/" },
+      ],
+      videoTutorials: [
+        { title: "Snapchat Family Center walkthrough", channel: "Snapchat (official)", url: "https://www.youtube.com/results?search_query=Snapchat+Family+Center+how+to+set+up" },
+        { title: "How to turn on Ghost Mode on Snap Map", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Snap+Map+Ghost+Mode+parental+guide" },
+        { title: "Snapchat — what parents need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Snapchat+parents+guide" },
       ],
     },
   },
@@ -290,6 +301,11 @@ export const APPS: AppGuide[] = [
         { label: "Instagram Family Center", url: "https://familycenter.instagram.com/" },
         { label: "Internet Matters: Instagram safety guide", url: "https://www.internetmatters.org/parental-controls/social-media/instagram-privacy-and-safety-settings/" },
       ],
+      videoTutorials: [
+        { title: "Instagram Teen Accounts & supervision setup", channel: "Meta (official)", url: "https://www.youtube.com/results?search_query=Instagram+Teen+Accounts+supervision+setup" },
+        { title: "How to make Instagram private + hide story", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Instagram+private+account" },
+        { title: "Instagram parents’ ultimate guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Instagram+parents+guide" },
+      ],
     },
   },
   {
@@ -313,6 +329,11 @@ export const APPS: AppGuide[] = [
         { label: "Google Family Link", url: "https://families.google/familylink/" },
         { label: "YouTube: Supervised experiences for kids and teens", url: "https://support.google.com/youtubekids/answer/10314940" },
       ],
+      videoTutorials: [
+        { title: "Set up a Supervised YouTube account", channel: "Google Families (official)", url: "https://www.youtube.com/results?search_query=Google+supervised+YouTube+account+setup" },
+        { title: "How to turn off autoplay on YouTube", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=YouTube+turn+off+autoplay+parents" },
+        { title: "YouTube & YouTube Kids — parents’ guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+YouTube+Kids+parents+guide" },
+      ],
     },
   },
   {
@@ -334,6 +355,11 @@ export const APPS: AppGuide[] = [
       settingsHowTo: [
         { label: "WhatsApp privacy settings", url: "https://faq.whatsapp.com/3196575617535613" },
         { label: "NSPCC Net Aware: WhatsApp", url: "https://www.net-aware.org.uk/networks/whatsapp/" },
+      ],
+      videoTutorials: [
+        { title: "WhatsApp privacy & group settings walkthrough", channel: "WhatsApp (official)", url: "https://www.youtube.com/results?search_query=WhatsApp+privacy+settings+how+to" },
+        { title: "WhatsApp for parents — what you need to know", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+WhatsApp+parents+guide" },
+        { title: "Two-step verification on WhatsApp", channel: "NSPCC / Net Aware", url: "https://www.youtube.com/results?search_query=WhatsApp+two+step+verification+setup" },
       ],
     },
   },
@@ -357,6 +383,11 @@ export const APPS: AppGuide[] = [
         { label: "Discord Family Centre", url: "https://discord.com/family-center" },
         { label: "Discord safety: Parent hub", url: "https://discord.com/safety-parents" },
       ],
+      videoTutorials: [
+        { title: "Discord Family Centre — setup walkthrough", channel: "Discord (official)", url: "https://www.youtube.com/results?search_query=Discord+Family+Center+setup" },
+        { title: "Discord safety settings for parents", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Discord+parents+guide" },
+        { title: "Discord — parents’ ultimate guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Discord+parents+guide" },
+      ],
     },
   },
   {
@@ -379,6 +410,11 @@ export const APPS: AppGuide[] = [
         { label: "Roblox: Parent and caregiver guide", url: "https://en.help.roblox.com/hc/en-us/articles/203313120-Parents-Safety-and-Moderation-Guide" },
         { label: "Internet Matters: Roblox controls", url: "https://www.internetmatters.org/parental-controls/gaming-consoles/roblox-parental-controls/" },
       ],
+      videoTutorials: [
+        { title: "Roblox parental controls — full setup", channel: "Roblox (official)", url: "https://www.youtube.com/results?search_query=Roblox+official+parental+controls+setup" },
+        { title: "Roblox safety — what parents need to know", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Roblox+parental+controls" },
+        { title: "Roblox parents’ guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Roblox+parents+guide" },
+      ],
     },
   },
   {
@@ -400,6 +436,11 @@ export const APPS: AppGuide[] = [
       settingsHowTo: [
         { label: "Epic Games parental controls", url: "https://www.epicgames.com/site/en-US/parental-controls" },
         { label: "Internet Matters: Fortnite guide", url: "https://www.internetmatters.org/hub/guidance/fortnite-battle-royale-parents-guide/" },
+      ],
+      videoTutorials: [
+        { title: "Fortnite parental controls — full walkthrough", channel: "Epic Games (official)", url: "https://www.youtube.com/results?search_query=Epic+Games+Fortnite+parental+controls+how+to" },
+        { title: "Cabined Accounts for under-13s explained", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Fortnite+Cabined+Account+parents+guide" },
+        { title: "Fortnite — what parents need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Fortnite+parents+guide" },
       ],
     },
   },

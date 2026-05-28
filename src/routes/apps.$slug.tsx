@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { APPS, type AppGuide, type Evidence } from "@/content/data";
-import { ArrowLeft, ExternalLink, ShieldCheck, BookOpen, Gavel, HeartPulse, Newspaper, FileText } from "lucide-react";
+import { ArrowLeft, ExternalLink, ShieldCheck, BookOpen, Gavel, HeartPulse, Newspaper, FileText, PlayCircle } from "lucide-react";
 
 export const Route = createFileRoute("/apps/$slug")({
   component: AppDetail,
@@ -150,6 +150,37 @@ function AppDetail() {
             </li>
           ))}
         </ul>
+
+        <div className="mt-10">
+          <p className="eyebrow">Video tutorials</p>
+          <h3 className="mt-3 font-display text-2xl tracking-tight">Watch it being done</h3>
+          <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
+            Short walk-throughs from the platforms themselves and trusted child-safety organisations.
+            Opens YouTube in a new tab.
+          </p>
+          <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+            {app.detail.videoTutorials.map((v) => (
+              <li key={v.url}>
+                <a
+                  href={v.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-start gap-3 rounded-2xl border border-border bg-card p-4 transition hover:border-primary/40 hover:bg-secondary"
+                >
+                  <span className="grid size-10 shrink-0 place-items-center rounded-lg bg-secondary text-primary group-hover:bg-primary/10">
+                    <PlayCircle className="size-5" />
+                  </span>
+                  <span className="flex-1">
+                    <span className="block text-sm font-medium leading-snug">{v.title}</span>
+                    <span className="mt-1 block text-xs text-muted-foreground">
+                      {v.channel} · YouTube <ExternalLink className="inline size-3" />
+                    </span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       <p className="mt-16 text-xs text-muted-foreground">
