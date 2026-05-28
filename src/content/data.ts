@@ -417,6 +417,11 @@ export const APPS: AppGuide[] = [
         { label: "Epic Games parental controls", url: "https://www.epicgames.com/site/en-US/parental-controls" },
         { label: "Internet Matters: Fortnite guide", url: "https://www.internetmatters.org/hub/guidance/fortnite-battle-royale-parents-guide/" },
       ],
+      videoTutorials: [
+        { title: "Fortnite parental controls — full walkthrough", channel: "Epic Games (official)", url: "https://www.youtube.com/results?search_query=Epic+Games+Fortnite+parental+controls+how+to" },
+        { title: "Cabined Accounts for under-13s explained", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Fortnite+Cabined+Account+parents+guide" },
+        { title: "Fortnite — what parents need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Fortnite+parents+guide" },
+      ],
     },
   },
 ];
