@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { APPS, type AppGuide, type Evidence } from "@/content/data";
-import { ArrowLeft, ExternalLink, ShieldCheck, BookOpen, Gavel, HeartPulse, Newspaper, FileText } from "lucide-react";
+import { ArrowLeft, ExternalLink, ShieldCheck, BookOpen, Gavel, HeartPulse, Newspaper, FileText, PlayCircle } from "lucide-react";
 
 export const Route = createFileRoute("/apps/$slug")({
   component: AppDetail,
