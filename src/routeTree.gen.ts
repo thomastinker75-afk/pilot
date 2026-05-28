@@ -62,9 +62,9 @@ const AgeGuidesIndexRoute = AgeGuidesIndexRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const AppsSlugRoute = AppsSlugRouteImport.update({
-  id: '/$slug',
-  path: '/$slug',
-  getParentRoute: () => AppsRoute,
+  id: '/apps/$slug',
+  path: '/apps/$slug',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const ApiTranslateSlangRoute = ApiTranslateSlangRouteImport.update({
   id: '/api/translate-slang',
@@ -168,6 +168,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   AgeGuidesAgeRoute: typeof AgeGuidesAgeRoute
   ApiTranslateSlangRoute: typeof ApiTranslateSlangRoute
+  AppsSlugRoute: typeof AppsSlugRoute
   AgeGuidesIndexRoute: typeof AgeGuidesIndexRoute
   AppsIndexRoute: typeof AppsIndexRoute
 }
@@ -232,10 +233,10 @@ declare module '@tanstack/react-router' {
     }
     '/apps/$slug': {
       id: '/apps/$slug'
-      path: '/$slug'
+      path: '/apps/$slug'
       fullPath: '/apps/$slug'
       preLoaderRoute: typeof AppsSlugRouteImport
-      parentRoute: typeof AppsRoute
+      parentRoute: typeof rootRouteImport
     }
     '/api/translate-slang': {
       id: '/api/translate-slang'
@@ -263,6 +264,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   AgeGuidesAgeRoute: AgeGuidesAgeRoute,
   ApiTranslateSlangRoute: ApiTranslateSlangRoute,
+  AppsSlugRoute: AppsSlugRoute,
   AgeGuidesIndexRoute: AgeGuidesIndexRoute,
   AppsIndexRoute: AppsIndexRoute,
 }
