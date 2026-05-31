@@ -60,6 +60,29 @@ function AppDetail() {
         <p className="mt-5 max-w-2xl text-lg text-muted-foreground">{app.detail.overview}</p>
       </header>
 
+      {app.detail.riskVideo && (
+        <section className="mt-10">
+          <p className="eyebrow">Watch first · {app.detail.riskVideo.channel}</p>
+          <h2 className="mt-3 font-display text-2xl tracking-tight">
+            {app.detail.riskVideo.title}
+          </h2>
+          <div className="mt-5 aspect-video w-full overflow-hidden rounded-2xl border border-border bg-black shadow-sm">
+            <iframe
+              className="h-full w-full"
+              src={`https://www.youtube-nocookie.com/embed/${app.detail.riskVideo.youtubeId}`}
+              title={app.detail.riskVideo.title}
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+          {app.detail.riskVideo.note && (
+            <p className="mt-3 text-xs text-muted-foreground">{app.detail.riskVideo.note}</p>
+          )}
+        </section>
+      )}
+
       <hr className="rule my-12" />
 
       <section>
