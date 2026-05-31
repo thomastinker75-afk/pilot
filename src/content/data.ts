@@ -220,6 +220,7 @@ export type AppGuide = {
     parentTalkingPoints: string[];
     settingsHowTo: { label: string; url: string }[];
     videoTutorials: { title: string; channel: string; url: string }[];
+    riskVideo?: { title: string; channel: string; youtubeId: string; note?: string };
   };
 };
 
@@ -250,6 +251,7 @@ export const APPS: AppGuide[] = [
         { title: "How to make a TikTok account private", channel: "TikTok (official)", url: "https://www.youtube.com/results?search_query=TikTok+official+how+to+make+account+private" },
         { title: "TikTok parents’ guide — what you need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+TikTok+parents+guide" },
       ],
+      riskVideo: { title: "How do teen girls really feel about social media?", channel: "Common Sense Media", youtubeId: "lZ5g5JjhxN8" },
     },
   },
   {
@@ -278,6 +280,7 @@ export const APPS: AppGuide[] = [
         { title: "How to turn on Ghost Mode on Snap Map", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Snap+Map+Ghost+Mode+parental+guide" },
         { title: "Snapchat — what parents need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Snapchat+parents+guide" },
       ],
+      riskVideo: { title: "E-Safety Tips for Parents (11–13)", channel: "Internet Matters", youtubeId: "0iKPd6lZYuA", note: "Covers messaging-app risks for this age group, including Snapchat." },
     },
   },
   {
@@ -306,6 +309,7 @@ export const APPS: AppGuide[] = [
         { title: "How to make Instagram private + hide story", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Instagram+private+account" },
         { title: "Instagram parents’ ultimate guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Instagram+parents+guide" },
       ],
+      riskVideo: { title: "How do teen girls really feel about social media?", channel: "Common Sense Media", youtubeId: "lZ5g5JjhxN8", note: "Covers Instagram, body image and algorithm risks." },
     },
   },
   {
@@ -361,6 +365,7 @@ export const APPS: AppGuide[] = [
         { title: "WhatsApp for parents — what you need to know", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+WhatsApp+parents+guide" },
         { title: "Two-step verification on WhatsApp", channel: "NSPCC / Net Aware", url: "https://www.youtube.com/results?search_query=WhatsApp+two+step+verification+setup" },
       ],
+      riskVideo: { title: "Parental controls for messaging & devices — real advice from a mum of two", channel: "Internet Matters", youtubeId: "zplUsBQeV_8", note: "Covers messaging-app risks including WhatsApp group chats." },
     },
   },
   {
@@ -415,6 +420,7 @@ export const APPS: AppGuide[] = [
         { title: "Roblox safety — what parents need to know", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Roblox+parental+controls" },
         { title: "Roblox parents’ guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Roblox+parents+guide" },
       ],
+      riskVideo: { title: "Roblox: a parent’s step-by-step safety guide", channel: "Internet Matters", youtubeId: "fxeaYLLS8n8", note: "Walks through the chat, screen-time and stranger-contact risks specific to Roblox." },
     },
   },
   {
@@ -442,6 +448,7 @@ export const APPS: AppGuide[] = [
         { title: "Cabined Accounts for under-13s explained", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Fortnite+Cabined+Account+parents+guide" },
         { title: "Fortnite — what parents need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Fortnite+parents+guide" },
       ],
+      riskVideo: { title: "Fortnite: a parent’s step-by-step controls & risks guide", channel: "Internet Matters", youtubeId: "AJ6MAWRr6Js", note: "Covers spending, voice-chat with strangers and screen-time risks." },
     },
   },
 ];
