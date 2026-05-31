@@ -448,6 +448,7 @@ export const APPS: AppGuide[] = [
         { title: "Cabined Accounts for under-13s explained", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Fortnite+Cabined+Account+parents+guide" },
         { title: "Fortnite — what parents need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Fortnite+parents+guide" },
       ],
+      riskVideo: { title: "Fortnite: a parent’s step-by-step controls & risks guide", channel: "Internet Matters", youtubeId: "AJ6MAWRr6Js", note: "Covers spending, voice-chat with strangers and screen-time risks." },
     },
   },
 ];
