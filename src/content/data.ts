@@ -220,6 +220,7 @@ export type AppGuide = {
     parentTalkingPoints: string[];
     settingsHowTo: { label: string; url: string }[];
     videoTutorials: { title: string; channel: string; url: string }[];
+    riskVideo?: { title: string; channel: string; youtubeId: string; note?: string };
   };
 };
 
