@@ -31,49 +31,62 @@ function AppsIndex() {
         precise settings to check. No hype, no panic.
       </p>
 
-      <div className="mt-12 grid gap-5 md:grid-cols-2">
-        {APPS.map((a) => (
-          <article key={a.slug} className="flex flex-col rounded-2xl border border-border bg-card p-6">
-            <header className="flex items-start gap-4">
-              <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary">
-                {icon(a.category)}
-              </span>
-              <div className="flex-1">
-                <div className="flex items-baseline justify-between gap-3">
-                  <h2 className="font-display text-2xl font-semibold tracking-tight">{a.name}</h2>
-                  <span className="rounded-full bg-secondary px-2.5 py-1 text-xs font-semibold">{a.minAge}</span>
-                </div>
-                <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{a.category}</p>
-              </div>
-            </header>
-
-            <p className="mt-4 text-sm text-muted-foreground">{a.why}</p>
-
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              <div>
-                <p className="eyebrow !text-destructive">Risks</p>
-                <ul className="mt-2 space-y-1.5 text-sm">
-                  {a.risks.map((r) => <li key={r} className="flex gap-2"><span className="mt-2 size-1 shrink-0 rounded-full bg-destructive" />{r}</li>)}
-                </ul>
-              </div>
-              <div>
-                <p className="eyebrow">Settings</p>
-                <ul className="mt-2 space-y-1.5 text-sm">
-                  {a.settings.map((s) => <li key={s} className="flex gap-2"><span className="mt-2 size-1 shrink-0 rounded-full bg-primary" />{s}</li>)}
-                </ul>
-              </div>
+      {(["Social", "Messaging", "Video", "Game"] as const).map((cat) => {
+        const items = APPS.filter((a) => a.category === cat);
+        if (items.length === 0) return null;
+        return (
+          <section key={cat} className="mt-16 first:mt-12">
+            <div className="flex items-baseline justify-between gap-4 border-b border-border pb-3">
+              <h2 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">{cat}</h2>
+              <span className="text-xs uppercase tracking-widest text-muted-foreground">{items.length} {items.length === 1 ? "app" : "apps"}</span>
             </div>
+            <div className="mt-6 grid gap-5 md:grid-cols-2">
+              {items.map((a) => (
+                <article key={a.slug} className="flex flex-col rounded-2xl border border-border bg-card p-6">
+                  <header className="flex items-start gap-4">
+                    <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary">
+                      {icon(a.category)}
+                    </span>
+                    <div className="flex-1">
+                      <div className="flex items-baseline justify-between gap-3">
+                        <h3 className="font-display text-2xl font-semibold tracking-tight">{a.name}</h3>
+                        <span className="rounded-full bg-secondary px-2.5 py-1 text-xs font-semibold">{a.minAge}</span>
+                      </div>
+                      <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{a.category}</p>
+                    </div>
+                  </header>
 
-            <Link
-              to="/apps/$slug"
-              params={{ slug: a.slug }}
-              className="mt-6 inline-flex items-center gap-1.5 self-start text-sm font-semibold text-primary hover:gap-2.5 transition-all"
-            >
-              Know more about {a.name} <ArrowUpRight className="size-4" />
-            </Link>
-          </article>
-        ))}
-      </div>
+                  <p className="mt-4 text-sm text-muted-foreground">{a.why}</p>
+
+                  <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                    <div>
+                      <p className="eyebrow !text-destructive">Risks</p>
+                      <ul className="mt-2 space-y-1.5 text-sm">
+                        {a.risks.map((r) => <li key={r} className="flex gap-2"><span className="mt-2 size-1 shrink-0 rounded-full bg-destructive" />{r}</li>)}
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="eyebrow">Settings</p>
+                      <ul className="mt-2 space-y-1.5 text-sm">
+                        {a.settings.map((s) => <li key={s} className="flex gap-2"><span className="mt-2 size-1 shrink-0 rounded-full bg-primary" />{s}</li>)}
+                      </ul>
+                    </div>
+                  </div>
+
+                  <Link
+                    to="/apps/$slug"
+                    params={{ slug: a.slug }}
+                    className="mt-6 inline-flex items-center gap-1.5 self-start text-sm font-semibold text-primary hover:gap-2.5 transition-all"
+                  >
+                    Know more about {a.name} <ArrowUpRight className="size-4" />
+                  </Link>
+                </article>
+              ))}
+            </div>
+          </section>
+        );
+      })}
+
     </div>
   );
 }
