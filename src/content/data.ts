@@ -309,7 +309,7 @@ export const APPS: AppGuide[] = [
         { title: "How to make Instagram private + hide story", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Instagram+private+account" },
         { title: "Instagram parents’ ultimate guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Instagram+parents+guide" },
       ],
-      riskVideo: { title: "How do teen girls really feel about social media?", channel: "Common Sense Media", youtubeId: "lZ5g5JjhxN8", note: "Covers Instagram, body image and algorithm risks." },
+      riskVideo: { title: "Facebook Whistleblower Frances Haugen: The 60 Minutes Interview", channel: "60 Minutes (CBS News)", youtubeId: "_Lx5VmAdZSI", note: "Frances Haugen explains internal Meta research showing Instagram worsens body-image and mental-health outcomes for teenage girls." },
     },
   },
   {
