@@ -251,7 +251,7 @@ export const APPS: AppGuide[] = [
         { title: "How to make a TikTok account private", channel: "TikTok (official)", url: "https://www.youtube.com/results?search_query=TikTok+official+how+to+make+account+private" },
         { title: "TikTok parents’ guide — what you need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+TikTok+parents+guide" },
       ],
-      riskVideo: { title: "How do teen girls really feel about social media?", channel: "Common Sense Media", youtubeId: "lZ5g5JjhxN8" },
+      riskVideo: { title: "New study warns about impact of TikTok on adolescents", channel: "Good Morning America (ABC News)", youtubeId: "aFIpQLYMGXY", note: "Reports on National Institutes of Health research into how short-video feeds affect the developing teenage brain." },
     },
   },
   {
