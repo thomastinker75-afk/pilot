@@ -280,7 +280,7 @@ export const APPS: AppGuide[] = [
         { title: "How to turn on Ghost Mode on Snap Map", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Snap+Map+Ghost+Mode+parental+guide" },
         { title: "Snapchat — what parents need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Snapchat+parents+guide" },
       ],
-      riskVideo: { title: "E-Safety Tips for Parents (11–13)", channel: "Internet Matters", youtubeId: "0iKPd6lZYuA", note: "Covers messaging-app risks for this age group, including Snapchat." },
+      riskVideo: { title: "New report highlights Snapchat's harmful impact on kids", channel: "9NEWS (NBC affiliate)", youtubeId: "hgYhGoUQFWM", note: "Features Jonathan Haidt (author of The Anxious Generation) on Snapchat's addictive design and exposure of young users to harmful material." },
     },
   },
   {
