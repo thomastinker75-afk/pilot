@@ -251,7 +251,7 @@ export const APPS: AppGuide[] = [
         { title: "How to make a TikTok account private", channel: "TikTok (official)", url: "https://www.youtube.com/results?search_query=TikTok+official+how+to+make+account+private" },
         { title: "TikTok parents’ guide — what you need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+TikTok+parents+guide" },
       ],
-      riskVideo: { title: "How do teen girls really feel about social media?", channel: "Common Sense Media", youtubeId: "lZ5g5JjhxN8" },
+      riskVideo: { title: "New study warns about impact of TikTok on adolescents", channel: "Good Morning America (ABC News)", youtubeId: "aFIpQLYMGXY", note: "Reports on National Institutes of Health research into how short-video feeds affect the developing teenage brain." },
     },
   },
   {
@@ -280,7 +280,7 @@ export const APPS: AppGuide[] = [
         { title: "How to turn on Ghost Mode on Snap Map", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Snap+Map+Ghost+Mode+parental+guide" },
         { title: "Snapchat — what parents need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Snapchat+parents+guide" },
       ],
-      riskVideo: { title: "E-Safety Tips for Parents (11–13)", channel: "Internet Matters", youtubeId: "0iKPd6lZYuA", note: "Covers messaging-app risks for this age group, including Snapchat." },
+      riskVideo: { title: "New report highlights Snapchat's harmful impact on kids", channel: "9NEWS (NBC affiliate)", youtubeId: "hgYhGoUQFWM", note: "Features Jonathan Haidt (author of The Anxious Generation) on Snapchat's addictive design and exposure of young users to harmful material." },
     },
   },
   {
@@ -309,7 +309,7 @@ export const APPS: AppGuide[] = [
         { title: "How to make Instagram private + hide story", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Instagram+private+account" },
         { title: "Instagram parents’ ultimate guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Instagram+parents+guide" },
       ],
-      riskVideo: { title: "How do teen girls really feel about social media?", channel: "Common Sense Media", youtubeId: "lZ5g5JjhxN8", note: "Covers Instagram, body image and algorithm risks." },
+      riskVideo: { title: "Facebook Whistleblower Frances Haugen: The 60 Minutes Interview", channel: "60 Minutes (CBS News)", youtubeId: "_Lx5VmAdZSI", note: "Frances Haugen explains internal Meta research showing Instagram worsens body-image and mental-health outcomes for teenage girls." },
     },
   },
   {
@@ -338,7 +338,7 @@ export const APPS: AppGuide[] = [
         { title: "How to turn off autoplay on YouTube", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=YouTube+turn+off+autoplay+parents" },
         { title: "YouTube & YouTube Kids — parents’ guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+YouTube+Kids+parents+guide" },
       ],
-      riskVideo: { title: "TikTok and YouTube ‘not safe enough’ for kids, says Ofcom", channel: "BBC News", youtubeId: "XkoGrkiWj20", note: "BBC News report on Ofcom’s finding that YouTube’s personalised feeds expose children to harmful content." },
+      riskVideo: { title: "The nightmare videos of children's YouTube — and what's wrong with the internet today", channel: "TED", youtubeId: "v9EKV2nSU8w", note: "Writer James Bridle's widely-cited talk on how YouTube's recommendation system surfaces disturbing content to children." },
 
     },
   },
@@ -395,6 +395,7 @@ export const APPS: AppGuide[] = [
         { title: "Discord safety settings for parents", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Discord+parents+guide" },
         { title: "Discord — parents’ ultimate guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Discord+parents+guide" },
       ],
+      riskVideo: { title: "Florida investigates Discord app over child safety concerns", channel: "WPLG Local 10 News (ABC affiliate)", youtubeId: "nEwGEoLYiBA", note: "News report on broad child-safety concerns around Discord servers and DMs." },
     },
   },
   {
@@ -422,7 +423,7 @@ export const APPS: AppGuide[] = [
         { title: "Roblox safety — what parents need to know", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Roblox+parental+controls" },
         { title: "Roblox parents’ guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Roblox+parents+guide" },
       ],
-      riskVideo: { title: "Roblox: a parent’s step-by-step safety guide", channel: "Internet Matters", youtubeId: "fxeaYLLS8n8", note: "Walks through the chat, screen-time and stranger-contact risks specific to Roblox." },
+      riskVideo: { title: "Advocacy groups raise concerns about Roblox to US regulators", channel: "BBC News", youtubeId: "S4oem6KButg", note: "BBC News report on broader child-safety and spending concerns raised about Roblox." },
     },
   },
   {
@@ -450,7 +451,7 @@ export const APPS: AppGuide[] = [
         { title: "Cabined Accounts for under-13s explained", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Fortnite+Cabined+Account+parents+guide" },
         { title: "Fortnite — what parents need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Fortnite+parents+guide" },
       ],
-      riskVideo: { title: "Fortnite: a parent’s step-by-step controls & risks guide", channel: "Internet Matters", youtubeId: "AJ6MAWRr6Js", note: "Covers spending, voice-chat with strangers and screen-time risks." },
+      riskVideo: { title: "Call for gaming loot box ban", channel: "Sky News", youtubeId: "8osRlWJwkbk", note: "Sky News report on addiction concerns and gambling-style mechanics in Fortnite and similar games." },
     },
   },
 ];
