@@ -423,7 +423,7 @@ export const APPS: AppGuide[] = [
         { title: "Roblox safety — what parents need to know", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Roblox+parental+controls" },
         { title: "Roblox parents’ guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Roblox+parents+guide" },
       ],
-      riskVideo: { title: "Roblox: a parent’s step-by-step safety guide", channel: "Internet Matters", youtubeId: "fxeaYLLS8n8", note: "Walks through the chat, screen-time and stranger-contact risks specific to Roblox." },
+      riskVideo: { title: "Advocacy groups raise concerns about Roblox to US regulators", channel: "BBC News", youtubeId: "S4oem6KButg", note: "BBC News report on broader child-safety and spending concerns raised about Roblox." },
     },
   },
   {
