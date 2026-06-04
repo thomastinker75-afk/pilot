@@ -338,7 +338,7 @@ export const APPS: AppGuide[] = [
         { title: "How to turn off autoplay on YouTube", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=YouTube+turn+off+autoplay+parents" },
         { title: "YouTube & YouTube Kids — parents’ guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+YouTube+Kids+parents+guide" },
       ],
-      riskVideo: { title: "TikTok and YouTube ‘not safe enough’ for kids, says Ofcom", channel: "BBC News", youtubeId: "XkoGrkiWj20", note: "BBC News report on Ofcom’s finding that YouTube’s personalised feeds expose children to harmful content." },
+      riskVideo: { title: "The nightmare videos of children's YouTube — and what's wrong with the internet today", channel: "TED", youtubeId: "v9EKV2nSU8w", note: "Writer James Bridle's widely-cited talk on how YouTube's recommendation system surfaces disturbing content to children." },
 
     },
   },
