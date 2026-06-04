@@ -395,6 +395,7 @@ export const APPS: AppGuide[] = [
         { title: "Discord safety settings for parents", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Discord+parents+guide" },
         { title: "Discord — parents’ ultimate guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Discord+parents+guide" },
       ],
+      riskVideo: { title: "Florida investigates Discord app over child safety concerns", channel: "WPLG Local 10 News (ABC affiliate)", youtubeId: "nEwGEoLYiBA", note: "News report on broad child-safety concerns around Discord servers and DMs." },
     },
   },
   {
