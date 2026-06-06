@@ -67,15 +67,26 @@ function AppDetail() {
             {app.detail.riskVideo.title}
           </h2>
           <div className="mt-5 aspect-video w-full overflow-hidden rounded-2xl border border-border bg-black shadow-sm">
-            <iframe
-              className="h-full w-full"
-              src={`https://www.youtube-nocookie.com/embed/${app.detail.riskVideo.youtubeId}`}
-              title={app.detail.riskVideo.title}
-              loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            {app.detail.riskVideo.videoUrl ? (
+              <video
+                className="h-full w-full"
+                src={app.detail.riskVideo.videoUrl}
+                poster={app.detail.riskVideo.poster}
+                controls
+                preload="metadata"
+                playsInline
+              />
+            ) : app.detail.riskVideo.youtubeId ? (
+              <iframe
+                className="h-full w-full"
+                src={`https://www.youtube-nocookie.com/embed/${app.detail.riskVideo.youtubeId}`}
+                title={app.detail.riskVideo.title}
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            ) : null}
           </div>
           {app.detail.riskVideo.note && (
             <p className="mt-3 text-xs text-muted-foreground">{app.detail.riskVideo.note}</p>
