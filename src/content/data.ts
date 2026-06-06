@@ -220,7 +220,7 @@ export type AppGuide = {
     parentTalkingPoints: string[];
     settingsHowTo: { label: string; url: string }[];
     videoTutorials: { title: string; channel: string; url: string }[];
-    riskVideo?: { title: string; channel: string; youtubeId: string; note?: string };
+    riskVideo?: { title: string; channel: string; youtubeId?: string; videoUrl?: string; poster?: string; note?: string };
   };
 };
 
@@ -423,7 +423,7 @@ export const APPS: AppGuide[] = [
         { title: "Roblox safety — what parents need to know", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Roblox+parental+controls" },
         { title: "Roblox parents’ guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Roblox+parents+guide" },
       ],
-      riskVideo: { title: "Advocacy groups raise concerns about Roblox to US regulators", channel: "BBC News", youtubeId: "S4oem6KButg", note: "BBC News report on broader child-safety and spending concerns raised about Roblox." },
+      riskVideo: { title: "Roblox: The playground problem", channel: "Raising Digital · Investigation", videoUrl: "/__l5e/assets-v1/7837b59a-5d12-4eae-b257-1d73a6a2ec76/roblox-risks.mp4", note: "Original 95-second explainer based on Guardian reporting on the Revealing Reality investigation (April 2025)." },
     },
   },
   {
