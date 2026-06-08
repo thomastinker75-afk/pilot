@@ -188,6 +188,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Hiding the screen when you walk in",
       "New ‘older’ online friends you’ve never heard of",
     ],
+    screenTime: {
+      recommended:
+        "Around 2 hours per day of recreational screen time (outside school work), with phones out of the bedroom overnight and a tech-free wind-down before sleep.",
+      sources: [
+        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
+        { label: "Children and parents: media use and attitudes report", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
+        { label: "Recommendations on the regulation of smartphones for children", org: "French government expert commission (Enfants et écrans)", region: "France", url: "https://www.elysee.fr/emmanuel-macron/2024/04/30/enfants-et-ecrans" },
+        { label: "Adolescent Screen Time and Mental Health (meta-analysis)", org: "JAMA Pediatrics", region: "International", url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2737909" },
+      ],
+      consequences: [
+        "Higher rates of depression and anxiety in heavy users (>3h/day on social media roughly doubles the risk — JAMA Psychiatry, 2019).",
+        "Significant sleep loss; teens who keep phones in bedrooms sleep on average 1 hour less per night (Sleep Health, 2018).",
+        "Body-image disturbance and disordered eating, especially among girls on image-led platforms.",
+        "Attention fragmentation: heavy multitaskers show measurable drops in working memory and academic performance.",
+      ],
+    },
   },
   {
     slug: "14-15",
