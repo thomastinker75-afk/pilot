@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { AGE_BANDS, REVIEWED } from "@/content/data";
-import { ArrowLeft } from "lucide-react";
+import { AGE_BANDS, REVIEWED, type ScreenTimeGuidance } from "@/content/data";
+import { ArrowLeft, Clock, AlertTriangle, BookOpen, ExternalLink } from "lucide-react";
 
 export const Route = createFileRoute("/age-guides/$age")({
   component: AgeGuide,
