@@ -44,6 +44,7 @@ function AgeGuide() {
       </header>
 
       <div className="mt-14 space-y-12">
+        <ScreenTimeBlock data={band.screenTime} />
         <Section title="Typical digital behaviours" items={band.behaviours} />
         <Section title="Risks that actually matter" items={band.risks} accent="danger" />
         <Section title="Settings worth changing tonight" items={band.settings} accent="action" />
