@@ -234,6 +234,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Sudden withdrawal, secrecy, sleep loss",
       "Mentions of someone older they’ve ‘only met online’",
     ],
+    screenTime: {
+      recommended:
+        "No single hour cap is realistic at this age — aim for under 2 hours/day of pure social-media scrolling, plus protected time for sleep (9 hours), physical activity, schoolwork and offline friendships.",
+      sources: [
+        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
+        { label: "APA Health Advisory on Social Media Use in Adolescence", org: "American Psychological Association", region: "USA", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
+        { label: "Australian 24-hour movement guidelines for children and young people (5–17)", org: "Australian Department of Health", region: "Australia", url: "https://www.health.gov.au/topics/physical-activity-and-exercise/physical-activity-and-exercise-guidelines-for-all-australians/for-children-and-young-people-5-to-17-years" },
+        { label: "Estudo Geração Z e ecrãs", org: "Direção-Geral da Saúde", region: "Portugal / EU", url: "https://www.dgs.pt/" },
+      ],
+      consequences: [
+        "Strong link between >3h/day on social media and depression, self-harm and suicidal ideation (Lancet Child & Adolescent Health, 2019).",
+        "Increased exposure to sextortion and image-based abuse — UK Internet Watch Foundation recorded record numbers in 2024.",
+        "Algorithmic radicalisation into pro-anorexia, self-harm or misogynistic ‘manosphere’ content (Amnesty International, 2023).",
+        "Chronic sleep debt impairs mood, immune function and academic performance.",
+      ],
+    },
   },
   {
     slug: "16-17",
