@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { AGE_BANDS, REVIEWED, type ScreenTimeGuidance } from "@/content/data";
-import { ArrowLeft, Clock, AlertTriangle, BookOpen, ExternalLink } from "lucide-react";
+import { AGE_BANDS, REVIEWED, type ScreenTimeGuidance, type ExpertResource } from "@/content/data";
+import { ArrowLeft, Clock, AlertTriangle, BookOpen, ExternalLink, GraduationCap } from "lucide-react";
+
 
 export const Route = createFileRoute("/age-guides/$age")({
   component: AgeGuide,
@@ -50,6 +51,8 @@ function AgeGuide() {
         <Section title="Settings worth changing tonight" items={band.settings} accent="action" />
         <Section title="How to talk about it" items={band.conversation} />
         <Section title="Red flags worth investigating" items={band.redFlags} accent="danger" />
+        <DeepDive items={band.deepDive} />
+
       </div>
 
       <footer className="mt-20 rounded-2xl border border-border bg-secondary p-7">

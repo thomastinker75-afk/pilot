@@ -9,6 +9,14 @@ export type ScreenTimeGuidance = {
   consequences: string[];
 };
 
+export type ExpertResource = {
+  title: string;
+  source: string;
+  type: "Study" | "Article" | "Report" | "Video" | "Book";
+  url: string;
+  note?: string;
+};
+
 export type AgeBand = {
   slug: string;
   range: string;
@@ -20,7 +28,9 @@ export type AgeBand = {
   conversation: string[];
   redFlags: string[];
   screenTime: ScreenTimeGuidance;
+  deepDive: ExpertResource[];
 };
+
 
 export const AGE_BANDS: AgeBand[] = [
   {
@@ -68,7 +78,15 @@ export const AGE_BANDS: AgeBand[] = [
         "Higher risk of attention and self-regulation problems by school entry (CHILD Cohort Study, Canada, 2019).",
       ],
     },
+    deepDive: [
+      { type: "Report", source: "World Health Organization", title: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age", url: "https://www.who.int/publications/i/item/9789241550536", note: "The WHO's primary global guidance — explains why under-2s should avoid screens entirely." },
+      { type: "Study", source: "JAMA Pediatrics (2020)", title: "Associations Between Screen-Based Media Use and Brain White Matter Integrity in Preschool-Aged Children", url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2754101", note: "MRI study showing measurable differences in language and literacy brain regions in heavy-screen toddlers." },
+      { type: "Study", source: "JAMA Pediatrics (2019)", title: "Screen Time and Parent-Child Talk When Children Are Aged 12 to 36 Months", url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2725319", note: "Each extra minute of screen time reduced parent words heard by the child." },
+      { type: "Article", source: "American Academy of Pediatrics — HealthyChildren.org", title: "How to Make a Family Media Use Plan", url: "https://www.healthychildren.org/English/family-life/Media/Pages/How-to-Make-a-Family-Media-Use-Plan.aspx" },
+      { type: "Video", source: "TED — Dimitri Christakis, MD", title: "Media and Children", url: "https://www.youtube.com/watch?v=BoT7qH_uVNo", note: "Paediatrician summarising the evidence on infant/toddler screen exposure." },
+    ],
   },
+
   {
     slug: "5-7",
     range: "5–7",
@@ -113,7 +131,15 @@ export const AGE_BANDS: AgeBand[] = [
         "Earlier and steeper drop in face-to-face play skills, which underpin friendships and emotional regulation.",
       ],
     },
+    deepDive: [
+      { type: "Study", source: "JAMA Pediatrics (2019)", title: "Association Between Screen Time and Children's Performance on a Developmental Screening Test", url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2722666", note: "Canadian cohort — >2h/day at age 3 predicted worse developmental scores at age 5." },
+      { type: "Report", source: "WHO European Region (2022)", title: "Childhood Obesity Surveillance Initiative (COSI)", url: "https://www.who.int/europe/initiatives/who-european-childhood-obesity-surveillance-initiative-(cosi)", note: "Links screen-heavy lifestyles in 6–9 year-olds to rising obesity across 33 countries." },
+      { type: "Study", source: "Sleep Medicine Reviews (2021)", title: "Screen time and sleep among school-aged children and adolescents: a systematic review", url: "https://www.sciencedirect.com/science/article/abs/pii/S1087079214001075" },
+      { type: "Article", source: "Common Sense Media", title: "The Common Sense Census: Media Use by Kids Age Zero to Eight", url: "https://www.commonsensemedia.org/research/the-common-sense-census-media-use-by-kids-age-zero-to-eight-2020" },
+      { type: "Video", source: "BBC Panorama", title: "Smartphone Kids", url: "https://www.bbc.co.uk/iplayer/episodes/b00wk6h0/panorama", note: "Documentary on early phone/tablet use and behaviour." },
+    ],
   },
+
   {
     slug: "8-10",
     range: "8–10",
@@ -158,7 +184,15 @@ export const AGE_BANDS: AgeBand[] = [
         "Early signs of problematic gaming: irritability when stopped, sneaking devices at night, declining grades.",
       ],
     },
+    deepDive: [
+      { type: "Report", source: "EU Kids Online (2020)", title: "EU Kids Online 2020: Survey results from 19 countries", url: "https://www.lse.ac.uk/media-and-communications/research/research-projects/eu-kids-online/eu-kids-online-2020", note: "Largest European study on children's online risks and group-chat dynamics." },
+      { type: "Study", source: "The Lancet Child & Adolescent Health (2018)", title: "Associations between 24-hour movement behaviours and global cognition in US children (ABCD Study)", url: "https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(18)30278-5/fulltext", note: "Only 1 in 20 US kids met screen-time guidelines; those who did scored higher on cognition tests." },
+      { type: "Report", source: "OECD PISA", title: "21st-Century Readers: Developing Literacy Skills in a Digital World", url: "https://www.oecd.org/en/publications/21st-century-readers_a83d84cb-en.html", note: "Heavy recreational screen use correlates with weaker reading comprehension across 79 countries." },
+      { type: "Article", source: "Internet Matters", title: "Online gaming advice hub", url: "https://www.internetmatters.org/resources/online-gaming-advice/", note: "Practical UK guidance on Roblox, Fortnite and Minecraft chat risks." },
+      { type: "Video", source: "Childnet International", title: "Trust Me — critical thinking online", url: "https://www.childnet.com/resources/trust-me/", note: "Short films for 7–11s on misleading content and online manipulation." },
+    ],
   },
+
   {
     slug: "11-13",
     range: "11–13",
@@ -204,7 +238,16 @@ export const AGE_BANDS: AgeBand[] = [
         "Attention fragmentation: heavy multitaskers show measurable drops in working memory and academic performance.",
       ],
     },
+    deepDive: [
+      { type: "Report", source: "US Surgeon General (2023)", title: "Social Media and Youth Mental Health — Advisory", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html", note: "Landmark advisory: heavy use ≈ doubled risk of depression and anxiety symptoms." },
+      { type: "Study", source: "JAMA Psychiatry (2019)", title: "Associations Between Time Spent Using Social Media and Internalizing and Externalizing Problems Among US Youth", url: "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2749480" },
+      { type: "Study", source: "Sleep Health (2018)", title: "Adolescent sleep and the impact of technology use before sleep", url: "https://www.sleephealthjournal.org/article/S2352-7218(18)30055-0/fulltext", note: "Phones in bedrooms cost teens ~1 hour of sleep per night on average." },
+      { type: "Book", source: "Jonathan Haidt — The Anxious Generation", title: "After Babel — research summaries", url: "https://www.afterbabel.com/", note: "Free deep-dive essays behind the bestselling book on smartphones and adolescent mental health." },
+      { type: "Video", source: "TED — Jean Twenge", title: "iGen: What today's super-connected kids tell us about ourselves", url: "https://www.youtube.com/watch?v=mDPGcMlPyhI" },
+      { type: "Report", source: "Ofcom (UK, 2024)", title: "Children and parents: media use and attitudes", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
+    ],
   },
+
   {
     slug: "14-15",
     range: "14–15",
@@ -250,7 +293,16 @@ export const AGE_BANDS: AgeBand[] = [
         "Chronic sleep debt impairs mood, immune function and academic performance.",
       ],
     },
+    deepDive: [
+      { type: "Study", source: "The Lancet Child & Adolescent Health (2019)", title: "Association between social media use and depression among 13–16 year olds in England", url: "https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(19)30186-5/fulltext", note: "Sleep loss and cyberbullying explain much of the link." },
+      { type: "Report", source: "Internet Watch Foundation (2024)", title: "Annual Report — Sextortion and self-generated child sexual abuse imagery", url: "https://www.iwf.org.uk/annual-report-2023/", note: "Record numbers of UK teen sextortion cases." },
+      { type: "Report", source: "Amnesty International (2023)", title: "Driven into the Darkness: How TikTok's For You feed encourages self-harm and suicidal ideation", url: "https://www.amnesty.org/en/documents/pol40/7350/2023/en/", note: "Algorithm audit showing rapid descent into harmful content from teen accounts." },
+      { type: "Article", source: "APA (American Psychological Association)", title: "Health Advisory on Social Media Use in Adolescence", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
+      { type: "Video", source: "Netflix", title: "The Social Dilemma", url: "https://www.thesocialdilemma.com/", note: "Documentary on persuasive design and teen mental health." },
+      { type: "Video", source: "Channel 4 Dispatches", title: "Kids Online: Why Do They Do It?", url: "https://www.channel4.com/programmes/dispatches" },
+    ],
   },
+
   {
     slug: "16-17",
     range: "16–17",
@@ -296,8 +348,17 @@ export const AGE_BANDS: AgeBand[] = [
         "Sleep deprivation directly impairs driving safety, mood regulation and exam performance.",
       ],
     },
+    deepDive: [
+      { type: "Report", source: "APA (American Psychological Association, 2023)", title: "Health Advisory on Social Media Use in Adolescence", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
+      { type: "Study", source: "Preventive Medicine Reports (2018)", title: "Associations between screen time and lower psychological well-being among children and adolescents", url: "https://www.sciencedirect.com/science/article/pii/S2211335518301827", note: "Twenge & Campbell — large US dataset showing dose-response with screen time." },
+      { type: "Report", source: "UK Gambling Commission (2024)", title: "Young People and Gambling Survey", url: "https://www.gamblingcommission.gov.uk/statistics-and-research/publication/young-people-and-gambling-2024", note: "Loot boxes and in-game spending as gateways to problem gambling in 16–17s." },
+      { type: "Report", source: "FBI / IC3 (2024)", title: "Financial Sextortion Targeting Minors — Public Service Announcement", url: "https://www.ic3.gov/Media/Y2023/PSA230118", note: "Tactics used against teen boys via Instagram and Snapchat." },
+      { type: "Article", source: "Pew Research Center", title: "Teens, Social Media and Technology 2024", url: "https://www.pewresearch.org/internet/2024/12/12/teens-social-media-and-technology-2024/" },
+      { type: "Video", source: "Frontline (PBS)", title: "The Facebook Dilemma", url: "https://www.pbs.org/wgbh/frontline/documentary/facebook-dilemma/" },
+    ],
   },
 ];
+
 
 export type Evidence = {
   claim: string;
