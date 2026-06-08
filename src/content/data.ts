@@ -3,6 +3,12 @@
 
 export const REVIEWED = "May 2026";
 
+export type ScreenTimeGuidance = {
+  recommended: string;
+  sources: { label: string; org: string; region: string; url: string }[];
+  consequences: string[];
+};
+
 export type AgeBand = {
   slug: string;
   range: string;
@@ -13,6 +19,7 @@ export type AgeBand = {
   settings: string[];
   conversation: string[];
   redFlags: string[];
+  screenTime: ScreenTimeGuidance;
 };
 
 export const AGE_BANDS: AgeBand[] = [
@@ -45,6 +52,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Distress when a screen is turned off, every time",
       "Sleep disruption after evening screen use",
     ],
+    screenTime: {
+      recommended:
+        "Under 18 months: avoid screens except video calls. 18–24 months: only short, high-quality co-viewed content. 2–4 years: no more than 1 hour per day of any screen (TV, tablet, phone, console) — and ideally much less.",
+      sources: [
+        { label: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5", org: "World Health Organization", region: "Global", url: "https://www.who.int/publications/i/item/9789241550536" },
+        { label: "Media and Young Minds (policy statement)", org: "American Academy of Pediatrics", region: "USA", url: "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds" },
+        { label: "Screen time and young children — position statement", org: "Canadian Paediatric Society", region: "Canada", url: "https://cps.ca/en/documents/position/screen-time-and-young-children" },
+        { label: "À chaque âge son écran (3-6-9-12 framework)", org: "Serge Tisseron / French Ministry of Health", region: "France", url: "https://www.sergetisseron.com/3-6-9-12/" },
+      ],
+      consequences: [
+        "Delayed language acquisition and smaller vocabularies — repeatedly shown in studies of heavy-screen toddlers (e.g. JAMA Pediatrics, 2020).",
+        "Shorter and more disrupted sleep; melatonin suppression from evening screens.",
+        "Reduced parent–child interaction, which is the single biggest predictor of early brain development.",
+        "Higher risk of attention and self-regulation problems by school entry (CHILD Cohort Study, Canada, 2019).",
+      ],
+    },
   },
   {
     slug: "5-7",
@@ -74,6 +97,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Secretive behaviour with the device",
       "Repeating phrases or slang that feel ‘older’ than them",
     ],
+    screenTime: {
+      recommended:
+        "No more than 1 hour per day of recreational screen time (TV, tablet, console, phone combined), with screens off at least an hour before bed and no screens during meals.",
+      sources: [
+        { label: "Guidelines for physical activity, sedentary behaviour and sleep — under 5s extended to early school years", org: "World Health Organization", region: "Global", url: "https://www.who.int/publications/i/item/9789241550536" },
+        { label: "Media use in school-aged children and adolescents", org: "American Academy of Pediatrics", region: "USA", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
+        { label: "24-Hour Movement Guidelines for Children and Youth", org: "Canadian Society for Exercise Physiology", region: "Canada", url: "https://csepguidelines.ca/guidelines/children-youth/" },
+        { label: "Pas d’écran avant 6 ans (3-6-9-12 framework)", org: "Serge Tisseron / Société Française de Pédiatrie", region: "France", url: "https://www.sergetisseron.com/3-6-9-12/" },
+      ],
+      consequences: [
+        "Worse executive function and school readiness — children with >2h/day of screens score significantly lower on developmental screening (JAMA Pediatrics, 2019).",
+        "Higher rates of obesity through reduced physical activity and snack-while-watching habits (WHO European Childhood Obesity Surveillance, 2022).",
+        "Sleep onset delays of 30–60 minutes; chronic short sleep at this age predicts mood and learning problems.",
+        "Earlier and steeper drop in face-to-face play skills, which underpin friendships and emotional regulation.",
+      ],
+    },
   },
   {
     slug: "8-10",
@@ -103,6 +142,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Sudden mood shifts after using a device",
       "Asking strangely specific questions about adult topics",
     ],
+    screenTime: {
+      recommended:
+        "Up to 1.5–2 hours per day of recreational screen time across all devices, with clear screen-free zones (bedrooms, mealtimes) and a hard stop at least 60 minutes before bed.",
+      sources: [
+        { label: "Media Use in School-Aged Children and Adolescents", org: "American Academy of Pediatrics", region: "USA", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
+        { label: "24-Hour Movement Guidelines (5–17 years)", org: "Canadian Society for Exercise Physiology", region: "Canada", url: "https://csepguidelines.ca/guidelines/children-youth/" },
+        { label: "Guidelines on the use of digital devices by children (RACP)", org: "Royal Australasian College of Physicians", region: "Australia / NZ", url: "https://www.racp.edu.au/news-and-events/media-releases/screen-time-guidelines" },
+        { label: "Screen time recommendations for school-aged children", org: "Chinese Center for Disease Control and Prevention", region: "China", url: "https://www.chinacdc.cn/en/" },
+      ],
+      consequences: [
+        "Reduced sleep duration — every extra hour of evening screen use is linked to ~15 minutes less sleep (Sleep Medicine Reviews, 2021).",
+        "Higher rates of cyberbullying involvement when unsupervised on group chats (EU Kids Online, 2020).",
+        "Worse reading comprehension and vocabulary growth in heavy users (OECD PISA analyses).",
+        "Early signs of problematic gaming: irritability when stopped, sneaking devices at night, declining grades.",
+      ],
+    },
   },
   {
     slug: "11-13",
@@ -133,6 +188,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Hiding the screen when you walk in",
       "New ‘older’ online friends you’ve never heard of",
     ],
+    screenTime: {
+      recommended:
+        "Around 2 hours per day of recreational screen time (outside school work), with phones out of the bedroom overnight and a tech-free wind-down before sleep.",
+      sources: [
+        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
+        { label: "Children and parents: media use and attitudes report", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
+        { label: "Recommendations on the regulation of smartphones for children", org: "French government expert commission (Enfants et écrans)", region: "France", url: "https://www.elysee.fr/emmanuel-macron/2024/04/30/enfants-et-ecrans" },
+        { label: "Adolescent Screen Time and Mental Health (meta-analysis)", org: "JAMA Pediatrics", region: "International", url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2737909" },
+      ],
+      consequences: [
+        "Higher rates of depression and anxiety in heavy users (>3h/day on social media roughly doubles the risk — JAMA Psychiatry, 2019).",
+        "Significant sleep loss; teens who keep phones in bedrooms sleep on average 1 hour less per night (Sleep Health, 2018).",
+        "Body-image disturbance and disordered eating, especially among girls on image-led platforms.",
+        "Attention fragmentation: heavy multitaskers show measurable drops in working memory and academic performance.",
+      ],
+    },
   },
   {
     slug: "14-15",
@@ -163,6 +234,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Sudden withdrawal, secrecy, sleep loss",
       "Mentions of someone older they’ve ‘only met online’",
     ],
+    screenTime: {
+      recommended:
+        "No single hour cap is realistic at this age — aim for under 2 hours/day of pure social-media scrolling, plus protected time for sleep (9 hours), physical activity, schoolwork and offline friendships.",
+      sources: [
+        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
+        { label: "APA Health Advisory on Social Media Use in Adolescence", org: "American Psychological Association", region: "USA", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
+        { label: "Australian 24-hour movement guidelines for children and young people (5–17)", org: "Australian Department of Health", region: "Australia", url: "https://www.health.gov.au/topics/physical-activity-and-exercise/physical-activity-and-exercise-guidelines-for-all-australians/for-children-and-young-people-5-to-17-years" },
+        { label: "Estudo Geração Z e ecrãs", org: "Direção-Geral da Saúde", region: "Portugal / EU", url: "https://www.dgs.pt/" },
+      ],
+      consequences: [
+        "Strong link between >3h/day on social media and depression, self-harm and suicidal ideation (Lancet Child & Adolescent Health, 2019).",
+        "Increased exposure to sextortion and image-based abuse — UK Internet Watch Foundation recorded record numbers in 2024.",
+        "Algorithmic radicalisation into pro-anorexia, self-harm or misogynistic ‘manosphere’ content (Amnesty International, 2023).",
+        "Chronic sleep debt impairs mood, immune function and academic performance.",
+      ],
+    },
   },
   {
     slug: "16-17",
@@ -193,6 +280,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Unexplained money in or out",
       "Talk of ‘easy money’ opportunities online",
     ],
+    screenTime: {
+      recommended:
+        "Focus on quality over a strict hour cap: protect 8–9 hours of sleep, daily physical activity, and at least one regular offline social activity. Recreational screen time above ~4 hours/day is consistently linked to worse mental health.",
+      sources: [
+        { label: "APA Health Advisory on Social Media Use in Adolescence", org: "American Psychological Association", region: "USA", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
+        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
+        { label: "Screen time, physical activity and mental health in adolescents", org: "The Lancet Child & Adolescent Health", region: "International", url: "https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(19)30186-5/fulltext" },
+        { label: "Korean adolescent smartphone overdependence survey", org: "Korean Ministry of Science and ICT (NIA)", region: "South Korea", url: "https://www.nia.or.kr/site/nia_eng/main.do" },
+      ],
+      consequences: [
+        "Higher prevalence of anxiety, depression and loneliness with heavy social media use (>3h/day).",
+        "Financial harm from gambling-style game mechanics, crypto scams and ‘money muling’ recruitment via TikTok/Snapchat.",
+        "Permanent digital footprint: nudes, drunken posts and group-chat screenshots resurface during university and job applications.",
+        "Sleep deprivation directly impairs driving safety, mood regulation and exam performance.",
+      ],
+    },
   },
 ];
 

@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { AGE_BANDS, REVIEWED } from "@/content/data";
-import { ArrowLeft } from "lucide-react";
+import { AGE_BANDS, REVIEWED, type ScreenTimeGuidance } from "@/content/data";
+import { ArrowLeft, Clock, AlertTriangle, BookOpen, ExternalLink } from "lucide-react";
 
 export const Route = createFileRoute("/age-guides/$age")({
   component: AgeGuide,
@@ -44,6 +44,7 @@ function AgeGuide() {
       </header>
 
       <div className="mt-14 space-y-12">
+        <ScreenTimeBlock data={band.screenTime} />
         <Section title="Typical digital behaviours" items={band.behaviours} />
         <Section title="Risks that actually matter" items={band.risks} accent="danger" />
         <Section title="Settings worth changing tonight" items={band.settings} accent="action" />
@@ -78,6 +79,65 @@ function Section({ title, items, accent }: { title: string; items: string[]; acc
           </li>
         ))}
       </ul>
+    </section>
+  );
+}
+
+function ScreenTimeBlock({ data }: { data: ScreenTimeGuidance }) {
+  return (
+    <section className="rounded-2xl border border-border bg-secondary/60 p-7">
+      <div className="flex items-center gap-2 text-primary">
+        <Clock className="size-4" />
+        <p className="eyebrow !text-primary">Screen time — what experts recommend</p>
+      </div>
+      <p className="mt-4 font-display text-2xl leading-snug tracking-tight">
+        {data.recommended}
+      </p>
+      <p className="mt-2 text-sm text-muted-foreground">
+        Total time across phone, tablet, TV, console and computer combined (school work usually excluded).
+      </p>
+
+      <div className="mt-7 grid gap-7 md:grid-cols-2">
+        <div>
+          <div className="flex items-center gap-2 text-destructive">
+            <AlertTriangle className="size-4" />
+            <p className="eyebrow !text-destructive">If there are no limits</p>
+          </div>
+          <ul className="mt-4 space-y-3">
+            {data.consequences.map((c) => (
+              <li key={c} className="flex gap-3 text-sm leading-relaxed">
+                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-destructive" />
+                <span>{c}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <div className="flex items-center gap-2 text-foreground/80">
+            <BookOpen className="size-4" />
+            <p className="eyebrow">Sources around the world</p>
+          </div>
+          <ul className="mt-4 space-y-3">
+            {data.sources.map((s) => (
+              <li key={s.url} className="text-sm leading-relaxed">
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-start gap-1.5 font-medium hover:text-primary"
+                >
+                  <span>{s.label}</span>
+                  <ExternalLink className="mt-1 size-3.5 shrink-0 opacity-60 group-hover:opacity-100" />
+                </a>
+                <p className="text-xs text-muted-foreground">
+                  {s.org} · {s.region}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </section>
   );
 }
