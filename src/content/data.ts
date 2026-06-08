@@ -97,6 +97,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Secretive behaviour with the device",
       "Repeating phrases or slang that feel ‘older’ than them",
     ],
+    screenTime: {
+      recommended:
+        "No more than 1 hour per day of recreational screen time (TV, tablet, console, phone combined), with screens off at least an hour before bed and no screens during meals.",
+      sources: [
+        { label: "Guidelines for physical activity, sedentary behaviour and sleep — under 5s extended to early school years", org: "World Health Organization", region: "Global", url: "https://www.who.int/publications/i/item/9789241550536" },
+        { label: "Media use in school-aged children and adolescents", org: "American Academy of Pediatrics", region: "USA", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
+        { label: "24-Hour Movement Guidelines for Children and Youth", org: "Canadian Society for Exercise Physiology", region: "Canada", url: "https://csepguidelines.ca/guidelines/children-youth/" },
+        { label: "Pas d’écran avant 6 ans (3-6-9-12 framework)", org: "Serge Tisseron / Société Française de Pédiatrie", region: "France", url: "https://www.sergetisseron.com/3-6-9-12/" },
+      ],
+      consequences: [
+        "Worse executive function and school readiness — children with >2h/day of screens score significantly lower on developmental screening (JAMA Pediatrics, 2019).",
+        "Higher rates of obesity through reduced physical activity and snack-while-watching habits (WHO European Childhood Obesity Surveillance, 2022).",
+        "Sleep onset delays of 30–60 minutes; chronic short sleep at this age predicts mood and learning problems.",
+        "Earlier and steeper drop in face-to-face play skills, which underpin friendships and emotional regulation.",
+      ],
+    },
   },
   {
     slug: "8-10",
