@@ -9,6 +9,14 @@ export type ScreenTimeGuidance = {
   consequences: string[];
 };
 
+export type ExpertResource = {
+  title: string;
+  source: string;
+  type: "Study" | "Article" | "Report" | "Video" | "Book";
+  url: string;
+  note?: string;
+};
+
 export type AgeBand = {
   slug: string;
   range: string;
@@ -20,7 +28,9 @@ export type AgeBand = {
   conversation: string[];
   redFlags: string[];
   screenTime: ScreenTimeGuidance;
+  deepDive: ExpertResource[];
 };
+
 
 export const AGE_BANDS: AgeBand[] = [
   {
