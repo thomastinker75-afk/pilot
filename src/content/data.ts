@@ -3,6 +3,12 @@
 
 export const REVIEWED = "May 2026";
 
+export type ScreenTimeGuidance = {
+  recommended: string;
+  sources: { label: string; org: string; region: string; url: string }[];
+  consequences: string[];
+};
+
 export type AgeBand = {
   slug: string;
   range: string;
@@ -13,6 +19,7 @@ export type AgeBand = {
   settings: string[];
   conversation: string[];
   redFlags: string[];
+  screenTime: ScreenTimeGuidance;
 };
 
 export const AGE_BANDS: AgeBand[] = [
