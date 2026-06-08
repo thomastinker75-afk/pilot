@@ -142,6 +142,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Sudden mood shifts after using a device",
       "Asking strangely specific questions about adult topics",
     ],
+    screenTime: {
+      recommended:
+        "Up to 1.5–2 hours per day of recreational screen time across all devices, with clear screen-free zones (bedrooms, mealtimes) and a hard stop at least 60 minutes before bed.",
+      sources: [
+        { label: "Media Use in School-Aged Children and Adolescents", org: "American Academy of Pediatrics", region: "USA", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
+        { label: "24-Hour Movement Guidelines (5–17 years)", org: "Canadian Society for Exercise Physiology", region: "Canada", url: "https://csepguidelines.ca/guidelines/children-youth/" },
+        { label: "Guidelines on the use of digital devices by children (RACP)", org: "Royal Australasian College of Physicians", region: "Australia / NZ", url: "https://www.racp.edu.au/news-and-events/media-releases/screen-time-guidelines" },
+        { label: "Screen time recommendations for school-aged children", org: "Chinese Center for Disease Control and Prevention", region: "China", url: "https://www.chinacdc.cn/en/" },
+      ],
+      consequences: [
+        "Reduced sleep duration — every extra hour of evening screen use is linked to ~15 minutes less sleep (Sleep Medicine Reviews, 2021).",
+        "Higher rates of cyberbullying involvement when unsupervised on group chats (EU Kids Online, 2020).",
+        "Worse reading comprehension and vocabulary growth in heavy users (OECD PISA analyses).",
+        "Early signs of problematic gaming: irritability when stopped, sneaking devices at night, declining grades.",
+      ],
+    },
   },
   {
     slug: "11-13",
