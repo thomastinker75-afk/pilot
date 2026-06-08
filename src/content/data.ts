@@ -280,6 +280,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Unexplained money in or out",
       "Talk of ‘easy money’ opportunities online",
     ],
+    screenTime: {
+      recommended:
+        "Focus on quality over a strict hour cap: protect 8–9 hours of sleep, daily physical activity, and at least one regular offline social activity. Recreational screen time above ~4 hours/day is consistently linked to worse mental health.",
+      sources: [
+        { label: "APA Health Advisory on Social Media Use in Adolescence", org: "American Psychological Association", region: "USA", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
+        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
+        { label: "Screen time, physical activity and mental health in adolescents", org: "The Lancet Child & Adolescent Health", region: "International", url: "https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(19)30186-5/fulltext" },
+        { label: "Korean adolescent smartphone overdependence survey", org: "Korean Ministry of Science and ICT (NIA)", region: "South Korea", url: "https://www.nia.or.kr/site/nia_eng/main.do" },
+      ],
+      consequences: [
+        "Higher prevalence of anxiety, depression and loneliness with heavy social media use (>3h/day).",
+        "Financial harm from gambling-style game mechanics, crypto scams and ‘money muling’ recruitment via TikTok/Snapchat.",
+        "Permanent digital footprint: nudes, drunken posts and group-chat screenshots resurface during university and job applications.",
+        "Sleep deprivation directly impairs driving safety, mood regulation and exam performance.",
+      ],
+    },
   },
 ];
 
