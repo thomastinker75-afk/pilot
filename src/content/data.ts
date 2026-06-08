@@ -52,6 +52,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Distress when a screen is turned off, every time",
       "Sleep disruption after evening screen use",
     ],
+    screenTime: {
+      recommended:
+        "Under 18 months: avoid screens except video calls. 18–24 months: only short, high-quality co-viewed content. 2–4 years: no more than 1 hour per day of any screen (TV, tablet, phone, console) — and ideally much less.",
+      sources: [
+        { label: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5", org: "World Health Organization", region: "Global", url: "https://www.who.int/publications/i/item/9789241550536" },
+        { label: "Media and Young Minds (policy statement)", org: "American Academy of Pediatrics", region: "USA", url: "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds" },
+        { label: "Screen time and young children — position statement", org: "Canadian Paediatric Society", region: "Canada", url: "https://cps.ca/en/documents/position/screen-time-and-young-children" },
+        { label: "À chaque âge son écran (3-6-9-12 framework)", org: "Serge Tisseron / French Ministry of Health", region: "France", url: "https://www.sergetisseron.com/3-6-9-12/" },
+      ],
+      consequences: [
+        "Delayed language acquisition and smaller vocabularies — repeatedly shown in studies of heavy-screen toddlers (e.g. JAMA Pediatrics, 2020).",
+        "Shorter and more disrupted sleep; melatonin suppression from evening screens.",
+        "Reduced parent–child interaction, which is the single biggest predictor of early brain development.",
+        "Higher risk of attention and self-regulation problems by school entry (CHILD Cohort Study, Canada, 2019).",
+      ],
+    },
   },
   {
     slug: "5-7",
