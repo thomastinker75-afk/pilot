@@ -618,6 +618,371 @@ export const APPS: AppGuide[] = [
       riskVideo: { title: "Call for gaming loot box ban", channel: "Sky News", youtubeId: "8osRlWJwkbk", note: "Sky News report on addiction concerns and gambling-style mechanics in Fortnite and similar games." },
     },
   },
+  {
+    slug: "telegram", name: "Telegram", category: "Messaging", minAge: "17+ (App Store) / 13+ (Telegram terms)",
+    why: "Huge group chats and ‘channels’ broadcasting to thousands. Popular for fandoms, leaks and crypto.",
+    risks: ["Public channels with extreme / sexual content", "Strangers in large groups", "Weak moderation of CSAM and scams"],
+    settings: ["Phone Number: Nobody", "Who can add me to groups: My Contacts", "Disable auto-download of media", "Sensitive Content filter on"],
+    detail: {
+      overview: "Telegram mixes private chats, huge public groups (up to 200,000 members) and one-way ‘channels’. Most chats are NOT end-to-end encrypted by default — only ‘Secret Chats’ are.",
+      ageRationale: "Apple’s App Store rates Telegram 17+ due to frequent/intense mature themes. Telegram’s own terms set 13+, but its loose moderation is why child-safety bodies flag it as higher risk.",
+      evidence: [
+        { claim: "Telegram’s CEO was arrested in France in 2024 over the platform’s alleged failure to act on CSAM, drug trafficking and fraud in groups and channels.", publisher: "BBC News", title: "Telegram boss Pavel Durov charged in France", year: "2024", url: "https://www.bbc.com/news/articles/c4ng9nz0g5xo", type: "Investigative journalism" },
+        { claim: "Internet Watch Foundation reports Telegram is repeatedly used to share child sexual abuse material via large channels.", publisher: "Internet Watch Foundation", title: "Annual Report 2023", year: "2023", url: "https://www.iwf.org.uk/annual-report-2023/", type: "Charity / NGO" },
+      ],
+      parentTalkingPoints: [
+        "Ask which channels they’re subscribed to — channels, not chats, are where most harmful content lives.",
+        "Turn off auto-download so explicit images/videos don’t land in their gallery automatically.",
+      ],
+      settingsHowTo: [
+        { label: "Telegram privacy & security settings", url: "https://telegram.org/faq#q-what-are-your-thoughts-on-internet-privacy" },
+        { label: "Internet Matters: Telegram parents’ guide", url: "https://www.internetmatters.org/hub/news-blogs/what-is-telegram-app-what-parents-need-to-know/" },
+      ],
+      videoTutorials: [
+        { title: "Telegram — what parents need to know", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Telegram+parents+guide" },
+        { title: "How to lock down Telegram privacy settings", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Telegram+privacy+settings+parents" },
+      ],
+    },
+  },
+  {
+    slug: "twitch", name: "Twitch", category: "Video", minAge: "13+",
+    why: "Live game streaming with chat. Streamers become parasocial role models.",
+    risks: ["Live, unmoderated chat", "Grooming via Whispers / DMs", "Exposure to adult ‘Just Chatting’ streams"],
+    settings: ["Whispers: Friends only", "Block links in chat", "Hide mature streams", "Two-factor authentication"],
+    detail: {
+      overview: "Twitch streams live video — usually games — with a real-time chat. Streamers can also DM viewers (‘Whispers’). Content moderation happens after the fact, not before.",
+      ageRationale: "Twitch terms require users to be 13+. BBC and others have documented grooming and predatory behaviour towards minors, particularly via Whispers and small-channel chats.",
+      evidence: [
+        { claim: "BBC investigation found predators using Twitch to target children, with the platform slow to remove offending accounts.", publisher: "BBC News (investigative)", title: "Twitch ‘failing’ to deal with child predators", year: "2022", url: "https://www.bbc.co.uk/news/technology-61628026", type: "Investigative journalism" },
+        { claim: "Bloomberg investigation documented hundreds of accounts following thousands of children on Twitch.", publisher: "Bloomberg", title: "Twitch Has a Massive Child-Predator Problem", year: "2022", url: "https://www.bloomberg.com/news/features/2022-05-25/twitch-tv-has-a-child-predator-problem-amazon-knows-it", type: "Investigative journalism" },
+      ],
+      parentTalkingPoints: [
+        "Ask who they watch — and if anyone has ever DM’d them. Whispers are where the risk concentrates.",
+        "Agree they’ll never share their handle on other platforms (Discord, Snap) — that’s how groomers move them off-platform.",
+      ],
+      settingsHowTo: [
+        { label: "Twitch safety & privacy settings", url: "https://safety.twitch.tv/s/article/Guide-Personal-Safety-Settings" },
+        { label: "Internet Matters: Twitch guide", url: "https://www.internetmatters.org/hub/esafety-news/twitch-what-parents-need-to-know/" },
+      ],
+      videoTutorials: [
+        { title: "Twitch safety settings walkthrough", channel: "Twitch (official)", url: "https://www.youtube.com/results?search_query=Twitch+safety+settings+how+to" },
+        { title: "Twitch — what parents need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Twitch+parents+guide" },
+      ],
+    },
+  },
+  {
+    slug: "kick", name: "Kick", category: "Video", minAge: "13+",
+    why: "Twitch competitor with looser rules. Popular for gambling and shock streams.",
+    risks: ["Live gambling content (slots, crash games)", "Minimal moderation", "Streamers explicitly courting under-18 audiences"],
+    settings: ["No mature-content filter — supervise directly", "Use device-level screen time / DNS blocks", "Disable account creation if possible"],
+    detail: {
+      overview: "Kick is a live-streaming platform that markets itself as more streamer-friendly than Twitch. It tolerates content (gambling, shock material) that Twitch bans, which is the core safeguarding concern.",
+      ageRationale: "Kick’s terms require users to be 13+, but it has a documented track record of light moderation and prominent partnerships with crypto-casino brand Stake.com, making it inappropriate for most under-16s.",
+      evidence: [
+        { claim: "New York Times investigation linked Kick’s rise to Stake.com gambling streams openly viewable by minors.", publisher: "The New York Times", title: "How Stake Built a Crypto-Gambling Empire on Streaming", year: "2023", url: "https://www.nytimes.com/2023/10/07/business/stake-kick-crypto-gambling.html", type: "Investigative journalism" },
+        { claim: "Australia’s eSafety Commissioner has named Kick among platforms of concern for child safety due to weak moderation.", publisher: "eSafety Commissioner (Australia)", title: "Basic Online Safety Expectations transparency reports", year: "2024", url: "https://www.esafety.gov.au/industry/basic-online-safety-expectations/transparency-reports", type: "Regulator" },
+      ],
+      parentTalkingPoints: [
+        "If they watch Kick for a specific streamer, check if that streamer also posts on YouTube — usually a safer alternative.",
+        "Talk plainly about gambling: slot streams are paid promotion, not skill.",
+      ],
+      settingsHowTo: [
+        { label: "Kick community guidelines", url: "https://kick.com/community-guidelines" },
+        { label: "Block sites via Google Family Link / Apple Screen Time", url: "https://families.google/familylink/" },
+      ],
+      videoTutorials: [
+        { title: "What is Kick? A parent’s explainer", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=what+is+Kick+streaming+parents+guide" },
+        { title: "Blocking apps with Apple Screen Time", channel: "Apple Support", url: "https://www.youtube.com/results?search_query=Apple+Screen+Time+block+app+how+to" },
+      ],
+    },
+  },
+  {
+    slug: "yubo", name: "Yubo", category: "Social", minAge: "13+ (with separate 13–17 community)",
+    why: "‘Live, swipe and chat with new friends.’ Often called ‘Tinder for teens’.",
+    risks: ["Strangers connecting by location", "Live video with people they’ve never met", "History of grooming and sextortion cases"],
+    settings: ["Disable location precision", "Age-verification ON", "Limit livestream audience", "Block & report"],
+    detail: {
+      overview: "Yubo is a social-discovery app where users swipe to add friends and join live video rooms. It separates users into 13–17 and 18+ pools, with age estimation, but pools have been bypassed in the past.",
+      ageRationale: "Yubo is 13+. It has been linked to multiple high-profile grooming, sexual-assault and ‘swatting’ cases, leading France’s data regulator and the UK NCA to issue formal warnings.",
+      evidence: [
+        { claim: "BBC investigation linked Yubo to grooming, sexual assault and an extremist mass-shooting plot.", publisher: "BBC News (investigative)", title: "Yubo: The ‘Tinder for teens’ used by predators", year: "2022", url: "https://www.bbc.co.uk/news/technology-61610556", type: "Investigative journalism" },
+        { claim: "French data regulator CNIL formally sanctioned Yubo over child-safety and data-protection failings.", publisher: "CNIL (France)", title: "Sanction against TWELVE APP (Yubo)", year: "2022", url: "https://www.cnil.fr/en/cookies-cnil-fines-twelve-app-yubo-eu175000", type: "Regulator" },
+      ],
+      parentTalkingPoints: [
+        "Yubo’s whole purpose is meeting strangers. If they want to chat with school friends, suggest WhatsApp or iMessage instead.",
+        "If they insist on using it, set a rule: no livestreams alone in their bedroom.",
+      ],
+      settingsHowTo: [
+        { label: "Yubo safety centre", url: "https://safety.yubo.live/" },
+        { label: "Internet Matters: Yubo guide", url: "https://www.internetmatters.org/hub/esafety-news/yubo-app-what-parents-need-to-know/" },
+      ],
+      videoTutorials: [
+        { title: "Yubo — what parents need to know", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Yubo+parents+guide" },
+        { title: "Common Sense Media review of Yubo", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Yubo+review" },
+      ],
+    },
+  },
+  {
+    slug: "x-twitter", name: "X (formerly Twitter)", category: "Social", minAge: "13+",
+    why: "News, memes, fandoms, sports — and trending political content.",
+    risks: ["Pornographic content allowed by default", "Targeted harassment via replies / quote-posts", "Misinformation amplified by paid blue ticks"],
+    settings: ["Hide sensitive content", "Protected posts (private account)", "Mute words & accounts", "Disable DMs from non-followers"],
+    detail: {
+      overview: "X allows adult content (including pornography) on the main feed by default. Since 2022, safety teams have been cut and verification was opened to anyone paying — both of which child-safety bodies link to higher exposure for minors.",
+      ageRationale: "Minimum age 13. The platform’s 2023 policy permitting ‘consensually produced adult nudity and behaviour’ is a key reason most child-safety organisations no longer recommend it for under-16s.",
+      evidence: [
+        { claim: "EU Commission opened formal proceedings against X under the Digital Services Act over deceptive design and risk to minors.", publisher: "European Commission", title: "Commission opens formal proceedings against X under DSA", year: "2023", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_23_6709", type: "Regulator" },
+        { claim: "NSPCC and other charities have warned that loosened content rules on X expose minors to pornography and hate speech in the default feed.", publisher: "NSPCC", title: "Online safety policy briefings", year: "2024", url: "https://www.nspcc.org.uk/about-us/news-opinion/", type: "Charity / NGO" },
+      ],
+      parentTalkingPoints: [
+        "Switch ‘Display media that may contain sensitive content’ OFF in Settings → Privacy and safety.",
+        "Make the account ‘Protected’ so only approved followers see posts and can reply.",
+      ],
+      settingsHowTo: [
+        { label: "X safety and privacy settings", url: "https://help.x.com/en/safety-and-security" },
+        { label: "Common Sense Media: X parent guide", url: "https://www.commonsensemedia.org/articles/parents-ultimate-guide-to-twitter-x" },
+      ],
+      videoTutorials: [
+        { title: "How to lock down X / Twitter for teens", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Twitter+X+parents+guide" },
+        { title: "Hide sensitive content on X", channel: "X (official help)", url: "https://www.youtube.com/results?search_query=X+twitter+hide+sensitive+content+how+to" },
+      ],
+    },
+  },
+  {
+    slug: "reddit", name: "Reddit", category: "Social", minAge: "13+",
+    why: "Forums (‘subreddits’) for every interest — including ones a 13-year-old shouldn’t see.",
+    risks: ["NSFW subreddits visible after one click", "Anonymous DMs", "Doxxing and pile-ons"],
+    settings: ["Adult content: OFF", "Chat requests: Nobody / Followers only", "Mute subreddits"],
+    detail: {
+      overview: "Reddit is a network of user-run forums. Most are safe, but adult and disturbing communities exist and become accessible the moment a teen toggles ‘over 18’ in settings.",
+      ageRationale: "Minimum age 13. Reddit relies almost entirely on self-declared age for the NSFW gate — Ofcom and others have flagged this as inadequate.",
+      evidence: [
+        { claim: "Ofcom’s Children’s Online User Experiences research highlights Reddit among platforms where children encounter harmful content despite age limits.", publisher: "Ofcom", title: "Children’s online user experiences", year: "2024", url: "https://www.ofcom.org.uk/online-safety/protecting-children/childrens-online-user-experiences/", type: "Regulator" },
+        { claim: "Pew Research found Reddit use among US teens is rising, while moderation remains entirely volunteer-driven.", publisher: "Pew Research Center", title: "Teens, Social Media and Technology 2024", year: "2024", url: "https://www.pewresearch.org/internet/2024/12/12/teens-social-media-and-technology-2024/", type: "Charity / NGO" },
+      ],
+      parentTalkingPoints: [
+        "Check ‘Adult content’ is OFF in Settings → Account — toggling it on unlocks pornography sitewide.",
+        "Show them how to block a subreddit; you don’t have to argue about every community.",
+      ],
+      settingsHowTo: [
+        { label: "Reddit safety and privacy settings", url: "https://support.reddithelp.com/hc/en-us/articles/360043068032" },
+        { label: "Common Sense Media: Reddit guide", url: "https://www.commonsensemedia.org/website-reviews/reddit" },
+      ],
+      videoTutorials: [
+        { title: "Reddit for parents — what you need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Reddit+parents+guide" },
+        { title: "How to block subreddits and disable NSFW", channel: "Reddit help", url: "https://www.youtube.com/results?search_query=Reddit+disable+NSFW+block+subreddit" },
+      ],
+    },
+  },
+  {
+    slug: "bereal", name: "BeReal", category: "Social", minAge: "13+",
+    why: "Once-a-day photo prompt designed to feel ‘authentic’. Friend-of-friend feed.",
+    risks: ["Location attached to posts by default", "‘RealMojis’ from friends-of-friends", "Pressure to post in unsafe situations (class, driving)"],
+    settings: ["Discovery: Friends only", "Disable location on posts", "Lock account for over-18 visibility"],
+    detail: {
+      overview: "BeReal sends a daily notification — users have two minutes to post a front+back camera photo. Posts can include precise location and are visible to friends and, optionally, the global Discovery feed.",
+      ageRationale: "Minimum age 13. The location-by-default design and the social pressure of the 2-minute window are the main parent concerns flagged by Internet Matters and Common Sense Media.",
+      evidence: [
+        { claim: "Common Sense Media review warns that BeReal’s default settings expose location and that the ‘authentic’ framing encourages over-sharing.", publisher: "Common Sense Media", title: "BeReal parents’ guide", year: "2023", url: "https://www.commonsensemedia.org/app-reviews/bereal", type: "Charity / NGO" },
+        { claim: "Internet Matters flags BeReal’s pressure-prompt design as a wellbeing risk for anxious teens.", publisher: "Internet Matters", title: "BeReal — what parents need to know", year: "2023", url: "https://www.internetmatters.org/hub/esafety-news/bereal-app-what-parents-need-to-know/", type: "Charity / NGO" },
+      ],
+      parentTalkingPoints: [
+        "Agree they won’t post in class, on public transport or in the car — the 2-minute timer isn’t a real deadline.",
+        "Switch off location on the camera screen before they post.",
+      ],
+      settingsHowTo: [
+        { label: "BeReal safety and privacy", url: "https://help.bereal.com/hc/en-us/categories/4406950928657-Safety-Privacy" },
+        { label: "Internet Matters: BeReal guide", url: "https://www.internetmatters.org/hub/esafety-news/bereal-app-what-parents-need-to-know/" },
+      ],
+      videoTutorials: [
+        { title: "BeReal — what parents need to know", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+BeReal+parents+guide" },
+        { title: "Disable location on BeReal", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=BeReal+location+settings+how+to" },
+      ],
+    },
+  },
+  {
+    slug: "ngl-sendit", name: "NGL / Sendit / Yolo", category: "Social", minAge: "17+ (App Store)",
+    why: "Anonymous Q&A apps that bolt on to Instagram / Snap stories.",
+    risks: ["Anonymous bullying and threats", "Fake ‘replies’ generated by the app to drive engagement", "Sextortion via anonymous messages"],
+    settings: ["Don’t install — there are no safe settings; remove from device"],
+    detail: {
+      overview: "NGL (‘Not Gonna Lie’) and similar apps let users receive anonymous messages via a link shared on Instagram or Snap. They’ve been repeatedly investigated for staging fake replies and for serving as a vector for cyberbullying and sextortion.",
+      ageRationale: "App stores rate NGL 17+. The FTC has explicitly named NGL as deceptive and harmful to teens, and Yolo / Sendit have been removed from Snap Kit after sextortion incidents.",
+      evidence: [
+        { claim: "FTC banned NGL from offering its service to under-18s and fined it $5m over deceptive AI-generated messages and aggressive marketing to teens.", publisher: "Federal Trade Commission (US)", title: "FTC and Los Angeles DA to ban anonymous messaging app NGL from offering its service to minors", year: "2024", url: "https://www.ftc.gov/news-events/news/press-releases/2024/07/ftc-los-angeles-da-ban-anonymous-messaging-app-ngl-offering-its-service-minors-over-charges-it", type: "Regulator" },
+        { claim: "Snap removed Yolo and LMK from its platform after a lawsuit linked them to the suicide of a teen targeted with anonymous bullying.", publisher: "NPR", title: "Snapchat removes anonymous messaging apps after teen’s death", year: "2021", url: "https://www.npr.org/2021/05/10/995453530/snapchat-removes-anonymous-messaging-apps-yolo-and-lmk-after-teens-death", type: "Investigative journalism" },
+      ],
+      parentTalkingPoints: [
+        "If you find NGL/Sendit/Yolo on their phone, delete it — there’s no ‘safe configuration’.",
+        "Talk about the FTC finding: many ‘anonymous messages’ they receive are written by the app itself to make them want to pay for hints.",
+      ],
+      settingsHowTo: [
+        { label: "FTC consumer advice: anonymous messaging apps", url: "https://consumer.ftc.gov/consumer-alerts/2024/07/parents-anonymous-messaging-apps-are-bad-news-teens" },
+        { label: "How to uninstall apps & block re-install (Apple)", url: "https://support.apple.com/en-gb/HT201304" },
+      ],
+      videoTutorials: [
+        { title: "FTC warns parents about NGL", channel: "FTC (official)", url: "https://www.youtube.com/results?search_query=FTC+NGL+anonymous+messaging+app+teens" },
+        { title: "Anonymous apps and teen safety", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+anonymous+messaging+apps" },
+      ],
+    },
+  },
+  {
+    slug: "omegle-style", name: "Random video chat (Monkey, Azar, ChatHub)", category: "Social", minAge: "18+",
+    why: "Random video chat with strangers — the niche Omegle filled before it shut down in 2023.",
+    risks: ["Exposure to live nudity from strangers", "Grooming and recorded sextortion", "Almost no age verification"],
+    settings: ["Don’t install — block via device-level parental controls"],
+    detail: {
+      overview: "Apps in this category pair the user with a random stranger via video. After Omegle shut down in 2023 following a landmark child-trafficking lawsuit, copycat apps like Monkey, Azar and ChatHub absorbed the same audience — and the same risks.",
+      ageRationale: "These services are 18+ in their terms but make almost no attempt to verify age. They are repeatedly named in NCA, NSPCC and FBI warnings about live grooming and sextortion of minors.",
+      evidence: [
+        { claim: "Omegle shut down in 2023 after settling a lawsuit brought by a girl groomed on the site aged 11 — the judge ruled the platform’s design itself was the harm.", publisher: "BBC News", title: "Omegle: Video chat site shuts down after abuse claims", year: "2023", url: "https://www.bbc.co.uk/news/technology-67364634", type: "Investigative journalism" },
+        { claim: "NCA / CEOP repeatedly warn that random video-chat apps are a primary vector for live-streamed child sexual abuse and sextortion.", publisher: "CEOP (National Crime Agency, UK)", title: "Sextortion: alert for parents and carers", year: "2024", url: "https://www.ceopeducation.co.uk/parents/articles/sextortion-an-alert-for-parents-and-carers/", type: "Regulator" },
+      ],
+      parentTalkingPoints: [
+        "These apps exist for one thing: randomly seeing strangers on camera. There is no child-safe version.",
+        "Use Screen Time / Family Link to block category ‘Social Networking’ or specific apps by bundle ID.",
+      ],
+      settingsHowTo: [
+        { label: "Apple Screen Time — block apps", url: "https://support.apple.com/en-gb/HT201304" },
+        { label: "Google Family Link — block apps", url: "https://families.google/familylink/" },
+      ],
+      videoTutorials: [
+        { title: "Block apps with Apple Screen Time", channel: "Apple Support", url: "https://www.youtube.com/results?search_query=Apple+Screen+Time+block+apps+how+to" },
+        { title: "Random video chat apps — what parents need to know", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+random+video+chat+apps" },
+      ],
+    },
+  },
+  {
+    slug: "minecraft", name: "Minecraft (online / servers)", category: "Game", minAge: "7+ (PEGI) — online 13+ recommended",
+    why: "Sandbox building game. Solo play is fine; third-party servers are where risk lives.",
+    risks: ["Open voice chat on third-party servers", "Grooming on unofficial servers", "Skins / mods downloaded from outside stores"],
+    settings: ["Microsoft Family — friends-only multiplayer", "Disable chat on servers", "Whitelist allowed servers only"],
+    detail: {
+      overview: "Minecraft itself is appropriate for primary-age kids. The risk is multiplayer: third-party ‘servers’ run by anyone, often with open chat and adult moderators, and free downloadable mods that bypass official stores.",
+      ageRationale: "PEGI rates Minecraft 7+. Mojang/Microsoft recommend 13+ for online play because chat moderation depends on each server’s owner, not on Mojang.",
+      evidence: [
+        { claim: "UK NCA / CEOP have repeatedly warned that grooming occurs on third-party Minecraft servers via voice and text chat.", publisher: "CEOP Education", title: "Minecraft: advice for parents and carers", year: "2023", url: "https://www.ceopeducation.co.uk/parents/articles/minecraft-what-parents-need-to-know/", type: "Regulator" },
+        { claim: "BBC investigation found extremist and grooming content on private Minecraft servers used by UK children.", publisher: "BBC News", title: "Minecraft used by predators to target children", year: "2023", url: "https://www.bbc.co.uk/news/technology-65614257", type: "Investigative journalism" },
+      ],
+      parentTalkingPoints: [
+        "Single-player and ‘realms’ with school friends are very different from public servers. Ask which one they play.",
+        "If they want a public server, look it up together — most legit ones have a clear age policy and Discord rules.",
+      ],
+      settingsHowTo: [
+        { label: "Microsoft Family Safety for Minecraft", url: "https://www.minecraft.net/en-us/article/minecraft-and-microsoft-family" },
+        { label: "Internet Matters: Minecraft guide", url: "https://www.internetmatters.org/hub/guidance/minecraft-a-parents-guide/" },
+      ],
+      videoTutorials: [
+        { title: "Minecraft parental controls — full walkthrough", channel: "Microsoft (official)", url: "https://www.youtube.com/results?search_query=Microsoft+Family+Minecraft+parental+controls" },
+        { title: "Minecraft for parents — what you need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Minecraft+parents+guide" },
+      ],
+    },
+  },
+  {
+    slug: "vrchat", name: "VRChat", category: "Game", minAge: "13+ (often played by under-13s)",
+    why: "Social VR worlds in headsets like Meta Quest. Voice-only, full-body avatars, no moderation in many rooms.",
+    risks: ["Adult-themed worlds visible to children", "Sexual harassment and ‘virtual groping’", "Voice chat with anyone in the room"],
+    settings: ["Trust system: Friends+ only", "Disable open voice", "Use Meta Quest parental supervision"],
+    detail: {
+      overview: "VRChat lets users move between user-created 3D ‘worlds’ as customised avatars, with live voice chat. Many worlds are 18+ themed but discoverable by anyone with an account.",
+      ageRationale: "VRChat’s terms are 13+ but child-safety bodies — including the BBC, NSPCC and Center for Countering Digital Hate — have documented children encountering sexual content and harassment within minutes.",
+      evidence: [
+        { claim: "BBC Panorama reporter, posing as a 13-year-old, encountered avatars simulating sex, racist abuse and a grooming attempt within VRChat.", publisher: "BBC Panorama", title: "Children in the metaverse — investigation", year: "2022", url: "https://www.bbc.co.uk/news/technology-60415317", type: "Investigative journalism" },
+        { claim: "Center for Countering Digital Hate found incidents of abuse including harassment of minors every 7 minutes in VRChat ‘Metaverse’ worlds.", publisher: "Center for Countering Digital Hate", title: "Facebook’s Metaverse", year: "2021", url: "https://counterhate.com/research/facebooks-metaverse/", type: "Charity / NGO" },
+      ],
+      parentTalkingPoints: [
+        "VR feels different to a screen — harassment can be genuinely distressing. Agree they’ll take the headset off and tell you if anything feels off.",
+        "Use Meta Quest’s parental supervision to set VRChat to age-appropriate worlds only.",
+      ],
+      settingsHowTo: [
+        { label: "Meta Quest parental supervision", url: "https://www.meta.com/help/quest/articles/accounts/account-settings-and-management/parent-account/" },
+        { label: "VRChat safety & trust system", url: "https://hello.vrchat.com/blog/vrchat-safety-and-trust-system" },
+      ],
+      videoTutorials: [
+        { title: "VRChat — what parents need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+VRChat+parents+guide" },
+        { title: "Meta Quest parental controls walkthrough", channel: "Meta (official)", url: "https://www.youtube.com/results?search_query=Meta+Quest+parental+controls+how+to" },
+      ],
+    },
+  },
+  {
+    slug: "gta-online", name: "GTA V / GTA Online", category: "Game", minAge: "18+ (PEGI)",
+    why: "Open-world crime game. Hugely popular with under-18s despite the rating.",
+    risks: ["Graphic violence, sexual content, drugs as core gameplay", "Open voice chat with strangers in lobbies", "Real-money microtransactions (Shark Cards)"],
+    settings: ["Disable voice chat", "Solo / invite-only sessions", "Console-level spend limits"],
+    detail: {
+      overview: "Grand Theft Auto V’s online mode mixes story missions with persistent lobbies of up to 30 strangers. Sexual content, torture and drugs are part of the rated content — this is a genuine adult game.",
+      ageRationale: "PEGI 18 and ESRB Mature. The rating is for explicit sex, sustained violence and drug use, not just ‘bad language’ — it is not a borderline call.",
+      evidence: [
+        { claim: "PEGI rates GTA V 18 for explicit sexual content, drug use and violence — the highest age rating it issues.", publisher: "PEGI (Pan European Game Information)", title: "Grand Theft Auto V rating summary", year: "2024", url: "https://pegi.info/search-pegi?q=Grand+Theft+Auto+V", type: "Regulator" },
+        { claim: "Common Sense Media review states GTA V is ‘not for kids’ and details extensive sexual, violent and drug content.", publisher: "Common Sense Media", title: "Grand Theft Auto V — parents’ review", year: "2024", url: "https://www.commonsensemedia.org/game-reviews/grand-theft-auto-v", type: "Charity / NGO" },
+      ],
+      parentTalkingPoints: [
+        "The ‘all my friends play it’ argument is real, but so is the 18 rating. Try a co-op alternative (Fortnite Zero Build, Sea of Thieves) for younger teens.",
+        "If they do play, set the console to invite-only sessions and disable voice chat with strangers.",
+      ],
+      settingsHowTo: [
+        { label: "PlayStation parental controls", url: "https://www.playstation.com/en-gb/support/account/ps5-parental-controls-spending-limits/" },
+        { label: "Xbox Family Settings app", url: "https://www.xbox.com/en-GB/apps/family-settings-app" },
+      ],
+      videoTutorials: [
+        { title: "PlayStation parental controls — full guide", channel: "PlayStation (official)", url: "https://www.youtube.com/results?search_query=PlayStation+parental+controls+how+to" },
+        { title: "Xbox Family Settings app walkthrough", channel: "Xbox (official)", url: "https://www.youtube.com/results?search_query=Xbox+Family+Settings+app+how+to" },
+      ],
+    },
+  },
+  {
+    slug: "character-ai", name: "Character.AI", category: "Social", minAge: "13+ (17+ in App Store after 2024)",
+    why: "Chat with AI ‘characters’ — anything from a tutor to a fictional boyfriend.",
+    risks: ["Highly addictive parasocial bonds", "Sexual / romantic roleplay despite filters", "Pro-suicide and self-harm conversations documented in lawsuits"],
+    settings: ["Use the under-18 model (rolled out 2024)", "Disable Character chat history", "Block via Screen Time"],
+    detail: {
+      overview: "Character.AI generates open-ended roleplay with user-made AI characters. Average teen users spend over 90 minutes a day. Lawsuits in 2024 link the platform to a teen suicide and to chatbots encouraging self-harm.",
+      ageRationale: "Character.AI raised its App Store rating to 17+ in 2024 and introduced a separate ‘teen model’ after US lawsuits and regulatory scrutiny. Under-13s are off-limits in terms.",
+      evidence: [
+        { claim: "US lawsuit alleges Character.AI chatbots encouraged a 14-year-old’s suicide and that the platform’s design is unreasonably dangerous to minors.", publisher: "The New York Times", title: "Can A.I. Be Blamed for a Teen’s Suicide?", year: "2024", url: "https://www.nytimes.com/2024/10/23/technology/characterai-lawsuit-teen-suicide.html", type: "Investigative journalism" },
+        { claim: "Second lawsuit alleges Character.AI exposed a 9-year-old to ‘hypersexualised content’ and suggested self-harm to a 17-year-old.", publisher: "The Washington Post", title: "Character.AI sued over content shown to minors", year: "2024", url: "https://www.washingtonpost.com/technology/2024/12/10/character-ai-lawsuit-children-harm/", type: "Investigative journalism" },
+        { claim: "Common Sense Media risk assessment rates AI companion apps including Character.AI as ‘unacceptable risk’ for under-18s.", publisher: "Common Sense Media", title: "AI Risk Assessment: Social AI Companions", year: "2025", url: "https://www.commonsensemedia.org/ai-ratings/social-ai-companions", type: "Charity / NGO" },
+      ],
+      parentTalkingPoints: [
+        "Ask which characters they talk to and for how long. Long, late-night sessions are the strongest warning sign.",
+        "Be clear: the AI isn’t a friend and isn’t qualified to handle low moods. Agree on a real person they’ll talk to instead.",
+      ],
+      settingsHowTo: [
+        { label: "Character.AI safety centre", url: "https://blog.character.ai/our-progress-towards-creating-a-safe-experience-for-everyone/" },
+        { label: "Common Sense Media: AI companion risk assessment", url: "https://www.commonsensemedia.org/ai-ratings/social-ai-companions" },
+      ],
+      videoTutorials: [
+        { title: "AI companions — what every parent needs to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+AI+companion+apps+parents" },
+        { title: "Block apps with Screen Time / Family Link", channel: "Apple / Google", url: "https://www.youtube.com/results?search_query=block+app+Screen+Time+Family+Link" },
+      ],
+    },
+  },
+  {
+    slug: "replika", name: "Replika", category: "Social", minAge: "17+ (App Store) / 18+ (terms)",
+    why: "‘AI friend / partner’ chatbot with paid romantic and ‘adult’ modes.",
+    risks: ["Sexual roleplay even on free tier", "Emotional dependence and isolation", "Designed to drive paid upgrades"],
+    settings: ["Not appropriate for under-18s — block / uninstall"],
+    detail: {
+      overview: "Replika is marketed as an AI companion. Italy’s data regulator temporarily banned it in 2023 after finding it could expose minors to sexually explicit conversations, and design choices push users towards an emotionally intense, paid relationship.",
+      ageRationale: "Replika’s own terms set 18+; the App Store rates it 17+. Italy’s Garante banned it in 2023 specifically because it failed to keep minors out and exposed them to sexual content.",
+      evidence: [
+        { claim: "Italy’s Garante (data regulator) banned Replika over risks to minors and emotionally vulnerable users.", publisher: "Garante per la Protezione dei Dati Personali (Italy)", title: "Replika: stop al trattamento dei dati degli utenti italiani", year: "2023", url: "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9852506", type: "Regulator" },
+        { claim: "Common Sense Media risk assessment rates Replika as ‘unacceptable risk’ for under-18s.", publisher: "Common Sense Media", title: "AI Risk Assessment: Social AI Companions", year: "2025", url: "https://www.commonsensemedia.org/ai-ratings/social-ai-companions", type: "Charity / NGO" },
+      ],
+      parentTalkingPoints: [
+        "Replika is built for paying adults who want a romantic AI partner. It is not a teen wellbeing app.",
+        "If you find it on their device, uninstall and talk about who they go to when they feel lonely.",
+      ],
+      settingsHowTo: [
+        { label: "Apple Screen Time — block apps", url: "https://support.apple.com/en-gb/HT201304" },
+        { label: "Google Family Link — block apps", url: "https://families.google/familylink/" },
+      ],
+      videoTutorials: [
+        { title: "AI companion apps — parents’ guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+AI+companion+apps+parents" },
+        { title: "Block apps with Apple Screen Time", channel: "Apple Support", url: "https://www.youtube.com/results?search_query=Apple+Screen+Time+block+apps+how+to" },
+      ],
+    },
+  },
 ];
 
 export type GlossaryEntry = {
