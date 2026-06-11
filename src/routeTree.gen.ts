@@ -63,9 +63,9 @@ const AgeGuidesIndexRoute = AgeGuidesIndexRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const ChecklistsSlugRoute = ChecklistsSlugRouteImport.update({
-  id: '/$slug',
-  path: '/$slug',
-  getParentRoute: () => ChecklistsRoute,
+  id: '/checklists/$slug',
+  path: '/checklists/$slug',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const AppsSlugRoute = AppsSlugRouteImport.update({
   id: '/apps/$slug',
@@ -180,6 +180,7 @@ export interface RootRouteChildren {
   AgeGuidesAgeRoute: typeof AgeGuidesAgeRoute
   ApiTranslateSlangRoute: typeof ApiTranslateSlangRoute
   AppsSlugRoute: typeof AppsSlugRoute
+  ChecklistsSlugRoute: typeof ChecklistsSlugRoute
   AgeGuidesIndexRoute: typeof AgeGuidesIndexRoute
   AppsIndexRoute: typeof AppsIndexRoute
   ChecklistsIndexRoute: typeof ChecklistsIndexRoute
@@ -245,10 +246,10 @@ declare module '@tanstack/react-router' {
     }
     '/checklists/$slug': {
       id: '/checklists/$slug'
-      path: '/$slug'
+      path: '/checklists/$slug'
       fullPath: '/checklists/$slug'
       preLoaderRoute: typeof ChecklistsSlugRouteImport
-      parentRoute: typeof ChecklistsRoute
+      parentRoute: typeof rootRouteImport
     }
     '/apps/$slug': {
       id: '/apps/$slug'
@@ -283,6 +284,7 @@ const rootRouteChildren: RootRouteChildren = {
   AgeGuidesAgeRoute: AgeGuidesAgeRoute,
   ApiTranslateSlangRoute: ApiTranslateSlangRoute,
   AppsSlugRoute: AppsSlugRoute,
+  ChecklistsSlugRoute: ChecklistsSlugRoute,
   AgeGuidesIndexRoute: AgeGuidesIndexRoute,
   AppsIndexRoute: AppsIndexRoute,
   ChecklistsIndexRoute: ChecklistsIndexRoute,
