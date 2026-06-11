@@ -17,6 +17,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AppsIndexRouteImport } from './routes/apps.index'
 import { Route as AgeGuidesIndexRouteImport } from './routes/age-guides.index'
+import { Route as ChecklistsSlugRouteImport } from './routes/checklists.$slug'
 import { Route as AppsSlugRouteImport } from './routes/apps.$slug'
 import { Route as ApiTranslateSlangRouteImport } from './routes/api/translate-slang'
 import { Route as AgeGuidesAgeRouteImport } from './routes/age-guides.$age'
@@ -61,6 +62,11 @@ const AgeGuidesIndexRoute = AgeGuidesIndexRouteImport.update({
   path: '/age-guides/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ChecklistsSlugRoute = ChecklistsSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => ChecklistsRoute,
+} as any)
 const AppsSlugRoute = AppsSlugRouteImport.update({
   id: '/apps/$slug',
   path: '/apps/$slug',
@@ -80,26 +86,28 @@ const AgeGuidesAgeRoute = AgeGuidesAgeRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/checklists': typeof ChecklistsRoute
+  '/checklists': typeof ChecklistsRouteWithChildren
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
   '/api/translate-slang': typeof ApiTranslateSlangRoute
   '/apps/$slug': typeof AppsSlugRoute
+  '/checklists/$slug': typeof ChecklistsSlugRoute
   '/age-guides/': typeof AgeGuidesIndexRoute
   '/apps/': typeof AppsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/checklists': typeof ChecklistsRoute
+  '/checklists': typeof ChecklistsRouteWithChildren
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
   '/api/translate-slang': typeof ApiTranslateSlangRoute
   '/apps/$slug': typeof AppsSlugRoute
+  '/checklists/$slug': typeof ChecklistsSlugRoute
   '/age-guides': typeof AgeGuidesIndexRoute
   '/apps': typeof AppsIndexRoute
 }
@@ -107,13 +115,14 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/checklists': typeof ChecklistsRoute
+  '/checklists': typeof ChecklistsRouteWithChildren
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
   '/api/translate-slang': typeof ApiTranslateSlangRoute
   '/apps/$slug': typeof AppsSlugRoute
+  '/checklists/$slug': typeof ChecklistsSlugRoute
   '/age-guides/': typeof AgeGuidesIndexRoute
   '/apps/': typeof AppsIndexRoute
 }
@@ -129,6 +138,7 @@ export interface FileRouteTypes {
     | '/age-guides/$age'
     | '/api/translate-slang'
     | '/apps/$slug'
+    | '/checklists/$slug'
     | '/age-guides/'
     | '/apps/'
   fileRoutesByTo: FileRoutesByTo
@@ -142,6 +152,7 @@ export interface FileRouteTypes {
     | '/age-guides/$age'
     | '/api/translate-slang'
     | '/apps/$slug'
+    | '/checklists/$slug'
     | '/age-guides'
     | '/apps'
   id:
@@ -155,6 +166,7 @@ export interface FileRouteTypes {
     | '/age-guides/$age'
     | '/api/translate-slang'
     | '/apps/$slug'
+    | '/checklists/$slug'
     | '/age-guides/'
     | '/apps/'
   fileRoutesById: FileRoutesById
@@ -162,7 +174,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  ChecklistsRoute: typeof ChecklistsRoute
+  ChecklistsRoute: typeof ChecklistsRouteWithChildren
   GlossaryRoute: typeof GlossaryRoute
   HelpRoute: typeof HelpRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -231,6 +243,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AgeGuidesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/checklists/$slug': {
+      id: '/checklists/$slug'
+      path: '/$slug'
+      fullPath: '/checklists/$slug'
+      preLoaderRoute: typeof ChecklistsSlugRouteImport
+      parentRoute: typeof ChecklistsRoute
+    }
     '/apps/$slug': {
       id: '/apps/$slug'
       path: '/apps/$slug'
@@ -255,10 +274,22 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface ChecklistsRouteChildren {
+  ChecklistsSlugRoute: typeof ChecklistsSlugRoute
+}
+
+const ChecklistsRouteChildren: ChecklistsRouteChildren = {
+  ChecklistsSlugRoute: ChecklistsSlugRoute,
+}
+
+const ChecklistsRouteWithChildren = ChecklistsRoute._addFileChildren(
+  ChecklistsRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  ChecklistsRoute: ChecklistsRoute,
+  ChecklistsRoute: ChecklistsRouteWithChildren,
   GlossaryRoute: GlossaryRoute,
   HelpRoute: HelpRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,

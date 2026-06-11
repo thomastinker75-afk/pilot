@@ -1230,62 +1230,289 @@ export const GLOSSARY: GlossaryEntry[] = [
   { term: "🥲", kind: "Emoji", meaning: "Smiling through it — quietly upset.", context: "Worth checking in.", riskLevel: "Worth a chat" },
 ];
 
+export type ChecklistSection = {
+  title: string;
+  intro?: string;
+  steps: string[];
+};
+
+export type ChecklistTutorial = {
+  title: string;
+  source: string;
+  type: "Video" | "Official guide" | "Article";
+  url: string;
+  note?: string;
+};
+
+export type ChecklistCapability = {
+  label: string;
+  detail: string;
+};
+
 export type Checklist = {
   slug: string;
   title: string;
   device: string;
+  summary: string;
   steps: string[];
+  overview?: string;
+  sections?: ChecklistSection[];
+  capabilities?: ChecklistCapability[];
+  tutorials?: ChecklistTutorial[];
+  emergency?: string;
+  notes?: string[];
 };
 
 export const CHECKLISTS: Checklist[] = [
   {
-    slug: "iphone-first-setup",
-    title: "iPhone for a child — first setup",
-    device: "iOS",
+    slug: "android-first-setup",
+    title: "Android phone for a child — full setup with Google Family Link",
+    device: "Android",
+    summary:
+      "Create a supervised child Google account, install Family Link, and lock down screen time, app installs and content — step by step.",
     steps: [
-      "Create the child’s Apple ID through Family Sharing (don’t reuse yours)",
-      "Turn on Screen Time → Content & Privacy Restrictions",
-      "Set Communication Limits: Contacts only, during screen time and downtime",
-      "Disable in-app purchases; require ‘Ask to Buy’",
-      "Enable Find My + Stolen Device Protection",
-      "Turn on Communication Safety (blurs nudity in Messages)",
+      "Create a child Google account (under 13 / local age of digital consent)",
+      "Install Family Link on the parent phone and on the child phone",
+      "Link the two accounts and finish on-device setup",
+      "Set daily screen time, bedtime and app-specific limits",
+      "Require parent approval for every Play Store install",
+      "Turn on SafeSearch, Chrome filters and YouTube supervision",
+      "Confirm the child can still make emergency calls when locked",
+    ],
+    overview:
+      "Family Link is Google's official parental-control app. It works with any child Google account where the child is under your country's digital-consent age (13 in the US, 13–16 in the EU, 13 in the UK). The setup below takes about 20 minutes and only needs to be done once.",
+    sections: [
+      {
+        title: "1 · Before you start",
+        intro: "Have both phones unlocked and on Wi-Fi. You'll need the child's date of birth and your own Google password.",
+        steps: [
+          "Update both phones to the latest Android version (Settings → System → System update).",
+          "On your phone, install 'Google Family Link' from the Play Store.",
+          "On the child's phone, factory-reset if it has been used before (Settings → System → Reset options → Erase all data).",
+        ],
+      },
+      {
+        title: "2 · Create the child's Google account",
+        intro: "Do this from your phone, inside Family Link — not from the child's device.",
+        steps: [
+          "Open Family Link → tap the '+' icon → 'Add a child' → 'Create an account for your child'.",
+          "Enter the child's real first name, birthday and a new Gmail address (e.g. firstname.lastname.kid@gmail.com).",
+          "Choose a strong password that YOU keep — the child does not need it for daily use.",
+          "Read and accept the Parental Consent screen. Google charges a token amount (e.g. $0.30 / €0.30) to your card to verify you're an adult; it's refunded.",
+        ],
+      },
+      {
+        title: "3 · Set up the child's phone",
+        intro: "Now move to the child's device.",
+        steps: [
+          "On the welcome screen, choose 'Set up for a child'. If you missed it, do Settings → Accounts → Add account → Google → and sign in with the new child account.",
+          "Sign in with the child's new Gmail and password.",
+          "When prompted, scan the QR code shown in Family Link on your phone to link the two devices.",
+          "Accept the permissions Family Link needs (location, app usage, install approvals).",
+          "Choose which existing apps to allow — block anything they shouldn't have right now; you can always allow it later.",
+        ],
+      },
+      {
+        title: "4 · Screen time, bedtime & downtime",
+        intro: "Open Family Link on your phone → tap the child → 'Controls' → 'Screen time'.",
+        steps: [
+          "Set a daily limit per day of the week (e.g. 1h on school days, 2h at weekends).",
+          "Set 'Bedtime' — the phone locks for calls only between those hours.",
+          "Set 'App limits' for specific apps (e.g. TikTok 30 min/day, YouTube 45 min/day).",
+          "Turn on 'Always allowed' for apps the child needs regardless of limits: Phone, Messages, Maps, your family chat app.",
+        ],
+      },
+      {
+        title: "5 · App installs & purchases",
+        steps: [
+          "In Family Link → Controls → 'Google Play' → turn on 'Require approval for: All content'.",
+          "Set content maturity limits (Apps & games: PEGI 7 / ESRB Everyone for young kids; raise as they grow).",
+          "Disable in-app purchases: 'Purchase approvals' → 'All content'.",
+          "When the child taps 'Install' in the Play Store, you'll get a push notification to approve or deny from your phone.",
+        ],
+      },
+      {
+        title: "6 · Web, search & YouTube",
+        steps: [
+          "Controls → 'Google Search' → turn on SafeSearch (filters explicit results).",
+          "Controls → 'Chrome' → choose 'Try to block explicit sites' and add specific sites you want blocked or allowed.",
+          "For YouTube under 13: use the YouTube Kids app instead, and block the main YouTube app.",
+          "For YouTube 13+: enable 'Supervised experience' in YouTube settings and pick a content setting (Explore / Explore More / Most of YouTube).",
+        ],
+      },
+      {
+        title: "7 · Location, find-my-phone & data",
+        steps: [
+          "Controls → 'Location' → turn on 'See your child's location'. You'll see the child phone's live location in Family Link.",
+          "Turn on 'Find My Device' (Settings → Security on the child phone) so a lost phone can be located and remotely locked.",
+          "Review which apps can access location (Family Link → 'App activity') and switch unnecessary ones to 'Don't allow'.",
+        ],
+      },
+    ],
+    capabilities: [
+      { label: "Daily & per-app screen-time limits", detail: "Different limits for school days vs weekends; lock specific apps after a quota." },
+      { label: "Bedtime lock", detail: "Phone goes to a lock screen at night — calls still work." },
+      { label: "Approve every app install", detail: "Push notification to the parent before Play Store download or in-app purchase." },
+      { label: "SafeSearch & Chrome filters", detail: "Filters explicit Google results and lets you allow/block specific sites." },
+      { label: "Live location & lost-phone tools", detail: "See where the child's phone is, ring it, or lock it remotely." },
+      { label: "Activity reports", detail: "Weekly summary of which apps were used and for how long." },
+      { label: "Remote lock", detail: "Lock the device instantly from your phone when needed (dinner, homework, bedtime)." },
+    ],
+    emergency:
+      "Emergency calls always work. When the screen-time limit is reached or during bedtime/downtime, the child can still tap 'Emergency' on the lock screen to dial 999 / 112 / 911. You can also mark Phone and Messages as 'Always allowed' so they can call you and named contacts at any time.",
+    tutorials: [
+      { title: "Get started with Family Link", source: "Google Families (official)", type: "Official guide", url: "https://families.google.com/familylink/" },
+      { title: "Set up Family Link — official help article", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7101025" },
+      { title: "How to set up Google Family Link (step-by-step video)", source: "Google for Families · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=UPP0XyUmHTM" },
+      { title: "Manage screen time with Family Link", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7103340" },
+      { title: "Approve or block apps your child wants to download", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7385553" },
+    ],
+    notes: [
+      "Family Link can supervise a teen account past 13, but the teen can technically unlink it themselves once they're old enough — you'll be notified.",
+      "Some apps (notably WhatsApp) don't enforce Google's age rules, so block them in Family Link if you don't want them installed.",
     ],
   },
   {
-    slug: "android-first-setup",
-    title: "Android phone for a child — first setup",
-    device: "Android",
+    slug: "iphone-first-setup",
+    title: "iPhone for a child — full setup with Family Sharing & Screen Time",
+    device: "iOS",
+    summary:
+      "Create a Child Apple Account inside Family Sharing, then use Screen Time and Communication Safety to lock down content, time and contacts.",
     steps: [
-      "Set up the device with a child Google account via Family Link",
-      "Approve every app install from the parent device",
-      "Set daily screen time and bedtime in Family Link",
-      "Enable SafeSearch in Google account settings",
-      "Turn on Play Store content restrictions (age rating)",
-      "Disable location sharing for non-essential apps",
+      "Create a Child Apple Account through Family Sharing",
+      "Sign the child in on their iPhone with the new account",
+      "Turn on Screen Time and set a Screen Time Passcode only you know",
+      "Set Downtime, App Limits and Always-Allowed apps",
+      "Turn on Content & Privacy Restrictions (App Store, web, Siri, explicit content)",
+      "Turn on Ask to Buy and Communication Safety",
+      "Enable Find My and Stolen Device Protection",
+    ],
+    overview:
+      "Apple's parental controls live in two places: Family Sharing (which links your accounts) and Screen Time (which sets the rules). You configure most things from your own iPhone once the child's Apple Account is linked.",
+    sections: [
+      {
+        title: "1 · Create the Child Apple Account",
+        intro: "On YOUR iPhone, open Settings → tap your name at the top → Family.",
+        steps: [
+          "Tap 'Add Member' → 'Create Child Account' → Continue.",
+          "Enter the child's name and birthday (this sets the right default restrictions).",
+          "Agree to the Parent Privacy Disclosure and verify yourself (Face ID / Touch ID / CVV on your Apple-ID payment card).",
+          "Create the child's Apple ID (an @icloud.com email) and a password YOU keep.",
+          "Choose 'Ask to Buy' = On. Every paid download or in-app purchase now needs your approval.",
+        ],
+      },
+      {
+        title: "2 · Sign the child in on their iPhone",
+        steps: [
+          "If the iPhone is new: at the 'Hello' screen choose 'Set Up for a Child in My Family' (iOS 16+).",
+          "If the iPhone is already set up: Settings → sign out of any existing Apple Account → sign in with the new Child Apple Account.",
+          "Accept the prompts to enable iCloud Backup, Find My iPhone and Screen Time.",
+        ],
+      },
+      {
+        title: "3 · Screen Time — the most important step",
+        intro: "On your phone: Settings → Family → tap the child → Screen Time.",
+        steps: [
+          "Tap 'Turn on Screen Time' if it isn't already.",
+          "Set a 4-digit Screen Time Passcode the child does NOT know — this stops them changing limits.",
+          "Set 'Downtime': hours when only allowed apps and phone calls work (e.g. 21:00–07:00).",
+          "Set 'App Limits' by category (Social, Games) or per-app (TikTok 30 min, Roblox 45 min).",
+          "Set 'Always Allowed' apps — Phone, Messages, Maps and your family chat should stay on even during downtime.",
+          "Turn on 'Block at End of Limit' so the limit actually enforces.",
+        ],
+      },
+      {
+        title: "4 · Content & Privacy Restrictions",
+        intro: "Same Screen Time screen → 'Content & Privacy Restrictions' → toggle on.",
+        steps: [
+          "iTunes & App Store Purchases → 'Installing Apps' = Don't Allow (or Require Password). 'In-app Purchases' = Don't Allow.",
+          "Allowed Apps → switch off anything inappropriate (Safari, Camera, FaceTime) for very young kids.",
+          "Content Restrictions → set age ratings for Apps, Movies, TV shows, Books, Music.",
+          "Content Restrictions → Web Content → 'Limit Adult Websites' (or 'Allowed Websites Only' for under-10s).",
+          "Content Restrictions → Siri → block explicit language and explicit web search.",
+        ],
+      },
+      {
+        title: "5 · Communication, contacts & Messages",
+        steps: [
+          "Screen Time → 'Communication Limits' → choose who they can call/iMessage/FaceTime during the day and during downtime (e.g. 'Contacts Only').",
+          "Screen Time → 'Communication Safety' → turn ON. Detects and blurs nudity in Messages, AirDrop, FaceTime — analysis happens on-device.",
+          "Manage their contacts list (Settings → Family → child → Contacts) so 'Contacts Only' is meaningful.",
+        ],
+      },
+      {
+        title: "6 · Safety & device security",
+        steps: [
+          "Settings → Family → child → Location Sharing → On. The child's iPhone appears in Find My.",
+          "On the child phone: Settings → [name] → Find My → 'Find My iPhone' On, 'Send Last Location' On.",
+          "On the child phone: Settings → Face ID & Passcode → 'Stolen Device Protection' On (iOS 17.3+).",
+          "Set up Emergency Contacts in the Health app: Health → Medical ID → Edit → add yourself as an emergency contact (works from the lock screen).",
+        ],
+      },
+    ],
+    capabilities: [
+      { label: "Downtime", detail: "Only chosen apps and phone calls work outside allowed hours." },
+      { label: "App Limits", detail: "Daily quota per app or per category; locks the app when reached." },
+      { label: "Always Allowed", detail: "Apps that escape every limit — keep Phone, Messages, Maps." },
+      { label: "Ask to Buy", detail: "Push approval to your phone for any download or in-app purchase." },
+      { label: "Communication Limits", detail: "Restrict who can contact the child and who they can contact." },
+      { label: "Communication Safety", detail: "On-device nudity blur in Messages, AirDrop, FaceTime." },
+      { label: "Web Content", detail: "Limit adult websites system-wide, or restrict to an allowlist." },
+      { label: "Find My + Stolen Device Protection", detail: "Locate a lost iPhone; require Face ID for risky changes." },
+    ],
+    emergency:
+      "Even when an app limit is hit or during full Downtime, the child can swipe up on the lock screen and tap 'Emergency' to call 999 / 112 / 911. Medical ID is visible without unlocking, so emergency contacts added in the Health app can always be reached. Phone and Messages set as 'Always Allowed' means they can also call or text you at any time.",
+    tutorials: [
+      { title: "Set up a Child Apple Account with Family Sharing", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/108714" },
+      { title: "Use Screen Time on your iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/108806" },
+      { title: "Use parental controls on your child's iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/105121" },
+      { title: "Communication Safety on iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/105069" },
+      { title: "How to set up parental controls on iPhone (walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=GsQTy0DPLDU" },
+    ],
+    notes: [
+      "The Screen Time Passcode is the linchpin — if a curious teen learns it, the whole system is bypassed. Don't reuse your phone passcode.",
+      "Apple's age ratings (4+, 9+, 12+, 17+) are stricter than Google's PEGI/ESRB on the same apps. Adjust if you find them too restrictive.",
     ],
   },
   {
     slug: "youtube-safer",
     title: "Make YouTube safer in 5 minutes",
     device: "Any",
+    summary: "Quick wins to tame YouTube on any device — switch to supervised mode, disable autoplay, and tidy the algorithm.",
     steps: [
-      "Switch to a Supervised Account if under 13",
-      "Turn on Restricted Mode in account settings",
-      "Disable autoplay",
+      "Switch to a Supervised Account if under 13 (or YouTube Kids for under 9)",
+      "Turn on Restricted Mode in account settings on every device they use",
+      "Disable autoplay on home and Up Next",
       "Clear watch history; pause history if needed",
-      "Block creators that show up unwanted",
+      "Block creators that show up unwanted (three-dot menu → 'Don't recommend')",
+    ],
+    overview:
+      "YouTube is the single most-used app by children worldwide. These five steps shape the algorithm and remove most of the obvious traps. None of them replace conversation about what they're watching.",
+    tutorials: [
+      { title: "Supervised experiences on YouTube", source: "YouTube Help (official)", type: "Official guide", url: "https://support.google.com/youtube/answer/10314940" },
+      { title: "Turn Restricted Mode on or off", source: "YouTube Help (official)", type: "Official guide", url: "https://support.google.com/youtube/answer/174084" },
+      { title: "About YouTube Kids", source: "YouTube Kids (official)", type: "Official guide", url: "https://www.youtubekids.com/" },
     ],
   },
   {
     slug: "social-lockdown",
-    title: "Lock down a teen’s social accounts",
+    title: "Lock down a teen's social accounts",
     device: "Any",
+    summary: "The five settings that matter on Instagram, TikTok, Snapchat and Discord — works on any phone.",
     steps: [
       "Set every account to Private",
-      "Disable ‘suggest my account to others’",
+      "Disable 'suggest my account to others'",
       "Remove location from posts and profiles",
       "Turn on two-factor authentication",
-      "Review followers — remove anyone they can’t name in real life",
+      "Review followers — remove anyone they can't name in real life",
+    ],
+    overview:
+      "Teens don't need new apps locked down — they need their existing accounts tightened. Sit with them and do these five together; it takes about ten minutes per app.",
+    tutorials: [
+      { title: "Instagram Teen Accounts (default protections)", source: "Meta (official)", type: "Official guide", url: "https://about.instagram.com/blog/announcements/instagram-teen-accounts" },
+      { title: "TikTok Family Pairing", source: "TikTok (official)", type: "Official guide", url: "https://www.tiktok.com/safety/en/guardians-guide/" },
+      { title: "Snapchat Family Center", source: "Snap (official)", type: "Official guide", url: "https://parents.snapchat.com/" },
+      { title: "Discord Family Centre", source: "Discord (official)", type: "Official guide", url: "https://discord.com/family-center" },
     ],
   },
 ];
