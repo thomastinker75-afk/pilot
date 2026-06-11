@@ -1249,6 +1249,12 @@ export type ChecklistCapability = {
   detail: string;
 };
 
+export type ChecklistHeroVideo = {
+  src: string;
+  poster?: string;
+  caption?: string;
+};
+
 export type Checklist = {
   slug: string;
   title: string;
@@ -1256,12 +1262,14 @@ export type Checklist = {
   summary: string;
   steps: string[];
   overview?: string;
+  heroVideo?: ChecklistHeroVideo;
   sections?: ChecklistSection[];
   capabilities?: ChecklistCapability[];
   tutorials?: ChecklistTutorial[];
   emergency?: string;
   notes?: string[];
 };
+
 
 export const CHECKLISTS: Checklist[] = [
   {
@@ -1281,6 +1289,10 @@ export const CHECKLISTS: Checklist[] = [
     ],
     overview:
       "Family Link is Google's official parental-control app. It works with any child Google account where the child is under your country's digital-consent age (13 in the US, 13–16 in the EU, 13 in the UK). The setup below takes about 20 minutes and only needs to be done once.",
+    heroVideo: {
+      src: "/__l5e/assets-v1/ebe7bb3d-4d09-45e2-b0ce-0e5cf41a3055/family-link-tutorial.mp4",
+      caption: "Our own 67-second walkthrough — install Family Link, set screen time, approve apps, and keep emergency calls open.",
+    },
     sections: [
       {
         title: "1 · Before you start",
@@ -1363,7 +1375,7 @@ export const CHECKLISTS: Checklist[] = [
     tutorials: [
       { title: "Get started with Family Link", source: "Google Families (official)", type: "Official guide", url: "https://families.google.com/familylink/" },
       { title: "Set up Family Link — official help article", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7101025" },
-      { title: "How To Setup and Use Google Family Link — Complete Tutorial for Parents (step-by-step video)", source: "Tech is Easy · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=34THexmZn2c", note: "5-minute walkthrough covering child account creation, screen time, app approvals and content filters." },
+      
       { title: "Manage screen time with Family Link", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7103340" },
       { title: "Approve or block apps your child wants to download", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7385553" },
     ],
