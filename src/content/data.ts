@@ -1249,6 +1249,12 @@ export type ChecklistCapability = {
   detail: string;
 };
 
+export type ChecklistHeroVideo = {
+  src: string;
+  poster?: string;
+  caption?: string;
+};
+
 export type Checklist = {
   slug: string;
   title: string;
@@ -1256,12 +1262,14 @@ export type Checklist = {
   summary: string;
   steps: string[];
   overview?: string;
+  heroVideo?: ChecklistHeroVideo;
   sections?: ChecklistSection[];
   capabilities?: ChecklistCapability[];
   tutorials?: ChecklistTutorial[];
   emergency?: string;
   notes?: string[];
 };
+
 
 export const CHECKLISTS: Checklist[] = [
   {
