@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { CHECKLISTS, REVIEWED } from "@/content/data";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
-export const Route = createFileRoute("/checklists")({
+export const Route = createFileRoute("/checklists/")({
   component: Checklists,
   head: () => ({
     meta: [
