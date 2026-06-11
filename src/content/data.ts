@@ -1363,7 +1363,7 @@ export const CHECKLISTS: Checklist[] = [
     tutorials: [
       { title: "Get started with Family Link", source: "Google Families (official)", type: "Official guide", url: "https://families.google.com/familylink/" },
       { title: "Set up Family Link — official help article", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7101025" },
-      { title: "How to set up Google Family Link (step-by-step video)", source: "Google for Families · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=UPP0XyUmHTM" },
+      { title: "How To Setup and Use Google Family Link — Complete Tutorial for Parents (step-by-step video)", source: "Tech is Easy · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=34THexmZn2c", note: "5-minute walkthrough covering child account creation, screen time, app approvals and content filters." },
       { title: "Manage screen time with Family Link", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7103340" },
       { title: "Approve or block apps your child wants to download", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7385553" },
     ],
