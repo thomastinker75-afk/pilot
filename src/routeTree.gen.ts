@@ -12,9 +12,9 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as HelpRouteImport } from './routes/help'
 import { Route as GlossaryRouteImport } from './routes/glossary'
-import { Route as ChecklistsRouteImport } from './routes/checklists'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ChecklistsIndexRouteImport } from './routes/checklists.index'
 import { Route as AppsIndexRouteImport } from './routes/apps.index'
 import { Route as AgeGuidesIndexRouteImport } from './routes/age-guides.index'
 import { Route as ChecklistsSlugRouteImport } from './routes/checklists.$slug'
@@ -37,11 +37,6 @@ const GlossaryRoute = GlossaryRouteImport.update({
   path: '/glossary',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ChecklistsRoute = ChecklistsRouteImport.update({
-  id: '/checklists',
-  path: '/checklists',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -50,6 +45,11 @@ const AboutRoute = AboutRouteImport.update({
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChecklistsIndexRoute = ChecklistsIndexRouteImport.update({
+  id: '/checklists/',
+  path: '/checklists/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AppsIndexRoute = AppsIndexRouteImport.update({
@@ -86,7 +86,6 @@ const AgeGuidesAgeRoute = AgeGuidesAgeRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/checklists': typeof ChecklistsRouteWithChildren
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -96,11 +95,11 @@ export interface FileRoutesByFullPath {
   '/checklists/$slug': typeof ChecklistsSlugRoute
   '/age-guides/': typeof AgeGuidesIndexRoute
   '/apps/': typeof AppsIndexRoute
+  '/checklists/': typeof ChecklistsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/checklists': typeof ChecklistsRouteWithChildren
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -110,12 +109,12 @@ export interface FileRoutesByTo {
   '/checklists/$slug': typeof ChecklistsSlugRoute
   '/age-guides': typeof AgeGuidesIndexRoute
   '/apps': typeof AppsIndexRoute
+  '/checklists': typeof ChecklistsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/checklists': typeof ChecklistsRouteWithChildren
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -125,13 +124,13 @@ export interface FileRoutesById {
   '/checklists/$slug': typeof ChecklistsSlugRoute
   '/age-guides/': typeof AgeGuidesIndexRoute
   '/apps/': typeof AppsIndexRoute
+  '/checklists/': typeof ChecklistsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/about'
-    | '/checklists'
     | '/glossary'
     | '/help'
     | '/sitemap.xml'
@@ -141,11 +140,11 @@ export interface FileRouteTypes {
     | '/checklists/$slug'
     | '/age-guides/'
     | '/apps/'
+    | '/checklists/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
-    | '/checklists'
     | '/glossary'
     | '/help'
     | '/sitemap.xml'
@@ -155,11 +154,11 @@ export interface FileRouteTypes {
     | '/checklists/$slug'
     | '/age-guides'
     | '/apps'
+    | '/checklists'
   id:
     | '__root__'
     | '/'
     | '/about'
-    | '/checklists'
     | '/glossary'
     | '/help'
     | '/sitemap.xml'
@@ -169,12 +168,12 @@ export interface FileRouteTypes {
     | '/checklists/$slug'
     | '/age-guides/'
     | '/apps/'
+    | '/checklists/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  ChecklistsRoute: typeof ChecklistsRouteWithChildren
   GlossaryRoute: typeof GlossaryRoute
   HelpRoute: typeof HelpRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -183,6 +182,7 @@ export interface RootRouteChildren {
   AppsSlugRoute: typeof AppsSlugRoute
   AgeGuidesIndexRoute: typeof AgeGuidesIndexRoute
   AppsIndexRoute: typeof AppsIndexRoute
+  ChecklistsIndexRoute: typeof ChecklistsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -208,13 +208,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GlossaryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/checklists': {
-      id: '/checklists'
-      path: '/checklists'
-      fullPath: '/checklists'
-      preLoaderRoute: typeof ChecklistsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -227,6 +220,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/checklists/': {
+      id: '/checklists/'
+      path: '/checklists'
+      fullPath: '/checklists/'
+      preLoaderRoute: typeof ChecklistsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/apps/': {
@@ -274,22 +274,9 @@ declare module '@tanstack/react-router' {
   }
 }
 
-interface ChecklistsRouteChildren {
-  ChecklistsSlugRoute: typeof ChecklistsSlugRoute
-}
-
-const ChecklistsRouteChildren: ChecklistsRouteChildren = {
-  ChecklistsSlugRoute: ChecklistsSlugRoute,
-}
-
-const ChecklistsRouteWithChildren = ChecklistsRoute._addFileChildren(
-  ChecklistsRouteChildren,
-)
-
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  ChecklistsRoute: ChecklistsRouteWithChildren,
   GlossaryRoute: GlossaryRoute,
   HelpRoute: HelpRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
@@ -298,6 +285,7 @@ const rootRouteChildren: RootRouteChildren = {
   AppsSlugRoute: AppsSlugRoute,
   AgeGuidesIndexRoute: AgeGuidesIndexRoute,
   AppsIndexRoute: AppsIndexRoute,
+  ChecklistsIndexRoute: ChecklistsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
