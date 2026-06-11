@@ -22,9 +22,10 @@ await renderMedia({
   composition,
   serveUrl: bundled,
   codec: "h264",
-  outputLocation: "/mnt/documents/family-link-tutorial.mp4",
+  outputLocation: "/tmp/video-silent.mp4",
   puppeteerInstance: browser,
   concurrency: 2,
+  muted: true,
 });
 
 await browser.close({ silent: false });
