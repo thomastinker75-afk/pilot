@@ -47,6 +47,21 @@ function ChecklistDetail() {
         )}
       </header>
 
+      {c.heroVideo && (
+        <figure className="mt-10 overflow-hidden rounded-2xl border border-border bg-card">
+          <video
+            src={c.heroVideo.src}
+            poster={c.heroVideo.poster}
+            controls
+            preload="metadata"
+            className="aspect-video w-full bg-black"
+          />
+          {c.heroVideo.caption && (
+            <figcaption className="px-5 py-3 text-sm text-muted-foreground">{c.heroVideo.caption}</figcaption>
+          )}
+        </figure>
+      )}
+
       {c.sections && c.sections.length > 0 && (
         <section className="mt-14">
           <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">Step-by-step</h2>
