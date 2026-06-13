@@ -49,13 +49,24 @@ function ChecklistDetail() {
 
       {c.heroVideo && (
         <figure className="mt-10 overflow-hidden rounded-2xl border border-border bg-card">
-          <video
-            src={c.heroVideo.src}
-            poster={c.heroVideo.poster}
-            controls
-            preload="metadata"
-            className="aspect-video w-full bg-black"
-          />
+          {c.heroVideo.youtubeId ? (
+            <iframe
+              src={`https://www.youtube.com/embed/${c.heroVideo.youtubeId}`}
+              title={c.heroVideo.title ?? "Tutorial video"}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="aspect-video w-full bg-black"
+            />
+          ) : (
+            <video
+              src={c.heroVideo.src}
+              poster={c.heroVideo.poster}
+              controls
+              preload="metadata"
+              className="aspect-video w-full bg-black"
+            />
+          )}
           {c.heroVideo.caption && (
             <figcaption className="px-5 py-3 text-sm text-muted-foreground">{c.heroVideo.caption}</figcaption>
           )}
