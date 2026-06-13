@@ -1250,7 +1250,9 @@ export type ChecklistCapability = {
 };
 
 export type ChecklistHeroVideo = {
-  src: string;
+  src?: string;
+  youtubeId?: string;
+  title?: string;
   poster?: string;
   caption?: string;
 };
@@ -1290,8 +1292,9 @@ export const CHECKLISTS: Checklist[] = [
     overview:
       "Family Link is Google's official parental-control app. It works with any child Google account where the child is under your country's digital-consent age (13 in the US, 13–16 in the EU, 13 in the UK). The setup below takes about 20 minutes and only needs to be done once.",
     heroVideo: {
-      src: "/__l5e/assets-v1/ebe7bb3d-4d09-45e2-b0ce-0e5cf41a3055/family-link-tutorial.mp4",
-      caption: "Our own 67-second walkthrough — install Family Link, set screen time, approve apps, and keep emergency calls open.",
+      youtubeId: "BYRQvANa7OE",
+      title: "How to set up Google Family Link — Internet Matters",
+      caption: "Short walkthrough from UK online-safety non-profit Internet Matters (Feb 2026). Then follow the detailed steps below.",
     },
     sections: [
       {
