@@ -141,14 +141,27 @@ function VideosGrid() {
       {VIDEOS.map((v) => (
         <article key={v.id} className="overflow-hidden rounded-2xl border border-border bg-card">
           <div className="aspect-video w-full bg-black">
-            <iframe
-              src={`https://www.youtube.com/embed/${v.id}`}
-              title={v.title}
-              loading="lazy"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="h-full w-full"
-            />
+            {v.href ? (
+              <a
+                href={v.href}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="flex h-full w-full items-center justify-center bg-gradient-to-br from-zinc-900 to-zinc-700 text-background"
+              >
+                <span className="inline-flex items-center gap-2 rounded-full bg-background/10 px-4 py-2 text-sm font-medium backdrop-blur">
+                  <Play className="size-4" /> Watch on {v.channel}
+                </span>
+              </a>
+            ) : (
+              <iframe
+                src={`https://www.youtube.com/embed/${v.id}`}
+                title={v.title}
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="h-full w-full"
+              />
+            )}
           </div>
           <div className="p-5">
             <div className="inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
@@ -163,6 +176,7 @@ function VideosGrid() {
     </div>
   );
 }
+
 
 function LiveFeed({ category }: { category: NewsCategory }) {
   const fetcher = useServerFn(fetchNews);
