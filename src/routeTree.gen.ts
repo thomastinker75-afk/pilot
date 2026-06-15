@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as NewsRouteImport } from './routes/news'
 import { Route as HelpRouteImport } from './routes/help'
 import { Route as GlossaryRouteImport } from './routes/glossary'
 import { Route as AboutRouteImport } from './routes/about'
@@ -25,6 +26,11 @@ import { Route as AgeGuidesAgeRouteImport } from './routes/age-guides.$age'
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NewsRoute = NewsRouteImport.update({
+  id: '/news',
+  path: '/news',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HelpRoute = HelpRouteImport.update({
@@ -88,6 +94,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
+  '/news': typeof NewsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
   '/api/translate-slang': typeof ApiTranslateSlangRoute
@@ -102,6 +109,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
+  '/news': typeof NewsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
   '/api/translate-slang': typeof ApiTranslateSlangRoute
@@ -117,6 +125,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
+  '/news': typeof NewsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
   '/api/translate-slang': typeof ApiTranslateSlangRoute
@@ -133,6 +142,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/glossary'
     | '/help'
+    | '/news'
     | '/sitemap.xml'
     | '/age-guides/$age'
     | '/api/translate-slang'
@@ -147,6 +157,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/glossary'
     | '/help'
+    | '/news'
     | '/sitemap.xml'
     | '/age-guides/$age'
     | '/api/translate-slang'
@@ -161,6 +172,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/glossary'
     | '/help'
+    | '/news'
     | '/sitemap.xml'
     | '/age-guides/$age'
     | '/api/translate-slang'
@@ -176,6 +188,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   GlossaryRoute: typeof GlossaryRoute
   HelpRoute: typeof HelpRoute
+  NewsRoute: typeof NewsRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   AgeGuidesAgeRoute: typeof AgeGuidesAgeRoute
   ApiTranslateSlangRoute: typeof ApiTranslateSlangRoute
@@ -193,6 +206,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/news': {
+      id: '/news'
+      path: '/news'
+      fullPath: '/news'
+      preLoaderRoute: typeof NewsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/help': {
@@ -280,6 +300,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   GlossaryRoute: GlossaryRoute,
   HelpRoute: HelpRoute,
+  NewsRoute: NewsRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   AgeGuidesAgeRoute: AgeGuidesAgeRoute,
   ApiTranslateSlangRoute: ApiTranslateSlangRoute,

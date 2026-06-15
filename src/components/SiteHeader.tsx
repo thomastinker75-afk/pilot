@@ -7,6 +7,7 @@ const NAV = [
   { to: "/apps", label: "Apps & Games" },
   { to: "/glossary", label: "Slang & Emoji" },
   { to: "/checklists", label: "Checklists" },
+  { to: "/news", label: "News" },
   { to: "/help", label: "Get Help" },
 ] as const;
 
