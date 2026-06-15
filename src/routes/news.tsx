@@ -37,36 +37,52 @@ type Video = {
   title: string;
   channel: string;
   blurb: string;
+  href?: string; // external page when not embeddable
 };
 
 const VIDEOS: Video[] = [
   {
-    id: "f97zNQM41eU",
-    title: "Jonathan Haidt: The Anxious Generation",
-    channel: "TED",
-    blurb:
-      "Social psychologist Jonathan Haidt on how the phone-based childhood is rewiring teen brains and driving the youth mental-health crisis.",
-  },
-  {
-    id: "p4ZfkezDTXQ",
-    title: "Dr. Anna Lembke: Dopamine, Screens & Addiction",
-    channel: "Stanford / Huberman Lab",
-    blurb:
-      "Stanford psychiatrist explains how short-form video and games hijack the dopamine system — and what it does to a developing brain.",
-  },
-  {
-    id: "c9d0l40v551o",
-    title: "What screen time really does to children's brains",
+    id: "yFc4yhZKP5U",
+    title: "What screens really do to your child's brain development",
     channel: "BBC News",
     blurb:
-      "BBC Technology editor Zoe Kleinman investigates the neuroscience behind tantrums, attention loss and sleep disruption.",
+      "BBC Senior Education Reporter Vanessa Clarke unpacks new UK government guidance on screen time for under-fives, with researchers explaining how fast-paced content triggers stress responses in toddlers' developing brains.",
   },
   {
-    id: "MFaTHv2QyfU",
-    title: "The Social Dilemma — how platforms hook kids",
-    channel: "Netflix (trailer)",
+    id: "csubiPlvFWk",
+    title: "Dr. Jonathan Haidt: how smartphones & social media impact mental health",
+    channel: "Huberman Lab",
     blurb:
-      "Former Google, Facebook and Pinterest engineers explain the design tricks used to keep young people scrolling.",
+      "The author of The Anxious Generation and neuroscientist Andrew Huberman go deep on how phones alter brain plasticity, why girls and boys are affected differently, and what actually works.",
+  },
+  {
+    id: "2ZKLaUbB33o",
+    title: "Dr. Anna Lembke: how TikTok is physically rewiring your brain",
+    channel: "The Diary of a CEO",
+    blurb:
+      "Stanford psychiatrist Anna Lembke (Dopamine Nation) explains how social media and short-form video replicate drug-seeking loops in the adolescent brain — interviewed by Steven Bartlett.",
+  },
+  {
+    id: "C74amJRp730",
+    title: "How a handful of tech companies control billions of minds every day",
+    channel: "TED — Tristan Harris",
+    blurb:
+      "Former Google design ethicist Tristan Harris exposes how notifications, autoplay and streaks are engineered to exploit psychological vulnerabilities — essential context for why children are most at risk.",
+  },
+  {
+    id: "UA8kZZS_bzc",
+    title: "iGen: the smartphone generation",
+    channel: "TEDx — Dr. Jean Twenge",
+    blurb:
+      "Psychology professor Jean Twenge shows that around 2012 — when teen smartphone ownership crossed 50% — loneliness, depression and sleep deprivation sharply diverged from earlier generations.",
+  },
+  {
+    id: "swiped-c4",
+    title: "Swiped: The School That Banned Smartphones",
+    channel: "Channel 4 (UK)",
+    blurb:
+      "Emma and Matt Willis take smartphones away from Year 8 pupils at a Colchester secondary school for 21 days, while University of York psychologists measure the effects on wellbeing, sleep and focus.",
+    href: "https://www.channel4.com/programmes/swiped-the-school-that-banned-smartphones",
   },
 ];
 
