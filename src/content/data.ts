@@ -1404,6 +1404,11 @@ export const CHECKLISTS: Checklist[] = [
     ],
     overview:
       "Apple's parental controls live in two places: Family Sharing (which links your accounts) and Screen Time (which sets the rules). You configure most things from your own iPhone once the child's Apple Account is linked.",
+    heroVideo: {
+      youtubeId: "8siFNH-brM4",
+      title: "How to create a child account with Family Sharing on iPhone or iPad — Apple Support",
+      caption: "Official Apple Support walkthrough (2:37) for creating the child's Apple Account. Then follow the detailed steps below to lock down Screen Time.",
+    },
     sections: [
       {
         title: "1 · Create the Child Apple Account",
