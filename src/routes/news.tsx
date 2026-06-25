@@ -26,8 +26,8 @@ export const Route = createFileRoute("/news")({
 });
 
 const TABS: { key: NewsCategory | "videos"; label: string; sub: string }[] = [
-  { key: "research", label: "Research & Studies", sub: "Peer-reviewed and government" },
-  { key: "news", label: "News", sub: "BBC, Guardian, FT, Times" },
+  { key: "research", label: "Research & Studies", sub: "Peer-reviewed, worldwide" },
+  { key: "news", label: "News", sub: "UK & worldwide coverage" },
   { key: "videos", label: "Videos", sub: "Experts on the child brain" },
   { key: "incidents", label: "Real-world incidents", sub: "Cases, lawsuits, school bans" },
 ];
