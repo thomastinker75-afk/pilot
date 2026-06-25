@@ -129,7 +129,13 @@ function NewsPage() {
       </div>
 
       <div className="mt-10">
-        {tab === "videos" ? <VideosGrid /> : <LiveFeed category={tab} />}
+        {tab === "videos" ? (
+          <VideosGrid />
+        ) : tab === "research" ? (
+          <LiveFeed category="research" region="world" />
+        ) : (
+          <RegionalFeed category={tab} />
+        )}
       </div>
     </div>
   );
