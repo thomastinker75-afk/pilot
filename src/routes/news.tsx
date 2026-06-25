@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
-import { fetchNews, type NewsCategory, type NewsItem } from "@/lib/news.functions";
+import { fetchNews, type NewsCategory, type NewsItem, type Region } from "@/lib/news.functions";
 import { ArrowUpRight, Loader2, Play, AlertTriangle } from "lucide-react";
 
 export const Route = createFileRoute("/news")({
