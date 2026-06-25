@@ -135,15 +135,26 @@ const RESEARCH_SOURCES = [
 
 type QueryConfig = { sources: string[]; query: string; tbs: string };
 
+// Topical relevance filter applied to titles+descriptions. Every surfaced item
+// must mention (a) a child/teen and (b) a screen/digital context and
+// (c) a harm/risk angle — otherwise it's off-topic for this site.
+const CHILD_RE = /\b(child|children|kid|kids|teen|teens|teenage[rs]?|adolescen|youth|young people|pupil|pupils|student|students|minor|minors|under[- ]?(?:13|16|18)|toddler|baby|babies|son|daughter|girl|girls|boy|boys)\b/i;
+const TECH_RE = /\b(smartphone|smartphones|phone|phones|screen[- ]?time|screens?|social media|tiktok|instagram|snapchat|youtube|roblox|fortnite|discord|whatsapp|telegram|twitch|online|internet|video[- ]?games?|gaming|tablet|tablets|ipad|tv|television|streaming|app|apps|algorithm|algorithms|device|devices|digital)\b/i;
+const HARM_RE = /\b(harm|harmful|risk|risks|danger|dangerous|addict|mental health|anxiety|depress|self[- ]?harm|suicide|sleep|grooming|exploit|abuse|bully|cyberbully|porn|sextort|predator|inquest|lawsuit|sued|ban|banned|regulat|safety|wellbeing|well-being|brain|attention|focus|eating disorder|body image|loneliness|tragedy|death|died|killed)\b/i;
+
+function isOnTopic(title: string, description: string): boolean {
+  const blob = `${title} ${description}`;
+  return CHILD_RE.test(blob) && TECH_RE.test(blob) && HARM_RE.test(blob);
+}
+
 function buildConfig(category: NewsCategory, region: Region): QueryConfig {
-  // 1 year window for news/incidents; 1 year for research too so we surface meaningful studies
   const tbs = "qdr:y";
 
   if (category === "research") {
     return {
       sources: RESEARCH_SOURCES,
       query:
-        "study OR research children adolescents screen time social media smartphone mental health brain development anxiety depression",
+        '(children OR adolescents OR teens OR youth) AND (smartphone OR "social media" OR "screen time" OR gaming OR internet OR tablet) AND ("mental health" OR anxiety OR depression OR "brain development" OR sleep OR addiction OR wellbeing OR harm)',
       tbs,
     };
   }
@@ -153,18 +164,19 @@ function buildConfig(category: NewsCategory, region: Region): QueryConfig {
   if (category === "news") {
     const query =
       region === "uk"
-        ? "UK children social media smartphone harm regulation Ofcom Online Safety Act school phone ban"
-        : "children teens social media smartphone harm regulation law school phone ban TikTok Instagram"; 
+        ? '(children OR teens OR pupils OR "young people") AND (smartphone OR "social media" OR "screen time" OR TikTok OR Instagram OR Snapchat OR online OR gaming) AND (harm OR risk OR ban OR Ofcom OR "Online Safety Act" OR "mental health" OR addiction OR school)'
+        : '(children OR teens OR adolescents OR youth) AND (smartphone OR "social media" OR "screen time" OR TikTok OR Instagram OR Snapchat OR online OR gaming) AND (harm OR risk OR ban OR regulation OR "mental health" OR addiction OR lawsuit OR school)';
     return { sources, query, tbs };
   }
 
-  // incidents
+  // incidents — real-world cases of harm tied to screens/social/games
   const query =
     region === "uk"
-      ? "UK child teen harm social media platform lawsuit inquest tragedy school phone incident"
-      : "child teen harm social media platform lawsuit inquest suicide tragedy school incident";
+      ? '(child OR teen OR pupil OR "young person") AND ("social media" OR smartphone OR online OR app OR game) AND (inquest OR lawsuit OR suicide OR self-harm OR grooming OR sextortion OR exploitation OR tragedy OR death OR harm)'
+      : '(child OR teen OR adolescent OR youth) AND ("social media" OR smartphone OR online OR app OR game) AND (inquest OR lawsuit OR suicide OR self-harm OR grooming OR sextortion OR exploitation OR tragedy OR death OR harm)';
   return { sources, query, tbs };
 }
+
 
 // In-memory cache keyed by category+region. Refresh monthly for research, 6h for the rest.
 type CacheEntry = { at: number; items: NewsItem[] };
