@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
-import { fetchNews, type NewsCategory, type NewsItem } from "@/lib/news.functions";
+import { fetchNews, type NewsCategory, type NewsItem, type Region } from "@/lib/news.functions";
 import { ArrowUpRight, Loader2, Play, AlertTriangle } from "lucide-react";
 
 export const Route = createFileRoute("/news")({
@@ -26,8 +26,8 @@ export const Route = createFileRoute("/news")({
 });
 
 const TABS: { key: NewsCategory | "videos"; label: string; sub: string }[] = [
-  { key: "research", label: "Research & Studies", sub: "Peer-reviewed and government" },
-  { key: "news", label: "News", sub: "BBC, Guardian, FT, Times" },
+  { key: "research", label: "Research & Studies", sub: "Peer-reviewed, worldwide" },
+  { key: "news", label: "News", sub: "UK & worldwide coverage" },
   { key: "videos", label: "Videos", sub: "Experts on the child brain" },
   { key: "incidents", label: "Real-world incidents", sub: "Cases, lawsuits, school bans" },
 ];
@@ -129,7 +129,13 @@ function NewsPage() {
       </div>
 
       <div className="mt-10">
-        {tab === "videos" ? <VideosGrid /> : <LiveFeed category={tab} />}
+        {tab === "videos" ? (
+          <VideosGrid />
+        ) : tab === "research" ? (
+          <LiveFeed category="research" region="world" />
+        ) : (
+          <RegionalFeed category={tab} />
+        )}
       </div>
     </div>
   );
@@ -178,19 +184,40 @@ function VideosGrid() {
 }
 
 
-function LiveFeed({ category }: { category: NewsCategory }) {
+function RegionalFeed({ category }: { category: NewsCategory }) {
+  return (
+    <div className="space-y-12">
+      <section>
+        <div className="mb-4 flex items-baseline justify-between gap-4">
+          <h2 className="font-display text-2xl font-semibold tracking-tight">🇬🇧 UK</h2>
+          <p className="text-xs text-muted-foreground">Past 12 months · newest first</p>
+        </div>
+        <LiveFeed category={category} region="uk" />
+      </section>
+      <section>
+        <div className="mb-4 flex items-baseline justify-between gap-4">
+          <h2 className="font-display text-2xl font-semibold tracking-tight">🌍 Worldwide</h2>
+          <p className="text-xs text-muted-foreground">Past 12 months · newest first</p>
+        </div>
+        <LiveFeed category={category} region="world" />
+      </section>
+    </div>
+  );
+}
+
+function LiveFeed({ category, region }: { category: NewsCategory; region: Region }) {
   const fetcher = useServerFn(fetchNews);
   const { data, isLoading, isError, error } = useQuery({
-    queryKey: ["news", category],
-    queryFn: () => fetcher({ data: { category } }),
-    staleTime: 6 * 60 * 60 * 1000,
+    queryKey: ["news", category, region],
+    queryFn: () => fetcher({ data: { category, region } }),
+    staleTime: category === "research" ? 30 * 24 * 60 * 60 * 1000 : 6 * 60 * 60 * 1000,
   });
 
   if (isLoading) {
     return (
       <div className="flex items-center gap-2 py-12 text-muted-foreground">
         <Loader2 className="size-4 animate-spin" />
-        Fetching the latest from trusted UK sources…
+        Fetching the latest from trusted sources…
       </div>
     );
   }
@@ -212,11 +239,13 @@ function LiveFeed({ category }: { category: NewsCategory }) {
   if (items.length === 0) {
     return (
       <div className="rounded-2xl border border-dashed border-border p-8 text-sm text-muted-foreground">
-        Nothing new to show yet. The feed updates automatically every few hours.
+        Nothing to show yet. The feed updates automatically.
         {data?.error ? <span className="mt-2 block text-xs">({data.error})</span> : null}
       </div>
     );
   }
+
+  const cacheLabel = category === "research" ? "cached for 30 days" : "cached for 6 hours";
 
   return (
     <>
@@ -229,8 +258,19 @@ function LiveFeed({ category }: { category: NewsCategory }) {
             rel="noreferrer noopener"
             className="group flex flex-col rounded-2xl border border-border bg-card p-5 transition hover:border-foreground/40"
           >
-            <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-              {item.source}
+            <div className="flex items-center justify-between gap-2">
+              <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                {item.source}
+              </div>
+              {item.publishedAt ? (
+                <time className="text-xs text-muted-foreground" dateTime={item.publishedAt}>
+                  {new Date(item.publishedAt).toLocaleDateString("en-GB", {
+                    day: "numeric",
+                    month: "short",
+                    year: "numeric",
+                  })}
+                </time>
+              ) : null}
             </div>
             <h3 className="mt-2 font-display text-lg font-semibold leading-snug">
               {item.title}
@@ -247,7 +287,7 @@ function LiveFeed({ category }: { category: NewsCategory }) {
       </div>
       {data?.cachedAt ? (
         <p className="mt-6 text-xs text-muted-foreground">
-          Last refreshed {new Date(data.cachedAt).toLocaleString("en-GB")} · cached for 6 hours.
+          Last refreshed {new Date(data.cachedAt).toLocaleString("en-GB")} · {cacheLabel}.
         </p>
       ) : null}
     </>
