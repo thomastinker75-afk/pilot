@@ -249,12 +249,15 @@ export const fetchNews = createServerFn({ method: "GET" })
             publishedAt,
           };
         })
+        // Drop anything that isn't clearly about harm to kids/teens from screens
+        .filter((it) => isOnTopic(it.title, it.description))
         // Newest first; undated entries sink to the bottom
         .sort((a, b) => {
           const ta = parseDateLoose(a.publishedAt) ?? 0;
           const tb = parseDateLoose(b.publishedAt) ?? 0;
           return tb - ta;
         });
+
 
       cache.set(key, { at: Date.now(), items });
       return { items, cachedAt: new Date().toISOString() };
