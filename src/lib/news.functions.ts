@@ -240,7 +240,7 @@ export const fetchNews = createServerFn({ method: "GET" })
         ((res as { data?: { web?: unknown[] } }).data?.web as Array<{ url?: string; title?: string; description?: string; date?: string; publishedDate?: string }>) ??
         [];
 
-      const items: NewsItem[] = raw
+      const fresh: NewsItem[] = raw
         .filter((r) => r.url && r.title)
         .map((r) => {
           const publishedAt = r.publishedDate ?? r.date;
@@ -252,15 +252,29 @@ export const fetchNews = createServerFn({ method: "GET" })
             publishedAt,
           };
         })
-        // Drop anything that isn't clearly about harm to kids/teens from screens
-        .filter((it) => isOnTopic(it.title, it.description))
-        // Newest first; undated entries sink to the bottom
+        .filter((it) => isOnTopic(it.title, it.description));
+
+      // Merge with previously cached items, dedupe by URL (fresh wins),
+      // drop anything older than 1 year, then sort newest first.
+      const cutoff = Date.now() - YEAR_MS;
+      const merged = new Map<string, NewsItem>();
+      for (const it of cached?.items ?? []) merged.set(it.url, it);
+      for (const it of fresh) merged.set(it.url, it);
+
+      const items = Array.from(merged.values())
+        .filter((it) => {
+          const t = parseDateLoose(it.publishedAt);
+          // Keep undated items only if they were just fetched (in `fresh`);
+          // once they've been in cache and can't be dated, they stay until
+          // they naturally age out via a future dated version.
+          if (t === undefined) return true;
+          return t >= cutoff;
+        })
         .sort((a, b) => {
           const ta = parseDateLoose(a.publishedAt) ?? 0;
           const tb = parseDateLoose(b.publishedAt) ?? 0;
           return tb - ta;
         });
-
 
       cache.set(key, { at: Date.now(), items });
       return { items, cachedAt: new Date().toISOString() };
