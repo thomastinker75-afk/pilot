@@ -140,11 +140,15 @@ type QueryConfig = { sources: string[]; query: string; tbs: string };
 // (c) a harm/risk angle — otherwise it's off-topic for this site.
 const CHILD_RE = /\b(child|children|kid|kids|teen|teens|teenage[rs]?|adolescen|youth|young people|pupil|pupils|student|students|minor|minors|under[- ]?(?:13|16|18)|toddler|baby|babies|son|daughter|girl|girls|boy|boys)\b/i;
 const TECH_RE = /\b(smartphone|smartphones|phone|phones|screen[- ]?time|screens?|social media|tiktok|instagram|snapchat|youtube|roblox|fortnite|discord|whatsapp|telegram|twitch|online|internet|video[- ]?games?|gaming|tablet|tablets|ipad|tv|television|streaming|app|apps|algorithm|algorithms|device|devices|digital)\b/i;
-const HARM_RE = /\b(harm|harmful|risk|risks|danger|dangerous|addict|mental health|anxiety|depress|self[- ]?harm|suicide|sleep|grooming|exploit|abuse|bully|cyberbully|porn|sextort|predator|inquest|lawsuit|sued|ban|banned|regulat|safety|wellbeing|well-being|brain|attention|focus|eating disorder|body image|loneliness|tragedy|death|died|killed)\b/i;
+
 
 function isOnTopic(title: string, description: string): boolean {
   const blob = `${title} ${description}`;
-  return CHILD_RE.test(blob) && TECH_RE.test(blob) && HARM_RE.test(blob);
+  // The search query itself already constrains for harm terms across trusted
+  // child-safety sources, so the post-filter only requires that the headline
+  // mentions a child/teen AND a screen/digital context. Requiring a harm
+  // keyword in the title too was throwing away most legitimate coverage.
+  return CHILD_RE.test(blob) && TECH_RE.test(blob);
 }
 
 function buildConfig(category: NewsCategory, region: Region): QueryConfig {
