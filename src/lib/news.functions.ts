@@ -144,7 +144,11 @@ const HARM_RE = /\b(harm|harmful|risk|risks|danger|dangerous|addict|mental healt
 
 function isOnTopic(title: string, description: string): boolean {
   const blob = `${title} ${description}`;
-  return CHILD_RE.test(blob) && TECH_RE.test(blob) && HARM_RE.test(blob);
+  // The search query itself already constrains for harm terms across trusted
+  // child-safety sources, so the post-filter only requires that the headline
+  // mentions a child/teen AND a screen/digital context. Requiring a harm
+  // keyword in the title too was throwing away most legitimate coverage.
+  return CHILD_RE.test(blob) && TECH_RE.test(blob);
 }
 
 function buildConfig(category: NewsCategory, region: Region): QueryConfig {
