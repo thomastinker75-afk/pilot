@@ -245,7 +245,7 @@ function LiveFeed({ category, region }: { category: NewsCategory; region: Region
     );
   }
 
-  const cacheLabel = category === "research" ? "cached for 30 days" : "cached for 6 hours";
+  const cacheLabel = category === "research" ? "refreshed monthly" : "refreshed weekly · articles kept for 1 year";
 
   return (
     <>
