@@ -210,7 +210,7 @@ function LiveFeed({ category, region }: { category: NewsCategory; region: Region
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ["news", category, region],
     queryFn: () => fetcher({ data: { category, region } }),
-    staleTime: category === "research" ? 30 * 24 * 60 * 60 * 1000 : 6 * 60 * 60 * 1000,
+    staleTime: category === "research" ? 30 * 24 * 60 * 60 * 1000 : 7 * 24 * 60 * 60 * 1000,
   });
 
   if (isLoading) {
@@ -245,7 +245,7 @@ function LiveFeed({ category, region }: { category: NewsCategory; region: Region
     );
   }
 
-  const cacheLabel = category === "research" ? "cached for 30 days" : "cached for 6 hours";
+  const cacheLabel = category === "research" ? "refreshed monthly" : "refreshed weekly · articles kept for 1 year";
 
   return (
     <>
