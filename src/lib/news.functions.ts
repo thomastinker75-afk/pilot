@@ -178,14 +178,17 @@ function buildConfig(category: NewsCategory, region: Region): QueryConfig {
 }
 
 
-// In-memory cache keyed by category+region. Refresh monthly for research, 6h for the rest.
+// In-memory cache keyed by category+region. Refresh weekly for news/incidents,
+// monthly for research. Articles accumulate across refreshes and are only
+// dropped when they pass the 1-year age cutoff.
 type CacheEntry = { at: number; items: NewsItem[] };
 const cache = new Map<string, CacheEntry>();
 const MONTH_MS = 30 * 24 * 60 * 60 * 1000;
-const SIX_HOURS_MS = 6 * 60 * 60 * 1000;
+const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+const YEAR_MS = 365 * 24 * 60 * 60 * 1000;
 
 function cacheTtl(category: NewsCategory) {
-  return category === "research" ? MONTH_MS : SIX_HOURS_MS;
+  return category === "research" ? MONTH_MS : WEEK_MS;
 }
 
 function hostFromUrl(url: string): string {
