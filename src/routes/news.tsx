@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
 import { fetchNews, type NewsCategory, type NewsItem, type Region } from "@/lib/news.functions";
+import { UK_RESEARCH, WORLD_RESEARCH, type ResearchItem } from "@/content/research";
 import { ArrowUpRight, Loader2, Play, AlertTriangle } from "lucide-react";
 
 export const Route = createFileRoute("/news")({
@@ -26,7 +27,7 @@ export const Route = createFileRoute("/news")({
 });
 
 const TABS: { key: NewsCategory | "videos"; label: string; sub: string }[] = [
-  { key: "research", label: "Research & Studies", sub: "Peer-reviewed, worldwide" },
+  { key: "research", label: "Research & Studies", sub: "UK & worldwide studies" },
   { key: "news", label: "News", sub: "UK & worldwide coverage" },
   { key: "videos", label: "Videos", sub: "Experts on the child brain" },
   { key: "incidents", label: "Real-world incidents", sub: "Cases, lawsuits, school bans" },
@@ -132,7 +133,7 @@ function NewsPage() {
         {tab === "videos" ? (
           <VideosGrid />
         ) : tab === "research" ? (
-          <LiveFeed category="research" region="world" />
+          <CuratedResearch />
         ) : (
           <RegionalFeed category={tab} />
         )}
