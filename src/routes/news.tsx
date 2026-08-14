@@ -96,11 +96,10 @@ function NewsPage() {
       <h1 className="mt-3 max-w-4xl font-display text-4xl leading-tight tracking-tight md:text-6xl">
         What the evidence — and the headlines — say about screens.
       </h1>
-      <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-        A living feed of UK-first research, journalism, expert videos and real-world incidents on how
-        smartphones, social media and games are affecting children. Updated automatically from trusted
-        sources.
-      </p>
+        <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
+          A living feed of UK-first research, journalism, expert videos and real-world incidents on how
+          smartphones, social media and games are affecting children and teenagers.
+        </p>
 
       {/* Tabs */}
       <div className="mt-10 grid grid-cols-2 gap-2 md:grid-cols-4">
