@@ -27,4 +27,14 @@ export const UK_RESEARCH: ResearchItem[] = [
   },
 ];
 
-export const WORLD_RESEARCH: ResearchItem[] = [];
+export const WORLD_RESEARCH: ResearchItem[] = [
+  {
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10353947/",
+    title:
+      "Effects of Excessive Screen Time on Child Development: An Updated Review and Strategies for Management",
+    source: "Cureus (NIH / PubMed Central)",
+    description:
+      "Peer-reviewed review examining how excessive screen time harms children's cognitive, linguistic and social-emotional development, with evidence-based strategies for management and parental guidance.",
+    publishedAt: "2023-06-18",
+  },
+];
