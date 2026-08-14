@@ -18,6 +18,13 @@ export const UK_RESEARCH: ResearchItem[] = [
       "House of Commons Education Committee report examining how screen time affects children's education, attention and wellbeing, with recommendations for schools, government and tech companies.",
     publishedAt: "2024-02-28",
   },
+  {
+    url: "https://onlinelibrary.wiley.com/doi/10.1111/apa.17317",
+    title: "Smartphone Use and Mental Health in English Students",
+    source: "Journal of Applied Psychology (Wiley Online Library)",
+    description:
+      "Peer-reviewed study examining the relationship between smartphone use and mental health outcomes among English secondary school students.",
+  },
 ];
 
 export const WORLD_RESEARCH: ResearchItem[] = [];
