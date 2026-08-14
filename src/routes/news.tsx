@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
 import { fetchNews, type NewsCategory, type NewsItem, type Region } from "@/lib/news.functions";
+import { UK_RESEARCH, WORLD_RESEARCH, type ResearchItem } from "@/content/research";
 import { ArrowUpRight, Loader2, Play, AlertTriangle } from "lucide-react";
 
 export const Route = createFileRoute("/news")({
@@ -26,7 +27,7 @@ export const Route = createFileRoute("/news")({
 });
 
 const TABS: { key: NewsCategory | "videos"; label: string; sub: string }[] = [
-  { key: "research", label: "Research & Studies", sub: "Peer-reviewed, worldwide" },
+  { key: "research", label: "Research & Studies", sub: "UK & worldwide studies" },
   { key: "news", label: "News", sub: "UK & worldwide coverage" },
   { key: "videos", label: "Videos", sub: "Experts on the child brain" },
   { key: "incidents", label: "Real-world incidents", sub: "Cases, lawsuits, school bans" },
@@ -132,7 +133,7 @@ function NewsPage() {
         {tab === "videos" ? (
           <VideosGrid />
         ) : tab === "research" ? (
-          <LiveFeed category="research" region="world" />
+          <CuratedResearch />
         ) : (
           <RegionalFeed category={tab} />
         )}
@@ -178,6 +179,73 @@ function VideosGrid() {
             <p className="mt-2 text-sm text-muted-foreground">{v.blurb}</p>
           </div>
         </article>
+      ))}
+    </div>
+  );
+}
+
+function CuratedResearch() {
+  return (
+    <div className="space-y-12">
+      <section>
+        <div className="mb-4 flex items-baseline justify-between gap-4">
+          <h2 className="font-display text-2xl font-semibold tracking-tight">🇬🇧 UK research</h2>
+          <p className="text-xs text-muted-foreground">Curated studies & official reports</p>
+        </div>
+        <ResearchGrid items={UK_RESEARCH} />
+      </section>
+      <section>
+        <div className="mb-4 flex items-baseline justify-between gap-4">
+          <h2 className="font-display text-2xl font-semibold tracking-tight">🌍 Worldwide</h2>
+          <p className="text-xs text-muted-foreground">Curated studies & reports</p>
+        </div>
+        <ResearchGrid items={WORLD_RESEARCH} />
+      </section>
+    </div>
+  );
+}
+
+function ResearchGrid({ items }: { items: ResearchItem[] }) {
+  if (items.length === 0) {
+    return (
+      <div className="rounded-2xl border border-dashed border-border p-8 text-sm text-muted-foreground">
+        More sources being added to this section soon.
+      </div>
+    );
+  }
+  return (
+    <div className="grid gap-4 md:grid-cols-2">
+      {items.map((item) => (
+        <a
+          key={item.url}
+          href={item.url}
+          target="_blank"
+          rel="noreferrer noopener"
+          className="group flex flex-col rounded-2xl border border-border bg-card p-5 transition hover:border-foreground/40"
+        >
+          <div className="flex items-center justify-between gap-2">
+            <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              {item.source}
+            </div>
+            {item.publishedAt ? (
+              <time className="text-xs text-muted-foreground" dateTime={item.publishedAt}>
+                {new Date(item.publishedAt).toLocaleDateString("en-GB", {
+                  day: "numeric",
+                  month: "short",
+                  year: "numeric",
+                })}
+              </time>
+            ) : null}
+          </div>
+          <h3 className="mt-2 font-display text-lg font-semibold leading-snug">{item.title}</h3>
+          {item.description ? (
+            <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
+          ) : null}
+          <div className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary">
+            Read on {item.source}
+            <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </div>
+        </a>
       ))}
     </div>
   );
