@@ -128,10 +128,10 @@ function NewsPage() {
       <div className="mt-10">
         {tab === "videos" ? (
           <VideosGrid />
-        ) : tab === "research" ? (
-          <CuratedResearch />
+        ) : tab === "articles" ? (
+          <CuratedArticles />
         ) : (
-          <RegionalFeed category={tab} />
+          <CuratedResearch />
         )}
       </div>
     </div>
