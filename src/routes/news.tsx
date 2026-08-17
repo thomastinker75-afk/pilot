@@ -24,11 +24,10 @@ export const Route = createFileRoute("/news")({
   }),
 });
 
-const TABS: { key: NewsCategory | "videos"; label: string; sub: string }[] = [
+const TABS: { key: "research" | "articles" | "videos"; label: string; sub: string }[] = [
   { key: "research", label: "Research & Studies", sub: "UK & worldwide studies" },
-  { key: "news", label: "News", sub: "UK & worldwide coverage" },
+  { key: "articles", label: "Articles", sub: "News & real-world incidents" },
   { key: "videos", label: "Videos", sub: "Experts on the child brain" },
-  { key: "incidents", label: "Real-world incidents", sub: "Cases, lawsuits, school bans" },
 ];
 
 type Video = {
