@@ -246,114 +246,69 @@ function ResearchGrid({ items }: { items: ResearchItem[] }) {
     </div>
   );
 }
-
-
-function RegionalFeed({ category }: { category: NewsCategory }) {
+function CuratedArticles() {
   return (
     <div className="space-y-12">
       <section>
         <div className="mb-4 flex items-baseline justify-between gap-4">
           <h2 className="font-display text-2xl font-semibold tracking-tight">🇬🇧 UK</h2>
-          <p className="text-xs text-muted-foreground">Past 12 months · newest first</p>
+          <p className="text-xs text-muted-foreground">News & real-world incidents · newest first</p>
         </div>
-        <LiveFeed category={category} region="uk" />
+        <ArticleGrid items={UK_ARTICLES} />
       </section>
       <section>
         <div className="mb-4 flex items-baseline justify-between gap-4">
           <h2 className="font-display text-2xl font-semibold tracking-tight">🌍 Worldwide</h2>
-          <p className="text-xs text-muted-foreground">Past 12 months · newest first</p>
+          <p className="text-xs text-muted-foreground">News & real-world incidents · newest first</p>
         </div>
-        <LiveFeed category={category} region="world" />
+        <ArticleGrid items={WORLD_ARTICLES} />
       </section>
     </div>
   );
 }
 
-function LiveFeed({ category, region }: { category: NewsCategory; region: Region }) {
-  const fetcher = useServerFn(fetchNews);
-  const { data, isLoading, isError, error } = useQuery({
-    queryKey: ["news", category, region],
-    queryFn: () => fetcher({ data: { category, region } }),
-    staleTime: category === "research" ? 30 * 24 * 60 * 60 * 1000 : 7 * 24 * 60 * 60 * 1000,
-  });
-
-  if (isLoading) {
-    return (
-      <div className="flex items-center gap-2 py-12 text-muted-foreground">
-        <Loader2 className="size-4 animate-spin" />
-        Fetching the latest from trusted sources…
-      </div>
-    );
-  }
-
-  if (isError) {
-    return (
-      <div className="flex items-start gap-3 rounded-2xl border border-border bg-card p-5 text-sm text-muted-foreground">
-        <AlertTriangle className="mt-0.5 size-4 text-destructive" />
-        <div>
-          Couldn't load the feed right now.
-          {error instanceof Error ? <span className="block">{error.message}</span> : null}
-        </div>
-      </div>
-    );
-  }
-
-  const items: NewsItem[] = data?.items ?? [];
-
+function ArticleGrid({ items }: { items: ArticleItem[] }) {
   if (items.length === 0) {
     return (
       <div className="rounded-2xl border border-dashed border-border p-8 text-sm text-muted-foreground">
-        Nothing to show yet. The feed updates automatically.
-        {data?.error ? <span className="mt-2 block text-xs">({data.error})</span> : null}
+        More articles being added to this section soon.
       </div>
     );
   }
-
-  const cacheLabel = category === "research" ? "refreshed monthly" : "refreshed weekly · articles kept for 1 year";
-
   return (
-    <>
-      <div className="grid gap-4 md:grid-cols-2">
-        {items.map((item) => (
-          <a
-            key={item.url}
-            href={item.url}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="group flex flex-col rounded-2xl border border-border bg-card p-5 transition hover:border-foreground/40"
-          >
-            <div className="flex items-center justify-between gap-2">
-              <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                {item.source}
-              </div>
-              {item.publishedAt ? (
-                <time className="text-xs text-muted-foreground" dateTime={item.publishedAt}>
-                  {new Date(item.publishedAt).toLocaleDateString("en-GB", {
-                    day: "numeric",
-                    month: "short",
-                    year: "numeric",
-                  })}
-                </time>
-              ) : null}
+    <div className="grid gap-4 md:grid-cols-2">
+      {items.map((item) => (
+        <a
+          key={item.url}
+          href={item.url}
+          target="_blank"
+          rel="noreferrer noopener"
+          className="group flex flex-col rounded-2xl border border-border bg-card p-5 transition hover:border-foreground/40"
+        >
+          <div className="flex items-center justify-between gap-2">
+            <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              {item.source}
             </div>
-            <h3 className="mt-2 font-display text-lg font-semibold leading-snug">
-              {item.title}
-            </h3>
-            {item.description ? (
-              <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
+            {item.publishedAt ? (
+              <time className="text-xs text-muted-foreground" dateTime={item.publishedAt}>
+                {new Date(item.publishedAt).toLocaleDateString("en-GB", {
+                  day: "numeric",
+                  month: "short",
+                  year: "numeric",
+                })}
+              </time>
             ) : null}
-            <div className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary">
-              Read on {item.source}
-              <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </div>
-          </a>
-        ))}
-      </div>
-      {data?.cachedAt ? (
-        <p className="mt-6 text-xs text-muted-foreground">
-          Last refreshed {new Date(data.cachedAt).toLocaleString("en-GB")} · {cacheLabel}.
-        </p>
-      ) : null}
-    </>
+          </div>
+          <h3 className="mt-2 font-display text-lg font-semibold leading-snug">{item.title}</h3>
+          {item.description ? (
+            <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
+          ) : null}
+          <div className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary">
+            Read on {item.source}
+            <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </div>
+        </a>
+      ))}
+    </div>
   );
 }
