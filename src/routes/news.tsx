@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { UK_RESEARCH, WORLD_RESEARCH, type ResearchItem } from "@/content/research";
 import { UK_ARTICLES, WORLD_ARTICLES, type ArticleItem } from "@/content/articles";
-import { ArrowUpRight, Play, Loader2 } from "lucide-react";
+import { ArrowUpRight, Play } from "lucide-react";
 
 export const Route = createFileRoute("/news")({
   component: NewsPage,
