@@ -13,15 +13,6 @@ export type ArticleItem = {
 // Newest first. Older items sink to the bottom of each section.
 export const UK_ARTICLES: ArticleItem[] = [
   {
-    url: "https://www.bbc.co.uk/news/articles/cd6l07wwvlpo",
-    title:
-      "Parents should monitor children '24/7' on Roblox, says developer",
-    source: "BBC News",
-    description:
-      "An independent Roblox developer tells the BBC the platform's child safety measures do not go far enough, warning parents to supervise their children on the platform '24/7' or not let them play at all.",
-    publishedAt: "2026-03-26",
-  },
-  {
     url: "https://www.theguardian.com/technology/2026/aug/08/uk-children-explicit-deepfake-images-ai",
     title:
       "Rising number of UK children report seeing explicit deepfakes of themselves",
@@ -29,6 +20,15 @@ export const UK_ARTICLES: ArticleItem[] = [
     description:
       "An anonymous flagging service says cases have surged, as the watchdog warns that AI is making sexualised or 'nudified' content easier to produce.",
     publishedAt: "2026-08-08",
+  },
+  {
+    url: "https://www.bbc.co.uk/news/articles/cd6l07wwvlpo",
+    title:
+      "Parents should monitor children '24/7' on Roblox, says developer",
+    source: "BBC News",
+    description:
+      "An independent Roblox developer tells the BBC the platform's child safety measures do not go far enough, warning parents to supervise their children on the platform '24/7' or not let them play at all.",
+    publishedAt: "2026-03-26",
   },
   {
     url: "https://www.theguardian.com/society/2025/dec/11/online-child-sexual-abuse-surges-by-26-percent-in-year-as-police-say-tech-firms-must-act",
@@ -47,6 +47,15 @@ export const UK_ARTICLES: ArticleItem[] = [
     description:
       "Karl Davies was sentenced to 20 years after sexually abusing a 14-year-old girl he had contacted on the Discord app.",
     publishedAt: "2025-10-20",
+  },
+  {
+    url: "https://www.theguardian.com/technology/2025/apr/14/risks-children-roblox-deeply-disturbing-researchers",
+    title:
+      "Risks to children playing Roblox 'deeply disturbing', say researchers",
+    source: "The Guardian",
+    description:
+      "Researchers accuse the gaming platform of a 'troubling disconnect between child-friendly appearance and reality', raising fresh concerns over how Roblox exposes young players to harmful content and contact.",
+    publishedAt: "2025-04-14",
   },
   {
     url: "https://www.itv.com/news/2025-02-07/tiktok-sued-by-parents-of-uk-teens-who-allegedly-died-in-viral-trend",
