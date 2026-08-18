@@ -111,4 +111,12 @@ export const WORLD_ARTICLES: ArticleItem[] = [
       "Here are some tips on staying safe, communicating and setting limits on social media — for kids as well as their parents.",
     publishedAt: "2024-02-04",
   },
+  {
+    url: "https://www.humanium.org/en/the-risks-for-children-surfing-the-internet/",
+    title: "The risks for children surfing the internet",
+    source: "Humanium",
+    description:
+      "When used correctly, the internet has the potential to broaden horizons — but with this opportunity come serious risks, from exposure to inappropriate content and online predators to cyberbullying, grooming and the sharing of personal data.",
+    publishedAt: "2023-03-21",
+  },
 ];
