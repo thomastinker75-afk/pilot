@@ -13,6 +13,14 @@ export type ArticleItem = {
 // Newest first. Older items sink to the bottom of each section.
 export const UK_ARTICLES: ArticleItem[] = [
   {
+    url: "https://childrescuecoalition.org/educations/every-parents-nightmare-roblox-and-other-dangerous-video-games/",
+    title:
+      "Every parent's nightmare: Roblox and other dangerous video games",
+    source: "Child Rescue Coalition",
+    description:
+      "A child safety organisation outlines how popular gaming platforms like Roblox can expose children to predators, harmful content and unmonitored contact with strangers — and what parents can do to reduce the risks.",
+  },
+  {
     url: "https://www.theguardian.com/technology/2026/aug/08/uk-children-explicit-deepfake-images-ai",
     title:
       "Rising number of UK children report seeing explicit deepfakes of themselves",
