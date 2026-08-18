@@ -13,6 +13,15 @@ export type ArticleItem = {
 // Newest first. Older items sink to the bottom of each section.
 export const UK_ARTICLES: ArticleItem[] = [
   {
+    url: "https://www.bbc.co.uk/news/articles/cd6l07wwvlpo",
+    title:
+      "Parents should monitor children '24/7' on Roblox, says developer",
+    source: "BBC News",
+    description:
+      "An independent Roblox developer tells the BBC the platform's child safety measures do not go far enough, warning parents to supervise their children on the platform '24/7' or not let them play at all.",
+    publishedAt: "2026-03-26",
+  },
+  {
     url: "https://www.theguardian.com/technology/2026/aug/08/uk-children-explicit-deepfake-images-ai",
     title:
       "Rising number of UK children report seeing explicit deepfakes of themselves",
