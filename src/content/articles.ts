@@ -39,6 +39,15 @@ export const UK_ARTICLES: ArticleItem[] = [
       "Karl Davies was sentenced to 20 years after sexually abusing a 14-year-old girl he had contacted on the Discord app.",
     publishedAt: "2025-10-20",
   },
+  {
+    url: "https://www.itv.com/news/2025-02-07/tiktok-sued-by-parents-of-uk-teens-who-allegedly-died-in-viral-trend",
+    title:
+      "TikTok sued by parents of UK teens who allegedly died in viral trend",
+    source: "ITV News",
+    description:
+      "Families of teenagers who reportedly died after taking part in a viral challenge on the platform are taking legal action against TikTok, arguing the app's recommendation algorithm promoted dangerous content to their children.",
+    publishedAt: "2025-02-07",
+  },
 ];
 
 export const WORLD_ARTICLES: ArticleItem[] = [];
