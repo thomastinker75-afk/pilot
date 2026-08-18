@@ -50,4 +50,39 @@ export const UK_ARTICLES: ArticleItem[] = [
   },
 ];
 
-export const WORLD_ARTICLES: ArticleItem[] = [];
+export const WORLD_ARTICLES: ArticleItem[] = [
+  {
+    url: "https://apnews.com/article/meta-trial-child-sexual-exploitation-5ad9f7bf1ad05bef9d177938e94f0e8b",
+    title:
+      "New Mexico trial nears end over children's safety risks on Meta",
+    source: "AP News",
+    description:
+      "Jury deliberations have begun in a landmark trial where New Mexico prosecutors are accusing social media conglomerate Meta of misleading people about the safety of its platforms for children.",
+    publishedAt: "2026-03-23",
+  },
+  {
+    url: "https://www.theguardian.com/technology/article/2024/sep/07/australia-federal-police-sadistic-child-sextortion-warning",
+    title:
+      "Australian police are warning about 'sadistic sextortion'. Here's how it works, and the red flags for parents",
+    source: "The Guardian",
+    description:
+      "Children as young as 12 are being targeted by members of online communities who put pressure on them to create extreme content.",
+    publishedAt: "2024-09-07",
+  },
+  {
+    url: "https://apnews.com/article/influenced-social-media-mental-health-advice-620e277528728498c1202690d0512f85",
+    title: "Here's what young people wish they knew about social media",
+    source: "AP News",
+    description:
+      "Kids constantly hear about the downsides of social media from the adults in their lives, often in the form of dire warnings and commands.",
+    publishedAt: "2024-06-05",
+  },
+  {
+    url: "https://apnews.com/article/parents-social-media-tips-kids-teens-cb428d7cc32699726b1d9fa17d1b0ec4",
+    title: "Keep your kids safe on social media: What you need to know",
+    source: "AP News",
+    description:
+      "Here are some tips on staying safe, communicating and setting limits on social media — for kids as well as their parents.",
+    publishedAt: "2024-02-04",
+  },
+];
