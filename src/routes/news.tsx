@@ -75,14 +75,6 @@ const VIDEOS: Video[] = [
       "Psychology professor Jean Twenge shows that around 2012 — when teen smartphone ownership crossed 50% — loneliness, depression and sleep deprivation sharply diverged from earlier generations.",
   },
   {
-    id: "swiped-c4",
-    title: "Swiped: The School That Banned Smartphones",
-    channel: "Channel 4 (UK)",
-    blurb:
-      "Emma and Matt Willis take smartphones away from Year 8 pupils at a Colchester secondary school for 21 days, while University of York psychologists measure the effects on wellbeing, sleep and focus.",
-    href: "https://www.channel4.com/programmes/swiped-the-school-that-banned-smartphones",
-  },
-  {
     id: "zuaeyV29-Cs",
     title:
       "Social Media and Mental Health for Children and Teens: Why being present matters",
