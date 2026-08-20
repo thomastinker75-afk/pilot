@@ -82,6 +82,21 @@ const VIDEOS: Video[] = [
       "Emma and Matt Willis take smartphones away from Year 8 pupils at a Colchester secondary school for 21 days, while University of York psychologists measure the effects on wellbeing, sleep and focus.",
     href: "https://www.channel4.com/programmes/swiped-the-school-that-banned-smartphones",
   },
+  {
+    id: "zuaeyV29-Cs",
+    title:
+      "Social Media and Mental Health for Children and Teens: Why being present matters",
+    channel: "Dartmouth Health",
+    blurb:
+      "Experts from the Dartmouth Health academic medical centre explain how social media use is linked to rising anxiety and depression in young people — and why parental presence and open conversation matter more than blanket bans.",
+  },
+  {
+    id: "HrpmBifgB0Y",
+    title: "Social media's impact on your mental health",
+    channel: "ABC News",
+    blurb:
+      "ABC News explores the growing body of evidence connecting heavy social media use with poorer mental health in adolescents, with clinicians and parents describing what the research looks like in real families' lives.",
+  },
 ];
 
 function NewsPage() {
