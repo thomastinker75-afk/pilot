@@ -91,7 +91,7 @@ function NewsPage() {
     <div className="mx-auto max-w-6xl px-5 py-12 md:px-8 md:py-20">
       <p className="eyebrow">News & Research</p>
       <h1 className="mt-3 max-w-4xl font-display text-4xl leading-tight tracking-tight md:text-6xl">
-        A few examples of studies, research, and articles that show how dangerous the digital environment can be
+        A few examples of studies, research, videos, and articles that show how dangerous the digital environment can be
       </h1>
         <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
           A living feed of UK-first research, journalism, expert videos and real-world incidents on how
