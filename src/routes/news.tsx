@@ -40,11 +40,33 @@ type Video = {
 
 const VIDEOS: Video[] = [
   {
+    id: "UA8kZZS_bzc",
+    title: "iGen: the smartphone generation",
+    channel: "TEDx — Dr. Jean Twenge",
+    blurb:
+      "Psychology professor Jean Twenge shows that around 2012 — when teen smartphone ownership crossed 50% — loneliness, depression and sleep deprivation sharply diverged from earlier generations.",
+  },
+  {
+    id: "zuaeyV29-Cs",
+    title:
+      "Social Media and Mental Health for Children and Teens: Why being present matters",
+    channel: "Dartmouth Health",
+    blurb:
+      "Experts from the Dartmouth Health academic medical centre explain how social media use is linked to rising anxiety and depression in young people — and why parental presence and open conversation matter more than blanket bans.",
+  },
+  {
     id: "yFc4yhZKP5U",
-    title: "What screens really do to your child's brain development",
+    title: "Doctor on How Screen Time Hurts Kids' Cognitive Development",
     channel: "BBC News",
     blurb:
       "BBC Senior Education Reporter Vanessa Clarke unpacks new UK government guidance on screen time for under-fives, with researchers explaining how fast-paced content triggers stress responses in toddlers' developing brains.",
+  },
+  {
+    id: "C74amJRp730",
+    title: "How a handful of tech companies control billions of minds every day",
+    channel: "TED — Tristan Harris",
+    blurb:
+      "Former Google design ethicist Tristan Harris exposes how notifications, autoplay and streaks are engineered to exploit psychological vulnerabilities — essential context for why children are most at risk.",
   },
   {
     id: "csubiPlvFWk",
@@ -59,28 +81,6 @@ const VIDEOS: Video[] = [
     channel: "The Diary of a CEO",
     blurb:
       "Stanford psychiatrist Anna Lembke (Dopamine Nation) explains how social media and short-form video replicate drug-seeking loops in the adolescent brain — interviewed by Steven Bartlett.",
-  },
-  {
-    id: "C74amJRp730",
-    title: "How a handful of tech companies control billions of minds every day",
-    channel: "TED — Tristan Harris",
-    blurb:
-      "Former Google design ethicist Tristan Harris exposes how notifications, autoplay and streaks are engineered to exploit psychological vulnerabilities — essential context for why children are most at risk.",
-  },
-  {
-    id: "UA8kZZS_bzc",
-    title: "iGen: the smartphone generation",
-    channel: "TEDx — Dr. Jean Twenge",
-    blurb:
-      "Psychology professor Jean Twenge shows that around 2012 — when teen smartphone ownership crossed 50% — loneliness, depression and sleep deprivation sharply diverged from earlier generations.",
-  },
-  {
-    id: "zuaeyV29-Cs",
-    title:
-      "Social Media and Mental Health for Children and Teens: Why being present matters",
-    channel: "Dartmouth Health",
-    blurb:
-      "Experts from the Dartmouth Health academic medical centre explain how social media use is linked to rising anxiety and depression in young people — and why parental presence and open conversation matter more than blanket bans.",
   },
   {
     id: "HrpmBifgB0Y",
