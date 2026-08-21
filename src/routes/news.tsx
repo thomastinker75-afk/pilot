@@ -31,6 +31,7 @@ const TABS: { key: "research" | "articles" | "videos"; label: string; sub: strin
 ];
 
 type Video = {
+  rank: number;
   id: string;
   title: string;
   channel: string;
@@ -40,6 +41,7 @@ type Video = {
 
 const VIDEOS: Video[] = [
   {
+    rank: 1,
     id: "UA8kZZS_bzc",
     title: "iGen: the smartphone generation",
     channel: "TEDx — Dr. Jean Twenge",
@@ -47,6 +49,7 @@ const VIDEOS: Video[] = [
       "Psychology professor Jean Twenge shows that around 2012 — when teen smartphone ownership crossed 50% — loneliness, depression and sleep deprivation sharply diverged from earlier generations.",
   },
   {
+    rank: 2,
     id: "zuaeyV29-Cs",
     title:
       "Social Media and Mental Health for Children and Teens: Why being present matters",
@@ -55,6 +58,7 @@ const VIDEOS: Video[] = [
       "Experts from the Dartmouth Health academic medical centre explain how social media use is linked to rising anxiety and depression in young people — and why parental presence and open conversation matter more than blanket bans.",
   },
   {
+    rank: 3,
     id: "yFc4yhZKP5U",
     title: "Doctor on How Screen Time Hurts Kids' Cognitive Development",
     channel: "BBC News",
@@ -62,6 +66,7 @@ const VIDEOS: Video[] = [
       "BBC Senior Education Reporter Vanessa Clarke unpacks new UK government guidance on screen time for under-fives, with researchers explaining how fast-paced content triggers stress responses in toddlers' developing brains.",
   },
   {
+    rank: 4,
     id: "C74amJRp730",
     title: "How a handful of tech companies control billions of minds every day",
     channel: "TED — Tristan Harris",
@@ -69,6 +74,7 @@ const VIDEOS: Video[] = [
       "Former Google design ethicist Tristan Harris exposes how notifications, autoplay and streaks are engineered to exploit psychological vulnerabilities — essential context for why children are most at risk.",
   },
   {
+    rank: 5,
     id: "csubiPlvFWk",
     title: "Dr. Jonathan Haidt: how smartphones & social media impact mental health",
     channel: "Huberman Lab",
@@ -76,6 +82,7 @@ const VIDEOS: Video[] = [
       "The author of The Anxious Generation and neuroscientist Andrew Huberman go deep on how phones alter brain plasticity, why girls and boys are affected differently, and what actually works.",
   },
   {
+    rank: 6,
     id: "2ZKLaUbB33o",
     title: "Dr. Anna Lembke: how TikTok is physically rewiring your brain",
     channel: "The Diary of a CEO",
@@ -83,6 +90,7 @@ const VIDEOS: Video[] = [
       "Stanford psychiatrist Anna Lembke (Dopamine Nation) explains how social media and short-form video replicate drug-seeking loops in the adolescent brain — interviewed by Steven Bartlett.",
   },
   {
+    rank: 7,
     id: "HrpmBifgB0Y",
     title: "Social media's impact on your mental health",
     channel: "ABC News",
@@ -146,10 +154,16 @@ function NewsPage() {
 }
 
 function VideosGrid() {
+  const orderedVideos = [...VIDEOS].sort((a, b) => a.rank - b.rank);
+
   return (
     <div className="grid gap-6 md:grid-cols-2">
-      {VIDEOS.map((v) => (
-        <article key={v.id} className="overflow-hidden rounded-2xl border border-border bg-card">
+      {orderedVideos.map((v) => (
+        <article
+          key={`${v.rank}-${v.id}`}
+          style={{ order: v.rank }}
+          className="overflow-hidden rounded-2xl border border-border bg-card"
+        >
           <div className="aspect-video w-full bg-black">
             {v.href ? (
               <a
