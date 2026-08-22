@@ -76,6 +76,14 @@ const VIDEOS: Video[] = [
   },
   {
     rank: 5,
+    id: "VoLs3d_a13o",
+    title: "How video games can impact your child's mental health",
+    channel: "WJHL",
+    blurb:
+      "News outlet WJHL speaks with clinicians and parents about how excessive gaming can affect children's mood, sleep and social development — and what the research says about healthy limits.",
+  },
+  {
+    rank: 6,
     id: "C74amJRp730",
     title: "How a handful of tech companies control billions of minds every day",
     channel: "TED — Tristan Harris",
@@ -83,7 +91,7 @@ const VIDEOS: Video[] = [
       "Former Google design ethicist Tristan Harris exposes how notifications, autoplay and streaks are engineered to exploit psychological vulnerabilities — essential context for why children are most at risk.",
   },
   {
-    rank: 6,
+    rank: 7,
     id: "csubiPlvFWk",
     title: "Dr. Jonathan Haidt: how smartphones & social media impact mental health",
     channel: "Huberman Lab",
@@ -91,7 +99,7 @@ const VIDEOS: Video[] = [
       "The author of The Anxious Generation and neuroscientist Andrew Huberman go deep on how phones alter brain plasticity, why girls and boys are affected differently, and what actually works.",
   },
   {
-    rank: 7,
+    rank: 8,
     id: "2ZKLaUbB33o",
     title: "Dr. Anna Lembke: how TikTok is physically rewiring your brain",
     channel: "The Diary of a CEO",
@@ -99,7 +107,7 @@ const VIDEOS: Video[] = [
       "Stanford psychiatrist Anna Lembke (Dopamine Nation) explains how social media and short-form video replicate drug-seeking loops in the adolescent brain — interviewed by Steven Bartlett.",
   },
   {
-    rank: 8,
+    rank: 9,
     id: "HrpmBifgB0Y",
     title: "Social media's impact on your mental health",
     channel: "ABC News",
