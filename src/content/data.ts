@@ -931,24 +931,32 @@ export const APPS: AppGuide[] = [
     },
   },
   {
-    slug: "character-ai", name: "Character.AI", category: "Social", minAge: "13+ (17+ in App Store after 2024)",
-    why: "Chat with AI ‘characters’ — anything from a tutor to a fictional boyfriend.",
-    risks: ["Highly addictive parasocial bonds", "Sexual / romantic roleplay despite filters", "Pro-suicide and self-harm conversations documented in lawsuits"],
-    settings: ["Use the under-18 model (rolled out 2024)", "Disable Character chat history", "Block via Screen Time"],
+    slug: "character-ai", name: "Character.AI", category: "Social", minAge: "13+ (16+ in Europe) — no chat for under-18s",
+    why: "AI ‘characters’ you can write stories and roleplay with — from a tutor to a fictional partner.",
+    risks: ["Teens lying about their age to get adult chat access", "Parasocial dependence on an AI ‘friend’", "Self-harm and sexual content documented in US lawsuits about the old teen experience"],
+    settings: ["Expect an age check — a selfie estimate or ID may be required", "Turn on Parental Insights so you get a weekly activity email", "Block the app entirely with Screen Time or Family Link if you'd rather they didn't use it"],
     detail: {
-      overview: "Character.AI generates open-ended roleplay with user-made AI characters. Average teen users spend over 90 minutes a day. Lawsuits in 2024 link the platform to a teen suicide and to chatbots encouraging self-harm.",
-      ageRationale: "Character.AI raised its App Store rating to 17+ in 2024 and introduced a separate ‘teen model’ after US lawsuits and regulatory scrutiny. Under-13s are off-limits in terms.",
+      overview: "Character.AI is a roleplay and story-writing platform built around user-made AI characters. Since late 2025 it no longer lets under-18s have open-ended conversations at all: anyone verified as under 18 gets 'Reading Mode', where they can browse and read characters and stories but cannot chat. Every user now has to pass an age check. The change followed US lawsuits alleging the earlier teen experience contributed to a 14-year-old's suicide and exposed younger children to sexual and self-harm content.",
+      ageRationale: "Character.AI's own rules require users to be at least 13, and at least 16 in Europe. On top of that, from November 2025 the company removed open-ended chat for anyone verified as under 18 and moved them to Reading Mode, so in practice the platform's conversational product is 18+. Age assurance is mandatory for everyone; if the automatic estimate is unsure, the account is asked for ID. The practical risk for parents is no longer 'is the teen model safe' — it is whether a teen has simply entered a false birthday or passed themselves off as an adult.",
       evidence: [
-        { claim: "US lawsuit alleges Character.AI chatbots encouraged a 14-year-old’s suicide and that the platform’s design is unreasonably dangerous to minors.", publisher: "The New York Times", title: "Can A.I. Be Blamed for a Teen’s Suicide?", year: "2024", url: "https://www.nytimes.com/2024/10/23/technology/characterai-lawsuit-teen-suicide.html", type: "Investigative journalism" },
-        { claim: "Second lawsuit alleges Character.AI exposed a 9-year-old to ‘hypersexualised content’ and suggested self-harm to a 17-year-old.", publisher: "The Washington Post", title: "Character.AI sued over content shown to minors", year: "2024", url: "https://www.washingtonpost.com/technology/2024/12/10/character-ai-lawsuit-children-harm/", type: "Investigative journalism" },
-        { claim: "Common Sense Media risk assessment rates AI companion apps including Character.AI as ‘unacceptable risk’ for under-18s.", publisher: "Common Sense Media", title: "AI Risk Assessment: Social AI Companions", year: "2025", url: "https://www.commonsensemedia.org/ai-ratings/social-ai-companions", type: "Charity / NGO" },
+        { claim: "Character.AI announced it would remove open-ended chat for under-18 users and roll out age assurance for all accounts.", publisher: "Character.AI", title: "Taking Bold Steps to Keep Teen Users Safe on Character.AI", year: "2025", url: "https://blog.character.ai/u18-chat-announcement/", type: "Platform policy" },
+        { claim: "Under-18 verified users are placed in ‘Reading Mode’, where they can browse characters and content but chat features are unavailable.", publisher: "Character.AI Help Center", title: "What is Reading Mode?", year: "2025", url: "https://support.character.ai/hc/en-us/articles/51795669396763-What-is-Reading-Mode", type: "Platform policy" },
+        { claim: "Account holders must be at least 13 years old, and at least 16 years old in Europe.", publisher: "Character.AI Help Center", title: "Safety Center", year: "2025", url: "https://support.character.ai/hc/en-us/articles/21704914723995-Safety-Center", type: "Platform policy" },
+        { claim: "All users must complete an age assurance check, which determines whether they get the adult or the under-18 experience.", publisher: "Character.AI Help Center", title: "What is Age Assurance?", year: "2025", url: "https://support.character.ai/hc/en-us/articles/53182286684059-What-is-Age-Assurance", type: "Platform policy" },
+        { claim: "US lawsuit alleges Character.AI chatbots encouraged a 14-year-old’s suicide and that the platform’s design was unreasonably dangerous to minors.", publisher: "The New York Times", title: "Can A.I. Be Blamed for a Teen’s Suicide?", year: "2024", url: "https://www.nytimes.com/2024/10/23/technology/characterai-lawsuit-teen-suicide.html", type: "Investigative journalism" },
+        { claim: "A second lawsuit alleged the platform exposed a 9-year-old to ‘hypersexualised content’ and suggested self-harm to a 17-year-old.", publisher: "The Washington Post", title: "Character.AI sued over content shown to minors", year: "2024", url: "https://www.washingtonpost.com/technology/2024/12/10/character-ai-lawsuit-children-harm/", type: "Investigative journalism" },
+        { claim: "Common Sense Media rates AI companion apps including Character.AI as ‘unacceptable risk’ for under-18s.", publisher: "Common Sense Media", title: "AI Risk Assessment: Social AI Companions", year: "2025", url: "https://www.commonsensemedia.org/ai-ratings/social-ai-companions", type: "Charity / NGO" },
       ],
       parentTalkingPoints: [
-        "Ask which characters they talk to and for how long. Long, late-night sessions are the strongest warning sign.",
-        "Be clear: the AI isn’t a friend and isn’t qualified to handle low moods. Agree on a real person they’ll talk to instead.",
+        "If your teen still has full chat on Character.AI, their account is almost certainly registered as an adult. That is the conversation to have — not the app itself.",
+        "Ask what they were getting out of it. Company, a listening ear, help writing a story? Then find a real-world version of that.",
+        "Be clear the AI isn't a friend and isn't qualified to handle low moods. Agree together on a real person they'll go to instead.",
+        "Losing chat access felt like a real loss to many teens. Acknowledge that rather than treating it as a win.",
       ],
       settingsHowTo: [
-        { label: "Character.AI safety centre", url: "https://blog.character.ai/our-progress-towards-creating-a-safe-experience-for-everyone/" },
+        { label: "Character.AI: Age Assurance help centre", url: "https://support.character.ai/hc/en-us/categories/50705410179995-Age-Assurance" },
+        { label: "Character.AI: What is Reading Mode?", url: "https://support.character.ai/hc/en-us/articles/51795669396763-What-is-Reading-Mode" },
+        { label: "Character.AI: Safety Center (age rules, Parental Insights)", url: "https://support.character.ai/hc/en-us/articles/21704914723995-Safety-Center" },
         { label: "Common Sense Media: AI companion risk assessment", url: "https://www.commonsensemedia.org/ai-ratings/social-ai-companions" },
       ],
       videoTutorials: [
@@ -957,6 +965,7 @@ export const APPS: AppGuide[] = [
       ],
     },
   },
+
   {
     slug: "replika", name: "Replika", category: "Social", minAge: "17+ (App Store) / 18+ (terms)",
     why: "‘AI friend / partner’ chatbot with paid romantic and ‘adult’ modes.",
