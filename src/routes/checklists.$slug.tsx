@@ -1,3 +1,4 @@
+import { publicPath } from "@/lib/public-path";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { CHECKLISTS, REVIEWED } from "@/content/data";
 import { ArrowLeft, CheckCircle2, ExternalLink, PlayCircle, BookOpen, ShieldCheck, PhoneCall, Info } from "lucide-react";
@@ -60,7 +61,7 @@ function ChecklistDetail() {
             />
           ) : (
             <video
-              src={c.heroVideo.src}
+              src={c.heroVideo.src ? publicPath(c.heroVideo.src) : undefined}
               poster={c.heroVideo.poster}
               controls
               preload="metadata"

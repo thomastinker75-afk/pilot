@@ -144,7 +144,7 @@ function Home() {
 
       {/* APPS STRIP */}
       <section className="py-16 md:py-24">
-        <div className="grid gap-10 md:grid-cols-12">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-4">
             <p className="eyebrow">Apps & games</p>
             <h2 className="mt-3 font-display text-4xl leading-tight tracking-tight md:text-5xl">
@@ -202,9 +202,9 @@ function Home() {
           </div>
           <ul className="md:col-span-7 divide-y divide-border rounded-2xl border border-border bg-card">
             {GLOSSARY.slice(0, 5).map((g) => (
-              <li key={g.term} className="flex items-center gap-4 p-4">
-                <p className="w-24 shrink-0 font-display text-lg font-semibold">{g.term}</p>
-                <p className="flex-1 text-sm text-muted-foreground">{g.meaning}</p>
+              <li key={g.term} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 p-4 sm:flex sm:gap-4">
+                <p className="shrink-0 font-display text-lg font-semibold sm:w-24">{g.term}</p>
+                <p className="col-span-2 row-start-2 min-w-0 text-sm text-muted-foreground sm:flex-1">{g.meaning}</p>
                 <RiskPill level={g.riskLevel} />
               </li>
             ))}

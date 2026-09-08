@@ -1,3 +1,4 @@
+import { publicPath } from "@/lib/public-path";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { APPS, type AppGuide, type Evidence } from "@/content/data";
 import { ArrowLeft, ExternalLink, ShieldCheck, BookOpen, Gavel, HeartPulse, Newspaper, FileText, PlayCircle } from "lucide-react";
@@ -70,7 +71,7 @@ function AppDetail() {
             {app.detail.riskVideo.videoUrl ? (
               <video
                 className="h-full w-full"
-                src={app.detail.riskVideo.videoUrl}
+                src={publicPath(app.detail.riskVideo.videoUrl)}
                 poster={app.detail.riskVideo.poster}
                 controls
                 preload="metadata"

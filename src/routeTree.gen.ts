@@ -9,7 +9,6 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as NewsRouteImport } from './routes/news'
 import { Route as HelpRouteImport } from './routes/help'
 import { Route as GlossaryRouteImport } from './routes/glossary'
@@ -20,14 +19,8 @@ import { Route as AppsIndexRouteImport } from './routes/apps.index'
 import { Route as AgeGuidesIndexRouteImport } from './routes/age-guides.index'
 import { Route as ChecklistsSlugRouteImport } from './routes/checklists.$slug'
 import { Route as AppsSlugRouteImport } from './routes/apps.$slug'
-import { Route as ApiTranslateSlangRouteImport } from './routes/api/translate-slang'
 import { Route as AgeGuidesAgeRouteImport } from './routes/age-guides.$age'
 
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const NewsRoute = NewsRouteImport.update({
   id: '/news',
   path: '/news',
@@ -78,11 +71,6 @@ const AppsSlugRoute = AppsSlugRouteImport.update({
   path: '/apps/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiTranslateSlangRoute = ApiTranslateSlangRouteImport.update({
-  id: '/api/translate-slang',
-  path: '/api/translate-slang',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const AgeGuidesAgeRoute = AgeGuidesAgeRouteImport.update({
   id: '/age-guides/$age',
   path: '/age-guides/$age',
@@ -95,9 +83,7 @@ export interface FileRoutesByFullPath {
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
   '/news': typeof NewsRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
-  '/api/translate-slang': typeof ApiTranslateSlangRoute
   '/apps/$slug': typeof AppsSlugRoute
   '/checklists/$slug': typeof ChecklistsSlugRoute
   '/age-guides/': typeof AgeGuidesIndexRoute
@@ -110,9 +96,7 @@ export interface FileRoutesByTo {
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
   '/news': typeof NewsRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
-  '/api/translate-slang': typeof ApiTranslateSlangRoute
   '/apps/$slug': typeof AppsSlugRoute
   '/checklists/$slug': typeof ChecklistsSlugRoute
   '/age-guides': typeof AgeGuidesIndexRoute
@@ -126,9 +110,7 @@ export interface FileRoutesById {
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
   '/news': typeof NewsRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
-  '/api/translate-slang': typeof ApiTranslateSlangRoute
   '/apps/$slug': typeof AppsSlugRoute
   '/checklists/$slug': typeof ChecklistsSlugRoute
   '/age-guides/': typeof AgeGuidesIndexRoute
@@ -143,9 +125,7 @@ export interface FileRouteTypes {
     | '/glossary'
     | '/help'
     | '/news'
-    | '/sitemap.xml'
     | '/age-guides/$age'
-    | '/api/translate-slang'
     | '/apps/$slug'
     | '/checklists/$slug'
     | '/age-guides/'
@@ -158,9 +138,7 @@ export interface FileRouteTypes {
     | '/glossary'
     | '/help'
     | '/news'
-    | '/sitemap.xml'
     | '/age-guides/$age'
-    | '/api/translate-slang'
     | '/apps/$slug'
     | '/checklists/$slug'
     | '/age-guides'
@@ -173,9 +151,7 @@ export interface FileRouteTypes {
     | '/glossary'
     | '/help'
     | '/news'
-    | '/sitemap.xml'
     | '/age-guides/$age'
-    | '/api/translate-slang'
     | '/apps/$slug'
     | '/checklists/$slug'
     | '/age-guides/'
@@ -189,9 +165,7 @@ export interface RootRouteChildren {
   GlossaryRoute: typeof GlossaryRoute
   HelpRoute: typeof HelpRoute
   NewsRoute: typeof NewsRoute
-  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   AgeGuidesAgeRoute: typeof AgeGuidesAgeRoute
-  ApiTranslateSlangRoute: typeof ApiTranslateSlangRoute
   AppsSlugRoute: typeof AppsSlugRoute
   ChecklistsSlugRoute: typeof ChecklistsSlugRoute
   AgeGuidesIndexRoute: typeof AgeGuidesIndexRoute
@@ -201,13 +175,6 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/news': {
       id: '/news'
       path: '/news'
@@ -278,13 +245,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AppsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/translate-slang': {
-      id: '/api/translate-slang'
-      path: '/api/translate-slang'
-      fullPath: '/api/translate-slang'
-      preLoaderRoute: typeof ApiTranslateSlangRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/age-guides/$age': {
       id: '/age-guides/$age'
       path: '/age-guides/$age'
@@ -301,9 +261,7 @@ const rootRouteChildren: RootRouteChildren = {
   GlossaryRoute: GlossaryRoute,
   HelpRoute: HelpRoute,
   NewsRoute: NewsRoute,
-  SitemapDotxmlRoute: SitemapDotxmlRoute,
   AgeGuidesAgeRoute: AgeGuidesAgeRoute,
-  ApiTranslateSlangRoute: ApiTranslateSlangRoute,
   AppsSlugRoute: AppsSlugRoute,
   ChecklistsSlugRoute: ChecklistsSlugRoute,
   AgeGuidesIndexRoute: AgeGuidesIndexRoute,

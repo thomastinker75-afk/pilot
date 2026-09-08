@@ -592,7 +592,7 @@ export const APPS: AppGuide[] = [
         { title: "Roblox age checks explained", channel: "News coverage", url: "https://www.youtube.com/results?search_query=Roblox+facial+age+estimation+chat+news" },
         { title: "Roblox parents’ guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Roblox+parents+guide" },
       ],
-      riskVideo: { title: "Roblox: The playground problem", channel: "Raising Digital · Investigation", videoUrl: "/__l5e/assets-v1/7837b59a-5d12-4eae-b257-1d73a6a2ec76/roblox-risks.mp4", note: "Original 95-second explainer based on Guardian reporting on the Revealing Reality investigation (April 2025)." },
+      riskVideo: { title: "Roblox: The playground problem", channel: "Raising Digital · Investigation", videoUrl: "/media/roblox-risks.mp4", note: "Original 95-second explainer based on Guardian reporting on the Revealing Reality investigation (April 2025)." },
     },
   },
   {
