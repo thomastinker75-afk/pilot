@@ -96,6 +96,12 @@ function ScreenTimeBlock({ data }: { data: ScreenTimeGuidance }) {
       <p className="mt-4 font-display text-2xl leading-snug tracking-tight">
         {data.recommended}
       </p>
+      {data.ukContext && (
+        <p className="mt-3 rounded-xl border border-border bg-background/60 p-4 text-sm leading-relaxed text-muted-foreground">
+          <span className="font-medium text-foreground">UK context: </span>
+          {data.ukContext}
+        </p>
+      )}
       <p className="mt-2 text-sm text-muted-foreground">
         Total time across phone, tablet, TV, console and computer combined (school work usually excluded).
       </p>
@@ -104,7 +110,7 @@ function ScreenTimeBlock({ data }: { data: ScreenTimeGuidance }) {
         <div>
           <div className="flex items-center gap-2 text-destructive">
             <AlertTriangle className="size-4" />
-            <p className="eyebrow !text-destructive">If there are no limits</p>
+            <p className="eyebrow !text-destructive">What research associates with heavy use</p>
           </div>
           <ul className="mt-4 space-y-3">
             {data.consequences.map((c) => (
