@@ -5,6 +5,7 @@ export const REVIEWED = "May 2026";
 
 export type ScreenTimeGuidance = {
   recommended: string;
+  ukContext?: string;
   sources: { label: string; org: string; region: string; url: string }[];
   consequences: string[];
 };
@@ -64,18 +65,21 @@ export const AGE_BANDS: AgeBand[] = [
     ],
     screenTime: {
       recommended:
-        "Under 18 months: avoid screens except video calls. 18–24 months: only short, high-quality co-viewed content. 2–4 years: no more than 1 hour per day of any screen (TV, tablet, phone, console) — and ideally much less.",
+        "UK guidance does not set an hour limit for under-5s. The NHS and RCPCH advise judging screen use by whether it is displacing sleep, play, activity and family conversation. Internationally, the WHO recommends no screens under 1 year, none except video calls before 18 months, and no more than 1 hour a day for 2–4 year-olds.",
+      ukContext:
+        "The Royal College of Paediatrics and Child Health deliberately declined to set a UK screen-time threshold, saying the evidence is not strong enough. Treat WHO, AAP and Canadian numbers as international guidance, not UK policy.",
       sources: [
-        { label: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5", org: "World Health Organization", region: "Global", url: "https://www.who.int/publications/i/item/9789241550536" },
-        { label: "Media and Young Minds (policy statement)", org: "American Academy of Pediatrics", region: "USA", url: "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds" },
-        { label: "Screen time and young children — position statement", org: "Canadian Paediatric Society", region: "Canada", url: "https://cps.ca/en/documents/position/screen-time-and-young-children" },
-        { label: "À chaque âge son écran (3-6-9-12 framework)", org: "Serge Tisseron / French Ministry of Health", region: "France", url: "https://www.sergetisseron.com/3-6-9-12/" },
+        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
+        { label: "Screen time advice for children and families", org: "NHS / Start for Life", region: "UK", url: "https://www.nhs.uk/start-for-life/toddler/" },
+        { label: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5", org: "World Health Organization", region: "Global (international guidance)", url: "https://www.who.int/publications/i/item/9789241550536" },
+        { label: "Media and Young Minds (policy statement)", org: "American Academy of Pediatrics", region: "USA (international guidance)", url: "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds" },
+        { label: "Screen time and young children — position statement", org: "Canadian Paediatric Society", region: "Canada (international guidance)", url: "https://cps.ca/en/documents/position/screen-time-and-young-children" },
       ],
       consequences: [
-        "Delayed language acquisition and smaller vocabularies — repeatedly shown in studies of heavy-screen toddlers (e.g. JAMA Pediatrics, 2020).",
-        "Shorter and more disrupted sleep; melatonin suppression from evening screens.",
-        "Reduced parent–child interaction, which is the single biggest predictor of early brain development.",
-        "Higher risk of attention and self-regulation problems by school entry (CHILD Cohort Study, Canada, 2019).",
+        "Heavy toddler screen use is associated with delayed language and smaller vocabularies (JAMA Pediatrics, 2020). Screens are one factor among many, not a proven sole cause.",
+        "Evening screen use is associated with shorter, more disrupted sleep.",
+        "More screen time is associated with less parent–child talk — and parent–child interaction is a strong predictor of early development.",
+        "Higher screen use in the pre-school years has been associated with more attention and self-regulation difficulties at school entry (CHILD Cohort Study, Canada, 2019).",
       ],
     },
     deepDive: [
@@ -117,18 +121,20 @@ export const AGE_BANDS: AgeBand[] = [
     ],
     screenTime: {
       recommended:
-        "No more than 1 hour per day of recreational screen time (TV, tablet, console, phone combined), with screens off at least an hour before bed and no screens during meals.",
+        "There is no official UK hour limit at this age. UK guidance focuses on sleep, physical activity, what is being watched and family context. Some international guidelines (AAP, Canada) suggest around 1 hour a day of recreational screens as a working target.",
+      ukContext:
+        "Treat “one hour a day” as an international suggestion rather than a UK rule. The practical UK questions are: is your child sleeping enough, moving enough, eating without a screen, and is the content suitable?",
       sources: [
-        { label: "Guidelines for physical activity, sedentary behaviour and sleep — under 5s extended to early school years", org: "World Health Organization", region: "Global", url: "https://www.who.int/publications/i/item/9789241550536" },
-        { label: "Media use in school-aged children and adolescents", org: "American Academy of Pediatrics", region: "USA", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
-        { label: "24-Hour Movement Guidelines for Children and Youth", org: "Canadian Society for Exercise Physiology", region: "Canada", url: "https://csepguidelines.ca/guidelines/children-youth/" },
-        { label: "Pas d’écran avant 6 ans (3-6-9-12 framework)", org: "Serge Tisseron / Société Française de Pédiatrie", region: "France", url: "https://www.sergetisseron.com/3-6-9-12/" },
+        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
+        { label: "Physical activity guidelines: children and young people (5 to 18)", org: "UK Chief Medical Officers / NHS", region: "UK", url: "https://www.gov.uk/government/publications/physical-activity-guidelines-children-and-young-people-aged-5-to-18-years" },
+        { label: "Media use in school-aged children and adolescents", org: "American Academy of Pediatrics", region: "USA (international guidance)", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
+        { label: "24-Hour Movement Guidelines for Children and Youth", org: "Canadian Society for Exercise Physiology", region: "Canada (international guidance)", url: "https://csepguidelines.ca/guidelines/children-youth/" },
       ],
       consequences: [
-        "Worse executive function and school readiness — children with >2h/day of screens score significantly lower on developmental screening (JAMA Pediatrics, 2019).",
-        "Higher rates of obesity through reduced physical activity and snack-while-watching habits (WHO European Childhood Obesity Surveillance, 2022).",
-        "Sleep onset delays of 30–60 minutes; chronic short sleep at this age predicts mood and learning problems.",
-        "Earlier and steeper drop in face-to-face play skills, which underpin friendships and emotional regulation.",
+        "Screen use above about 2 hours a day at this age has been associated with lower developmental screening scores (JAMA Pediatrics, 2019) — an association, not proof of cause.",
+        "Screen-heavy lifestyles are associated with higher obesity rates, largely through reduced activity and snacking while watching (WHO European COSI, 2022).",
+        "Evening screens are associated with delayed sleep onset; short sleep at this age is linked to mood and learning problems.",
+        "Less time in face-to-face play is associated with slower development of friendship and emotional-regulation skills.",
       ],
     },
     deepDive: [
@@ -170,18 +176,21 @@ export const AGE_BANDS: AgeBand[] = [
     ],
     screenTime: {
       recommended:
-        "Up to 1.5–2 hours per day of recreational screen time across all devices, with clear screen-free zones (bedrooms, mealtimes) and a hard stop at least 60 minutes before bed.",
+        "No UK body sets an hour limit for 8–10s. Some international guidelines suggest around 1.5–2 hours a day of recreational screens; UK guidance instead prioritises sleep, an hour of daily activity, screen-free bedrooms and mealtimes, and knowing what they are using.",
+      ukContext:
+        "The 1.5–2 hour figure comes from US, Canadian and Australian guidance. Use it as a rough anchor for family rules, not as an established UK standard.",
       sources: [
-        { label: "Media Use in School-Aged Children and Adolescents", org: "American Academy of Pediatrics", region: "USA", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
-        { label: "24-Hour Movement Guidelines (5–17 years)", org: "Canadian Society for Exercise Physiology", region: "Canada", url: "https://csepguidelines.ca/guidelines/children-youth/" },
-        { label: "Guidelines on the use of digital devices by children (RACP)", org: "Royal Australasian College of Physicians", region: "Australia / NZ", url: "https://www.racp.edu.au/news-and-events/media-releases/screen-time-guidelines" },
-        { label: "Screen time recommendations for school-aged children", org: "Chinese Center for Disease Control and Prevention", region: "China", url: "https://www.chinacdc.cn/en/" },
+        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
+        { label: "Children and parents: media use and attitudes", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
+        { label: "Media Use in School-Aged Children and Adolescents", org: "American Academy of Pediatrics", region: "USA (international guidance)", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
+        { label: "24-Hour Movement Guidelines (5–17 years)", org: "Canadian Society for Exercise Physiology", region: "Canada (international guidance)", url: "https://csepguidelines.ca/guidelines/children-youth/" },
+        { label: "Guidelines on the use of digital devices by children", org: "Royal Australasian College of Physicians", region: "Australia / NZ (international guidance)", url: "https://www.racp.edu.au/news-and-events/media-releases/screen-time-guidelines" },
       ],
       consequences: [
-        "Reduced sleep duration — every extra hour of evening screen use is linked to ~15 minutes less sleep (Sleep Medicine Reviews, 2021).",
-        "Higher rates of cyberbullying involvement when unsupervised on group chats (EU Kids Online, 2020).",
-        "Worse reading comprehension and vocabulary growth in heavy users (OECD PISA analyses).",
-        "Early signs of problematic gaming: irritability when stopped, sneaking devices at night, declining grades.",
+        "Each extra hour of evening screen use is associated with roughly 15 minutes less sleep (Sleep Medicine Reviews, 2021).",
+        "Unsupervised group-chat use is associated with higher involvement in cyberbullying, as victim or participant (EU Kids Online, 2020).",
+        "Heavy recreational screen use is associated with weaker reading comprehension (OECD PISA analyses) — other factors such as home reading habits also play a part.",
+        "Watch for early signs of problematic gaming: irritability when stopped, sneaking devices at night, slipping schoolwork.",
       ],
     },
     deepDive: [
@@ -224,18 +233,20 @@ export const AGE_BANDS: AgeBand[] = [
     ],
     screenTime: {
       recommended:
-        "Around 2 hours per day of recreational screen time (outside school work), with phones out of the bedroom overnight and a tech-free wind-down before sleep.",
+        "There is no UK hour limit for this age. Protect the non-negotiables first: 9–11 hours of sleep, phones out of the bedroom overnight, an hour of daily activity and a tech-free wind-down. Around 2 hours a day of recreational scrolling is a common family benchmark drawn from international advice.",
+      ukContext:
+        "Ofcom reports what UK children actually do; it does not set limits. The UK Chief Medical Officers' advice centres on sleep, activity and safe use rather than a daily screen quota.",
       sources: [
-        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
         { label: "Children and parents: media use and attitudes report", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
-        { label: "Recommendations on the regulation of smartphones for children", org: "French government expert commission (Enfants et écrans)", region: "France", url: "https://www.elysee.fr/emmanuel-macron/2024/04/30/enfants-et-ecrans" },
-        { label: "Adolescent Screen Time and Mental Health (meta-analysis)", org: "JAMA Pediatrics", region: "International", url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2737909" },
+        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
+        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA (international guidance)", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
+        { label: "Recommendations on the regulation of smartphones for children", org: "French government expert commission (Enfants et écrans)", region: "France (international guidance)", url: "https://www.elysee.fr/emmanuel-macron/2024/04/30/enfants-et-ecrans" },
       ],
       consequences: [
-        "Higher rates of depression and anxiety in heavy users (>3h/day on social media roughly doubles the risk — JAMA Psychiatry, 2019).",
-        "Significant sleep loss; teens who keep phones in bedrooms sleep on average 1 hour less per night (Sleep Health, 2018).",
-        "Body-image disturbance and disordered eating, especially among girls on image-led platforms.",
-        "Attention fragmentation: heavy multitaskers show measurable drops in working memory and academic performance.",
+        "Studies have found an association between more than about 3 hours a day on social media and higher rates of depression and anxiety symptoms (JAMA Psychiatry, 2019). That does not mean screen time alone caused the outcome.",
+        "Keeping phones in bedrooms is associated with around an hour less sleep per night (Sleep Health, 2018).",
+        "Heavy use of image-led platforms is associated with body-image disturbance and disordered eating, particularly among girls.",
+        "Frequent media multitasking is associated with lower working-memory and academic performance scores; the direction of cause is still debated.",
       ],
     },
     deepDive: [
@@ -260,17 +271,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Gaming communities (Discord, Twitch)",
     ],
     risks: [
-      "Sharing nudes or being pressured to",
-      "Coercion, blackmail (sextortion)",
-      "Algorithmic rabbit-holes (extreme diet, self-harm, hate)",
+      "Sharing nudes, or being pressured into it",
+      "Sextortion — a stranger poses as a peer, obtains an image, then demands money or more images",
+      "AI deepfake nudes made from ordinary photos taken from social accounts",
+      "Intimate-image abuse: images shared on without consent (a criminal offence in the UK)",
+      "Algorithmic rabbit-holes (extreme diet, self-harm, misogyny, hate)",
     ],
     settings: [
       "Two-factor auth on every account",
       "Review who can DM them on each platform",
+      "Lock down photo-sharing: private accounts, no public face photos",
       "Discuss ‘nothing leaves the phone you wouldn’t want printed’",
     ],
     conversation: [
-      "Make it clear: if a nude is leaked, you will help — no punishment",
+      "Make it clear: if a nude is leaked or faked, you will help — no punishment, no phone confiscation",
+      "Explain sextortion out loud: stop replying, don't pay, screenshot, report, tell an adult",
+      "Explain that AI-made fake nudes happen to people who never sent anything — and that reporting works (Report Remove, IWF)",
       "Talk about consent and screenshots",
     ],
     redFlags: [
@@ -279,27 +295,32 @@ export const AGE_BANDS: AgeBand[] = [
     ],
     screenTime: {
       recommended:
-        "No single hour cap is realistic at this age — aim for under 2 hours/day of pure social-media scrolling, plus protected time for sleep (9 hours), physical activity, schoolwork and offline friendships.",
+        "No hour cap is realistic at this age, and the UK sets none. Protect 8–10 hours of sleep, daily activity, schoolwork and offline friendships; use roughly 2 hours a day of pure social scrolling as a talking point rather than a rule.",
+      ukContext:
+        "US bodies (Surgeon General, APA) publish the firmest numbers. UK guidance stays focused on sleep, activity, content and support — treat the figures below as international guidance.",
       sources: [
-        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
-        { label: "APA Health Advisory on Social Media Use in Adolescence", org: "American Psychological Association", region: "USA", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
-        { label: "Australian 24-hour movement guidelines for children and young people (5–17)", org: "Australian Department of Health", region: "Australia", url: "https://www.health.gov.au/topics/physical-activity-and-exercise/physical-activity-and-exercise-guidelines-for-all-australians/for-children-and-young-people-5-to-17-years" },
-        { label: "Estudo Geração Z e ecrãs", org: "Direção-Geral da Saúde", region: "Portugal / EU", url: "https://www.dgs.pt/" },
+        { label: "Children and parents: media use and attitudes report", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
+        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
+        { label: "APA Health Advisory on Social Media Use in Adolescence", org: "American Psychological Association", region: "USA (international guidance)", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
+        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA (international guidance)", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
       ],
       consequences: [
-        "Strong link between >3h/day on social media and depression, self-harm and suicidal ideation (Lancet Child & Adolescent Health, 2019).",
-        "Increased exposure to sextortion and image-based abuse — UK Internet Watch Foundation recorded record numbers in 2024.",
-        "Algorithmic radicalisation into pro-anorexia, self-harm or misogynistic ‘manosphere’ content (Amnesty International, 2023).",
-        "Chronic sleep debt impairs mood, immune function and academic performance.",
+        "Studies have found an association between more than 3 hours a day on social media and depression, self-harm and suicidal ideation (Lancet Child & Adolescent Health, 2019). Sleep loss and cyberbullying appear to explain much of the link — screen time alone is not shown to be the cause.",
+        "Sextortion and image-based abuse have risen sharply; the Internet Watch Foundation recorded record UK case numbers in 2024.",
+        "AI ‘nudify’ tools can turn an ordinary photo into a fake nude in seconds, and UK teens have been targeted in school settings.",
+        "Recommender feeds have been shown to surface pro-anorexia, self-harm and misogynistic content to teen test accounts within minutes (Amnesty International, 2023).",
+        "Chronic short sleep is associated with worse mood, immune function and school performance.",
       ],
     },
     deepDive: [
-      { type: "Study", source: "The Lancet Child & Adolescent Health (2019)", title: "Association between social media use and depression among 13–16 year olds in England", url: "https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(19)30186-5/fulltext", note: "Sleep loss and cyberbullying explain much of the link." },
+      { type: "Study", source: "The Lancet Child & Adolescent Health (2019)", title: "Association between social media use and depression among 13–16 year olds in England", url: "https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(19)30186-5/fulltext", note: "Sleep loss and cyberbullying explain much of the association." },
       { type: "Report", source: "Internet Watch Foundation (2024)", title: "Annual Report — Sextortion and self-generated child sexual abuse imagery", url: "https://www.iwf.org.uk/annual-report-2023/", note: "Record numbers of UK teen sextortion cases." },
-      { type: "Report", source: "Amnesty International (2023)", title: "Driven into the Darkness: How TikTok's For You feed encourages self-harm and suicidal ideation", url: "https://www.amnesty.org/en/documents/pol40/7350/2023/en/", note: "Algorithm audit showing rapid descent into harmful content from teen accounts." },
+      { type: "Article", source: "Internet Watch Foundation / NSPCC", title: "Report Remove — get a nude image of yourself taken off the internet", url: "https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/remove-nude-image-shared-online/", note: "UK service for under-18s; works for real and AI-generated images." },
+      { type: "Report", source: "Internet Watch Foundation (2024)", title: "AI-generated child sexual abuse imagery — update report", url: "https://www.iwf.org.uk/about-us/why-we-exist/our-research/how-ai-is-being-abused-to-create-child-sexual-abuse-imagery/", note: "How ‘nudify’ apps are being used against real children." },
+      { type: "Article", source: "National Crime Agency / CEOP", title: "Sextortion: what to do if you or your child is targeted", url: "https://www.ceopeducation.co.uk/parents/articles/is-your-child-being-blackmailed-online/", note: "UK police guidance: stop contact, don't pay, keep evidence, report." },
+      { type: "Report", source: "Amnesty International (2023)", title: "Driven into the Darkness: How TikTok's For You feed encourages self-harm and suicidal ideation", url: "https://www.amnesty.org/en/documents/pol40/7350/2023/en/", note: "Algorithm audit of teen test accounts." },
       { type: "Article", source: "APA (American Psychological Association)", title: "Health Advisory on Social Media Use in Adolescence", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
       { type: "Video", source: "Netflix", title: "The Social Dilemma", url: "https://www.thesocialdilemma.com/", note: "Documentary on persuasive design and teen mental health." },
-      { type: "Video", source: "Channel 4 Dispatches", title: "Kids Online: Why Do They Do It?", url: "https://www.channel4.com/programmes/dispatches" },
     ],
   },
 
