@@ -1455,7 +1455,7 @@ export const CHECKLISTS: Checklist[] = [
       "Turn on Screen Time and set a Screen Time Passcode only you know",
       "Set Downtime, App Limits and Always-Allowed apps",
       "Turn on Content & Privacy Restrictions (App Store, web, Siri, explicit content)",
-      "Turn on Ask to Buy and Communication Safety",
+      "Turn on Ask to Buy; verify Communication Safety is on (it's enabled by default on current software)",
       "Enable Find My and Stolen Device Protection",
     ],
     overview:
@@ -1512,7 +1512,7 @@ export const CHECKLISTS: Checklist[] = [
         title: "5 · Communication, contacts & Messages",
         steps: [
           "Screen Time → 'Communication Limits' → choose who they can call/iMessage/FaceTime during the day and during downtime (e.g. 'Contacts Only').",
-          "Screen Time → 'Communication Safety' → turn ON. Detects and blurs nudity in Messages, AirDrop, FaceTime — analysis happens on-device.",
+          "Screen Time → 'Communication Safety' → check it is ON. On iOS 17+ it is enabled by default for child accounts under 18 on iPhone, iPad, Mac and Apple Watch, and for 13–17-year-olds on Apple Vision Pro — so you're verifying, not switching it on from scratch. It detects and blurs nudity in Messages, AirDrop, Contact Posters, FaceTime video messages and the system Photos picker; analysis happens on-device. Source: support.apple.com/en-gb/105069",
           "Manage their contacts list (Settings → Family → child → Contacts) so 'Contacts Only' is meaningful.",
         ],
       },
@@ -1532,7 +1532,7 @@ export const CHECKLISTS: Checklist[] = [
       { label: "Always Allowed", detail: "Apps that escape every limit — keep Phone, Messages, Maps." },
       { label: "Ask to Buy", detail: "Push approval to your phone for any download or in-app purchase." },
       { label: "Communication Limits", detail: "Restrict who can contact the child and who they can contact." },
-      { label: "Communication Safety", detail: "On-device nudity blur in Messages, AirDrop, FaceTime." },
+      { label: "Communication Safety", detail: "On-device nudity blur in Messages, AirDrop, Contact Posters, FaceTime and Photos. Enabled by default for child accounts on iOS 17+ — verify it stays on." },
       { label: "Web Content", detail: "Limit adult websites system-wide, or restrict to an allowlist." },
       { label: "Find My + Stolen Device Protection", detail: "Locate a lost iPhone; require Face ID for risky changes." },
     ],
