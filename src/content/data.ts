@@ -1503,7 +1503,7 @@ export const CHECKLISTS: Checklist[] = [
         steps: [
           "iTunes & App Store Purchases → 'Installing Apps' = Don't Allow (or Require Password). 'In-app Purchases' = Don't Allow.",
           "Allowed Apps → switch off anything inappropriate (Safari, Camera, FaceTime) for very young kids.",
-          "Content Restrictions → set age ratings for Apps, Movies, TV shows, Books, Music.",
+          "Content Restrictions → set the highest age rating the child can install. On iOS 26+ Apple's ratings are 4+, 9+, 13+, 16+, 18+; on earlier iOS they are 4+, 9+, 12+, 17+. Pick a cap suited to the child (e.g. 9+ for a young child, 13+ for an older one). Also set age ratings for Movies, TV shows, Books and Music.",
           "Content Restrictions → Web Content → 'Limit Adult Websites' (or 'Allowed Websites Only' for under-10s).",
           "Content Restrictions → Siri → block explicit language and explicit web search.",
         ],
@@ -1547,7 +1547,7 @@ export const CHECKLISTS: Checklist[] = [
     ],
     notes: [
       "The Screen Time Passcode is the linchpin — if a curious teen learns it, the whole system is bypassed. Don't reuse your phone passcode.",
-      "Apple's age ratings (4+, 9+, 12+, 17+) are stricter than Google's PEGI/ESRB on the same apps. Adjust if you find them too restrictive.",
+      "Apple updated its App Store age ratings in July 2025 (iOS 26+) to 4+, 9+, 13+, 16+ and 18+ — more granular than the old 4+/9+/12+/17+ tiers still shown on devices below iOS 26. In Screen Time → Content Restrictions you can cap which ratings the child may install, so set it deliberately rather than leaving it at the default. Source: developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/",
     ],
   },
   {
