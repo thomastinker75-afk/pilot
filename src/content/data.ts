@@ -1433,7 +1433,8 @@ export const CHECKLISTS: Checklist[] = [
           "Open Family Link → tap the '+' icon → 'Add a child' → 'Create an account for your child'.",
           "Enter the child's real first name, birthday and a new Gmail address (e.g. firstname.lastname.kid@gmail.com).",
           "Choose a strong password that YOU keep — the child does not need it for daily use.",
-          "Read and accept the Parental Consent screen. Google charges a token amount (e.g. $0.30 / €0.30) to your card to verify you're an adult; it's refunded.",
+          "Read and accept the Parental Consent screen, then verify you are an adult. In the UK this is usually a small temporary card authorisation (around £0.30) that is refunded or simply never taken — the exact amount and method vary, and Google may instead accept an existing valid payment method already on your account. Do not expect a fixed figure: follow whatever the screen asks for.",
+          "If the card check fails, add or update a payment method at pay.google.com first, then restart the consent step. A card with no funds or a prepaid card is the most common reason this stalls.",
         ],
       },
       {
