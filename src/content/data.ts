@@ -1616,6 +1616,8 @@ export const CHECKLISTS: Checklist[] = [
       { title: "How to set up parental controls on iPhone (walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=GsQTy0DPLDU" },
       { title: "App Store age ratings values and definitions (4+/9+/13+/16+/18+ on iOS 26)", source: "Apple Developer", type: "Official guide", url: "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/" },
       { title: "Updated age ratings in App Store Connect (July 2025)", source: "Apple Developer News", type: "Official guide", url: "https://developer.apple.com/news/?id=ks775ehf" },
+      { title: "iPhone parental controls — UK guide with current screenshots", source: "Internet Matters (UK)", type: "Article", url: "https://www.internetmatters.org/parental-controls/smartphones-and-other-devices/apple-iphone-parental-controls/", note: "Screen-by-screen images kept up to date with the current iOS release." },
+      { title: "Set up Screen Time (video walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=9AhA8JvuLWg" },
     ],
     notes: [
       "The Screen Time Passcode is the linchpin — if a curious teen learns it, the whole system is bypassed. Don't reuse your phone passcode.",
