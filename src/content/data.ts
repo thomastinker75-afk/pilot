@@ -1502,10 +1502,15 @@ export const CHECKLISTS: Checklist[] = [
       
       { title: "Manage screen time with Family Link", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7103340" },
       { title: "Approve or block apps your child wants to download", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7385553" },
+      { title: "Add supervision to a device your child already uses", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7101025", note: "Confirms supervision can be added to an existing phone — a factory reset is not required in most cases." },
+      { title: "Verify your identity as a parent (payment method check)", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7101025", note: "The verification charge amount and method vary by country and card." },
+      { title: "Parental controls on Android — UK guide with screenshots", source: "Internet Matters (UK)", type: "Article", url: "https://www.internetmatters.org/parental-controls/smartphones-and-other-devices/google-family-link-parental-controls/" },
     ],
     notes: [
       "Family Link can supervise a teen account past 13, but the teen can technically unlink it themselves once they're old enough — you'll be notified.",
       "Some apps (notably WhatsApp) don't enforce Google's age rules, so block them in Family Link if you don't want them installed.",
+      "You do not need to wipe a phone to supervise it. Only reset if the device came from someone else or has an adult account locked in as owner.",
+      "The adult-verification charge during account creation is a small temporary authorisation, not a purchase — the exact amount differs by country and card, so treat any figure you read online as an example only.",
     ],
   },
   {
