@@ -431,7 +431,7 @@ export type AppGuide = {
 export const APPS: AppGuide[] = [
   {
     slug: "tiktok", name: "TikTok", category: "Social", minAge: "13+",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age-estimation checks apply to 18+ features and live streaming, not to the main feed.",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age-estimation checks apply to 18+ features and live streaming, not to the main feed.",
     why: "Short videos, trends, humour. The default ‘scrollable’ app for many teens.",
     risks: ["Endless algorithmic feed", "Body image / dieting content", "DMs from strangers on public accounts"],
     settings: ["Private account", "Restricted Mode", "Disable DMs from non-friends", "Family Pairing"],
@@ -461,7 +461,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "snapchat", name: "Snapchat", category: "Messaging", minAge: "13+",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age checks apply to 18+ content and some features; account age is still self-declared at sign-up.",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age checks apply to 18+ content and some features; account age is still self-declared at sign-up.",
     why: "Photo messages that ‘disappear’ and Snap Map for live location sharing.",
     risks: ["False sense of privacy (screenshots exist)", "Live location with anyone added", "Streaks driving compulsive use"],
     settings: ["Ghost Mode on Snap Map", "Contact Me: Friends only", "Family Center"],
@@ -491,7 +491,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "instagram", name: "Instagram", category: "Social", minAge: "13+",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Meta uses facial age estimation (Yoti) and ID checks to confirm teen accounts in the UK.",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Meta uses facial age estimation (Yoti) and ID checks to confirm teen accounts in the UK.",
     why: "Photos, reels, stories. Heavy on social comparison.",
     risks: ["Public profiles inviting DMs", "Reels algorithm rabbit holes", "Hidden ‘close friends’ accounts"],
     settings: ["Private account", "Sensitive Content Control: Less", "Hidden Words filter", "Family Center supervision"],
@@ -521,7 +521,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "youtube", name: "YouTube", category: "Video", minAge: "13+ (Kids: under 13)",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Google applies age estimation in the UK and asks for ID or a card for age-restricted content.",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Google applies age estimation in the UK and asks for ID or a card for age-restricted content.",
     why: "Where most kids actually watch ‘TV’. Includes gaming streams and shorts.",
     risks: ["Auto-play into unrelated content", "Shorts — fast, addictive feed", "Comments containing strangers"],
     settings: ["Restricted Mode", "Supervised Account for under-13s", "Disable autoplay", "YouTube Kids for younger kids"],
@@ -552,7 +552,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "whatsapp", name: "WhatsApp", category: "Messaging", minAge: "13+",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13", ukAgeAssurance: "No", ukAgeAssuranceNote: "Age is self-declared; there is no UK age check.",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "No", ukAgeAssuranceNote: "Age is self-declared; there is no UK age check.",
     why: "School class group chats live here. Used by every age.",
     risks: ["Being added to groups by strangers", "Forwarded misinformation", "Disappearing messages hiding bullying"],
     settings: ["Groups: My Contacts", "Last Seen: Contacts", "Two-step verification"],
@@ -581,7 +581,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "discord", name: "Discord", category: "Messaging", minAge: "13+ (18+ content now verified)",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "UK users must pass facial age estimation or ID to view 18+ content; teen defaults apply otherwise.",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "UK users must pass facial age estimation or ID to view 18+ content; teen defaults apply otherwise.",
     why: "Voice and text servers, especially for gamers and fandoms.",
     risks: [
       "Public servers with adult content — UK users must now pass an age check to see 18+ material, but the check is beatable",
@@ -630,7 +630,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "roblox", name: "Roblox", category: "Game", minAge: "All ages (rated by experience)",
-    lastCheckedUK: "8 September 2026", officialMinAge: "All ages (experience-based)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Facial age estimation or ID is required for chat, with age-grouped communication.",
+    lastCheckedUK: "September 2026", officialMinAge: "All ages (experience-based)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Facial age estimation or ID is required for chat, with age-grouped communication.",
     why: "Millions of user-made games and a social hangout for under-12s — now with mandatory age checks before anyone can chat.",
     risks: ["User-made games with adult themes", "Strangers bypassing age checks by playing along", "Robux scams and ‘free Robux’ links"],
     settings: ["Chat now requires a facial age check or ID", "Age-grouped chat (under-13s only with same age band)", "Parent-managed account link", "Spend controls"],
@@ -664,7 +664,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "fortnite", name: "Fortnite", category: "Game", minAge: "12+",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13 (Epic terms; PEGI 12)", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Epic uses cabined accounts for under-13s but no UK-wide identity check.",
+    lastCheckedUK: "September 2026", officialMinAge: "13 (Epic terms; PEGI 12)", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Epic uses cabined accounts for under-13s but no UK-wide identity check.",
     why: "Battle royale with voice chat and live in-game events.",
     risks: ["Voice chat with strangers in squads", "Spending on V-Bucks / Battle Pass", "Long sessions, late nights"],
     settings: ["Cabined Account for under-13s", "Voice chat: friends only", "Parental controls PIN"],
@@ -693,7 +693,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "telegram", name: "Telegram", category: "Messaging", minAge: "17+ (App Store) / 13+ (Telegram terms)",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13 (17+ on the App Store)", ukAgeAssurance: "No", ukAgeAssuranceNote: "No UK age assurance; age is self-declared.",
+    lastCheckedUK: "September 2026", officialMinAge: "13 (17+ on the App Store)", ukAgeAssurance: "No", ukAgeAssuranceNote: "No UK age assurance; age is self-declared.",
     why: "Huge group chats and ‘channels’ broadcasting to thousands. Popular for fandoms, leaks and crypto.",
     risks: ["Public channels with extreme / sexual content", "Strangers in large groups", "Weak moderation of CSAM and scams"],
     settings: ["Phone Number: Nobody", "Who can add me to groups: My Contacts", "Disable auto-download of media", "Sensitive Content filter on"],
@@ -720,7 +720,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "twitch", name: "Twitch", category: "Video", minAge: "13+",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age checks apply to mature streams and some features only.",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age checks apply to mature streams and some features only.",
     why: "Live game streaming with chat. Streamers become parasocial role models.",
     risks: ["Live, unmoderated chat", "Grooming via Whispers / DMs", "Exposure to adult ‘Just Chatting’ streams"],
     settings: ["Whispers: Friends only", "Block links in chat", "Hide mature streams", "Two-factor authentication"],
@@ -747,7 +747,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "kick", name: "Kick", category: "Video", minAge: "13+",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Limited checks on adult-labelled content; sign-up age is self-declared.",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Limited checks on adult-labelled content; sign-up age is self-declared.",
     why: "Twitch competitor with looser rules. Popular for gambling and shock streams.",
     risks: ["Live gambling content (slots, crash games)", "Minimal moderation", "Streamers explicitly courting under-18 audiences"],
     settings: ["No mature-content filter — supervise directly", "Use device-level screen time / DNS blocks", "Disable account creation if possible"],
@@ -774,7 +774,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "yubo", name: "Yubo", category: "Social", minAge: "13+ (with separate 13–17 community)",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Yubo runs facial age estimation on all users and separates 13–17 from adults.",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Yubo runs facial age estimation on all users and separates 13–17 from adults.",
     why: "‘Live, swipe and chat with new friends.’ Often called ‘Tinder for teens’.",
     risks: ["Strangers connecting by location", "Live video with people they’ve never met", "History of grooming and sextortion cases"],
     settings: ["Disable location precision", "Age-verification ON", "Limit livestream audience", "Block & report"],
@@ -801,7 +801,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "x-twitter", name: "X (formerly Twitter)", category: "Social", minAge: "13+ (18+ for sensitive media)",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "UK users must pass age assurance (account signals or ID) to see sensitive media.",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "UK users must pass age assurance (account signals or ID) to see sensitive media.",
     why: "News, memes, fandoms, sports — and trending political content. UK users now face age checks before seeing sensitive media.",
     risks: ["Pornographic content still hosted on the platform — now behind an age wall a teen can try to cheat", "Targeted harassment via replies / quote-posts", "Misinformation amplified by paid blue ticks"],
     settings: ["UK age assurance required for sensitive media", "Known under-18s get protected-post defaults automatically", "Sensitive-media filter ON for under-18s", "Disable DMs from non-followers", "Mute words & accounts"],
@@ -836,7 +836,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "reddit", name: "Reddit", category: "Social", minAge: "13+ (18+ for mature content)",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13 (18 for mature content)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "UK users verify via Apple age range or Persona selfie/ID for mature communities.",
+    lastCheckedUK: "September 2026", officialMinAge: "13 (18 for mature content)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "UK users verify via Apple age range or Persona selfie/ID for mature communities.",
     why: "Forums (‘subreddits’) for every interest — UK users now face mandatory age checks before seeing mature or restricted content.",
     risks: ["Mature/NSFW communities still exist — now behind an age wall a teen can try to cheat", "Anonymous DMs and chat requests", "Pile-ons, doxxing and volunteer-only moderation"],
     settings: ["UK age confirmation required for mature/restricted content", "Disable NSFW via mobile web or desktop (iOS app hides the toggle)", "Chat requests: Nobody / Followers only", "Mute subreddits"],
@@ -877,7 +877,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "bereal", name: "BeReal", category: "Social", minAge: "13+",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13", ukAgeAssurance: "No", ukAgeAssuranceNote: "Age is self-declared at sign-up.",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "No", ukAgeAssuranceNote: "Age is self-declared at sign-up.",
     why: "Once-a-day photo prompt designed to feel ‘authentic’. Friend-of-friend feed.",
     risks: ["Location attached to posts by default", "‘RealMojis’ from friends-of-friends", "Pressure to post in unsafe situations (class, driving)"],
     settings: ["Discovery: Friends only", "Disable location on posts", "Lock account for over-18 visibility"],
@@ -904,7 +904,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "ngl-sendit", name: "NGL / Sendit / Yolo", category: "Social", minAge: "17+ (App Store)",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13 (17+ on the App Store)", ukAgeAssurance: "No", ukAgeAssuranceNote: "No meaningful age check.",
+    lastCheckedUK: "September 2026", officialMinAge: "13 (17+ on the App Store)", ukAgeAssurance: "No", ukAgeAssuranceNote: "No meaningful age check.",
     why: "Anonymous Q&A apps that bolt on to Instagram / Snap stories.",
     risks: ["Anonymous bullying and threats", "Fake ‘replies’ generated by the app to drive engagement", "Sextortion via anonymous messages"],
     settings: ["Don’t install — there are no safe settings; remove from device"],
@@ -931,7 +931,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "omegle-style", name: "Random video chat (Monkey, Azar, ChatHub)", category: "Social", minAge: "18+",
-    lastCheckedUK: "8 September 2026", officialMinAge: "18", ukAgeAssurance: "No", ukAgeAssuranceNote: "Adult-only claims are self-declared; children get in easily.",
+    lastCheckedUK: "September 2026", officialMinAge: "18", ukAgeAssurance: "No", ukAgeAssuranceNote: "Adult-only claims are self-declared; children get in easily.",
     why: "Random video chat with strangers — the niche Omegle filled before it shut down in 2023.",
     risks: ["Exposure to live nudity from strangers", "Grooming and recorded sextortion", "Almost no age verification"],
     settings: ["Don’t install — block via device-level parental controls"],
@@ -958,7 +958,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "minecraft", name: "Minecraft (online / servers)", category: "Game", minAge: "7+ (PEGI) — online 13+ recommended",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13 for online play (PEGI 7)", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Microsoft child accounts add controls, but no UK identity check.",
+    lastCheckedUK: "September 2026", officialMinAge: "13 for online play (PEGI 7)", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Microsoft child accounts add controls, but no UK identity check.",
     why: "Sandbox building game. Solo play is fine; third-party servers are where risk lives.",
     risks: ["Open voice chat on third-party servers", "Grooming on unofficial servers", "Skins / mods downloaded from outside stores"],
     settings: ["Microsoft Family — friends-only multiplayer", "Disable chat on servers", "Whitelist allowed servers only"],
@@ -985,7 +985,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "vrchat", name: "VRChat", category: "Game", minAge: "13+ (often played by under-13s)",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age verification is optional and unlocks extra features rather than gating entry.",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age verification is optional and unlocks extra features rather than gating entry.",
     why: "Social VR worlds in headsets like Meta Quest. Voice-only, full-body avatars, no moderation in many rooms.",
     risks: ["Adult-themed worlds visible to children", "Sexual harassment and ‘virtual groping’", "Voice chat with anyone in the room"],
     settings: ["Trust system: Friends+ only", "Disable open voice", "Use Meta Quest parental supervision"],
@@ -1012,7 +1012,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "gta-online", name: "GTA V / GTA Online", category: "Game", minAge: "18+ (PEGI)",
-    lastCheckedUK: "8 September 2026", officialMinAge: "18 (PEGI)", ukAgeAssurance: "No", ukAgeAssuranceNote: "Store-level age gates only; no UK age assurance in game.",
+    lastCheckedUK: "September 2026", officialMinAge: "18 (PEGI)", ukAgeAssurance: "No", ukAgeAssuranceNote: "Store-level age gates only; no UK age assurance in game.",
     why: "Open-world crime game. Hugely popular with under-18s despite the rating.",
     risks: ["Graphic violence, sexual content, drugs as core gameplay", "Open voice chat with strangers in lobbies", "Real-money microtransactions (Shark Cards)"],
     settings: ["Disable voice chat", "Solo / invite-only sessions", "Console-level spend limits"],
@@ -1039,7 +1039,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "character-ai", name: "Character.AI", category: "Social", minAge: "13+ (16+ in Europe) — no chat for under-18s",
-    lastCheckedUK: "8 September 2026", officialMinAge: "13 (16 in Europe)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Mandatory age assurance; under-18s lose open-ended chat and get Reading Mode.",
+    lastCheckedUK: "September 2026", officialMinAge: "13 (16 in Europe)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Mandatory age assurance; under-18s lose open-ended chat and get Reading Mode.",
     why: "AI ‘characters’ you can write stories and roleplay with — from a tutor to a fictional partner.",
     risks: ["Teens lying about their age to get adult chat access", "Parasocial dependence on an AI ‘friend’", "Self-harm and sexual content documented in US lawsuits about the old teen experience"],
     settings: ["Expect an age check — a selfie estimate or ID may be required", "Turn on Parental Insights so you get a weekly activity email", "Block the app entirely with Screen Time or Family Link if you'd rather they didn't use it"],
@@ -1076,7 +1076,7 @@ export const APPS: AppGuide[] = [
 
   {
     slug: "replika", name: "Replika", category: "Social", minAge: "17+ (App Store) / 18+ (terms)",
-    lastCheckedUK: "8 September 2026", officialMinAge: "18", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Adult-only terms with app-store gates and some age checks, easily bypassed.",
+    lastCheckedUK: "September 2026", officialMinAge: "18", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Adult-only terms with app-store gates and some age checks, easily bypassed.",
     why: "‘AI friend / partner’ chatbot with paid romantic and ‘adult’ modes.",
     risks: ["Sexual roleplay even on free tier", "Emotional dependence and isolation", "Designed to drive paid upgrades"],
     settings: ["Not appropriate for under-18s — block / uninstall"],
