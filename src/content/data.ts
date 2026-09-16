@@ -1421,7 +1421,9 @@ export const CHECKLISTS: Checklist[] = [
         steps: [
           "Update both phones to the latest Android version (Settings → System → System update).",
           "On your phone, install 'Google Family Link' from the Play Store.",
-          "On the child's phone, factory-reset if it has been used before (Settings → System → Reset options → Erase all data).",
+          "You do NOT have to factory-reset to add supervision. On a phone already in use you can simply add the child's account: Settings → Google → Parental controls → Get started, or Settings → Accounts → Add account → Google.",
+          "A reset is only worth doing in two cases: the phone previously belonged to someone else, or the child already has an unsupervised adult Google account signed in as the device owner that cannot be removed. Otherwise skip it — a reset wipes photos and messages for no safety gain.",
+          "If you do reset (Settings → System → Reset options → Erase all data), back up photos first and have the existing Google password to hand — factory reset protection will ask for it on the next boot.",
         ],
       },
       {
