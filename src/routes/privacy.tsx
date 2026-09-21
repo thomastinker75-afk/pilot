@@ -5,7 +5,7 @@ export const Route = createFileRoute("/privacy")({
   head: () => ({ meta: [{ title: "Privacy — Parent Tech Safety Hub" }, { name: "description", content: "How the message explainer works on your device, and how hosting, fonts and optional video players connect to external services." }] }),
 });
 function Privacy() {
-  const hostingProvider = import.meta.env.VITE_HOSTING_PROVIDER === "cloudflare" ? "Cloudflare Pages" : "GitHub Pages";
+  const hostingProvider = import.meta.env.VITE_HOSTING_PROVIDER === "cloudflare" ? "Cloudflare" : "GitHub Pages";
   return <article className="mx-auto max-w-3xl px-5 py-16 md:px-8">
     <p className="eyebrow">Updated 21 September 2026</p>
     <h1 className="mt-4 font-display text-5xl">Privacy on this site</h1>

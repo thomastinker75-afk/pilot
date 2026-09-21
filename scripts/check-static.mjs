@@ -21,12 +21,14 @@ for (const path of SITE_PATHS) {
     /name="description"/,
   ])
     assert.match(html, pattern, `Missing rendered content: ${path}`);
-  if (manifest.siteUrl && PUBLIC_PATHS.includes(path))
+  if (manifest.siteUrl && PUBLIC_PATHS.includes(path)) {
+    assert.doesNotMatch(html, /<meta[^>]*name="robots"[^>]*content="[^"]*noindex/i,
+      `Public page blocks indexing: ${path}`);
     assert.ok(
       html.includes(`rel="canonical" href="${manifest.siteUrl}${basePath}${path === "/" ? "" : path.slice(1) + "/"}"`),
       `Canonical mismatch: ${path}`,
     );
-  else
+  } else
     assert.match(
       html,
       /name="robots" content="noindex, nofollow"/,
