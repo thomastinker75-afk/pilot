@@ -1352,6 +1352,17 @@ export type ChecklistSection = {
   title: string;
   intro?: string;
   steps: string[];
+  visual?: ChecklistVisual;
+};
+
+export type ChecklistVisual = {
+  youtubeId?: string;
+  startSeconds?: number;
+  title: string;
+  source: string;
+  sourceUrl: string;
+  kind: "Official video" | "Official illustrated guide";
+  description: string;
 };
 
 export type ChecklistTutorial = {
@@ -1417,6 +1428,14 @@ export const CHECKLISTS: Checklist[] = [
     sections: [
       {
         title: "1 · Before you start",
+        visual: {
+          youtubeId: "d2zPq1lfqQs",
+          title: "Family Link overview",
+          source: "Google",
+          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs",
+          kind: "Official video",
+          description: "Google’s official introduction to Family Link and its parent controls.",
+        },
         intro: "Have both phones unlocked and on Wi-Fi. You'll need the child's date of birth and your own Google password.",
         steps: [
           "Update both phones to the latest Android version (Settings → System → System update).",
@@ -1428,6 +1447,14 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "2 · Create the child's Google account",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          title: "Set up a supervised child account",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo",
+          kind: "Official video",
+          description: "The official account setup flow for a parent and child.",
+        },
         intro: "Do this from your phone, inside Family Link — not from the child's device.",
         steps: [
           "Open Family Link → tap the '+' icon → 'Add a child' → 'Create an account for your child'.",
@@ -1439,6 +1466,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "3 · Set up the child's phone",
+        visual: {
+          youtubeId: "d2zPq1lfqQs",
+          startSeconds: 18,
+          title: "Connect the child's device",
+          source: "Google",
+          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs&t=18s",
+          kind: "Official video",
+          description: "Google’s Family Link device-supervision overview.",
+        },
         intro: "Now move to the child's device.",
         steps: [
           "On the welcome screen, choose 'Set up for a child'. If you missed it, do Settings → Accounts → Add account → Google → and sign in with the new child account.",
@@ -1450,6 +1486,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "4 · Screen time, bedtime & downtime",
+        visual: {
+          youtubeId: "d2zPq1lfqQs",
+          startSeconds: 31,
+          title: "Set time and app limits",
+          source: "Google",
+          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs&t=31s",
+          kind: "Official video",
+          description: "Family Link’s time controls shown by Google.",
+        },
         intro: "Open Family Link on your phone → tap the child → 'Controls' → 'Screen time'.",
         steps: [
           "Set a daily limit per day of the week (e.g. 1h on school days, 2h at weekends).",
@@ -1460,6 +1505,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "5 · App installs & purchases",
+        visual: {
+          youtubeId: "d2zPq1lfqQs",
+          startSeconds: 47,
+          title: "Manage apps with Family Link",
+          source: "Google",
+          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs&t=47s",
+          kind: "Official video",
+          description: "Google’s view of app activity and app-level controls.",
+        },
         steps: [
           "In Family Link → Controls → 'Google Play' → turn on 'Require approval for: All content'.",
           "Set content maturity limits (Apps & games: PEGI 7 / ESRB Everyone for young kids; raise as they grow).",
@@ -1469,6 +1523,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "6 · Web, search & YouTube",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 12,
+          title: "Choose a supervised YouTube experience",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=12s",
+          kind: "Official video",
+          description: "YouTube’s official supervised-account demonstration.",
+        },
         steps: [
           "Controls → 'Google Search' → turn on SafeSearch (filters explicit results).",
           "Controls → 'Chrome' → choose 'Try to block explicit sites' and add specific sites you want blocked or allowed.",
@@ -1478,6 +1541,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "7 · Location, find-my-phone & data",
+        visual: {
+          youtubeId: "d2zPq1lfqQs",
+          startSeconds: 57,
+          title: "Family Link location tools",
+          source: "Google",
+          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs&t=57s",
+          kind: "Official video",
+          description: "Google’s overview of Family Link location controls.",
+        },
         steps: [
           "Controls → 'Location' → turn on 'See your child's location'. You'll see the child phone's live location in Family Link.",
           "Turn on 'Find My Device' (Settings → Security on the child phone) so a lost phone can be located and remotely locked.",
@@ -1538,6 +1610,14 @@ export const CHECKLISTS: Checklist[] = [
     sections: [
       {
         title: "1 · Create the Child Apple Account",
+        visual: {
+          youtubeId: "8siFNH-brM4",
+          title: "Create a Child Apple Account",
+          source: "Apple Support",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4",
+          kind: "Official video",
+          description: "Apple’s official Family Sharing child-account walkthrough.",
+        },
         intro: "On YOUR iPhone, open Settings → tap your name at the top → Family.",
         steps: [
           "Tap 'Add Member' → 'Create Child Account' → Continue.",
@@ -1549,6 +1629,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "2 · Sign the child in on their iPhone",
+        visual: {
+          youtubeId: "8siFNH-brM4",
+          startSeconds: 74,
+          title: "Connect the child to Family Sharing",
+          source: "Apple Support",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4&t=74s",
+          kind: "Official video",
+          description: "The device and family-account stage in Apple’s walkthrough.",
+        },
         steps: [
           "If the iPhone is new: at the 'Hello' screen choose 'Set Up for a Child in My Family' (iOS 16+).",
           "If the iPhone is already set up: Settings → sign out of any existing Apple Account → sign in with the new Child Apple Account.",
@@ -1557,6 +1646,14 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "3 · Screen Time — the most important step",
+        visual: {
+          youtubeId: "8siFNH-brM4",
+          title: "Set up Screen Time",
+          source: "Apple Support",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4",
+          kind: "Official video",
+          description: "Apple’s official Screen Time walkthrough.",
+        },
         intro: "On your phone: Settings → Family → tap the child → Screen Time.",
         steps: [
           "Tap 'Turn on Screen Time' if it isn't already.",
@@ -1569,6 +1666,14 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "4 · Content & Privacy Restrictions",
+        visual: {
+          youtubeId: "8siFNH-brM4",
+          title: "Set up parental controls",
+          source: "Apple Support",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4",
+          kind: "Official video",
+          description: "Apple demonstrates its current parental-control menus.",
+        },
         intro: "Same Screen Time screen → 'Content & Privacy Restrictions' → toggle on.",
         steps: [
           "iTunes & App Store Purchases → 'Installing Apps' = Don't Allow (or Require Password). 'In-app Purchases' = Don't Allow.",
@@ -1580,6 +1685,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "5 · Communication, contacts & Messages",
+        visual: {
+          youtubeId: "8siFNH-brM4",
+          startSeconds: 62,
+          title: "Review communication controls",
+          source: "Apple Support",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4&t=62s",
+          kind: "Official video",
+          description: "Apple’s parental-controls walkthrough at the communication settings.",
+        },
         steps: [
           "Screen Time → 'Communication Limits' → choose who they can call/iMessage/FaceTime during the day and during downtime (e.g. 'Contacts Only').",
           "Screen Time → 'Communication Safety' → check it is ON. On iOS 17+ it is enabled by default for child accounts under 18 on iPhone, iPad, Mac and Apple Watch, and for 13–17-year-olds on Apple Vision Pro — so you're verifying, not switching it on from scratch. It detects and blurs nudity in Messages, AirDrop, Contact Posters, FaceTime video messages and the system Photos picker; analysis happens on-device. Source: support.apple.com/en-gb/105069",
@@ -1588,6 +1702,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "6 · Safety & device security",
+        visual: {
+          youtubeId: "8siFNH-brM4",
+          startSeconds: 70,
+          title: "Review device safety settings",
+          source: "Apple Support",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4&t=70s",
+          kind: "Official video",
+          description: "The safety and access controls in Apple’s official walkthrough.",
+        },
         steps: [
           "Settings → Family → child → Location Sharing → On. The child's iPhone appears in Find My.",
           "On the child phone: Settings → [name] → Find My → 'Find My iPhone' On, 'Send Last Location' On.",
@@ -1613,11 +1736,11 @@ export const CHECKLISTS: Checklist[] = [
       { title: "Use Screen Time on your iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/108806" },
       { title: "Use parental controls on your child's iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/105121" },
       { title: "Communication Safety on iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/105069" },
-      { title: "How to set up parental controls on iPhone (walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=GsQTy0DPLDU" },
+      { title: "How to set up parental controls on iPhone (walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=8siFNH-brM4" },
       { title: "App Store age ratings values and definitions (4+/9+/13+/16+/18+ on iOS 26)", source: "Apple Developer", type: "Official guide", url: "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/" },
       { title: "Updated age ratings in App Store Connect (July 2025)", source: "Apple Developer News", type: "Official guide", url: "https://developer.apple.com/news/?id=ks775ehf" },
       { title: "iPhone parental controls — UK guide with current screenshots", source: "Internet Matters (UK)", type: "Article", url: "https://www.internetmatters.org/parental-controls/smartphones-and-other-devices/apple-iphone-parental-controls/", note: "Screen-by-screen images kept up to date with the current iOS release." },
-      { title: "Set up Screen Time (video walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=9AhA8JvuLWg" },
+      { title: "Set up Screen Time (video walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=8siFNH-brM4" },
     ],
     notes: [
       "The Screen Time Passcode is the linchpin — if a curious teen learns it, the whole system is bypassed. Don't reuse your phone passcode.",
@@ -1641,13 +1764,21 @@ export const CHECKLISTS: Checklist[] = [
     overview:
       "YouTube is the most-used app by children in the UK. Each setting below is per-account AND per-device: turning Restricted Mode on in the phone app does nothing to the smart TV. Budget five minutes for the phone now, then repeat on any other screen they use. Nothing here replaces talking about what they watch.",
     heroVideo: {
-      youtubeId: "0xDnHWBU4XU",
+      youtubeId: "0dy1St39xeo",
       title: "Parental controls and supervised experiences on YouTube — Google",
       caption: "Official Google walkthrough of supervised experiences. The exact tap-paths for every setting are written out below.",
     },
     sections: [
       {
         title: "1 · Turn off Autoplay (30 seconds)",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          title: "YouTube family controls overview",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo",
+          kind: "Official video",
+          description: "YouTube’s official family-controls walkthrough; pause while following the written path.",
+        },
         intro: "Autoplay is what turns one video into two hours. It is set per device and per profile.",
         steps: [
           "Phone/tablet app: start any video → the row of icons at the top of the player → tap the Autoplay toggle so it reads Off.",
@@ -1659,6 +1790,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "2 · Set the right account type and content level",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 18,
+          title: "Choose a supervised experience",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=18s",
+          kind: "Official video",
+          description: "YouTube shows the supervised experience and parent controls.",
+        },
         intro: "Under 13s should not be on a standard YouTube account. Choose one of the three routes below.",
         steps: [
           "Under 9: use the YouTube Kids app. In Kids → lock icon (bottom right) → enter the passcode → Settings → choose the child's profile → set the age category (Preschool / Younger / Older) and turn OFF 'Search'.",
@@ -1670,6 +1810,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "3 · Review, clear and pause history",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 33,
+          title: "Review viewing controls",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=33s",
+          kind: "Official video",
+          description: "The official walkthrough alongside the exact history path.",
+        },
         intro: "History is what feeds the recommendations. Cleaning it visibly changes the home page within a day.",
         steps: [
           "App: profile picture → Settings → Manage all history (this opens myactivity.google.com).",
@@ -1681,6 +1830,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "4 · Deal with Shorts",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 42,
+          title: "Use YouTube wellbeing controls",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=42s",
+          kind: "Official video",
+          description: "YouTube’s official parent-control overview beside the Shorts actions.",
+        },
         intro: "Shorts is the most compulsive surface in the app and the hardest to filter, because content moves fast and moderation lags.",
         steps: [
           "Home feed: tap the three dots on the Shorts shelf → 'Hide' — it collapses the shelf for 30 days, then returns. Repeat monthly.",
@@ -1692,6 +1850,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "5 · Clean subscriptions and retrain recommendations",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 52,
+          title: "Manage what appears on YouTube",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=52s",
+          kind: "Official video",
+          description: "The platform’s own walkthrough beside recommendation controls.",
+        },
         steps: [
           "Tap 'Subscriptions' → 'Manage' (or the channel list) and unsubscribe from anything you don't recognise — ask who each one is.",
           "On the home page, hold or tap the three dots on any unwanted thumbnail → 'Don't recommend channel'. Do this ten times in a row; the feed shifts noticeably.",
@@ -1702,6 +1869,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "6 · Restricted Mode — on every device and browser",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 62,
+          title: "Review content controls",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=62s",
+          kind: "Official video",
+          description: "YouTube’s official controls overview; use the written device-specific paths.",
+        },
         intro: "Restricted Mode is an automated filter for mature content. It is useful but leaky, and it is stored per browser, per app and per device.",
         steps: [
           "Phone/tablet app: profile picture → Settings → General → 'Restricted Mode' → On.",
@@ -1713,6 +1889,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "7 · Repeat where they actually watch",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 72,
+          title: "Check every viewing device",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=72s",
+          kind: "Official video",
+          description: "The official walkthrough beside the final multi-device check.",
+        },
         intro: "Most households do the phone and forget the rest. YouTube settings do not sync across these.",
         steps: [
           "Smart TV and streaming stick — usually the least-protected screen in the house.",
@@ -1765,6 +1950,14 @@ export const CHECKLISTS: Checklist[] = [
     sections: [
       {
         title: "1 · Instagram",
+        visual: {
+          youtubeId: "A9PUMeAQRbA",
+          title: "Instagram Teen Accounts",
+          source: "Instagram",
+          sourceUrl: "https://www.youtube.com/watch?v=A9PUMeAQRbA",
+          kind: "Official video",
+          description: "Instagram’s official introduction to automatic teen protections.",
+        },
         intro: "Under-18 accounts should already be Teen Accounts (private by default, restricted DMs, sensitive-content limits). Verify rather than assume — and check the age on the account is the real one.",
         steps: [
           "Private: profile → three lines (top right) → Settings and privacy → Account privacy → 'Private account' ON.",
@@ -1778,6 +1971,14 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "2 · TikTok",
+        visual: {
+          youtubeId: "kyONXkjYm-s",
+          title: "Teen safety and privacy defaults",
+          source: "TikTok",
+          sourceUrl: "https://www.youtube.com/watch?v=kyONXkjYm-s",
+          kind: "Official video",
+          description: "TikTok’s official explanation of teen-account defaults.",
+        },
         intro: "13–15 accounts are private by default with DMs off. 16–17 accounts are not fully locked, so check them properly.",
         steps: [
           "Private: profile → three lines → Settings and privacy → Privacy → 'Private account' ON.",
@@ -1792,6 +1993,14 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "3 · Snapchat",
+        visual: {
+          youtubeId: "3qkNYcRnwYc",
+          title: "Understand your teen's Snapchat experience",
+          source: "Snapchat",
+          sourceUrl: "https://www.youtube.com/watch?v=3qkNYcRnwYc",
+          kind: "Official video",
+          description: "Snapchat’s current official Family Center walkthrough, including friends, messages, location and time use.",
+        },
         intro: "Snapchat's risk is contact discovery and location, not a public feed. Both are fixable in two minutes.",
         steps: [
           "Contact me: profile → gear icon → Privacy Controls → 'Contact Me' → 'My Friends'.",
@@ -1806,6 +2015,14 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "4 · Discord",
+        visual: {
+          youtubeId: "uVwBW1b2HlM",
+          title: "The Discord Family Center",
+          source: "Discord",
+          sourceUrl: "https://www.youtube.com/watch?v=uVwBW1b2HlM",
+          kind: "Official video",
+          description: "Discord’s official Family Center introduction and activity overview.",
+        },
         intro: "Discord risk lives in servers and DMs from server members, not in a profile. UK accounts now get age-appropriate defaults, but server settings are still per-server.",
         steps: [
           "DMs: User Settings → Privacy & Safety → 'Keep me safe' for content filtering, and turn OFF 'Allow direct messages from server members'.",
@@ -1818,6 +2035,14 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "5 · Finish on every account",
+        visual: {
+          youtubeId: "A9PUMeAQRbA",
+          title: "Recheck teen protections",
+          source: "Instagram",
+          sourceUrl: "https://www.youtube.com/watch?v=A9PUMeAQRbA",
+          kind: "Official video",
+          description: "An official example of the protections to verify before completing the cross-platform sweep.",
+        },
         steps: [
           "Search their username in a signed-out browser — whatever you can see, a stranger can see.",
           "Check the profile photo, bio and pinned posts for school uniform, school name, street or house number.",
