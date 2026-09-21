@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { GLOSSARY, REVIEWED, type GlossaryEntry } from "@/content/data";
+import { GLOSSARY, type GlossaryEntry } from "@/content/data";
+import { MessageExplainer } from "@/components/MessageExplainer";
 import { RiskPill } from "@/routes/index";
 import { Search } from "lucide-react";
 
@@ -12,7 +13,7 @@ export const Route = createFileRoute("/glossary")({
       {
         name: "description",
         content:
-          "A–Z dictionary of the slang, acronyms, numbers and emoji UK teens use online. Reviewed monthly with calm guidance on when it’s worth a conversation.",
+          "Explore slang and emoji meanings, or explain a message privately on your device with our dictionary-based tool. No AI or account needed.",
       },
     ],
   }),
@@ -37,6 +38,7 @@ function Glossary() {
         (tab === "All" || g.kind === tab) &&
         (needle === "" ||
           g.term.toLowerCase().includes(needle) ||
+          g.aliases?.some((alias) => alias.toLowerCase().includes(needle)) ||
           g.meaning.toLowerCase().includes(needle) ||
           g.context.toLowerCase().includes(needle)),
     );
@@ -58,22 +60,24 @@ function Glossary() {
   const presentLetters = new Set(grouped.map((g) => g.letter));
 
   return (
-    <div className="mx-auto max-w-5xl px-5 py-16 md:px-8 md:py-24">
-      <p className="eyebrow">Living dictionary · Reviewed {REVIEWED}</p>
+    <div className="mx-auto max-w-5xl px-5 py-16 [overflow-wrap:anywhere] md:px-8 md:py-24">
+      <p className="eyebrow">Dictionary · Wording reviewed 21 September 2026</p>
       <h1 className="mt-3 max-w-3xl font-display text-5xl leading-tight tracking-tight md:text-6xl">
         The full slang, acronym & emoji dictionary.
       </h1>
       <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-        {GLOSSARY.length}+ terms UK teens actually use right now — from TikTok memes to group-chat
-        acronyms. We review trends every month against TikTok, Reddit, Common Sense Media, Internet
-        Matters and NSPCC Net Aware, and update this page so you can keep up without doom-scrolling.
+        {GLOSSARY.length} entries covering slang, acronyms, numbers and emoji. Some are newer memes;
+        others are established expressions. Meanings vary between people, places and conversations.
+        Start with curiosity, not assumptions.
       </p>
+      <MessageExplainer />
 
       <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex gap-2 overflow-x-auto">
           {TABS.map((t) => (
             <button
               key={t}
+              aria-pressed={tab === t}
               onClick={() => setTab(t)}
               className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
                 tab === t
@@ -157,8 +161,25 @@ function Glossary() {
                         {g.example}
                       </p>
                     )}
+                    {g.reviewNote && (
+                      <p className="mt-2 text-xs text-muted-foreground">{g.reviewNote}</p>
+                    )}
+                    {g.sourceUrl && (
+                      <a
+                        href={g.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-2 inline-block text-xs underline underline-offset-4"
+                      >
+                        Meaning reference
+                      </a>
+                    )}
                   </div>
-                  <RiskPill level={g.riskLevel} />
+                  {g.kind === "Emoji" ? (
+                    <span className="text-xs text-muted-foreground">Context matters</span>
+                  ) : (
+                    <RiskPill level={g.riskLevel} />
+                  )}
                 </li>
               ))}
             </ul>
@@ -166,12 +187,45 @@ function Glossary() {
         ))}
       </div>
 
-      <p className="mt-12 text-xs text-muted-foreground">
-        Editorial note: meanings depend on context, group and platform. The same emoji can be
-        playful in one chat and concerning in another. We review this dictionary monthly and add new
-        terms as they trend — last review {REVIEWED}. Spotted a missing word? Tell us via the help
-        page.
-      </p>
+      <section
+        className="mt-12 border-t border-border pt-6 text-sm text-muted-foreground"
+        aria-labelledby="dictionary-sources"
+      >
+        <h2 id="dictionary-sources" className="font-semibold text-foreground">
+          About these meanings
+        </h2>
+        <p className="mt-2">
+          The September 2026 wording review compared the existing entries with published slang and
+          emoji references, corrected ambiguous definitions and added documented examples. It is not
+          a survey of what every teen uses today. Uncertain entries are labelled and excluded from
+          message matching.
+        </p>
+        <p className="mt-2">
+          Conversation labels are editorial prompts, not evidence of harm. An emoji, slang word or
+          lack of a match cannot establish someone’s intentions or wellbeing.
+        </p>
+        <p className="mt-3">
+          References:{" "}
+          <a
+            className="underline"
+            href="https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/"
+          >
+            luna’s teen slang guide
+          </a>
+          ,{" "}
+          <a
+            className="underline"
+            href="https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"
+          >
+            text acronyms
+          </a>
+          ,{" "}
+          <a className="underline" href="https://www.dictionary.com/culture/slang">
+            Dictionary.com
+          </a>{" "}
+          and individual Emojipedia entries linked above.
+        </p>
+      </section>
     </div>
   );
 }

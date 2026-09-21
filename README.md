@@ -2,7 +2,7 @@
 
 The site uses React, TanStack Start and Vite to generate static HTML, CSS and JavaScript. Only `dist/client` is published. A server is used locally during development and build; no application server, database, Lovable account, AI credits or API keys are needed to serve the exported site.
 
-The existing guides, articles, research, routes and styling are retained. The AI translator is deferred; the searchable slang dictionary remains. The unused Firecrawl integration and Lovable build configuration are removed. Both original MP4 files are stored in `public/media`; their source URLs and SHA-256 checksums are recorded in `docs/imported-media.json`. The Family Link MP4 is retained as an archive asset; the existing checklist continues to use its YouTube tutorial.
+The existing guides, articles, research, routes and styling are retained. The AI translator is deferred. A private, dictionary-based “Explain a message” tool runs entirely in the browser, alongside the searchable slang dictionary. It highlights possible meanings rather than generating sentence translations. See `docs/glossary-review-2026-09-21.md` for the content review and limitations. The unused Firecrawl integration and Lovable build configuration are removed. Both original MP4 files are stored in `public/media`; their source URLs and SHA-256 checksums are recorded in `docs/imported-media.json`. The Family Link MP4 is retained as an archive asset; the existing checklist continues to use its YouTube tutorial.
 
 ## Local use
 
