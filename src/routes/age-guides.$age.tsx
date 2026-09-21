@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { AGE_BANDS, REVIEWED, type ScreenTimeGuidance, type ExpertResource } from "@/content/data";
+import { AGE_BANDS, type ScreenTimeGuidance, type ExpertResource } from "@/content/data";
 import { ArrowLeft, Clock, AlertTriangle, BookOpen, ExternalLink, GraduationCap } from "lucide-react";
 
 
@@ -35,9 +35,9 @@ function AgeGuide() {
       </Link>
 
       <header className="mt-8">
-        <p className="eyebrow">Ages {band.range} · Reviewed {REVIEWED}</p>
+        <p className="eyebrow">Ages {band.range}</p>
         <h1 className="mt-4 font-display text-5xl leading-tight tracking-tight md:text-6xl">
-          {band.headline}
+          Screen time and online safety for ages {band.range}
         </h1>
         <p className="mt-5 max-w-2xl text-xl leading-relaxed text-muted-foreground">
           {band.summary}
@@ -45,6 +45,7 @@ function AgeGuide() {
       </header>
 
       <div className="mt-14 space-y-12">
+        {age === "0-4" && <p className="text-sm text-muted-foreground">Screen-time recommendations and selected research references checked 21 September 2026. Other guidance is general parenting advice.</p>}
         <ScreenTimeBlock data={band.screenTime} />
         <Section title="Typical digital behaviours" items={band.behaviours} />
         <Section title="Risks that actually matter" items={band.risks} accent="danger" />

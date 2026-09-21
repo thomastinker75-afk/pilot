@@ -1,3 +1,4 @@
+import { YouTubeVideo } from "@/components/YouTubeVideo";
 import { publicPath } from "@/lib/public-path";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { APPS, type AppGuide, type Evidence } from "@/content/data";
@@ -56,14 +57,14 @@ function AppDetail() {
       <header className="mt-8">
         <p className="eyebrow">{app.category} · Minimum age {app.minAge}</p>
         <h1 className="mt-3 font-display text-5xl leading-tight tracking-tight md:text-6xl">
-          {app.name}
+          {app.name}: a guide for parents
         </h1>
         <p className="mt-5 max-w-2xl text-lg text-muted-foreground">{app.detail.overview}</p>
 
         <dl className="mt-7 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-3">
           <div className="bg-card p-4">
-            <dt className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Last checked in the UK</dt>
-            <dd className="mt-1 text-sm font-semibold">{app.lastCheckedUK}</dd>
+            <dt className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Policy review</dt>
+            <dd className="mt-1 text-sm font-semibold">{app.slug === "roblox" ? "Account ages and controls: 21 September 2026" : "Check current official guidance"}</dd>
           </div>
           <div className="bg-card p-4">
             <dt className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Official minimum age</dt>
@@ -97,15 +98,7 @@ function AppDetail() {
                 playsInline
               />
             ) : app.detail.riskVideo.youtubeId ? (
-              <iframe
-                className="h-full w-full"
-                src={`https://www.youtube-nocookie.com/embed/${app.detail.riskVideo.youtubeId}`}
-                title={app.detail.riskVideo.title}
-                loading="lazy"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              <YouTubeVideo id={app.detail.riskVideo.youtubeId} title={app.detail.riskVideo.title} />
             ) : null}
           </div>
           {app.detail.riskVideo.note && (
@@ -114,6 +107,7 @@ function AppDetail() {
         </section>
       )}
 
+      <nav aria-label="Related help" className="mt-8 flex flex-wrap gap-5 text-sm font-semibold underline underline-offset-4"><Link to="/checklists">Device and privacy setup checklists</Link><Link to="/help">Help with an immediate concern</Link></nav>
       <hr className="rule my-12" />
 
       <section>
@@ -126,10 +120,9 @@ function AppDetail() {
 
       <section>
         <p className="eyebrow">Evidence</p>
-        <h2 className="mt-3 font-display text-3xl tracking-tight">Is the risk actually proven?</h2>
+        <h2 className="mt-3 font-display text-3xl tracking-tight">What the sources say</h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          We only cite regulators, government health authorities, established child-safety charities,
-          peer-reviewed research, and major investigative journalism. No blog posts, no opinion pieces.
+          These sources include platform policies, research and reporting. A historical incident or allegation is not a measure of current prevalence, and platform policies are not independent safety guarantees.
         </p>
 
         <ol className="mt-8 space-y-5">
@@ -209,8 +202,7 @@ function AppDetail() {
           <p className="eyebrow">Video tutorials</p>
           <h3 className="mt-3 font-display text-2xl tracking-tight">Watch it being done</h3>
           <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
-            Short walk-throughs from the platforms themselves and trusted child-safety organisations.
-            Opens YouTube in a new tab.
+            Links open YouTube in a new tab. Where a link opens search results, check the uploader and publication date before following a tutorial.
           </p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {app.detail.videoTutorials.map((v) => (
@@ -227,7 +219,7 @@ function AppDetail() {
                   <span className="flex-1">
                     <span className="block text-sm font-medium leading-snug">{v.title}</span>
                     <span className="mt-1 block text-xs text-muted-foreground">
-                      {v.channel} · YouTube <ExternalLink className="inline size-3" />
+                      {v.url.includes("youtube.com/results") ? "YouTube search — uploader not verified" : v.channel} · YouTube <ExternalLink className="inline size-3" />
                     </span>
                   </span>
                 </a>
@@ -238,8 +230,7 @@ function AppDetail() {
       </section>
 
       <p className="mt-16 text-xs text-muted-foreground">
-        Sources are checked at each review cycle. If a link breaks or a finding is superseded by newer
-        peer-reviewed evidence, we update or remove it.
+        Platform controls and guidance can change. Follow the official links for current instructions; the About page explains which checks have been completed.
       </p>
     </div>
   );

@@ -113,12 +113,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 function RootShell({ children }: { children: React.ReactNode }) {
   const pathname = useLocation({ select: (location) => location.pathname });
   const siteUrl = import.meta.env.VITE_SITE_URL;
+  const editorialPreview = /\/apps-audit(?:\/|$)/.test(pathname);
+  const socialOrigin = siteUrl || import.meta.env.VITE_PREVIEW_ORIGIN || "https://thomastinker75-afk.github.io";
+  const socialImage = `${socialOrigin}${import.meta.env.BASE_URL}social-card.png`;
   return (
     <html lang="en">
       <head>
         <HeadContent />
-        {siteUrl ? (
-          <link rel="canonical" href={`${siteUrl}${pathname}`} />
+        <meta property="og:image" content={socialImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Parent Tech Safety Hub — practical online safety guidance for parents" />
+        <meta name="twitter:image" content={socialImage} />
+        {siteUrl && !editorialPreview && (
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org", "@type": "WebSite",
+            name: "Parent Tech Safety Hub", url: `${siteUrl}${import.meta.env.BASE_URL}`,
+            publisher: { "@type": "Person", name: "Thomas Tinker" },
+          }).replace(/</g, "\\u003c") }} />
+        )}
+        {siteUrl && !editorialPreview ? (
+          <link rel="canonical" href={`${siteUrl}${pathname.replace(/\/$/, "")}/`} />
         ) : (
           <meta name="robots" content="noindex, nofollow" />
         )}
@@ -137,8 +152,9 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-background focus:p-4 focus:underline">Skip to content</a>
         <SiteHeader />
-        <main className="flex-1">
+        <main id="main-content" tabIndex={-1} className="flex-1">
           <Outlet />
         </main>
         <SiteFooter />

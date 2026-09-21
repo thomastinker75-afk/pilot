@@ -1,6 +1,6 @@
 import { writeFileSync, existsSync } from "node:fs";
 import { loadEnv } from "vite";
-import { SITE_PATHS } from "../src/content/site-paths.ts";
+import { SITE_PATHS, PUBLIC_PATHS } from "../src/content/site-paths.ts";
 
 const output = "dist/client";
 if (!existsSync(`${output}/index.html`)) throw new Error("Prerendered homepage is missing.");
@@ -15,8 +15,8 @@ const escapeXml = (text) =>
     .replaceAll(">", "&gt;");
 writeFileSync(`${output}/.nojekyll`, "");
 if (siteUrl) {
-  const urls = SITE_PATHS.map(
-    (path) => `  <url><loc>${escapeXml(siteUrl + basePath + path.slice(1))}</loc></url>`,
+  const urls = PUBLIC_PATHS.map(
+    (path) => `  <url><loc>${escapeXml(siteUrl + basePath + (path === "/" ? "" : path.slice(1) + "/"))}</loc></url>`,
   );
   writeFileSync(
     `${output}/sitemap.xml`,

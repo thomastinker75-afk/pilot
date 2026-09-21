@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, ShieldCheck, MessageSquare, Smartphone, Gamepad2, Sparkles, AlertTriangle } from "lucide-react";
-import { AGE_BANDS, APPS, GLOSSARY, REVIEWED } from "@/content/data";
+import { AGE_BANDS, APPS, GLOSSARY } from "@/content/data";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -22,7 +22,7 @@ function Home() {
       <section className="grid gap-10 pt-10 pb-16 md:grid-cols-12 md:pt-16 md:pb-24">
         <div className="md:col-span-8">
           <p className="eyebrow flex items-center gap-2">
-            <ShieldCheck className="size-3.5" /> Issue 01 · Reviewed {REVIEWED}
+            <ShieldCheck className="size-3.5" /> Practical guidance for parents
           </p>
           <h1 className="mt-5 font-display text-[2.6rem] font-semibold leading-[1.02] tracking-tight md:text-[4.5rem]">
             Understand your child’s

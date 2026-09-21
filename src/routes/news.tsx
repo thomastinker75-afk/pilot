@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
 import { UK_RESEARCH, WORLD_RESEARCH, type ResearchItem } from "@/content/research";
 import { UK_ARTICLES, WORLD_ARTICLES, type ArticleItem } from "@/content/articles";
+import { YouTubeVideo } from "@/components/YouTubeVideo";
 import { ArrowUpRight, Play } from "lucide-react";
 
 export const Route = createFileRoute("/news")({
@@ -12,13 +12,13 @@ export const Route = createFileRoute("/news")({
       {
         name: "description",
         content:
-          "The latest UK-first research, news and real-world incidents on how smartphones, social media and games affect children's mental health and brain development.",
+          "Research, reporting and discussions about children’s digital lives, with source types and limits explained for parents.",
       },
       { property: "og:title", content: "News & Research — Parent Tech Safety Hub" },
       {
         property: "og:description",
         content:
-          "Up-to-date studies, journalism and expert videos on the impact of screens and social media on children.",
+          "Studies, journalism and discussions about children’s screen use, online safety and wellbeing.",
       },
     ],
   }),
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/news")({
 const TABS: { key: "research" | "articles" | "videos"; label: string; sub: string }[] = [
   { key: "research", label: "Research & Studies", sub: "UK & worldwide studies" },
   { key: "articles", label: "Articles", sub: "News & real-world incidents" },
-  { key: "videos", label: "Videos", sub: "Experts on the child brain" },
+  { key: "videos", label: "Videos", sub: "Interviews, talks & reporting" },
 ];
 
 type Video = {
@@ -46,7 +46,7 @@ const VIDEOS: Video[] = [
     title: "iGen: the smartphone generation",
     channel: "TEDx — Dr. Jean Twenge",
     blurb:
-      "Psychology professor Jean Twenge shows that around 2012 — when teen smartphone ownership crossed 50% — loneliness, depression and sleep deprivation sharply diverged from earlier generations.",
+      "Psychology professor Jean Twenge presents her interpretation of trends in teen wellbeing and smartphone adoption. Trends over time alone cannot establish what caused them.",
   },
   {
     rank: 2,
@@ -55,7 +55,7 @@ const VIDEOS: Video[] = [
       "Social Media and Mental Health for Children and Teens: Why being present matters",
     channel: "Dartmouth Health",
     blurb:
-      "Experts from the Dartmouth Health academic medical centre explain how social media use is linked to rising anxiety and depression in young people — and why parental presence and open conversation matter more than blanket bans.",
+      "Experts from the Dartmouth Health academic medical centre explain how social media use is linked to rising anxiety and depression in young people — and discuss parental presence and open conversation.",
   },
   {
     rank: 3,
@@ -63,7 +63,7 @@ const VIDEOS: Video[] = [
     title: "Doctor on How Screen Time Hurts Kids' Cognitive Development",
     channel: "BBC News",
     blurb:
-      "BBC Senior Education Reporter Vanessa Clarke unpacks new UK government guidance on screen time for under-fives, with researchers explaining how fast-paced content triggers stress responses in toddlers' developing brains.",
+      "BBC Senior Education Reporter Vanessa Clarke unpacks new UK government guidance on screen time for under-fives, with discussion of young children’s development and content choices.",
   },
   {
     rank: 4,
@@ -72,7 +72,7 @@ const VIDEOS: Video[] = [
       "Chilling warning for parents as MRI scans show phones are damaging kids' brains",
     channel: "10 News",
     blurb:
-      "Australian news outlet 10 News reports on MRI research showing measurable changes in children's brain development linked to heavy phone use — a stark, evidence-backed warning for parents.",
+      "Australian news outlet 10 News reports on MRI research showing measurable changes in children's brain development linked to heavy phone use — a news interpretation that should be checked against the study’s methods and limitations.",
   },
   {
     rank: 5,
@@ -88,7 +88,7 @@ const VIDEOS: Video[] = [
     title: "How a handful of tech companies control billions of minds every day",
     channel: "TED — Tristan Harris",
     blurb:
-      "Former Google design ethicist Tristan Harris exposes how notifications, autoplay and streaks are engineered to exploit psychological vulnerabilities — essential context for why children are most at risk.",
+      "Former Google design ethicist Tristan Harris exposes how notifications, autoplay and streaks are engineered to exploit psychological vulnerabilities — a perspective on persuasive design rather than a measurement of each child’s risk.",
   },
   {
     rank: 7,
@@ -96,7 +96,7 @@ const VIDEOS: Video[] = [
     title: "Dr. Jonathan Haidt: how smartphones & social media impact mental health",
     channel: "Huberman Lab",
     blurb:
-      "The author of The Anxious Generation and neuroscientist Andrew Huberman go deep on how phones alter brain plasticity, why girls and boys are affected differently, and what actually works.",
+      "The author of The Anxious Generation and neuroscientist Andrew Huberman go deep on their interpretations of research on phones, adolescent wellbeing and possible responses.",
   },
   {
     rank: 8,
@@ -104,7 +104,7 @@ const VIDEOS: Video[] = [
     title: "Dr. Anna Lembke: how TikTok is physically rewiring your brain",
     channel: "The Diary of a CEO",
     blurb:
-      "Stanford psychiatrist Anna Lembke (Dopamine Nation) explains how social media and short-form video replicate drug-seeking loops in the adolescent brain — interviewed by Steven Bartlett.",
+      "Stanford psychiatrist Anna Lembke (Dopamine Nation) discusses reward, habits and social media use — interviewed by Steven Bartlett.",
   },
   {
     rank: 9,
@@ -117,55 +117,24 @@ const VIDEOS: Video[] = [
 ];
 
 function NewsPage() {
-  const [tab, setTab] = useState<(typeof TABS)[number]["key"]>("research");
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-12 md:px-8 md:py-20">
       <p className="eyebrow">News & Research</p>
       <h1 className="mt-3 max-w-4xl font-display text-4xl leading-tight tracking-tight md:text-6xl">
-        A few examples of studies, research, videos, and articles that show how dangerous the digital environment can be
+        Research and reporting on children’s digital lives
       </h1>
         <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-          A living feed of UK-first research, journalism, expert videos and real-world incidents on how
-          smartphones, social media and games are affecting children and teenagers.
+          A selected reading and viewing list for parents. Studies, news stories and interviews answer different questions: an association is not proof of cause, and an individual incident does not show how common a risk is.
         </p>
 
-      {/* Tabs */}
-      <div className="mt-10 grid grid-cols-2 gap-2 md:grid-cols-4">
-        {TABS.map((t) => {
-          const active = t.key === tab;
-          return (
-            <button
-              key={t.key}
-              onClick={() => setTab(t.key)}
-              className={`rounded-2xl border p-4 text-left transition ${
-                active
-                  ? "border-foreground bg-foreground text-background"
-                  : "border-border bg-card hover:border-foreground/40"
-              }`}
-            >
-              <div className="text-sm font-semibold">{t.label}</div>
-              <div
-                className={`mt-1 text-xs ${
-                  active ? "text-background/70" : "text-muted-foreground"
-                }`}
-              >
-                {t.sub}
-              </div>
-            </button>
-          );
-        })}
-      </div>
-
-      <div className="mt-10">
-        {tab === "videos" ? (
-          <VideosGrid />
-        ) : tab === "articles" ? (
-          <CuratedArticles />
-        ) : (
-          <CuratedResearch />
-        )}
-      </div>
+      <p className="mt-4 text-sm text-muted-foreground">Research references and framing updated 21 September 2026. This is a curated list, not a live news feed or a systematic review.</p>
+      <nav aria-label="On this page" className="mt-8 flex flex-wrap gap-4 text-sm font-semibold underline underline-offset-4">
+        {TABS.map(t => <a key={t.key} href={`#${t.key}`}>{t.label}</a>)}
+      </nav>
+      <section id="research" className="mt-12 scroll-mt-28"><h2 className="mb-6 font-display text-3xl">Research &amp; studies</h2><CuratedResearch /></section>
+      <section id="articles" className="mt-16 scroll-mt-28"><h2 className="mb-6 font-display text-3xl">News &amp; reporting</h2><CuratedArticles /></section>
+      <section id="videos" className="mt-16 scroll-mt-28"><h2 className="mb-4 font-display text-3xl">Talks, interviews &amp; video reporting</h2><p className="mb-6 text-sm text-muted-foreground">Video titles and opinions belong to their publishers. They are not clinical advice or proof that screen use causes brain damage. Check the underlying research before applying a claim to your child.</p><VideosGrid /></section>
     </div>
   );
 }
@@ -194,14 +163,7 @@ function VideosGrid() {
                 </span>
               </a>
             ) : (
-              <iframe
-                src={`https://www.youtube.com/embed/${v.id}`}
-                title={v.title}
-                loading="lazy"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="h-full w-full"
-              />
+              <YouTubeVideo id={v.id} title={v.title} />
             )}
           </div>
           <div className="p-5">
@@ -272,6 +234,8 @@ function ResearchGrid({ items }: { items: ResearchItem[] }) {
             ) : null}
           </div>
           <h3 className="mt-2 font-display text-lg font-semibold leading-snug">{item.title}</h3>
+          {"evidenceType" in item && item.evidenceType && <p className="mt-2 text-xs font-semibold">{item.evidenceType}</p>}
+          {"limitation" in item && item.limitation && <p className="mt-2 text-sm text-muted-foreground">Limitations: {item.limitation}</p>}
           {item.description ? (
             <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
           ) : null}

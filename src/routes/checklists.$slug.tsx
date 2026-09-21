@@ -1,6 +1,7 @@
+import { YouTubeVideo } from "@/components/YouTubeVideo";
 import { publicPath } from "@/lib/public-path";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { CHECKLISTS, REVIEWED } from "@/content/data";
+import { CHECKLISTS } from "@/content/data";
 import { ArrowLeft, CheckCircle2, ExternalLink, PlayCircle, BookOpen, ShieldCheck, PhoneCall, Info } from "lucide-react";
 
 export const Route = createFileRoute("/checklists/$slug")({
@@ -41,7 +42,7 @@ function ChecklistDetail() {
       <header className="mt-8">
         <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-full bg-secondary px-3 py-1 text-xs font-semibold">{c.device}</span>
-          <p className="eyebrow !mt-0">Reviewed {REVIEWED}</p>
+          <p className="eyebrow !mt-0">Check the current settings on your device</p>
         </div>
         <h1 className="mt-4 font-display text-4xl leading-tight tracking-tight md:text-5xl">
           {c.title}
@@ -55,14 +56,7 @@ function ChecklistDetail() {
       {c.heroVideo && (
         <figure className="mt-10 overflow-hidden rounded-2xl border border-border bg-card">
           {c.heroVideo.youtubeId ? (
-            <iframe
-              src={`https://www.youtube.com/embed/${c.heroVideo.youtubeId}`}
-              title={c.heroVideo.title ?? "Tutorial video"}
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="aspect-video w-full bg-black"
-            />
+            <div className="aspect-video w-full"><YouTubeVideo id={c.heroVideo.youtubeId} title={c.heroVideo.title ?? "Tutorial video"} /></div>
           ) : (
             <video
               src={c.heroVideo.src ? publicPath(c.heroVideo.src) : undefined}
@@ -92,14 +86,7 @@ function ChecklistDetail() {
                   {s.visual && (
                     <figure className="overflow-hidden rounded-lg border border-border bg-card lg:col-start-2 lg:row-span-2 lg:row-start-1">
                       {s.visual.youtubeId ? (
-                        <iframe
-                          src={`https://www.youtube-nocookie.com/embed/${s.visual.youtubeId}${s.visual.startSeconds ? `?start=${s.visual.startSeconds}` : ""}`}
-                          title={s.visual.title}
-                          loading="lazy"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          allowFullScreen
-                          className="aspect-video w-full bg-foreground"
-                        />
+                        <div className="aspect-video w-full"><YouTubeVideo id={s.visual.youtubeId} title={s.visual.title} start={s.visual.startSeconds} /></div>
                       ) : null}
                       <figcaption className="p-4">
                         <p className="text-xs font-semibold uppercase text-primary">{s.visual.kind} · {s.visual.source}</p>

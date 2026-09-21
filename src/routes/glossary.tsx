@@ -164,6 +164,7 @@ function Glossary() {
                     {g.reviewNote && (
                       <p className="mt-2 text-xs text-muted-foreground">{g.reviewNote}</p>
                     )}
+                    {!g.sourceUrl && <p className="mt-2 text-xs text-muted-foreground">Individual source verification pending.</p>}
                     {g.sourceUrl && (
                       <a
                         href={g.sourceUrl}

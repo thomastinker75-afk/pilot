@@ -284,15 +284,15 @@ export const APP_AUDITS: Record<string, AppAudit> = {
     whoUses:
       "Enormously popular with UK primary and lower-secondary children, plus a large adult creator community sharing the same spaces.",
     ukControls:
-      "Roblox now requires facial age estimation or ID before chat is available where rolled out, and groups users into age bands so children chat mostly with their own age group. Parents can link their own account to a child's to set experience ratings, spending limits, screen time and Allowed Experiences.",
+      "Roblox now requires facial age estimation or ID before chat is available where rolled out, and groups users into age bands so children chat mostly with their own age group. Parents can link their own account to manage games, chat, spending and screen time. Kids accounts cover ages 5–8, Select 9–15 and standard Roblox 16+; Restricted content is 18+. Options vary by age and region.",
     topRisks: [
       "Adults and children sharing the same experiences, which is why Roblox appears repeatedly in UK grooming reports and investigative journalism.",
       "Money: Robux purchases, third-party ‘free Robux’ scams and gambling-style resale of items.",
       "User-made experiences that copy adult content, or condition-based games that slip past ratings, plus off-platform moves to Discord.",
     ],
     canChange: [
-      "Link a parent account, set a parent PIN and turn on Allowed Experiences.",
-      "Complete or confirm the age check so age-grouped chat applies.",
+      "Link a parent account and review the games and chat permissions available for the child’s age and region.",
+      "Check the account age together; an age check is required if chat is enabled. Never use an adult’s age check for a child.",
       "Set monthly spending limits and remove saved payment details.",
       "Restrict who can message, invite or join, and turn off chat entirely for younger children.",
     ],

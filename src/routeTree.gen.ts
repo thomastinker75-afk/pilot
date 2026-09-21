@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as NewsRouteImport } from './routes/news'
 import { Route as HelpRouteImport } from './routes/help'
 import { Route as GlossaryRouteImport } from './routes/glossary'
@@ -23,6 +24,11 @@ import { Route as AppsSlugRouteImport } from './routes/apps.$slug'
 import { Route as AppsAuditSlugRouteImport } from './routes/apps-audit.$slug'
 import { Route as AgeGuidesAgeRouteImport } from './routes/age-guides.$age'
 
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const NewsRoute = NewsRouteImport.update({
   id: '/news',
   path: '/news',
@@ -95,6 +101,7 @@ export interface FileRoutesByFullPath {
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
   '/news': typeof NewsRoute
+  '/privacy': typeof PrivacyRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
   '/apps-audit/$slug': typeof AppsAuditSlugRoute
   '/apps/$slug': typeof AppsSlugRoute
@@ -110,6 +117,7 @@ export interface FileRoutesByTo {
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
   '/news': typeof NewsRoute
+  '/privacy': typeof PrivacyRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
   '/apps-audit/$slug': typeof AppsAuditSlugRoute
   '/apps/$slug': typeof AppsSlugRoute
@@ -126,6 +134,7 @@ export interface FileRoutesById {
   '/glossary': typeof GlossaryRoute
   '/help': typeof HelpRoute
   '/news': typeof NewsRoute
+  '/privacy': typeof PrivacyRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
   '/apps-audit/$slug': typeof AppsAuditSlugRoute
   '/apps/$slug': typeof AppsSlugRoute
@@ -143,6 +152,7 @@ export interface FileRouteTypes {
     | '/glossary'
     | '/help'
     | '/news'
+    | '/privacy'
     | '/age-guides/$age'
     | '/apps-audit/$slug'
     | '/apps/$slug'
@@ -158,6 +168,7 @@ export interface FileRouteTypes {
     | '/glossary'
     | '/help'
     | '/news'
+    | '/privacy'
     | '/age-guides/$age'
     | '/apps-audit/$slug'
     | '/apps/$slug'
@@ -173,6 +184,7 @@ export interface FileRouteTypes {
     | '/glossary'
     | '/help'
     | '/news'
+    | '/privacy'
     | '/age-guides/$age'
     | '/apps-audit/$slug'
     | '/apps/$slug'
@@ -189,6 +201,7 @@ export interface RootRouteChildren {
   GlossaryRoute: typeof GlossaryRoute
   HelpRoute: typeof HelpRoute
   NewsRoute: typeof NewsRoute
+  PrivacyRoute: typeof PrivacyRoute
   AgeGuidesAgeRoute: typeof AgeGuidesAgeRoute
   AppsAuditSlugRoute: typeof AppsAuditSlugRoute
   AppsSlugRoute: typeof AppsSlugRoute
@@ -201,6 +214,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/news': {
       id: '/news'
       path: '/news'
@@ -301,6 +321,7 @@ const rootRouteChildren: RootRouteChildren = {
   GlossaryRoute: GlossaryRoute,
   HelpRoute: HelpRoute,
   NewsRoute: NewsRoute,
+  PrivacyRoute: PrivacyRoute,
   AgeGuidesAgeRoute: AgeGuidesAgeRoute,
   AppsAuditSlugRoute: AppsAuditSlugRoute,
   AppsSlugRoute: AppsSlugRoute,

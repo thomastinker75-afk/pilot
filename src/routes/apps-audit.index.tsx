@@ -85,8 +85,7 @@ function AuditIndex() {
                         </div>
                         <p className="mt-2 text-xs text-muted-foreground">
                           UK age assurance:{" "}
-                          <span className="font-semibold text-foreground">{a.ukAgeAssurance}</span> · Last checked{" "}
-                          {a.lastCheckedUK}
+                          <span className="font-semibold text-foreground">{a.ukAgeAssurance}</span>
                         </p>
                       </div>
                     </header>

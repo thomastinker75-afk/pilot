@@ -13,10 +13,10 @@ export const Route = createFileRoute("/help")({
 });
 
 const STEPS = [
-  { n: "01", t: "Take a breath. Don’t delete anything.", d: "Screenshots, messages and accounts are your evidence if this becomes serious. Photograph the screen with another device if you’re worried things will disappear." },
+  { n: "01", t: "Put your child’s immediate safety first.", d: "If there is immediate danger, call 999 in the UK. You do not need to collect evidence before asking for help. Stay calm and reassure your child that you will help them." },
   { n: "02", t: "Don’t shout at your child.", d: "Whatever happened, your child needs to feel they can come to you. Anger today closes the door tomorrow." },
   { n: "03", t: "Identify what kind of concern this is.", d: "Bullying, stranger contact, sexual images, self-harm content, scams or coercion all have different next steps. Use the categories below." },
-  { n: "04", t: "Decide: report, restrict, or talk.", d: "Most situations need all three — in that order. Reporting first preserves evidence." },
+  { n: "04", t: "Get the right help for what happened.", d: "You can note usernames, links, the platform and when it happened. Do not screenshot, photograph, download or forward sexual images of anyone who may be under 18. Ask police how to handle material already on the device; do not delay a report to gather evidence." },
 ];
 
 const linkClass =
@@ -44,27 +44,11 @@ const ROUTES: { icon: ReactNode; t: string; d: ReactNode }[] = [
     t: "Sexual images shared of your child",
     d: (
       <>
-        Report to the platform. In the UK,{" "}
-        <a className={linkClass} href="https://www.iwf.org.uk/" target="_blank" rel="noopener noreferrer">
-          IWF
-        </a>{" "}
-        (
-        <a className={linkClass} href="https://takeitdown.ncmec.org/" target="_blank" rel="noopener noreferrer">
-          Take It Down
-        </a>
-        ) and{" "}
-        <a className={linkClass} href="https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/remove-nude-image-shared-online/" target="_blank" rel="noopener noreferrer">
-          Report Remove
-        </a>{" "}
-        (
-        <a className={linkClass} href="https://www.nspcc.org.uk/" target="_blank" rel="noopener noreferrer">
-          NSPCC
-        </a>{" "}
-        +{" "}
-        <a className={linkClass} href="https://www.iwf.org.uk/" target="_blank" rel="noopener noreferrer">
-          IWF
-        </a>
-        ) can help remove images of under-18s.
+        Help your child report the account or content to the platform. For a child under 18,{' '}
+        <a className={linkClass} href="https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/report-remove/" target="_blank" rel="noopener noreferrer">Childline’s Report Remove</a>{' '}
+        works with the Internet Watch Foundation to help remove sexual images online, including AI fakes.{' '}
+        <a className={linkClass} href="https://takeitdown.ncmec.org/" target="_blank" rel="noopener noreferrer">Take It Down</a>{' '}
+        is a separate service from NCMEC for images taken when the person was under 18. It creates a digital fingerprint of an image already on their device; do not download or share an image to use it. These services cannot guarantee removal from every site, encrypted chat or someone else’s device.
       </>
     ),
   },
@@ -73,16 +57,13 @@ const ROUTES: { icon: ReactNode; t: string; d: ReactNode }[] = [
     t: "Self-harm or suicide content",
     d: (
       <>
-        Reach out to your GP or a child mental health line (e.g.{" "}
-        <a className={linkClass} href="https://www.samaritans.org/" target="_blank" rel="noopener noreferrer">
-          Samaritans
-        </a>{" "}
-        —{" "}
-        <a className={linkClass} href="tel:116123">116 123</a>,{" "}
-        <a className={linkClass} href="https://www.youngminds.org.uk/" target="_blank" rel="noopener noreferrer">
-          YoungMinds
-        </a>{" "}
-        in the UK). Remove access to the source content while you get support.
+        If your child is in immediate danger, call <a className={linkClass} href="tel:999">999</a>.
+        Otherwise, contact your GP for advice. For someone who needs to talk,{' '}
+        <a className={linkClass} href="https://www.samaritans.org/how-we-can-help/contact-samaritan/" target="_blank" rel="noopener noreferrer">Samaritans</a>{' '}
+        offers listening support on <a className={linkClass} href="tel:116123">116 123</a>.
+        Parents and carers can also use the{' '}
+        <a className={linkClass} href="https://www.youngminds.org.uk/parent/parents-helpline/" target="_blank" rel="noopener noreferrer">YoungMinds Parents Helpline</a>.
+        Ask what your child has seen and help them step away from distressing content while you seek support.
       </>
     ),
   },
@@ -91,7 +72,7 @@ const ROUTES: { icon: ReactNode; t: string; d: ReactNode }[] = [
     t: "Bullying or coercion in chats",
     d: (
       <>
-        Save screenshots. Report inside the app. If it involves another child,
+        Keep a note of messages, usernames and times, following the sexual-image precautions above. Report inside the app. If it involves another child,
         contact the school. If it involves an adult or threats, contact police
         (in the UK,{" "}
         <a className={linkClass} href="tel:101">101</a> non-emergency or{" "}
@@ -117,6 +98,8 @@ function Help() {
         <span className="block italic text-primary">Here’s the next hour.</span>
       </h1>
 
+      <p className="mt-5 text-sm text-muted-foreground">Reporting and support links checked 21 September 2026. This is general guidance, not an emergency response service.</p>
+      <p className="mt-3 text-sm"><a className={linkClass} href="https://www.police.uk/advice/advice-and-information/online-safety/online-safety/sextortion/sextortion-reporting-it-to-us/" target="_blank" rel="noopener noreferrer">Police guidance on reporting and handling evidence</a></p>
       <ol className="mt-12 space-y-8">
         {STEPS.map((s) => (
           <li key={s.n} className="grid gap-4 md:grid-cols-[80px_1fr]">

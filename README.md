@@ -26,7 +26,7 @@ The static preview listens at `http://127.0.0.1:4173`. The preview helper serves
 
 ## Domain and publishing
 
-The new domain has not been selected. Leave `VITE_SITE_URL` blank for now. Builds without it include `noindex, nofollow` and a robots exclusion, and omit the public sitemap. Do not publish that preview as the final public site.
+The new domain has not been selected. Leave `VITE_SITE_URL` blank for now. Builds without it include `noindex, nofollow` and a robots file (effective only at the host root), and omit the public sitemap. Do not publish that preview as the final public site.
 
 When the new domain is ready, copy `.env.example` to `.env.local` and set `VITE_SITE_URL` to the real HTTPS origin, with no trailing slash. Alternatively, set this variable in the hosting build settings. Rebuild and run:
 
@@ -37,7 +37,7 @@ npm run check:static
 npm run check:release
 ```
 
-The public build includes canonical URLs and a sitemap covering all 40 current content pages. Publish **only `dist/client`**, including its `.nojekyll` marker and `404.html`. Set `VITE_BASE_PATH=/` for a custom domain, or `/pilot/` for the GitHub project preview. A normal static host should serve `/path/index.html` for `/path` and return `404.html` with status 404 for missing paths. Do not configure a universal success/SPA fallback: all content routes already have HTML.
+The public build includes canonical URLs and a sitemap covering the 41 public content pages; the 23 editorial app previews stay noindex and are excluded. Publish **only `dist/client`**, including its `.nojekyll` marker and `404.html`. Set `VITE_BASE_PATH=/` for a custom domain, or `/pilot/` for the GitHub project preview. A normal static host should serve `/path/index.html` for `/path` and return `404.html` with status 404 for missing paths. Do not configure a universal success/SPA fallback: all content routes already have HTML.
 
 Hosting choices:
 
@@ -61,3 +61,7 @@ The imported repository has widespread existing Prettier formatting failures in 
 - [GitHub Pages eligibility](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 - [Cloudflare Pages Git integration](https://developers.cloudflare.com/pages/get-started/git-integration/)
 - [Cloudflare Pages pricing](https://developers.cloudflare.com/pages/functions/pricing/)
+
+## September audit corrections
+
+See `docs/audit-corrections-2026-09-21.md` for sources, review scope and remaining work. `docs/cloudflare-setup.md` records the Cloudflare build settings; no domain has been purchased or Cloudflare project connected. YouTube players now require a click before connecting.

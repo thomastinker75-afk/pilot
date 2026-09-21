@@ -65,12 +65,12 @@ export const AGE_BANDS: AgeBand[] = [
     ],
     screenTime: {
       recommended:
-        "UK guidance does not set an hour limit for under-5s. The NHS and RCPCH advise judging screen use by whether it is displacing sleep, play, activity and family conversation. Internationally, the WHO recommends no screens under 1 year, none except video calls before 18 months, and no more than 1 hour a day for 2–4 year-olds.",
+        "The UK government’s March 2026 guidance for parents of under-fives recommends avoiding screens under age 2 except shared activities that support bonding, interaction and conversation. For ages 2–5, aim for no more than 1 hour a day. Choose slow-paced, age-appropriate content and use it together. Avoid screens at meals and during the hour before bed.",
       ukContext:
-        "The Royal College of Paediatrics and Child Health deliberately declined to set a UK screen-time threshold, saying the evidence is not strong enough. Treat WHO, AAP and Canadian numbers as international guidance, not UK policy.",
+        "This Department for Education and Department of Health and Social Care guidance replaces the assumption that government advice has no time target for young children. Screen-based assistive technology for children with special educational needs and disabilities should not be restricted in the same way. Separately, WHO’s global guidance does not recommend sedentary screen time for infants or one-year-olds, and recommends at most 1 hour for ages 2–4; less is better.",
       sources: [
         { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
-        { label: "Screen time advice for children and families", org: "NHS / Start for Life", region: "UK", url: "https://www.nhs.uk/start-for-life/toddler/" },
+        { label: "New screen time guidance for parents of under-5s (26 March 2026)", org: "Department for Education / Department of Health and Social Care", region: "UK government", url: "https://www.gov.uk/government/news/new-screen-time-guidance-for-parents-of-under-5s" },
         { label: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5", org: "World Health Organization", region: "Global (international guidance)", url: "https://www.who.int/publications/i/item/9789241550536" },
         { label: "Media and Young Minds (policy statement)", org: "American Academy of Pediatrics", region: "USA (international guidance)", url: "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds" },
         { label: "Screen time and young children — position statement", org: "Canadian Paediatric Society", region: "Canada (international guidance)", url: "https://cps.ca/en/documents/position/screen-time-and-young-children" },
@@ -83,9 +83,9 @@ export const AGE_BANDS: AgeBand[] = [
       ],
     },
     deepDive: [
-      { type: "Report", source: "World Health Organization", title: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age", url: "https://www.who.int/publications/i/item/9789241550536", note: "The WHO's primary global guidance — explains why under-2s should avoid screens entirely." },
+      { type: "Report", source: "World Health Organization", title: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age", url: "https://www.who.int/publications/i/item/9789241550536", note: "WHO guidance on sedentary screen time, activity and sleep for infants and children aged 1–4." },
       { type: "Study", source: "JAMA Pediatrics (2020)", title: "Associations Between Screen-Based Media Use and Brain White Matter Integrity in Preschool-Aged Children", url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2754101", note: "MRI study showing measurable differences in language and literacy brain regions in heavy-screen toddlers." },
-      { type: "Study", source: "JAMA Pediatrics (2019)", title: "Screen Time and Parent-Child Talk When Children Are Aged 12 to 36 Months", url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2725319", note: "Each extra minute of screen time reduced parent words heard by the child." },
+      { type: "Study", source: "JAMA Pediatrics (2024)", title: "Screen Time and Parent-Child Talk When Children Are Aged 12 to 36 Months", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10913002/", note: "An observational study found more screen time was associated with less parent–child talk; it does not establish cause." },
       { type: "Article", source: "American Academy of Pediatrics — HealthyChildren.org", title: "How to Make a Family Media Use Plan", url: "https://www.healthychildren.org/English/family-life/Media/Pages/How-to-Make-a-Family-Media-Use-Plan.aspx" },
       { type: "Video", source: "TED — Dimitri Christakis, MD", title: "Media and Children", url: "https://www.youtube.com/watch?v=BoT7qH_uVNo", note: "Paediatrician summarising the evidence on infant/toddler screen exposure." },
     ],
@@ -140,7 +140,7 @@ export const AGE_BANDS: AgeBand[] = [
     deepDive: [
       { type: "Study", source: "JAMA Pediatrics (2019)", title: "Association Between Screen Time and Children's Performance on a Developmental Screening Test", url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2722666", note: "Canadian cohort — >2h/day at age 3 predicted worse developmental scores at age 5." },
       { type: "Report", source: "WHO European Region (2022)", title: "Childhood Obesity Surveillance Initiative (COSI)", url: "https://www.who.int/europe/initiatives/who-european-childhood-obesity-surveillance-initiative-(cosi)", note: "Links screen-heavy lifestyles in 6–9 year-olds to rising obesity across 33 countries." },
-      { type: "Study", source: "Sleep Medicine Reviews (2021)", title: "Screen time and sleep among school-aged children and adolescents: a systematic review", url: "https://www.sciencedirect.com/science/article/abs/pii/S1087079214001075" },
+      { type: "Study", source: "Sleep Medicine Reviews (2015)", title: "Screen time and sleep among school-aged children and adolescents: a systematic literature review", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4437561/" },
       { type: "Article", source: "Common Sense Media", title: "The Common Sense Census: Media Use by Kids Age Zero to Eight", url: "https://www.commonsensemedia.org/research/the-common-sense-census-media-use-by-kids-age-zero-to-eight-2020" },
       { type: "Video", source: "BBC Panorama", title: "Smartphone Kids", url: "https://www.bbc.co.uk/iplayer/episodes/b00wk6h0/panorama", note: "Documentary on early phone/tablet use and behaviour." },
     ],
@@ -630,26 +630,28 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "roblox", name: "Roblox", category: "Game", minAge: "All ages (rated by experience)",
-    lastCheckedUK: "September 2026", officialMinAge: "All ages (experience-based)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Facial age estimation or ID is required for chat, with age-grouped communication.",
+    lastCheckedUK: "21 September 2026", officialMinAge: "All ages (experience-based)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Facial age estimation or ID is required for chat, with age-grouped communication.",
     why: "Millions of user-made games and a social hangout for under-12s — now with mandatory age checks before anyone can chat.",
     risks: ["User-made games with adult themes", "Strangers bypassing age checks by playing along", "Robux scams and ‘free Robux’ links"],
-    settings: ["Chat now requires a facial age check or ID", "Age-grouped chat (under-13s only with same age band)", "Parent-managed account link", "Spend controls"],
+    settings: ["Chat now requires a facial age check or ID", "Check the account age and available chat permissions", "Parent-managed account link", "Spend controls"],
     detail: {
-      overview: "Roblox is a platform of user-created ‘experiences’, not a single game — and since late 2025 it has been rebuilt around age checks. Since January 2026, no one can use text or voice chat anywhere in the world until Roblox verifies their age, using facial age estimation (a quick video selfie analysed by AI) or ID verification. Chat is then limited to age bands, so a child can only chat with users estimated to be of a similar age, and minors cannot chat freely with unknown adults. No age check, no chat.",
-      ageRationale: "Roblox itself has no minimum age but applies experience age ratings (Minimal/Mild for under-9s, Moderate 13+, Restricted 17+). The new system goes further: unverified accounts get no chat at all, and parental controls for linked accounts let parents approve chat, set spending limits, and see who their child interacts with. The remaining risk is the experience catalogue itself — ratings are applied to user-made content after creation, and adult-themed experiences are still found before moderation catches them.",
+      overview: "Roblox hosts user-created games and social experiences. Age checks are required for chat. Its 2026 account system includes Roblox Kids for ages 5–8, Roblox Select for ages 9–15 and standard Roblox for age-checked users 16+. Chat options vary by age and region, and some allow Trusted Friends known outside Roblox. Age estimation is not infallible; check the assigned age and available controls together.",
+      ageRationale: "Account age, content ratings and permission to chat are different things. Roblox describes Kids accounts as accessing selected Minimal/Mild games and Select accounts as accessing selected Minimal/Mild/Moderate games. Restricted content is for ages 18+. Parents can link an account to manage games, chat, friends, screen time and spending. During the transition described by Roblox, some game access uses a self-declared age; chat still requires an age check. Check the official guide for current regional options.",
       evidence: [
+        { claim: "Roblox describes Kids (5–8), Select (9–15) and standard (16+) accounts, Restricted content for 18+, linked parent controls and regional chat differences.", publisher: "Roblox", title: "What Families Need to Know About Roblox’s New Age-Based Protections", year: "2026", url: "https://about.roblox.com/newsroom/2026/05/what-families-should-know-roblox-kids-select", type: "Platform policy" },
         { claim: "Roblox made facial age estimation or ID verification mandatory for chat globally in January 2026, the first gaming platform to do so, with chat limited to similar age groups and minors blocked from chatting with unknown adults.", publisher: "Roblox (official newsroom)", title: "A New Era of Safety: Facial Age Checks Now Required to Chat on Roblox", year: "2026", url: "https://about.roblox.com/newsroom/2026/01/roblox-age-checks-required-to-chat", type: "Platform policy" },
         { claim: "Roblox explains how age checks work — facial age estimation, ID verification and, for minors, parent consent — and what each verified age band can access.", publisher: "Roblox Support (official help centre)", title: "Understanding Age Checks on Roblox", year: "2026", url: "https://en.help.roblox.com/hc/en-us/articles/39143693116052-Understanding-Age-Checks-on-Roblox", type: "Platform policy" },
         { claim: "BBC News investigation documented sexual and gambling-style content accessible to child accounts on Roblox.", publisher: "BBC News (investigative)", title: "Roblox: The children’s game with a sex problem", year: "2024", url: "https://www.bbc.co.uk/news/technology-67772670", type: "Investigative journalism" },
         { claim: "Revealing Reality researchers found children as young as five could contact adults on Roblox, describing the risks as ‘deeply disturbing’.", publisher: "The Guardian", title: "Risks to children playing Roblox ‘deeply disturbing’, say researchers", year: "2025", url: "https://www.theguardian.com/technology/2025/apr/14/risks-children-roblox-deeply-disturbing-researchers", type: "Investigative journalism" },
       ],
       parentTalkingPoints: [
-        "Age checks changed everything: ask your child whether their account is age-verified — if not, they can’t chat, which is the safest state.",
-        "Do the facial age check together rather than letting them borrow an adult’s face or ID — a misclassified adult account opens chat with unknown adults.",
-        "Link your own Roblox parent account so you can see their friends, sessions and spending, and approve changes.",
-        "The experience catalogue is still the weak point — agree which experiences are okay, and use ‘Allowed Experiences’ for younger children.",
+        "Link your own parent account and check that your child’s account age is correct. Never use an adult’s ID or face to give a child an adult account.",
+        "Review the chat permissions available for their age and region. An age check enables some features; it is not a guarantee that every interaction is safe.",
+        "Review friends and games together, then choose game, screen-time and spending limits through the linked parent account.",
+        "Agree what to do if anyone asks them to move a conversation to another app or offers free Robux.",
       ],
       settingsHowTo: [
+        { label: "Roblox: account ages, chat options and linked parent controls", url: "https://about.roblox.com/newsroom/2026/05/what-families-should-know-roblox-kids-select" },
         { label: "Roblox: Understanding Age Checks", url: "https://en.help.roblox.com/hc/en-us/articles/39143693116052-Understanding-Age-Checks-on-Roblox" },
         { label: "Roblox: Parent and caregiver guide", url: "https://en.help.roblox.com/hc/en-us/articles/203313120-Parents-Safety-and-Moderation-Guide" },
         { label: "Internet Matters: Roblox controls", url: "https://www.internetmatters.org/parental-controls/gaming-consoles/roblox-parental-controls/" },
@@ -659,7 +661,7 @@ export const APPS: AppGuide[] = [
         { title: "Roblox age checks explained", channel: "News coverage", url: "https://www.youtube.com/results?search_query=Roblox+facial+age+estimation+chat+news" },
         { title: "Roblox parents’ guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Roblox+parents+guide" },
       ],
-      riskVideo: { title: "Roblox: The playground problem", channel: "Raising Digital · Investigation", videoUrl: "/media/roblox-risks.mp4", note: "Original 95-second explainer based on Guardian reporting on the Revealing Reality investigation (April 2025)." },
+      riskVideo: { title: "Roblox: The playground problem", channel: "Raising Digital · Investigation", videoUrl: "/media/roblox-risks.mp4", note: "Historical explainer based on April 2025 reporting. It predates the 2026 account and chat changes described above and is not a current settings tutorial." },
     },
   },
   {

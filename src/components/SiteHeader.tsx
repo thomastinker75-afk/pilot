@@ -15,7 +15,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur">
+    <header className="site-header sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 md:px-8">
         <Link to="/" className="group flex items-center gap-2.5">
           <span className="grid size-9 place-items-center rounded-full bg-primary text-primary-foreground">
@@ -29,7 +29,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 md:flex">
+        <nav className="desktop-navigation hidden items-center gap-7 md:flex">
           {NAV.map((n) => (
             <Link
               key={n.to}
@@ -42,7 +42,7 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="desktop-navigation hidden md:block">
           <Link
             to="/help"
             className="inline-flex items-center rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-opacity hover:opacity-90"
@@ -54,7 +54,9 @@ export function SiteHeader() {
         <button
           type="button"
           aria-label="Toggle menu"
-          className="grid size-10 place-items-center rounded-full border border-border md:hidden"
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
+          className="mobile-menu-toggle grid size-10 place-items-center rounded-full border border-border md:hidden"
           onClick={() => setOpen((o) => !o)}
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -62,7 +64,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div className="border-t border-border bg-background md:hidden">
+        <div id="mobile-navigation" className="mobile-navigation-panel border-t border-border bg-background md:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col px-5 py-4">
             {NAV.map((n) => (
               <Link

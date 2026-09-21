@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { CHECKLISTS, REVIEWED } from "@/content/data";
+import { CHECKLISTS } from "@/content/data";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/checklists/")({
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/checklists/")({
 function Checklists() {
   return (
     <div className="mx-auto max-w-5xl px-5 py-16 md:px-8 md:py-24">
-      <p className="eyebrow">Checklists · Reviewed {REVIEWED}</p>
+      <p className="eyebrow">Practical checklists</p>
       <h1 className="mt-3 max-w-3xl font-display text-5xl leading-tight tracking-tight md:text-6xl">
         Five-minute setups that change everything.
       </h1>

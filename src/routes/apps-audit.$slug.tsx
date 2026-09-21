@@ -236,7 +236,7 @@ function AuditDetail() {
         <Step n={10} title="Last UK verification">
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm">
             <CalendarCheck className="size-4 text-primary" />
-            Checked in the UK on <span className="font-semibold">{app.lastCheckedUK}</span>
+            Source policies can change. Check the linked official guidance for the current options.
           </div>
           <p className="mt-4 text-sm text-muted-foreground">
             Platform rules, age checks and parental controls change often. If a link breaks or a policy is

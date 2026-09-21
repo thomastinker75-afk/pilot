@@ -121,3 +121,16 @@
 @utility rule {
   border-top: 1px solid var(--color-border);
 }
+
+@layer base {
+  :where(a, button, input, textarea, select, summary):focus-visible { outline: 3px solid var(--foreground); outline-offset: 4px; }
+  [id] { scroll-margin-top: 7rem; }
+}
+
+/* Container width responds to text zoom as well as the viewport. */
+.site-header { container-type: inline-size; }
+@container (max-width: 64rem) {
+  .desktop-navigation { display: none; }
+  .mobile-menu-toggle { display: grid; }
+  .mobile-navigation-panel { display: block; }
+}

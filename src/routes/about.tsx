@@ -13,10 +13,10 @@ export const Route = createFileRoute("/about")({
 const PRINCIPLES = [
   { t: "Trusted sources first", d: "Guidance is based on reputable child protection organisations, regulators, medical bodies and platform safety documentation." },
   { t: "No fear without action", d: "If we name a risk, we tell you what to do about it. Same page, same scroll." },
-  { t: "Age-specific advice", d: "What helps a 7-year-old isn’t what helps a 16-year-old. Every guide is banded by age." },
-  { t: "Trust over surveillance", d: "We help you talk with your child — not just spy on them. Both matter; conversation first." },
+  { t: "Age-specific advice", d: "What helps a 7-year-old isn’t what helps a 16-year-old. Age guides distinguish the needs of younger children and teenagers." },
+  { t: "Trust over surveillance", d: "We encourage conversation with your child alongside appropriate device controls." },
   { t: "Clear escalation routes", d: "Where harm is serious, we point straight to the right reporting service." },
-  { t: "Reviewed openly", d: "Every page shows when it was last reviewed. We update when platforms change." },
+  { t: "Reviewed openly", d: "Dates describe the checks completed. A wording review is not a clinical review or proof that every platform setting is current." },
 ];
 
 function About() {
@@ -43,12 +43,18 @@ function About() {
         ))}
       </div>
 
+      <section className="mt-12 border-t border-border pt-8">
+        <h2 className="font-display text-3xl tracking-tight">Review scope</h2>
+        <p className="mt-4 text-muted-foreground">On 21 September 2026 we checked the help-page reporting sources, under-five screen-time recommendations, Roblox account-age guidance and selected research references. Other inherited guidance still needs source-by-source review. The glossary has had a separate wording review; it does not measure how often teenagers use a term.</p>
+        <p className="mt-4 text-muted-foreground">This pilot has not been independently reviewed by a safeguarding or clinical professional. Follow the linked official services for individual advice and check current platform instructions before changing settings.</p>
+        <p className="mt-4 text-muted-foreground">This site is owned and published by Thomas Tinker. A public corrections email will be added after the domain and its email are set up. Please do not send children’s private messages or images to the site.</p>
+      </section>
       <h2 className="mt-16 font-display text-3xl tracking-tight">What we don’t do</h2>
       <ul className="mt-5 space-y-2.5 text-base text-muted-foreground">
         <li>— Name and shame children, parents or platforms.</li>
         <li>— Republish explicit, harmful or sensational content.</li>
         <li>— Diagnose your child or replace professional help.</li>
-        <li>— Store any data about your child.</li>
+        <li>— Send messages entered in the explainer to an AI service.</li>
       </ul>
     </div>
   );

@@ -14,4 +14,8 @@ export const SITE_PATHS = [
   "/news",
   "/help",
   "/about",
+  "/privacy",
 ];
+
+// Editorial alternatives remain available for review, but never enter the public sitemap.
+export const PUBLIC_PATHS = SITE_PATHS.filter(path => !/^\/apps-audit(?:\/|$)/.test(path));
