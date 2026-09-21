@@ -1352,6 +1352,17 @@ export type ChecklistSection = {
   title: string;
   intro?: string;
   steps: string[];
+  visual?: ChecklistVisual;
+};
+
+export type ChecklistVisual = {
+  youtubeId?: string;
+  startSeconds?: number;
+  title: string;
+  source: string;
+  sourceUrl: string;
+  kind: "Official video" | "Official illustrated guide";
+  description: string;
 };
 
 export type ChecklistTutorial = {
