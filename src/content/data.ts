@@ -5,6 +5,7 @@ export const REVIEWED = "May 2026";
 
 export type ScreenTimeGuidance = {
   recommended: string;
+  ukContext?: string;
   sources: { label: string; org: string; region: string; url: string }[];
   consequences: string[];
 };
@@ -64,18 +65,21 @@ export const AGE_BANDS: AgeBand[] = [
     ],
     screenTime: {
       recommended:
-        "Under 18 months: avoid screens except video calls. 18–24 months: only short, high-quality co-viewed content. 2–4 years: no more than 1 hour per day of any screen (TV, tablet, phone, console) — and ideally much less.",
+        "UK guidance does not set an hour limit for under-5s. The NHS and RCPCH advise judging screen use by whether it is displacing sleep, play, activity and family conversation. Internationally, the WHO recommends no screens under 1 year, none except video calls before 18 months, and no more than 1 hour a day for 2–4 year-olds.",
+      ukContext:
+        "The Royal College of Paediatrics and Child Health deliberately declined to set a UK screen-time threshold, saying the evidence is not strong enough. Treat WHO, AAP and Canadian numbers as international guidance, not UK policy.",
       sources: [
-        { label: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5", org: "World Health Organization", region: "Global", url: "https://www.who.int/publications/i/item/9789241550536" },
-        { label: "Media and Young Minds (policy statement)", org: "American Academy of Pediatrics", region: "USA", url: "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds" },
-        { label: "Screen time and young children — position statement", org: "Canadian Paediatric Society", region: "Canada", url: "https://cps.ca/en/documents/position/screen-time-and-young-children" },
-        { label: "À chaque âge son écran (3-6-9-12 framework)", org: "Serge Tisseron / French Ministry of Health", region: "France", url: "https://www.sergetisseron.com/3-6-9-12/" },
+        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
+        { label: "Screen time advice for children and families", org: "NHS / Start for Life", region: "UK", url: "https://www.nhs.uk/start-for-life/toddler/" },
+        { label: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5", org: "World Health Organization", region: "Global (international guidance)", url: "https://www.who.int/publications/i/item/9789241550536" },
+        { label: "Media and Young Minds (policy statement)", org: "American Academy of Pediatrics", region: "USA (international guidance)", url: "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds" },
+        { label: "Screen time and young children — position statement", org: "Canadian Paediatric Society", region: "Canada (international guidance)", url: "https://cps.ca/en/documents/position/screen-time-and-young-children" },
       ],
       consequences: [
-        "Delayed language acquisition and smaller vocabularies — repeatedly shown in studies of heavy-screen toddlers (e.g. JAMA Pediatrics, 2020).",
-        "Shorter and more disrupted sleep; melatonin suppression from evening screens.",
-        "Reduced parent–child interaction, which is the single biggest predictor of early brain development.",
-        "Higher risk of attention and self-regulation problems by school entry (CHILD Cohort Study, Canada, 2019).",
+        "Heavy toddler screen use is associated with delayed language and smaller vocabularies (JAMA Pediatrics, 2020). Screens are one factor among many, not a proven sole cause.",
+        "Evening screen use is associated with shorter, more disrupted sleep.",
+        "More screen time is associated with less parent–child talk — and parent–child interaction is a strong predictor of early development.",
+        "Higher screen use in the pre-school years has been associated with more attention and self-regulation difficulties at school entry (CHILD Cohort Study, Canada, 2019).",
       ],
     },
     deepDive: [
@@ -117,18 +121,20 @@ export const AGE_BANDS: AgeBand[] = [
     ],
     screenTime: {
       recommended:
-        "No more than 1 hour per day of recreational screen time (TV, tablet, console, phone combined), with screens off at least an hour before bed and no screens during meals.",
+        "There is no official UK hour limit at this age. UK guidance focuses on sleep, physical activity, what is being watched and family context. Some international guidelines (AAP, Canada) suggest around 1 hour a day of recreational screens as a working target.",
+      ukContext:
+        "Treat “one hour a day” as an international suggestion rather than a UK rule. The practical UK questions are: is your child sleeping enough, moving enough, eating without a screen, and is the content suitable?",
       sources: [
-        { label: "Guidelines for physical activity, sedentary behaviour and sleep — under 5s extended to early school years", org: "World Health Organization", region: "Global", url: "https://www.who.int/publications/i/item/9789241550536" },
-        { label: "Media use in school-aged children and adolescents", org: "American Academy of Pediatrics", region: "USA", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
-        { label: "24-Hour Movement Guidelines for Children and Youth", org: "Canadian Society for Exercise Physiology", region: "Canada", url: "https://csepguidelines.ca/guidelines/children-youth/" },
-        { label: "Pas d’écran avant 6 ans (3-6-9-12 framework)", org: "Serge Tisseron / Société Française de Pédiatrie", region: "France", url: "https://www.sergetisseron.com/3-6-9-12/" },
+        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
+        { label: "Physical activity guidelines: children and young people (5 to 18)", org: "UK Chief Medical Officers / NHS", region: "UK", url: "https://www.gov.uk/government/publications/physical-activity-guidelines-children-and-young-people-aged-5-to-18-years" },
+        { label: "Media use in school-aged children and adolescents", org: "American Academy of Pediatrics", region: "USA (international guidance)", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
+        { label: "24-Hour Movement Guidelines for Children and Youth", org: "Canadian Society for Exercise Physiology", region: "Canada (international guidance)", url: "https://csepguidelines.ca/guidelines/children-youth/" },
       ],
       consequences: [
-        "Worse executive function and school readiness — children with >2h/day of screens score significantly lower on developmental screening (JAMA Pediatrics, 2019).",
-        "Higher rates of obesity through reduced physical activity and snack-while-watching habits (WHO European Childhood Obesity Surveillance, 2022).",
-        "Sleep onset delays of 30–60 minutes; chronic short sleep at this age predicts mood and learning problems.",
-        "Earlier and steeper drop in face-to-face play skills, which underpin friendships and emotional regulation.",
+        "Screen use above about 2 hours a day at this age has been associated with lower developmental screening scores (JAMA Pediatrics, 2019) — an association, not proof of cause.",
+        "Screen-heavy lifestyles are associated with higher obesity rates, largely through reduced activity and snacking while watching (WHO European COSI, 2022).",
+        "Evening screens are associated with delayed sleep onset; short sleep at this age is linked to mood and learning problems.",
+        "Less time in face-to-face play is associated with slower development of friendship and emotional-regulation skills.",
       ],
     },
     deepDive: [
@@ -170,18 +176,21 @@ export const AGE_BANDS: AgeBand[] = [
     ],
     screenTime: {
       recommended:
-        "Up to 1.5–2 hours per day of recreational screen time across all devices, with clear screen-free zones (bedrooms, mealtimes) and a hard stop at least 60 minutes before bed.",
+        "No UK body sets an hour limit for 8–10s. Some international guidelines suggest around 1.5–2 hours a day of recreational screens; UK guidance instead prioritises sleep, an hour of daily activity, screen-free bedrooms and mealtimes, and knowing what they are using.",
+      ukContext:
+        "The 1.5–2 hour figure comes from US, Canadian and Australian guidance. Use it as a rough anchor for family rules, not as an established UK standard.",
       sources: [
-        { label: "Media Use in School-Aged Children and Adolescents", org: "American Academy of Pediatrics", region: "USA", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
-        { label: "24-Hour Movement Guidelines (5–17 years)", org: "Canadian Society for Exercise Physiology", region: "Canada", url: "https://csepguidelines.ca/guidelines/children-youth/" },
-        { label: "Guidelines on the use of digital devices by children (RACP)", org: "Royal Australasian College of Physicians", region: "Australia / NZ", url: "https://www.racp.edu.au/news-and-events/media-releases/screen-time-guidelines" },
-        { label: "Screen time recommendations for school-aged children", org: "Chinese Center for Disease Control and Prevention", region: "China", url: "https://www.chinacdc.cn/en/" },
+        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
+        { label: "Children and parents: media use and attitudes", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
+        { label: "Media Use in School-Aged Children and Adolescents", org: "American Academy of Pediatrics", region: "USA (international guidance)", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
+        { label: "24-Hour Movement Guidelines (5–17 years)", org: "Canadian Society for Exercise Physiology", region: "Canada (international guidance)", url: "https://csepguidelines.ca/guidelines/children-youth/" },
+        { label: "Guidelines on the use of digital devices by children", org: "Royal Australasian College of Physicians", region: "Australia / NZ (international guidance)", url: "https://www.racp.edu.au/news-and-events/media-releases/screen-time-guidelines" },
       ],
       consequences: [
-        "Reduced sleep duration — every extra hour of evening screen use is linked to ~15 minutes less sleep (Sleep Medicine Reviews, 2021).",
-        "Higher rates of cyberbullying involvement when unsupervised on group chats (EU Kids Online, 2020).",
-        "Worse reading comprehension and vocabulary growth in heavy users (OECD PISA analyses).",
-        "Early signs of problematic gaming: irritability when stopped, sneaking devices at night, declining grades.",
+        "Each extra hour of evening screen use is associated with roughly 15 minutes less sleep (Sleep Medicine Reviews, 2021).",
+        "Unsupervised group-chat use is associated with higher involvement in cyberbullying, as victim or participant (EU Kids Online, 2020).",
+        "Heavy recreational screen use is associated with weaker reading comprehension (OECD PISA analyses) — other factors such as home reading habits also play a part.",
+        "Watch for early signs of problematic gaming: irritability when stopped, sneaking devices at night, slipping schoolwork.",
       ],
     },
     deepDive: [
@@ -224,18 +233,20 @@ export const AGE_BANDS: AgeBand[] = [
     ],
     screenTime: {
       recommended:
-        "Around 2 hours per day of recreational screen time (outside school work), with phones out of the bedroom overnight and a tech-free wind-down before sleep.",
+        "There is no UK hour limit for this age. Protect the non-negotiables first: 9–11 hours of sleep, phones out of the bedroom overnight, an hour of daily activity and a tech-free wind-down. Around 2 hours a day of recreational scrolling is a common family benchmark drawn from international advice.",
+      ukContext:
+        "Ofcom reports what UK children actually do; it does not set limits. The UK Chief Medical Officers' advice centres on sleep, activity and safe use rather than a daily screen quota.",
       sources: [
-        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
         { label: "Children and parents: media use and attitudes report", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
-        { label: "Recommendations on the regulation of smartphones for children", org: "French government expert commission (Enfants et écrans)", region: "France", url: "https://www.elysee.fr/emmanuel-macron/2024/04/30/enfants-et-ecrans" },
-        { label: "Adolescent Screen Time and Mental Health (meta-analysis)", org: "JAMA Pediatrics", region: "International", url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2737909" },
+        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
+        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA (international guidance)", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
+        { label: "Recommendations on the regulation of smartphones for children", org: "French government expert commission (Enfants et écrans)", region: "France (international guidance)", url: "https://www.elysee.fr/emmanuel-macron/2024/04/30/enfants-et-ecrans" },
       ],
       consequences: [
-        "Higher rates of depression and anxiety in heavy users (>3h/day on social media roughly doubles the risk — JAMA Psychiatry, 2019).",
-        "Significant sleep loss; teens who keep phones in bedrooms sleep on average 1 hour less per night (Sleep Health, 2018).",
-        "Body-image disturbance and disordered eating, especially among girls on image-led platforms.",
-        "Attention fragmentation: heavy multitaskers show measurable drops in working memory and academic performance.",
+        "Studies have found an association between more than about 3 hours a day on social media and higher rates of depression and anxiety symptoms (JAMA Psychiatry, 2019). That does not mean screen time alone caused the outcome.",
+        "Keeping phones in bedrooms is associated with around an hour less sleep per night (Sleep Health, 2018).",
+        "Heavy use of image-led platforms is associated with body-image disturbance and disordered eating, particularly among girls.",
+        "Frequent media multitasking is associated with lower working-memory and academic performance scores; the direction of cause is still debated.",
       ],
     },
     deepDive: [
@@ -260,17 +271,22 @@ export const AGE_BANDS: AgeBand[] = [
       "Gaming communities (Discord, Twitch)",
     ],
     risks: [
-      "Sharing nudes or being pressured to",
-      "Coercion, blackmail (sextortion)",
-      "Algorithmic rabbit-holes (extreme diet, self-harm, hate)",
+      "Sharing nudes, or being pressured into it",
+      "Sextortion — a stranger poses as a peer, obtains an image, then demands money or more images",
+      "AI deepfake nudes made from ordinary photos taken from social accounts",
+      "Intimate-image abuse: images shared on without consent (a criminal offence in the UK)",
+      "Algorithmic rabbit-holes (extreme diet, self-harm, misogyny, hate)",
     ],
     settings: [
       "Two-factor auth on every account",
       "Review who can DM them on each platform",
+      "Lock down photo-sharing: private accounts, no public face photos",
       "Discuss ‘nothing leaves the phone you wouldn’t want printed’",
     ],
     conversation: [
-      "Make it clear: if a nude is leaked, you will help — no punishment",
+      "Make it clear: if a nude is leaked or faked, you will help — no punishment, no phone confiscation",
+      "Explain sextortion out loud: stop replying, don't pay, screenshot, report, tell an adult",
+      "Explain that AI-made fake nudes happen to people who never sent anything — and that reporting works (Report Remove, IWF)",
       "Talk about consent and screenshots",
     ],
     redFlags: [
@@ -279,27 +295,32 @@ export const AGE_BANDS: AgeBand[] = [
     ],
     screenTime: {
       recommended:
-        "No single hour cap is realistic at this age — aim for under 2 hours/day of pure social-media scrolling, plus protected time for sleep (9 hours), physical activity, schoolwork and offline friendships.",
+        "No hour cap is realistic at this age, and the UK sets none. Protect 8–10 hours of sleep, daily activity, schoolwork and offline friendships; use roughly 2 hours a day of pure social scrolling as a talking point rather than a rule.",
+      ukContext:
+        "US bodies (Surgeon General, APA) publish the firmest numbers. UK guidance stays focused on sleep, activity, content and support — treat the figures below as international guidance.",
       sources: [
-        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
-        { label: "APA Health Advisory on Social Media Use in Adolescence", org: "American Psychological Association", region: "USA", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
-        { label: "Australian 24-hour movement guidelines for children and young people (5–17)", org: "Australian Department of Health", region: "Australia", url: "https://www.health.gov.au/topics/physical-activity-and-exercise/physical-activity-and-exercise-guidelines-for-all-australians/for-children-and-young-people-5-to-17-years" },
-        { label: "Estudo Geração Z e ecrãs", org: "Direção-Geral da Saúde", region: "Portugal / EU", url: "https://www.dgs.pt/" },
+        { label: "Children and parents: media use and attitudes report", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
+        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
+        { label: "APA Health Advisory on Social Media Use in Adolescence", org: "American Psychological Association", region: "USA (international guidance)", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
+        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA (international guidance)", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
       ],
       consequences: [
-        "Strong link between >3h/day on social media and depression, self-harm and suicidal ideation (Lancet Child & Adolescent Health, 2019).",
-        "Increased exposure to sextortion and image-based abuse — UK Internet Watch Foundation recorded record numbers in 2024.",
-        "Algorithmic radicalisation into pro-anorexia, self-harm or misogynistic ‘manosphere’ content (Amnesty International, 2023).",
-        "Chronic sleep debt impairs mood, immune function and academic performance.",
+        "Studies have found an association between more than 3 hours a day on social media and depression, self-harm and suicidal ideation (Lancet Child & Adolescent Health, 2019). Sleep loss and cyberbullying appear to explain much of the link — screen time alone is not shown to be the cause.",
+        "Sextortion and image-based abuse have risen sharply; the Internet Watch Foundation recorded record UK case numbers in 2024.",
+        "AI ‘nudify’ tools can turn an ordinary photo into a fake nude in seconds, and UK teens have been targeted in school settings.",
+        "Recommender feeds have been shown to surface pro-anorexia, self-harm and misogynistic content to teen test accounts within minutes (Amnesty International, 2023).",
+        "Chronic short sleep is associated with worse mood, immune function and school performance.",
       ],
     },
     deepDive: [
-      { type: "Study", source: "The Lancet Child & Adolescent Health (2019)", title: "Association between social media use and depression among 13–16 year olds in England", url: "https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(19)30186-5/fulltext", note: "Sleep loss and cyberbullying explain much of the link." },
+      { type: "Study", source: "The Lancet Child & Adolescent Health (2019)", title: "Association between social media use and depression among 13–16 year olds in England", url: "https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(19)30186-5/fulltext", note: "Sleep loss and cyberbullying explain much of the association." },
       { type: "Report", source: "Internet Watch Foundation (2024)", title: "Annual Report — Sextortion and self-generated child sexual abuse imagery", url: "https://www.iwf.org.uk/annual-report-2023/", note: "Record numbers of UK teen sextortion cases." },
-      { type: "Report", source: "Amnesty International (2023)", title: "Driven into the Darkness: How TikTok's For You feed encourages self-harm and suicidal ideation", url: "https://www.amnesty.org/en/documents/pol40/7350/2023/en/", note: "Algorithm audit showing rapid descent into harmful content from teen accounts." },
+      { type: "Article", source: "Internet Watch Foundation / NSPCC", title: "Report Remove — get a nude image of yourself taken off the internet", url: "https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/remove-nude-image-shared-online/", note: "UK service for under-18s; works for real and AI-generated images." },
+      { type: "Report", source: "Internet Watch Foundation (2024)", title: "AI-generated child sexual abuse imagery — update report", url: "https://www.iwf.org.uk/about-us/why-we-exist/our-research/how-ai-is-being-abused-to-create-child-sexual-abuse-imagery/", note: "How ‘nudify’ apps are being used against real children." },
+      { type: "Article", source: "National Crime Agency / CEOP", title: "Sextortion: what to do if you or your child is targeted", url: "https://www.ceopeducation.co.uk/parents/articles/is-your-child-being-blackmailed-online/", note: "UK police guidance: stop contact, don't pay, keep evidence, report." },
+      { type: "Report", source: "Amnesty International (2023)", title: "Driven into the Darkness: How TikTok's For You feed encourages self-harm and suicidal ideation", url: "https://www.amnesty.org/en/documents/pol40/7350/2023/en/", note: "Algorithm audit of teen test accounts." },
       { type: "Article", source: "APA (American Psychological Association)", title: "Health Advisory on Social Media Use in Adolescence", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
       { type: "Video", source: "Netflix", title: "The Social Dilemma", url: "https://www.thesocialdilemma.com/", note: "Documentary on persuasive design and teen mental health." },
-      { type: "Video", source: "Channel 4 Dispatches", title: "Kids Online: Why Do They Do It?", url: "https://www.channel4.com/programmes/dispatches" },
     ],
   },
 
@@ -315,46 +336,61 @@ export const AGE_BANDS: AgeBand[] = [
       "Adult relationships and dating apps (often under-age)",
     ],
     risks: [
-      "Scams: job, romance, investment, deepfake extortion",
+      "Money-mule recruitment — being paid to let money pass through their bank account (a criminal offence in the UK)",
+      "Fake job and ‘easy money’ adverts on TikTok, Snapchat, Telegram and WhatsApp",
+      "Student-finance and university scams: fake Student Loans Company texts, bogus accommodation deposits",
+      "Investment, crypto and trading-app scams, often promoted by influencers",
+      "Online gambling and gambling-style mechanics (loot boxes, spread betting, ‘prediction’ apps)",
+      "Romance scams and deepfake extortion",
       "Permanent digital footprint affecting jobs and uni",
-      "Gambling-style mechanics in games and trading apps",
     ],
     settings: [
       "Strong, unique passwords + a password manager",
       "Lock down old social accounts they’ve forgotten",
-      "Set spending limits on payment apps",
+      "Set spending limits and turn on transaction alerts in banking apps",
+      "Use GAMSTOP self-exclusion and bank gambling blocks if betting apps appear",
     ],
     conversation: [
       "Talk about what they’d do if blackmailed online",
+      "“No legitimate job asks to use your bank account” — explain money muling and that it can freeze their account for years",
+      "Agree that anything urgent about money or student finance gets checked with you first",
+      "Show them Action Fraud and how to report a scam",
       "Agree it’s fine to call you for a ride — no questions",
     ],
     redFlags: [
       "Unexplained money in or out",
       "Talk of ‘easy money’ opportunities online",
+      "New payment or crypto apps they won't discuss",
     ],
     screenTime: {
       recommended:
-        "Focus on quality over a strict hour cap: protect 8–9 hours of sleep, daily physical activity, and at least one regular offline social activity. Recreational screen time above ~4 hours/day is consistently linked to worse mental health.",
+        "No hour cap at this age, and the UK sets none. Protect 8–10 hours of sleep, daily activity and at least one regular offline social activity. Studies have found an association between recreational screen use above about 4 hours a day and worse mental health.",
+      ukContext:
+        "The firmest numbers come from US research and advisories. UK guidance emphasises sleep, activity and healthy use rather than a daily quota.",
       sources: [
-        { label: "APA Health Advisory on Social Media Use in Adolescence", org: "American Psychological Association", region: "USA", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
-        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
-        { label: "Screen time, physical activity and mental health in adolescents", org: "The Lancet Child & Adolescent Health", region: "International", url: "https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(19)30186-5/fulltext" },
-        { label: "Korean adolescent smartphone overdependence survey", org: "Korean Ministry of Science and ICT (NIA)", region: "South Korea", url: "https://www.nia.or.kr/site/nia_eng/main.do" },
+        { label: "Physical activity guidelines: children and young people (5 to 18)", org: "UK Chief Medical Officers", region: "UK", url: "https://www.gov.uk/government/publications/physical-activity-guidelines-children-and-young-people-aged-5-to-18-years" },
+        { label: "Children and parents: media use and attitudes report", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
+        { label: "APA Health Advisory on Social Media Use in Adolescence", org: "American Psychological Association", region: "USA (international guidance)", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
+        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA (international guidance)", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
       ],
       consequences: [
-        "Higher prevalence of anxiety, depression and loneliness with heavy social media use (>3h/day).",
-        "Financial harm from gambling-style game mechanics, crypto scams and ‘money muling’ recruitment via TikTok/Snapchat.",
-        "Permanent digital footprint: nudes, drunken posts and group-chat screenshots resurface during university and job applications.",
-        "Sleep deprivation directly impairs driving safety, mood regulation and exam performance.",
+        "Heavy social media use (over about 3 hours a day) is associated with higher rates of anxiety, depression and loneliness. Association is not proof that screens alone caused it.",
+        "Financial harm from gambling-style game mechanics, crypto scams and money-mule recruitment via TikTok, Snapchat and Telegram — mule accounts can be closed and credit refused for up to six years.",
+        "A lasting digital footprint: nudes, drunken posts and group-chat screenshots resurface during university and job applications.",
+        "Short sleep is linked to poorer driving safety, mood regulation and exam performance.",
       ],
     },
     deepDive: [
-      { type: "Report", source: "APA (American Psychological Association, 2023)", title: "Health Advisory on Social Media Use in Adolescence", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
-      { type: "Study", source: "Preventive Medicine Reports (2018)", title: "Associations between screen time and lower psychological well-being among children and adolescents", url: "https://www.sciencedirect.com/science/article/pii/S2211335518301827", note: "Twenge & Campbell — large US dataset showing dose-response with screen time." },
-      { type: "Report", source: "UK Gambling Commission (2024)", title: "Young People and Gambling Survey", url: "https://www.gamblingcommission.gov.uk/statistics-and-research/publication/young-people-and-gambling-2024", note: "Loot boxes and in-game spending as gateways to problem gambling in 16–17s." },
-      { type: "Report", source: "FBI / IC3 (2024)", title: "Financial Sextortion Targeting Minors — Public Service Announcement", url: "https://www.ic3.gov/Media/Y2023/PSA230118", note: "Tactics used against teen boys via Instagram and Snapchat." },
+      { type: "Article", source: "Action Fraud (City of London Police)", title: "Report a scam or online fraud — UK national reporting centre", url: "https://www.actionfraud.police.uk/", note: "Where to report fraud and cybercrime in England, Wales and Northern Ireland (Scotland: Police Scotland, 101)." },
+      { type: "Article", source: "Cifas", title: "Money mules — how young people are recruited and what it costs them", url: "https://www.cifas.org.uk/insight/fraud-risk-focus-blog/money-mules", note: "UK fraud-prevention service: mule accounts closed, banking refused for up to six years." },
+      { type: "Article", source: "Take Five to Stop Fraud (UK Finance)", title: "Stop. Challenge. Protect. — spotting job, investment and impersonation scams", url: "https://www.takefive-stopfraud.org.uk/", note: "UK banking-industry campaign with scripts for checking any money request." },
+      { type: "Article", source: "Student Loans Company / GOV.UK", title: "Spotting student finance scams", url: "https://www.gov.uk/government/news/student-finance-scams-what-to-look-out-for", note: "Fake SLC texts and emails spike around each term's payment dates." },
+      { type: "Report", source: "Financial Conduct Authority", title: "ScamSmart — investment and crypto scam warnings", url: "https://www.fca.org.uk/scamsmart", note: "Check any investment firm against the FCA register before money moves." },
+      { type: "Report", source: "UK Gambling Commission (2024)", title: "Young People and Gambling Survey", url: "https://www.gamblingcommission.gov.uk/statistics-and-research/publication/young-people-and-gambling-2024", note: "Loot boxes and in-game spending as routes into problem gambling." },
+      { type: "Article", source: "GamCare / GAMSTOP", title: "Free UK gambling support and self-exclusion", url: "https://www.gamcare.org.uk/", note: "National GamCare helpline 0808 8020 133; GAMSTOP blocks UK-licensed gambling sites." },
+      { type: "Report", source: "FBI / IC3", title: "Financial Sextortion Targeting Minors — Public Service Announcement", url: "https://www.ic3.gov/Media/Y2023/PSA230118", note: "Tactics used against teen boys via Instagram and Snapchat." },
+      { type: "Study", source: "Preventive Medicine Reports (2018)", title: "Associations between screen time and lower psychological well-being among children and adolescents", url: "https://www.sciencedirect.com/science/article/pii/S2211335518301827", note: "Twenge & Campbell — large US dataset; an association, not a causal test." },
       { type: "Article", source: "Pew Research Center", title: "Teens, Social Media and Technology 2024", url: "https://www.pewresearch.org/internet/2024/12/12/teens-social-media-and-technology-2024/" },
-      { type: "Video", source: "Frontline (PBS)", title: "The Facebook Dilemma", url: "https://www.pbs.org/wgbh/frontline/documentary/facebook-dilemma/" },
     ],
   },
 ];
@@ -374,6 +410,10 @@ export type AppGuide = {
   name: string;
   category: "Social" | "Messaging" | "Video" | "Game";
   minAge: string;
+  lastCheckedUK: string;
+  officialMinAge: string;
+  ukAgeAssurance: "Yes" | "No" | "Partial";
+  ukAgeAssuranceNote?: string;
   why: string;
   risks: string[];
   settings: string[];
@@ -391,6 +431,7 @@ export type AppGuide = {
 export const APPS: AppGuide[] = [
   {
     slug: "tiktok", name: "TikTok", category: "Social", minAge: "13+",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age-estimation checks apply to 18+ features and live streaming, not to the main feed.",
     why: "Short videos, trends, humour. The default ‘scrollable’ app for many teens.",
     risks: ["Endless algorithmic feed", "Body image / dieting content", "DMs from strangers on public accounts"],
     settings: ["Private account", "Restricted Mode", "Disable DMs from non-friends", "Family Pairing"],
@@ -420,6 +461,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "snapchat", name: "Snapchat", category: "Messaging", minAge: "13+",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age checks apply to 18+ content and some features; account age is still self-declared at sign-up.",
     why: "Photo messages that ‘disappear’ and Snap Map for live location sharing.",
     risks: ["False sense of privacy (screenshots exist)", "Live location with anyone added", "Streaks driving compulsive use"],
     settings: ["Ghost Mode on Snap Map", "Contact Me: Friends only", "Family Center"],
@@ -449,6 +491,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "instagram", name: "Instagram", category: "Social", minAge: "13+",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Meta uses facial age estimation (Yoti) and ID checks to confirm teen accounts in the UK.",
     why: "Photos, reels, stories. Heavy on social comparison.",
     risks: ["Public profiles inviting DMs", "Reels algorithm rabbit holes", "Hidden ‘close friends’ accounts"],
     settings: ["Private account", "Sensitive Content Control: Less", "Hidden Words filter", "Family Center supervision"],
@@ -478,6 +521,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "youtube", name: "YouTube", category: "Video", minAge: "13+ (Kids: under 13)",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Google applies age estimation in the UK and asks for ID or a card for age-restricted content.",
     why: "Where most kids actually watch ‘TV’. Includes gaming streams and shorts.",
     risks: ["Auto-play into unrelated content", "Shorts — fast, addictive feed", "Comments containing strangers"],
     settings: ["Restricted Mode", "Supervised Account for under-13s", "Disable autoplay", "YouTube Kids for younger kids"],
@@ -508,6 +552,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "whatsapp", name: "WhatsApp", category: "Messaging", minAge: "13+",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "No", ukAgeAssuranceNote: "Age is self-declared; there is no UK age check.",
     why: "School class group chats live here. Used by every age.",
     risks: ["Being added to groups by strangers", "Forwarded misinformation", "Disappearing messages hiding bullying"],
     settings: ["Groups: My Contacts", "Last Seen: Contacts", "Two-step verification"],
@@ -535,35 +580,57 @@ export const APPS: AppGuide[] = [
     },
   },
   {
-    slug: "discord", name: "Discord", category: "Messaging", minAge: "13+",
+    slug: "discord", name: "Discord", category: "Messaging", minAge: "13+ (18+ content now verified)",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "UK users must pass facial age estimation or ID to view 18+ content; teen defaults apply otherwise.",
     why: "Voice and text servers, especially for gamers and fandoms.",
-    risks: ["Public servers with adult content", "Strangers in voice chat", "Crypto/scam DMs"],
-    settings: ["Safe Direct Messaging: Filter all", "Disable DMs from server members", "Restrict friend requests"],
+    risks: [
+      "Public servers with adult content — UK users must now pass an age check to see 18+ material, but the check is beatable",
+      "Strangers in voice channels and DM requests from server members",
+      "Scam, crypto and 'free Nitro' phishing DMs, plus sextortion attempts that move to private chat",
+    ],
+    settings: [
+      "UK: age-assurance check (face scan or ID) now gates 18+ content — check whether the account has been verified and how",
+      "Safe Direct Messaging defaults to filtering for everyone; under-18 accounts get the strictest defaults automatically",
+      "Set DM requests from server members to off and friend requests to 'Friends of friends' or 'No one'",
+      "Link your account in Discord Family Centre to see their servers, friends and messages (not message content)",
+    ],
     detail: {
-      overview: "Discord is organised into ‘servers’ — anything from a 5-friend chat to a 200,000-member public community. Voice channels, DMs and file sharing are all default features.",
-      ageRationale: "Discord requires users to be 13+. Many public servers are 18+ themed and rely on self-declaration, which is why charities flag it as a higher-risk environment for under-16s.",
+      overview: "Discord is organised into 'servers' — anything from a 5-friend chat to a 200,000-member public community, with voice channels, DMs and file sharing built in. Two big changes matter for parents. First, under the UK Online Safety Act every UK account — new and existing — now gets age-appropriate default settings, including automatic filtering of sensitive content, and anything flagged 18+ (age-restricted channels, servers and explicit media) is locked until the user proves they're an adult, usually via a facial age scan or ID. Second, Discord has announced a global 'teen-by-default' model where unverified accounts worldwide get the teen experience; after a privacy backlash over its verification vendors, the global rollout was pushed back to the second half of 2026 — but the UK rules are already in force.",
+      ageRationale: "Discord's own minimum is 13+. The change is on the adult side: 18+ content used to be gated by a simple self-declared birthday, and is now gated in the UK by a real age check — facial age estimation or an ID upload through a verification vendor. In practice the wall is weaker than it looks. A VPN makes the account look like it's outside the UK and removes the check entirely; UK daily VPN use roughly doubled to about 2.2 million users after the Online Safety Act age rules came in, and Ofcom's 2026 research found around a quarter of children have used a VPN to get round restrictions, while 39% of 11–17-year-olds have successfully beaten an age check — most often by simply lying about their age. The Verge even demonstrated the face scan being passed with a video-game character's face. Treat age assurance as a speed bump, not a lock, and pair it with device-level controls (Screen Time / Family Link) that block VPN apps from being installed.",
       evidence: [
+        { claim: "Discord's own help centre confirms that under the UK Online Safety Act, all new and existing UK users receive updated age-appropriate default settings, and age-restricted content requires an age check.", publisher: "Discord Help Center", title: "Age Assurance for UK Users", year: "2026", url: "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users", type: "Platform policy" },
+        { claim: "Discord explains how the age check works — facial age estimation or ID via a verification vendor — and which features are gated until it's passed.", publisher: "Discord Help Center", title: "How to Complete Age Assurance on Discord", year: "2026", url: "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Assurance-on-Discord", type: "Platform policy" },
+        { claim: "Discord's leadership acknowledged the backlash to its global age-verification plans and delayed the worldwide 'teen-by-default' rollout to the second half of 2026 to expand verification options.", publisher: "Discord (official blog)", title: "Getting Global Age Assurance Right: What We Got Wrong and What's Changing", year: "2026", url: "https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing", type: "Platform policy" },
+        { claim: "Discord ended its partnership with verification vendor Persona after a UK age-check test triggered a public outcry over government ID collection.", publisher: "Ars Technica", title: "Fury over Discord's age checks explodes after shady Persona test in UK", year: "2026", url: "https://arstechnica.com/tech-policy/2026/02/discord-and-persona-end-partnership-after-shady-uk-age-test-sparks-outcry/", type: "Investigative journalism" },
+        { claim: "Reporters defeated Discord and Reddit's UK facial age checks using a video-game character's face from Death Stranding's photo mode — no real adult needed.", publisher: "The Verge", title: "Reddit and Discord's UK age verification can be defeated by Death Stranding's photo mode", year: "2025", url: "https://www.theverge.com/report/714402/uk-age-verification-bypass-death-stranding-reddit-discord", type: "Investigative journalism" },
+        { claim: "Ofcom found around a quarter of children have used a VPN to get around age restrictions, and UK daily VPN use roughly doubled to about 2.2 million users after the Online Safety Act age rules took effect.", publisher: "Ofcom", title: "Research on age assurance and circumvention", year: "2026", url: "https://www.ofcom.org.uk/online-safety/protecting-children/age-checks-for-online-safety--what-you-need-to-know-as-a-user", type: "Regulator" },
         { claim: "NBC News investigation documented dozens of prosecutions over six years for grooming, kidnapping or sexual assault facilitated through Discord.", publisher: "NBC News (investigative)", title: "Discord struggles with child safety", year: "2023", url: "https://www.nbcnews.com/tech/social-media/discord-child-safety-grooming-extortion-rcna101620", type: "Investigative journalism" },
         { claim: "UK Safer Internet Centre highlights that Discord servers can expose children to explicit, extremist, and harmful content via communities they join voluntarily.", publisher: "UK Safer Internet Centre", title: "Parent and carer resources", year: "2024", url: "https://saferinternet.org.uk/guide-and-resource/parents-and-carers", type: "Charity / NGO" },
       ],
       parentTalkingPoints: [
-        "Ask which servers they’re in and who runs them — public vs friends-only matters more than the app itself.",
-        "Switch Safe Direct Messaging to ‘Filter all’ and turn off DMs from server members.",
+        "Ask whether their account has been through the age check — if an under-18 can see age-restricted channels, they've either verified as an adult, used a VPN, or beaten the face scan. Each answer starts a different conversation.",
+        "Ask directly about VPN apps: a VPN makes the account look non-UK and switches off the age check entirely. Check the installed-apps list and use Screen Time or Family Link to block new app installs.",
+        "Ask which servers they're in and who runs them — public vs friends-only matters more than the app itself.",
+        "Set up Family Centre together rather than in secret — you see servers and friends, not message content, which keeps trust intact.",
       ],
       settingsHowTo: [
+        { label: "Discord: Age Assurance for UK Users (official)", url: "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users" },
+        { label: "Discord: How to complete age assurance (official)", url: "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Assurance-on-Discord" },
         { label: "Discord Family Centre", url: "https://discord.com/family-center" },
         { label: "Discord safety: Parent hub", url: "https://discord.com/safety-parents" },
+        { label: "Ofcom: age checks for online safety — what you need to know", url: "https://www.ofcom.org.uk/online-safety/protecting-children/age-checks-for-online-safety--what-you-need-to-know-as-a-user" },
       ],
       videoTutorials: [
         { title: "Discord Family Centre — setup walkthrough", channel: "Discord (official)", url: "https://www.youtube.com/results?search_query=Discord+Family+Center+setup" },
-        { title: "Discord safety settings for parents", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+Discord+parents+guide" },
-        { title: "Discord — parents’ ultimate guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Discord+parents+guide" },
+        { title: "Discord UK age verification explained", channel: "BBC / tech news coverage", url: "https://www.youtube.com/results?search_query=Discord+UK+age+verification+Online+Safety+Act" },
+        { title: "Discord — parents' ultimate guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Discord+parents+guide" },
       ],
       riskVideo: { title: "Florida investigates Discord app over child safety concerns", channel: "WPLG Local 10 News (ABC affiliate)", youtubeId: "nEwGEoLYiBA", note: "News report on broad child-safety concerns around Discord servers and DMs." },
     },
   },
   {
     slug: "roblox", name: "Roblox", category: "Game", minAge: "All ages (rated by experience)",
+    lastCheckedUK: "September 2026", officialMinAge: "All ages (experience-based)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Facial age estimation or ID is required for chat, with age-grouped communication.",
     why: "Millions of user-made games and a social hangout for under-12s — now with mandatory age checks before anyone can chat.",
     risks: ["User-made games with adult themes", "Strangers bypassing age checks by playing along", "Robux scams and ‘free Robux’ links"],
     settings: ["Chat now requires a facial age check or ID", "Age-grouped chat (under-13s only with same age band)", "Parent-managed account link", "Spend controls"],
@@ -597,6 +664,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "fortnite", name: "Fortnite", category: "Game", minAge: "12+",
+    lastCheckedUK: "September 2026", officialMinAge: "13 (Epic terms; PEGI 12)", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Epic uses cabined accounts for under-13s but no UK-wide identity check.",
     why: "Battle royale with voice chat and live in-game events.",
     risks: ["Voice chat with strangers in squads", "Spending on V-Bucks / Battle Pass", "Long sessions, late nights"],
     settings: ["Cabined Account for under-13s", "Voice chat: friends only", "Parental controls PIN"],
@@ -625,6 +693,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "telegram", name: "Telegram", category: "Messaging", minAge: "17+ (App Store) / 13+ (Telegram terms)",
+    lastCheckedUK: "September 2026", officialMinAge: "13 (17+ on the App Store)", ukAgeAssurance: "No", ukAgeAssuranceNote: "No UK age assurance; age is self-declared.",
     why: "Huge group chats and ‘channels’ broadcasting to thousands. Popular for fandoms, leaks and crypto.",
     risks: ["Public channels with extreme / sexual content", "Strangers in large groups", "Weak moderation of CSAM and scams"],
     settings: ["Phone Number: Nobody", "Who can add me to groups: My Contacts", "Disable auto-download of media", "Sensitive Content filter on"],
@@ -651,6 +720,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "twitch", name: "Twitch", category: "Video", minAge: "13+",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age checks apply to mature streams and some features only.",
     why: "Live game streaming with chat. Streamers become parasocial role models.",
     risks: ["Live, unmoderated chat", "Grooming via Whispers / DMs", "Exposure to adult ‘Just Chatting’ streams"],
     settings: ["Whispers: Friends only", "Block links in chat", "Hide mature streams", "Two-factor authentication"],
@@ -677,6 +747,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "kick", name: "Kick", category: "Video", minAge: "13+",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Limited checks on adult-labelled content; sign-up age is self-declared.",
     why: "Twitch competitor with looser rules. Popular for gambling and shock streams.",
     risks: ["Live gambling content (slots, crash games)", "Minimal moderation", "Streamers explicitly courting under-18 audiences"],
     settings: ["No mature-content filter — supervise directly", "Use device-level screen time / DNS blocks", "Disable account creation if possible"],
@@ -703,6 +774,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "yubo", name: "Yubo", category: "Social", minAge: "13+ (with separate 13–17 community)",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Yubo runs facial age estimation on all users and separates 13–17 from adults.",
     why: "‘Live, swipe and chat with new friends.’ Often called ‘Tinder for teens’.",
     risks: ["Strangers connecting by location", "Live video with people they’ve never met", "History of grooming and sextortion cases"],
     settings: ["Disable location precision", "Age-verification ON", "Limit livestream audience", "Block & report"],
@@ -729,6 +801,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "x-twitter", name: "X (formerly Twitter)", category: "Social", minAge: "13+ (18+ for sensitive media)",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "UK users must pass age assurance (account signals or ID) to see sensitive media.",
     why: "News, memes, fandoms, sports — and trending political content. UK users now face age checks before seeing sensitive media.",
     risks: ["Pornographic content still hosted on the platform — now behind an age wall a teen can try to cheat", "Targeted harassment via replies / quote-posts", "Misinformation amplified by paid blue ticks"],
     settings: ["UK age assurance required for sensitive media", "Known under-18s get protected-post defaults automatically", "Sensitive-media filter ON for under-18s", "Disable DMs from non-followers", "Mute words & accounts"],
@@ -763,6 +836,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "reddit", name: "Reddit", category: "Social", minAge: "13+ (18+ for mature content)",
+    lastCheckedUK: "September 2026", officialMinAge: "13 (18 for mature content)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "UK users verify via Apple age range or Persona selfie/ID for mature communities.",
     why: "Forums (‘subreddits’) for every interest — UK users now face mandatory age checks before seeing mature or restricted content.",
     risks: ["Mature/NSFW communities still exist — now behind an age wall a teen can try to cheat", "Anonymous DMs and chat requests", "Pile-ons, doxxing and volunteer-only moderation"],
     settings: ["UK age confirmation required for mature/restricted content", "Disable NSFW via mobile web or desktop (iOS app hides the toggle)", "Chat requests: Nobody / Followers only", "Mute subreddits"],
@@ -803,6 +877,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "bereal", name: "BeReal", category: "Social", minAge: "13+",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "No", ukAgeAssuranceNote: "Age is self-declared at sign-up.",
     why: "Once-a-day photo prompt designed to feel ‘authentic’. Friend-of-friend feed.",
     risks: ["Location attached to posts by default", "‘RealMojis’ from friends-of-friends", "Pressure to post in unsafe situations (class, driving)"],
     settings: ["Discovery: Friends only", "Disable location on posts", "Lock account for over-18 visibility"],
@@ -829,6 +904,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "ngl-sendit", name: "NGL / Sendit / Yolo", category: "Social", minAge: "17+ (App Store)",
+    lastCheckedUK: "September 2026", officialMinAge: "13 (17+ on the App Store)", ukAgeAssurance: "No", ukAgeAssuranceNote: "No meaningful age check.",
     why: "Anonymous Q&A apps that bolt on to Instagram / Snap stories.",
     risks: ["Anonymous bullying and threats", "Fake ‘replies’ generated by the app to drive engagement", "Sextortion via anonymous messages"],
     settings: ["Don’t install — there are no safe settings; remove from device"],
@@ -855,6 +931,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "omegle-style", name: "Random video chat (Monkey, Azar, ChatHub)", category: "Social", minAge: "18+",
+    lastCheckedUK: "September 2026", officialMinAge: "18", ukAgeAssurance: "No", ukAgeAssuranceNote: "Adult-only claims are self-declared; children get in easily.",
     why: "Random video chat with strangers — the niche Omegle filled before it shut down in 2023.",
     risks: ["Exposure to live nudity from strangers", "Grooming and recorded sextortion", "Almost no age verification"],
     settings: ["Don’t install — block via device-level parental controls"],
@@ -881,6 +958,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "minecraft", name: "Minecraft (online / servers)", category: "Game", minAge: "7+ (PEGI) — online 13+ recommended",
+    lastCheckedUK: "September 2026", officialMinAge: "13 for online play (PEGI 7)", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Microsoft child accounts add controls, but no UK identity check.",
     why: "Sandbox building game. Solo play is fine; third-party servers are where risk lives.",
     risks: ["Open voice chat on third-party servers", "Grooming on unofficial servers", "Skins / mods downloaded from outside stores"],
     settings: ["Microsoft Family — friends-only multiplayer", "Disable chat on servers", "Whitelist allowed servers only"],
@@ -907,6 +985,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "vrchat", name: "VRChat", category: "Game", minAge: "13+ (often played by under-13s)",
+    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age verification is optional and unlocks extra features rather than gating entry.",
     why: "Social VR worlds in headsets like Meta Quest. Voice-only, full-body avatars, no moderation in many rooms.",
     risks: ["Adult-themed worlds visible to children", "Sexual harassment and ‘virtual groping’", "Voice chat with anyone in the room"],
     settings: ["Trust system: Friends+ only", "Disable open voice", "Use Meta Quest parental supervision"],
@@ -933,6 +1012,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "gta-online", name: "GTA V / GTA Online", category: "Game", minAge: "18+ (PEGI)",
+    lastCheckedUK: "September 2026", officialMinAge: "18 (PEGI)", ukAgeAssurance: "No", ukAgeAssuranceNote: "Store-level age gates only; no UK age assurance in game.",
     why: "Open-world crime game. Hugely popular with under-18s despite the rating.",
     risks: ["Graphic violence, sexual content, drugs as core gameplay", "Open voice chat with strangers in lobbies", "Real-money microtransactions (Shark Cards)"],
     settings: ["Disable voice chat", "Solo / invite-only sessions", "Console-level spend limits"],
@@ -959,6 +1039,7 @@ export const APPS: AppGuide[] = [
   },
   {
     slug: "character-ai", name: "Character.AI", category: "Social", minAge: "13+ (16+ in Europe) — no chat for under-18s",
+    lastCheckedUK: "September 2026", officialMinAge: "13 (16 in Europe)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Mandatory age assurance; under-18s lose open-ended chat and get Reading Mode.",
     why: "AI ‘characters’ you can write stories and roleplay with — from a tutor to a fictional partner.",
     risks: ["Teens lying about their age to get adult chat access", "Parasocial dependence on an AI ‘friend’", "Self-harm and sexual content documented in US lawsuits about the old teen experience"],
     settings: ["Expect an age check — a selfie estimate or ID may be required", "Turn on Parental Insights so you get a weekly activity email", "Block the app entirely with Screen Time or Family Link if you'd rather they didn't use it"],
@@ -995,6 +1076,7 @@ export const APPS: AppGuide[] = [
 
   {
     slug: "replika", name: "Replika", category: "Social", minAge: "17+ (App Store) / 18+ (terms)",
+    lastCheckedUK: "September 2026", officialMinAge: "18", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Adult-only terms with app-store gates and some age checks, easily bypassed.",
     why: "‘AI friend / partner’ chatbot with paid romantic and ‘adult’ modes.",
     risks: ["Sexual roleplay even on free tier", "Emotional dependence and isolation", "Designed to drive paid upgrades"],
     settings: ["Not appropriate for under-18s — block / uninstall"],
@@ -1270,6 +1352,17 @@ export type ChecklistSection = {
   title: string;
   intro?: string;
   steps: string[];
+  visual?: ChecklistVisual;
+};
+
+export type ChecklistVisual = {
+  youtubeId?: string;
+  startSeconds?: number;
+  title: string;
+  source: string;
+  sourceUrl: string;
+  kind: "Official video" | "Official illustrated guide";
+  description: string;
 };
 
 export type ChecklistTutorial = {
@@ -1335,25 +1428,53 @@ export const CHECKLISTS: Checklist[] = [
     sections: [
       {
         title: "1 · Before you start",
+        visual: {
+          youtubeId: "d2zPq1lfqQs",
+          title: "Family Link overview",
+          source: "Google",
+          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs",
+          kind: "Official video",
+          description: "Google’s official introduction to Family Link and its parent controls.",
+        },
         intro: "Have both phones unlocked and on Wi-Fi. You'll need the child's date of birth and your own Google password.",
         steps: [
           "Update both phones to the latest Android version (Settings → System → System update).",
           "On your phone, install 'Google Family Link' from the Play Store.",
-          "On the child's phone, factory-reset if it has been used before (Settings → System → Reset options → Erase all data).",
+          "You do NOT have to factory-reset to add supervision. On a phone already in use you can simply add the child's account: Settings → Google → Parental controls → Get started, or Settings → Accounts → Add account → Google.",
+          "A reset is only worth doing in two cases: the phone previously belonged to someone else, or the child already has an unsupervised adult Google account signed in as the device owner that cannot be removed. Otherwise skip it — a reset wipes photos and messages for no safety gain.",
+          "If you do reset (Settings → System → Reset options → Erase all data), back up photos first and have the existing Google password to hand — factory reset protection will ask for it on the next boot.",
         ],
       },
       {
         title: "2 · Create the child's Google account",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          title: "Set up a supervised child account",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo",
+          kind: "Official video",
+          description: "The official account setup flow for a parent and child.",
+        },
         intro: "Do this from your phone, inside Family Link — not from the child's device.",
         steps: [
           "Open Family Link → tap the '+' icon → 'Add a child' → 'Create an account for your child'.",
           "Enter the child's real first name, birthday and a new Gmail address (e.g. firstname.lastname.kid@gmail.com).",
           "Choose a strong password that YOU keep — the child does not need it for daily use.",
-          "Read and accept the Parental Consent screen. Google charges a token amount (e.g. $0.30 / €0.30) to your card to verify you're an adult; it's refunded.",
+          "Read and accept the Parental Consent screen, then verify you are an adult. In the UK this is usually a small temporary card authorisation (around £0.30) that is refunded or simply never taken — the exact amount and method vary, and Google may instead accept an existing valid payment method already on your account. Do not expect a fixed figure: follow whatever the screen asks for.",
+          "If the card check fails, add or update a payment method at pay.google.com first, then restart the consent step. A card with no funds or a prepaid card is the most common reason this stalls.",
         ],
       },
       {
         title: "3 · Set up the child's phone",
+        visual: {
+          youtubeId: "d2zPq1lfqQs",
+          startSeconds: 18,
+          title: "Connect the child's device",
+          source: "Google",
+          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs&t=18s",
+          kind: "Official video",
+          description: "Google’s Family Link device-supervision overview.",
+        },
         intro: "Now move to the child's device.",
         steps: [
           "On the welcome screen, choose 'Set up for a child'. If you missed it, do Settings → Accounts → Add account → Google → and sign in with the new child account.",
@@ -1365,6 +1486,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "4 · Screen time, bedtime & downtime",
+        visual: {
+          youtubeId: "d2zPq1lfqQs",
+          startSeconds: 31,
+          title: "Set time and app limits",
+          source: "Google",
+          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs&t=31s",
+          kind: "Official video",
+          description: "Family Link’s time controls shown by Google.",
+        },
         intro: "Open Family Link on your phone → tap the child → 'Controls' → 'Screen time'.",
         steps: [
           "Set a daily limit per day of the week (e.g. 1h on school days, 2h at weekends).",
@@ -1375,6 +1505,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "5 · App installs & purchases",
+        visual: {
+          youtubeId: "d2zPq1lfqQs",
+          startSeconds: 47,
+          title: "Manage apps with Family Link",
+          source: "Google",
+          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs&t=47s",
+          kind: "Official video",
+          description: "Google’s view of app activity and app-level controls.",
+        },
         steps: [
           "In Family Link → Controls → 'Google Play' → turn on 'Require approval for: All content'.",
           "Set content maturity limits (Apps & games: PEGI 7 / ESRB Everyone for young kids; raise as they grow).",
@@ -1384,6 +1523,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "6 · Web, search & YouTube",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 12,
+          title: "Choose a supervised YouTube experience",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=12s",
+          kind: "Official video",
+          description: "YouTube’s official supervised-account demonstration.",
+        },
         steps: [
           "Controls → 'Google Search' → turn on SafeSearch (filters explicit results).",
           "Controls → 'Chrome' → choose 'Try to block explicit sites' and add specific sites you want blocked or allowed.",
@@ -1393,6 +1541,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "7 · Location, find-my-phone & data",
+        visual: {
+          youtubeId: "d2zPq1lfqQs",
+          startSeconds: 57,
+          title: "Family Link location tools",
+          source: "Google",
+          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs&t=57s",
+          kind: "Official video",
+          description: "Google’s overview of Family Link location controls.",
+        },
         steps: [
           "Controls → 'Location' → turn on 'See your child's location'. You'll see the child phone's live location in Family Link.",
           "Turn on 'Find My Device' (Settings → Security on the child phone) so a lost phone can be located and remotely locked.",
@@ -1417,10 +1574,15 @@ export const CHECKLISTS: Checklist[] = [
       
       { title: "Manage screen time with Family Link", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7103340" },
       { title: "Approve or block apps your child wants to download", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7385553" },
+      { title: "Add supervision to a device your child already uses", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7101025", note: "Confirms supervision can be added to an existing phone — a factory reset is not required in most cases." },
+      { title: "Verify your identity as a parent (payment method check)", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7101025", note: "The verification charge amount and method vary by country and card." },
+      { title: "Parental controls on Android — UK guide with screenshots", source: "Internet Matters (UK)", type: "Article", url: "https://www.internetmatters.org/parental-controls/smartphones-and-other-devices/google-family-link-parental-controls/" },
     ],
     notes: [
       "Family Link can supervise a teen account past 13, but the teen can technically unlink it themselves once they're old enough — you'll be notified.",
       "Some apps (notably WhatsApp) don't enforce Google's age rules, so block them in Family Link if you don't want them installed.",
+      "You do not need to wipe a phone to supervise it. Only reset if the device came from someone else or has an adult account locked in as owner.",
+      "The adult-verification charge during account creation is a small temporary authorisation, not a purchase — the exact amount differs by country and card, so treat any figure you read online as an example only.",
     ],
   },
   {
@@ -1435,7 +1597,7 @@ export const CHECKLISTS: Checklist[] = [
       "Turn on Screen Time and set a Screen Time Passcode only you know",
       "Set Downtime, App Limits and Always-Allowed apps",
       "Turn on Content & Privacy Restrictions (App Store, web, Siri, explicit content)",
-      "Turn on Ask to Buy and Communication Safety",
+      "Turn on Ask to Buy; verify Communication Safety is on (it's enabled by default on current software)",
       "Enable Find My and Stolen Device Protection",
     ],
     overview:
@@ -1448,6 +1610,14 @@ export const CHECKLISTS: Checklist[] = [
     sections: [
       {
         title: "1 · Create the Child Apple Account",
+        visual: {
+          youtubeId: "8siFNH-brM4",
+          title: "Create a Child Apple Account",
+          source: "Apple Support",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4",
+          kind: "Official video",
+          description: "Apple’s official Family Sharing child-account walkthrough.",
+        },
         intro: "On YOUR iPhone, open Settings → tap your name at the top → Family.",
         steps: [
           "Tap 'Add Member' → 'Create Child Account' → Continue.",
@@ -1459,6 +1629,15 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "2 · Sign the child in on their iPhone",
+        visual: {
+          youtubeId: "8siFNH-brM4",
+          startSeconds: 74,
+          title: "Connect the child to Family Sharing",
+          source: "Apple Support",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4&t=74s",
+          kind: "Official video",
+          description: "The device and family-account stage in Apple’s walkthrough.",
+        },
         steps: [
           "If the iPhone is new: at the 'Hello' screen choose 'Set Up for a Child in My Family' (iOS 16+).",
           "If the iPhone is already set up: Settings → sign out of any existing Apple Account → sign in with the new Child Apple Account.",
@@ -1467,6 +1646,14 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "3 · Screen Time — the most important step",
+        visual: {
+          youtubeId: "8siFNH-brM4",
+          title: "Set up Screen Time",
+          source: "Apple Support",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4",
+          kind: "Official video",
+          description: "Apple’s official Screen Time walkthrough.",
+        },
         intro: "On your phone: Settings → Family → tap the child → Screen Time.",
         steps: [
           "Tap 'Turn on Screen Time' if it isn't already.",
@@ -1479,25 +1666,51 @@ export const CHECKLISTS: Checklist[] = [
       },
       {
         title: "4 · Content & Privacy Restrictions",
+        visual: {
+          youtubeId: "8siFNH-brM4",
+          title: "Set up parental controls",
+          source: "Apple Support",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4",
+          kind: "Official video",
+          description: "Apple demonstrates its current parental-control menus.",
+        },
         intro: "Same Screen Time screen → 'Content & Privacy Restrictions' → toggle on.",
         steps: [
           "iTunes & App Store Purchases → 'Installing Apps' = Don't Allow (or Require Password). 'In-app Purchases' = Don't Allow.",
           "Allowed Apps → switch off anything inappropriate (Safari, Camera, FaceTime) for very young kids.",
-          "Content Restrictions → set age ratings for Apps, Movies, TV shows, Books, Music.",
+          "Content Restrictions → set the highest age rating the child can install. On iOS 26+ Apple's ratings are 4+, 9+, 13+, 16+, 18+; on earlier iOS they are 4+, 9+, 12+, 17+. Pick a cap suited to the child (e.g. 9+ for a young child, 13+ for an older one). Also set age ratings for Movies, TV shows, Books and Music.",
           "Content Restrictions → Web Content → 'Limit Adult Websites' (or 'Allowed Websites Only' for under-10s).",
           "Content Restrictions → Siri → block explicit language and explicit web search.",
         ],
       },
       {
         title: "5 · Communication, contacts & Messages",
+        visual: {
+          youtubeId: "8siFNH-brM4",
+          startSeconds: 62,
+          title: "Review communication controls",
+          source: "Apple Support",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4&t=62s",
+          kind: "Official video",
+          description: "Apple’s parental-controls walkthrough at the communication settings.",
+        },
         steps: [
           "Screen Time → 'Communication Limits' → choose who they can call/iMessage/FaceTime during the day and during downtime (e.g. 'Contacts Only').",
-          "Screen Time → 'Communication Safety' → turn ON. Detects and blurs nudity in Messages, AirDrop, FaceTime — analysis happens on-device.",
+          "Screen Time → 'Communication Safety' → check it is ON. On iOS 17+ it is enabled by default for child accounts under 18 on iPhone, iPad, Mac and Apple Watch, and for 13–17-year-olds on Apple Vision Pro — so you're verifying, not switching it on from scratch. It detects and blurs nudity in Messages, AirDrop, Contact Posters, FaceTime video messages and the system Photos picker; analysis happens on-device. Source: support.apple.com/en-gb/105069",
           "Manage their contacts list (Settings → Family → child → Contacts) so 'Contacts Only' is meaningful.",
         ],
       },
       {
         title: "6 · Safety & device security",
+        visual: {
+          youtubeId: "8siFNH-brM4",
+          startSeconds: 70,
+          title: "Review device safety settings",
+          source: "Apple Support",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4&t=70s",
+          kind: "Official video",
+          description: "The safety and access controls in Apple’s official walkthrough.",
+        },
         steps: [
           "Settings → Family → child → Location Sharing → On. The child's iPhone appears in Find My.",
           "On the child phone: Settings → [name] → Find My → 'Find My iPhone' On, 'Send Last Location' On.",
@@ -1512,7 +1725,7 @@ export const CHECKLISTS: Checklist[] = [
       { label: "Always Allowed", detail: "Apps that escape every limit — keep Phone, Messages, Maps." },
       { label: "Ask to Buy", detail: "Push approval to your phone for any download or in-app purchase." },
       { label: "Communication Limits", detail: "Restrict who can contact the child and who they can contact." },
-      { label: "Communication Safety", detail: "On-device nudity blur in Messages, AirDrop, FaceTime." },
+      { label: "Communication Safety", detail: "On-device nudity blur in Messages, AirDrop, Contact Posters, FaceTime and Photos. Enabled by default for child accounts on iOS 17+ — verify it stays on." },
       { label: "Web Content", detail: "Limit adult websites system-wide, or restrict to an allowlist." },
       { label: "Find My + Stolen Device Protection", detail: "Locate a lost iPhone; require Face ID for risky changes." },
     ],
@@ -1523,52 +1736,346 @@ export const CHECKLISTS: Checklist[] = [
       { title: "Use Screen Time on your iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/108806" },
       { title: "Use parental controls on your child's iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/105121" },
       { title: "Communication Safety on iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/105069" },
-      { title: "How to set up parental controls on iPhone (walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=GsQTy0DPLDU" },
+      { title: "How to set up parental controls on iPhone (walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=8siFNH-brM4" },
+      { title: "App Store age ratings values and definitions (4+/9+/13+/16+/18+ on iOS 26)", source: "Apple Developer", type: "Official guide", url: "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/" },
+      { title: "Updated age ratings in App Store Connect (July 2025)", source: "Apple Developer News", type: "Official guide", url: "https://developer.apple.com/news/?id=ks775ehf" },
+      { title: "iPhone parental controls — UK guide with current screenshots", source: "Internet Matters (UK)", type: "Article", url: "https://www.internetmatters.org/parental-controls/smartphones-and-other-devices/apple-iphone-parental-controls/", note: "Screen-by-screen images kept up to date with the current iOS release." },
+      { title: "Set up Screen Time (video walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=8siFNH-brM4" },
     ],
     notes: [
       "The Screen Time Passcode is the linchpin — if a curious teen learns it, the whole system is bypassed. Don't reuse your phone passcode.",
-      "Apple's age ratings (4+, 9+, 12+, 17+) are stricter than Google's PEGI/ESRB on the same apps. Adjust if you find them too restrictive.",
+      "Apple updated its App Store age ratings in July 2025 (iOS 26+) to 4+, 9+, 13+, 16+ and 18+ — more granular than the old 4+/9+/12+/17+ tiers still shown on devices below iOS 26. In Screen Time → Content Restrictions you can cap which ratings the child may install, so set it deliberately rather than leaving it at the default. Source: developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/",
     ],
   },
   {
     slug: "youtube-safer",
     title: "Make YouTube safer in 5 minutes",
     device: "Any",
-    summary: "Quick wins to tame YouTube on any device — switch to supervised mode, disable autoplay, and tidy the algorithm.",
+    summary: "Seven concrete settings — autoplay, supervised content level, history, Shorts, recommendations and Restricted Mode — with the exact tap-path for phone, tablet and TV.",
     steps: [
-      "Switch to a Supervised Account if under 13 (or YouTube Kids for under 9)",
-      "Turn on Restricted Mode in account settings on every device they use",
-      "Disable autoplay on home and Up Next",
-      "Clear watch history; pause history if needed",
-      "Block creators that show up unwanted (three-dot menu → 'Don't recommend')",
+      "Turn off Autoplay (app: player toggle; web: Up next toggle)",
+      "Set the supervised content level, or move under-9s to YouTube Kids",
+      "Pause and clear Watch history and Search history",
+      "Reduce or remove Shorts (collapse the shelf, or use Kids/supervised where Shorts are limited)",
+      "Clean subscriptions and train recommendations with 'Don't recommend channel'",
+      "Turn on Restricted Mode on every device and browser they use",
+      "Re-check on the TV, tablet and school laptop — settings do not travel between them",
     ],
     overview:
-      "YouTube is the single most-used app by children worldwide. These five steps shape the algorithm and remove most of the obvious traps. None of them replace conversation about what they're watching.",
+      "YouTube is the most-used app by children in the UK. Each setting below is per-account AND per-device: turning Restricted Mode on in the phone app does nothing to the smart TV. Budget five minutes for the phone now, then repeat on any other screen they use. Nothing here replaces talking about what they watch.",
+    heroVideo: {
+      youtubeId: "0dy1St39xeo",
+      title: "Parental controls and supervised experiences on YouTube — Google",
+      caption: "Official Google walkthrough of supervised experiences. The exact tap-paths for every setting are written out below.",
+    },
+    sections: [
+      {
+        title: "1 · Turn off Autoplay (30 seconds)",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          title: "YouTube family controls overview",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo",
+          kind: "Official video",
+          description: "YouTube’s official family-controls walkthrough; pause while following the written path.",
+        },
+        intro: "Autoplay is what turns one video into two hours. It is set per device and per profile.",
+        steps: [
+          "Phone/tablet app: start any video → the row of icons at the top of the player → tap the Autoplay toggle so it reads Off.",
+          "Also: profile picture (top right) → Settings → Autoplay → turn off 'Autoplay next video' for Wi-Fi and mobile data.",
+          "Computer: youtube.com → play a video → under the player, toggle 'Autoplay' off.",
+          "Smart TV / console / Fire Stick: Settings → Autoplay → Off. This is a separate switch from the phone.",
+          "Check it stuck: close the app, reopen, play a video and let it end — it should stop, not roll on.",
+        ],
+      },
+      {
+        title: "2 · Set the right account type and content level",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 18,
+          title: "Choose a supervised experience",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=18s",
+          kind: "Official video",
+          description: "YouTube shows the supervised experience and parent controls.",
+        },
+        intro: "Under 13s should not be on a standard YouTube account. Choose one of the three routes below.",
+        steps: [
+          "Under 9: use the YouTube Kids app. In Kids → lock icon (bottom right) → enter the passcode → Settings → choose the child's profile → set the age category (Preschool / Younger / Older) and turn OFF 'Search'.",
+          "Roughly 9–12: create a supervised account in Google Family Link → tap the child → Controls → YouTube → then choose a content setting: 'Explore' (approx 9+), 'Explore More' (approx 13+) or 'Most of YouTube'.",
+          "13+ with their own account: you cannot set a content level remotely — do steps 1, 3, 4, 5 and 6 with them instead.",
+          "In a supervised account, purchases, comments, live chat, uploads and creating playlists are switched off by Google — this is the strongest single lever available.",
+          "Check it stuck: open YouTube on the child's device — a supervised account shows their name and a 'supervised' label under the profile picture.",
+        ],
+      },
+      {
+        title: "3 · Review, clear and pause history",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 33,
+          title: "Review viewing controls",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=33s",
+          kind: "Official video",
+          description: "The official walkthrough alongside the exact history path.",
+        },
+        intro: "History is what feeds the recommendations. Cleaning it visibly changes the home page within a day.",
+        steps: [
+          "App: profile picture → Settings → Manage all history (this opens myactivity.google.com).",
+          "Read the last two weeks with your child — this is the single most useful two minutes of the whole checklist.",
+          "Tap Delete → 'Delete all time' to clear watch history, then repeat for search history.",
+          "Turn OFF 'YouTube History' if you want recommendations to stop personalising, or set 'Auto-delete' to 3 months as a middle ground.",
+          "Note the trade-off: with history off, the home page gets generic rather than safe — it does not filter anything.",
+        ],
+      },
+      {
+        title: "4 · Deal with Shorts",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 42,
+          title: "Use YouTube wellbeing controls",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=42s",
+          kind: "Official video",
+          description: "YouTube’s official parent-control overview beside the Shorts actions.",
+        },
+        intro: "Shorts is the most compulsive surface in the app and the hardest to filter, because content moves fast and moderation lags.",
+        steps: [
+          "Home feed: tap the three dots on the Shorts shelf → 'Hide' — it collapses the shelf for 30 days, then returns. Repeat monthly.",
+          "Inside a Short: three dots → 'Not interested' or 'Don't recommend channel' — this is what actually trains the feed.",
+          "For under-13s: YouTube Kids has no Shorts feed of this kind, and supervised 'Explore' level heavily limits it. That is the reliable route.",
+          "Set a timer instead of relying on willpower: profile picture → Settings → 'Remind me to take a break' and 'Remind me when it's bedtime'.",
+          "Honest limit: there is no switch that removes Shorts entirely from a standard account. Account type is the only real control.",
+        ],
+      },
+      {
+        title: "5 · Clean subscriptions and retrain recommendations",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 52,
+          title: "Manage what appears on YouTube",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=52s",
+          kind: "Official video",
+          description: "The platform’s own walkthrough beside recommendation controls.",
+        },
+        steps: [
+          "Tap 'Subscriptions' → 'Manage' (or the channel list) and unsubscribe from anything you don't recognise — ask who each one is.",
+          "On the home page, hold or tap the three dots on any unwanted thumbnail → 'Don't recommend channel'. Do this ten times in a row; the feed shifts noticeably.",
+          "Use 'Not interested' → 'Tell us why' for content that is borderline rather than clearly bad.",
+          "Add three or four channels together that they actually like — a positively trained feed sticks better than a purely blocked one.",
+          "Check it stuck: reload the home page after a day and see what is left.",
+        ],
+      },
+      {
+        title: "6 · Restricted Mode — on every device and browser",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 62,
+          title: "Review content controls",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=62s",
+          kind: "Official video",
+          description: "YouTube’s official controls overview; use the written device-specific paths.",
+        },
+        intro: "Restricted Mode is an automated filter for mature content. It is useful but leaky, and it is stored per browser, per app and per device.",
+        steps: [
+          "Phone/tablet app: profile picture → Settings → General → 'Restricted Mode' → On.",
+          "Computer: youtube.com → profile picture (top right) → scroll to 'Restricted Mode' → On. Repeat in every browser and in a signed-out/guest profile.",
+          "Smart TV / games console: Settings → Restricted Mode (labelled 'Restricted Mode' or 'Safety Mode') → On.",
+          "Whole-network option: your broadband provider's parental filter (BT, Sky, Virgin, TalkTalk all offer one free) can force Restricted Mode for every device on the home Wi-Fi — it does not cover mobile data.",
+          "Honest limit: Restricted Mode relies on automated signals and creator age-flags. It misses things and over-blocks others. Treat it as a filter, not a guarantee.",
+        ],
+      },
+      {
+        title: "7 · Repeat where they actually watch",
+        visual: {
+          youtubeId: "0dy1St39xeo",
+          startSeconds: 72,
+          title: "Check every viewing device",
+          source: "YouTube",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=72s",
+          kind: "Official video",
+          description: "The official walkthrough beside the final multi-device check.",
+        },
+        intro: "Most households do the phone and forget the rest. YouTube settings do not sync across these.",
+        steps: [
+          "Smart TV and streaming stick — usually the least-protected screen in the house.",
+          "Games console (PlayStation, Xbox, Switch) — each has its own YouTube app and its own settings.",
+          "Tablet, including a shared family iPad with a signed-in adult account.",
+          "School laptop or Chromebook — check both the browser signed in and signed out.",
+          "Anyone else's account they use on the family TV — a parent's signed-in account has no restrictions at all.",
+        ],
+      },
+    ],
+    capabilities: [
+      { label: "Autoplay off", detail: "Stops the endless roll-on. Per device — phone, TV and computer each need doing." },
+      { label: "Supervised content level", detail: "Explore / Explore More / Most of YouTube, set from Family Link. Also disables comments, live chat and uploads." },
+      { label: "YouTube Kids profiles", detail: "Age category per child plus a switch to turn search off entirely." },
+      { label: "History control", detail: "Clear, pause or auto-delete watch and search history to reset recommendations." },
+      { label: "Don't recommend channel", detail: "The strongest available signal for reshaping the feed on a standard account." },
+      { label: "Restricted Mode", detail: "Automated filter for mature content. Per app, per browser, per device — and imperfect." },
+      { label: "Break and bedtime reminders", detail: "Built-in nudges that work well with a supervised account." },
+    ],
+    notes: [
+      "There is no single master switch. YouTube safety is an account type (supervised or Kids) plus a handful of per-device toggles.",
+      "Restricted Mode can be turned off again in the same menu by anyone who knows where it is — on a supervised or Kids account it is locked behind your Family Link or passcode, which is why account type matters more than toggles.",
+      "Signing out and watching logged-out removes most of this. If that becomes a pattern, handle it at the device level with Screen Time or Family Link rather than inside YouTube.",
+      "A parent's signed-in account on the family TV bypasses every child setting — worth checking who is signed in there.",
+    ],
     tutorials: [
-      { title: "Supervised experiences on YouTube", source: "YouTube Help (official)", type: "Official guide", url: "https://support.google.com/youtube/answer/10314940" },
-      { title: "Turn Restricted Mode on or off", source: "YouTube Help (official)", type: "Official guide", url: "https://support.google.com/youtube/answer/174084" },
-      { title: "About YouTube Kids", source: "YouTube Kids (official)", type: "Official guide", url: "https://www.youtubekids.com/" },
+      { title: "Supervised experiences on YouTube", source: "YouTube Help (official)", type: "Official guide", url: "https://support.google.com/youtube/answer/10314940", note: "Explains the Explore / Explore More / Most of YouTube content levels and what each disables." },
+      { title: "Turn Restricted Mode on or off", source: "YouTube Help (official)", type: "Official guide", url: "https://support.google.com/youtube/answer/174084", note: "Per-device instructions for phone, computer and TV." },
+      { title: "Manage Autoplay", source: "YouTube Help (official)", type: "Official guide", url: "https://support.google.com/youtube/answer/6327615" },
+      { title: "Manage your YouTube watch and search history", source: "Google Help (official)", type: "Official guide", url: "https://support.google.com/youtube/answer/95725" },
+      { title: "Set up YouTube Kids and choose a content level", source: "YouTube Kids Help (official)", type: "Official guide", url: "https://support.google.com/youtubekids/answer/6172308" },
+      { title: "Manage your child's YouTube settings in Family Link", source: "Google Help (official)", type: "Official guide", url: "https://support.google.com/families/answer/7087030" },
+      { title: "Parents' guide to YouTube", source: "Internet Matters (UK)", type: "Article", url: "https://www.internetmatters.org/parental-controls/entertainment-search-engines/youtube-safety-settings/", note: "UK non-profit, with annotated screenshots for each setting." },
     ],
   },
   {
     slug: "social-lockdown",
     title: "Lock down a teen's social accounts",
     device: "Any",
-    summary: "The five settings that matter on Instagram, TikTok, Snapchat and Discord — works on any phone.",
+    summary: "Five settings that matter — private account, discovery off, location off, two-factor on, follower cleanout — with the exact menu path for Instagram, TikTok, Snapchat and Discord.",
     steps: [
-      "Set every account to Private",
-      "Disable 'suggest my account to others'",
-      "Remove location from posts and profiles",
-      "Turn on two-factor authentication",
-      "Review followers — remove anyone they can't name in real life",
+      "Set the account to Private (and confirm the Teen Account default is actually applied)",
+      "Turn off 'suggest my account to others' and contact syncing",
+      "Strip location: no location tags, no Snap Map, no place in bio",
+      "Turn on two-factor authentication with an app, not SMS",
+      "Clean the follower/friend list — remove anyone they cannot name in real life",
     ],
     overview:
-      "Teens don't need new apps locked down — they need their existing accounts tightened. Sit with them and do these five together; it takes about ten minutes per app.",
+      "Teens rarely need a new app blocked; they need the accounts they already have tightened. Do this sitting next to them, one app at a time — roughly ten minutes each. Explain each change as you make it, or it quietly gets reversed next week.",
+    sections: [
+      {
+        title: "1 · Instagram",
+        visual: {
+          youtubeId: "A9PUMeAQRbA",
+          title: "Instagram Teen Accounts",
+          source: "Instagram",
+          sourceUrl: "https://www.youtube.com/watch?v=A9PUMeAQRbA",
+          kind: "Official video",
+          description: "Instagram’s official introduction to automatic teen protections.",
+        },
+        intro: "Under-18 accounts should already be Teen Accounts (private by default, restricted DMs, sensitive-content limits). Verify rather than assume — and check the age on the account is the real one.",
+        steps: [
+          "Private: profile → three lines (top right) → Settings and privacy → Account privacy → 'Private account' ON.",
+          "Discovery: Settings → 'Suggested content' / 'Similar account suggestions' → turn OFF suggesting their account to others. Also Settings → Account Centre → Your information → turn off contact syncing.",
+          "Messages: Settings → Messages and story replies → 'Others on Instagram' = Don't receive requests; Story replies = People you follow.",
+          "Tags and mentions: Settings → Tags and mentions → set both to 'People you follow'. Turn on manual approval for tags.",
+          "Location: never add a location to a post or Reel; remove any place, school or town from the bio.",
+          "2FA: Account Centre → Password and security → Two-factor authentication → Authentication app.",
+          "Supervision: Account Centre → Supervision → invite your account. It shows time spent, new followers and reported accounts — it does not show message content.",
+        ],
+      },
+      {
+        title: "2 · TikTok",
+        visual: {
+          youtubeId: "kyONXkjYm-s",
+          title: "Teen safety and privacy defaults",
+          source: "TikTok",
+          sourceUrl: "https://www.youtube.com/watch?v=kyONXkjYm-s",
+          kind: "Official video",
+          description: "TikTok’s official explanation of teen-account defaults.",
+        },
+        intro: "13–15 accounts are private by default with DMs off. 16–17 accounts are not fully locked, so check them properly.",
+        steps: [
+          "Private: profile → three lines → Settings and privacy → Privacy → 'Private account' ON.",
+          "Discovery: Privacy → 'Suggest your account to others' → turn off all four options (contacts, Facebook friends, people who open your links, people with mutual connections).",
+          "Sync: Privacy → 'Sync contacts and Facebook friends' → off, and tap 'Remove previously synced contacts'.",
+          "Messaging: Privacy → Direct messages → 'No one' (or Friends only for older teens).",
+          "Comments, duets, stitches, downloads: Privacy → set each to Friends or No one.",
+          "Location: never mention school or town in a bio; TikTok also infers location from the device — turn location permission off in the phone's app settings.",
+          "2FA: Settings → Security and permissions → 2-step verification → authenticator app.",
+          "Family Pairing: Settings → Family Pairing → link your phone to set screen time, restricted mode, DM limits and search restrictions that the teen cannot undo.",
+        ],
+      },
+      {
+        title: "3 · Snapchat",
+        visual: {
+          youtubeId: "3qkNYcRnwYc",
+          title: "Understand your teen's Snapchat experience",
+          source: "Snapchat",
+          sourceUrl: "https://www.youtube.com/watch?v=3qkNYcRnwYc",
+          kind: "Official video",
+          description: "Snapchat’s current official Family Center walkthrough, including friends, messages, location and time use.",
+        },
+        intro: "Snapchat's risk is contact discovery and location, not a public feed. Both are fixable in two minutes.",
+        steps: [
+          "Contact me: profile → gear icon → Privacy Controls → 'Contact Me' → 'My Friends'.",
+          "Story: Privacy Controls → 'View My Story' → 'My Friends' or a custom list.",
+          "Snap Map: open the Map → gear icon → 'Ghost Mode' ON. Check it is not set to expire in 3 or 24 hours.",
+          "Quick Add: Privacy Controls → 'See Me in Quick Add' → OFF. This is how strangers find teens.",
+          "Contact sync: Settings → 'Mobile Number' / 'Contacts' → turn off syncing and delete previously synced contacts.",
+          "2FA: Settings → Two-Factor Authentication → authenticator app.",
+          "Family Centre: Settings → Family Centre → invite your account. You see who they message — not what is said.",
+          "Friends list: go through it together and remove anyone they have never met. Snapchat friend lists are where unknown adults accumulate.",
+        ],
+      },
+      {
+        title: "4 · Discord",
+        visual: {
+          youtubeId: "uVwBW1b2HlM",
+          title: "The Discord Family Center",
+          source: "Discord",
+          sourceUrl: "https://www.youtube.com/watch?v=uVwBW1b2HlM",
+          kind: "Official video",
+          description: "Discord’s official Family Center introduction and activity overview.",
+        },
+        intro: "Discord risk lives in servers and DMs from server members, not in a profile. UK accounts now get age-appropriate defaults, but server settings are still per-server.",
+        steps: [
+          "DMs: User Settings → Privacy & Safety → 'Keep me safe' for content filtering, and turn OFF 'Allow direct messages from server members'.",
+          "Friend requests: Privacy & Safety → Who can add you as a friend → uncheck 'Everyone'; leave 'Friends of Friends' and 'Server members' off too if you can.",
+          "Per-server: right-click each server → Privacy Settings → turn off direct messages from that server's members.",
+          "Servers: open the server list together and ask what each one is. Leave any large public server they cannot explain.",
+          "2FA: User Settings → My Account → Enable Two-Factor Auth (authenticator app).",
+          "Family Centre: User Settings → Family Centre → link your account for a weekly email of who they messaged and which servers they joined — content is not shown.",
+        ],
+      },
+      {
+        title: "5 · Finish on every account",
+        visual: {
+          youtubeId: "A9PUMeAQRbA",
+          title: "Recheck teen protections",
+          source: "Instagram",
+          sourceUrl: "https://www.youtube.com/watch?v=A9PUMeAQRbA",
+          kind: "Official video",
+          description: "An official example of the protections to verify before completing the cross-platform sweep.",
+        },
+        steps: [
+          "Search their username in a signed-out browser — whatever you can see, a stranger can see.",
+          "Check the profile photo, bio and pinned posts for school uniform, school name, street or house number.",
+          "Check the date of birth on the account. A teen who signed up as 18+ loses every teen protection — fixing the age is often the biggest single win.",
+          "Save the reporting routes together: in-app report, then CEOP (ceop.police.uk) for adult contact, and Report Remove (childline.org.uk) to get an image taken down.",
+          "Put a date in the calendar to redo this in three months. Apps change defaults; accounts drift.",
+        ],
+      },
+    ],
+    capabilities: [
+      { label: "Private account", detail: "Stops non-followers seeing posts. The single highest-value toggle on every platform." },
+      { label: "Discovery off", detail: "Removes them from suggestions and Quick Add, where most unknown-adult contact begins." },
+      { label: "DM restriction", detail: "Friends-only or off. On Discord it must also be set per server." },
+      { label: "Ghost Mode / no location tags", detail: "Prevents live or implied location sharing with friends-of-friends." },
+      { label: "Two-factor authentication", detail: "Stops account takeover — a common route into sextortion." },
+      { label: "Parental linking", detail: "Instagram Supervision, TikTok Family Pairing, Snapchat Family Centre, Discord Family Centre." },
+    ],
+    notes: [
+      "None of the parental link-ups show message content. They show who and when. That is by design — plan on conversation, not surveillance.",
+      "Settings protect against strangers finding your child. They do nothing about content the algorithm pushes, or about people your child chooses to add.",
+      "Every platform resets or renames settings periodically. Re-check quarterly; a lockdown done once in Year 7 is not still in place in Year 9.",
+      "If an account was created with a false adult date of birth, correcting it restores teen defaults — but some platforms require ID to change an age, so check before you start.",
+    ],
     tutorials: [
       { title: "Instagram Teen Accounts (default protections)", source: "Meta (official)", type: "Official guide", url: "https://about.instagram.com/blog/announcements/instagram-teen-accounts" },
+      { title: "Set your Instagram account to private", source: "Instagram Help (official)", type: "Official guide", url: "https://help.instagram.com/116024195217477" },
       { title: "TikTok Family Pairing", source: "TikTok (official)", type: "Official guide", url: "https://www.tiktok.com/safety/en/guardians-guide/" },
+      { title: "TikTok privacy settings for teen accounts", source: "TikTok Support (official)", type: "Official guide", url: "https://support.tiktok.com/en/account-and-privacy/account-privacy-settings" },
       { title: "Snapchat Family Center", source: "Snap (official)", type: "Official guide", url: "https://parents.snapchat.com/" },
+      { title: "Snap Map and Ghost Mode", source: "Snapchat Support (official)", type: "Official guide", url: "https://help.snapchat.com/hc/en-gb/articles/7012301666580" },
       { title: "Discord Family Centre", source: "Discord (official)", type: "Official guide", url: "https://discord.com/family-center" },
+      { title: "Social media privacy checklists with screenshots", source: "Internet Matters (UK)", type: "Article", url: "https://www.internetmatters.org/parental-controls/social-media/", note: "Step-by-step guides with current screenshots for each platform." },
+      { title: "Report to CEOP", source: "National Crime Agency (UK)", type: "Official guide", url: "https://www.ceop.police.uk/safety-centre/", note: "Use if an adult has contacted your child online." },
     ],
   },
 ];

@@ -59,7 +59,26 @@ function AppDetail() {
           {app.name}
         </h1>
         <p className="mt-5 max-w-2xl text-lg text-muted-foreground">{app.detail.overview}</p>
+
+        <dl className="mt-7 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-3">
+          <div className="bg-card p-4">
+            <dt className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Last checked in the UK</dt>
+            <dd className="mt-1 text-sm font-semibold">{app.lastCheckedUK}</dd>
+          </div>
+          <div className="bg-card p-4">
+            <dt className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Official minimum age</dt>
+            <dd className="mt-1 text-sm font-semibold">{app.officialMinAge}</dd>
+          </div>
+          <div className="bg-card p-4">
+            <dt className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">UK age assurance</dt>
+            <dd className="mt-1 text-sm font-semibold">{app.ukAgeAssurance}</dd>
+            {app.ukAgeAssuranceNote && (
+              <dd className="mt-1 text-xs text-muted-foreground">{app.ukAgeAssuranceNote}</dd>
+            )}
+          </div>
+        </dl>
       </header>
+
 
       {app.detail.riskVideo && (
         <section className="mt-10">

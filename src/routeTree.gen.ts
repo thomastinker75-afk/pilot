@@ -16,9 +16,11 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ChecklistsIndexRouteImport } from './routes/checklists.index'
 import { Route as AppsIndexRouteImport } from './routes/apps.index'
+import { Route as AppsAuditIndexRouteImport } from './routes/apps-audit.index'
 import { Route as AgeGuidesIndexRouteImport } from './routes/age-guides.index'
 import { Route as ChecklistsSlugRouteImport } from './routes/checklists.$slug'
 import { Route as AppsSlugRouteImport } from './routes/apps.$slug'
+import { Route as AppsAuditSlugRouteImport } from './routes/apps-audit.$slug'
 import { Route as AgeGuidesAgeRouteImport } from './routes/age-guides.$age'
 
 const NewsRoute = NewsRouteImport.update({
@@ -56,6 +58,11 @@ const AppsIndexRoute = AppsIndexRouteImport.update({
   path: '/apps/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AppsAuditIndexRoute = AppsAuditIndexRouteImport.update({
+  id: '/apps-audit/',
+  path: '/apps-audit/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AgeGuidesIndexRoute = AgeGuidesIndexRouteImport.update({
   id: '/age-guides/',
   path: '/age-guides/',
@@ -71,6 +78,11 @@ const AppsSlugRoute = AppsSlugRouteImport.update({
   path: '/apps/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AppsAuditSlugRoute = AppsAuditSlugRouteImport.update({
+  id: '/apps-audit/$slug',
+  path: '/apps-audit/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AgeGuidesAgeRoute = AgeGuidesAgeRouteImport.update({
   id: '/age-guides/$age',
   path: '/age-guides/$age',
@@ -84,9 +96,11 @@ export interface FileRoutesByFullPath {
   '/help': typeof HelpRoute
   '/news': typeof NewsRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
+  '/apps-audit/$slug': typeof AppsAuditSlugRoute
   '/apps/$slug': typeof AppsSlugRoute
   '/checklists/$slug': typeof ChecklistsSlugRoute
   '/age-guides/': typeof AgeGuidesIndexRoute
+  '/apps-audit/': typeof AppsAuditIndexRoute
   '/apps/': typeof AppsIndexRoute
   '/checklists/': typeof ChecklistsIndexRoute
 }
@@ -97,9 +111,11 @@ export interface FileRoutesByTo {
   '/help': typeof HelpRoute
   '/news': typeof NewsRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
+  '/apps-audit/$slug': typeof AppsAuditSlugRoute
   '/apps/$slug': typeof AppsSlugRoute
   '/checklists/$slug': typeof ChecklistsSlugRoute
   '/age-guides': typeof AgeGuidesIndexRoute
+  '/apps-audit': typeof AppsAuditIndexRoute
   '/apps': typeof AppsIndexRoute
   '/checklists': typeof ChecklistsIndexRoute
 }
@@ -111,9 +127,11 @@ export interface FileRoutesById {
   '/help': typeof HelpRoute
   '/news': typeof NewsRoute
   '/age-guides/$age': typeof AgeGuidesAgeRoute
+  '/apps-audit/$slug': typeof AppsAuditSlugRoute
   '/apps/$slug': typeof AppsSlugRoute
   '/checklists/$slug': typeof ChecklistsSlugRoute
   '/age-guides/': typeof AgeGuidesIndexRoute
+  '/apps-audit/': typeof AppsAuditIndexRoute
   '/apps/': typeof AppsIndexRoute
   '/checklists/': typeof ChecklistsIndexRoute
 }
@@ -126,9 +144,11 @@ export interface FileRouteTypes {
     | '/help'
     | '/news'
     | '/age-guides/$age'
+    | '/apps-audit/$slug'
     | '/apps/$slug'
     | '/checklists/$slug'
     | '/age-guides/'
+    | '/apps-audit/'
     | '/apps/'
     | '/checklists/'
   fileRoutesByTo: FileRoutesByTo
@@ -139,9 +159,11 @@ export interface FileRouteTypes {
     | '/help'
     | '/news'
     | '/age-guides/$age'
+    | '/apps-audit/$slug'
     | '/apps/$slug'
     | '/checklists/$slug'
     | '/age-guides'
+    | '/apps-audit'
     | '/apps'
     | '/checklists'
   id:
@@ -152,9 +174,11 @@ export interface FileRouteTypes {
     | '/help'
     | '/news'
     | '/age-guides/$age'
+    | '/apps-audit/$slug'
     | '/apps/$slug'
     | '/checklists/$slug'
     | '/age-guides/'
+    | '/apps-audit/'
     | '/apps/'
     | '/checklists/'
   fileRoutesById: FileRoutesById
@@ -166,9 +190,11 @@ export interface RootRouteChildren {
   HelpRoute: typeof HelpRoute
   NewsRoute: typeof NewsRoute
   AgeGuidesAgeRoute: typeof AgeGuidesAgeRoute
+  AppsAuditSlugRoute: typeof AppsAuditSlugRoute
   AppsSlugRoute: typeof AppsSlugRoute
   ChecklistsSlugRoute: typeof ChecklistsSlugRoute
   AgeGuidesIndexRoute: typeof AgeGuidesIndexRoute
+  AppsAuditIndexRoute: typeof AppsAuditIndexRoute
   AppsIndexRoute: typeof AppsIndexRoute
   ChecklistsIndexRoute: typeof ChecklistsIndexRoute
 }
@@ -224,6 +250,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AppsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/apps-audit/': {
+      id: '/apps-audit/'
+      path: '/apps-audit'
+      fullPath: '/apps-audit/'
+      preLoaderRoute: typeof AppsAuditIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/age-guides/': {
       id: '/age-guides/'
       path: '/age-guides'
@@ -245,6 +278,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AppsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/apps-audit/$slug': {
+      id: '/apps-audit/$slug'
+      path: '/apps-audit/$slug'
+      fullPath: '/apps-audit/$slug'
+      preLoaderRoute: typeof AppsAuditSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/age-guides/$age': {
       id: '/age-guides/$age'
       path: '/age-guides/$age'
@@ -262,9 +302,11 @@ const rootRouteChildren: RootRouteChildren = {
   HelpRoute: HelpRoute,
   NewsRoute: NewsRoute,
   AgeGuidesAgeRoute: AgeGuidesAgeRoute,
+  AppsAuditSlugRoute: AppsAuditSlugRoute,
   AppsSlugRoute: AppsSlugRoute,
   ChecklistsSlugRoute: ChecklistsSlugRoute,
   AgeGuidesIndexRoute: AgeGuidesIndexRoute,
+  AppsAuditIndexRoute: AppsAuditIndexRoute,
   AppsIndexRoute: AppsIndexRoute,
   ChecklistsIndexRoute: ChecklistsIndexRoute,
 }

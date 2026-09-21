@@ -53,6 +53,10 @@ function AppsIndex() {
                         <span className="rounded-full bg-secondary px-2.5 py-1 text-xs font-semibold">{a.minAge}</span>
                       </div>
                       <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{a.category}</p>
+                      <p className="mt-2 text-xs text-muted-foreground">
+                        UK age assurance: <span className="font-semibold text-foreground">{a.ukAgeAssurance}</span> · Checked {a.lastCheckedUK}
+                      </p>
+
                     </div>
                   </header>
 
