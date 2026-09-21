@@ -2,18 +2,24 @@
 
 The site exports static files. No Lovable subscription, database or AI API is required.
 
-Connect the pilot GitHub repository to a Cloudflare Pages project in the chosen owner's account:
+Thomas can start with a free pages.dev preview before buying a domain. In his Cloudflare account, open Workers & Pages > Create application > Pages > Import an existing Git repository. Connect GitHub and grant Cloudflare access to thomastinker75-afk/pilot. Select that repository and Begin setup. If it is missing, check the GitHub installation's repository access in Thomas's account.
+
+Use these settings (the output directory is specific to this repository):
 
 - Production branch: main
 - Framework: none/custom static build
 - Build command: npm run build && npm run check:static
 - Output directory: dist/client
+- Root directory: leave blank (repository root)
 - NODE_VERSION: 24.11.0
 - VITE_BASE_PATH: /
-- VITE_SITE_URL: leave empty for preview
-- VITE_PREVIEW_ORIGIN: the actual HTTPS pages.dev origin assigned to this project (no path or trailing slash), for social-image URLs
+- VITE_HOSTING_PROVIDER: cloudflare
+- VITE_SITE_URL: do not add yet (or leave empty) for the temporary site
+- VITE_PREVIEW_ORIGIN: after the first deployment, set this to the actual HTTPS pages.dev origin assigned to the project (no path or trailing slash), for social-image URLs, then redeploy
 
-For the eventual public domain, add it through Pages > Custom domains, configure DNS as directed, and set VITE_SITE_URL to that actual HTTPS origin. Update the privacy page's hosting description from GitHub Pages to Cloudflare. After editorial review, rebuild and run check:release. Confirm canonical, sitemap, robots, real 404, social image and assets live. Domain registration does not automatically publish a site or provide a mailbox.
+Add environment variables to Production because main is the deployment branch, even while the site is only a temporary preview. Keep VITE_SITE_URL unset in Cloudflare's separate Preview environment. Select Save and Deploy. Open the assigned pages.dev address and test the home page, a checklist, the glossary and Get Help. The privacy page should identify Cloudflare Pages. A later push to main will trigger an automatic rebuild.
+
+For the eventual public domain, add it through the Pages project's Custom domains > Set up a domain and configure DNS as directed. The apex domain must be a zone in the same Cloudflare account. Once HTTPS works and Thomas is ready for public launch, set Production VITE_SITE_URL to that actual HTTPS origin, without a trailing slash. VITE_HOSTING_PROVIDER=cloudflare selects the correct privacy wording. Rebuild and run check:release (or change the production build command to npm run build && npm run check:release). Confirm canonical, sitemap, robots, real 404, social image and assets live. Domain registration does not automatically publish a site or provide a mailbox.
 
 Cloudflare Registrar offers domain purchase and renewal at cost. Check availability, extension support and the actual renewal quote in the chosen account before buying. The planned domain is parenttechsafety.co.uk (user indicated 21 September 2026). Purchase, ownership and Cloudflare account access are not confirmed.
 
@@ -35,3 +41,9 @@ Official references checked 21 September 2026:
 - https://developers.cloudflare.com/pages/configuration/custom-domains/
 - https://developers.cloudflare.com/pages/platform/limits/
 - https://www.cloudflare.com/domains/
+- https://developers.cloudflare.com/pages/configuration/build-configuration/
+- https://developers.cloudflare.com/pages/configuration/git-integration/github-integration/
+
+## Video previews
+
+The reusable YouTube player shows a local thumbnail and Play video button. The player only connects to YouTube after that button is selected; the direct YouTube link stays available if embedding fails. Images and their source metadata are committed with the site. After adding or changing an embedded video, run node scripts/refresh-video-posters.mjs and review the resulting image and docs/video-poster-sources.json. Ordinary builds do not depend on YouTube being available.
