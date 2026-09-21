@@ -111,7 +111,7 @@ function ScreenTimeBlock({ data }: { data: ScreenTimeGuidance }) {
         <div>
           <div className="flex items-center gap-2 text-destructive">
             <AlertTriangle className="size-4" />
-            <p className="eyebrow !text-destructive">What research associates with heavy use</p>
+            <p className="eyebrow !text-destructive">Evidence and practical considerations</p>
           </div>
           <ul className="mt-4 space-y-3">
             {data.consequences.map((c) => (
@@ -167,7 +167,7 @@ function DeepDive({ items }: { items: ExpertResource[] }) {
         <p className="eyebrow">If you want to know more from the experts</p>
       </div>
       <h2 className="mt-3 font-display text-2xl tracking-tight">
-        Original studies, reports and videos behind the consequences above
+        Studies, guidance and background reading
       </h2>
       <p className="mt-2 text-sm text-muted-foreground">
         Hand-picked from paediatricians, regulators, academic journals and investigative reporting around the world. Open in a new tab.

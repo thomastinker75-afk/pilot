@@ -35,364 +35,689 @@ export type AgeBand = {
 
 export const AGE_BANDS: AgeBand[] = [
   {
-    slug: "0-4",
-    range: "0–4",
-    headline: "Co-viewing years",
-    summary:
-      "Screens enter family life early. The goal at this age is shared, calm, short sessions — not solo scrolling.",
-    behaviours: [
+    "slug": "0-4",
+    "range": "0–4",
+    "headline": "Co-viewing years",
+    "summary": "Screens enter family life early. The goal at this age is shared, calm, short sessions — not solo scrolling.",
+    "behaviours": [
       "Watching cartoons or nursery videos with a parent",
       "Tapping on a tablet for short play",
-      "Mirroring what older siblings watch",
+      "Mirroring what older siblings watch"
     ],
-    risks: [
+    "risks": [
       "Auto-play pulling toddlers into unsuitable content",
       "Screen use replacing sleep, talking or movement",
-      "Accidental purchases inside ‘free’ apps",
+      "Accidental purchases inside ‘free’ apps"
     ],
-    settings: [
+    "settings": [
       "Turn off auto-play on YouTube and streaming apps",
       "Use a dedicated kids profile (YouTube Kids, Netflix Kids)",
-      "Disable in-app purchases on the device",
+      "Disable in-app purchases on the device"
     ],
-    conversation: [
+    "conversation": [
       "Watch the first episode together so you know the show",
-      "Name what they’re watching out loud — builds language",
+      "Name what they’re watching out loud — builds language"
     ],
-    redFlags: [
+    "redFlags": [
       "Distress when a screen is turned off, every time",
-      "Sleep disruption after evening screen use",
+      "Sleep disruption after evening screen use"
     ],
-    screenTime: {
-      recommended:
-        "The UK government’s March 2026 guidance for parents of under-fives recommends avoiding screens under age 2 except shared activities that support bonding, interaction and conversation. For ages 2–5, aim for no more than 1 hour a day. Choose slow-paced, age-appropriate content and use it together. Avoid screens at meals and during the hour before bed.",
-      ukContext:
-        "This Department for Education and Department of Health and Social Care guidance replaces the assumption that government advice has no time target for young children. Screen-based assistive technology for children with special educational needs and disabilities should not be restricted in the same way. Separately, WHO’s global guidance does not recommend sedentary screen time for infants or one-year-olds, and recommends at most 1 hour for ages 2–4; less is better.",
-      sources: [
-        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
-        { label: "New screen time guidance for parents of under-5s (26 March 2026)", org: "Department for Education / Department of Health and Social Care", region: "UK government", url: "https://www.gov.uk/government/news/new-screen-time-guidance-for-parents-of-under-5s" },
-        { label: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5", org: "World Health Organization", region: "Global (international guidance)", url: "https://www.who.int/publications/i/item/9789241550536" },
-        { label: "Media and Young Minds (policy statement)", org: "American Academy of Pediatrics", region: "USA (international guidance)", url: "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds" },
-        { label: "Screen time and young children — position statement", org: "Canadian Paediatric Society", region: "Canada (international guidance)", url: "https://cps.ca/en/documents/position/screen-time-and-young-children" },
+    "screenTime": {
+      "recommended": "The UK government’s March 2026 guidance for parents of under-fives recommends avoiding screens under age 2 except shared activities that support bonding, interaction and conversation. For ages 2–5, aim for no more than 1 hour a day. Choose slow-paced, age-appropriate content and use it together. Avoid screens at meals and during the hour before bed.",
+      "ukContext": "This Department for Education and Department of Health and Social Care guidance replaces the assumption that government advice has no time target for young children. Screen-based assistive technology for children with special educational needs and disabilities should not be restricted in the same way. Separately, WHO’s global guidance does not recommend sedentary screen time for infants or one-year-olds, and recommends at most 1 hour for ages 2–4; less is better.",
+      "sources": [
+        {
+          "label": "The health impacts of screen time — guide for clinicians and parents",
+          "org": "Royal College of Paediatrics and Child Health",
+          "region": "UK",
+          "url": "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents"
+        },
+        {
+          "label": "New screen time guidance for parents of under-5s (26 March 2026)",
+          "org": "Department for Education / Department of Health and Social Care",
+          "region": "UK government",
+          "url": "https://www.gov.uk/government/news/new-screen-time-guidance-for-parents-of-under-5s"
+        },
+        {
+          "label": "Guidelines on physical activity, sedentary behaviour and sleep for children under 5",
+          "org": "World Health Organization",
+          "region": "Global (international guidance)",
+          "url": "https://www.who.int/publications/i/item/9789241550536"
+        },
+        {
+          "label": "Media and Young Minds (policy statement)",
+          "org": "American Academy of Pediatrics",
+          "region": "USA (international guidance)",
+          "url": "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds"
+        },
+        {
+          "label": "Screen time and young children — position statement",
+          "org": "Canadian Paediatric Society",
+          "region": "Canada (international guidance)",
+          "url": "https://cps.ca/en/documents/position/screen-time-and-young-children"
+        }
       ],
-      consequences: [
-        "Heavy toddler screen use is associated with delayed language and smaller vocabularies (JAMA Pediatrics, 2020). Screens are one factor among many, not a proven sole cause.",
-        "Evening screen use is associated with shorter, more disrupted sleep.",
-        "More screen time is associated with less parent–child talk — and parent–child interaction is a strong predictor of early development.",
-        "Higher screen use in the pre-school years has been associated with more attention and self-regulation difficulties at school entry (CHILD Cohort Study, Canada, 2019).",
-      ],
+      "consequences": [
+        "A small cross-sectional MRI study of 47 children aged 3–5 found associations between a screen-use measure, white-matter measures and some language/literacy assessments. It did not prove brain damage or establish effects in babies.",
+        "An observational study of children aged 12–36 months linked more screen time with less parent–child talk. This does not prove that screens alone caused the difference.",
+        "Shared conversation, play and sleep remain important parts of the day; follow the linked age-specific guidance and seek advice if development concerns you."
+      ]
     },
-    deepDive: [
-      { type: "Report", source: "World Health Organization", title: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age", url: "https://www.who.int/publications/i/item/9789241550536", note: "WHO guidance on sedentary screen time, activity and sleep for infants and children aged 1–4." },
-      { type: "Study", source: "JAMA Pediatrics (2020)", title: "Associations Between Screen-Based Media Use and Brain White Matter Integrity in Preschool-Aged Children", url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2754101", note: "MRI study showing measurable differences in language and literacy brain regions in heavy-screen toddlers." },
-      { type: "Study", source: "JAMA Pediatrics (2024)", title: "Screen Time and Parent-Child Talk When Children Are Aged 12 to 36 Months", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10913002/", note: "An observational study found more screen time was associated with less parent–child talk; it does not establish cause." },
-      { type: "Article", source: "American Academy of Pediatrics — HealthyChildren.org", title: "How to Make a Family Media Use Plan", url: "https://www.healthychildren.org/English/family-life/Media/Pages/How-to-Make-a-Family-Media-Use-Plan.aspx" },
-      { type: "Video", source: "TED — Dimitri Christakis, MD", title: "Media and Children", url: "https://www.youtube.com/watch?v=BoT7qH_uVNo", note: "Paediatrician summarising the evidence on infant/toddler screen exposure." },
-    ],
+    "deepDive": [
+      {
+        "type": "Report",
+        "source": "World Health Organization",
+        "title": "Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age",
+        "url": "https://www.who.int/publications/i/item/9789241550536",
+        "note": "WHO guidance on sedentary screen time, activity and sleep for infants and children aged 1–4."
+      },
+      {
+        "type": "Study",
+        "source": "JAMA Pediatrics (2020)",
+        "title": "Associations Between Screen-Based Media Use and Brain White Matter Integrity in Preschool-Aged Children",
+        "url": "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2754101",
+        "note": "Cross-sectional study of 47 children aged 3–5; associations with MRI and cognitive measures, not proof of causal brain damage."
+      },
+      {
+        "type": "Study",
+        "source": "JAMA Pediatrics (2024)",
+        "title": "Screen Time and Parent-Child Talk When Children Are Aged 12 to 36 Months",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10913002/",
+        "note": "An observational study found more screen time was associated with less parent–child talk; it does not establish cause."
+      },
+      {
+        "type": "Article",
+        "source": "American Academy of Pediatrics — HealthyChildren.org",
+        "title": "How to Make a Family Media Use Plan",
+        "url": "https://www.healthychildren.org/English/family-life/Media/Pages/How-to-Make-a-Family-Media-Use-Plan.aspx"
+      },
+      {
+        "type": "Video",
+        "source": "TED — Dimitri Christakis, MD",
+        "title": "Media and Children",
+        "url": "https://www.youtube.com/watch?v=BoT7qH_uVNo",
+        "note": "Paediatrician summarising the evidence on infant/toddler screen exposure."
+      }
+    ]
   },
-
   {
-    slug: "5-7",
-    range: "5–7",
-    headline: "First apps and games",
-    summary:
-      "Kids start asking for their own logins and games. Set the defaults now — they’re much harder to claw back later.",
-    behaviours: [
+    "slug": "5-7",
+    "range": "5–7",
+    "headline": "First apps and games",
+    "summary": "Kids start asking for their own logins and games. Set the defaults now — they’re much harder to claw back later.",
+    "behaviours": [
       "Playing simple games (Roblox, Minecraft, mobile games)",
       "Watching YouTube for long stretches",
-      "Asking to message grandparents on a parent’s phone",
+      "Asking to message grandparents on a parent’s phone"
     ],
-    risks: [
+    "risks": [
       "Stranger chat in games marketed as ‘for kids’",
       "Loud, fast, ad-heavy content shaping attention",
-      "Accidental access to age-inappropriate videos",
+      "Accidental access to age-inappropriate videos"
     ],
-    settings: [
+    "settings": [
       "Use Apple Family Sharing or Google Family Link",
       "Turn on Screen Time / Digital Wellbeing limits",
-      "Disable chat in Roblox account settings",
+      "Disable chat in Roblox account settings"
     ],
-    conversation: [
-      "“If anyone you don’t know talks to you in a game, tell me — you won’t be in trouble.”",
+    "conversation": [
+      "“If anyone you don’t know talks to you in a game, tell me — you won’t be in trouble.”"
     ],
-    redFlags: [
+    "redFlags": [
       "Secretive behaviour with the device",
-      "Repeating phrases or slang that feel ‘older’ than them",
+      "Repeating phrases or slang that feel ‘older’ than them"
     ],
-    screenTime: {
-      recommended:
-        "There is no official UK hour limit at this age. UK guidance focuses on sleep, physical activity, what is being watched and family context. Some international guidelines (AAP, Canada) suggest around 1 hour a day of recreational screens as a working target.",
-      ukContext:
-        "Treat “one hour a day” as an international suggestion rather than a UK rule. The practical UK questions are: is your child sleeping enough, moving enough, eating without a screen, and is the content suitable?",
-      sources: [
-        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
-        { label: "Physical activity guidelines: children and young people (5 to 18)", org: "UK Chief Medical Officers / NHS", region: "UK", url: "https://www.gov.uk/government/publications/physical-activity-guidelines-children-and-young-people-aged-5-to-18-years" },
-        { label: "Media use in school-aged children and adolescents", org: "American Academy of Pediatrics", region: "USA (international guidance)", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
-        { label: "24-Hour Movement Guidelines for Children and Youth", org: "Canadian Society for Exercise Physiology", region: "Canada (international guidance)", url: "https://csepguidelines.ca/guidelines/children-youth/" },
+    "screenTime": {
+      "recommended": "Choose suitable content and protect sleep, movement, play and family time. For a five-year-old, also read the government’s 2–5 guidance linked in the younger age guide. Avoid treating a timer as the only measure of healthy use.",
+      "ukContext": "Separate family rules from formal guidance. Canada’s linked guideline suggests no more than 2 hours of recreational screen time for ages 5–17; this is not a UK rule or a quota specifically for social media. The UK activity guidance and international sleep advice address other parts of the day.",
+      "sources": [
+        {
+          "label": "UK Chief Medical Officers’ physical activity guidelines (July 2026)",
+          "org": "UK Chief Medical Officers",
+          "region": "UK",
+          "url": "https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report/uk-chief-medical-officers-physical-activity-guidelines"
+        },
+        {
+          "label": "24-Hour Movement Guidelines, ages 5–17",
+          "org": "Canadian Society for Exercise Physiology",
+          "region": "Canada (international guidance)",
+          "url": "https://csepguidelines.ca/guidelines/children-youth/"
+        },
+        {
+          "label": "Sleep duration guidance",
+          "org": "NHLBI / US National Institutes of Health",
+          "region": "USA (international guidance)",
+          "url": "https://www.nhlbi.nih.gov/health/sleep/how-much-sleep"
+        }
       ],
-      consequences: [
-        "Screen use above about 2 hours a day at this age has been associated with lower developmental screening scores (JAMA Pediatrics, 2019) — an association, not proof of cause.",
-        "Screen-heavy lifestyles are associated with higher obesity rates, largely through reduced activity and snacking while watching (WHO European COSI, 2022).",
-        "Evening screens are associated with delayed sleep onset; short sleep at this age is linked to mood and learning problems.",
-        "Less time in face-to-face play is associated with slower development of friendship and emotional-regulation skills.",
-      ],
+      "consequences": [
+        "The 2019 Canadian developmental study followed children at ages 2, 3 and 5. More screen time at earlier ages was associated with lower later screening scores; it did not establish a two-hour threshold for 5–7-year-olds.",
+        "A review covering school-aged children and adolescents found screen time associated with shorter or later sleep; it did not prove cause.",
+        "Consider what screen time may be replacing: play, movement, conversation and sleep. These are practical questions, not a diagnosis."
+      ]
     },
-    deepDive: [
-      { type: "Study", source: "JAMA Pediatrics (2019)", title: "Association Between Screen Time and Children's Performance on a Developmental Screening Test", url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2722666", note: "Canadian cohort — >2h/day at age 3 predicted worse developmental scores at age 5." },
-      { type: "Report", source: "WHO European Region (2022)", title: "Childhood Obesity Surveillance Initiative (COSI)", url: "https://www.who.int/europe/initiatives/who-european-childhood-obesity-surveillance-initiative-(cosi)", note: "Links screen-heavy lifestyles in 6–9 year-olds to rising obesity across 33 countries." },
-      { type: "Study", source: "Sleep Medicine Reviews (2015)", title: "Screen time and sleep among school-aged children and adolescents: a systematic literature review", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4437561/" },
-      { type: "Article", source: "Common Sense Media", title: "The Common Sense Census: Media Use by Kids Age Zero to Eight", url: "https://www.commonsensemedia.org/research/the-common-sense-census-media-use-by-kids-age-zero-to-eight-2020" },
-      { type: "Video", source: "BBC Panorama", title: "Smartphone Kids", url: "https://www.bbc.co.uk/iplayer/episodes/b00wk6h0/panorama", note: "Documentary on early phone/tablet use and behaviour." },
-    ],
+    "deepDive": [
+      {
+        "type": "Study",
+        "source": "JAMA Pediatrics (2019)",
+        "title": "Association Between Screen Time and Children's Performance on a Developmental Screening Test",
+        "url": "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2722666",
+        "note": "Canadian observational cohort at ages 2, 3 and 5; higher earlier screen time was associated with lower later developmental screening scores."
+      },
+      {
+        "type": "Report",
+        "source": "WHO European Region (2022)",
+        "title": "Childhood Obesity Surveillance Initiative (COSI)",
+        "url": "https://www.who.int/europe/initiatives/who-european-childhood-obesity-surveillance-initiative-(cosi)",
+        "note": "WHO childhood obesity surveillance programme; this overview is not evidence for a particular causal effect of screens."
+      },
+      {
+        "type": "Study",
+        "source": "Sleep Medicine Reviews (2015)",
+        "title": "Screen time and sleep among school-aged children and adolescents: a systematic literature review",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4437561/"
+      },
+      {
+        "type": "Article",
+        "source": "Common Sense Media",
+        "title": "The Common Sense Census: Media Use by Kids Age Zero to Eight",
+        "url": "https://www.commonsensemedia.org/research/the-common-sense-census-media-use-by-kids-age-zero-to-eight-2020"
+      },
+      {
+        "type": "Video",
+        "source": "BBC Panorama",
+        "title": "Smartphone Kids",
+        "url": "https://www.bbc.co.uk/iplayer/episodes/b00wk6h0/panorama",
+        "note": "Documentary on early phone/tablet use and behaviour."
+      },
+      {
+        "type": "Study",
+        "source": "Sleep Medicine Reviews (2015)",
+        "title": "Screen time and sleep among school-aged children and adolescents: a systematic literature review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25193149/",
+        "note": "Review of 67 studies; most found associations with shorter or later sleep. Causation was not established and results varied."
+      }
+    ]
   },
-
   {
-    slug: "8-10",
-    range: "8–10",
-    headline: "Group chats begin",
-    summary:
-      "Friends’ devices change everything. Even without their own phone, kids this age are usually inside group chats.",
-    behaviours: [
+    "slug": "8-10",
+    "range": "8–10",
+    "headline": "Group chats begin",
+    "summary": "Friends’ devices change everything. Even without their own phone, kids this age are usually inside group chats.",
+    "behaviours": [
       "WhatsApp / iMessage group chats with classmates",
       "Roblox, Fortnite, Minecraft with voice chat",
-      "Watching gaming streamers on YouTube",
+      "Watching gaming streamers on YouTube"
     ],
-    risks: [
+    "risks": [
       "Group-chat fallouts and exclusion",
       "First exposure to scary or sexual content",
-      "Pressure to share embarrassing photos for ‘jokes’",
+      "Pressure to share embarrassing photos for ‘jokes’"
     ],
-    settings: [
+    "settings": [
       "Restrict messaging to known contacts only",
       "Turn off voice chat with strangers in games",
-      "Enable SafeSearch on Google and YouTube",
+      "Enable SafeSearch on Google and YouTube"
     ],
-    conversation: [
-      "Look at their chat list together once a week — make it routine, not a raid",
+    "conversation": [
+      "Look at their chat list together once a week — make it routine, not a raid"
     ],
-    redFlags: [
+    "redFlags": [
       "Sudden mood shifts after using a device",
-      "Asking strangely specific questions about adult topics",
+      "Asking strangely specific questions about adult topics"
     ],
-    screenTime: {
-      recommended:
-        "No UK body sets an hour limit for 8–10s. Some international guidelines suggest around 1.5–2 hours a day of recreational screens; UK guidance instead prioritises sleep, an hour of daily activity, screen-free bedrooms and mealtimes, and knowing what they are using.",
-      ukContext:
-        "The 1.5–2 hour figure comes from US, Canadian and Australian guidance. Use it as a rough anchor for family rules, not as an established UK standard.",
-      sources: [
-        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
-        { label: "Children and parents: media use and attitudes", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
-        { label: "Media Use in School-Aged Children and Adolescents", org: "American Academy of Pediatrics", region: "USA (international guidance)", url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents" },
-        { label: "24-Hour Movement Guidelines (5–17 years)", org: "Canadian Society for Exercise Physiology", region: "Canada (international guidance)", url: "https://csepguidelines.ca/guidelines/children-youth/" },
-        { label: "Guidelines on the use of digital devices by children", org: "Royal Australasian College of Physicians", region: "Australia / NZ (international guidance)", url: "https://www.racp.edu.au/news-and-events/media-releases/screen-time-guidelines" },
+    "screenTime": {
+      "recommended": "Protect sleep, movement, schoolwork and offline relationships. Choose content and agree manageable boundaries together. A time target alone cannot establish whether use is healthy or harmful.",
+      "ukContext": "Separate family rules from formal guidance. Canada’s linked guideline suggests no more than 2 hours of recreational screen time for ages 5–17; this is not a UK rule or a quota specifically for social media. The UK activity guidance and international sleep advice address other parts of the day.",
+      "sources": [
+        {
+          "label": "UK Chief Medical Officers’ physical activity guidelines (July 2026)",
+          "org": "UK Chief Medical Officers",
+          "region": "UK",
+          "url": "https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report/uk-chief-medical-officers-physical-activity-guidelines"
+        },
+        {
+          "label": "24-Hour Movement Guidelines, ages 5–17",
+          "org": "Canadian Society for Exercise Physiology",
+          "region": "Canada (international guidance)",
+          "url": "https://csepguidelines.ca/guidelines/children-youth/"
+        },
+        {
+          "label": "Sleep duration guidance",
+          "org": "NHLBI / US National Institutes of Health",
+          "region": "USA (international guidance)",
+          "url": "https://www.nhlbi.nih.gov/health/sleep/how-much-sleep"
+        }
       ],
-      consequences: [
-        "Each extra hour of evening screen use is associated with roughly 15 minutes less sleep (Sleep Medicine Reviews, 2021).",
-        "Unsupervised group-chat use is associated with higher involvement in cyberbullying, as victim or participant (EU Kids Online, 2020).",
-        "Heavy recreational screen use is associated with weaker reading comprehension (OECD PISA analyses) — other factors such as home reading habits also play a part.",
-        "Watch for early signs of problematic gaming: irritability when stopped, sneaking devices at night, slipping schoolwork.",
-      ],
+      "consequences": [
+        "Studies of school-aged children and adolescents often associate screen use with shorter or later sleep; there is no single verified “minutes lost per extra hour” estimate used here.",
+        "Discuss unwanted contact and bullying in games and chats. A child’s experience matters more than assuming every group is harmful.",
+        "Notice persistent changes in sleep, schoolwork or relationships and ask what is happening; one behaviour alone does not diagnose problematic gaming."
+      ]
     },
-    deepDive: [
-      { type: "Report", source: "EU Kids Online (2020)", title: "EU Kids Online 2020: Survey results from 19 countries", url: "https://www.lse.ac.uk/media-and-communications/research/research-projects/eu-kids-online/eu-kids-online-2020", note: "Largest European study on children's online risks and group-chat dynamics." },
-      { type: "Study", source: "The Lancet Child & Adolescent Health (2018)", title: "Associations between 24-hour movement behaviours and global cognition in US children (ABCD Study)", url: "https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(18)30278-5/fulltext", note: "Only 1 in 20 US kids met screen-time guidelines; those who did scored higher on cognition tests." },
-      { type: "Report", source: "OECD PISA", title: "21st-Century Readers: Developing Literacy Skills in a Digital World", url: "https://www.oecd.org/en/publications/21st-century-readers_a83d84cb-en.html", note: "Heavy recreational screen use correlates with weaker reading comprehension across 79 countries." },
-      { type: "Article", source: "Internet Matters", title: "Online gaming advice hub", url: "https://www.internetmatters.org/resources/online-gaming-advice/", note: "Practical UK guidance on Roblox, Fortnite and Minecraft chat risks." },
-      { type: "Video", source: "Childnet International", title: "Trust Me — critical thinking online", url: "https://www.childnet.com/resources/trust-me/", note: "Short films for 7–11s on misleading content and online manipulation." },
-    ],
+    "deepDive": [
+      {
+        "type": "Report",
+        "source": "EU Kids Online (2020)",
+        "title": "EU Kids Online 2020: Survey results from 19 countries",
+        "url": "https://www.lse.ac.uk/media-and-communications/research/research-projects/eu-kids-online/eu-kids-online-2020",
+        "note": "European survey of children’s internet experiences; a report, not a causal test of group chats."
+      },
+      {
+        "type": "Study",
+        "source": "The Lancet Child & Adolescent Health (2018)",
+        "title": "Associations between 24-hour movement behaviours and global cognition in US children (ABCD Study)",
+        "url": "https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(18)30278-5/fulltext",
+        "note": "US observational research about movement, sleep, screen time and cognition. It cannot establish cause or a universal screen-time threshold."
+      },
+      {
+        "type": "Report",
+        "source": "OECD PISA",
+        "title": "21st-Century Readers: Developing Literacy Skills in a Digital World",
+        "url": "https://www.oecd.org/en/publications/21st-century-readers_a83d84cb-en.html",
+        "note": "OECD report about literacy in a digital world; PISA concerns 15-year-olds, not a direct study of 8–10-year-olds."
+      },
+      {
+        "type": "Article",
+        "source": "Internet Matters",
+        "title": "Online gaming advice hub",
+        "url": "https://www.internetmatters.org/resources/online-gaming-advice/",
+        "note": "Practical UK guidance on Roblox, Fortnite and Minecraft chat risks."
+      },
+      {
+        "type": "Video",
+        "source": "Childnet International",
+        "title": "Trust Me — critical thinking online",
+        "url": "https://www.childnet.com/resources/trust-me/",
+        "note": "Short films for 7–11s on misleading content and online manipulation."
+      },
+      {
+        "type": "Study",
+        "source": "Sleep Medicine Reviews (2015)",
+        "title": "Screen time and sleep among school-aged children and adolescents: a systematic literature review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25193149/",
+        "note": "Review of 67 studies; most found associations with shorter or later sleep. Causation was not established and results varied."
+      }
+    ]
   },
-
   {
-    slug: "11-13",
-    range: "11–13",
-    headline: "First phone & secondary school",
-    summary:
-      "The biggest jump. Social comparison, group chats and late-night scrolling all start here.",
-    behaviours: [
+    "slug": "11-13",
+    "range": "11–13",
+    "headline": "First phone & secondary school",
+    "summary": "The biggest jump. Social comparison, group chats and late-night scrolling all start here.",
+    "behaviours": [
       "TikTok, Snapchat, Instagram (often under-age)",
       "Sharing location with friends",
-      "Late-night messaging",
+      "Late-night messaging"
     ],
-    risks: [
+    "risks": [
       "Body image pressure and comparison spirals",
       "Snap streaks driving compulsive use",
-      "Strangers sliding into DMs",
+      "Strangers sliding into DMs"
     ],
-    settings: [
+    "settings": [
       "Private accounts on every social app",
       "Disable ‘suggest my account to others’",
-      "No phones in the bedroom overnight",
+      "No phones in the bedroom overnight"
     ],
-    conversation: [
+    "conversation": [
       "Agree a family media plan together — write it down",
-      "Promise no-blame reporting if anything weird happens",
+      "Promise no-blame reporting if anything weird happens"
     ],
-    redFlags: [
+    "redFlags": [
       "Hiding the screen when you walk in",
-      "New ‘older’ online friends you’ve never heard of",
+      "New ‘older’ online friends you’ve never heard of"
     ],
-    screenTime: {
-      recommended:
-        "There is no UK hour limit for this age. Protect the non-negotiables first: 9–11 hours of sleep, phones out of the bedroom overnight, an hour of daily activity and a tech-free wind-down. Around 2 hours a day of recreational scrolling is a common family benchmark drawn from international advice.",
-      ukContext:
-        "Ofcom reports what UK children actually do; it does not set limits. The UK Chief Medical Officers' advice centres on sleep, activity and safe use rather than a daily screen quota.",
-      sources: [
-        { label: "Children and parents: media use and attitudes report", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
-        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
-        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA (international guidance)", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
-        { label: "Recommendations on the regulation of smartphones for children", org: "French government expert commission (Enfants et écrans)", region: "France (international guidance)", url: "https://www.elysee.fr/emmanuel-macron/2024/04/30/enfants-et-ecrans" },
+    "screenTime": {
+      "recommended": "Protect sleep, movement, schoolwork and offline relationships. The US sleep guidance linked below recommends 9–12 hours for ages 6–12 and 8–10 hours for ages 13–18; needs change across this age band. Agree a screen-free wind-down and review how your child is coping.",
+      "ukContext": "Separate family rules from formal guidance. Canada’s linked guideline suggests no more than 2 hours of recreational screen time for ages 5–17; this is not a UK rule or a quota specifically for social media. The UK activity guidance and international sleep advice address other parts of the day.",
+      "sources": [
+        {
+          "label": "UK Chief Medical Officers’ physical activity guidelines (July 2026)",
+          "org": "UK Chief Medical Officers",
+          "region": "UK",
+          "url": "https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report/uk-chief-medical-officers-physical-activity-guidelines"
+        },
+        {
+          "label": "24-Hour Movement Guidelines, ages 5–17",
+          "org": "Canadian Society for Exercise Physiology",
+          "region": "Canada (international guidance)",
+          "url": "https://csepguidelines.ca/guidelines/children-youth/"
+        },
+        {
+          "label": "Sleep duration guidance",
+          "org": "NHLBI / US National Institutes of Health",
+          "region": "USA (international guidance)",
+          "url": "https://www.nhlbi.nih.gov/health/sleep/how-much-sleep"
+        }
       ],
-      consequences: [
-        "Studies have found an association between more than about 3 hours a day on social media and higher rates of depression and anxiety symptoms (JAMA Psychiatry, 2019). That does not mean screen time alone caused the outcome.",
-        "Keeping phones in bedrooms is associated with around an hour less sleep per night (Sleep Health, 2018).",
-        "Heavy use of image-led platforms is associated with body-image disturbance and disordered eating, particularly among girls.",
-        "Frequent media multitasking is associated with lower working-memory and academic performance scores; the direction of cause is still debated.",
-      ],
+      "consequences": [
+        "Screen use and sleep are associated in many studies, but an exact one-hour loss should not be assumed for every child with a phone in their bedroom.",
+        "The US Surgeon General’s advisory describes both potential benefits and risks of social media and limitations in the evidence. It cannot predict an individual child’s outcome.",
+        "Ask about upsetting content, appearance comparisons and unwanted contact; seek support if distress persists."
+      ]
     },
-    deepDive: [
-      { type: "Report", source: "US Surgeon General (2023)", title: "Social Media and Youth Mental Health — Advisory", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html", note: "Landmark advisory: heavy use ≈ doubled risk of depression and anxiety symptoms." },
-      { type: "Study", source: "JAMA Psychiatry (2019)", title: "Associations Between Time Spent Using Social Media and Internalizing and Externalizing Problems Among US Youth", url: "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2749480" },
-      { type: "Study", source: "Sleep Health (2018)", title: "Adolescent sleep and the impact of technology use before sleep", url: "https://www.sleephealthjournal.org/article/S2352-7218(18)30055-0/fulltext", note: "Phones in bedrooms cost teens ~1 hour of sleep per night on average." },
-      { type: "Book", source: "Jonathan Haidt — The Anxious Generation", title: "After Babel — research summaries", url: "https://www.afterbabel.com/", note: "Free deep-dive essays behind the bestselling book on smartphones and adolescent mental health." },
-      { type: "Video", source: "TED — Jean Twenge", title: "iGen: What today's super-connected kids tell us about ourselves", url: "https://www.youtube.com/watch?v=mDPGcMlPyhI" },
-      { type: "Report", source: "Ofcom (UK, 2024)", title: "Children and parents: media use and attitudes", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
-    ],
+    "deepDive": [
+      {
+        "type": "Report",
+        "source": "US Surgeon General (2023)",
+        "title": "Social Media and Youth Mental Health — Advisory",
+        "url": "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html",
+        "note": "Landmark advisory: heavy use ≈ doubled risk of depression and anxiety symptoms."
+      },
+      {
+        "type": "Study",
+        "source": "JAMA Psychiatry (2019)",
+        "title": "Associations Between Time Spent Using Social Media and Internalizing and Externalizing Problems Among US Youth",
+        "url": "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2749480"
+      },
+      {
+        "type": "Study",
+        "source": "Sleep Health (2018)",
+        "title": "Adolescent sleep and the impact of technology use before sleep",
+        "url": "https://www.sleephealthjournal.org/article/S2352-7218(18)30055-0/fulltext",
+        "note": "Phones in bedrooms cost teens ~1 hour of sleep per night on average."
+      },
+      {
+        "type": "Book",
+        "source": "Jonathan Haidt — The Anxious Generation",
+        "title": "After Babel — research summaries",
+        "url": "https://www.afterbabel.com/",
+        "note": "Free deep-dive essays behind the bestselling book on smartphones and adolescent mental health."
+      },
+      {
+        "type": "Video",
+        "source": "TED — Jean Twenge",
+        "title": "iGen: What today's super-connected kids tell us about ourselves",
+        "url": "https://www.youtube.com/watch?v=mDPGcMlPyhI"
+      },
+      {
+        "type": "Report",
+        "source": "Ofcom (UK, 2024)",
+        "title": "Children and parents: media use and attitudes",
+        "url": "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/"
+      },
+      {
+        "type": "Study",
+        "source": "Sleep Medicine Reviews (2015)",
+        "title": "Screen time and sleep among school-aged children and adolescents: a systematic literature review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25193149/",
+        "note": "Review of 67 studies; most found associations with shorter or later sleep. Causation was not established and results varied."
+      }
+    ]
   },
-
   {
-    slug: "14-15",
-    range: "14–15",
-    headline: "Identity online",
-    summary:
-      "Teens are forming identity in public. Safety here is less about blocks and more about trust and conversation.",
-    behaviours: [
+    "slug": "14-15",
+    "range": "14–15",
+    "headline": "Identity online",
+    "summary": "Teens are forming identity in public. Safety here is less about blocks and more about trust and conversation.",
+    "behaviours": [
       "Posting publicly, building a following",
       "Private messaging with romantic interests",
-      "Gaming communities (Discord, Twitch)",
+      "Gaming communities (Discord, Twitch)"
     ],
-    risks: [
+    "risks": [
       "Sharing nudes, or being pressured into it",
       "Sextortion — a stranger poses as a peer, obtains an image, then demands money or more images",
       "AI deepfake nudes made from ordinary photos taken from social accounts",
       "Intimate-image abuse: images shared on without consent (a criminal offence in the UK)",
-      "Algorithmic rabbit-holes (extreme diet, self-harm, misogyny, hate)",
+      "Algorithmic rabbit-holes (extreme diet, self-harm, misogyny, hate)"
     ],
-    settings: [
+    "settings": [
       "Two-factor auth on every account",
       "Review who can DM them on each platform",
       "Lock down photo-sharing: private accounts, no public face photos",
-      "Discuss ‘nothing leaves the phone you wouldn’t want printed’",
+      "Discuss ‘nothing leaves the phone you wouldn’t want printed’"
     ],
-    conversation: [
+    "conversation": [
       "Make it clear: if a nude is leaked or faked, you will help — no punishment, no phone confiscation",
       "Explain sextortion calmly: stop replying, don't pay, tell a trusted adult and report. Do not copy or forward sexual images of anyone who may be under 18; you do not need evidence before asking police for help.",
       "Explain that AI-made fake nudes happen to people who never sent anything — and that reporting works (Report Remove, IWF)",
-      "Talk about consent and screenshots",
+      "Talk about consent and screenshots"
     ],
-    redFlags: [
+    "redFlags": [
       "Sudden withdrawal, secrecy, sleep loss",
-      "Mentions of someone older they’ve ‘only met online’",
+      "Mentions of someone older they’ve ‘only met online’"
     ],
-    screenTime: {
-      recommended:
-        "No hour cap is realistic at this age, and the UK sets none. Protect 8–10 hours of sleep, daily activity, schoolwork and offline friendships; use roughly 2 hours a day of pure social scrolling as a talking point rather than a rule.",
-      ukContext:
-        "US bodies (Surgeon General, APA) publish the firmest numbers. UK guidance stays focused on sleep, activity, content and support — treat the figures below as international guidance.",
-      sources: [
-        { label: "Children and parents: media use and attitudes report", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
-        { label: "The health impacts of screen time — guide for clinicians and parents", org: "Royal College of Paediatrics and Child Health", region: "UK", url: "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents" },
-        { label: "APA Health Advisory on Social Media Use in Adolescence", org: "American Psychological Association", region: "USA (international guidance)", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
-        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA (international guidance)", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
+    "screenTime": {
+      "recommended": "Protect sleep, movement, schoolwork and offline relationships. Choose content and agree manageable boundaries together. A time target alone cannot establish whether use is healthy or harmful.",
+      "ukContext": "Separate family rules from formal guidance. Canada’s linked guideline suggests no more than 2 hours of recreational screen time for ages 5–17; this is not a UK rule or a quota specifically for social media. The UK activity guidance and international sleep advice address other parts of the day.",
+      "sources": [
+        {
+          "label": "UK Chief Medical Officers’ physical activity guidelines (July 2026)",
+          "org": "UK Chief Medical Officers",
+          "region": "UK",
+          "url": "https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report/uk-chief-medical-officers-physical-activity-guidelines"
+        },
+        {
+          "label": "24-Hour Movement Guidelines, ages 5–17",
+          "org": "Canadian Society for Exercise Physiology",
+          "region": "Canada (international guidance)",
+          "url": "https://csepguidelines.ca/guidelines/children-youth/"
+        },
+        {
+          "label": "Sleep duration guidance",
+          "org": "NHLBI / US National Institutes of Health",
+          "region": "USA (international guidance)",
+          "url": "https://www.nhlbi.nih.gov/health/sleep/how-much-sleep"
+        }
       ],
-      consequences: [
-        "Studies have found an association between more than 3 hours a day on social media and depression, self-harm and suicidal ideation (Lancet Child & Adolescent Health, 2019). Sleep loss and cyberbullying appear to explain much of the link — screen time alone is not shown to be the cause.",
-        "Sextortion and image-based abuse have risen sharply; the Internet Watch Foundation recorded record UK case numbers in 2024.",
-        "AI ‘nudify’ tools can turn an ordinary photo into a fake nude in seconds, and UK teens have been targeted in school settings.",
-        "Recommender feeds have been shown to surface pro-anorexia, self-harm and misogynistic content to teen test accounts within minutes (Amnesty International, 2023).",
-        "Chronic short sleep is associated with worse mood, immune function and school performance.",
-      ],
+      "consequences": [
+        "The 2019 English study examined frequency of social-media use, not a three-hour threshold. Associations with distress and wellbeing varied by sex; sleep, cyberbullying and activity accounted for part of the associations, especially among girls. It did not prove cause.",
+        "Amnesty’s 2023 TikTok investigation concerned test accounts and self-harm-related recommendations. Historical experiments do not establish what every teenager sees today.",
+        "Sexual images, including AI fakes, can be reported through the linked services. Do not copy or forward sexual images of anyone who may be under 18; ask police about existing material."
+      ]
     },
-    deepDive: [
-      { type: "Study", source: "The Lancet Child & Adolescent Health (2019)", title: "Association between social media use and depression among 13–16 year olds in England", url: "https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(19)30186-5/fulltext", note: "Sleep loss and cyberbullying explain much of the association." },
-      { type: "Report", source: "Internet Watch Foundation (2024)", title: "Annual Report — Sextortion and self-generated child sexual abuse imagery", url: "https://www.iwf.org.uk/annual-report-2023/", note: "Record numbers of UK teen sextortion cases." },
-      { type: "Article", source: "Internet Watch Foundation / NSPCC", title: "Report Remove — get a nude image of yourself taken off the internet", url: "https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/remove-nude-image-shared-online/", note: "UK service for under-18s; works for real and AI-generated images." },
-      { type: "Report", source: "Internet Watch Foundation (2024)", title: "AI-generated child sexual abuse imagery — update report", url: "https://www.iwf.org.uk/about-us/why-we-exist/our-research/how-ai-is-being-abused-to-create-child-sexual-abuse-imagery/", note: "How ‘nudify’ apps are being used against real children." },
-      { type: "Article", source: "National Crime Agency / CEOP", title: "Sextortion: what to do if you or your child is targeted", url: "https://www.ceopeducation.co.uk/parents/articles/is-your-child-being-blackmailed-online/", note: "UK police guidance: stop contact, don't pay, keep evidence, report." },
-      { type: "Report", source: "Amnesty International (2023)", title: "Driven into the Darkness: How TikTok's For You feed encourages self-harm and suicidal ideation", url: "https://www.amnesty.org/en/documents/pol40/7350/2023/en/", note: "Algorithm audit of teen test accounts." },
-      { type: "Article", source: "APA (American Psychological Association)", title: "Health Advisory on Social Media Use in Adolescence", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
-      { type: "Video", source: "Netflix", title: "The Social Dilemma", url: "https://www.thesocialdilemma.com/", note: "Documentary on persuasive design and teen mental health." },
-    ],
+    "deepDive": [
+      {
+        "type": "Study",
+        "source": "The Lancet Child & Adolescent Health (2019)",
+        "title": "Roles of cyberbullying, sleep, and physical activity in social-media and wellbeing associations",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31420213/",
+        "note": "English longitudinal data, ages 13–16. Exposure was frequency of use, not hours; mediation differed between girls and boys."
+      },
+      {
+        "type": "Report",
+        "source": "Internet Watch Foundation (2023 report)",
+        "title": "IWF annual report 2023",
+        "url": "https://www.iwf.org.uk/annual-report-2023/",
+        "note": "Reports handled by the organisation are not a population prevalence estimate or a count of all UK cases."
+      },
+      {
+        "type": "Article",
+        "source": "Internet Watch Foundation / NSPCC",
+        "title": "Report Remove — get a nude image of yourself taken off the internet",
+        "url": "https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/report-remove/",
+        "note": "UK service for under-18s; works for real and AI-generated images."
+      },
+      {
+        "type": "Report",
+        "source": "Internet Watch Foundation (2024)",
+        "title": "AI-generated child sexual abuse imagery — update report",
+        "url": "https://www.iwf.org.uk/about-us/why-we-exist/our-research/how-ai-is-being-abused-to-create-child-sexual-abuse-imagery/",
+        "note": "How ‘nudify’ apps are being used against real children."
+      },
+      {
+        "type": "Article",
+        "source": "Police.uk",
+        "title": "Sextortion: what to do if you or your child is targeted",
+        "url": "https://www.police.uk/advice/advice-and-information/online-safety/online-safety/sextortion/sextortion-reporting-it-to-us/",
+        "note": "Report without waiting to collect evidence. Do not copy or forward sexual images of anyone who may be under 18."
+      },
+      {
+        "type": "Report",
+        "source": "Amnesty International (2023)",
+        "title": "Driven into the Darkness: How TikTok's For You feed encourages self-harm and suicidal ideation",
+        "url": "https://www.amnesty.org/en/documents/pol40/7350/2023/en/",
+        "note": "Algorithm audit of teen test accounts."
+      },
+      {
+        "type": "Article",
+        "source": "APA (American Psychological Association)",
+        "title": "Health Advisory on Social Media Use in Adolescence",
+        "url": "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use"
+      },
+      {
+        "type": "Video",
+        "source": "Netflix",
+        "title": "The Social Dilemma",
+        "url": "https://www.thesocialdilemma.com/",
+        "note": "Documentary on persuasive design and teen mental health."
+      },
+      {
+        "type": "Study",
+        "source": "Sleep Medicine Reviews (2015)",
+        "title": "Screen time and sleep among school-aged children and adolescents: a systematic literature review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25193149/",
+        "note": "Review of 67 studies; most found associations with shorter or later sleep. Causation was not established and results varied."
+      }
+    ]
   },
-
   {
-    slug: "16-17",
-    range: "16–17",
-    headline: "Independence & risk",
-    summary:
-      "Almost adults online. The risks shift to scams, identity, finances and digital footprint.",
-    behaviours: [
+    "slug": "16-17",
+    "range": "16–17",
+    "headline": "Independence & risk",
+    "summary": "Almost adults online. The risks shift to scams, identity, finances and digital footprint.",
+    "behaviours": [
       "Banking apps, BNPL, crypto curiosity",
       "Job and uni applications online",
-      "Adult relationships and dating apps (often under-age)",
+      "Adult relationships and dating apps (often under-age)"
     ],
-    risks: [
+    "risks": [
       "Money-mule recruitment — being paid to let money pass through their bank account (a criminal offence in the UK)",
       "Fake job and ‘easy money’ adverts on TikTok, Snapchat, Telegram and WhatsApp",
       "Student-finance and university scams: fake Student Loans Company texts, bogus accommodation deposits",
       "Investment, crypto and trading-app scams, often promoted by influencers",
       "Online gambling and gambling-style mechanics (loot boxes, spread betting, ‘prediction’ apps)",
       "Romance scams and deepfake extortion",
-      "Permanent digital footprint affecting jobs and uni",
+      "Permanent digital footprint affecting jobs and uni"
     ],
-    settings: [
+    "settings": [
       "Strong, unique passwords + a password manager",
       "Lock down old social accounts they’ve forgotten",
       "Set spending limits and turn on transaction alerts in banking apps",
-      "Use GAMSTOP self-exclusion and bank gambling blocks if betting apps appear",
+      "Use GAMSTOP self-exclusion and bank gambling blocks if betting apps appear"
     ],
-    conversation: [
+    "conversation": [
       "Talk about what they’d do if blackmailed online",
       "“No legitimate job asks to use your bank account” — explain money muling and that it can freeze their account for years",
       "Agree that anything urgent about money or student finance gets checked with you first",
       "Show them Action Fraud and how to report a scam",
-      "Agree it’s fine to call you for a ride — no questions",
+      "Agree it’s fine to call you for a ride — no questions"
     ],
-    redFlags: [
+    "redFlags": [
       "Unexplained money in or out",
       "Talk of ‘easy money’ opportunities online",
-      "New payment or crypto apps they won't discuss",
+      "New payment or crypto apps they won't discuss"
     ],
-    screenTime: {
-      recommended:
-        "No hour cap at this age, and the UK sets none. Protect 8–10 hours of sleep, daily activity and at least one regular offline social activity. Studies have found an association between recreational screen use above about 4 hours a day and worse mental health.",
-      ukContext:
-        "The firmest numbers come from US research and advisories. UK guidance emphasises sleep, activity and healthy use rather than a daily quota.",
-      sources: [
-        { label: "Physical activity guidelines: children and young people (5 to 18)", org: "UK Chief Medical Officers", region: "UK", url: "https://www.gov.uk/government/publications/physical-activity-guidelines-children-and-young-people-aged-5-to-18-years" },
-        { label: "Children and parents: media use and attitudes report", org: "Ofcom", region: "UK", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/" },
-        { label: "APA Health Advisory on Social Media Use in Adolescence", org: "American Psychological Association", region: "USA (international guidance)", url: "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use" },
-        { label: "Social Media and Youth Mental Health — Surgeon General's Advisory", org: "US Surgeon General", region: "USA (international guidance)", url: "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html" },
+    "screenTime": {
+      "recommended": "Protect sleep, movement, schoolwork and offline relationships. Choose content and agree manageable boundaries together. A time target alone cannot establish whether use is healthy or harmful.",
+      "ukContext": "Separate family rules from formal guidance. Canada’s linked guideline suggests no more than 2 hours of recreational screen time for ages 5–17; this is not a UK rule or a quota specifically for social media. The UK activity guidance and international sleep advice address other parts of the day.",
+      "sources": [
+        {
+          "label": "UK Chief Medical Officers’ physical activity guidelines (July 2026)",
+          "org": "UK Chief Medical Officers",
+          "region": "UK",
+          "url": "https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report/uk-chief-medical-officers-physical-activity-guidelines"
+        },
+        {
+          "label": "24-Hour Movement Guidelines, ages 5–17",
+          "org": "Canadian Society for Exercise Physiology",
+          "region": "Canada (international guidance)",
+          "url": "https://csepguidelines.ca/guidelines/children-youth/"
+        },
+        {
+          "label": "Sleep duration guidance",
+          "org": "NHLBI / US National Institutes of Health",
+          "region": "USA (international guidance)",
+          "url": "https://www.nhlbi.nih.gov/health/sleep/how-much-sleep"
+        }
       ],
-      consequences: [
-        "Heavy social media use (over about 3 hours a day) is associated with higher rates of anxiety, depression and loneliness. Association is not proof that screens alone caused it.",
-        "Financial harm from gambling-style game mechanics, crypto scams and money-mule recruitment via TikTok, Snapchat and Telegram — mule accounts can be closed and credit refused for up to six years.",
-        "A lasting digital footprint: nudes, drunken posts and group-chat screenshots resurface during university and job applications.",
-        "Short sleep is linked to poorer driving safety, mood regulation and exam performance.",
-      ],
+      "consequences": [
+        "Research and advisories describe associations between some patterns of social-media use and poorer wellbeing, with important differences between people. A time threshold is not a diagnosis.",
+        "Never let someone use your bank account to move unexplained money. If you suspect a scam, contact your bank promptly and use the official fraud-reporting service.",
+        "Other people can copy or share online posts. Discuss consent and privacy without suggesting that being targeted is the child’s fault."
+      ]
     },
-    deepDive: [
-      { type: "Article", source: "Action Fraud (City of London Police)", title: "Report a scam or online fraud — UK national reporting centre", url: "https://www.actionfraud.police.uk/", note: "Where to report fraud and cybercrime in England, Wales and Northern Ireland (Scotland: Police Scotland, 101)." },
-      { type: "Article", source: "Cifas", title: "Money mules — how young people are recruited and what it costs them", url: "https://www.cifas.org.uk/insight/fraud-risk-focus-blog/money-mules", note: "UK fraud-prevention service: mule accounts closed, banking refused for up to six years." },
-      { type: "Article", source: "Take Five to Stop Fraud (UK Finance)", title: "Stop. Challenge. Protect. — spotting job, investment and impersonation scams", url: "https://www.takefive-stopfraud.org.uk/", note: "UK banking-industry campaign with scripts for checking any money request." },
-      { type: "Article", source: "Student Loans Company / GOV.UK", title: "Spotting student finance scams", url: "https://www.gov.uk/government/news/student-finance-scams-what-to-look-out-for", note: "Fake SLC texts and emails spike around each term's payment dates." },
-      { type: "Report", source: "Financial Conduct Authority", title: "ScamSmart — investment and crypto scam warnings", url: "https://www.fca.org.uk/scamsmart", note: "Check any investment firm against the FCA register before money moves." },
-      { type: "Report", source: "UK Gambling Commission (2024)", title: "Young People and Gambling Survey", url: "https://www.gamblingcommission.gov.uk/statistics-and-research/publication/young-people-and-gambling-2024", note: "Loot boxes and in-game spending as routes into problem gambling." },
-      { type: "Article", source: "GamCare / GAMSTOP", title: "Free UK gambling support and self-exclusion", url: "https://www.gamcare.org.uk/", note: "National GamCare helpline 0808 8020 133; GAMSTOP blocks UK-licensed gambling sites." },
-      { type: "Report", source: "FBI / IC3", title: "Financial Sextortion Targeting Minors — Public Service Announcement", url: "https://www.ic3.gov/Media/Y2023/PSA230118", note: "Tactics used against teen boys via Instagram and Snapchat." },
-      { type: "Study", source: "Preventive Medicine Reports (2018)", title: "Associations between screen time and lower psychological well-being among children and adolescents", url: "https://www.sciencedirect.com/science/article/pii/S2211335518301827", note: "Twenge & Campbell — large US dataset; an association, not a causal test." },
-      { type: "Article", source: "Pew Research Center", title: "Teens, Social Media and Technology 2024", url: "https://www.pewresearch.org/internet/2024/12/12/teens-social-media-and-technology-2024/" },
-    ],
-  },
+    "deepDive": [
+      {
+        "type": "Article",
+        "source": "Report Fraud / City of London Police",
+        "title": "Report Fraud replaces Action Fraud",
+        "url": "https://www.reportfraud.police.uk/news/report-fraud-service-goes-live/",
+        "note": "England, Wales and Northern Ireland: Report Fraud. Scotland: Police Scotland on 101. Contact your bank promptly about suspected fraud."
+      },
+      {
+        "type": "Article",
+        "source": "Cifas",
+        "title": "Money mules — how young people are recruited and what it costs them",
+        "url": "https://www.cifas.org.uk/insight/fraud-risk-focus-blog/money-mules",
+        "note": "Fraud-prevention guidance about recruitment and consequences; outcomes depend on the individual circumstances."
+      },
+      {
+        "type": "Article",
+        "source": "Take Five to Stop Fraud (UK Finance)",
+        "title": "Stop. Challenge. Protect. — spotting job, investment and impersonation scams",
+        "url": "https://www.takefive-stopfraud.org.uk/",
+        "note": "UK banking-industry campaign with scripts for checking any money request."
+      },
+      {
+        "type": "Article",
+        "source": "Student Loans Company / GOV.UK",
+        "title": "Spotting student finance scams",
+        "url": "https://www.gov.uk/government/news/student-finance-scams-what-to-look-out-for",
+        "note": "Fake SLC texts and emails spike around each term's payment dates."
+      },
+      {
+        "type": "Report",
+        "source": "Financial Conduct Authority",
+        "title": "ScamSmart — investment and crypto scam warnings",
+        "url": "https://www.fca.org.uk/scamsmart",
+        "note": "Check any investment firm against the FCA register before money moves."
+      },
+      {
+        "type": "Report",
+        "source": "UK Gambling Commission (2024)",
+        "title": "Young People and Gambling Survey",
+        "url": "https://www.gamblingcommission.gov.uk/statistics-and-research/publication/young-people-and-gambling-2024",
+        "note": "Survey of young people’s gambling activity; a survey does not establish that loot boxes cause problem gambling."
+      },
+      {
+        "type": "Article",
+        "source": "GamCare / GAMSTOP",
+        "title": "Free UK gambling support and self-exclusion",
+        "url": "https://www.gamcare.org.uk/",
+        "note": "National GamCare helpline 0808 8020 133; GAMSTOP blocks UK-licensed gambling sites."
+      },
+      {
+        "type": "Report",
+        "source": "FBI / IC3",
+        "title": "Financial Sextortion Targeting Minors — Public Service Announcement",
+        "url": "https://www.ic3.gov/Media/Y2023/PSA230118",
+        "note": "Tactics used against teen boys via Instagram and Snapchat."
+      },
+      {
+        "type": "Study",
+        "source": "Preventive Medicine Reports (2018)",
+        "title": "Associations between screen time and lower psychological well-being among children and adolescents",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2211335518301827",
+        "note": "Twenge & Campbell — large US dataset; an association, not a causal test."
+      },
+      {
+        "type": "Article",
+        "source": "Pew Research Center",
+        "title": "Teens, Social Media and Technology 2024",
+        "url": "https://www.pewresearch.org/internet/2024/12/12/teens-social-media-and-technology-2024/"
+      },
+      {
+        "type": "Study",
+        "source": "Sleep Medicine Reviews (2015)",
+        "title": "Screen time and sleep among school-aged children and adolescents: a systematic literature review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25193149/",
+        "note": "Review of 67 studies; most found associations with shorter or later sleep. Causation was not established and results varied."
+      }
+    ]
+  }
 ];
 
 
@@ -412,7 +737,7 @@ export type AppGuide = {
   minAge: string;
   lastCheckedUK: string;
   officialMinAge: string;
-  ukAgeAssurance: "Yes" | "No" | "Partial";
+  ukAgeAssurance: "Yes" | "No" | "Partial" | "Not established";
   ukAgeAssuranceNote?: string;
   why: string;
   risks: string[];
@@ -430,672 +755,650 @@ export type AppGuide = {
 
 export const APPS: AppGuide[] = [
   {
-  "slug": "telegram",
-  "name": "Telegram",
-  "category": "Messaging",
-  "minAge": "18+ in the UK",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "18 in the UK",
-  "ukAgeAssurance": "No",
-  "ukAgeAssuranceNote": "Telegram terms require UK users to be at least 18. Enforcement effectiveness has not been independently verified.",
-  "why": "Huge group chats and ‘channels’ broadcasting to thousands. Popular for fandoms, leaks and crypto.",
-  "risks": [
-    "Public channels with extreme / sexual content",
-    "Strangers in large groups",
-    "Weak moderation of CSAM and scams"
-  ],
-  "settings": [
-    "Phone Number: Nobody",
-    "Who can add me to groups: My Contacts",
-    "Disable auto-download of media",
-    "Sensitive Content filter on"
-  ],
-  "detail": {
-    "overview": "Telegram mixes private chats, huge public groups (up to 200,000 members) and one-way ‘channels’. Most chats are NOT end-to-end encrypted by default — only ‘Secret Chats’ are.",
-    "ageRationale": "Telegram’s current terms require users in the UK, EU countries and Australia to be at least 18 to sign up. App-store ratings are separate from account eligibility.",
-    "evidence": [
-      {
-        "claim": "Telegram sets a minimum sign-up age of 18 in the UK.",
-        "publisher": "Telegram",
-        "title": "Terms of Service",
-        "year": "2026",
-        "url": "https://telegram.org/tos",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Telegram’s CEO was arrested in France in 2024 over the platform’s alleged failure to act on CSAM, drug trafficking and fraud in groups and channels.",
-        "publisher": "BBC News",
-        "title": "Telegram boss Pavel Durov charged in France",
-        "year": "2024",
-        "url": "https://www.bbc.com/news/articles/c4ng9nz0g5xo",
-        "type": "Investigative journalism"
-      },
-      {
-        "claim": "Internet Watch Foundation reports Telegram is repeatedly used to share child sexual abuse material via large channels.",
-        "publisher": "Internet Watch Foundation",
-        "title": "Annual Report 2023",
-        "year": "2023",
-        "url": "https://www.iwf.org.uk/annual-report-2023/",
-        "type": "Charity / NGO"
-      }
+    "slug": "telegram",
+    "name": "Telegram",
+    "category": "Messaging",
+    "minAge": "18+ in the UK",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "18 in the UK",
+    "ukAgeAssurance": "Not established",
+    "ukAgeAssuranceNote": "Telegram terms require UK users to be at least 18. Enforcement effectiveness has not been independently verified.",
+    "why": "Messaging, large groups and broadcast channels.",
+    "risks": [
+      "Unwanted content in public channels",
+      "Contact from people not known offline",
+      "Scams or pressure to share money and information"
     ],
-    "parentTalkingPoints": [
-      "Explain the UK 18+ rule. If a child already uses Telegram, discuss contacts calmly and get help for threats or exploitation.",
-      "Turn off auto-download so explicit images/videos don’t land in their gallery automatically."
+    "settings": [
+      "Phone Number: Nobody",
+      "Who can add me to groups: My Contacts",
+      "Disable auto-download of media",
+      "Sensitive Content filter on"
     ],
-    "settingsHowTo": [
-      {
-        "label": "Telegram privacy & security settings",
-        "url": "https://telegram.org/faq#q-what-are-your-thoughts-on-internet-privacy"
-      },
-      {
-        "label": "Internet Matters: Telegram parents’ guide",
-        "url": "https://www.internetmatters.org/hub/news-blogs/what-is-telegram-app-what-parents-need-to-know/"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "Telegram — what parents need to know",
-        "channel": "Internet Matters",
-        "url": "https://www.youtube.com/results?search_query=Internet+Matters+Telegram+parents+guide"
-      },
-      {
-        "title": "How to lock down Telegram privacy settings",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=Telegram+privacy+settings+parents"
-      }
-    ]
-  }
-},
-{
-    slug: "tiktok", name: "TikTok", category: "Social", minAge: "13+",
-    lastCheckedUK: "September 2026", officialMinAge: "13", ukAgeAssurance: "Partial", ukAgeAssuranceNote: "Age-estimation checks apply to 18+ features and live streaming, not to the main feed.",
-    why: "Short videos, trends, humour. The default ‘scrollable’ app for many teens.",
-    risks: ["Endless algorithmic feed", "Body image / dieting content", "DMs from strangers on public accounts"],
-    settings: ["Private account", "Restricted Mode", "Disable DMs from non-friends", "Family Pairing"],
-    detail: {
-      overview: "TikTok serves a personalised, never-ending feed of short videos. The ‘For You’ algorithm learns from how long a user lingers, not just what they like, which can rapidly narrow content towards intense or harmful themes.",
-      ageRationale: "TikTok’s own terms set a minimum age of 13 (with a separate, more restricted ‘Under 13’ experience in some regions). The limit is driven by US COPPA and UK Age-Appropriate Design Code data-protection rules, not by a developmental assessment.",
-      evidence: [
-        { claim: "Independent audit found TikTok’s algorithm can push self-harm and eating-disorder content to accounts registered as 13-year-olds within minutes.", publisher: "Center for Countering Digital Hate", title: "Deadly by Design", year: "2022", url: "https://counterhate.com/research/deadly-by-design/", type: "Charity / NGO" },
-        { claim: "Ofcom finds a majority of UK teenagers — and many under-13s — use TikTok, well below the platform’s own age limit.", publisher: "Ofcom (UK communications regulator)", title: "Children and parents: media use and attitudes report", year: "2024", url: "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/", type: "Regulator" },
-        { claim: "Ireland’s Data Protection Commission fined TikTok €345m for failing to protect children’s data, including default public accounts for under-16s.", publisher: "Data Protection Commission (Ireland)", title: "DPC announces €345 million fine of TikTok", year: "2023", url: "https://www.dataprotection.ie/en/news-media/press-releases/DPC-announces-345-million-euro-fine-of-TikTok", type: "Regulator" },
+    "detail": {
+      "overview": "Telegram mixes private chats, huge public groups (up to 200,000 members) and one-way ‘channels’. Most chats are NOT end-to-end encrypted by default — only ‘Secret Chats’ are.",
+      "ageRationale": "Telegram’s current terms require users in the UK, EU countries and Australia to be at least 18 to sign up. App-store ratings are separate from account eligibility.",
+      "evidence": [
+        {
+          "claim": "Telegram sets a minimum sign-up age of 18 in the UK.",
+          "publisher": "Telegram",
+          "title": "Terms of Service",
+          "year": "2026",
+          "url": "https://telegram.org/tos",
+          "type": "Platform policy"
+        }
       ],
-      parentTalkingPoints: [
-        "Ask to see their ‘For You’ feed together — it’s the clearest window into what TikTok thinks of them.",
-        "Agree a ‘no phones in bedroom overnight’ rule — TikTok sessions are strongly linked to sleep loss.",
+      "parentTalkingPoints": [
+        "Explain the UK 18+ rule. If a child already uses Telegram, discuss contacts calmly and get help for threats or exploitation.",
+        "Turn off auto-download so explicit images/videos don’t land in their gallery automatically."
       ],
-      settingsHowTo: [
-        { label: "TikTok Family Pairing guide", url: "https://www.tiktok.com/safety/en/guardians-guide/" },
-        { label: "Internet Matters: TikTok safety guide", url: "https://www.internetmatters.org/parental-controls/social-media/tiktok-privacy-and-safety-settings/" },
+      "settingsHowTo": [
+        {
+          "label": "Telegram privacy & security settings",
+          "url": "https://telegram.org/faq#q-what-are-your-thoughts-on-internet-privacy"
+        },
+        {
+          "label": "Internet Matters: Telegram parents’ guide",
+          "url": "https://www.internetmatters.org/hub/news-blogs/what-is-telegram-app-what-parents-need-to-know/"
+        }
       ],
-      videoTutorials: [
-        { title: "TikTok Family Pairing — set up parental controls", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+TikTok+Family+Pairing+parental+controls" },
-        { title: "How to make a TikTok account private", channel: "TikTok (official)", url: "https://www.youtube.com/results?search_query=TikTok+official+how+to+make+account+private" },
-        { title: "TikTok parents’ guide — what you need to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+TikTok+parents+guide" },
-      ],
-      riskVideo: { title: "New study warns about impact of TikTok on adolescents", channel: "Good Morning America (ABC News)", youtubeId: "aFIpQLYMGXY", note: "Reports on National Institutes of Health research into how short-video feeds affect the developing teenage brain." },
-    },
+      "videoTutorials": [
+        {
+          "title": "Search: Telegram — what parents need to know",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Internet+Matters+Telegram+parents+guide"
+        },
+        {
+          "title": "Search: How to lock down Telegram privacy settings",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Telegram+privacy+settings+parents"
+        }
+      ]
+    }
   },
   {
-  "slug": "snapchat",
-  "name": "Snapchat",
-  "category": "Messaging",
-  "minAge": "13+",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "13",
-  "ukAgeAssurance": "Partial",
-  "ukAgeAssuranceNote": "Age checks apply to 18+ content and some features; account age is still self-declared at sign-up.",
-  "why": "Photo messages that ‘disappear’ and Snap Map for live location sharing.",
-  "risks": [
-    "False sense of privacy (screenshots exist)",
-    "Live location with anyone added",
-    "Streaks driving compulsive use"
-  ],
-  "settings": [
-    "Ghost Mode on Snap Map",
-    "Contact Me: Friends only",
-    "Family Center"
-  ],
-  "detail": {
-    "overview": "Snapchat is built around disappearing photos, ‘Snap streaks’ that reward daily exchanges, and Snap Map which broadcasts a user’s live location to chosen friends.",
-    "ageRationale": "Minimum age 13 under Snap’s terms. The disappearing-message design and live location features are why regulators and child-safety charities treat it as higher risk than the age limit suggests.",
-    "evidence": [
-      {
-        "claim": "Family Centre requires the teen to accept an invitation and provides oversight without showing private conversation content.",
-        "publisher": "Snapchat",
-        "title": "Family Centre",
-        "url": "https://parents.snapchat.com/family-center?lang=en-GB",
-        "year": "2026",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "US state lawsuit alleges Snapchat’s design facilitates the supply of fentanyl and illegal drugs to minors via disappearing messages.",
-        "publisher": "New Mexico Department of Justice",
-        "title": "AG Torrez lawsuit against Snap Inc.",
-        "year": "2024",
-        "url": "https://nmdoj.gov/press-release/attorney-general-torrez-files-lawsuit-against-snap-inc/",
-        "type": "Regulator"
-      },
-      {
-        "claim": "NSPCC data shows Snapchat is the platform most often used in recorded child sexual communication offences in England and Wales.",
-        "publisher": "NSPCC",
-        "title": "Snapchat now the most used app in grooming crimes",
-        "year": "2024",
-        "url": "https://www.nspcc.org.uk/about-us/news-opinion/2024/snapchat-grooming-crimes/",
-        "type": "Charity / NGO"
-      },
-      {
-        "claim": "CEOP Education warns that Snap Map can expose children’s real-time location to anyone they’ve accepted as a friend.",
-        "publisher": "CEOP Education (NCA)",
-        "title": "Snap Map: advice for parents",
-        "year": "2023",
-        "url": "https://www.ceopeducation.co.uk/parents/articles/snap-map-what-parents-need-to-know/",
-        "type": "Regulator"
-      }
+    "slug": "tiktok",
+    "name": "TikTok",
+    "category": "Social",
+    "minAge": "13+",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13",
+    "ukAgeAssurance": "Partial",
+    "ukAgeAssuranceNote": "Age-dependent features and parental controls exist. A source review does not establish whether every account is correctly aged.",
+    "why": "Short videos, trends, humour. The default ‘scrollable’ app for many teens.",
+    "risks": [
+      "Unwanted or upsetting recommendations",
+      "Appearance comparison or dieting content",
+      "Unwanted contact through available messaging or comments"
     ],
-    "parentTalkingPoints": [
-      "Open Snap Map together and switch on Ghost Mode — it takes about 30 seconds.",
-      "Talk about screenshots: ‘disappearing’ doesn’t mean gone. Anything sent can be saved."
+    "settings": [
+      "Private account",
+      "Restricted Mode",
+      "Disable DMs from non-friends",
+      "Family Pairing"
     ],
-    "settingsHowTo": [
-      {
-        "label": "Snapchat: current Family Centre setup and features",
-        "url": "https://parents.snapchat.com/family-center?lang=en-GB"
-      },
-      {
-        "label": "Snapchat Family Center",
-        "url": "https://parents.snapchat.com/"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "Snapchat Family Center walkthrough",
-        "channel": "Snapchat (official)",
-        "url": "https://www.youtube.com/results?search_query=Snapchat+Family+Center+how+to+set+up"
-      },
-      {
-        "title": "How to turn on Ghost Mode on Snap Map",
-        "channel": "Internet Matters",
-        "url": "https://www.youtube.com/results?search_query=Snap+Map+Ghost+Mode+parental+guide"
-      },
-      {
-        "title": "Snapchat — what parents need to know",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Snapchat+parents+guide"
-      }
-    ],
-    "riskVideo": {
-      "title": "New report highlights Snapchat's harmful impact on kids",
-      "channel": "9NEWS (NBC affiliate)",
-      "youtubeId": "hgYhGoUQFWM",
-      "note": "Features Jonathan Haidt (author of The Anxious Generation) on Snapchat's addictive design and exposure of young users to harmful material."
-    }
-  }
-},
-  {
-  "slug": "instagram",
-  "name": "Instagram",
-  "category": "Social",
-  "minAge": "13+",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "13",
-  "ukAgeAssurance": "Yes",
-  "ukAgeAssuranceNote": "Meta uses facial age estimation (Yoti) and ID checks to confirm teen accounts in the UK.",
-  "why": "Photos, reels, stories. Heavy on social comparison.",
-  "risks": [
-    "Public profiles inviting DMs",
-    "Reels algorithm rabbit holes",
-    "Hidden ‘close friends’ accounts"
-  ],
-  "settings": [
-    "Private account",
-    "Sensitive Content Control: Less",
-    "Hidden Words filter",
-    "Family Center supervision"
-  ],
-  "detail": {
-    "overview": "Instagram combines a photo grid, Stories, and an algorithmic Reels feed. ‘Teen Accounts’ are now default-private for under-18s, but adult content, DMs and comparison pressure remain core issues.",
-    "ageRationale": "Minimum age 13. Meta’s own internal research, leaked in 2021, documented appearance-related harm to teenage girls — a key driver of subsequent Teen Account safeguards.",
-    "evidence": [
-      {
-        "claim": "Meta announced expanded Teen Account content settings and age-assurance measures in June 2026; rollout announcements are not independent tests of effectiveness.",
-        "publisher": "Meta",
-        "title": "Strengthening Teen Accounts",
-        "url": "https://about.fb.com/news/2026/06/strengthening-teen-accounts-with-new-safety-updates-on-instagram-and-facebook/",
-        "year": "2026",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Historical reporting on internal Meta research raised concerns about body image among teenage girls already experiencing body-image issues; this should not be presented as a finding about all teenage girls.",
-        "publisher": "The Wall Street Journal (investigative)",
-        "title": "Facebook Knows Instagram Is Toxic for Teen Girls",
-        "year": "2021",
-        "url": "https://www.wsj.com/articles/facebook-knows-instagram-is-toxic-for-teen-girls-company-documents-show-11631620739",
-        "type": "Investigative journalism"
-      },
-      {
-        "claim": "US Surgeon General formally advised that social media use including Instagram poses a ‘profound risk of harm’ to youth mental health.",
-        "publisher": "US Surgeon General",
-        "title": "Social Media and Youth Mental Health Advisory",
-        "year": "2023",
-        "url": "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html",
-        "type": "Health authority"
-      },
-      {
-        "claim": "41 US states and DC sued Meta, alleging Instagram features (infinite scroll, likes, beauty filters) were designed to be addictive to minors.",
-        "publisher": "US Attorneys General coalition",
-        "title": "State of California et al. v. Meta Platforms",
-        "year": "2023",
-        "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-co-leads-bipartisan-coalition-suing-meta-harming-youth",
-        "type": "Regulator"
-      }
-    ],
-    "parentTalkingPoints": [
-      "Sit together and switch the account to Teen Account / private — and check whether a ‘finsta’ also exists.",
-      "Mute, don’t unfollow: muting accounts that trigger comparison spirals avoids social fallout."
-    ],
-    "settingsHowTo": [
-      {
-        "label": "Instagram Family Center",
-        "url": "https://familycenter.instagram.com/"
-      },
-      {
-        "label": "Internet Matters: Instagram safety guide",
-        "url": "https://www.internetmatters.org/parental-controls/social-media/instagram-privacy-and-safety-settings/"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "Instagram Teen Accounts & supervision setup",
-        "channel": "Meta (official)",
-        "url": "https://www.youtube.com/results?search_query=Instagram+Teen+Accounts+supervision+setup"
-      },
-      {
-        "title": "How to make Instagram private + hide story",
-        "channel": "Internet Matters",
-        "url": "https://www.youtube.com/results?search_query=Internet+Matters+Instagram+private+account"
-      },
-      {
-        "title": "Instagram parents’ ultimate guide",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Instagram+parents+guide"
-      }
-    ],
-    "riskVideo": {
-      "title": "Facebook Whistleblower Frances Haugen: The 60 Minutes Interview",
-      "channel": "60 Minutes (CBS News)",
-      "youtubeId": "_Lx5VmAdZSI",
-      "note": "Frances Haugen explains internal Meta research showing Instagram worsens body-image and mental-health outcomes for teenage girls."
-    }
-  }
-},
-  {
-  "slug": "youtube",
-  "name": "YouTube",
-  "category": "Video",
-  "minAge": "13+ (Kids: under 13)",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "13 independently; supervised options for younger children",
-  "ukAgeAssurance": "Yes",
-  "ukAgeAssuranceNote": "Google applies age estimation in the UK and asks for ID or a card for age-restricted content.",
-  "why": "Where most kids actually watch ‘TV’. Includes gaming streams and shorts.",
-  "risks": [
-    "Auto-play into unrelated content",
-    "Shorts — fast, addictive feed",
-    "Comments containing strangers"
-  ],
-  "settings": [
-    "Restricted Mode",
-    "Supervised Account for under-13s",
-    "Disable autoplay",
-    "YouTube Kids for younger kids"
-  ],
-  "detail": {
-    "overview": "Standard YouTube is 13+, with a separate YouTube Kids app and Supervised Account option for younger children. Shorts (vertical short videos) behave more like TikTok than traditional YouTube.",
-    "ageRationale": "13+ is set by Google to comply with US COPPA and equivalent data-protection rules. YouTube Kids exists because the main platform isn’t designed for under-13s — but YouTube Kids itself has been criticised for moderation gaps.",
-    "evidence": [
-      {
-        "claim": "Parents can set up supervised kid accounts for children below 13 or the relevant local age.",
-        "publisher": "YouTube Help",
-        "title": "Set up supervised kid accounts",
-        "url": "https://support.google.com/youtube/answer/10314074?hl=en",
-        "year": "2026",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "US FTC fined YouTube $170 million for illegally collecting children’s data on the main platform.",
-        "publisher": "Federal Trade Commission (US)",
-        "title": "Google and YouTube Will Pay Record $170 Million for Alleged Violations of COPPA",
-        "year": "2019",
-        "url": "https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law",
-        "type": "Regulator"
-      },
-      {
-        "claim": "Mozilla’s crowdsourced study found YouTube’s recommendation algorithm is the main driver of regretful viewing experiences.",
-        "publisher": "Mozilla Foundation",
-        "title": "YouTube Regrets",
-        "year": "2021",
-        "url": "https://foundation.mozilla.org/en/youtube/findings/",
-        "type": "Charity / NGO"
-      },
-      {
-        "claim": "Ofcom finds YouTube is the most-used online platform among UK children aged 3–17.",
-        "publisher": "Ofcom",
-        "title": "Children and parents: media use and attitudes report",
-        "year": "2024",
-        "url": "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/",
-        "type": "Regulator"
-      }
-    ],
-    "parentTalkingPoints": [
-      "Auto-play is the single biggest setting to switch off for younger kids.",
-      "For under-13s, use YouTube Kids or a Supervised Account rather than the main app."
-    ],
-    "settingsHowTo": [
-      {
-        "label": "Google Family Link",
-        "url": "https://families.google/familylink/"
-      },
-      {
-        "label": "YouTube: Supervised experiences for kids and teens",
-        "url": "https://support.google.com/youtubekids/answer/10314940"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "Set up a Supervised YouTube account",
-        "channel": "Google Families (official)",
-        "url": "https://www.youtube.com/results?search_query=Google+supervised+YouTube+account+setup"
-      },
-      {
-        "title": "How to turn off autoplay on YouTube",
-        "channel": "Internet Matters",
-        "url": "https://www.youtube.com/results?search_query=YouTube+turn+off+autoplay+parents"
-      },
-      {
-        "title": "YouTube & YouTube Kids — parents’ guide",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+YouTube+Kids+parents+guide"
-      }
-    ],
-    "riskVideo": {
-      "title": "The nightmare videos of children's YouTube — and what's wrong with the internet today",
-      "channel": "TED",
-      "youtubeId": "v9EKV2nSU8w",
-      "note": "Writer James Bridle's widely-cited talk on how YouTube's recommendation system surfaces disturbing content to children."
-    }
-  }
-},
-  {
-  "slug": "whatsapp",
-  "name": "WhatsApp",
-  "category": "Messaging",
-  "minAge": "13+ independently; parent-managed accounts for younger users where available",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "13 independently; younger parent-managed accounts where available",
-  "ukAgeAssurance": "No",
-  "ukAgeAssuranceNote": "WhatsApp now documents parent-managed accounts for under-13s. Check availability in your app and region; this review has not tested the UK setup flow.",
-  "why": "School class group chats live here. Used by every age.",
-  "risks": [
-    "Being added to groups by strangers",
-    "Forwarded misinformation",
-    "Disappearing messages hiding bullying"
-  ],
-  "settings": [
-    "Groups: My Contacts",
-    "Last Seen: Contacts",
-    "Two-step verification"
-  ],
-  "detail": {
-    "overview": "End-to-end encrypted messenger. The risk for children is rarely the encryption itself — it’s group chats with classmates that escalate quickly, and forwarded content from outside the group.",
-    "ageRationale": "Distinguish an independent account from a parent-managed account. WhatsApp now publishes specific rules and privacy information for parent-created accounts for under-13s (or the higher local minimum). Check the current setup guidance and availability rather than entering a false birthday.",
-    "evidence": [
-      {
-        "claim": "WhatsApp documents parent-managed accounts for children below the usual minimum age.",
-        "publisher": "WhatsApp",
-        "title": "Privacy disclosure for parent-managed accounts",
-        "url": "https://www.whatsapp.com/legal/privacy-disclosure-for-parent-managed-accounts",
-        "year": "2026",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Internet Matters reports group chats are one of the most common settings for cyberbullying experienced by UK 9–16s.",
-        "publisher": "Internet Matters",
-        "title": "Cyberbullying: Children’s experiences",
-        "year": "2023",
-        "url": "https://www.internetmatters.org/issues/cyberbullying/",
-        "type": "Charity / NGO"
-      },
-      {
-        "claim": "UK Safer Internet Centre advises that WhatsApp groups are a key vector for sharing harmful and illegal content between peers.",
-        "publisher": "UK Safer Internet Centre",
-        "title": "Parent and carer resources",
-        "year": "2024",
-        "url": "https://saferinternet.org.uk/guide-and-resource/parents-and-carers",
-        "type": "Charity / NGO"
-      }
-    ],
-    "parentTalkingPoints": [
-      "Agree that they can leave any group, any time, no questions asked — and you’ll back them up with other parents.",
-      "Set ‘Groups: My Contacts’ so strangers can’t add them to chats."
-    ],
-    "settingsHowTo": [
-      {
-        "label": "WhatsApp parent-managed accounts",
-        "url": "https://www.whatsapp.com/security/parent-managed-accounts"
-      },
-      {
-        "label": "WhatsApp privacy settings",
-        "url": "https://faq.whatsapp.com/3196575617535613"
-      },
-      {
-        "label": "NSPCC Net Aware: WhatsApp",
-        "url": "https://www.net-aware.org.uk/networks/whatsapp/"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "WhatsApp privacy & group settings walkthrough",
-        "channel": "WhatsApp (official)",
-        "url": "https://www.youtube.com/results?search_query=WhatsApp+privacy+settings+how+to"
-      },
-      {
-        "title": "WhatsApp for parents — what you need to know",
-        "channel": "Internet Matters",
-        "url": "https://www.youtube.com/results?search_query=Internet+Matters+WhatsApp+parents+guide"
-      },
-      {
-        "title": "Two-step verification on WhatsApp",
-        "channel": "NSPCC / Net Aware",
-        "url": "https://www.youtube.com/results?search_query=WhatsApp+two+step+verification+setup"
-      }
-    ],
-    "riskVideo": {
-      "title": "Parental controls for messaging & devices — real advice from a mum of two",
-      "channel": "Internet Matters",
-      "youtubeId": "zplUsBQeV_8",
-      "note": "Covers messaging-app risks including WhatsApp group chats."
-    }
-  }
-},
-  {
-  "slug": "discord",
-  "name": "Discord",
-  "category": "Messaging",
-  "minAge": "13+ (18+ content now verified)",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "13",
-  "ukAgeAssurance": "Yes",
-  "ukAgeAssuranceNote": "UK users must pass facial age estimation or ID to view 18+ content; teen defaults apply otherwise.",
-  "why": "Voice and text servers, especially for gamers and fandoms.",
-  "risks": [
-    "Public servers with adult content — UK users must now pass an age check to see 18+ material, but the check is beatable",
-    "Strangers in voice channels and DM requests from server members",
-    "Scam, crypto and 'free Nitro' phishing DMs, plus sextortion attempts that move to private chat"
-  ],
-  "settings": [
-    "UK: age-assurance check (face scan or ID) now gates 18+ content — check whether the account has been verified and how",
-    "Safe Direct Messaging defaults to filtering for everyone; under-18 accounts get the strictest defaults automatically",
-    "Set DM requests from server members to off and friend requests to 'Friends of friends' or 'No one'",
-    "Link your account in Discord Family Centre to see their servers, friends and messages (not message content)"
-  ],
-  "detail": {
-    "overview": "Discord is organised into 'servers' — anything from a 5-friend chat to a 200,000-member public community, with voice channels, DMs and file sharing built in. Two big changes matter for parents. First, under the UK Online Safety Act every UK account — new and existing — now gets age-appropriate default settings, including automatic filtering of sensitive content, and anything flagged 18+ (age-restricted channels, servers and explicit media) is locked until the user proves they're an adult, usually via a facial age scan or ID. Second, Discord has announced a global 'teen-by-default' model where unverified accounts worldwide get the teen experience; after a privacy backlash over its verification vendors, the global rollout was pushed back to the second half of 2026 — but the UK rules are already in force.",
-    "ageRationale": "Discord says UK users receive protective defaults. Confirmed adult status is required to access age-restricted spaces or change certain content and message-request settings. Its filters cover images and videos, not messages, voice or calls. Platform documentation describes policy, not independently measured effectiveness. This review has not established that a VPN reliably bypasses these checks.",
-    "evidence": [
-      {
-        "claim": "Discord says UK users receive protective defaults. Confirmed adult status is required to access age-restricted spaces or change certain content and message-request settings. Its filters cover images and videos, not messages, voice or calls.",
-        "publisher": "Discord",
-        "title": "Current UK age-assurance guidance",
-        "year": "2026",
-        "url": "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Discord's own help centre confirms that under the UK Online Safety Act, all new and existing UK users receive updated age-appropriate default settings, and age-restricted content requires an age check.",
-        "publisher": "Discord Help Center",
-        "title": "Age Assurance for UK Users",
-        "year": "2026",
-        "url": "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Discord explains how the age check works — facial age estimation or ID via a verification vendor — and which features are gated until it's passed.",
-        "publisher": "Discord Help Center",
-        "title": "How to Complete Age Assurance on Discord",
-        "year": "2026",
-        "url": "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Assurance-on-Discord",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Discord's leadership acknowledged the backlash to its global age-verification plans and delayed the worldwide 'teen-by-default' rollout to the second half of 2026 to expand verification options.",
-        "publisher": "Discord (official blog)",
-        "title": "Getting Global Age Assurance Right: What We Got Wrong and What's Changing",
-        "year": "2026",
-        "url": "https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Discord ended its partnership with verification vendor Persona after a UK age-check test triggered a public outcry over government ID collection.",
-        "publisher": "Ars Technica",
-        "title": "Fury over Discord's age checks explodes after shady Persona test in UK",
-        "year": "2026",
-        "url": "https://arstechnica.com/tech-policy/2026/02/discord-and-persona-end-partnership-after-shady-uk-age-test-sparks-outcry/",
-        "type": "Investigative journalism"
-      },
-      {
-        "claim": "Reporters defeated Discord and Reddit's UK facial age checks using a video-game character's face from Death Stranding's photo mode — no real adult needed.",
-        "publisher": "The Verge",
-        "title": "Reddit and Discord's UK age verification can be defeated by Death Stranding's photo mode",
-        "year": "2025",
-        "url": "https://www.theverge.com/report/714402/uk-age-verification-bypass-death-stranding-reddit-discord",
-        "type": "Investigative journalism"
-      },
-      {
-        "claim": "NBC News investigation documented dozens of prosecutions over six years for grooming, kidnapping or sexual assault facilitated through Discord.",
-        "publisher": "NBC News (investigative)",
-        "title": "Discord struggles with child safety",
-        "year": "2023",
-        "url": "https://www.nbcnews.com/tech/social-media/discord-child-safety-grooming-extortion-rcna101620",
-        "type": "Investigative journalism"
-      },
-      {
-        "claim": "UK Safer Internet Centre highlights that Discord servers can expose children to explicit, extremist, and harmful content via communities they join voluntarily.",
-        "publisher": "UK Safer Internet Centre",
-        "title": "Parent and carer resources",
-        "year": "2024",
-        "url": "https://saferinternet.org.uk/guide-and-resource/parents-and-carers",
-        "type": "Charity / NGO"
-      }
-    ],
-    "parentTalkingPoints": [
-      "Ask which servers they're in and who runs them — public vs friends-only matters more than the app itself.",
-      "Set up Family Centre together rather than in secret — you see servers and friends, not message content, which keeps trust intact.",
-      "Review privacy and contact settings together. If unwanted content appears, help them report it without blaming them or assuming how it got through."
-    ],
-    "settingsHowTo": [
-      {
-        "label": "Discord: Age Assurance for UK Users (official)",
-        "url": "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users"
-      },
-      {
-        "label": "Discord: How to complete age assurance (official)",
-        "url": "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Assurance-on-Discord"
-      },
-      {
-        "label": "Discord Family Centre",
-        "url": "https://discord.com/family-center"
-      },
-      {
-        "label": "Discord safety: Parent hub",
-        "url": "https://discord.com/safety-parents"
-      },
-      {
-        "label": "Ofcom: age checks for online safety — what you need to know",
-        "url": "https://www.ofcom.org.uk/online-safety/protecting-children/age-checks-for-online-safety--what-you-need-to-know-as-a-user"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "Discord Family Centre — setup walkthrough",
-        "channel": "Discord (official)",
-        "url": "https://www.youtube.com/results?search_query=Discord+Family+Center+setup"
-      },
-      {
-        "title": "Discord UK age verification explained",
-        "channel": "BBC / tech news coverage",
-        "url": "https://www.youtube.com/results?search_query=Discord+UK+age+verification+Online+Safety+Act"
-      },
-      {
-        "title": "Discord — parents' ultimate guide",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Discord+parents+guide"
-      }
-    ],
-    "riskVideo": {
-      "title": "Florida investigates Discord app over child safety concerns",
-      "channel": "WPLG Local 10 News (ABC affiliate)",
-      "youtubeId": "nEwGEoLYiBA",
-      "note": "News report on broad child-safety concerns around Discord servers and DMs."
-    }
-  }
-},
-  {
-    slug: "roblox", name: "Roblox", category: "Game", minAge: "All ages (rated by experience)",
-    lastCheckedUK: "21 September 2026", officialMinAge: "All ages (experience-based)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Facial age estimation or ID is required for chat, with age-grouped communication.",
-    why: "Millions of user-made games and a social hangout for under-12s — now with mandatory age checks before anyone can chat.",
-    risks: ["User-made games with adult themes", "Strangers bypassing age checks by playing along", "Robux scams and ‘free Robux’ links"],
-    settings: ["Chat now requires a facial age check or ID", "Check the account age and available chat permissions", "Parent-managed account link", "Spend controls"],
-    detail: {
-      overview: "Roblox hosts user-created games and social experiences. Age checks are required for chat. Its 2026 account system includes Roblox Kids for ages 5–8, Roblox Select for ages 9–15 and standard Roblox for age-checked users 16+. Chat options vary by age and region, and some allow Trusted Friends known outside Roblox. Age estimation is not infallible; check the assigned age and available controls together.",
-      ageRationale: "Account age, content ratings and permission to chat are different things. Roblox describes Kids accounts as accessing selected Minimal/Mild games and Select accounts as accessing selected Minimal/Mild/Moderate games. Restricted content is for ages 18+. Parents can link an account to manage games, chat, friends, screen time and spending. During the transition described by Roblox, some game access uses a self-declared age; chat still requires an age check. Check the official guide for current regional options.",
-      evidence: [
-        { claim: "Roblox describes Kids (5–8), Select (9–15) and standard (16+) accounts, Restricted content for 18+, linked parent controls and regional chat differences.", publisher: "Roblox", title: "What Families Need to Know About Roblox’s New Age-Based Protections", year: "2026", url: "https://about.roblox.com/newsroom/2026/05/what-families-should-know-roblox-kids-select", type: "Platform policy" },
-        { claim: "Roblox made facial age estimation or ID verification mandatory for chat globally in January 2026, the first gaming platform to do so, with chat limited to similar age groups and minors blocked from chatting with unknown adults.", publisher: "Roblox (official newsroom)", title: "A New Era of Safety: Facial Age Checks Now Required to Chat on Roblox", year: "2026", url: "https://about.roblox.com/newsroom/2026/01/roblox-age-checks-required-to-chat", type: "Platform policy" },
-        { claim: "Roblox explains how age checks work — facial age estimation, ID verification and, for minors, parent consent — and what each verified age band can access.", publisher: "Roblox Support (official help centre)", title: "Understanding Age Checks on Roblox", year: "2026", url: "https://en.help.roblox.com/hc/en-us/articles/39143693116052-Understanding-Age-Checks-on-Roblox", type: "Platform policy" },
-        { claim: "BBC News investigation documented sexual and gambling-style content accessible to child accounts on Roblox.", publisher: "BBC News (investigative)", title: "Roblox: The children’s game with a sex problem", year: "2024", url: "https://www.bbc.co.uk/news/technology-67772670", type: "Investigative journalism" },
-        { claim: "Revealing Reality researchers found children as young as five could contact adults on Roblox, describing the risks as ‘deeply disturbing’.", publisher: "The Guardian", title: "Risks to children playing Roblox ‘deeply disturbing’, say researchers", year: "2025", url: "https://www.theguardian.com/technology/2025/apr/14/risks-children-roblox-deeply-disturbing-researchers", type: "Investigative journalism" },
+    "detail": {
+      "overview": "TikTok recommends short videos through its For You feed. Watch history and other interactions can influence recommendations. Family Pairing offers controls, including keyword filters, but does not guarantee that every video will be suitable.",
+      "ageRationale": "TikTok sets age-dependent rules for accounts and features. Use the correct birthday and review Family Pairing together. An account minimum is not a clinical recommendation about suitability.",
+      "evidence": [
+        {
+          "claim": "In a 2022 test, CCDH researchers used accounts registered as 13-year-olds and engaged with body-image and mental-health content. Some received suicide or eating-disorder recommendations within minutes. This is historical test-account research, not a measure of every teenager’s feed today.",
+          "publisher": "Center for Countering Digital Hate",
+          "title": "Deadly by Design",
+          "year": "2022",
+          "url": "https://counterhate.com/research/deadly-by-design/",
+          "type": "Charity / NGO"
+        },
+        {
+          "claim": "In September 2023, Ireland’s DPC announced €345 million in administrative fines over TikTok’s handling of children’s personal data during July–December 2020. The findings included public-by-default settings; they do not describe today’s defaults.",
+          "publisher": "Data Protection Commission (Ireland)",
+          "title": "DPC announces €345 million fine of TikTok",
+          "year": "2023",
+          "url": "https://www.dataprotection.ie/en/news-media/press-releases/DPC-announces-345-million-euro-fine-of-TikTok",
+          "type": "Regulator"
+        },
+        {
+          "claim": "Family Pairing includes keyword filtering for For You and Following feeds; TikTok later announced parent blocking and additional visibility tools. Availability can depend on region and rollout.",
+          "publisher": "TikTok",
+          "title": "Family Pairing content filtering",
+          "url": "https://newsroom.tiktok.com/tiktok-family-paring-and-youth-council?lang=en-150",
+          "year": "2023",
+          "type": "Platform policy"
+        }
       ],
-      parentTalkingPoints: [
+      "parentTalkingPoints": [
+        "Look at the For You feed together and discuss what they enjoy or want to see less of.",
+        "Agree when to stop using devices so sleep and other activities have time too."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "TikTok Family Pairing guide",
+          "url": "https://www.tiktok.com/safety/en/guardians-guide/"
+        },
+        {
+          "label": "Internet Matters: TikTok safety guide",
+          "url": "https://www.internetmatters.org/parental-controls/social-media/tiktok-privacy-and-safety-settings/"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: TikTok Family Pairing — set up parental controls",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Internet+Matters+TikTok+Family+Pairing+parental+controls"
+        },
+        {
+          "title": "Search: How to make a TikTok account private",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=TikTok+official+how+to+make+account+private"
+        },
+        {
+          "title": "Search: TikTok parents’ guide — what you need to know",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+TikTok+parents+guide"
+        }
+      ],
+      "riskVideo": {
+        "title": "New study warns about impact of TikTok on adolescents",
+        "channel": "Good Morning America (ABC News)",
+        "youtubeId": "aFIpQLYMGXY",
+        "note": "Reports on National Institutes of Health research into how short-video feeds affect the developing teenage brain."
+      }
+    }
+  },
+  {
+    "slug": "snapchat",
+    "name": "Snapchat",
+    "category": "Messaging",
+    "minAge": "13+",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13",
+    "ukAgeAssurance": "Partial",
+    "ukAgeAssuranceNote": "Age checks apply to 18+ content and some features; account age is still self-declared at sign-up.",
+    "why": "Photo messages that ‘disappear’ and Snap Map for live location sharing.",
+    "risks": [
+      "False sense of privacy (screenshots exist)",
+      "Live location with anyone added",
+      "Streaks driving compulsive use"
+    ],
+    "settings": [
+      "Ghost Mode on Snap Map",
+      "Contact Me: Friends only",
+      "Family Center"
+    ],
+    "detail": {
+      "overview": "Snapchat is built around disappearing photos, ‘Snap streaks’ that reward daily exchanges, and Snap Map which broadcasts a user’s live location to chosen friends.",
+      "ageRationale": "Minimum age 13 under Snap’s terms. The disappearing-message design and live location features are why regulators and child-safety charities treat it as higher risk than the age limit suggests.",
+      "evidence": [
+        {
+          "claim": "Family Centre requires the teen to accept an invitation and provides oversight without showing private conversation content.",
+          "publisher": "Snapchat",
+          "title": "Family Centre",
+          "url": "https://parents.snapchat.com/family-center?lang=en-GB",
+          "year": "2026",
+          "type": "Platform policy"
+        }
+      ],
+      "parentTalkingPoints": [
+        "Open Snap Map together and switch on Ghost Mode — it takes about 30 seconds.",
+        "Talk about screenshots: ‘disappearing’ doesn’t mean gone. Anything sent can be saved."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "Snapchat: current Family Centre setup and features",
+          "url": "https://parents.snapchat.com/family-center?lang=en-GB"
+        },
+        {
+          "label": "Snapchat Family Center",
+          "url": "https://parents.snapchat.com/"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: Snapchat Family Center walkthrough",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Snapchat+Family+Center+how+to+set+up"
+        },
+        {
+          "title": "Search: How to turn on Ghost Mode on Snap Map",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Snap+Map+Ghost+Mode+parental+guide"
+        },
+        {
+          "title": "Search: Snapchat — what parents need to know",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Snapchat+parents+guide"
+        }
+      ],
+      "riskVideo": {
+        "title": "New report highlights Snapchat's harmful impact on kids",
+        "channel": "9NEWS (NBC affiliate)",
+        "youtubeId": "hgYhGoUQFWM",
+        "note": "Features Jonathan Haidt (author of The Anxious Generation) on Snapchat's addictive design and exposure of young users to harmful material."
+      }
+    }
+  },
+  {
+    "slug": "instagram",
+    "name": "Instagram",
+    "category": "Social",
+    "minAge": "13+",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13",
+    "ukAgeAssurance": "Yes",
+    "ukAgeAssuranceNote": "Meta uses facial age estimation (Yoti) and ID checks to confirm teen accounts in the UK.",
+    "why": "Photos, reels, stories. Heavy on social comparison.",
+    "risks": [
+      "Public profiles inviting DMs",
+      "Reels algorithm rabbit holes",
+      "Hidden ‘close friends’ accounts"
+    ],
+    "settings": [
+      "Private account",
+      "Sensitive Content Control: Less",
+      "Hidden Words filter",
+      "Family Center supervision"
+    ],
+    "detail": {
+      "overview": "Instagram combines a photo grid, Stories, and an algorithmic Reels feed. ‘Teen Accounts’ are now default-private for under-18s, but adult content, DMs and comparison pressure remain core issues.",
+      "ageRationale": "Minimum age 13. Meta’s own internal research, leaked in 2021, documented appearance-related harm to teenage girls — a key driver of subsequent Teen Account safeguards.",
+      "evidence": [
+        {
+          "claim": "Meta announced expanded Teen Account content settings and age-assurance measures in June 2026; rollout announcements are not independent tests of effectiveness.",
+          "publisher": "Meta",
+          "title": "Strengthening Teen Accounts",
+          "url": "https://about.fb.com/news/2026/06/strengthening-teen-accounts-with-new-safety-updates-on-instagram-and-facebook/",
+          "year": "2026",
+          "type": "Platform policy"
+        },
+        {
+          "claim": "US Surgeon General formally advised that social media use including Instagram poses a ‘profound risk of harm’ to youth mental health.",
+          "publisher": "US Surgeon General",
+          "title": "Social Media and Youth Mental Health Advisory",
+          "year": "2023",
+          "url": "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html",
+          "type": "Health authority"
+        }
+      ],
+      "parentTalkingPoints": [
+        "Sit together and switch the account to Teen Account / private — and check whether a ‘finsta’ also exists.",
+        "Mute, don’t unfollow: muting accounts that trigger comparison spirals avoids social fallout."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "Instagram Family Center",
+          "url": "https://familycenter.instagram.com/"
+        },
+        {
+          "label": "Internet Matters: Instagram safety guide",
+          "url": "https://www.internetmatters.org/parental-controls/social-media/instagram-privacy-and-safety-settings/"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: Instagram Teen Accounts & supervision setup",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Instagram+Teen+Accounts+supervision+setup"
+        },
+        {
+          "title": "Search: How to make Instagram private + hide story",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Internet+Matters+Instagram+private+account"
+        },
+        {
+          "title": "Search: Instagram parents’ ultimate guide",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Instagram+parents+guide"
+        }
+      ],
+      "riskVideo": {
+        "title": "Facebook Whistleblower Frances Haugen: The 60 Minutes Interview",
+        "channel": "60 Minutes (CBS News)",
+        "youtubeId": "_Lx5VmAdZSI",
+        "note": "Frances Haugen explains internal Meta research showing Instagram worsens body-image and mental-health outcomes for teenage girls."
+      }
+    }
+  },
+  {
+    "slug": "youtube",
+    "name": "YouTube",
+    "category": "Video",
+    "minAge": "13+ (Kids: under 13)",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13 independently; supervised options for younger children",
+    "ukAgeAssurance": "Yes",
+    "ukAgeAssuranceNote": "Google applies age estimation in the UK and asks for ID or a card for age-restricted content.",
+    "why": "Where most kids actually watch ‘TV’. Includes gaming streams and shorts.",
+    "risks": [
+      "Auto-play into unrelated content",
+      "Shorts — fast, addictive feed",
+      "Comments containing strangers"
+    ],
+    "settings": [
+      "Choose the appropriate supervised account",
+      "Review Shorts feed limits",
+      "Review Autoplay",
+      "Check content settings and device-specific controls"
+    ],
+    "detail": {
+      "overview": "Standard YouTube is 13+, with a separate YouTube Kids app and Supervised Account option for younger children. Shorts (vertical short videos) behave more like TikTok than traditional YouTube.",
+      "ageRationale": "Independent accounts and parent-managed experiences have different eligibility rules. For a younger child, review YouTube Kids or a supervised kid account; a content setting is not an account-age rule.",
+      "evidence": [
+        {
+          "claim": "Parents can set up supervised kid accounts for children below 13 or the relevant local age.",
+          "publisher": "YouTube Help",
+          "title": "Set up supervised kid accounts",
+          "url": "https://support.google.com/youtube/answer/10314074?hl=en",
+          "year": "2026",
+          "type": "Platform policy"
+        },
+        {
+          "claim": "In 2019, Google and YouTube agreed to pay $170 million to settle FTC and New York allegations about collecting children’s information without parental consent. This is a historical enforcement action.",
+          "publisher": "Federal Trade Commission (US)",
+          "title": "Google and YouTube Will Pay Record $170 Million for Alleged Violations of COPPA",
+          "year": "2019",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law",
+          "type": "Regulator"
+        }
+      ],
+      "parentTalkingPoints": [
+        "Review Autoplay and the current Shorts feed limit together.",
+        "For younger children, consider YouTube Kids or a supervised kid account on regular YouTube."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "Google Family Link",
+          "url": "https://families.google/familylink/"
+        },
+        {
+          "label": "YouTube: Supervised experiences for kids and teens",
+          "url": "https://support.google.com/youtubekids/answer/10314940"
+        },
+        {
+          "label": "Current supervised content settings",
+          "url": "https://support.google.com/youtube/answer/10315823?hl=en"
+        },
+        {
+          "label": "Supervised controls and Shorts limits",
+          "url": "https://support.google.com/youtubekids/answer/13877231?hl=en-GB"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: Set up a Supervised YouTube account",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Google+supervised+YouTube+account+setup"
+        },
+        {
+          "title": "Search: How to turn off autoplay on YouTube",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=YouTube+turn+off+autoplay+parents"
+        },
+        {
+          "title": "Search: YouTube & YouTube Kids — parents’ guide",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+YouTube+Kids+parents+guide"
+        }
+      ],
+      "riskVideo": {
+        "title": "The nightmare videos of children's YouTube — and what's wrong with the internet today",
+        "channel": "TED",
+        "youtubeId": "v9EKV2nSU8w",
+        "note": "Writer James Bridle's widely-cited talk on how YouTube's recommendation system surfaces disturbing content to children."
+      }
+    }
+  },
+  {
+    "slug": "whatsapp",
+    "name": "WhatsApp",
+    "category": "Messaging",
+    "minAge": "13+ independently; parent-managed accounts for younger users where available",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13 independently; younger parent-managed accounts where available",
+    "ukAgeAssurance": "Not established",
+    "ukAgeAssuranceNote": "WhatsApp now documents parent-managed accounts for under-13s. Check availability in your app and region; this review has not tested the UK setup flow.",
+    "why": "School class group chats live here. Used by every age.",
+    "risks": [
+      "Being added to groups by strangers",
+      "Forwarded misinformation",
+      "Disappearing messages hiding bullying"
+    ],
+    "settings": [
+      "Groups: My Contacts",
+      "Last Seen: Contacts",
+      "Two-step verification"
+    ],
+    "detail": {
+      "overview": "End-to-end encrypted messenger. The risk for children is rarely the encryption itself — it’s group chats with classmates that escalate quickly, and forwarded content from outside the group.",
+      "ageRationale": "Distinguish an independent account from a parent-managed account. WhatsApp now publishes specific rules and privacy information for parent-created accounts for under-13s (or the higher local minimum). Check the current setup guidance and availability rather than entering a false birthday.",
+      "evidence": [
+        {
+          "claim": "WhatsApp documents parent-managed accounts for children below the usual minimum age.",
+          "publisher": "WhatsApp",
+          "title": "Privacy disclosure for parent-managed accounts",
+          "url": "https://www.whatsapp.com/legal/privacy-disclosure-for-parent-managed-accounts",
+          "year": "2026",
+          "type": "Platform policy"
+        }
+      ],
+      "parentTalkingPoints": [
+        "Agree that they can leave any group, any time, no questions asked — and you’ll back them up with other parents.",
+        "Set ‘Groups: My Contacts’ so strangers can’t add them to chats."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "WhatsApp parent-managed accounts",
+          "url": "https://www.whatsapp.com/security/parent-managed-accounts"
+        },
+        {
+          "label": "WhatsApp privacy settings",
+          "url": "https://faq.whatsapp.com/3196575617535613"
+        },
+        {
+          "label": "NSPCC Net Aware: WhatsApp",
+          "url": "https://www.net-aware.org.uk/networks/whatsapp/"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: WhatsApp privacy & group settings walkthrough",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=WhatsApp+privacy+settings+how+to"
+        },
+        {
+          "title": "Search: WhatsApp for parents — what you need to know",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Internet+Matters+WhatsApp+parents+guide"
+        },
+        {
+          "title": "Search: Two-step verification on WhatsApp",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=WhatsApp+two+step+verification+setup"
+        }
+      ],
+      "riskVideo": {
+        "title": "Parental controls for messaging & devices — real advice from a mum of two",
+        "channel": "Internet Matters",
+        "youtubeId": "zplUsBQeV_8",
+        "note": "Covers messaging-app risks including WhatsApp group chats."
+      }
+    }
+  },
+  {
+    "slug": "discord",
+    "name": "Discord",
+    "category": "Messaging",
+    "minAge": "13+ (18+ content now verified)",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13",
+    "ukAgeAssurance": "Yes",
+    "ukAgeAssuranceNote": "UK users must pass facial age estimation or ID to view 18+ content; teen defaults apply otherwise.",
+    "why": "Voice and text servers, especially for gamers and fandoms.",
+    "risks": [
+      "Public servers with adult content — UK users must now pass an age check to see 18+ material, but the check is beatable",
+      "Strangers in voice channels and DM requests from server members",
+      "Scam, crypto and 'free Nitro' phishing DMs, plus sextortion attempts that move to private chat"
+    ],
+    "settings": [
+      "UK: age-assurance check (face scan or ID) now gates 18+ content — check whether the account has been verified and how",
+      "Safe Direct Messaging defaults to filtering for everyone; under-18 accounts get the strictest defaults automatically",
+      "Set DM requests from server members to off and friend requests to 'Friends of friends' or 'No one'",
+      "Link your account in Discord Family Centre to see their servers, friends and messages (not message content)"
+    ],
+    "detail": {
+      "overview": "Discord is organised into 'servers' — anything from a 5-friend chat to a 200,000-member public community, with voice channels, DMs and file sharing built in. Two big changes matter for parents. First, under the UK Online Safety Act every UK account — new and existing — now gets age-appropriate default settings, including automatic filtering of sensitive content, and anything flagged 18+ (age-restricted channels, servers and explicit media) is locked until the user proves they're an adult, usually via a facial age scan or ID. Second, Discord has announced a global 'teen-by-default' model where unverified accounts worldwide get the teen experience; after a privacy backlash over its verification vendors, the global rollout was pushed back to the second half of 2026 — but the UK rules are already in force.",
+      "ageRationale": "Discord says UK users receive protective defaults. Confirmed adult status is required to access age-restricted spaces or change certain content and message-request settings. Its filters cover images and videos, not messages, voice or calls. Platform documentation describes policy, not independently measured effectiveness. This review has not established that a VPN reliably bypasses these checks.",
+      "evidence": [
+        {
+          "claim": "Discord says UK users receive protective defaults. Confirmed adult status is required to access age-restricted spaces or change certain content and message-request settings. Its filters cover images and videos, not messages, voice or calls.",
+          "publisher": "Discord",
+          "title": "Current UK age-assurance guidance",
+          "year": "2026",
+          "url": "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users",
+          "type": "Platform policy"
+        }
+      ],
+      "parentTalkingPoints": [
+        "Ask which servers they're in and who runs them — public vs friends-only matters more than the app itself.",
+        "Set up Family Centre together rather than in secret — you see servers and friends, not message content, which keeps trust intact.",
+        "Review privacy and contact settings together. If unwanted content appears, help them report it without blaming them or assuming how it got through."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "Discord: Age Assurance for UK Users (official)",
+          "url": "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users"
+        },
+        {
+          "label": "Discord: How to complete age assurance (official)",
+          "url": "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Assurance-on-Discord"
+        },
+        {
+          "label": "Discord Family Centre",
+          "url": "https://discord.com/family-center"
+        },
+        {
+          "label": "Discord safety: Parent hub",
+          "url": "https://discord.com/safety-parents"
+        },
+        {
+          "label": "Ofcom: age checks for online safety — what you need to know",
+          "url": "https://www.ofcom.org.uk/online-safety/protecting-children/age-checks-for-online-safety--what-you-need-to-know-as-a-user"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: Discord Family Centre — setup walkthrough",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Discord+Family+Center+setup"
+        },
+        {
+          "title": "Search: Discord UK age verification explained",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Discord+UK+age+verification+Online+Safety+Act"
+        },
+        {
+          "title": "Search: Discord — parents' ultimate guide",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Discord+parents+guide"
+        }
+      ],
+      "riskVideo": {
+        "title": "Florida investigates Discord app over child safety concerns",
+        "channel": "WPLG Local 10 News (ABC affiliate)",
+        "youtubeId": "nEwGEoLYiBA",
+        "note": "News report on broad child-safety concerns around Discord servers and DMs."
+      }
+    }
+  },
+  {
+    "slug": "roblox",
+    "name": "Roblox",
+    "category": "Game",
+    "minAge": "All ages (rated by experience)",
+    "lastCheckedUK": "21 September 2026",
+    "officialMinAge": "All ages (experience-based)",
+    "ukAgeAssurance": "Yes",
+    "ukAgeAssuranceNote": "Facial age estimation or ID is required for chat, with age-grouped communication.",
+    "why": "Millions of user-made games and a social hangout for under-12s — now with mandatory age checks before anyone can chat.",
+    "risks": [
+      "User-made games with adult themes",
+      "Strangers bypassing age checks by playing along",
+      "Robux scams and ‘free Robux’ links"
+    ],
+    "settings": [
+      "Chat now requires a facial age check or ID",
+      "Check the account age and available chat permissions",
+      "Parent-managed account link",
+      "Spend controls"
+    ],
+    "detail": {
+      "overview": "Roblox hosts user-created games and social experiences. Age checks are required for chat. Its 2026 account system includes Roblox Kids for ages 5–8, Roblox Select for ages 9–15 and standard Roblox for age-checked users 16+. Chat options vary by age and region, and some allow Trusted Friends known outside Roblox. Age estimation is not infallible; check the assigned age and available controls together.",
+      "ageRationale": "Account age, content ratings and permission to chat are different things. Roblox describes Kids accounts as accessing selected Minimal/Mild games and Select accounts as accessing selected Minimal/Mild/Moderate games. Restricted content is for ages 18+. Parents can link an account to manage games, chat, friends, screen time and spending. During the transition described by Roblox, some game access uses a self-declared age; chat still requires an age check. Check the official guide for current regional options.",
+      "evidence": [
+        {
+          "claim": "Roblox describes Kids (5–8), Select (9–15) and standard (16+) accounts, Restricted content for 18+, linked parent controls and regional chat differences.",
+          "publisher": "Roblox",
+          "title": "What Families Need to Know About Roblox’s New Age-Based Protections",
+          "year": "2026",
+          "url": "https://about.roblox.com/newsroom/2026/05/what-families-should-know-roblox-kids-select",
+          "type": "Platform policy"
+        },
+        {
+          "claim": "Roblox explains how age checks work — facial age estimation, ID verification and, for minors, parent consent — and what each verified age band can access.",
+          "publisher": "Roblox Support (official help centre)",
+          "title": "Understanding Age Checks on Roblox",
+          "year": "2026",
+          "url": "https://en.help.roblox.com/hc/en-us/articles/39143693116052-Understanding-Age-Checks-on-Roblox",
+          "type": "Platform policy"
+        }
+      ],
+      "parentTalkingPoints": [
         "Link your own parent account and check that your child’s account age is correct. Never use an adult’s ID or face to give a child an adult account.",
         "Review the chat permissions available for their age and region. An age check enables some features; it is not a guarantee that every interaction is safe.",
         "Review friends and games together, then choose game, screen-time and spending limits through the linked parent account.",
-        "Agree what to do if anyone asks them to move a conversation to another app or offers free Robux.",
+        "Agree what to do if anyone asks them to move a conversation to another app or offers free Robux."
       ],
-      settingsHowTo: [
-        { label: "Roblox: account ages, chat options and linked parent controls", url: "https://about.roblox.com/newsroom/2026/05/what-families-should-know-roblox-kids-select" },
-        { label: "Roblox: Understanding Age Checks", url: "https://en.help.roblox.com/hc/en-us/articles/39143693116052-Understanding-Age-Checks-on-Roblox" },
-        { label: "Roblox: Parent and caregiver guide", url: "https://en.help.roblox.com/hc/en-us/articles/203313120-Parents-Safety-and-Moderation-Guide" },
-        { label: "Internet Matters: Roblox controls", url: "https://www.internetmatters.org/parental-controls/gaming-consoles/roblox-parental-controls/" },
+      "settingsHowTo": [
+        {
+          "label": "Roblox: account ages, chat options and linked parent controls",
+          "url": "https://about.roblox.com/newsroom/2026/05/what-families-should-know-roblox-kids-select"
+        },
+        {
+          "label": "Roblox: Understanding Age Checks",
+          "url": "https://en.help.roblox.com/hc/en-us/articles/39143693116052-Understanding-Age-Checks-on-Roblox"
+        },
+        {
+          "label": "Roblox: Parent and caregiver guide",
+          "url": "https://en.help.roblox.com/hc/en-us/articles/203313120-Parents-Safety-and-Moderation-Guide"
+        },
+        {
+          "label": "Internet Matters: Roblox controls",
+          "url": "https://www.internetmatters.org/parental-controls/gaming-consoles/roblox-parental-controls/"
+        }
       ],
-      videoTutorials: [
-        { title: "Roblox parental controls — full setup", channel: "Roblox (official)", url: "https://www.youtube.com/results?search_query=Roblox+official+parental+controls+setup" },
-        { title: "Roblox age checks explained", channel: "News coverage", url: "https://www.youtube.com/results?search_query=Roblox+facial+age+estimation+chat+news" },
-        { title: "Roblox parents’ guide", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+Roblox+parents+guide" },
+      "videoTutorials": [
+        {
+          "title": "Search: Roblox parental controls — full setup",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Roblox+official+parental+controls+setup"
+        },
+        {
+          "title": "Search: Roblox age checks explained",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Roblox+facial+age+estimation+chat+news"
+        },
+        {
+          "title": "Search: Roblox parents’ guide",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Roblox+parents+guide"
+        }
       ],
-      riskVideo: { title: "Roblox: The playground problem", channel: "Raising Digital · Investigation", videoUrl: "/media/roblox-risks.mp4", note: "Historical explainer based on April 2025 reporting. It predates the 2026 account and chat changes described above and is not a current settings tutorial." },
-    },
+      "riskVideo": {
+        "title": "Roblox: The playground problem",
+        "channel": "Raising Digital · Investigation",
+        "videoUrl": "/media/roblox-risks.mp4",
+        "note": "Historical explainer based on April 2025 reporting. It predates the 2026 account and chat changes described above and is not a current settings tutorial."
+      }
+    }
   },
   {
     "slug": "fortnite",
@@ -1130,20 +1433,12 @@ export const APPS: AppGuide[] = [
           "type": "Platform policy"
         },
         {
-          "claim": "US FTC fined Epic Games $520 million for violating COPPA and using ‘dark patterns’ to trick children and parents into purchases.",
+          "claim": "In December 2022, the FTC announced two Epic settlements totalling $520 million: a $275 million COPPA penalty and $245 million in consumer refunds over billing practices. The total was not all a fine.",
           "publisher": "Federal Trade Commission (US)",
           "title": "Fortnite maker Epic Games to pay more than half a billion dollars over FTC allegations",
           "year": "2022",
           "url": "https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations",
           "type": "Regulator"
-        },
-        {
-          "claim": "Common Sense Media review highlights voice chat with strangers as the primary concern for under-13s playing Fortnite.",
-          "publisher": "Common Sense Media",
-          "title": "Fortnite parents’ guide",
-          "year": "2024",
-          "url": "https://www.commonsensemedia.org/game-reviews/fortnite",
-          "type": "Charity / NGO"
         }
       ],
       "parentTalkingPoints": [
@@ -1162,18 +1457,18 @@ export const APPS: AppGuide[] = [
       ],
       "videoTutorials": [
         {
-          "title": "Fortnite parental controls — full walkthrough",
-          "channel": "Epic Games (official)",
+          "title": "Search: Fortnite parental controls — full walkthrough",
+          "channel": "YouTube search results — check the uploader and date",
           "url": "https://www.youtube.com/results?search_query=Epic+Games+Fortnite+parental+controls+how+to"
         },
         {
-          "title": "Cabined Accounts for under-13s explained",
-          "channel": "Internet Matters",
+          "title": "Search: Cabined Accounts for under-13s explained",
+          "channel": "YouTube search results — check the uploader and date",
           "url": "https://www.youtube.com/results?search_query=Fortnite+Cabined+Account+parents+guide"
         },
         {
-          "title": "Fortnite — what parents need to know",
-          "channel": "Common Sense Media",
+          "title": "Search: Fortnite — what parents need to know",
+          "channel": "YouTube search results — check the uploader and date",
           "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Fortnite+parents+guide"
         }
       ],
@@ -1186,160 +1481,128 @@ export const APPS: AppGuide[] = [
     }
   },
   {
-  "slug": "twitch",
-  "name": "Twitch",
-  "category": "Video",
-  "minAge": "13+; minors need parental supervision",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "13",
-  "ukAgeAssurance": "Partial",
-  "ukAgeAssuranceNote": "Age checks apply to mature streams and some features only.",
-  "why": "Live game streaming with chat. Streamers become parasocial role models.",
-  "risks": [
-    "Live, unmoderated chat",
-    "Grooming via Whispers / DMs",
-    "Exposure to adult ‘Just Chatting’ streams"
-  ],
-  "settings": [
-    "Whispers: Friends only",
-    "Block links in chat",
-    "Hide mature streams",
-    "Two-factor authentication"
-  ],
-  "detail": {
-    "overview": "Twitch streams live video — usually games — with a real-time chat. Streamers can also DM viewers (‘Whispers’). Content moderation happens after the fact, not before.",
-    "ageRationale": "Twitch’s terms set a minimum of 13 (or a higher applicable local age). Users below the age of legal majority must use it under a parent or guardian’s supervision and agreement. This is not a guarantee of age-appropriate live content.",
-    "evidence": [
-      {
-        "claim": "Minors above the minimum age must use Twitch with parental supervision and agreement.",
-        "publisher": "Twitch",
-        "title": "Terms of Service",
-        "url": "https://legal.twitch.com/en/legal/terms-of-service/",
-        "year": "2026",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "BBC investigation found predators using Twitch to target children, with the platform slow to remove offending accounts.",
-        "publisher": "BBC News (investigative)",
-        "title": "Twitch ‘failing’ to deal with child predators",
-        "year": "2022",
-        "url": "https://www.bbc.co.uk/news/technology-61628026",
-        "type": "Investigative journalism"
-      },
-      {
-        "claim": "Bloomberg investigation documented hundreds of accounts following thousands of children on Twitch.",
-        "publisher": "Bloomberg",
-        "title": "Twitch Has a Massive Child-Predator Problem",
-        "year": "2022",
-        "url": "https://www.bloomberg.com/news/features/2022-05-25/twitch-tv-has-a-child-predator-problem-amazon-knows-it",
-        "type": "Investigative journalism"
-      }
+    "slug": "twitch",
+    "name": "Twitch",
+    "category": "Video",
+    "minAge": "13+; minors need parental supervision",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13",
+    "ukAgeAssurance": "Partial",
+    "ukAgeAssuranceNote": "Age checks apply to mature streams and some features only.",
+    "why": "Live game streaming with chat. Streamers become parasocial role models.",
+    "risks": [
+      "Unpredictable live chat and broadcasts",
+      "Grooming via Whispers / DMs",
+      "Exposure to adult ‘Just Chatting’ streams"
     ],
-    "parentTalkingPoints": [
-      "Ask who they watch — and if anyone has ever DM’d them. Whispers are where the risk concentrates.",
-      "Agree they’ll never share their handle on other platforms (Discord, Snap) — that’s how groomers move them off-platform."
+    "settings": [
+      "Whispers: Friends only",
+      "Block links in chat",
+      "Hide mature streams",
+      "Two-factor authentication"
     ],
-    "settingsHowTo": [
-      {
-        "label": "Twitch safety & privacy settings",
-        "url": "https://safety.twitch.tv/s/article/Guide-Personal-Safety-Settings"
-      },
-      {
-        "label": "Internet Matters: Twitch guide",
-        "url": "https://www.internetmatters.org/hub/esafety-news/twitch-what-parents-need-to-know/"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "Twitch safety settings walkthrough",
-        "channel": "Twitch (official)",
-        "url": "https://www.youtube.com/results?search_query=Twitch+safety+settings+how+to"
-      },
-      {
-        "title": "Twitch — what parents need to know",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Twitch+parents+guide"
-      }
-    ]
-  }
-},
+    "detail": {
+      "overview": "Twitch combines live broadcasts with chat and private Whispers. Moderation tools can reduce unwanted interactions but cannot guarantee that every live exchange is suitable.",
+      "ageRationale": "Twitch’s terms set a minimum of 13 (or a higher applicable local age). Users below the age of legal majority must use it under a parent or guardian’s supervision and agreement. This is not a guarantee of age-appropriate live content.",
+      "evidence": [
+        {
+          "claim": "Minors above the minimum age must use Twitch with parental supervision and agreement.",
+          "publisher": "Twitch",
+          "title": "Terms of Service",
+          "url": "https://legal.twitch.com/en/legal/terms-of-service/",
+          "year": "2026",
+          "type": "Platform policy"
+        }
+      ],
+      "parentTalkingPoints": [
+        "Ask what they enjoy watching and whether any contact has made them uncomfortable.",
+        "Discuss pressure to keep secrets or move to private chats, and how to block, report and ask for help."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "Twitch safety & privacy settings",
+          "url": "https://safety.twitch.tv/s/article/Guide-Personal-Safety-Settings"
+        },
+        {
+          "label": "Internet Matters: Twitch guide",
+          "url": "https://www.internetmatters.org/hub/esafety-news/twitch-what-parents-need-to-know/"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: Twitch safety settings walkthrough",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Twitch+safety+settings+how+to"
+        },
+        {
+          "title": "Search: Twitch — what parents need to know",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Twitch+parents+guide"
+        }
+      ]
+    }
+  },
   {
-  "slug": "kick",
-  "name": "Kick",
-  "category": "Video",
-  "minAge": "13+; under-18 viewers need parental supervision",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "13",
-  "ukAgeAssurance": "Partial",
-  "ukAgeAssuranceNote": "Limited checks on adult-labelled content; sign-up age is self-declared.",
-  "why": "Twitch competitor with looser rules. Popular for gambling and shock streams.",
-  "risks": [
-    "Live gambling content (slots, crash games)",
-    "Minimal moderation",
-    "Streamers explicitly courting under-18 audiences"
-  ],
-  "settings": [
-    "No mature-content filter — supervise directly",
-    "Use device-level screen time / DNS blocks",
-    "Disable account creation if possible"
-  ],
-  "detail": {
-    "overview": "Kick is a live-streaming platform that markets itself as more streamer-friendly than Twitch. It tolerates content (gambling, shock material) that Twitch bans, which is the core safeguarding concern.",
-    "ageRationale": "KICK’s safety guidance excludes users below 13 or the applicable digital-consent age and requires parental permission and supervision for viewers under 18. Check the current rules for your location.",
-    "evidence": [
-      {
-        "claim": "KICK requires parental permission and supervision for viewers under 18.",
-        "publisher": "KICK",
-        "title": "Teen and minor safety",
-        "url": "https://help.kick.com/es/articles/10137486-seguridad-de-adolescentes-y-menores",
-        "year": "2026",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "New York Times investigation linked Kick’s rise to Stake.com gambling streams openly viewable by minors.",
-        "publisher": "The New York Times",
-        "title": "How Stake Built a Crypto-Gambling Empire on Streaming",
-        "year": "2023",
-        "url": "https://www.nytimes.com/2023/10/07/business/stake-kick-crypto-gambling.html",
-        "type": "Investigative journalism"
-      },
-      {
-        "claim": "Australia’s eSafety Commissioner has named Kick among platforms of concern for child safety due to weak moderation.",
-        "publisher": "eSafety Commissioner (Australia)",
-        "title": "Basic Online Safety Expectations transparency reports",
-        "year": "2024",
-        "url": "https://www.esafety.gov.au/industry/basic-online-safety-expectations/transparency-reports",
-        "type": "Regulator"
-      }
+    "slug": "kick",
+    "name": "Kick",
+    "category": "Video",
+    "minAge": "13+; under-18 viewers need parental supervision",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13",
+    "ukAgeAssurance": "Partial",
+    "ukAgeAssuranceNote": "Limited checks on adult-labelled content; sign-up age is self-declared.",
+    "why": "Twitch competitor with looser rules. Popular for gambling and shock streams.",
+    "risks": [
+      "Live gambling content (slots, crash games)",
+      "Minimal moderation",
+      "Streamers explicitly courting under-18 audiences"
     ],
-    "parentTalkingPoints": [
-      "If they watch Kick for a specific streamer, check if that streamer also posts on YouTube — usually a safer alternative.",
-      "Talk plainly about gambling: slot streams are paid promotion, not skill."
+    "settings": [
+      "No mature-content filter — supervise directly",
+      "Use device-level screen time / DNS blocks",
+      "Disable account creation if possible"
     ],
-    "settingsHowTo": [
-      {
-        "label": "Kick community guidelines",
-        "url": "https://kick.com/community-guidelines"
-      },
-      {
-        "label": "Block sites via Google Family Link / Apple Screen Time",
-        "url": "https://families.google/familylink/"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "What is Kick? A parent’s explainer",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=what+is+Kick+streaming+parents+guide"
-      },
-      {
-        "title": "Blocking apps with Apple Screen Time",
-        "channel": "Apple Support",
-        "url": "https://www.youtube.com/results?search_query=Apple+Screen+Time+block+app+how+to"
-      }
-    ]
-  }
-},
+    "detail": {
+      "overview": "Kick is a live-streaming platform that markets itself as more streamer-friendly than Twitch. It tolerates content (gambling, shock material) that Twitch bans, which is the core safeguarding concern.",
+      "ageRationale": "KICK’s safety guidance excludes users below 13 or the applicable digital-consent age and requires parental permission and supervision for viewers under 18. Check the current rules for your location.",
+      "evidence": [
+        {
+          "claim": "KICK requires parental permission and supervision for viewers under 18.",
+          "publisher": "KICK",
+          "title": "Teen and minor safety",
+          "url": "https://help.kick.com/es/articles/10137486-seguridad-de-adolescentes-y-menores",
+          "year": "2026",
+          "type": "Platform policy"
+        }
+      ],
+      "parentTalkingPoints": [
+        "If they watch Kick for a specific streamer, check if that streamer also posts on YouTube — usually a safer alternative.",
+        "Talk plainly about gambling: slot streams are paid promotion, not skill."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "Kick community guidelines",
+          "url": "https://kick.com/community-guidelines"
+        },
+        {
+          "label": "Block sites via Google Family Link / Apple Screen Time",
+          "url": "https://families.google/familylink/"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: What is Kick? A parent’s explainer",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=what+is+Kick+streaming+parents+guide"
+        },
+        {
+          "title": "Search: Blocking apps with Apple Screen Time",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Apple+Screen+Time+block+app+how+to"
+        }
+      ]
+    }
+  },
   {
     "slug": "yubo",
     "name": "Yubo",
@@ -1393,433 +1656,367 @@ export const APPS: AppGuide[] = [
       ],
       "videoTutorials": [
         {
-          "title": "Yubo — what parents need to know",
-          "channel": "Internet Matters",
+          "title": "Search: Yubo — what parents need to know",
+          "channel": "YouTube search results — check the uploader and date",
           "url": "https://www.youtube.com/results?search_query=Internet+Matters+Yubo+parents+guide"
         },
         {
-          "title": "Common Sense Media review of Yubo",
-          "channel": "Common Sense Media",
+          "title": "Search: Common Sense Media review of Yubo",
+          "channel": "YouTube search results — check the uploader and date",
           "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Yubo+review"
         }
       ]
     }
   },
   {
-  "slug": "x-twitter",
-  "name": "X (formerly Twitter)",
-  "category": "Social",
-  "minAge": "13+ (18+ for sensitive media)",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "13",
-  "ukAgeAssurance": "Yes",
-  "ukAgeAssuranceNote": "UK users must pass age assurance (account signals or ID) to see sensitive media.",
-  "why": "News, memes, fandoms, sports — and trending political content. UK users now face age checks before seeing sensitive media.",
-  "risks": [
-    "Pornographic content still hosted on the platform — now behind an age wall a teen can try to cheat",
-    "Targeted harassment via replies / quote-posts",
-    "Misinformation amplified by paid blue ticks"
-  ],
-  "settings": [
-    "UK age assurance required for sensitive media",
-    "Known under-18s get protected-post defaults automatically",
-    "Sensitive-media filter ON for under-18s",
-    "Disable DMs from non-followers",
-    "Mute words & accounts"
-  ],
-  "detail": {
-    "overview": "X still hosts adult content (including pornography), but the old picture — ‘adult content available by default’ — is no longer accurate for UK users. Under the Online Safety Act (and matching Irish/EU rules), X introduced age assurance in July 2025: before showing sensitive media it estimates or verifies age using signals like the email address used at sign-up, account age, and contacts — and can ask for ID-based verification. Accounts X knows belong to under-18s cannot view sensitive media at all, and known minors get more protective defaults, including protected (private) posts. The EU has also opened formal proceedings against X under the Digital Services Act over risks to minors.",
-    "ageRationale": "X describes several age-assurance methods for sensitive media, including account signals and user-provided verification. Check its current help page for the options offered to your account. Platform documentation describes policy, not independently measured effectiveness. This review has not established that a VPN reliably bypasses these checks.",
-    "evidence": [
-      {
-        "claim": "X describes account signals, age estimation and user-provided verification options to restrict sensitive media.",
-        "publisher": "X",
-        "title": "Age Assurance on X",
-        "url": "https://help.x.com/en/rules-and-policies/age-assurance",
-        "year": "2026",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "X confirms it uses age assurance for UK users: sensitive media is restricted for under-18s, age is estimated from account signals (email, account age) or verified via ID, and known minors receive protected-post defaults.",
-        "publisher": "X Help Center",
-        "title": "Age assurance",
-        "year": "2025",
-        "url": "https://help.x.com/en/rules-and-policies/age-assurance",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "X introduced age assurance measures to comply with Irish, UK and EU regulations; video-sharing platforms that allow pornography must have effective age assurance.",
-        "publisher": "RTÉ News",
-        "title": "X introduces age assurance measures to meet regulations",
-        "year": "2025",
-        "url": "https://www.rte.ie/news/business/2025/0728/1525685-x-introduces-age-assurance-measures-to-meet-regulations/",
-        "type": "Investigative journalism"
-      },
-      {
-        "claim": "X verifies users’ ages using signals such as their email address and contacts book as new rules come in to protect young users from harmful content.",
-        "publisher": "The Times",
-        "title": "X to block children from watching porn by checking email address",
-        "year": "2025",
-        "url": "https://www.thetimes.com/uk/technology-uk/article/x-verification-email-address-contacts-ptdfmpwpw",
-        "type": "Investigative journalism"
-      },
-      {
-        "claim": "EU Commission opened formal proceedings against X under the Digital Services Act over deceptive design and risk to minors.",
-        "publisher": "European Commission",
-        "title": "Commission opens formal proceedings against X under DSA",
-        "year": "2023",
-        "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_23_6709",
-        "type": "Regulator"
-      }
+    "slug": "x-twitter",
+    "name": "X (formerly Twitter)",
+    "category": "Social",
+    "minAge": "13+ (18+ for sensitive media)",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13",
+    "ukAgeAssurance": "Yes",
+    "ukAgeAssuranceNote": "UK users must pass age assurance (account signals or ID) to see sensitive media.",
+    "why": "News, memes, fandoms, sports — and trending political content. UK users now face age checks before seeing sensitive media.",
+    "risks": [
+      "Pornographic content still hosted on the platform — now behind an age wall a teen can try to cheat",
+      "Targeted harassment via replies / quote-posts",
+      "Misinformation amplified by paid blue ticks"
     ],
-    "parentTalkingPoints": [
-      "Sensitive media is no longer ‘on by default’ in the UK — X now checks age first. Ask your teen: ‘Has X ever asked you to prove your age?’ If they can still see everything, either the account is registered with a false birthdate or something is masking their location.",
-      "If X knows the account holder is under 18, posts are protected by default — if your teen’s posts are public and they see sensitive media, the birthday on the account is worth an honest conversation.",
-      "Review privacy and contact settings together. If unwanted content appears, help them report it without blaming them or assuming how it got through."
+    "settings": [
+      "UK age assurance required for sensitive media",
+      "Known under-18s get protected-post defaults automatically",
+      "Sensitive-media filter ON for under-18s",
+      "Disable DMs from non-followers",
+      "Mute words & accounts"
     ],
-    "settingsHowTo": [
-      {
-        "label": "X Help Center: Age assurance",
-        "url": "https://help.x.com/en/rules-and-policies/age-assurance"
-      },
-      {
-        "label": "X safety and privacy settings",
-        "url": "https://help.x.com/en/safety-and-security"
-      },
-      {
-        "label": "Common Sense Media: X parent guide",
-        "url": "https://www.commonsensemedia.org/articles/parents-ultimate-guide-to-twitter-x"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "How to lock down X / Twitter for teens",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Twitter+X+parents+guide"
-      },
-      {
-        "title": "X UK age verification explained",
-        "channel": "News coverage",
-        "url": "https://www.youtube.com/results?search_query=X+twitter+UK+age+verification+Online+Safety+Act"
-      },
-      {
-        "title": "Hide sensitive content on X",
-        "channel": "X (official help)",
-        "url": "https://www.youtube.com/results?search_query=X+twitter+hide+sensitive+content+how+to"
-      }
-    ]
-  }
-},
-  {
-  "slug": "reddit",
-  "name": "Reddit",
-  "category": "Social",
-  "minAge": "13+ (18+ for mature content)",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "13 (18 for mature content)",
-  "ukAgeAssurance": "Yes",
-  "ukAgeAssuranceNote": "UK users verify via Apple age range or Persona selfie/ID for mature communities.",
-  "why": "Forums (‘subreddits’) for every interest — UK users now face mandatory age checks before seeing mature or restricted content.",
-  "risks": [
-    "Mature/NSFW communities still exist — now behind an age wall a teen can try to cheat",
-    "Anonymous DMs and chat requests",
-    "Pile-ons, doxxing and volunteer-only moderation"
-  ],
-  "settings": [
-    "UK age confirmation required for mature/restricted content",
-    "Disable NSFW via mobile web or desktop (iOS app hides the toggle)",
-    "Chat requests: Nobody / Followers only",
-    "Mute subreddits"
-  ],
-  "detail": {
-    "overview": "Reddit is a network of user-run forums (‘subreddits’). Most communities are safe and genuinely useful, but mature and restricted ones exist. Under the UK Online Safety Act, Reddit now requires UK users to confirm their age before accessing NSFW or restricted content — you can verify via your Apple account (an age-range signal, not your full birthdate) or through Reddit’s partner Persona with a selfie or government ID. Reddit says it never sees or stores your photos; Persona deletes them within 3 days. If a UK user doesn’t verify, they get limited access and are blocked from restricted mature content. This replaced the old system where a teen could simply tick ‘I am over 18’.",
-    "ageRationale": "Reddit requires age confirmation for UK users accessing mature or restricted content. Its current help page describes Apple account confirmation on iOS or Persona selfie or ID options. Platform documentation describes policy, not independently measured effectiveness. This review has not established that a VPN reliably bypasses these checks.",
-    "evidence": [
-      {
-        "claim": "Reddit requires age confirmation for UK users accessing mature or restricted content. Its current help page describes Apple account confirmation on iOS or Persona selfie or ID options.",
-        "publisher": "Reddit",
-        "title": "Current UK age-assurance guidance",
-        "year": "2026",
-        "url": "https://support.reddithelp.com/hc/en-us/articles/47163677520276-United-Kingdom-Online-Safety-Act",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Reddit confirms UK users must complete age confirmation via Apple account or Persona (selfie/ID) to access restricted content under the Online Safety Act; unverified users face limited access.",
-        "publisher": "Reddit Help",
-        "title": "United Kingdom: Online Safety Act",
-        "year": "2026",
-        "url": "https://support.reddithelp.com/hc/en-us/articles/47163677520276-United-Kingdom-Online-Safety-Act",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Reddit explains why it asks for your age: account eligibility (13, or local minimum like 16 in Australia), 18+ for NSFW, and automatic teen-protective defaults for 13–18-year-olds. Verification via Apple/Google age-range signal or Persona selfie/ID; Persona deletes data within 3 days and Reddit never sees the photos.",
-        "publisher": "Reddit Help",
-        "title": "Why is Reddit asking for my age?",
-        "year": "2026",
-        "url": "https://support.reddithelp.com/hc/en-us/articles/36429514849428-Why-is-Reddit-asking-for-my-age",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "UK Online Safety Act restricted-content categories for under-18s include sexually explicit content, self-harm/suicide/eating-disorder content, hate, bullying, graphic violence, dangerous challenges, substance-ingestion content, body-shaming, and content romanticising depression or despair.",
-        "publisher": "Reddit Help",
-        "title": "UK Online Safety Act: Information for UK users",
-        "year": "2025",
-        "url": "https://support.reddithelp.com/hc/en-us/articles/35409604240020-UK-Online-Safety-Act-Information-for-UK-users",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Reddit rolled out Persona age verification (selfie or government ID) for UK users in July 2025, ahead of Ofcom’s child-protection deadline, blocking unverified users from restricted mature content.",
-        "publisher": "BBC News",
-        "title": "Reddit starts verifying ages of users in the UK",
-        "year": "2025",
-        "url": "https://www.bbc.com/news/articles/cj4ep1znk4zo",
-        "type": "Investigative journalism"
-      },
-      {
-        "claim": "Reddit uses Persona’s selfie-and-document age verification to comply with the UK Online Safety Act; Reddit stores only birthdates and verification status, not the photos.",
-        "publisher": "The Verge",
-        "title": "Reddit is rolling out age verification in the UK",
-        "year": "2025",
-        "url": "https://www.theverge.com/news/707125/reddit-age-verification-uk-online-safety",
-        "type": "Investigative journalism"
-      },
-      {
-        "claim": "Ofcom’s Children’s Online User Experiences research highlights Reddit among platforms where children encounter harmful content despite age limits.",
-        "publisher": "Ofcom",
-        "title": "Children’s online user experiences",
-        "year": "2024",
-        "url": "https://www.ofcom.org.uk/online-safety/protecting-children/childrens-online-user-experiences/",
-        "type": "Regulator"
-      }
-    ],
-    "parentTalkingPoints": [
-      "The old ‘tick a box to say you’re 18’ gate is gone in the UK — Reddit now asks for Apple account age or a Persona selfie/ID. Ask your teen straight out: ‘Have you been asked to verify?’ If they have NSFW access, they completed a real age check, possibly with borrowed details.",
-      "On iPhone the NSFW toggle has been removed from the Reddit app itself — to change it you must log in via a browser (mobile web or desktop). Check there, not in the app settings.",
-      "Reddit enables safe-by-default protections for 13–18-year-olds automatically. If your teen’s account is somehow set up as an adult, those protections are off — that’s the signal to check.",
-      "Show them how to mute a subreddit so they don’t have to argue about every community; focus the conversation on the NSFW age-check, not on individual forums.",
-      "Review privacy and contact settings together. If unwanted content appears, help them report it without blaming them or assuming how it got through."
-    ],
-    "settingsHowTo": [
-      {
-        "label": "Reddit — United Kingdom: Online Safety Act (age confirmation)",
-        "url": "https://support.reddithelp.com/hc/en-us/articles/47163677520276-United-Kingdom-Online-Safety-Act"
-      },
-      {
-        "label": "Reddit — Why is Reddit asking for my age?",
-        "url": "https://support.reddithelp.com/hc/en-us/articles/36429514849428-Why-is-Reddit-asking-for-my-age"
-      },
-      {
-        "label": "Reddit — UK Online Safety Act: Information for UK users",
-        "url": "https://support.reddithelp.com/hc/en-us/articles/35409604240020-UK-Online-Safety-Act-Information-for-UK-users"
-      },
-      {
-        "label": "Reddit safety and privacy settings",
-        "url": "https://support.reddithelp.com/hc/en-us/articles/360043068032"
-      },
-      {
-        "label": "Common Sense Media: Reddit guide",
-        "url": "https://www.commonsensemedia.org/website-reviews/reddit"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "Reddit for parents — what you need to know",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Reddit+parents+guide"
-      },
-      {
-        "title": "Reddit UK age verification explained",
-        "channel": "BBC News",
-        "url": "https://www.youtube.com/results?search_query=Reddit+UK+age+verification+Online+Safety+Act"
-      },
-      {
-        "title": "How to disable NSFW and mute subreddits",
-        "channel": "Reddit help",
-        "url": "https://www.youtube.com/results?search_query=Reddit+disable+NSFW+block+subreddit"
-      }
-    ]
-  }
-},
-  {
-  "slug": "bereal",
-  "name": "BeReal",
-  "category": "Social",
-  "minAge": "13+",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "13",
-  "ukAgeAssurance": "No",
-  "ukAgeAssuranceNote": "Age is self-declared at sign-up.",
-  "why": "Once-a-day photo prompt designed to feel ‘authentic’. Friend-of-friend feed.",
-  "risks": [
-    "Location attached to posts by default",
-    "‘RealMojis’ from friends-of-friends",
-    "Pressure to post in unsafe situations (class, driving)"
-  ],
-  "settings": [
-    "Discovery: Friends only",
-    "Disable location on posts",
-    "Lock account for over-18 visibility"
-  ],
-  "detail": {
-    "overview": "BeReal sends a daily notification — users have two minutes to post a front+back camera photo. Posts can include precise location and are visible to friends and, optionally, the global Discovery feed.",
-    "ageRationale": "Minimum age 13. The location-by-default design and the social pressure of the 2-minute window are the main parent concerns flagged by Internet Matters and Common Sense Media.",
-    "evidence": [
-      {
-        "claim": "BeReal’s September 2026 terms set a minimum age of 13 and note possible parental-consent requirements.",
-        "publisher": "BeReal",
-        "title": "Terms of Service",
-        "url": "https://bereal.com/terms",
-        "year": "2026",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Common Sense Media review warns that BeReal’s default settings expose location and that the ‘authentic’ framing encourages over-sharing.",
-        "publisher": "Common Sense Media",
-        "title": "BeReal parents’ guide",
-        "year": "2023",
-        "url": "https://www.commonsensemedia.org/app-reviews/bereal",
-        "type": "Charity / NGO"
-      },
-      {
-        "claim": "Internet Matters flags BeReal’s pressure-prompt design as a wellbeing risk for anxious teens.",
-        "publisher": "Internet Matters",
-        "title": "BeReal — what parents need to know",
-        "year": "2023",
-        "url": "https://www.internetmatters.org/hub/esafety-news/bereal-app-what-parents-need-to-know/",
-        "type": "Charity / NGO"
-      }
-    ],
-    "parentTalkingPoints": [
-      "Agree they won’t post in class, on public transport or in the car — the 2-minute timer isn’t a real deadline.",
-      "Switch off location on the camera screen before they post."
-    ],
-    "settingsHowTo": [
-      {
-        "label": "BeReal safety and privacy",
-        "url": "https://help.bereal.com/hc/en-us/categories/4406950928657-Safety-Privacy"
-      },
-      {
-        "label": "Internet Matters: BeReal guide",
-        "url": "https://www.internetmatters.org/hub/esafety-news/bereal-app-what-parents-need-to-know/"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "BeReal — what parents need to know",
-        "channel": "Internet Matters",
-        "url": "https://www.youtube.com/results?search_query=Internet+Matters+BeReal+parents+guide"
-      },
-      {
-        "title": "Disable location on BeReal",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=BeReal+location+settings+how+to"
-      }
-    ]
-  }
-},
-  {
-  "slug": "ngl-sendit",
-  "name": "NGL / Sendit / Yolo",
-  "category": "Social",
-  "minAge": "NGL: 18+; Sendit: 13+ with parental consent for minors",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "NGL: 18; Sendit: 13 with parental consent under 18",
-  "ukAgeAssurance": "No",
-  "ukAgeAssuranceNote": "These are separate services with different rules. Their terms do not demonstrate the effectiveness of age checks.",
-  "why": "Anonymous Q&A apps that bolt on to Instagram / Snap stories.",
-  "risks": [
-    "Anonymous bullying and threats",
-    "Fake ‘replies’ generated by the app to drive engagement",
-    "Sextortion via anonymous messages"
-  ],
-  "settings": [
-    "Discuss whether anonymous replies are helpful or harmful",
-    "Remove shared question links if unwanted messages arrive",
-    "Seek help for threats before deleting accounts or evidence"
-  ],
-  "detail": {
-    "overview": "NGL (‘Not Gonna Lie’) and similar apps let users receive anonymous messages via a link shared on Instagram or Snap. They’ve been repeatedly investigated for staging fake replies and for serving as a vector for cyberbullying and sextortion.",
-    "ageRationale": "NGL does not permit under-18s. Sendit’s operator, Iconic Hearts, sets a minimum of 13 and requires parental consent for users under 18. A platform minimum is not a recommendation that an app is suitable for every child.",
-    "evidence": [
-      {
-        "claim": "NGL excludes users under 18.",
-        "publisher": "NGL",
-        "title": "Terms",
-        "url": "https://ngl.link/p/terms",
-        "year": "2026",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Sendit requires users to be at least 13, with prior parental consent for minors.",
-        "publisher": "Iconic Hearts",
-        "title": "Terms of Service",
-        "url": "https://iconichearts.com/terms",
-        "year": "2026",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "The FTC announced a 2024 settlement prohibiting NGL from offering anonymous messaging to under-18s and addressing allegedly deceptive messages and subscriptions.",
-        "publisher": "Federal Trade Commission",
-        "title": "NGL settlement announcement",
-        "year": "2024",
-        "url": "https://www.ftc.gov/news-events/news/press-releases/2024/07/ftc-order-will-ban-ngl-labs-its-founders-offering-anonymous-messaging-apps-kids-under-18-halt",
-        "type": "Regulator"
-      }
-    ],
-    "parentTalkingPoints": [
-      "Explain that NGL is for adults; Sendit has different rules.",
-      "Discuss how anonymous replies can affect them. If threatened, seek help without waiting to collect evidence."
-    ],
-    "settingsHowTo": [
-      {
-        "label": "FTC consumer advice: anonymous messaging apps",
-        "url": "https://consumer.ftc.gov/consumer-alerts/2024/07/parents-anonymous-messaging-apps-are-bad-news-teens"
-      },
-      {
-        "label": "How to uninstall apps & block re-install (Apple)",
-        "url": "https://support.apple.com/en-gb/HT201304"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "FTC warns parents about NGL",
-        "channel": "FTC (official)",
-        "url": "https://www.youtube.com/results?search_query=FTC+NGL+anonymous+messaging+app+teens"
-      },
-      {
-        "title": "Anonymous apps and teen safety",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+anonymous+messaging+apps"
-      }
-    ]
-  }
-},
-  {
-    slug: "omegle-style", name: "Random video chat (Monkey, Azar, ChatHub)", category: "Social", minAge: "18+",
-    lastCheckedUK: "September 2026", officialMinAge: "18", ukAgeAssurance: "No", ukAgeAssuranceNote: "Adult-only claims are self-declared; children get in easily.",
-    why: "Random video chat with strangers — the niche Omegle filled before it shut down in 2023.",
-    risks: ["Exposure to live nudity from strangers", "Grooming and recorded sextortion", "Almost no age verification"],
-    settings: ["Don’t install — block via device-level parental controls"],
-    detail: {
-      overview: "Apps in this category pair the user with a random stranger via video. After Omegle shut down in 2023 following a landmark child-trafficking lawsuit, copycat apps like Monkey, Azar and ChatHub absorbed the same audience — and the same risks.",
-      ageRationale: "These services are 18+ in their terms but make almost no attempt to verify age. They are repeatedly named in NCA, NSPCC and FBI warnings about live grooming and sextortion of minors.",
-      evidence: [
-        { claim: "Omegle shut down in 2023 after settling a lawsuit brought by a girl groomed on the site aged 11 — the judge ruled the platform’s design itself was the harm.", publisher: "BBC News", title: "Omegle: Video chat site shuts down after abuse claims", year: "2023", url: "https://www.bbc.co.uk/news/technology-67364634", type: "Investigative journalism" },
-        { claim: "NCA / CEOP repeatedly warn that random video-chat apps are a primary vector for live-streamed child sexual abuse and sextortion.", publisher: "CEOP (National Crime Agency, UK)", title: "Sextortion: alert for parents and carers", year: "2024", url: "https://www.ceopeducation.co.uk/parents/articles/sextortion-an-alert-for-parents-and-carers/", type: "Regulator" },
+    "detail": {
+      "overview": "X still hosts adult content (including pornography), but the old picture — ‘adult content available by default’ — is no longer accurate for UK users. Under the Online Safety Act (and matching Irish/EU rules), X introduced age assurance in July 2025: before showing sensitive media it estimates or verifies age using signals like the email address used at sign-up, account age, and contacts — and can ask for ID-based verification. Accounts X knows belong to under-18s cannot view sensitive media at all, and known minors get more protective defaults, including protected (private) posts. The EU has also opened formal proceedings against X under the Digital Services Act over risks to minors.",
+      "ageRationale": "X describes several age-assurance methods for sensitive media, including account signals and user-provided verification. Check its current help page for the options offered to your account. Platform documentation describes policy, not independently measured effectiveness. This review has not established that a VPN reliably bypasses these checks.",
+      "evidence": [
+        {
+          "claim": "X describes account signals, age estimation and user-provided verification options to restrict sensitive media.",
+          "publisher": "X",
+          "title": "Age Assurance on X",
+          "url": "https://help.x.com/en/rules-and-policies/age-assurance",
+          "year": "2026",
+          "type": "Platform policy"
+        }
       ],
-      parentTalkingPoints: [
-        "These apps exist for one thing: randomly seeing strangers on camera. There is no child-safe version.",
-        "Use Screen Time / Family Link to block category ‘Social Networking’ or specific apps by bundle ID.",
+      "parentTalkingPoints": [
+        "Sensitive media is no longer ‘on by default’ in the UK — X now checks age first. Ask your teen: ‘Has X ever asked you to prove your age?’ If they can still see everything, either the account is registered with a false birthdate or something is masking their location.",
+        "If X knows the account holder is under 18, posts are protected by default — if your teen’s posts are public and they see sensitive media, the birthday on the account is worth an honest conversation.",
+        "Review privacy and contact settings together. If unwanted content appears, help them report it without blaming them or assuming how it got through."
       ],
-      settingsHowTo: [
-        { label: "Apple Screen Time — block apps", url: "https://support.apple.com/en-gb/HT201304" },
-        { label: "Google Family Link — block apps", url: "https://families.google/familylink/" },
+      "settingsHowTo": [
+        {
+          "label": "X Help Center: Age assurance",
+          "url": "https://help.x.com/en/rules-and-policies/age-assurance"
+        },
+        {
+          "label": "X safety and privacy settings",
+          "url": "https://help.x.com/en/safety-and-security"
+        },
+        {
+          "label": "Common Sense Media: X parent guide",
+          "url": "https://www.commonsensemedia.org/articles/parents-ultimate-guide-to-twitter-x"
+        }
       ],
-      videoTutorials: [
-        { title: "Block apps with Apple Screen Time", channel: "Apple Support", url: "https://www.youtube.com/results?search_query=Apple+Screen+Time+block+apps+how+to" },
-        { title: "Random video chat apps — what parents need to know", channel: "Internet Matters", url: "https://www.youtube.com/results?search_query=Internet+Matters+random+video+chat+apps" },
+      "videoTutorials": [
+        {
+          "title": "Search: How to lock down X / Twitter for teens",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Twitter+X+parents+guide"
+        },
+        {
+          "title": "Search: X UK age verification explained",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=X+twitter+UK+age+verification+Online+Safety+Act"
+        },
+        {
+          "title": "Search: Hide sensitive content on X",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=X+twitter+hide+sensitive+content+how+to"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "reddit",
+    "name": "Reddit",
+    "category": "Social",
+    "minAge": "13+ (18+ for mature content)",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13 (18 for mature content)",
+    "ukAgeAssurance": "Yes",
+    "ukAgeAssuranceNote": "Reddit describes age verification for UK access to mature content. Consult its current help page for the process and data handling; this review did not test its effectiveness.",
+    "why": "Forums (‘subreddits’) for every interest — UK users now face mandatory age checks before seeing mature or restricted content.",
+    "risks": [
+      "Mature/NSFW communities still exist — now behind an age wall a teen can try to cheat",
+      "Anonymous DMs and chat requests",
+      "Pile-ons, doxxing and volunteer-only moderation"
+    ],
+    "settings": [
+      "UK age confirmation required for mature/restricted content",
+      "Disable NSFW via mobile web or desktop (iOS app hides the toggle)",
+      "Chat requests: Nobody / Followers only",
+      "Mute subreddits"
+    ],
+    "detail": {
+      "overview": "Reddit consists of user-run communities, with posts, comments, chat and private messages. Content and moderation vary by community. Reddit describes age checks for UK access to mature content; that policy does not guarantee that every unsuitable item is filtered.",
+      "ageRationale": "Reddit requires age confirmation for UK users accessing mature or restricted content. Its current help page describes Apple account confirmation on iOS or Persona selfie or ID options. Platform documentation describes policy, not independently measured effectiveness. This review has not established that a VPN reliably bypasses these checks.",
+      "evidence": [
+        {
+          "claim": "Reddit requires age confirmation for UK users accessing mature or restricted content. Its current help page describes Apple account confirmation on iOS or Persona selfie or ID options.",
+          "publisher": "Reddit",
+          "title": "Current UK age-assurance guidance",
+          "year": "2026",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/47163677520276-United-Kingdom-Online-Safety-Act",
+          "type": "Platform policy"
+        }
       ],
-    },
+      "parentTalkingPoints": [
+        "Review content and contact settings together.",
+        "If unsuitable material appears, help report it without assuming how it got through an age check.",
+        "Discuss the communities they use and how to mute, block or leave."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "Reddit — United Kingdom: Online Safety Act (age confirmation)",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/47163677520276-United-Kingdom-Online-Safety-Act"
+        },
+        {
+          "label": "Reddit — Why is Reddit asking for my age?",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/36429514849428-Why-is-Reddit-asking-for-my-age"
+        },
+        {
+          "label": "Reddit — UK Online Safety Act: Information for UK users",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/35409604240020-UK-Online-Safety-Act-Information-for-UK-users"
+        },
+        {
+          "label": "Reddit safety and privacy settings",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/360043068032"
+        },
+        {
+          "label": "Common Sense Media: Reddit guide",
+          "url": "https://www.commonsensemedia.org/website-reviews/reddit"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: Reddit for parents — what you need to know",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Reddit+parents+guide"
+        },
+        {
+          "title": "Search: Reddit UK age verification explained",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Reddit+UK+age+verification+Online+Safety+Act"
+        },
+        {
+          "title": "Search: How to disable NSFW and mute subreddits",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Reddit+disable+NSFW+block+subreddit"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "bereal",
+    "name": "BeReal",
+    "category": "Social",
+    "minAge": "13+",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13",
+    "ukAgeAssurance": "Not established",
+    "ukAgeAssuranceNote": "Age is self-declared at sign-up.",
+    "why": "Once-a-day photo prompt designed to feel ‘authentic’. Friend-of-friend feed.",
+    "risks": [
+      "Location attached to posts by default",
+      "‘RealMojis’ from friends-of-friends",
+      "Pressure to post in unsafe situations (class, driving)"
+    ],
+    "settings": [
+      "Discovery: Friends only",
+      "Disable location on posts",
+      "Lock account for over-18 visibility"
+    ],
+    "detail": {
+      "overview": "BeReal sends a daily notification — users have two minutes to post a front+back camera photo. Posts can include precise location and are visible to friends and, optionally, the global Discovery feed.",
+      "ageRationale": "Minimum age 13. The location-by-default design and the social pressure of the 2-minute window are the main parent concerns flagged by Internet Matters and Common Sense Media.",
+      "evidence": [
+        {
+          "claim": "BeReal’s September 2026 terms set a minimum age of 13 and note possible parental-consent requirements.",
+          "publisher": "BeReal",
+          "title": "Terms of Service",
+          "url": "https://bereal.com/terms",
+          "year": "2026",
+          "type": "Platform policy"
+        }
+      ],
+      "parentTalkingPoints": [
+        "Agree they won’t post in class, on public transport or in the car — the 2-minute timer isn’t a real deadline.",
+        "Switch off location on the camera screen before they post."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "BeReal safety and privacy",
+          "url": "https://help.bereal.com/hc/en-us/categories/4406950928657-Safety-Privacy"
+        },
+        {
+          "label": "Internet Matters: BeReal guide",
+          "url": "https://www.internetmatters.org/hub/esafety-news/bereal-app-what-parents-need-to-know/"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: BeReal — what parents need to know",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Internet+Matters+BeReal+parents+guide"
+        },
+        {
+          "title": "Search: Disable location on BeReal",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=BeReal+location+settings+how+to"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "ngl-sendit",
+    "name": "NGL / Sendit",
+    "category": "Social",
+    "minAge": "NGL: 18+; Sendit: 13+ with parental consent for minors",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "NGL: 18; Sendit: 13 with parental consent under 18",
+    "ukAgeAssurance": "Not established",
+    "ukAgeAssuranceNote": "These are separate services with different rules. Their terms do not demonstrate the effectiveness of age checks.",
+    "why": "Anonymous Q&A apps that bolt on to Instagram / Snap stories.",
+    "risks": [
+      "Anonymous bullying and threats",
+      "Fake ‘replies’ generated by the app to drive engagement",
+      "Sextortion via anonymous messages"
+    ],
+    "settings": [
+      "Discuss whether anonymous replies are helpful or harmful",
+      "Remove shared question links if unwanted messages arrive",
+      "Seek help for threats before deleting accounts or evidence"
+    ],
+    "detail": {
+      "overview": "NGL (‘Not Gonna Lie’) and similar apps let users receive anonymous messages via a link shared on Instagram or Snap. They’ve been repeatedly investigated for staging fake replies and for serving as a vector for cyberbullying and sextortion.",
+      "ageRationale": "NGL does not permit under-18s. Sendit’s operator, Iconic Hearts, sets a minimum of 13 and requires parental consent for users under 18. A platform minimum is not a recommendation that an app is suitable for every child.",
+      "evidence": [
+        {
+          "claim": "NGL excludes users under 18.",
+          "publisher": "NGL",
+          "title": "Terms",
+          "url": "https://ngl.link/p/terms",
+          "year": "2026",
+          "type": "Platform policy"
+        },
+        {
+          "claim": "Sendit requires users to be at least 13, with prior parental consent for minors.",
+          "publisher": "Iconic Hearts",
+          "title": "Terms of Service",
+          "url": "https://iconichearts.com/terms",
+          "year": "2026",
+          "type": "Platform policy"
+        },
+        {
+          "claim": "The FTC announced a 2024 settlement prohibiting NGL from offering anonymous messaging to under-18s and addressing allegedly deceptive messages and subscriptions.",
+          "publisher": "Federal Trade Commission",
+          "title": "NGL settlement announcement",
+          "year": "2024",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2024/07/ftc-order-will-ban-ngl-labs-its-founders-offering-anonymous-messaging-apps-kids-under-18-halt",
+          "type": "Regulator"
+        }
+      ],
+      "parentTalkingPoints": [
+        "Explain that NGL is for adults; Sendit has different rules.",
+        "Discuss how anonymous replies can affect them. If threatened, seek help without waiting to collect evidence."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "FTC consumer advice: anonymous messaging apps",
+          "url": "https://consumer.ftc.gov/consumer-alerts/2024/07/parents-anonymous-messaging-apps-are-bad-news-teens"
+        },
+        {
+          "label": "How to uninstall apps & block re-install (Apple)",
+          "url": "https://support.apple.com/en-gb/HT201304"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: FTC warns parents about NGL",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=FTC+NGL+anonymous+messaging+app+teens"
+        },
+        {
+          "title": "Search: Anonymous apps and teen safety",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+anonymous+messaging+apps"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "omegle-style",
+    "name": "Random video chat (Monkey, Azar, ChatHub)",
+    "category": "Social",
+    "minAge": "Varies by service; Monkey is 18+",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "Check the exact service; Monkey: 18",
+    "ukAgeAssurance": "Not established",
+    "ukAgeAssuranceNote": "Services differ. Monkey describes age detection and moderation; their effectiveness has not been independently tested here.",
+    "why": "Random video chat with strangers — the niche Omegle filled before it shut down in 2023.",
+    "risks": [
+      "Unpredictable live content",
+      "Unwanted contact or pressure from strangers",
+      "Someone recording or sharing a conversation"
+    ],
+    "settings": [
+      "Don’t install — block via device-level parental controls"
+    ],
+    "detail": {
+      "overview": "Random-video services connect people who may not know each other. Similar names can refer to different operators. Check the exact app and its current rules rather than treating Monkey, Azar and every ChatHub-branded service as one product.",
+      "ageRationale": "Monkey’s current safety page sets an 18+ rule and describes detecting suspected underage accounts. This does not establish the rules or safeguards of every random-video service. For children, choose services and contact settings appropriate to their age rather than relying on an adult-only label.",
+      "evidence": [
+        {
+          "claim": "Monkey states that its service is for adults and describes underage-account detection, reporting and blocking. These are operator claims, not independent effectiveness results.",
+          "publisher": "Monkey",
+          "title": "Safety Center",
+          "url": "https://www.monkey.app/sc.html",
+          "year": "2026",
+          "type": "Platform policy"
+        }
+      ],
+      "parentTalkingPoints": [
+        "Ask which exact app or website they mean and who they speak to.",
+        "For an unsuitable app, use device controls to restrict access. If there are threats, get help without waiting to collect evidence."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "Apple Screen Time — block apps",
+          "url": "https://support.apple.com/en-gb/HT201304"
+        },
+        {
+          "label": "Google Family Link — block apps",
+          "url": "https://families.google/familylink/"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: Block apps with Apple Screen Time",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Apple+Screen+Time+block+apps+how+to"
+        },
+        {
+          "title": "Search: Random video chat apps — what parents need to know",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Internet+Matters+random+video+chat+apps"
+        }
+      ]
+    }
   },
   {
     "slug": "minecraft",
@@ -1852,22 +2049,6 @@ export const APPS: AppGuide[] = [
           "url": "https://www.minecraft.net/en-us/article/parental-controls",
           "year": "2026",
           "type": "Platform policy"
-        },
-        {
-          "claim": "UK NCA / CEOP have repeatedly warned that grooming occurs on third-party Minecraft servers via voice and text chat.",
-          "publisher": "CEOP Education",
-          "title": "Minecraft: advice for parents and carers",
-          "year": "2023",
-          "url": "https://www.ceopeducation.co.uk/parents/articles/minecraft-what-parents-need-to-know/",
-          "type": "Regulator"
-        },
-        {
-          "claim": "BBC investigation found extremist and grooming content on private Minecraft servers used by UK children.",
-          "publisher": "BBC News",
-          "title": "Minecraft used by predators to target children",
-          "year": "2023",
-          "url": "https://www.bbc.co.uk/news/technology-65614257",
-          "type": "Investigative journalism"
         }
       ],
       "parentTalkingPoints": [
@@ -1886,234 +2067,325 @@ export const APPS: AppGuide[] = [
       ],
       "videoTutorials": [
         {
-          "title": "Minecraft parental controls — full walkthrough",
-          "channel": "Microsoft (official)",
+          "title": "Search: Minecraft parental controls — full walkthrough",
+          "channel": "YouTube search results — check the uploader and date",
           "url": "https://www.youtube.com/results?search_query=Microsoft+Family+Minecraft+parental+controls"
         },
         {
-          "title": "Minecraft for parents — what you need to know",
-          "channel": "Common Sense Media",
+          "title": "Search: Minecraft for parents — what you need to know",
+          "channel": "YouTube search results — check the uploader and date",
           "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+Minecraft+parents+guide"
         }
       ]
     }
   },
   {
-  "slug": "vrchat",
-  "name": "VRChat",
-  "category": "Game",
-  "minAge": "13+ (often played by under-13s)",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "13",
-  "ukAgeAssurance": "Partial",
-  "ukAgeAssuranceNote": "VRChat described further age-assurance and content-gating work as in development in June 2026. Do not treat an announced feature as universally available.",
-  "why": "Social VR worlds in headsets like Meta Quest. Voice-only, full-body avatars, no moderation in many rooms.",
-  "risks": [
-    "Adult-themed worlds visible to children",
-    "Sexual harassment and ‘virtual groping’",
-    "Voice chat with anyone in the room"
-  ],
-  "settings": [
-    "Trust system: Friends+ only",
-    "Disable open voice",
-    "Use Meta Quest parental supervision"
-  ],
-  "detail": {
-    "overview": "VRChat lets users move between user-created 3D ‘worlds’ as customised avatars, with live voice chat. Many worlds are 18+ themed but discoverable by anyone with an account.",
-    "ageRationale": "VRChat’s terms are 13+ but child-safety bodies — including the BBC, NSPCC and Center for Countering Digital Hate — have documented children encountering sexual content and harassment within minutes.",
-    "evidence": [
-      {
-        "claim": "VRChat’s June update says further age-assurance and content-gating work was still in development, without firm release dates.",
-        "publisher": "VRChat",
-        "title": "June 2026 safety update",
-        "url": "https://hello.vrchat.com/blog/june-2026-safety-update",
-        "year": "2026",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "BBC Panorama reporter, posing as a 13-year-old, encountered avatars simulating sex, racist abuse and a grooming attempt within VRChat.",
-        "publisher": "BBC Panorama",
-        "title": "Children in the metaverse — investigation",
-        "year": "2022",
-        "url": "https://www.bbc.co.uk/news/technology-60415317",
-        "type": "Investigative journalism"
-      },
-      {
-        "claim": "Center for Countering Digital Hate found incidents of abuse including harassment of minors every 7 minutes in VRChat ‘Metaverse’ worlds.",
-        "publisher": "Center for Countering Digital Hate",
-        "title": "Facebook’s Metaverse",
-        "year": "2021",
-        "url": "https://counterhate.com/research/facebooks-metaverse/",
-        "type": "Charity / NGO"
-      }
+    "slug": "vrchat",
+    "name": "VRChat",
+    "category": "Game",
+    "minAge": "13+",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13",
+    "ukAgeAssurance": "Partial",
+    "ukAgeAssuranceNote": "VRChat described further age-assurance and content-gating work as in development in June 2026. Do not treat an announced feature as universally available.",
+    "why": "User-created social worlds with avatars and live voice chat, accessible in VR and on other supported devices.",
+    "risks": [
+      "Adult-themed worlds visible to children",
+      "Sexual harassment and ‘virtual groping’",
+      "Voice chat with anyone in the room"
     ],
-    "parentTalkingPoints": [
-      "VR feels different to a screen — harassment can be genuinely distressing. Agree they’ll take the headset off and tell you if anything feels off.",
-      "Use Meta Quest’s parental supervision to set VRChat to age-appropriate worlds only."
+    "settings": [
+      "Review instance privacy separately from avatar trust settings",
+      "Practise mute, block and leaving a world",
+      "Review headset account and app permissions"
     ],
-    "settingsHowTo": [
-      {
-        "label": "Meta Quest parental supervision",
-        "url": "https://www.meta.com/help/quest/articles/accounts/account-settings-and-management/parent-account/"
-      },
-      {
-        "label": "VRChat safety & trust system",
-        "url": "https://hello.vrchat.com/blog/vrchat-safety-and-trust-system"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "VRChat — what parents need to know",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+VRChat+parents+guide"
-      },
-      {
-        "title": "Meta Quest parental controls walkthrough",
-        "channel": "Meta (official)",
-        "url": "https://www.youtube.com/results?search_query=Meta+Quest+parental+controls+how+to"
-      }
-    ]
-  }
-},
-  {
-    slug: "gta-online", name: "GTA V / GTA Online", category: "Game", minAge: "18+ (PEGI)",
-    lastCheckedUK: "September 2026", officialMinAge: "18 (PEGI)", ukAgeAssurance: "No", ukAgeAssuranceNote: "Store-level age gates only; no UK age assurance in game.",
-    why: "Open-world crime game. Hugely popular with under-18s despite the rating.",
-    risks: ["Graphic violence, sexual content, drugs as core gameplay", "Open voice chat with strangers in lobbies", "Real-money microtransactions (Shark Cards)"],
-    settings: ["Disable voice chat", "Solo / invite-only sessions", "Console-level spend limits"],
-    detail: {
-      overview: "Grand Theft Auto V’s online mode mixes story missions with persistent lobbies of up to 30 strangers. Sexual content, torture and drugs are part of the rated content — this is a genuine adult game.",
-      ageRationale: "PEGI 18 and ESRB Mature. The rating is for explicit sex, sustained violence and drug use, not just ‘bad language’ — it is not a borderline call.",
-      evidence: [
-        { claim: "PEGI rates GTA V 18 for explicit sexual content, drug use and violence — the highest age rating it issues.", publisher: "PEGI (Pan European Game Information)", title: "Grand Theft Auto V rating summary", year: "2024", url: "https://pegi.info/search-pegi?q=Grand+Theft+Auto+V", type: "Regulator" },
-        { claim: "Common Sense Media review states GTA V is ‘not for kids’ and details extensive sexual, violent and drug content.", publisher: "Common Sense Media", title: "Grand Theft Auto V — parents’ review", year: "2024", url: "https://www.commonsensemedia.org/game-reviews/grand-theft-auto-v", type: "Charity / NGO" },
+    "detail": {
+      "overview": "VRChat offers user-created social worlds and avatars. Other users’ live speech and behaviour can be unpredictable; review both the service’s safety controls and the device’s account requirements.",
+      "ageRationale": "The service sets an account minimum of 13. That does not establish that public social spaces or user-created content are suitable for every teenager.",
+      "evidence": [
+        {
+          "claim": "VRChat’s June update says further age-assurance and content-gating work was still in development, without firm release dates.",
+          "publisher": "VRChat",
+          "title": "June 2026 safety update",
+          "url": "https://hello.vrchat.com/blog/june-2026-safety-update",
+          "year": "2026",
+          "type": "Platform policy"
+        },
+        {
+          "claim": "CCDH’s December 2021 investigation reported abusive incidents during its sampled VRChat sessions. Its seven-minute average describes that historical sample, not the frequency every user encounters today.",
+          "publisher": "Center for Countering Digital Hate",
+          "title": "Facebook’s Metaverse",
+          "year": "2021",
+          "url": "https://counterhate.com/research/facebooks-metaverse/",
+          "type": "Charity / NGO"
+        }
       ],
-      parentTalkingPoints: [
-        "The ‘all my friends play it’ argument is real, but so is the 18 rating. Try a co-op alternative (Fortnite Zero Build, Sea of Thieves) for younger teens.",
-        "If they do play, set the console to invite-only sessions and disable voice chat with strangers.",
+      "parentTalkingPoints": [
+        "Agree they can leave or take off a headset whenever uncomfortable.",
+        "Device-level parental controls do not guarantee that every world inside an app is suitable."
       ],
-      settingsHowTo: [
-        { label: "PlayStation parental controls", url: "https://www.playstation.com/en-gb/support/account/ps5-parental-controls-spending-limits/" },
-        { label: "Xbox Family Settings app", url: "https://www.xbox.com/en-GB/apps/family-settings-app" },
+      "settingsHowTo": [
+        {
+          "label": "Meta Quest parental supervision",
+          "url": "https://www.meta.com/help/quest/articles/accounts/account-settings-and-management/parent-account/"
+        },
+        {
+          "label": "VRChat safety & trust system",
+          "url": "https://hello.vrchat.com/blog/vrchat-safety-and-trust-system"
+        }
       ],
-      videoTutorials: [
-        { title: "PlayStation parental controls — full guide", channel: "PlayStation (official)", url: "https://www.youtube.com/results?search_query=PlayStation+parental+controls+how+to" },
-        { title: "Xbox Family Settings app walkthrough", channel: "Xbox (official)", url: "https://www.youtube.com/results?search_query=Xbox+Family+Settings+app+how+to" },
-      ],
-    },
+      "videoTutorials": [
+        {
+          "title": "Search: VRChat — what parents need to know",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+VRChat+parents+guide"
+        },
+        {
+          "title": "Search: Meta Quest parental controls walkthrough",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Meta+Quest+parental+controls+how+to"
+        }
+      ]
+    }
   },
   {
-    slug: "character-ai", name: "Character.AI", category: "Social", minAge: "13+ (16+ in Europe) — no chat for under-18s",
-    lastCheckedUK: "September 2026", officialMinAge: "13 (16 in Europe)", ukAgeAssurance: "Yes", ukAgeAssuranceNote: "Mandatory age assurance; under-18s lose open-ended chat and get Reading Mode.",
-    why: "AI ‘characters’ you can write stories and roleplay with — from a tutor to a fictional partner.",
-    risks: ["Teens lying about their age to get adult chat access", "Parasocial dependence on an AI ‘friend’", "Self-harm and sexual content documented in US lawsuits about the old teen experience"],
-    settings: ["Expect an age check — a selfie estimate or ID may be required", "Turn on Parental Insights so you get a weekly activity email", "Block the app entirely with Screen Time or Family Link if you'd rather they didn't use it"],
-    detail: {
-      overview: "Character.AI is a roleplay and story-writing platform built around user-made AI characters. Since late 2025 it no longer lets under-18s have open-ended conversations at all: anyone verified as under 18 gets 'Reading Mode', where they can browse and read characters and stories but cannot chat. Every user now has to pass an age check. The change followed US lawsuits alleging the earlier teen experience contributed to a 14-year-old's suicide and exposed younger children to sexual and self-harm content.",
-      ageRationale: "Character.AI's own rules require users to be at least 13, and at least 16 in Europe. On top of that, from November 2025 the company removed open-ended chat for anyone verified as under 18 and moved them to Reading Mode, so in practice the platform's conversational product is 18+. Age assurance is mandatory for everyone; if the automatic estimate is unsure, the account is asked for ID. The practical risk for parents is no longer 'is the teen model safe' — it is whether a teen has simply entered a false birthday or passed themselves off as an adult.",
-      evidence: [
-        { claim: "Character.AI announced it would remove open-ended chat for under-18 users and roll out age assurance for all accounts.", publisher: "Character.AI", title: "Taking Bold Steps to Keep Teen Users Safe on Character.AI", year: "2025", url: "https://blog.character.ai/u18-chat-announcement/", type: "Platform policy" },
-        { claim: "Under-18 verified users are placed in ‘Reading Mode’, where they can browse characters and content but chat features are unavailable.", publisher: "Character.AI Help Center", title: "What is Reading Mode?", year: "2025", url: "https://support.character.ai/hc/en-us/articles/51795669396763-What-is-Reading-Mode", type: "Platform policy" },
-        { claim: "Account holders must be at least 13 years old, and at least 16 years old in Europe.", publisher: "Character.AI Help Center", title: "Safety Center", year: "2025", url: "https://support.character.ai/hc/en-us/articles/21704914723995-Safety-Center", type: "Platform policy" },
-        { claim: "All users must complete an age assurance check, which determines whether they get the adult or the under-18 experience.", publisher: "Character.AI Help Center", title: "What is Age Assurance?", year: "2025", url: "https://support.character.ai/hc/en-us/articles/53182286684059-What-is-Age-Assurance", type: "Platform policy" },
-        { claim: "US lawsuit alleges Character.AI chatbots encouraged a 14-year-old’s suicide and that the platform’s design was unreasonably dangerous to minors.", publisher: "The New York Times", title: "Can A.I. Be Blamed for a Teen’s Suicide?", year: "2024", url: "https://www.nytimes.com/2024/10/23/technology/characterai-lawsuit-teen-suicide.html", type: "Investigative journalism" },
-        { claim: "A second lawsuit alleged the platform exposed a 9-year-old to ‘hypersexualised content’ and suggested self-harm to a 17-year-old.", publisher: "The Washington Post", title: "Character.AI sued over content shown to minors", year: "2024", url: "https://www.washingtonpost.com/technology/2024/12/10/character-ai-lawsuit-children-harm/", type: "Investigative journalism" },
-        { claim: "Common Sense Media rates AI companion apps including Character.AI as ‘unacceptable risk’ for under-18s.", publisher: "Common Sense Media", title: "AI Risk Assessment: Social AI Companions", year: "2025", url: "https://www.commonsensemedia.org/ai-ratings/social-ai-companions", type: "Charity / NGO" },
+    "slug": "gta-online",
+    "name": "GTA V / GTA Online",
+    "category": "Game",
+    "minAge": "18+ (PEGI)",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "18 (PEGI)",
+    "ukAgeAssurance": "Not established",
+    "ukAgeAssuranceNote": "The rating is verified; in-game UK age-assurance coverage has not been established in this review.",
+    "why": "An adult-rated crime game with an online multiplayer mode.",
+    "risks": [
+      "Graphic violence, sexual content, drugs as core gameplay",
+      "Open voice chat with strangers in lobbies",
+      "Real-money microtransactions (Shark Cards)"
+    ],
+    "settings": [
+      "Disable voice chat",
+      "Solo / invite-only sessions",
+      "Console-level spend limits"
+    ],
+    "detail": {
+      "overview": "GTA V contains strong violence, sexual content, strong language and drug use. Online play adds interaction with other players and purchases. Session and chat choices do not change the game’s content rating.",
+      "ageRationale": "The UK PEGI rating is 18. ESRB uses a separate North American rating of Mature 17+, with descriptors for violence, sexual content, drugs and language. Ratings and account-age checks are different.",
+      "evidence": [
+        {
+          "claim": "PEGI lists GTA V with adult-rated violence and strong language, with sexual content and drug use also described.",
+          "publisher": "PEGI (Pan European Game Information)",
+          "title": "Grand Theft Auto V rating summary",
+          "url": "https://pegi.info/search-pegi?q=Grand+Theft+Auto+V",
+          "type": "Regulator"
+        },
+        {
+          "claim": "Common Sense Media review states GTA V is ‘not for kids’ and details extensive sexual, violent and drug content.",
+          "publisher": "Common Sense Media",
+          "title": "Grand Theft Auto V — parents’ review",
+          "year": "2022",
+          "url": "https://www.commonsensemedia.org/game-reviews/grand-theft-auto-v",
+          "type": "Charity / NGO"
+        },
+        {
+          "claim": "ESRB rates GTA V Mature 17+, with content descriptors and notices for user interaction and in-game purchases.",
+          "publisher": "ESRB",
+          "title": "Grand Theft Auto V rating",
+          "url": "https://www.esrb.org/ratings/38445/grand-theft-auto-v/",
+          "year": "2026",
+          "type": "Platform policy"
+        }
       ],
-      parentTalkingPoints: [
-        "If your teen still has full chat on Character.AI, their account is almost certainly registered as an adult. That is the conversation to have — not the app itself.",
+      "parentTalkingPoints": [
+        "Explain the PEGI 18 rating and choose an age-appropriate game together.",
+        "If reviewing an existing account, check in-game session and voice-chat options as well as console purchase restrictions. Invite-only sessions are a game option, not a universal console setting."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "PlayStation parental controls",
+          "url": "https://www.playstation.com/en-gb/support/account/ps5-parental-controls-spending-limits/"
+        },
+        {
+          "label": "Xbox Family Settings app",
+          "url": "https://www.xbox.com/en-GB/apps/family-settings-app"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: PlayStation parental controls — full guide",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=PlayStation+parental+controls+how+to"
+        },
+        {
+          "title": "Search: Xbox Family Settings app walkthrough",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Xbox+Family+Settings+app+how+to"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "character-ai",
+    "name": "Character.AI",
+    "category": "Social",
+    "minAge": "13+ (16+ in Europe) — no chat for under-18s",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "13 (16 in Europe)",
+    "ukAgeAssurance": "Yes",
+    "ukAgeAssuranceNote": "Mandatory age assurance; under-18s lose open-ended chat and get Reading Mode.",
+    "why": "AI ‘characters’ you can write stories and roleplay with — from a tutor to a fictional partner.",
+    "risks": [
+      "Treating generated responses as reliable personal advice",
+      "Sharing sensitive personal information",
+      "Emotional reliance on a simulated character"
+    ],
+    "settings": [
+      "Expect an age check — a selfie estimate or ID may be required",
+      "Turn on Parental Insights so you get a weekly activity email",
+      "Block the app entirely with Screen Time or Family Link if you'd rather they didn't use it"
+    ],
+    "detail": {
+      "overview": "Character.AI offers user-created characters and entertainment features. Its July 2026 help pages say all users undergo age assurance and verified under-18s cannot chat with characters. Reading Mode includes viewing previous chats and creative features. A September update confirms that under-18 open-ended chat remains unavailable.",
+      "ageRationale": "Account eligibility and permission to chat are separate. Character.AI describes an under-18 experience without open-ended character chat and age assurance to assign the experience. This review has not tested the system’s accuracy.",
+      "evidence": [
+        {
+          "claim": "Character.AI announced it would remove open-ended chat for under-18 users and roll out age assurance for all accounts.",
+          "publisher": "Character.AI",
+          "title": "Taking Bold Steps to Keep Teen Users Safe on Character.AI",
+          "year": "2025",
+          "url": "https://blog.character.ai/u18-chat-announcement/",
+          "type": "Platform policy"
+        },
+        {
+          "claim": "Under-18 verified users are placed in ‘Reading Mode’, where they can browse characters and content but chat features are unavailable.",
+          "publisher": "Character.AI Help Center",
+          "title": "What is Reading Mode?",
+          "year": "2025",
+          "url": "https://support.character.ai/hc/en-us/articles/51795669396763-What-is-Reading-Mode",
+          "type": "Platform policy"
+        },
+        {
+          "claim": "All users must complete an age assurance check, which determines whether they get the adult or the under-18 experience.",
+          "publisher": "Character.AI Help Center",
+          "title": "What is Age Assurance?",
+          "year": "2025",
+          "url": "https://support.character.ai/hc/en-us/articles/53182286684059-What-is-Age-Assurance",
+          "type": "Platform policy"
+        },
+        {
+          "claim": "The September 2026 update confirms the under-18 chat restriction and weekly Parental Insights emails for linked parents.",
+          "publisher": "Character.AI",
+          "title": "September safety update",
+          "url": "https://blog.character.ai/continuing-to-build-upon-our-safety-priorities/",
+          "year": "2026",
+          "type": "Platform policy"
+        }
+      ],
+      "parentTalkingPoints": [
+        "If the account offers unexpected features, review its age and settings together and contact official support. Do not assume your child deliberately bypassed a check.",
         "Ask what they were getting out of it. Company, a listening ear, help writing a story? Then find a real-world version of that.",
         "Be clear the AI isn't a friend and isn't qualified to handle low moods. Agree together on a real person they'll go to instead.",
-        "Losing chat access felt like a real loss to many teens. Acknowledge that rather than treating it as a win.",
+        "Losing chat access felt like a real loss to many teens. Acknowledge that rather than treating it as a win."
       ],
-      settingsHowTo: [
-        { label: "Character.AI: Age Assurance help centre", url: "https://support.character.ai/hc/en-us/categories/50705410179995-Age-Assurance" },
-        { label: "Character.AI: What is Reading Mode?", url: "https://support.character.ai/hc/en-us/articles/51795669396763-What-is-Reading-Mode" },
-        { label: "Character.AI: Safety Center (age rules, Parental Insights)", url: "https://support.character.ai/hc/en-us/articles/21704914723995-Safety-Center" },
-        { label: "Common Sense Media: AI companion risk assessment", url: "https://www.commonsensemedia.org/ai-ratings/social-ai-companions" },
+      "settingsHowTo": [
+        {
+          "label": "Character.AI: Age Assurance help centre",
+          "url": "https://support.character.ai/hc/en-us/categories/50705410179995-Age-Assurance"
+        },
+        {
+          "label": "Character.AI: What is Reading Mode?",
+          "url": "https://support.character.ai/hc/en-us/articles/51795669396763-What-is-Reading-Mode"
+        },
+        {
+          "label": "Character.AI: Safety Center (age rules, Parental Insights)",
+          "url": "https://support.character.ai/hc/en-us/articles/21704914723995-Safety-Center"
+        },
+        {
+          "label": "Common Sense Media: AI companion risk assessment",
+          "url": "https://www.commonsensemedia.org/ai-ratings/social-ai-companions"
+        }
       ],
-      videoTutorials: [
-        { title: "AI companions — what every parent needs to know", channel: "Common Sense Media", url: "https://www.youtube.com/results?search_query=Common+Sense+Media+AI+companion+apps+parents" },
-        { title: "Block apps with Screen Time / Family Link", channel: "Apple / Google", url: "https://www.youtube.com/results?search_query=block+app+Screen+Time+Family+Link" },
-      ],
-    },
+      "videoTutorials": [
+        {
+          "title": "Search: AI companions — what every parent needs to know",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+AI+companion+apps+parents"
+        },
+        {
+          "title": "Search: Block apps with Screen Time / Family Link",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=block+app+Screen+Time+Family+Link"
+        }
+      ]
+    }
   },
-
   {
-  "slug": "replika",
-  "name": "Replika",
-  "category": "Social",
-  "minAge": "18+ (terms)",
-  "lastCheckedUK": "September 2026",
-  "officialMinAge": "18",
-  "ukAgeAssurance": "Partial",
-  "ukAgeAssuranceNote": "The terms exclude under-18s. This source check does not establish age-check effectiveness.",
-  "why": "‘AI friend / partner’ chatbot with paid romantic and ‘adult’ modes.",
-  "risks": [
-    "Sexual roleplay even on free tier",
-    "Emotional dependence and isolation",
-    "Designed to drive paid upgrades"
-  ],
-  "settings": [
-    "Not appropriate for under-18s — block / uninstall"
-  ],
-  "detail": {
-    "overview": "Replika is marketed as an AI companion. Italy’s data regulator temporarily banned it in 2023 after finding it could expose minors to sexually explicit conversations, and design choices push users towards an emotionally intense, paid relationship.",
-    "ageRationale": "Replika’s terms explicitly prohibit use by anyone under 18, whether registered or not. An app-store content rating is separate from this eligibility rule.",
-    "evidence": [
-      {
-        "claim": "Replika does not authorize under-18s to use the service.",
-        "publisher": "Replika",
-        "title": "Terms of Service, section 6.4",
-        "url": "https://replika.com/legal/terms/en",
-        "year": "2026",
-        "type": "Platform policy"
-      },
-      {
-        "claim": "Italy’s Garante (data regulator) banned Replika over risks to minors and emotionally vulnerable users.",
-        "publisher": "Garante per la Protezione dei Dati Personali (Italy)",
-        "title": "Replika: stop al trattamento dei dati degli utenti italiani",
-        "year": "2023",
-        "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9852506",
-        "type": "Regulator"
-      },
-      {
-        "claim": "Common Sense Media risk assessment rates Replika as ‘unacceptable risk’ for under-18s.",
-        "publisher": "Common Sense Media",
-        "title": "AI Risk Assessment: Social AI Companions",
-        "year": "2025",
-        "url": "https://www.commonsensemedia.org/ai-ratings/social-ai-companions",
-        "type": "Charity / NGO"
-      }
+    "slug": "replika",
+    "name": "Replika",
+    "category": "Social",
+    "minAge": "18+ (terms)",
+    "lastCheckedUK": "September 2026",
+    "officialMinAge": "18",
+    "ukAgeAssurance": "Partial",
+    "ukAgeAssuranceNote": "The terms exclude under-18s. This source check does not establish age-check effectiveness.",
+    "why": "‘AI friend / partner’ chatbot with paid romantic and ‘adult’ modes.",
+    "risks": [
+      "Sexual roleplay even on free tier",
+      "Emotional dependence and isolation",
+      "Designed to drive paid upgrades"
     ],
-    "parentTalkingPoints": [
-      "Replika is built for paying adults who want a romantic AI partner. It is not a teen wellbeing app.",
-      "If you find it on their device, uninstall and talk about who they go to when they feel lonely."
+    "settings": [
+      "Not appropriate for under-18s — block / uninstall"
     ],
-    "settingsHowTo": [
-      {
-        "label": "Apple Screen Time — block apps",
-        "url": "https://support.apple.com/en-gb/HT201304"
-      },
-      {
-        "label": "Google Family Link — block apps",
-        "url": "https://families.google/familylink/"
-      }
-    ],
-    "videoTutorials": [
-      {
-        "title": "AI companion apps — parents’ guide",
-        "channel": "Common Sense Media",
-        "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+AI+companion+apps+parents"
-      },
-      {
-        "title": "Block apps with Apple Screen Time",
-        "channel": "Apple Support",
-        "url": "https://www.youtube.com/results?search_query=Apple+Screen+Time+block+apps+how+to"
-      }
-    ]
+    "detail": {
+      "overview": "Replika is marketed as an AI companion. Italy’s data regulator temporarily banned it in 2023 after finding it could expose minors to sexually explicit conversations, and design choices push users towards an emotionally intense, paid relationship.",
+      "ageRationale": "Replika’s terms explicitly prohibit use by anyone under 18, whether registered or not. An app-store content rating is separate from this eligibility rule.",
+      "evidence": [
+        {
+          "claim": "Replika does not authorize under-18s to use the service.",
+          "publisher": "Replika",
+          "title": "Terms of Service, section 6.4",
+          "url": "https://replika.com/legal/terms/en",
+          "year": "2026",
+          "type": "Platform policy"
+        },
+        {
+          "claim": "In February 2023, Italy’s Garante imposed a provisional restriction on processing Italian users’ data, citing risks to minors and vulnerable users. This historical action is not a claim that a blanket ban remains in force today.",
+          "publisher": "Garante per la Protezione dei Dati Personali (Italy)",
+          "title": "Replika: stop al trattamento dei dati degli utenti italiani",
+          "year": "2023",
+          "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9852506",
+          "type": "Regulator"
+        }
+      ],
+      "parentTalkingPoints": [
+        "Replika is built for paying adults who want a romantic AI partner. It is not a teen wellbeing app.",
+        "If you find it on their device, uninstall and talk about who they go to when they feel lonely."
+      ],
+      "settingsHowTo": [
+        {
+          "label": "Apple Screen Time — block apps",
+          "url": "https://support.apple.com/en-gb/HT201304"
+        },
+        {
+          "label": "Google Family Link — block apps",
+          "url": "https://families.google/familylink/"
+        }
+      ],
+      "videoTutorials": [
+        {
+          "title": "Search: AI companion apps — parents’ guide",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Common+Sense+Media+AI+companion+apps+parents"
+        },
+        {
+          "title": "Search: Block apps with Apple Screen Time",
+          "channel": "YouTube search results — check the uploader and date",
+          "url": "https://www.youtube.com/results?search_query=Apple+Screen+Time+block+apps+how+to"
+        }
+      ]
+    }
   }
-},
 ];
 
 export type GlossaryEntry = {
@@ -2132,202 +2404,1765 @@ export type GlossaryEntry = {
 // Glossary wording review: 21 September 2026. See docs/glossary-review-2026-09-21.md.
 // Source links support meanings, not universal usage or a diagnosis of a message.
 export const GLOSSARY: GlossaryEntry[] = [
-  {"term":"67","kind":"Number","meaning":"“Six seven”: a playful meme response without one fixed meaning; sometimes used for “so-so”.","context":"May also simply be a number. A match cannot tell whether someone is referencing the meme.","example":"“What time is it?” — “67.”","riskLevel":"Usually fine","aliases":["6-7","6 7","six seven","six-seven"],"sourceUrl":"https://www.dictionary.com/culture/slang/67"},
-  {"term":"212","kind":"Number","meaning":"May be a reference to the Azealia Banks song or simply a number.","context":"A fixed slang meaning was not established in this review.","riskLevel":"Usually fine","matchable":false,"reviewNote":"Uncertain meaning — not used in automatic matching."},
-  {"term":"420","kind":"Number","meaning":"Can refer to cannabis; it may also simply be a number.","context":"If it shows up with 🍃 or transaction talk, worth a calm conversation.","riskLevel":"Worth a chat","sourceUrl":"https://www.dictionary.com/browse/420","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"1437","kind":"Number","meaning":"Sometimes interpreted as “I love you forever” from letter counts; not independently corroborated in this review.","context":"Ask what the sender meant; it may simply be a number.","riskLevel":"Usually fine","reviewNote":"The letter-count interpretation is plausible, but an individual reliable source was not established in this review. Do not assume it is a hidden message.","matchable":false},
-  {"term":"143","kind":"Number","meaning":"‘I love you’ — letter count.","context":"Established numeric shorthand, or simply a number; not necessarily a romantic message.","riskLevel":"Usually fine","sourceUrl":"https://www.netlingo.com/acronyms"},
-  {"term":"182","kind":"Number","meaning":"‘I hate you’.","context":"Documented numeric shorthand, or simply a number. Context determines whether it is an insult.","riskLevel":"Usually fine","sourceUrl":"https://www.netlingo.com/acronyms"},
-  {"term":"53X","kind":"Number","meaning":"An older coded spelling of “sex”; it can also mean “53 times” in an ordinary numerical context.","context":"Documented older internet shorthand, not evidence of a current trend or intent to bypass filters.","riskLevel":"Investigate","sourceUrl":"https://www.dictionary.com/culture/slang/53x"},
-  {"term":"CD9","kind":"Acronym","meaning":"‘Code 9’ — parent nearby, change the subject.","context":"Documented shorthand for a parent being nearby. Its presence does not explain why someone wants privacy.","riskLevel":"Worth a chat","sourceUrl":"https://www.netlingo.com/word/cd9.php"},
-  {"term":"Aight","kind":"Slang","meaning":"Okay / alright.","context":"Casual agreement.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Alpha","kind":"Slang","meaning":"Someone seen as dominant or powerful in social settings.","context":"Often ironic. Linked to ‘manosphere’ content when used seriously by boys.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"AF","kind":"Acronym","meaning":"‘As f***’ — used to emphasise.","context":"Very common. Usually harmless.","example":"“That’s cool af.”","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Ate","kind":"Slang","meaning":"Did something really well.","context":"Compliment, especially about outfits or performances.","example":"“She ate that performance.”","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Aura","kind":"Slang","meaning":"Your social vibe. You gain or lose ‘aura points’ for cool or cringe behaviour.","context":"Playful self-rating. Watch for it being used to mock peers.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Bae","kind":"Slang","meaning":"An affectionate name for a partner or someone you love.","context":"An affectionate nickname, related to baby or babe.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/"},
-  {"term":"Banger","kind":"Slang","meaning":"An amazing song or thing.","context":"Positive.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Based","kind":"Slang","meaning":"Approval of an opinion or someone acting confidently and unapologetically.","context":"Approval does not establish that an opinion is factual. Can be sincere or ironic.","riskLevel":"Worth a chat","sourceUrl":"https://www.dictionary.com/culture/slang/based","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"Basic","kind":"Slang","meaning":"Unoriginal, mainstream.","context":"Mild put-down.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Beef","kind":"Slang","meaning":"A feud or argument.","context":"Friendship drama. Escalates online quickly.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Bed rotting","kind":"Slang","meaning":"Spending a long time awake in bed, often resting or using devices.","context":"Often a joke, but can flag low mood or burnout.","riskLevel":"Worth a chat","reviewNote":"The phrase alone does not establish depression, laziness or avoidance. Ask how the person feels.","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/"},
-  {"term":"Beige flag","kind":"Slang","meaning":"A neutral quirk in a partner — neither red nor green.","context":"Harmless TikTok trend.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Beg / Beggy","kind":"Slang","meaning":"Someone who tries too hard for attention or approval.","context":"Used as an insult in UK schools.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Bet","kind":"Slang","meaning":"‘Okay’ or ‘let’s do it’.","context":"Casual agreement.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"BFFR","kind":"Acronym","meaning":"‘Be f***ing for real’ — call for honesty.","context":"Used playfully between friends.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Big yikes","kind":"Slang","meaning":"Extremely embarrassing.","context":"Reaction phrase.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Bop","kind":"Slang","meaning":"A great song. Can also be a sexist put-down for a girl — context-dependent.","context":"Watch for the second meaning in mixed group chats.","riskLevel":"Worth a chat","sourceUrl":"https://knowyourmeme.com/memes/bop-slang","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"Bounce","kind":"Slang","meaning":"To leave.","context":"Casual.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Brain rot","kind":"Slang","meaning":"Trivial or repetitive online content, a fixation on it, or the feeling that too much of it has dulled your thinking.","context":"An informal expression, not a medical diagnosis.","riskLevel":"Worth a chat","aliases":["brainrot","brain-rot"],"sourceUrl":"https://www.dictionary.com/culture/slang/brainrot"},
-  {"term":"Brat","kind":"Slang","meaning":"Messy, confident, self-expressive (after Charli XCX’s album).","context":"Can refer to the Charli XCX aesthetic or retain its ordinary meaning of badly behaved. Not every use is a compliment.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Brokie","kind":"Slang","meaning":"Someone with no money.","context":"Light teasing.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Bruh","kind":"Slang","meaning":"‘Dude’ / exasperation.","context":"Very common.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Bussin’","kind":"Slang","meaning":"Delicious — usually food.","context":"Positive.","riskLevel":"Usually fine","aliases":["bussin","bussin'","bussing"],"sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Canon event","kind":"Slang","meaning":"A defining, unavoidable life moment (from Spider-Verse).","context":"Often used to justify bad decisions.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Cap / No cap","kind":"Slang","meaning":"‘Cap’ = a lie; ‘no cap’ = no lie.","context":"Very common.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Caught in 4K","kind":"Slang","meaning":"Exposed or caught doing something; a video is not required.","context":"Calling someone out.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Cheugy","kind":"Slang","meaning":"Outdated or trying too hard.","context":"Mild insult, often aimed at millennials.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Chuzz","kind":"Slang","meaning":"Derogatory term for an ‘unattractive girl’ — from ‘chopped huzz’.","context":"Sexist insult, often in comment sections. Worth talking about.","riskLevel":"Investigate","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Clapped","kind":"Slang","meaning":"Ugly or worn out (UK).","context":"Often a personal insult.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Clown","kind":"Slang","meaning":"Someone foolish, or self-deprecation for being naive.","context":"Light. Watch for repeated targeting of one person.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Cooked","kind":"Slang","meaning":"Doomed, in trouble.","context":"Often about exams.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Cope","kind":"Slang","meaning":"‘Deal with it’ — dismissive end to an argument.","context":"Mildly aggressive.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Cringe","kind":"Slang","meaning":"Embarrassing.","context":"Ubiquitous.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Cursed","kind":"Slang","meaning":"Off-putting, creepy in a funny way.","context":"Reaction word.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Curve","kind":"Slang","meaning":"To reject someone romantically.","context":"Common in dating talk.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Dank","kind":"Slang","meaning":"Cool / niche (usually memes).","context":"Harmless.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Dead / I’m dead","kind":"Slang","meaning":"Laughing extremely hard.","context":"Can be a laughing reaction, but “dead” also has its ordinary meaning. Do not dismiss a literal statement of harm.","riskLevel":"Usually fine","aliases":["I'm dead","im dead"],"sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Deadass","kind":"Slang","meaning":"‘I’m serious’.","context":"Emphatic.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Deets","kind":"Slang","meaning":"Details.","context":"Casual.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Delulu","kind":"Slang","meaning":"Delusional — usually about a crush or fan obsession.","context":"Almost always playful.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Demure","kind":"Slang","meaning":"Modest, mindful (ironic TikTok trend).","context":"Harmless meme.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Down bad","kind":"Slang","meaning":"Desperately into someone.","context":"Romantic. Self-deprecating.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Do it for the plot","kind":"Slang","meaning":"Make a risky choice for a good story.","context":"Can encourage genuinely risky behaviour.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Drip","kind":"Slang","meaning":"Stylish outfit.","context":"Compliment.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Dub / W","kind":"Slang","meaning":"A win.","context":"Positive.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Dusty","kind":"Slang","meaning":"Unkempt, low-status (insult).","context":"Personal put-down.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Eepy","kind":"Slang","meaning":"Sleepy / cute.","context":"Harmless.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Extra","kind":"Slang","meaning":"Over the top / dramatic.","context":"Mild critique.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Feral","kind":"Slang","meaning":"Acting wildly or with little restraint; can be playful or critical.","context":"Self-deprecating humour.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Finsta","kind":"Slang","meaning":"‘Fake Instagram’ — a private secondary account for close friends.","context":"A second account is not by itself evidence of harmful behaviour. Discuss privacy and who can contact them.","riskLevel":"Worth a chat","sourceUrl":"https://www.dictionary.com/culture/slang/finsta","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"Fire","kind":"Slang","meaning":"Excellent.","context":"Positive.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Fit / Fit check","kind":"Slang","meaning":"Fit can mean an outfit, physically healthy, or attractive (UK). A fit check shows an outfit.","context":"Read the surrounding words to choose the meaning.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/"},
-  {"term":"Flex","kind":"Slang","meaning":"To brag.","context":"Common.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"FR","kind":"Acronym","meaning":"‘For real’ — agreement.","context":"Very common.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"FYP","kind":"Acronym","meaning":"‘For You Page’ — TikTok’s algorithmic feed.","context":"What the algorithm shows them shapes mood and worldview.","riskLevel":"Worth a chat","sourceUrl":"https://arxiv.org/abs/2605.10690","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"Ghosted","kind":"Slang","meaning":"Cut off without explanation.","context":"Common in dating and friendships.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Glazing","kind":"Slang","meaning":"Praising someone excessively; often a criticism of flattery.","context":"Casual put-down.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Glow up","kind":"Slang","meaning":"Positive transformation in looks/confidence.","context":"Compliment. Can fuel appearance pressure.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"GOAT / GOATest","kind":"Acronym","meaning":"Greatest Of All Time.","context":"High praise.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Goblin mode","kind":"Slang","meaning":"Unapologetically indulging your habits without trying to look polished or meet social expectations.","context":"Often a humorous description of letting things slide; sometimes used more broadly for wild behaviour.","riskLevel":"Usually fine","sourceUrl":"https://www.dictionary.com/culture/slang/goblin-mode"},
-  {"term":"Grind","kind":"Slang","meaning":"Working hard.","context":"Hustle talk.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Gyatt","kind":"Slang","meaning":"Exclamation reacting to a curvy figure.","context":"Often boys-side language; can be sexualised. Worth a conversation about respect.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Hits different","kind":"Slang","meaning":"Feels uniquely good.","context":"Positive.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Hop off","kind":"Slang","meaning":"‘Get off my back / log off’.","context":"Dismissive.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Huzz","kind":"Slang","meaning":"Disrespectful term for girls — internet variant of ‘hoes’.","context":"Can be demeaning when used about girls or women. Discuss respectful language without assuming who uses it.","riskLevel":"Investigate","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Hype","kind":"Slang","meaning":"Excitement / popularity.","context":"Common.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Ick","kind":"Slang","meaning":"Sudden turn-off — usually a tiny thing a crush did.","context":"Lighthearted.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"IRL","kind":"Acronym","meaning":"In Real Life.","context":"Used to contrast with online life.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"IYKYK","kind":"Acronym","meaning":"‘If you know, you know’ — in-joke.","context":"Often harmless. Can signal an exclusionary group chat.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Jarring","kind":"Slang","meaning":"Annoying / cringey (UK).","context":"Mild insult.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Karen","kind":"Slang","meaning":"Entitled, rude (often middle-aged) woman trope.","context":"Used about parents and teachers.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"KMS / KYS","kind":"Acronym","meaning":"‘Kill myself’ / ‘kill yourself’ — used as hyperbole, also as serious bullying.","context":"Never assume it’s a joke. Open a calm conversation.","riskLevel":"Investigate","sourceUrl":"https://www.netlingo.com/acronyms"},
-  {"term":"Lit","kind":"Slang","meaning":"Exciting or cool.","context":"Positive.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"L / Take the L","kind":"Slang","meaning":"Loss / accepting defeat.","context":"Gaming origin.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"LMAO","kind":"Acronym","meaning":"‘Laughing my ass off’.","context":"Standard reaction.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Locked in","kind":"Slang","meaning":"Focused, in the zone.","context":"Positive.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Lore","kind":"Slang","meaning":"Backstory about a person or fandom.","context":"Often gossip.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"LOML","kind":"Acronym","meaning":"“Love of my life”, used romantically or affectionately for a friend.","context":"Affectionate.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Lowkey / Highkey","kind":"Slang","meaning":"Lowkey: quietly, somewhat or without making a fuss. Highkey: openly or strongly.","context":"Very common.","riskLevel":"Usually fine","aliases":["low-key","high-key","low key","high key"],"sourceUrl":"https://www.dictionary.com/culture/slang/lowkenuinely"},
-  {"term":"Main character","kind":"Slang","meaning":"Living life like you’re the star of the show.","context":"May be playful, admiring or critical. Source verification remains pending.","riskLevel":"Usually fine","reviewNote":"Individual source check remains pending."},
-  {"term":"Mango mustard","kind":"Slang","meaning":"An absurd meme phrase; no reliable fixed translation established in this review.","context":"An intentionally absurd phrase. Ask what it means in this particular joke rather than treating it as a code.","riskLevel":"Usually fine","matchable":false,"reviewNote":"Uncertain meaning — not used in automatic matching."},
-  {"term":"Mid","kind":"Slang","meaning":"Mediocre.","context":"Mild put-down. Watch for it being aimed at looks.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Mogging","kind":"Slang","meaning":"Showing off looks to feel superior.","context":"Linked to ‘looksmaxxing’ communities — worth a conversation.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Mood","kind":"Slang","meaning":"‘I relate’.","context":"Common reaction.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Mute","kind":"Slang","meaning":"Silently ignore someone on a platform.","context":"Common.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"NGL","kind":"Acronym","meaning":"‘Not gonna lie’.","context":"Honesty marker.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Neek","kind":"Slang","meaning":"UK insult mixing nerd + geek.","context":"Mild bullying.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"NPC","kind":"Slang","meaning":"‘Non-player character’ — someone seen as bland or robotic.","context":"Common insult about peers.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Normie","kind":"Slang","meaning":"Someone outside internet culture.","context":"Mild.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Ohio","kind":"Slang","meaning":"Synonym for strange or cringey.","context":"Meme word.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"OOMF","kind":"Acronym","meaning":"‘One of my followers / friends’.","context":"Vague reference, often subtweeting.","riskLevel":"Usually fine","sourceUrl":"https://www.dictionary.com/culture/acronyms/oomf","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"OP","kind":"Acronym","meaning":"‘Overpowered’ — too good. Also ‘original poster’.","context":"Context-dependent.","riskLevel":"Usually fine","sourceUrl":"https://support.reddithelp.com/hc/en-us/articles/360043478311-How-can-I-tell-who-s-a-moderator-Reddit-administrator-or-the-original-poster-on-a-comment-thread","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"Opp / Opps","kind":"Slang","meaning":"An opponent, rival or enemy.","context":"May be joking or hostile. The term alone is not evidence of gang involvement.","riskLevel":"Worth a chat","aliases":["op"],"sourceUrl":"https://www.dictionary.com/articles/tiktok-slang-words"},
-  {"term":"Outta pocket","kind":"Slang","meaning":"Out of line / controversial.","context":"Reaction phrase.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Periodt","kind":"Slang","meaning":"Emphasis — ‘end of story’.","context":"Empowering.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Pookie","kind":"Slang","meaning":"Term of endearment.","context":"Friends or partner.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"POS","kind":"Acronym","meaning":"Can mean “piece of shit” (an insult), “parent over shoulder”, or “point of sale”.","context":"These meanings differ substantially. Ask what the person meant rather than assuming secrecy.","riskLevel":"Worth a chat","sourceUrl":"https://www.dictionary.com/browse/pos"},
-  {"term":"POV","kind":"Acronym","meaning":"‘Point of view’ — TikTok framing.","context":"Common.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Pushing P","kind":"Slang","meaning":"Doing things the right way / showing class.","context":"Hip-hop origin.","riskLevel":"Usually fine","sourceUrl":"https://www.dictionary.com/culture/slang/pushing-p","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"Ratio","kind":"Slang","meaning":"An unfavourable balance of replies and likes, or a challenge to get more engagement than another post.","context":"Often used to signal disagreement; counts alone do not establish what everyone thinks.","riskLevel":"Worth a chat","sourceUrl":"https://www.dictionary.com/articles/tiktok-slang-words","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"Real","kind":"Slang","meaning":"‘True / I agree’.","context":"Common.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Rent free","kind":"Slang","meaning":"Something stuck in your head.","context":"Harmless.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Rizz","kind":"Slang","meaning":"Charisma / flirting skill.","context":"A compliment about charm; not specific to one gender.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/"},
-  {"term":"Roadman","kind":"Slang","meaning":"UK streetwear / urban persona.","context":"Style identity. Sometimes linked to drill culture.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Salty","kind":"Slang","meaning":"Bitter / resentful.","context":"Common.","riskLevel":"Usually fine","sourceUrl":"https://www.dictionary.com/browse/salty","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"Serving","kind":"Slang","meaning":"Looking amazing.","context":"Compliment.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Sheesh","kind":"Slang","meaning":"Exclamation of awe.","context":"Reaction.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Ship","kind":"Slang","meaning":"Want two people to be a couple.","context":"Fandom and friend talk.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Side eye","kind":"Slang","meaning":"A judgemental look.","context":"Common.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Sigma","kind":"Slang","meaning":"Lone-wolf, ‘main character’ male energy.","context":"Often ironic, but rooted in ‘manosphere’ ideas about masculinity.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Simp","kind":"Slang","meaning":"Overly devoted to someone (usually romantic).","context":"Common insult. Can carry misogynistic undertones.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Situationship","kind":"Slang","meaning":"Undefined romantic relationship.","context":"Real teen experience worth discussing.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Skibidi","kind":"Slang","meaning":"Nonsense meme word — can mean ‘cool’ or ‘bad’.","context":"Pure Gen-Alpha humour.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Slay","kind":"Slang","meaning":"Performed brilliantly.","context":"Compliment.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Sliding into DMs","kind":"Slang","meaning":"Starting a private-message conversation, sometimes to flirt.","context":"The phrase alone does not establish the sender’s intentions.","riskLevel":"Worth a chat","sourceUrl":"https://www.dictionary.com/culture/slang/slide-into-the-dms","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"Smol","kind":"Slang","meaning":"Cute / tiny.","context":"Harmless.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Smurfing","kind":"Slang","meaning":"A skilled player using an account or manipulating matchmaking to play below their true skill level.","context":"A fair-play issue. It does not specifically mean an adult targeting children.","riskLevel":"Worth a chat","sourceUrl":"https://playvalorant.com/en-us/news/game-updates/riot-mobile-verification-beta/"},
-  {"term":"Snaked","kind":"Slang","meaning":"Betrayed.","context":"Friendship drama.","riskLevel":"Usually fine","reviewNote":"Individual source check remains pending."},
-  {"term":"Snatched","kind":"Slang","meaning":"Toned / styled to perfection.","context":"Compliment about appearance — can fuel body pressure.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Social battery","kind":"Slang","meaning":"Energy for social situations.","context":"Self-aware mental health language.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Stan","kind":"Slang","meaning":"Obsessed fan.","context":"Fandom term. Can tip into unhealthy parasocial behaviour.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Sus","kind":"Slang","meaning":"Suspicious.","context":"Popularised further by Among Us, but the abbreviation predates the game.","riskLevel":"Usually fine","sourceUrl":"https://www.dictionary.com/culture/slang/pretty-sus"},
-  {"term":"TBH","kind":"Acronym","meaning":"‘To be honest’.","context":"Common.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Tea","kind":"Slang","meaning":"Gossip.","context":"‘Spill the tea’.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Thirsty / Thirst trap","kind":"Slang","meaning":"Desperate for attention; sexy post designed to get reactions.","context":"Image-pressure language. Worth talking about audience and consent.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Throw shade","kind":"Slang","meaning":"Passive-aggressive comments.","context":"Drama signal.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Trad / Tradwife","kind":"Slang","meaning":"Trad means traditional. Tradwife refers to a woman embracing traditional homemaking and gender roles.","context":"Can describe an aesthetic or ideology. Discuss the specific beliefs expressed rather than inferring them from the label.","riskLevel":"Worth a chat","sourceUrl":"https://www.dictionary.com/browse/tradwife"},
-  {"term":"Unalive","kind":"Slang","meaning":"‘Kill’ — used to dodge platform moderation.","context":"Common in mental-health and dark-humour content. Take seriously if used about self.","riskLevel":"Investigate","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Valid","kind":"Slang","meaning":"Acceptable / true.","context":"Affirming.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Vibe / Vibe check","kind":"Slang","meaning":"Mood; assessing someone’s mood.","context":"Casual.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Vent account","kind":"Slang","meaning":"Anonymous account for sharing low feelings.","context":"Can be supportive — can also reinforce distress. Worth knowing it exists.","riskLevel":"Worth a chat","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"W","kind":"Slang","meaning":"A win.","context":"Positive.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Womp womp","kind":"Slang","meaning":"Mock-sympathy sound — ‘too bad’.","context":"Dismissive.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"WTF","kind":"Acronym","meaning":"‘What the f***’ — shock.","context":"Common.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"WYA / WYD","kind":"Acronym","meaning":"‘Where you at’ / ‘what you doing’.","context":"Casual check-in.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"X-rated","kind":"Slang","meaning":"Sexually explicit content.","context":"If paired with DMs or photo-sharing talk, take seriously.","riskLevel":"Investigate","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Yap / Yapper","kind":"Slang","meaning":"Someone who talks a lot.","context":"Casual.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Yas","kind":"Slang","meaning":"Enthusiastic yes.","context":"Common.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/","reviewNote":"Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."},
-  {"term":"Yeet","kind":"Slang","meaning":"Throw with force; general exclamation.","context":"Older but still used.","riskLevel":"Usually fine","sourceUrl":"https://www.merriam-webster.com/dictionary/yeet","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"YOLO","kind":"Acronym","meaning":"‘You only live once’.","context":"Used to justify risky behaviour.","riskLevel":"Worth a chat","sourceUrl":"https://www.oxfordlearnersdictionaries.com/us/definition/english/yolo","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"Zesty","kind":"Slang","meaning":"Lively or energetic; also used as a mocking label based on stereotypes about sexuality or femininity.","context":"Ask how it was used. Address targeted insults without guessing anyone’s sexuality.","riskLevel":"Worth a chat","sourceUrl":"https://knowyourmeme.com/memes/zesty-slang/","reviewNote":"Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."},
-  {"term":"🍃","kind":"Emoji","meaning":"Leaves, nature or a breeze; sometimes a cannabis reference.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Worth a chat","sourceUrl":"https://emojipedia.org/leaf-fluttering-in-wind","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"💊","kind":"Emoji","meaning":"Medicine or a pill; can also refer to non-medical drug use.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Investigate","sourceUrl":"https://emojipedia.org/pill","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🔌","kind":"Emoji","meaning":"Electricity or charging; figuratively a connection or supplier.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Investigate","sourceUrl":"https://emojipedia.org/electric-plug","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"❄️","kind":"Emoji","meaning":"Snow, winter or cold; sometimes an insult implying oversensitivity.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/snowflake","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🍄","kind":"Emoji","meaning":"A mushroom, nature or food; sometimes a reference to psychedelic mushrooms.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Investigate","sourceUrl":"https://emojipedia.org/mushroom","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🍆","kind":"Emoji","meaning":"An aubergine; also used as a sexual reference to a penis.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Investigate","sourceUrl":"https://emojipedia.org/eggplant","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🍑","kind":"Emoji","meaning":"A peach; also used to refer to a bottom.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Worth a chat","sourceUrl":"https://emojipedia.org/peach","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"💦","kind":"Emoji","meaning":"Water, sweat or splashing; can also be sexual innuendo.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Worth a chat","sourceUrl":"https://emojipedia.org/sweat-droplets","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"👅","kind":"Emoji","meaning":"A tongue, tasting or playfulness; can also be suggestive.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Worth a chat","sourceUrl":"https://emojipedia.org/tongue","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🌽","kind":"Emoji","meaning":"Corn or food; sometimes used for the sound-alike “porn”.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Investigate","sourceUrl":"https://emojipedia.org/ear-of-corn","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🥵","kind":"Emoji","meaning":"Heat, discomfort or feeling overwhelmed; sometimes attraction.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/hot-face","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"😈","kind":"Emoji","meaning":"Mischief or playful naughtiness; sometimes flirtation.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Worth a chat","sourceUrl":"https://emojipedia.org/smiling-face-with-horns","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"💀","kind":"Emoji","meaning":"A skull or death imagery; often a reaction meaning “that is very funny”.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/skull","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"😭","kind":"Emoji","meaning":"Strong emotion: laughter, joy, frustration, sadness or distress.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/loudly-crying-face","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🤡","kind":"Emoji","meaning":"A clown; can mean foolish behaviour, self-mockery or an insult.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/clown-face","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🧢","kind":"Emoji","meaning":"A cap; also used for “cap”, meaning a lie.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/billed-cap","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🐐","kind":"Emoji","meaning":"A goat; also praise meaning “greatest of all time”.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/goat","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🚩","kind":"Emoji","meaning":"A flag; figuratively a warning sign or concern.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/triangular-flag","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🫶","kind":"Emoji","meaning":"Heart hands expressing love, appreciation or support.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/heart-hands","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"👀","kind":"Emoji","meaning":"Looking, curiosity or attention; sometimes a suggestive reaction.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/eyes","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🦋","kind":"Emoji","meaning":"A butterfly, beauty or happiness.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/butterfly","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🖤","kind":"Emoji","meaning":"Affection, a dark aesthetic, dark humour or sorrow.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Worth a chat","sourceUrl":"https://emojipedia.org/black-heart","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🌈","kind":"Emoji","meaning":"A rainbow, hope or LGBTQ+ pride.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/rainbow","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🍒","kind":"Emoji","meaning":"Cherries; can have sexual or body-related meanings in context.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Worth a chat","sourceUrl":"https://emojipedia.org/cherries","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🥶","kind":"Emoji","meaning":"Cold or freezing; sometimes a reaction to something impressive or harsh.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/cold-face","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🫠","kind":"Emoji","meaning":"Heat, embarrassment, overwhelm or a feeling of melting away.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/melting-face","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"🥲","kind":"Emoji","meaning":"Mixed feelings, gratitude, relief or smiling through sadness.","context":"The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.","riskLevel":"Worth a chat","sourceUrl":"https://emojipedia.org/smiling-face-with-tear","reviewNote":"Context-dependent: ordinary and figurative meanings can overlap."},
-  {"term":"Aura farming","kind":"Slang","meaning":"Deliberately acting cool or confident to cultivate an impressive image.","context":"Meaning and tone depend on the conversation; documented usage does not mean every teen uses it.","riskLevel":"Usually fine","sourceUrl":"https://www.dictionary.com/culture/slang/aura-farming"},
-  {"term":"Crash out","kind":"Slang","meaning":"Lose your temper or act recklessly; can also mean fall asleep.","context":"Meaning and tone depend on the conversation; documented usage does not mean every teen uses it.","riskLevel":"Usually fine","sourceUrl":"https://www.dictionary.com/culture/slang/crash-out"},
-  {"term":"Unc","kind":"Slang","meaning":"Short for uncle; teasing someone for seeming older or out of touch.","context":"Meaning and tone depend on the conversation; documented usage does not mean every teen uses it.","riskLevel":"Usually fine","sourceUrl":"https://www.dictionary.com/culture/slang/unc"},
-  {"term":"Lowkenuinely","kind":"Slang","meaning":"A blend of lowkey and genuinely: expressing something sincerely but casually.","context":"Meaning and tone depend on the conversation; documented usage does not mean every teen uses it.","riskLevel":"Usually fine","sourceUrl":"https://www.dictionary.com/culture/slang/lowkenuinely"},
-  {"term":"It’s giving","kind":"Slang","meaning":"It has the look, energy or impression of something; can also be praise on its own.","context":"Meaning and tone depend on the conversation; documented usage does not mean every teen uses it.","riskLevel":"Usually fine","sourceUrl":"https://www.dictionary.com/culture/slang/its-giving"},
-  {"term":"41","kind":"Number","meaning":"A largely nonsensical meme interjection; can also simply be a number.","context":"Meaning and tone depend on the conversation; documented usage does not mean every teen uses it.","riskLevel":"Usually fine","sourceUrl":"https://www.dictionary.com/culture/slang/41"},
-  {"term":"🔥","kind":"Emoji","meaning":"Fire or heat; also approval of something impressive.","context":"A possible reading, not a judgement of the sender’s wellbeing.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/fire"},
-  {"term":"🥀","kind":"Emoji","meaning":"A wilted flower; can express sadness, disappointment or ironic heartbreak.","context":"A possible reading, not a judgement of the sender’s wellbeing.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/wilted-flower"},
-  {"term":"🫩","kind":"Emoji","meaning":"Tiredness or exhaustion.","context":"A possible reading, not a judgement of the sender’s wellbeing.","riskLevel":"Usually fine","sourceUrl":"https://emojipedia.org/face-with-bags-under-eyes"},
-  {"term":"LOL","kind":"Acronym","meaning":"Laugh out loud.","context":"Established text shorthand; tone depends on the conversation.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"},
-  {"term":"BRB","kind":"Acronym","meaning":"Be right back.","context":"Established text shorthand; tone depends on the conversation.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"},
-  {"term":"AFK","kind":"Acronym","meaning":"Away from keyboard.","context":"Established text shorthand; tone depends on the conversation.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"},
-  {"term":"GG","kind":"Acronym","meaning":"Good game.","context":"Established text shorthand; tone depends on the conversation.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"},
-  {"term":"DM","kind":"Acronym","meaning":"Direct message.","context":"Established text shorthand; tone depends on the conversation.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"},
-  {"term":"IKR","kind":"Acronym","meaning":"I know, right?","context":"Established text shorthand; tone depends on the conversation.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"},
-  {"term":"ILY","kind":"Acronym","meaning":"I love you.","context":"Established text shorthand; tone depends on the conversation.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"},
-  {"term":"LMK","kind":"Acronym","meaning":"Let me know.","context":"Established text shorthand; tone depends on the conversation.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"},
-  {"term":"OMW","kind":"Acronym","meaning":"On my way.","context":"Established text shorthand; tone depends on the conversation.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"},
-  {"term":"BTW","kind":"Acronym","meaning":"By the way.","context":"Established text shorthand; tone depends on the conversation.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"},
-  {"term":"OMG","kind":"Acronym","meaning":"Oh my God or gosh.","context":"Established text shorthand; tone depends on the conversation.","riskLevel":"Usually fine","sourceUrl":"https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"},
+  {
+    "term": "67",
+    "kind": "Number",
+    "meaning": "“Six seven”: a playful meme response without one fixed meaning; sometimes used for “so-so”.",
+    "context": "May also simply be a number. A match cannot tell whether someone is referencing the meme.",
+    "example": "“What time is it?” — “67.”",
+    "riskLevel": "Usually fine",
+    "aliases": [
+      "6-7",
+      "6 7",
+      "six seven",
+      "six-seven"
+    ],
+    "sourceUrl": "https://www.dictionary.com/culture/slang/67"
+  },
+  {
+    "term": "212",
+    "kind": "Number",
+    "meaning": "May be a reference to the Azealia Banks song or simply a number.",
+    "context": "A fixed slang meaning was not established in this review.",
+    "riskLevel": "Usually fine",
+    "matchable": false,
+    "reviewNote": "Uncertain meaning — not used in automatic matching."
+  },
+  {
+    "term": "420",
+    "kind": "Number",
+    "meaning": "Can refer to cannabis; it may also simply be a number.",
+    "context": "If it shows up with 🍃 or transaction talk, worth a calm conversation.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://www.dictionary.com/browse/420",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "1437",
+    "kind": "Number",
+    "meaning": "Sometimes interpreted as “I love you forever” from letter counts; not independently corroborated in this review.",
+    "context": "Ask what the sender meant; it may simply be a number.",
+    "riskLevel": "Usually fine",
+    "reviewNote": "The letter-count interpretation is plausible, but an individual reliable source was not established in this review. Do not assume it is a hidden message.",
+    "matchable": false
+  },
+  {
+    "term": "143",
+    "kind": "Number",
+    "meaning": "‘I love you’ — letter count.",
+    "context": "Established numeric shorthand, or simply a number; not necessarily a romantic message.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.netlingo.com/acronyms"
+  },
+  {
+    "term": "182",
+    "kind": "Number",
+    "meaning": "‘I hate you’.",
+    "context": "Documented numeric shorthand, or simply a number. Context determines whether it is an insult.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.netlingo.com/acronyms"
+  },
+  {
+    "term": "53X",
+    "kind": "Number",
+    "meaning": "An older coded spelling of “sex”; it can also mean “53 times” in an ordinary numerical context.",
+    "context": "Documented older internet shorthand, not evidence of a current trend or intent to bypass filters.",
+    "riskLevel": "Investigate",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/53x"
+  },
+  {
+    "term": "CD9",
+    "kind": "Acronym",
+    "meaning": "‘Code 9’ — parent nearby, change the subject.",
+    "context": "Documented shorthand for a parent being nearby. Its presence does not explain why someone wants privacy.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://www.netlingo.com/word/cd9.php"
+  },
+  {
+    "term": "Aight",
+    "kind": "Slang",
+    "meaning": "Okay / alright.",
+    "context": "Casual agreement.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Alpha",
+    "kind": "Slang",
+    "meaning": "Someone seen as dominant or powerful in social settings.",
+    "context": "Often ironic. Linked to ‘manosphere’ content when used seriously by boys.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "AF",
+    "kind": "Acronym",
+    "meaning": "‘As f***’ — used to emphasise.",
+    "context": "Very common. Usually harmless.",
+    "example": "“That’s cool af.”",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Ate",
+    "kind": "Slang",
+    "meaning": "Did something really well.",
+    "context": "Compliment, especially about outfits or performances.",
+    "example": "“She ate that performance.”",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Aura",
+    "kind": "Slang",
+    "meaning": "Your social vibe. You gain or lose ‘aura points’ for cool or cringe behaviour.",
+    "context": "Playful self-rating. Watch for it being used to mock peers.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Bae",
+    "kind": "Slang",
+    "meaning": "An affectionate name for a partner or someone you love.",
+    "context": "An affectionate nickname, related to baby or babe.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/"
+  },
+  {
+    "term": "Banger",
+    "kind": "Slang",
+    "meaning": "An amazing song or thing.",
+    "context": "Positive.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Based",
+    "kind": "Slang",
+    "meaning": "Approval of an opinion or someone acting confidently and unapologetically.",
+    "context": "Approval does not establish that an opinion is factual. Can be sincere or ironic.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/based",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "Basic",
+    "kind": "Slang",
+    "meaning": "Unoriginal, mainstream.",
+    "context": "Mild put-down.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Beef",
+    "kind": "Slang",
+    "meaning": "A feud or argument.",
+    "context": "Friendship drama. Escalates online quickly.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Bed rotting",
+    "kind": "Slang",
+    "meaning": "Spending a long time awake in bed, often resting or using devices.",
+    "context": "Often a joke, but can flag low mood or burnout.",
+    "riskLevel": "Worth a chat",
+    "reviewNote": "The phrase alone does not establish depression, laziness or avoidance. Ask how the person feels.",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/"
+  },
+  {
+    "term": "Beige flag",
+    "kind": "Slang",
+    "meaning": "A neutral quirk in a partner — neither red nor green.",
+    "context": "Harmless TikTok trend.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Beg / Beggy",
+    "kind": "Slang",
+    "meaning": "Someone who tries too hard for attention or approval.",
+    "context": "Used as an insult in UK schools.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Bet",
+    "kind": "Slang",
+    "meaning": "‘Okay’ or ‘let’s do it’.",
+    "context": "Casual agreement.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "BFFR",
+    "kind": "Acronym",
+    "meaning": "‘Be f***ing for real’ — call for honesty.",
+    "context": "Used playfully between friends.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Big yikes",
+    "kind": "Slang",
+    "meaning": "Extremely embarrassing.",
+    "context": "Reaction phrase.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Bop",
+    "kind": "Slang",
+    "meaning": "A great song. Can also be a sexist put-down for a girl — context-dependent.",
+    "context": "Watch for the second meaning in mixed group chats.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://knowyourmeme.com/memes/bop-slang",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "Bounce",
+    "kind": "Slang",
+    "meaning": "To leave.",
+    "context": "Casual.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Brain rot",
+    "kind": "Slang",
+    "meaning": "Trivial or repetitive online content, a fixation on it, or the feeling that too much of it has dulled your thinking.",
+    "context": "An informal expression, not a medical diagnosis.",
+    "riskLevel": "Worth a chat",
+    "aliases": [
+      "brainrot",
+      "brain-rot"
+    ],
+    "sourceUrl": "https://www.dictionary.com/culture/slang/brainrot"
+  },
+  {
+    "term": "Brat",
+    "kind": "Slang",
+    "meaning": "Messy, confident, self-expressive (after Charli XCX’s album).",
+    "context": "Can refer to the Charli XCX aesthetic or retain its ordinary meaning of badly behaved. Not every use is a compliment.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Brokie",
+    "kind": "Slang",
+    "meaning": "Someone with no money.",
+    "context": "Light teasing.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Bruh",
+    "kind": "Slang",
+    "meaning": "‘Dude’ / exasperation.",
+    "context": "Very common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Bussin’",
+    "kind": "Slang",
+    "meaning": "Delicious — usually food.",
+    "context": "Positive.",
+    "riskLevel": "Usually fine",
+    "aliases": [
+      "bussin",
+      "bussin'",
+      "bussing"
+    ],
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Canon event",
+    "kind": "Slang",
+    "meaning": "A defining, unavoidable life moment (from Spider-Verse).",
+    "context": "Often used to justify bad decisions.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Cap / No cap",
+    "kind": "Slang",
+    "meaning": "‘Cap’ = a lie; ‘no cap’ = no lie.",
+    "context": "Very common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Caught in 4K",
+    "kind": "Slang",
+    "meaning": "Exposed or caught doing something; a video is not required.",
+    "context": "Calling someone out.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Cheugy",
+    "kind": "Slang",
+    "meaning": "Outdated or trying too hard.",
+    "context": "Mild insult, often aimed at millennials.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Chuzz",
+    "kind": "Slang",
+    "meaning": "Derogatory term for an ‘unattractive girl’ — from ‘chopped huzz’.",
+    "context": "Sexist insult, often in comment sections. Worth talking about.",
+    "riskLevel": "Investigate",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Clapped",
+    "kind": "Slang",
+    "meaning": "Ugly or worn out (UK).",
+    "context": "Often a personal insult.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Clown",
+    "kind": "Slang",
+    "meaning": "Someone foolish, or self-deprecation for being naive.",
+    "context": "Light. Watch for repeated targeting of one person.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Cooked",
+    "kind": "Slang",
+    "meaning": "Doomed, in trouble.",
+    "context": "Often about exams.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Cope",
+    "kind": "Slang",
+    "meaning": "‘Deal with it’ — dismissive end to an argument.",
+    "context": "Mildly aggressive.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Cringe",
+    "kind": "Slang",
+    "meaning": "Embarrassing.",
+    "context": "Ubiquitous.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Cursed",
+    "kind": "Slang",
+    "meaning": "Off-putting, creepy in a funny way.",
+    "context": "Reaction word.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Curve",
+    "kind": "Slang",
+    "meaning": "To reject someone romantically.",
+    "context": "Common in dating talk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Dank",
+    "kind": "Slang",
+    "meaning": "Cool / niche (usually memes).",
+    "context": "Harmless.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Dead / I’m dead",
+    "kind": "Slang",
+    "meaning": "Laughing extremely hard.",
+    "context": "Can be a laughing reaction, but “dead” also has its ordinary meaning. Do not dismiss a literal statement of harm.",
+    "riskLevel": "Usually fine",
+    "aliases": [
+      "I'm dead",
+      "im dead"
+    ],
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Deadass",
+    "kind": "Slang",
+    "meaning": "‘I’m serious’.",
+    "context": "Emphatic.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Deets",
+    "kind": "Slang",
+    "meaning": "Details.",
+    "context": "Casual.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Delulu",
+    "kind": "Slang",
+    "meaning": "Delusional — usually about a crush or fan obsession.",
+    "context": "Almost always playful.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Demure",
+    "kind": "Slang",
+    "meaning": "Modest, mindful (ironic TikTok trend).",
+    "context": "Harmless meme.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Down bad",
+    "kind": "Slang",
+    "meaning": "Desperately into someone.",
+    "context": "Romantic. Self-deprecating.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Do it for the plot",
+    "kind": "Slang",
+    "meaning": "Make a risky choice for a good story.",
+    "context": "Can encourage genuinely risky behaviour.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Drip",
+    "kind": "Slang",
+    "meaning": "Stylish outfit.",
+    "context": "Compliment.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Dub / W",
+    "kind": "Slang",
+    "meaning": "A win.",
+    "context": "Positive.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Dusty",
+    "kind": "Slang",
+    "meaning": "Unkempt, low-status (insult).",
+    "context": "Personal put-down.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Eepy",
+    "kind": "Slang",
+    "meaning": "Sleepy / cute.",
+    "context": "Harmless.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Extra",
+    "kind": "Slang",
+    "meaning": "Over the top / dramatic.",
+    "context": "Mild critique.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Feral",
+    "kind": "Slang",
+    "meaning": "Acting wildly or with little restraint; can be playful or critical.",
+    "context": "Self-deprecating humour.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Finsta",
+    "kind": "Slang",
+    "meaning": "‘Fake Instagram’ — a private secondary account for close friends.",
+    "context": "A second account is not by itself evidence of harmful behaviour. Discuss privacy and who can contact them.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/finsta",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "Fire",
+    "kind": "Slang",
+    "meaning": "Excellent.",
+    "context": "Positive.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Fit / Fit check",
+    "kind": "Slang",
+    "meaning": "Fit can mean an outfit, physically healthy, or attractive (UK). A fit check shows an outfit.",
+    "context": "Read the surrounding words to choose the meaning.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/"
+  },
+  {
+    "term": "Flex",
+    "kind": "Slang",
+    "meaning": "To brag.",
+    "context": "Common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "FR",
+    "kind": "Acronym",
+    "meaning": "‘For real’ — agreement.",
+    "context": "Very common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "FYP",
+    "kind": "Acronym",
+    "meaning": "‘For You Page’ — TikTok’s algorithmic feed.",
+    "context": "What the algorithm shows them shapes mood and worldview.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://arxiv.org/abs/2605.10690",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "Ghosted",
+    "kind": "Slang",
+    "meaning": "Cut off without explanation.",
+    "context": "Common in dating and friendships.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Glazing",
+    "kind": "Slang",
+    "meaning": "Praising someone excessively; often a criticism of flattery.",
+    "context": "Casual put-down.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Glow up",
+    "kind": "Slang",
+    "meaning": "Positive transformation in looks/confidence.",
+    "context": "Compliment. Can fuel appearance pressure.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "GOAT / GOATest",
+    "kind": "Acronym",
+    "meaning": "Greatest Of All Time.",
+    "context": "High praise.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Goblin mode",
+    "kind": "Slang",
+    "meaning": "Unapologetically indulging your habits without trying to look polished or meet social expectations.",
+    "context": "Often a humorous description of letting things slide; sometimes used more broadly for wild behaviour.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/goblin-mode"
+  },
+  {
+    "term": "Grind",
+    "kind": "Slang",
+    "meaning": "Working hard.",
+    "context": "Hustle talk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Gyatt",
+    "kind": "Slang",
+    "meaning": "Exclamation reacting to a curvy figure.",
+    "context": "Often boys-side language; can be sexualised. Worth a conversation about respect.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Hits different",
+    "kind": "Slang",
+    "meaning": "Feels uniquely good.",
+    "context": "Positive.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Hop off",
+    "kind": "Slang",
+    "meaning": "‘Get off my back / log off’.",
+    "context": "Dismissive.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Huzz",
+    "kind": "Slang",
+    "meaning": "Disrespectful term for girls — internet variant of ‘hoes’.",
+    "context": "Can be demeaning when used about girls or women. Discuss respectful language without assuming who uses it.",
+    "riskLevel": "Investigate",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Hype",
+    "kind": "Slang",
+    "meaning": "Excitement / popularity.",
+    "context": "Common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Ick",
+    "kind": "Slang",
+    "meaning": "Sudden turn-off — usually a tiny thing a crush did.",
+    "context": "Lighthearted.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "IRL",
+    "kind": "Acronym",
+    "meaning": "In Real Life.",
+    "context": "Used to contrast with online life.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "IYKYK",
+    "kind": "Acronym",
+    "meaning": "‘If you know, you know’ — in-joke.",
+    "context": "Often harmless. Can signal an exclusionary group chat.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Jarring",
+    "kind": "Slang",
+    "meaning": "Annoying / cringey (UK).",
+    "context": "Mild insult.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Karen",
+    "kind": "Slang",
+    "meaning": "Entitled, rude (often middle-aged) woman trope.",
+    "context": "Used about parents and teachers.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "KMS / KYS",
+    "kind": "Acronym",
+    "meaning": "‘Kill myself’ / ‘kill yourself’ — used as hyperbole, also as serious bullying.",
+    "context": "Never assume it’s a joke. Open a calm conversation.",
+    "riskLevel": "Investigate",
+    "sourceUrl": "https://www.netlingo.com/acronyms"
+  },
+  {
+    "term": "Lit",
+    "kind": "Slang",
+    "meaning": "Exciting or cool.",
+    "context": "Positive.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "L / Take the L",
+    "kind": "Slang",
+    "meaning": "Loss / accepting defeat.",
+    "context": "Gaming origin.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "LMAO",
+    "kind": "Acronym",
+    "meaning": "‘Laughing my ass off’.",
+    "context": "Standard reaction.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Locked in",
+    "kind": "Slang",
+    "meaning": "Focused, in the zone.",
+    "context": "Positive.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Lore",
+    "kind": "Slang",
+    "meaning": "Backstory about a person or fandom.",
+    "context": "Often gossip.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "LOML",
+    "kind": "Acronym",
+    "meaning": "“Love of my life”, used romantically or affectionately for a friend.",
+    "context": "Affectionate.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Lowkey / Highkey",
+    "kind": "Slang",
+    "meaning": "Lowkey: quietly, somewhat or without making a fuss. Highkey: openly or strongly.",
+    "context": "Very common.",
+    "riskLevel": "Usually fine",
+    "aliases": [
+      "low-key",
+      "high-key",
+      "low key",
+      "high key"
+    ],
+    "sourceUrl": "https://www.dictionary.com/culture/slang/lowkenuinely"
+  },
+  {
+    "term": "Main character",
+    "kind": "Slang",
+    "meaning": "Living life like you’re the star of the show.",
+    "context": "Can be a serious or playful way of treating life as a story with yourself at the centre.",
+    "riskLevel": "Usually fine",
+    "reviewNote": "Core meaning checked on 21 September 2026; not a measure of current popularity.",
+    "sourceUrl": "https://www.dictionary.com/culture/pop-culture/main-character"
+  },
+  {
+    "term": "Mango mustard",
+    "kind": "Slang",
+    "meaning": "An absurd meme phrase; no reliable fixed translation established in this review.",
+    "context": "An intentionally absurd phrase. Ask what it means in this particular joke rather than treating it as a code.",
+    "riskLevel": "Usually fine",
+    "matchable": false,
+    "reviewNote": "Uncertain meaning — not used in automatic matching."
+  },
+  {
+    "term": "Mid",
+    "kind": "Slang",
+    "meaning": "Mediocre.",
+    "context": "Mild put-down. Watch for it being aimed at looks.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Mogging",
+    "kind": "Slang",
+    "meaning": "Showing off looks to feel superior.",
+    "context": "Linked to ‘looksmaxxing’ communities — worth a conversation.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Mood",
+    "kind": "Slang",
+    "meaning": "‘I relate’.",
+    "context": "Common reaction.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Mute",
+    "kind": "Slang",
+    "meaning": "Silently ignore someone on a platform.",
+    "context": "Common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "NGL",
+    "kind": "Acronym",
+    "meaning": "‘Not gonna lie’.",
+    "context": "Honesty marker.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Neek",
+    "kind": "Slang",
+    "meaning": "UK insult mixing nerd + geek.",
+    "context": "Mild bullying.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "NPC",
+    "kind": "Slang",
+    "meaning": "‘Non-player character’ — someone seen as bland or robotic.",
+    "context": "Common insult about peers.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Normie",
+    "kind": "Slang",
+    "meaning": "Someone outside internet culture.",
+    "context": "Mild.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Ohio",
+    "kind": "Slang",
+    "meaning": "Synonym for strange or cringey.",
+    "context": "Meme word.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "OOMF",
+    "kind": "Acronym",
+    "meaning": "‘One of my followers / friends’.",
+    "context": "Vague reference, often subtweeting.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.dictionary.com/culture/acronyms/oomf",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "OP",
+    "kind": "Acronym",
+    "meaning": "‘Overpowered’ — too good. Also ‘original poster’.",
+    "context": "Context-dependent.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://support.reddithelp.com/hc/en-us/articles/360043478311-How-can-I-tell-who-s-a-moderator-Reddit-administrator-or-the-original-poster-on-a-comment-thread",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "Opp / Opps",
+    "kind": "Slang",
+    "meaning": "An opponent, rival or enemy.",
+    "context": "May be joking or hostile. The term alone is not evidence of gang involvement.",
+    "riskLevel": "Worth a chat",
+    "aliases": [
+      "op"
+    ],
+    "sourceUrl": "https://www.dictionary.com/articles/tiktok-slang-words"
+  },
+  {
+    "term": "Outta pocket",
+    "kind": "Slang",
+    "meaning": "Out of line / controversial.",
+    "context": "Reaction phrase.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Periodt",
+    "kind": "Slang",
+    "meaning": "Emphasis — ‘end of story’.",
+    "context": "Empowering.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Pookie",
+    "kind": "Slang",
+    "meaning": "Term of endearment.",
+    "context": "Friends or partner.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "POS",
+    "kind": "Acronym",
+    "meaning": "Can mean “piece of shit” (an insult), “parent over shoulder”, or “point of sale”.",
+    "context": "These meanings differ substantially. Ask what the person meant rather than assuming secrecy.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://www.dictionary.com/browse/pos"
+  },
+  {
+    "term": "POV",
+    "kind": "Acronym",
+    "meaning": "‘Point of view’ — TikTok framing.",
+    "context": "Common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Pushing P",
+    "kind": "Slang",
+    "meaning": "Doing things the right way / showing class.",
+    "context": "Hip-hop origin.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/pushing-p",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "Ratio",
+    "kind": "Slang",
+    "meaning": "An unfavourable balance of replies and likes, or a challenge to get more engagement than another post.",
+    "context": "Often used to signal disagreement; counts alone do not establish what everyone thinks.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://www.dictionary.com/articles/tiktok-slang-words",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "Real",
+    "kind": "Slang",
+    "meaning": "‘True / I agree’.",
+    "context": "Common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Rent free",
+    "kind": "Slang",
+    "meaning": "Something stuck in your head.",
+    "context": "Harmless.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Rizz",
+    "kind": "Slang",
+    "meaning": "Charisma / flirting skill.",
+    "context": "A compliment about charm; not specific to one gender.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/"
+  },
+  {
+    "term": "Roadman",
+    "kind": "Slang",
+    "meaning": "UK streetwear / urban persona.",
+    "context": "Style identity. Sometimes linked to drill culture.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Salty",
+    "kind": "Slang",
+    "meaning": "Bitter / resentful.",
+    "context": "Common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.dictionary.com/browse/salty",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "Serving",
+    "kind": "Slang",
+    "meaning": "Looking amazing.",
+    "context": "Compliment.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Sheesh",
+    "kind": "Slang",
+    "meaning": "Exclamation of awe.",
+    "context": "Reaction.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Ship",
+    "kind": "Slang",
+    "meaning": "Want two people to be a couple.",
+    "context": "Fandom and friend talk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Side eye",
+    "kind": "Slang",
+    "meaning": "A judgemental look.",
+    "context": "Common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Sigma",
+    "kind": "Slang",
+    "meaning": "Lone-wolf, ‘main character’ male energy.",
+    "context": "Often ironic, but rooted in ‘manosphere’ ideas about masculinity.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Simp",
+    "kind": "Slang",
+    "meaning": "Overly devoted to someone (usually romantic).",
+    "context": "Common insult. Can carry misogynistic undertones.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Situationship",
+    "kind": "Slang",
+    "meaning": "Undefined romantic relationship.",
+    "context": "Real teen experience worth discussing.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Skibidi",
+    "kind": "Slang",
+    "meaning": "Nonsense meme word — can mean ‘cool’ or ‘bad’.",
+    "context": "Pure Gen-Alpha humour.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Slay",
+    "kind": "Slang",
+    "meaning": "Performed brilliantly.",
+    "context": "Compliment.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Sliding into DMs",
+    "kind": "Slang",
+    "meaning": "Starting a private-message conversation, sometimes to flirt.",
+    "context": "The phrase alone does not establish the sender’s intentions.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/slide-into-the-dms",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "Smol",
+    "kind": "Slang",
+    "meaning": "Cute / tiny.",
+    "context": "Harmless.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Smurfing",
+    "kind": "Slang",
+    "meaning": "A skilled player using an account or manipulating matchmaking to play below their true skill level.",
+    "context": "A fair-play issue. It does not specifically mean an adult targeting children.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://playvalorant.com/en-us/news/game-updates/riot-mobile-verification-beta/"
+  },
+  {
+    "term": "Snaked",
+    "kind": "Slang",
+    "meaning": "May mean betrayed or treated disloyally; the exact slang use needs context.",
+    "context": "Friendship drama.",
+    "riskLevel": "Usually fine",
+    "reviewNote": "The source supports “snake” for a treacherous person, not every use of “snaked”. This inferred slang interpretation is excluded from automatic matching.",
+    "sourceUrl": "https://www.merriam-webster.com/dictionary/snake",
+    "matchable": false
+  },
+  {
+    "term": "Snatched",
+    "kind": "Slang",
+    "meaning": "Toned / styled to perfection.",
+    "context": "Compliment about appearance — can fuel body pressure.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Social battery",
+    "kind": "Slang",
+    "meaning": "Energy for social situations.",
+    "context": "Self-aware mental health language.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Stan",
+    "kind": "Slang",
+    "meaning": "Obsessed fan.",
+    "context": "Fandom term. Can tip into unhealthy parasocial behaviour.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Sus",
+    "kind": "Slang",
+    "meaning": "Suspicious.",
+    "context": "Popularised further by Among Us, but the abbreviation predates the game.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/pretty-sus"
+  },
+  {
+    "term": "TBH",
+    "kind": "Acronym",
+    "meaning": "‘To be honest’.",
+    "context": "Common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Tea",
+    "kind": "Slang",
+    "meaning": "Gossip.",
+    "context": "‘Spill the tea’.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Thirsty / Thirst trap",
+    "kind": "Slang",
+    "meaning": "Desperate for attention; sexy post designed to get reactions.",
+    "context": "Image-pressure language. Worth talking about audience and consent.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Throw shade",
+    "kind": "Slang",
+    "meaning": "Passive-aggressive comments.",
+    "context": "Drama signal.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Trad / Tradwife",
+    "kind": "Slang",
+    "meaning": "Trad means traditional. Tradwife refers to a woman embracing traditional homemaking and gender roles.",
+    "context": "Can describe an aesthetic or ideology. Discuss the specific beliefs expressed rather than inferring them from the label.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://www.dictionary.com/browse/tradwife"
+  },
+  {
+    "term": "Unalive",
+    "kind": "Slang",
+    "meaning": "‘Kill’ — used to dodge platform moderation.",
+    "context": "Common in mental-health and dark-humour content. Take seriously if used about self.",
+    "riskLevel": "Investigate",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Valid",
+    "kind": "Slang",
+    "meaning": "Acceptable / true.",
+    "context": "Affirming.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Vibe / Vibe check",
+    "kind": "Slang",
+    "meaning": "Mood; assessing someone’s mood.",
+    "context": "Casual.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Vent account",
+    "kind": "Slang",
+    "meaning": "Anonymous account for sharing low feelings.",
+    "context": "Can be supportive — can also reinforce distress. Worth knowing it exists.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "W",
+    "kind": "Slang",
+    "meaning": "A win.",
+    "context": "Positive.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Womp womp",
+    "kind": "Slang",
+    "meaning": "Mock-sympathy sound — ‘too bad’.",
+    "context": "Dismissive.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "WTF",
+    "kind": "Acronym",
+    "meaning": "‘What the f***’ — shock.",
+    "context": "Common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "WYA / WYD",
+    "kind": "Acronym",
+    "meaning": "‘Where you at’ / ‘what you doing’.",
+    "context": "Casual check-in.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "X-rated",
+    "kind": "Slang",
+    "meaning": "Sexually explicit content.",
+    "context": "If paired with DMs or photo-sharing talk, take seriously.",
+    "riskLevel": "Investigate",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Yap / Yapper",
+    "kind": "Slang",
+    "meaning": "Someone who talks a lot.",
+    "context": "Casual.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Yas",
+    "kind": "Slang",
+    "meaning": "Enthusiastic yes.",
+    "context": "Common.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+    "reviewNote": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+  },
+  {
+    "term": "Yeet",
+    "kind": "Slang",
+    "meaning": "Throw with force; general exclamation.",
+    "context": "Older but still used.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.merriam-webster.com/dictionary/yeet",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "YOLO",
+    "kind": "Acronym",
+    "meaning": "‘You only live once’.",
+    "context": "Used to justify risky behaviour.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://www.oxfordlearnersdictionaries.com/us/definition/english/yolo",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "Zesty",
+    "kind": "Slang",
+    "meaning": "Lively or energetic; also used as a mocking label based on stereotypes about sexuality or femininity.",
+    "context": "Ask how it was used. Address targeted insults without guessing anyone’s sexuality.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://knowyourmeme.com/memes/zesty-slang/",
+    "reviewNote": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+  },
+  {
+    "term": "🍃",
+    "kind": "Emoji",
+    "meaning": "Leaves, nature or a breeze; sometimes a cannabis reference.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://emojipedia.org/leaf-fluttering-in-wind",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "💊",
+    "kind": "Emoji",
+    "meaning": "Medicine or a pill; can also refer to non-medical drug use.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Investigate",
+    "sourceUrl": "https://emojipedia.org/pill",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🔌",
+    "kind": "Emoji",
+    "meaning": "Electricity or charging; figuratively a connection or supplier.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Investigate",
+    "sourceUrl": "https://emojipedia.org/electric-plug",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "❄️",
+    "kind": "Emoji",
+    "meaning": "Snow, winter or cold; sometimes an insult implying oversensitivity.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/snowflake",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🍄",
+    "kind": "Emoji",
+    "meaning": "A mushroom, nature or food; sometimes a reference to psychedelic mushrooms.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Investigate",
+    "sourceUrl": "https://emojipedia.org/mushroom",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🍆",
+    "kind": "Emoji",
+    "meaning": "An aubergine; also used as a sexual reference to a penis.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Investigate",
+    "sourceUrl": "https://emojipedia.org/eggplant",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🍑",
+    "kind": "Emoji",
+    "meaning": "A peach; also used to refer to a bottom.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://emojipedia.org/peach",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "💦",
+    "kind": "Emoji",
+    "meaning": "Water, sweat or splashing; can also be sexual innuendo.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://emojipedia.org/sweat-droplets",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "👅",
+    "kind": "Emoji",
+    "meaning": "A tongue, tasting or playfulness; can also be suggestive.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://emojipedia.org/tongue",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🌽",
+    "kind": "Emoji",
+    "meaning": "Corn or food; sometimes used for the sound-alike “porn”.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Investigate",
+    "sourceUrl": "https://emojipedia.org/ear-of-corn",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🥵",
+    "kind": "Emoji",
+    "meaning": "Heat, discomfort or feeling overwhelmed; sometimes attraction.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/hot-face",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "😈",
+    "kind": "Emoji",
+    "meaning": "Mischief or playful naughtiness; sometimes flirtation.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://emojipedia.org/smiling-face-with-horns",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "💀",
+    "kind": "Emoji",
+    "meaning": "A skull or death imagery; often a reaction meaning “that is very funny”.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/skull",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "😭",
+    "kind": "Emoji",
+    "meaning": "Strong emotion: laughter, joy, frustration, sadness or distress.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/loudly-crying-face",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🤡",
+    "kind": "Emoji",
+    "meaning": "A clown; can mean foolish behaviour, self-mockery or an insult.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/clown-face",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🧢",
+    "kind": "Emoji",
+    "meaning": "A cap; also used for “cap”, meaning a lie.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/billed-cap",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🐐",
+    "kind": "Emoji",
+    "meaning": "A goat; also praise meaning “greatest of all time”.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/goat",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🚩",
+    "kind": "Emoji",
+    "meaning": "A flag; figuratively a warning sign or concern.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/triangular-flag",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🫶",
+    "kind": "Emoji",
+    "meaning": "Heart hands expressing love, appreciation or support.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/heart-hands",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "👀",
+    "kind": "Emoji",
+    "meaning": "Looking, curiosity or attention; sometimes a suggestive reaction.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/eyes",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🦋",
+    "kind": "Emoji",
+    "meaning": "A butterfly, beauty or happiness.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/butterfly",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🖤",
+    "kind": "Emoji",
+    "meaning": "Affection, a dark aesthetic, dark humour or sorrow.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://emojipedia.org/black-heart",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🌈",
+    "kind": "Emoji",
+    "meaning": "A rainbow, hope or LGBTQ+ pride.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/rainbow",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🍒",
+    "kind": "Emoji",
+    "meaning": "Cherries; can have sexual or body-related meanings in context.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://emojipedia.org/cherries",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🥶",
+    "kind": "Emoji",
+    "meaning": "Cold or freezing; sometimes a reaction to something impressive or harsh.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/cold-face",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🫠",
+    "kind": "Emoji",
+    "meaning": "Heat, embarrassment, overwhelm or a feeling of melting away.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/melting-face",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "🥲",
+    "kind": "Emoji",
+    "meaning": "Mixed feelings, gratitude, relief or smiling through sadness.",
+    "context": "The surrounding message and the sender’s explanation matter. This symbol alone does not establish intent or risk.",
+    "riskLevel": "Worth a chat",
+    "sourceUrl": "https://emojipedia.org/smiling-face-with-tear",
+    "reviewNote": "Context-dependent: ordinary and figurative meanings can overlap."
+  },
+  {
+    "term": "Aura farming",
+    "kind": "Slang",
+    "meaning": "Deliberately acting cool or confident to cultivate an impressive image.",
+    "context": "Meaning and tone depend on the conversation; documented usage does not mean every teen uses it.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/aura-farming"
+  },
+  {
+    "term": "Crash out",
+    "kind": "Slang",
+    "meaning": "Lose your temper or act recklessly; can also mean fall asleep.",
+    "context": "Meaning and tone depend on the conversation; documented usage does not mean every teen uses it.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/crash-out"
+  },
+  {
+    "term": "Unc",
+    "kind": "Slang",
+    "meaning": "Short for uncle; teasing someone for seeming older or out of touch.",
+    "context": "Meaning and tone depend on the conversation; documented usage does not mean every teen uses it.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/unc"
+  },
+  {
+    "term": "Lowkenuinely",
+    "kind": "Slang",
+    "meaning": "A blend of lowkey and genuinely: expressing something sincerely but casually.",
+    "context": "Meaning and tone depend on the conversation; documented usage does not mean every teen uses it.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/lowkenuinely"
+  },
+  {
+    "term": "It’s giving",
+    "kind": "Slang",
+    "meaning": "It has the look, energy or impression of something; can also be praise on its own.",
+    "context": "Meaning and tone depend on the conversation; documented usage does not mean every teen uses it.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/its-giving"
+  },
+  {
+    "term": "41",
+    "kind": "Number",
+    "meaning": "A largely nonsensical meme interjection; can also simply be a number.",
+    "context": "Meaning and tone depend on the conversation; documented usage does not mean every teen uses it.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://www.dictionary.com/culture/slang/41"
+  },
+  {
+    "term": "🔥",
+    "kind": "Emoji",
+    "meaning": "Fire or heat; also approval of something impressive.",
+    "context": "A possible reading, not a judgement of the sender’s wellbeing.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/fire"
+  },
+  {
+    "term": "🥀",
+    "kind": "Emoji",
+    "meaning": "A wilted flower; can express sadness, disappointment or ironic heartbreak.",
+    "context": "A possible reading, not a judgement of the sender’s wellbeing.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/wilted-flower"
+  },
+  {
+    "term": "🫩",
+    "kind": "Emoji",
+    "meaning": "Tiredness or exhaustion.",
+    "context": "A possible reading, not a judgement of the sender’s wellbeing.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://emojipedia.org/face-with-bags-under-eyes"
+  },
+  {
+    "term": "LOL",
+    "kind": "Acronym",
+    "meaning": "Laugh out loud.",
+    "context": "Established text shorthand; tone depends on the conversation.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"
+  },
+  {
+    "term": "BRB",
+    "kind": "Acronym",
+    "meaning": "Be right back.",
+    "context": "Established text shorthand; tone depends on the conversation.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"
+  },
+  {
+    "term": "AFK",
+    "kind": "Acronym",
+    "meaning": "Away from keyboard.",
+    "context": "Established text shorthand; tone depends on the conversation.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"
+  },
+  {
+    "term": "GG",
+    "kind": "Acronym",
+    "meaning": "Good game.",
+    "context": "Established text shorthand; tone depends on the conversation.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"
+  },
+  {
+    "term": "DM",
+    "kind": "Acronym",
+    "meaning": "Direct message.",
+    "context": "Established text shorthand; tone depends on the conversation.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"
+  },
+  {
+    "term": "IKR",
+    "kind": "Acronym",
+    "meaning": "I know, right?",
+    "context": "Established text shorthand; tone depends on the conversation.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"
+  },
+  {
+    "term": "ILY",
+    "kind": "Acronym",
+    "meaning": "I love you.",
+    "context": "Established text shorthand; tone depends on the conversation.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"
+  },
+  {
+    "term": "LMK",
+    "kind": "Acronym",
+    "meaning": "Let me know.",
+    "context": "Established text shorthand; tone depends on the conversation.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"
+  },
+  {
+    "term": "OMW",
+    "kind": "Acronym",
+    "meaning": "On my way.",
+    "context": "Established text shorthand; tone depends on the conversation.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"
+  },
+  {
+    "term": "BTW",
+    "kind": "Acronym",
+    "meaning": "By the way.",
+    "context": "Established text shorthand; tone depends on the conversation.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"
+  },
+  {
+    "term": "OMG",
+    "kind": "Acronym",
+    "meaning": "Oh my God or gosh.",
+    "context": "Established text shorthand; tone depends on the conversation.",
+    "riskLevel": "Usually fine",
+    "sourceUrl": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/"
+  }
 ];
 
 export type ChecklistSection = {
@@ -2386,678 +4221,881 @@ export type Checklist = {
 
 export const CHECKLISTS: Checklist[] = [
   {
-    slug: "android-first-setup",
-    title: "Android phone for a child — full setup with Google Family Link",
-    device: "Android",
-    summary:
-      "Create a supervised child Google account, install Family Link, and lock down screen time, app installs and content — step by step.",
-    steps: [
-      "Create a child Google account (under 13 / local age of digital consent)",
-      "Install Family Link on the parent phone and on the child phone",
-      "Link the two accounts and finish on-device setup",
-      "Set daily screen time, bedtime and app-specific limits",
-      "Require parent approval for every Play Store install",
-      "Turn on SafeSearch, Chrome filters and YouTube supervision",
-      "Confirm the child can still make emergency calls when locked",
+    "slug": "android-first-setup",
+    "title": "Android phone for a child — full setup with Google Family Link",
+    "device": "Android",
+    "summary": "Create a supervised child Google account, install Family Link, and lock down screen time, app installs and content — step by step.",
+    "steps": [
+      "Create or link the child’s own Google account",
+      "Install Family Link on the parent phone",
+      "Follow the supervision prompts on the child’s device",
+      "Choose daily limits, downtime and app limits",
+      "Review Google Play approvals and content ratings",
+      "Review search, browser and YouTube controls",
+      "Check ordinary calls to a trusted adult during downtime"
     ],
-    overview:
-      "Family Link is Google's official parental-control app. It works with any child Google account where the child is under your country's digital-consent age (13 in the US, 13–16 in the EU, 13 in the UK). The setup below takes about 20 minutes and only needs to be done once.",
-    heroVideo: {
-      youtubeId: "BYRQvANa7OE",
-      title: "How to set up Google Family Link — Internet Matters",
-      caption: "Short walkthrough from UK online-safety non-profit Internet Matters (Feb 2026). Then follow the detailed steps below.",
+    "overview": "Family Link helps a parent manage a child’s Google account and supported Android devices. Start with Google’s current setup instructions; eligibility and available controls depend on the account, age and device. Work through the settings together.",
+    "heroVideo": {
+      "youtubeId": "BYRQvANa7OE",
+      "title": "How to set up Google Family Link — Internet Matters",
+      "caption": "Short walkthrough from UK online-safety non-profit Internet Matters (Feb 2026). Then follow the detailed steps below."
     },
-    sections: [
+    "sections": [
       {
-        title: "1 · Before you start",
-        visual: {
-          youtubeId: "d2zPq1lfqQs",
-          title: "Family Link overview",
-          source: "Google",
-          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs",
-          kind: "Official video",
-          description: "Google’s official introduction to Family Link and its parent controls.",
+        "title": "1 · Before you start",
+        "visual": {
+          "youtubeId": "d2zPq1lfqQs",
+          "title": "Family Link overview",
+          "source": "Google",
+          "sourceUrl": "https://www.youtube.com/watch?v=d2zPq1lfqQs",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Have both phones unlocked and on Wi-Fi. You'll need the child's date of birth and your own Google password.",
-        steps: [
-          "Update both phones to the latest Android version (Settings → System → System update).",
-          "On your phone, install 'Google Family Link' from the Play Store.",
-          "You do NOT have to factory-reset to add supervision. On a phone already in use you can simply add the child's account: Settings → Google → Parental controls → Get started, or Settings → Accounts → Add account → Google.",
-          "A reset is only worth doing in two cases: the phone previously belonged to someone else, or the child already has an unsupervised adult Google account signed in as the device owner that cannot be removed. Otherwise skip it — a reset wipes photos and messages for no safety gain.",
-          "If you do reset (Settings → System → Reset options → Erase all data), back up photos first and have the existing Google password to hand — factory reset protection will ask for it on the next boot.",
-        ],
+        "intro": "Have both phones unlocked and on Wi-Fi. You'll need the child's date of birth and your own Google password.",
+        "steps": [
+          "Update both devices to supported software and have account recovery details ready.",
+          "Install Google Family Link on the parent phone.",
+          "If the child already has an account, follow Google’s add-supervision process. Do not create a duplicate account just to follow this checklist.",
+          "Before removing accounts or resetting a device, back up important data and read the manufacturer’s instructions. A reset erases local data; it is not a routine first step for adding supervision."
+        ]
       },
       {
-        title: "2 · Create the child's Google account",
-        visual: {
-          youtubeId: "0dy1St39xeo",
-          title: "Set up a supervised child account",
-          source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo",
-          kind: "Official video",
-          description: "The official account setup flow for a parent and child.",
+        "title": "2 · Create the child's Google account",
+        "visual": {
+          "youtubeId": "0dy1St39xeo",
+          "title": "Set up a supervised child account",
+          "source": "YouTube",
+          "sourceUrl": "https://www.youtube.com/watch?v=0dy1St39xeo",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Do this from your phone, inside Family Link — not from the child's device.",
-        steps: [
-          "Open Family Link → tap the '+' icon → 'Add a child' → 'Create an account for your child'.",
-          "Enter the child's real first name, birthday and a new Gmail address (e.g. firstname.lastname.kid@gmail.com).",
-          "Choose a strong password that YOU keep — the child does not need it for daily use.",
-          "Read and accept the Parental Consent screen, then verify you are an adult. In the UK this is usually a small temporary card authorisation (around £0.30) that is refunded or simply never taken — the exact amount and method vary, and Google may instead accept an existing valid payment method already on your account. Do not expect a fixed figure: follow whatever the screen asks for.",
-          "If the card check fails, add or update a payment method at pay.google.com first, then restart the consent step. A card with no funds or a prepaid card is the most common reason this stalls.",
-        ],
+        "intro": "Use Family Link or the supported new-device setup flow. If an account already exists, use the supervision instructions instead.",
+        "steps": [
+          "Choose Add child and follow the account-creation prompts.",
+          "Use the correct birthday and a strong password; keep recovery information securely.",
+          "Complete Google’s parental-consent process. Google says account creation has no fee, although card verification can place a temporary authorisation.",
+          "If verification fails, use the help offered by Google rather than assuming a particular card or payment amount is required."
+        ]
       },
       {
-        title: "3 · Set up the child's phone",
-        visual: {
-          youtubeId: "d2zPq1lfqQs",
-          startSeconds: 18,
-          title: "Connect the child's device",
-          source: "Google",
-          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs&t=18s",
-          kind: "Official video",
-          description: "Google’s Family Link device-supervision overview.",
+        "title": "3 · Set up the child's phone",
+        "visual": {
+          "youtubeId": "d2zPq1lfqQs",
+          "title": "Connect the child's device",
+          "source": "Google",
+          "sourceUrl": "https://www.youtube.com/watch?v=d2zPq1lfqQs",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Now move to the child's device.",
-        steps: [
-          "On the welcome screen, choose 'Set up for a child'. If you missed it, do Settings → Accounts → Add account → Google → and sign in with the new child account.",
-          "Sign in with the child's new Gmail and password.",
-          "When prompted, scan the QR code shown in Family Link on your phone to link the two devices.",
-          "Accept the permissions Family Link needs (location, app usage, install approvals).",
-          "Choose which existing apps to allow — block anything they shouldn't have right now; you can always allow it later.",
-        ],
+        "intro": "Now move to the child's device.",
+        "steps": [
+          "Follow the sign-in and supervision prompts for the child’s account on their device.",
+          "Use the parent account when prompted to consent and complete linking.",
+          "Read the permissions requested and check that the correct device appears in Family Link.",
+          "Review installed apps together and block those you decide are unsuitable."
+        ]
       },
       {
-        title: "4 · Screen time, bedtime & downtime",
-        visual: {
-          youtubeId: "d2zPq1lfqQs",
-          startSeconds: 31,
-          title: "Set time and app limits",
-          source: "Google",
-          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs&t=31s",
-          kind: "Official video",
-          description: "Family Link’s time controls shown by Google.",
+        "title": "4 · Screen time, bedtime & downtime",
+        "visual": {
+          "youtubeId": "d2zPq1lfqQs",
+          "title": "Set time and app limits",
+          "source": "Google",
+          "sourceUrl": "https://www.youtube.com/watch?v=d2zPq1lfqQs",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Open Family Link on your phone → tap the child → 'Controls' → 'Screen time'.",
-        steps: [
-          "Set a daily limit per day of the week (e.g. 1h on school days, 2h at weekends).",
-          "Set 'Bedtime' — the phone locks for calls only between those hours.",
-          "Set 'App limits' for specific apps (e.g. TikTok 30 min/day, YouTube 45 min/day).",
-          "Turn on 'Always allowed' for apps the child needs regardless of limits: Phone, Messages, Maps, your family chat app.",
-        ],
+        "intro": "In Family Link, select the child and open Screen time. Menu names vary by version.",
+        "steps": [
+          "Agree daily limits that leave room for sleep, school and other activities.",
+          "Set Downtime and review which apps have unlimited time.",
+          "Choose limits for individual apps appropriate to the child’s age.",
+          "Check normal calls to a trusted adult while limits are active. Do not call emergency services as a test."
+        ]
       },
       {
-        title: "5 · App installs & purchases",
-        visual: {
-          youtubeId: "d2zPq1lfqQs",
-          startSeconds: 47,
-          title: "Manage apps with Family Link",
-          source: "Google",
-          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs&t=47s",
-          kind: "Official video",
-          description: "Google’s view of app activity and app-level controls.",
+        "title": "5 · App installs & purchases",
+        "visual": {
+          "youtubeId": "d2zPq1lfqQs",
+          "title": "Manage apps with Family Link",
+          "source": "Google",
+          "sourceUrl": "https://www.youtube.com/watch?v=d2zPq1lfqQs",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        steps: [
-          "In Family Link → Controls → 'Google Play' → turn on 'Require approval for: All content'.",
-          "Set content maturity limits (Apps & games: PEGI 7 / ESRB Everyone for young kids; raise as they grow).",
-          "Disable in-app purchases: 'Purchase approvals' → 'All content'.",
-          "When the child taps 'Install' in the Play Store, you'll get a push notification to approve or deny from your phone.",
-        ],
+        "steps": [
+          "Open Google Play controls in Family Link and choose the approval setting you want.",
+          "Review content ratings separately from purchase approval.",
+          "Approvals apply to Google Play billing; they do not block every payment route or necessarily request approval for previously approved apps.",
+          "Check an ordinary app request together and review payment methods."
+        ]
       },
       {
-        title: "6 · Web, search & YouTube",
-        visual: {
-          youtubeId: "0dy1St39xeo",
-          startSeconds: 12,
-          title: "Choose a supervised YouTube experience",
-          source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=12s",
-          kind: "Official video",
-          description: "YouTube’s official supervised-account demonstration.",
+        "title": "6 · Web, search & YouTube",
+        "visual": {
+          "youtubeId": "0dy1St39xeo",
+          "title": "Choose a supervised YouTube experience",
+          "source": "YouTube",
+          "sourceUrl": "https://www.youtube.com/watch?v=0dy1St39xeo",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        steps: [
-          "Controls → 'Google Search' → turn on SafeSearch (filters explicit results).",
-          "Controls → 'Chrome' → choose 'Try to block explicit sites' and add specific sites you want blocked or allowed.",
-          "For YouTube under 13: use the YouTube Kids app instead, and block the main YouTube app.",
-          "For YouTube 13+: enable 'Supervised experience' in YouTube settings and pick a content setting (Explore / Explore More / Most of YouTube).",
-        ],
+        "steps": [
+          "Review SafeSearch and Chrome website restrictions. Filters can miss unsuitable material.",
+          "Choose YouTube Kids or a supervised kid account for an eligible younger child.",
+          "Teen supervision is a separate YouTube experience. Follow the linked YouTube checklist for account types and current content controls."
+        ]
       },
       {
-        title: "7 · Location, find-my-phone & data",
-        visual: {
-          youtubeId: "d2zPq1lfqQs",
-          startSeconds: 57,
-          title: "Family Link location tools",
-          source: "Google",
-          sourceUrl: "https://www.youtube.com/watch?v=d2zPq1lfqQs&t=57s",
-          kind: "Official video",
-          description: "Google’s overview of Family Link location controls.",
+        "title": "7 · Location, find-my-phone & data",
+        "visual": {
+          "youtubeId": "d2zPq1lfqQs",
+          "title": "Family Link location tools",
+          "source": "Google",
+          "sourceUrl": "https://www.youtube.com/watch?v=d2zPq1lfqQs",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        steps: [
-          "Controls → 'Location' → turn on 'See your child's location'. You'll see the child phone's live location in Family Link.",
-          "Turn on 'Find My Device' (Settings → Security on the child phone) so a lost phone can be located and remotely locked.",
-          "Review which apps can access location (Family Link → 'App activity') and switch unnecessary ones to 'Don't allow'.",
-        ],
-      },
+        "steps": [
+          "Review location sharing together in Family Link. Availability depends on the device, power, connectivity and settings.",
+          "Review the phone’s lost-device service and account recovery options.",
+          "Check app location permissions in the device settings and remove unnecessary access."
+        ]
+      }
     ],
-    capabilities: [
-      { label: "Daily & per-app screen-time limits", detail: "Different limits for school days vs weekends; lock specific apps after a quota." },
-      { label: "Bedtime lock", detail: "Phone goes to a lock screen at night — calls still work." },
-      { label: "Approve every app install", detail: "Push notification to the parent before Play Store download or in-app purchase." },
-      { label: "SafeSearch & Chrome filters", detail: "Filters explicit Google results and lets you allow/block specific sites." },
-      { label: "Live location & lost-phone tools", detail: "See where the child's phone is, ring it, or lock it remotely." },
-      { label: "Activity reports", detail: "Weekly summary of which apps were used and for how long." },
-      { label: "Remote lock", detail: "Lock the device instantly from your phone when needed (dinner, homework, bedtime)." },
+    "capabilities": [
+      {
+        "label": "Screen-time controls",
+        "detail": "Daily limits, app limits and downtime on supported devices."
+      },
+      {
+        "label": "Google Play approvals",
+        "detail": "Review eligible downloads and purchases; see the billing limitations above."
+      },
+      {
+        "label": "Search and browser controls",
+        "detail": "Reduce access to unsuitable content; filters are not guarantees."
+      },
+      {
+        "label": "Device location",
+        "detail": "May help locate the device; it is not a guaranteed live view of the child."
+      }
     ],
-    emergency:
-      "Emergency calls always work. When the screen-time limit is reached or during bedtime/downtime, the child can still tap 'Emergency' on the lock screen to dial 999 / 112 / 911. You can also mark Phone and Messages as 'Always allowed' so they can call you and named contacts at any time.",
-    tutorials: [
-      { title: "Get started with Family Link", source: "Google Families (official)", type: "Official guide", url: "https://families.google.com/familylink/" },
-      { title: "Set up Family Link — official help article", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7101025" },
-      
-      { title: "Manage screen time with Family Link", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7103340" },
-      { title: "Approve or block apps your child wants to download", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7385553" },
-      { title: "Add supervision to a device your child already uses", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7101025", note: "Confirms supervision can be added to an existing phone — a factory reset is not required in most cases." },
-      { title: "Verify your identity as a parent (payment method check)", source: "Google Help", type: "Official guide", url: "https://support.google.com/families/answer/7101025", note: "The verification charge amount and method vary by country and card." },
-      { title: "Parental controls on Android — UK guide with screenshots", source: "Internet Matters (UK)", type: "Article", url: "https://www.internetmatters.org/parental-controls/smartphones-and-other-devices/google-family-link-parental-controls/" },
+    "emergency": "Google says a locked Android phone with a calling plan can receive calls and offers an Emergency calling option. Learn the device’s emergency-call instructions and keep it charged. Test an ordinary call to a trusted adult during downtime; never make a test call to 999 or 112.",
+    "tutorials": [
+      {
+        "title": "Get started with Family Link",
+        "source": "Google Families (official)",
+        "type": "Official guide",
+        "url": "https://families.google.com/familylink/"
+      },
+      {
+        "title": "Set up Family Link — official help article",
+        "source": "Google Help",
+        "type": "Official guide",
+        "url": "https://support.google.com/families/answer/7101025"
+      },
+      {
+        "title": "Manage screen time with Family Link",
+        "source": "Google Help",
+        "type": "Official guide",
+        "url": "https://support.google.com/families/answer/7103340"
+      },
+      {
+        "title": "Approve or block apps your child wants to download",
+        "source": "Google Help",
+        "type": "Official guide",
+        "url": "https://support.google.com/families/answer/7385553"
+      },
+      {
+        "title": "Parental controls on Android — UK guide with screenshots",
+        "source": "Internet Matters (UK)",
+        "type": "Article",
+        "url": "https://www.internetmatters.org/parental-controls/smartphones-and-other-devices/google-family-link-parental-controls/"
+      },
+      {
+        "title": "Create a child Google account and parental consent",
+        "url": "https://support.google.com/families/answer/7103338?hl=en",
+        "source": "Official support",
+        "type": "Official guide"
+      },
+      {
+        "title": "Google Play family payment and approval limits",
+        "url": "https://support.google.com/families/answer/6294544?hl=en",
+        "source": "Official support",
+        "type": "Official guide"
+      }
     ],
-    notes: [
-      "Family Link can supervise a teen account past 13, but the teen can technically unlink it themselves once they're old enough — you'll be notified.",
-      "Some apps (notably WhatsApp) don't enforce Google's age rules, so block them in Family Link if you don't want them installed.",
-      "You do not need to wipe a phone to supervise it. Only reset if the device came from someone else or has an adult account locked in as owner.",
-      "The adult-verification charge during account creation is a small temporary authorisation, not a purchase — the exact amount differs by country and card, so treat any figure you read online as an example only.",
-    ],
+    "notes": [
+      "Family Link does not read every message or replace the controls inside each app.",
+      "Check Google’s current age and supervision rules when the child becomes eligible to manage their own account.",
+      "Menu paths are a starting point. Use the official instructions for your device and software version."
+    ]
   },
   {
-    slug: "iphone-first-setup",
-    title: "iPhone for a child — full setup with Family Sharing & Screen Time",
-    device: "iOS",
-    summary:
-      "Create a Child Apple Account inside Family Sharing, then use Screen Time and Communication Safety to lock down content, time and contacts.",
-    steps: [
+    "slug": "iphone-first-setup",
+    "title": "iPhone for a child — full setup with Family Sharing & Screen Time",
+    "device": "iOS",
+    "summary": "Create a Child Apple Account inside Family Sharing, then use Screen Time and Communication Safety to lock down content, time and contacts.",
+    "steps": [
       "Create a Child Apple Account through Family Sharing",
       "Sign the child in on their iPhone with the new account",
       "Turn on Screen Time and set a Screen Time Passcode only you know",
       "Set Downtime, App Limits and Always-Allowed apps",
       "Turn on Content & Privacy Restrictions (App Store, web, Siri, explicit content)",
       "Turn on Ask to Buy; verify Communication Safety is on (it's enabled by default on current software)",
-      "Enable Find My and Stolen Device Protection",
+      "Enable Find My and Stolen Device Protection"
     ],
-    overview:
-      "Apple's parental controls live in two places: Family Sharing (which links your accounts) and Screen Time (which sets the rules). You configure most things from your own iPhone once the child's Apple Account is linked.",
-    heroVideo: {
-      youtubeId: "8siFNH-brM4",
-      title: "How to create a child account with Family Sharing on iPhone or iPad — Apple Support",
-      caption: "Official Apple Support walkthrough (2:37) for creating the child's Apple Account. Then follow the detailed steps below to lock down Screen Time.",
+    "overview": "Apple's parental controls live in two places: Family Sharing (which links your accounts) and Screen Time (which sets the rules). You configure most things from your own iPhone once the child's Apple Account is linked. Apple’s September 2026 documentation uses new iOS 27 menus after the family’s devices and parental controls are updated. Older software uses the earlier Screen Time menus. Follow the linked Apple guide for your version.",
+    "heroVideo": {
+      "youtubeId": "8siFNH-brM4",
+      "title": "How to create a child account with Family Sharing on iPhone or iPad — Apple Support",
+      "caption": "Official Apple Support walkthrough (2:37) for creating the child's Apple Account. Then follow the detailed steps below to lock down Screen Time."
     },
-    sections: [
+    "sections": [
       {
-        title: "1 · Create the Child Apple Account",
-        visual: {
-          youtubeId: "8siFNH-brM4",
-          title: "Create a Child Apple Account",
-          source: "Apple Support",
-          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4",
-          kind: "Official video",
-          description: "Apple’s official Family Sharing child-account walkthrough.",
+        "title": "1 · Create the Child Apple Account",
+        "visual": {
+          "youtubeId": "8siFNH-brM4",
+          "title": "Create a Child Apple Account",
+          "source": "Apple Support",
+          "sourceUrl": "https://www.youtube.com/watch?v=8siFNH-brM4",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "On YOUR iPhone, open Settings → tap your name at the top → Family.",
-        steps: [
+        "intro": "On YOUR iPhone, open Settings → tap your name at the top → Family.",
+        "steps": [
           "Tap 'Add Member' → 'Create Child Account' → Continue.",
           "Enter the child's name and birthday (this sets the right default restrictions).",
           "Agree to the Parent Privacy Disclosure and verify yourself (Face ID / Touch ID / CVV on your Apple-ID payment card).",
           "Create the child's Apple ID (an @icloud.com email) and a password YOU keep.",
-          "Choose 'Ask to Buy' = On. Every paid download or in-app purchase now needs your approval.",
-        ],
+          "Enable Ask to Buy for eligible downloads and purchases. Redownloading the child’s own purchases, updates and redemption codes have exceptions."
+        ]
       },
       {
-        title: "2 · Sign the child in on their iPhone",
-        visual: {
-          youtubeId: "8siFNH-brM4",
-          startSeconds: 74,
-          title: "Connect the child to Family Sharing",
-          source: "Apple Support",
-          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4&t=74s",
-          kind: "Official video",
-          description: "The device and family-account stage in Apple’s walkthrough.",
+        "title": "2 · Sign the child in on their iPhone",
+        "visual": {
+          "youtubeId": "8siFNH-brM4",
+          "title": "Connect the child to Family Sharing",
+          "source": "Apple Support",
+          "sourceUrl": "https://www.youtube.com/watch?v=8siFNH-brM4",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        steps: [
+        "steps": [
           "If the iPhone is new: at the 'Hello' screen choose 'Set Up for a Child in My Family' (iOS 16+).",
-          "If the iPhone is already set up: Settings → sign out of any existing Apple Account → sign in with the new Child Apple Account.",
-          "Accept the prompts to enable iCloud Backup, Find My iPhone and Screen Time.",
-        ],
+          "If the phone already has an account, check whether it should be added to the family rather than replaced. Back up data and follow Apple’s account-transfer instructions before signing out or erasing anything.",
+          "Accept the prompts to enable iCloud Backup, Find My iPhone and Screen Time."
+        ]
       },
       {
-        title: "3 · Screen Time — the most important step",
-        visual: {
-          youtubeId: "8siFNH-brM4",
-          title: "Set up Screen Time",
-          source: "Apple Support",
-          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4",
-          kind: "Official video",
-          description: "Apple’s official Screen Time walkthrough.",
+        "title": "3 · Screen Time and time limits",
+        "visual": {
+          "youtubeId": "8siFNH-brM4",
+          "title": "Set up Screen Time",
+          "source": "Apple Support",
+          "sourceUrl": "https://www.youtube.com/watch?v=8siFNH-brM4",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "On your phone: Settings → Family → tap the child → Screen Time.",
-        steps: [
-          "Tap 'Turn on Screen Time' if it isn't already.",
-          "Set a 4-digit Screen Time Passcode the child does NOT know — this stops them changing limits.",
-          "Set 'Downtime': hours when only allowed apps and phone calls work (e.g. 21:00–07:00).",
-          "Set 'App Limits' by category (Social, Games) or per-app (TikTok 30 min, Roblox 45 min).",
-          "Set 'Always Allowed' apps — Phone, Messages, Maps and your family chat should stay on even during downtime.",
-          "Turn on 'Block at End of Limit' so the limit actually enforces.",
-        ],
+        "intro": "Open Settings → Family → the child. New iOS 27 controls use Time Allowances and Screen Time Schedule; older versions use App Limits and Downtime.",
+        "steps": [
+          "Set a separate Screen Time passcode and protect the parent account.",
+          "Choose a daily allowance and a schedule that fit school, sleep and family needs.",
+          "Review apps and contacts allowed during restricted periods.",
+          "On older versions, check Block at End of Limit where offered.",
+          "Check an ordinary call to a trusted adult while limits are active."
+        ]
       },
       {
-        title: "4 · Content & Privacy Restrictions",
-        visual: {
-          youtubeId: "8siFNH-brM4",
-          title: "Set up parental controls",
-          source: "Apple Support",
-          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4",
-          kind: "Official video",
-          description: "Apple demonstrates its current parental-control menus.",
+        "title": "4 · Content & Privacy Restrictions",
+        "visual": {
+          "youtubeId": "8siFNH-brM4",
+          "title": "Set up parental controls",
+          "source": "Apple Support",
+          "sourceUrl": "https://www.youtube.com/watch?v=8siFNH-brM4",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Same Screen Time screen → 'Content & Privacy Restrictions' → toggle on.",
-        steps: [
-          "iTunes & App Store Purchases → 'Installing Apps' = Don't Allow (or Require Password). 'In-app Purchases' = Don't Allow.",
-          "Allowed Apps → switch off anything inappropriate (Safari, Camera, FaceTime) for very young kids.",
-          "Content Restrictions → set the highest age rating the child can install. On iOS 26+ Apple's ratings are 4+, 9+, 13+, 16+, 18+; on earlier iOS they are 4+, 9+, 12+, 17+. Pick a cap suited to the child (e.g. 9+ for a young child, 13+ for an older one). Also set age ratings for Movies, TV shows, Books and Music.",
-          "Content Restrictions → Web Content → 'Limit Adult Websites' (or 'Allowed Websites Only' for under-10s).",
-          "Content Restrictions → Siri → block explicit language and explicit web search.",
-        ],
+        "intro": "Open the child’s family settings. iOS 27 separates Apps & Websites from Content & Privacy Restrictions; older versions group more options inside Screen Time.",
+        "steps": [
+          "Review app installation and purchase controls; the current Apple guide gives the menus for your version.",
+          "Choose content ratings appropriate to the child. App Store ratings describe content, not the service’s account eligibility.",
+          "Review website filtering or approved websites, and check the browsers the child actually uses.",
+          "Review Siri, privacy permissions and whether the child can change account settings."
+        ]
       },
       {
-        title: "5 · Communication, contacts & Messages",
-        visual: {
-          youtubeId: "8siFNH-brM4",
-          startSeconds: 62,
-          title: "Review communication controls",
-          source: "Apple Support",
-          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4&t=62s",
-          kind: "Official video",
-          description: "Apple’s parental-controls walkthrough at the communication settings.",
+        "title": "5 · Communication, contacts & Messages",
+        "visual": {
+          "youtubeId": "8siFNH-brM4",
+          "title": "Review communication controls",
+          "source": "Apple Support",
+          "sourceUrl": "https://www.youtube.com/watch?v=8siFNH-brM4",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        steps: [
-          "Screen Time → 'Communication Limits' → choose who they can call/iMessage/FaceTime during the day and during downtime (e.g. 'Contacts Only').",
-          "Screen Time → 'Communication Safety' → check it is ON. On iOS 17+ it is enabled by default for child accounts under 18 on iPhone, iPad, Mac and Apple Watch, and for 13–17-year-olds on Apple Vision Pro — so you're verifying, not switching it on from scratch. It detects and blurs nudity in Messages, AirDrop, Contact Posters, FaceTime video messages and the system Photos picker; analysis happens on-device. Source: support.apple.com/en-gb/105069",
-          "Manage their contacts list (Settings → Family → child → Contacts) so 'Contacts Only' is meaningful.",
-        ],
+        "steps": [
+          "Review allowed contacts for Phone, Messages and FaceTime; other messaging apps need their own controls.",
+          "Check Communication Safety is enabled. Features vary by software version; follow Apple’s current guide.",
+          "Review who can edit contacts and check trusted adults remain reachable during restricted periods."
+        ]
       },
       {
-        title: "6 · Safety & device security",
-        visual: {
-          youtubeId: "8siFNH-brM4",
-          startSeconds: 70,
-          title: "Review device safety settings",
-          source: "Apple Support",
-          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4&t=70s",
-          kind: "Official video",
-          description: "The safety and access controls in Apple’s official walkthrough.",
+        "title": "6 · Safety & device security",
+        "visual": {
+          "youtubeId": "8siFNH-brM4",
+          "title": "Review device safety settings",
+          "source": "Apple Support",
+          "sourceUrl": "https://www.youtube.com/watch?v=8siFNH-brM4",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        steps: [
+        "steps": [
           "Settings → Family → child → Location Sharing → On. The child's iPhone appears in Find My.",
           "On the child phone: Settings → [name] → Find My → 'Find My iPhone' On, 'Send Last Location' On.",
           "On the child phone: Settings → Face ID & Passcode → 'Stolen Device Protection' On (iOS 17.3+).",
-          "Set up Emergency Contacts in the Health app: Health → Medical ID → Edit → add yourself as an emergency contact (works from the lock screen).",
-        ],
+          "In Health → Medical ID, add emergency contacts and decide whether to enable Show When Locked. Without that setting, Medical ID is not available from the lock screen."
+        ]
+      }
+    ],
+    "capabilities": [
+      {
+        "label": "Time controls",
+        "detail": "Schedules and allowances on the new software; Downtime and App Limits on earlier versions."
       },
+      {
+        "label": "Purchase approvals",
+        "detail": "Ask to Buy covers eligible requests, with exceptions."
+      },
+      {
+        "label": "Communication controls",
+        "detail": "Review Apple’s supported apps and manage other messaging apps separately."
+      },
+      {
+        "label": "Content and privacy",
+        "detail": "Review ratings, website access and permissions."
+      },
+      {
+        "label": "Device security",
+        "detail": "Set up Find My and appropriate device security; location is not guaranteed."
+      }
     ],
-    capabilities: [
-      { label: "Downtime", detail: "Only chosen apps and phone calls work outside allowed hours." },
-      { label: "App Limits", detail: "Daily quota per app or per category; locks the app when reached." },
-      { label: "Always Allowed", detail: "Apps that escape every limit — keep Phone, Messages, Maps." },
-      { label: "Ask to Buy", detail: "Push approval to your phone for any download or in-app purchase." },
-      { label: "Communication Limits", detail: "Restrict who can contact the child and who they can contact." },
-      { label: "Communication Safety", detail: "On-device nudity blur in Messages, AirDrop, Contact Posters, FaceTime and Photos. Enabled by default for child accounts on iOS 17+ — verify it stays on." },
-      { label: "Web Content", detail: "Limit adult websites system-wide, or restrict to an allowlist." },
-      { label: "Find My + Stolen Device Protection", detail: "Locate a lost iPhone; require Face ID for risky changes." },
+    "emergency": "Learn how to reach the Emergency option on this iPhone. Medical ID is available from the lock screen only when Show When Locked is enabled. Keep the phone charged and check ordinary calls to a trusted adult during restrictions. Do not call 999 or 112 as a test.",
+    "tutorials": [
+      {
+        "title": "Set up a Child Apple Account with Family Sharing",
+        "source": "Apple Support (official)",
+        "type": "Official guide",
+        "url": "https://support.apple.com/en-gb/108714"
+      },
+      {
+        "title": "Use Screen Time on your iPhone",
+        "source": "Apple Support (official)",
+        "type": "Official guide",
+        "url": "https://support.apple.com/en-gb/108806"
+      },
+      {
+        "title": "Use parental controls on your child's iPhone",
+        "source": "Apple Support (official)",
+        "type": "Official guide",
+        "url": "https://support.apple.com/en-gb/105121"
+      },
+      {
+        "title": "Communication Safety on iPhone",
+        "source": "Apple Support (official)",
+        "type": "Official guide",
+        "url": "https://support.apple.com/en-gb/105069"
+      },
+      {
+        "title": "How to set up parental controls on iPhone (walkthrough)",
+        "source": "Apple Support · YouTube",
+        "type": "Video",
+        "url": "https://www.youtube.com/watch?v=8siFNH-brM4"
+      },
+      {
+        "title": "App Store age ratings values and definitions (4+/9+/13+/16+/18+ on iOS 26)",
+        "source": "Apple Developer",
+        "type": "Official guide",
+        "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/"
+      },
+      {
+        "title": "Updated age ratings in App Store Connect (July 2025)",
+        "source": "Apple Developer News",
+        "type": "Official guide",
+        "url": "https://developer.apple.com/news/?id=ks775ehf"
+      },
+      {
+        "title": "iPhone parental controls — UK guide with current screenshots",
+        "source": "Internet Matters (UK)",
+        "type": "Article",
+        "url": "https://www.internetmatters.org/parental-controls/smartphones-and-other-devices/apple-iphone-parental-controls/"
+      },
+      {
+        "title": "Set up Screen Time (video walkthrough)",
+        "source": "Apple Support · YouTube",
+        "type": "Video",
+        "url": "https://www.youtube.com/watch?v=8siFNH-brM4"
+      },
+      {
+        "title": "Ask to Buy: eligible requests and exceptions",
+        "url": "https://support.apple.com/en-gb/105055",
+        "source": "Official support",
+        "type": "Official guide"
+      },
+      {
+        "title": "Medical ID and Show When Locked",
+        "url": "https://support.apple.com/en-ie/105072",
+        "source": "Official support",
+        "type": "Official guide"
+      }
     ],
-    emergency:
-      "Even when an app limit is hit or during full Downtime, the child can swipe up on the lock screen and tap 'Emergency' to call 999 / 112 / 911. Medical ID is visible without unlocking, so emergency contacts added in the Health app can always be reached. Phone and Messages set as 'Always Allowed' means they can also call or text you at any time.",
-    tutorials: [
-      { title: "Set up a Child Apple Account with Family Sharing", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/108714" },
-      { title: "Use Screen Time on your iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/108806" },
-      { title: "Use parental controls on your child's iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/105121" },
-      { title: "Communication Safety on iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/105069" },
-      { title: "How to set up parental controls on iPhone (walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=8siFNH-brM4" },
-      { title: "App Store age ratings values and definitions (4+/9+/13+/16+/18+ on iOS 26)", source: "Apple Developer", type: "Official guide", url: "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/" },
-      { title: "Updated age ratings in App Store Connect (July 2025)", source: "Apple Developer News", type: "Official guide", url: "https://developer.apple.com/news/?id=ks775ehf" },
-      { title: "iPhone parental controls — UK guide with current screenshots", source: "Internet Matters (UK)", type: "Article", url: "https://www.internetmatters.org/parental-controls/smartphones-and-other-devices/apple-iphone-parental-controls/", note: "Screen-by-screen images kept up to date with the current iOS release." },
-      { title: "Set up Screen Time (video walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=8siFNH-brM4" },
-    ],
-    notes: [
-      "The Screen Time Passcode is the linchpin — if a curious teen learns it, the whole system is bypassed. Don't reuse your phone passcode.",
-      "Apple updated its App Store age ratings in July 2025 (iOS 26+) to 4+, 9+, 13+, 16+ and 18+ — more granular than the old 4+/9+/12+/17+ tiers still shown on devices below iOS 26. In Screen Time → Content Restrictions you can cap which ratings the child may install, so set it deliberately rather than leaving it at the default. Source: developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/",
-    ],
+    "notes": [
+      "Keep the Screen Time passcode and parent-account recovery details secure. Recheck settings after major software updates.",
+      "Apple updated its App Store age ratings in July 2025 (iOS 26+) to 4+, 9+, 13+, 16+ and 18+ — more granular than the old 4+/9+/12+/17+ tiers still shown on devices below iOS 26. In Screen Time → Content Restrictions you can cap which ratings the child may install, so set it deliberately rather than leaving it at the default. Source: developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/"
+    ]
   },
   {
-    slug: "youtube-safer",
-    title: "Make YouTube safer in 5 minutes",
-    device: "Any",
-    summary: "Seven concrete settings — autoplay, supervised content level, history, Shorts, recommendations and Restricted Mode — with the exact tap-path for phone, tablet and TV.",
-    steps: [
-      "Turn off Autoplay (app: player toggle; web: Up next toggle)",
-      "Set the supervised content level, or move under-9s to YouTube Kids",
-      "Pause and clear Watch history and Search history",
-      "Reduce or remove Shorts (collapse the shelf, or use Kids/supervised where Shorts are limited)",
-      "Clean subscriptions and train recommendations with 'Don't recommend channel'",
-      "Turn on Restricted Mode on every device and browser they use",
-      "Re-check on the TV, tablet and school laptop — settings do not travel between them",
+    "slug": "youtube-safer",
+    "title": "Review YouTube’s safety and viewing settings",
+    "device": "Any",
+    "summary": "Choose the right account type, review content controls and set limits for viewing and the Shorts feed.",
+    "steps": [
+      "Check the account type",
+      "Review the content setting",
+      "Turn off Autoplay where appropriate",
+      "Review history and recommendations together",
+      "Set a Shorts feed limit",
+      "Check Restricted Mode where available",
+      "Repeat the checks on each viewing device"
     ],
-    overview:
-      "YouTube is the most-used app by children in the UK. Each setting below is per-account AND per-device: turning Restricted Mode on in the phone app does nothing to the smart TV. Budget five minutes for the phone now, then repeat on any other screen they use. Nothing here replaces talking about what they watch.",
-    heroVideo: {
-      youtubeId: "0dy1St39xeo",
-      title: "Parental controls and supervised experiences on YouTube — Google",
-      caption: "Official Google walkthrough of supervised experiences. The exact tap-paths for every setting are written out below.",
+    "overview": "YouTube has different controls for Kids, supervised kid accounts, supervised teens and standard accounts. Some controls follow the account; Restricted Mode needs checking in each browser or device. Start with the account actually used on each screen.",
+    "heroVideo": {
+      "youtubeId": "0dy1St39xeo",
+      "title": "Parental controls and supervised experiences on YouTube — Google",
+      "caption": "Official Google walkthrough of supervised experiences. The exact tap-paths for every setting are written out below."
     },
-    sections: [
+    "sections": [
       {
-        title: "1 · Turn off Autoplay (30 seconds)",
-        visual: {
-          youtubeId: "0dy1St39xeo",
-          title: "YouTube family controls overview",
-          source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo",
-          kind: "Official video",
-          description: "YouTube’s official family-controls walkthrough; pause while following the written path.",
+        "title": "1 · Turn off Autoplay (30 seconds)",
+        "visual": {
+          "youtubeId": "0dy1St39xeo",
+          "title": "YouTube family controls overview",
+          "source": "YouTube",
+          "sourceUrl": "https://www.youtube.com/watch?v=0dy1St39xeo",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Autoplay is what turns one video into two hours. It is set per device and per profile.",
-        steps: [
+        "intro": "Autoplay starts another video automatically. Check the toggle on each viewing device.",
+        "steps": [
           "Phone/tablet app: start any video → the row of icons at the top of the player → tap the Autoplay toggle so it reads Off.",
-          "Also: profile picture (top right) → Settings → Autoplay → turn off 'Autoplay next video' for Wi-Fi and mobile data.",
           "Computer: youtube.com → play a video → under the player, toggle 'Autoplay' off.",
           "Smart TV / console / Fire Stick: Settings → Autoplay → Off. This is a separate switch from the phone.",
-          "Check it stuck: close the app, reopen, play a video and let it end — it should stop, not roll on.",
-        ],
+          "Check it stuck: close the app, reopen, play a video and let it end — it should stop, not roll on."
+        ]
       },
       {
-        title: "2 · Set the right account type and content level",
-        visual: {
-          youtubeId: "0dy1St39xeo",
-          startSeconds: 18,
-          title: "Choose a supervised experience",
-          source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=18s",
-          kind: "Official video",
-          description: "YouTube shows the supervised experience and parent controls.",
+        "title": "2 · Set the right account type and content level",
+        "visual": {
+          "youtubeId": "0dy1St39xeo",
+          "title": "Choose a supervised experience",
+          "source": "YouTube",
+          "sourceUrl": "https://www.youtube.com/watch?v=0dy1St39xeo",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Under 13s should not be on a standard YouTube account. Choose one of the three routes below.",
-        steps: [
-          "Under 9: use the YouTube Kids app. In Kids → lock icon (bottom right) → enter the passcode → Settings → choose the child's profile → set the age category (Preschool / Younger / Older) and turn OFF 'Search'.",
-          "Roughly 9–12: create a supervised account in Google Family Link → tap the child → Controls → YouTube → then choose a content setting: 'Explore' (approx 9+), 'Explore More' (approx 13+) or 'Most of YouTube'.",
-          "13+ with their own account: you cannot set a content level remotely — do steps 1, 3, 4, 5 and 6 with them instead.",
-          "In a supervised account, purchases, comments, live chat, uploads and creating playlists are switched off by Google — this is the strongest single lever available.",
-          "Check it stuck: open YouTube on the child's device — a supervised account shows their name and a 'supervised' label under the profile picture.",
-        ],
+        "intro": "Choose an experience that fits the child. The content-setting labels describe available content, not permission to create an unsupervised account.",
+        "steps": [
+          "Consider YouTube Kids for younger children, with its age settings and search controls.",
+          "Eligible under-13s can use a parent-managed supervised kid account on regular YouTube. Current content labels are Older kids, Teens and Older teens; choose cautiously.",
+          "For teenagers, review the separate Family Center supervision options.",
+          "Supervised kid accounts restrict features such as posting comments and uploads. Some content levels allow reading comments.",
+          "Check the correct account is signed in on each device."
+        ]
       },
       {
-        title: "3 · Review, clear and pause history",
-        visual: {
-          youtubeId: "0dy1St39xeo",
-          startSeconds: 33,
-          title: "Review viewing controls",
-          source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=33s",
-          kind: "Official video",
-          description: "The official walkthrough alongside the exact history path.",
+        "title": "3 · Review, clear and pause history",
+        "visual": {
+          "youtubeId": "0dy1St39xeo",
+          "title": "Review viewing controls",
+          "source": "YouTube",
+          "sourceUrl": "https://www.youtube.com/watch?v=0dy1St39xeo",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "History is what feeds the recommendations. Cleaning it visibly changes the home page within a day.",
-        steps: [
-          "App: profile picture → Settings → Manage all history (this opens myactivity.google.com).",
-          "Read the last two weeks with your child — this is the single most useful two minutes of the whole checklist.",
-          "Tap Delete → 'Delete all time' to clear watch history, then repeat for search history.",
-          "Turn OFF 'YouTube History' if you want recommendations to stop personalising, or set 'Auto-delete' to 3 months as a middle ground.",
-          "Note the trade-off: with history off, the home page gets generic rather than safe — it does not filter anything.",
-        ],
+        "intro": "History influences recommendations. Review it with your child; clearing it is a choice, not a safety filter.",
+        "steps": [
+          "Open YouTube’s history controls with your child.",
+          "Discuss what they watch before choosing whether to clear, pause or auto-delete history.",
+          "Pausing history changes recommendation signals. It does not make remaining videos safe."
+        ]
       },
       {
-        title: "4 · Deal with Shorts",
-        visual: {
-          youtubeId: "0dy1St39xeo",
-          startSeconds: 42,
-          title: "Use YouTube wellbeing controls",
-          source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=42s",
-          kind: "Official video",
-          description: "YouTube’s official parent-control overview beside the Shorts actions.",
+        "title": "4 · Deal with Shorts",
+        "visual": {
+          "youtubeId": "0dy1St39xeo",
+          "title": "Use YouTube wellbeing controls",
+          "source": "YouTube",
+          "sourceUrl": "https://www.youtube.com/watch?v=0dy1St39xeo",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Shorts is the most compulsive surface in the app and the hardest to filter, because content moves fast and moderation lags.",
-        steps: [
-          "Home feed: tap the three dots on the Shorts shelf → 'Hide' — it collapses the shelf for 30 days, then returns. Repeat monthly.",
-          "Inside a Short: three dots → 'Not interested' or 'Don't recommend channel' — this is what actually trains the feed.",
-          "For under-13s: YouTube Kids has no Shorts feed of this kind, and supervised 'Explore' level heavily limits it. That is the reliable route.",
-          "Set a timer instead of relying on willpower: profile picture → Settings → 'Remind me to take a break' and 'Remind me when it's bedtime'.",
-          "Honest limit: there is no switch that removes Shorts entirely from a standard account. Account type is the only real control.",
-        ],
+        "intro": "YouTube now offers a daily Shorts feed limit, including zero. A personal reminder differs from a parent-set supervised limit.",
+        "steps": [
+          "For a linked supervised account, open Family Center → the child → Time management → Shorts feed limit.",
+          "Select a limit, including zero where available. Google says the supervised limit prevents further feed scrolling until the next day.",
+          "On a standard account: You → Settings → Time management → Shorts feed limit. This reminder can be dismissed or ignored.",
+          "Check the setting on the account and device actually used. A feed limit is not a promise that every short video is blocked everywhere."
+        ]
       },
       {
-        title: "5 · Clean subscriptions and retrain recommendations",
-        visual: {
-          youtubeId: "0dy1St39xeo",
-          startSeconds: 52,
-          title: "Manage what appears on YouTube",
-          source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=52s",
-          kind: "Official video",
-          description: "The platform’s own walkthrough beside recommendation controls.",
+        "title": "5 · Clean subscriptions and retrain recommendations",
+        "visual": {
+          "youtubeId": "0dy1St39xeo",
+          "title": "Manage what appears on YouTube",
+          "source": "YouTube",
+          "sourceUrl": "https://www.youtube.com/watch?v=0dy1St39xeo",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        steps: [
-          "Tap 'Subscriptions' → 'Manage' (or the channel list) and unsubscribe from anything you don't recognise — ask who each one is.",
-          "On the home page, hold or tap the three dots on any unwanted thumbnail → 'Don't recommend channel'. Do this ten times in a row; the feed shifts noticeably.",
-          "Use 'Not interested' → 'Tell us why' for content that is borderline rather than clearly bad.",
-          "Add three or four channels together that they actually like — a positively trained feed sticks better than a purely blocked one.",
-          "Check it stuck: reload the home page after a day and see what is left.",
-        ],
+        "steps": [
+          "Review subscriptions together and remove unwanted channels.",
+          "Use Not interested or Don’t recommend channel where offered.",
+          "Revisit recommendations together; these controls do not guarantee what appears next."
+        ]
       },
       {
-        title: "6 · Restricted Mode — on every device and browser",
-        visual: {
-          youtubeId: "0dy1St39xeo",
-          startSeconds: 62,
-          title: "Review content controls",
-          source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=62s",
-          kind: "Official video",
-          description: "YouTube’s official controls overview; use the written device-specific paths.",
+        "title": "6 · Restricted Mode — on every device and browser",
+        "visual": {
+          "youtubeId": "0dy1St39xeo",
+          "title": "Review content controls",
+          "source": "YouTube",
+          "sourceUrl": "https://www.youtube.com/watch?v=0dy1St39xeo",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Restricted Mode is an automated filter for mature content. It is useful but leaky, and it is stored per browser, per app and per device.",
-        steps: [
-          "Phone/tablet app: profile picture → Settings → General → 'Restricted Mode' → On.",
-          "Computer: youtube.com → profile picture (top right) → scroll to 'Restricted Mode' → On. Repeat in every browser and in a signed-out/guest profile.",
-          "Smart TV / games console: Settings → Restricted Mode (labelled 'Restricted Mode' or 'Safety Mode') → On.",
-          "Whole-network option: your broadband provider's parental filter (BT, Sky, Virgin, TalkTalk all offer one free) can force Restricted Mode for every device on the home Wi-Fi — it does not cover mobile data.",
-          "Honest limit: Restricted Mode relies on automated signals and creator age-flags. It misses things and over-blocks others. Treat it as a filter, not a guarantee.",
-        ],
+        "intro": "Restricted Mode filters potentially mature content on supported accounts. Supervised kid accounts use their own content settings instead.",
+        "steps": [
+          "Follow YouTube’s Restricted Mode instructions for each browser, phone or TV where the option is available.",
+          "Check whether a parent, school or network administrator manages the setting.",
+          "Do not assume a home-network filter also covers mobile data.",
+          "Filters may miss content or block suitable material; keep discussing what appears."
+        ]
       },
       {
-        title: "7 · Repeat where they actually watch",
-        visual: {
-          youtubeId: "0dy1St39xeo",
-          startSeconds: 72,
-          title: "Check every viewing device",
-          source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=72s",
-          kind: "Official video",
-          description: "The official walkthrough beside the final multi-device check.",
+        "title": "7 · Repeat where they actually watch",
+        "visual": {
+          "youtubeId": "0dy1St39xeo",
+          "title": "Check every viewing device",
+          "source": "YouTube",
+          "sourceUrl": "https://www.youtube.com/watch?v=0dy1St39xeo",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Most households do the phone and forget the rest. YouTube settings do not sync across these.",
-        steps: [
-          "Smart TV and streaming stick — usually the least-protected screen in the house.",
-          "Games console (PlayStation, Xbox, Switch) — each has its own YouTube app and its own settings.",
-          "Tablet, including a shared family iPad with a signed-in adult account.",
-          "School laptop or Chromebook — check both the browser signed in and signed out.",
-          "Anyone else's account they use on the family TV — a parent's signed-in account has no restrictions at all.",
-        ],
-      },
+        "intro": "Check the account and available controls on every viewing device.",
+        "steps": [
+          "Review the family TV and streaming devices.",
+          "Check games consoles and tablets.",
+          "Check school-managed devices with the school rather than changing administrative controls.",
+          "An adult account may have different settings from the child’s account; check which is signed in."
+        ]
+      }
     ],
-    capabilities: [
-      { label: "Autoplay off", detail: "Stops the endless roll-on. Per device — phone, TV and computer each need doing." },
-      { label: "Supervised content level", detail: "Explore / Explore More / Most of YouTube, set from Family Link. Also disables comments, live chat and uploads." },
-      { label: "YouTube Kids profiles", detail: "Age category per child plus a switch to turn search off entirely." },
-      { label: "History control", detail: "Clear, pause or auto-delete watch and search history to reset recommendations." },
-      { label: "Don't recommend channel", detail: "The strongest available signal for reshaping the feed on a standard account." },
-      { label: "Restricted Mode", detail: "Automated filter for mature content. Per app, per browser, per device — and imperfect." },
-      { label: "Break and bedtime reminders", detail: "Built-in nudges that work well with a supervised account." },
+    "capabilities": [
+      {
+        "label": "Account and content settings",
+        "detail": "Kids, supervised kid and teen experiences offer different controls."
+      },
+      {
+        "label": "Shorts feed limits",
+        "detail": "Parent-set supervised limits differ from dismissible standard-account reminders."
+      },
+      {
+        "label": "History and recommendations",
+        "detail": "Review what influences the feed together."
+      },
+      {
+        "label": "Restricted Mode",
+        "detail": "Check availability and settings per device; it is not a guarantee."
+      }
     ],
-    notes: [
-      "There is no single master switch. YouTube safety is an account type (supervised or Kids) plus a handful of per-device toggles.",
-      "Restricted Mode can be turned off again in the same menu by anyone who knows where it is — on a supervised or Kids account it is locked behind your Family Link or passcode, which is why account type matters more than toggles.",
-      "Signing out and watching logged-out removes most of this. If that becomes a pattern, handle it at the device level with Screen Time or Family Link rather than inside YouTube.",
-      "A parent's signed-in account on the family TV bypasses every child setting — worth checking who is signed in there.",
+    "notes": [
+      "No control guarantees that every video will be suitable.",
+      "Check Google’s current documentation after app updates.",
+      "Account-specific protections may not apply when another account is used."
     ],
-    tutorials: [
-      { title: "Supervised experiences on YouTube", source: "YouTube Help (official)", type: "Official guide", url: "https://support.google.com/youtube/answer/10314940", note: "Explains the Explore / Explore More / Most of YouTube content levels and what each disables." },
-      { title: "Turn Restricted Mode on or off", source: "YouTube Help (official)", type: "Official guide", url: "https://support.google.com/youtube/answer/174084", note: "Per-device instructions for phone, computer and TV." },
-      { title: "Manage Autoplay", source: "YouTube Help (official)", type: "Official guide", url: "https://support.google.com/youtube/answer/6327615" },
-      { title: "Manage your YouTube watch and search history", source: "Google Help (official)", type: "Official guide", url: "https://support.google.com/youtube/answer/95725" },
-      { title: "Set up YouTube Kids and choose a content level", source: "YouTube Kids Help (official)", type: "Official guide", url: "https://support.google.com/youtubekids/answer/6172308" },
-      { title: "Manage your child's YouTube settings in Family Link", source: "Google Help (official)", type: "Official guide", url: "https://support.google.com/families/answer/7087030" },
-      { title: "Parents' guide to YouTube", source: "Internet Matters (UK)", type: "Article", url: "https://www.internetmatters.org/parental-controls/entertainment-search-engines/youtube-safety-settings/", note: "UK non-profit, with annotated screenshots for each setting." },
-    ],
+    "tutorials": [
+      {
+        "title": "Supervised experiences on YouTube",
+        "source": "YouTube Help (official)",
+        "type": "Official guide",
+        "url": "https://support.google.com/youtube/answer/10314940",
+        "note": "Explains supervised kid accounts and feature restrictions."
+      },
+      {
+        "title": "Turn Restricted Mode on or off",
+        "source": "YouTube Help (official)",
+        "type": "Official guide",
+        "url": "https://support.google.com/youtube/answer/174084",
+        "note": "Per-device instructions for phone, computer and TV."
+      },
+      {
+        "title": "Manage Autoplay",
+        "source": "YouTube Help (official)",
+        "type": "Official guide",
+        "url": "https://support.google.com/youtube/answer/6327615"
+      },
+      {
+        "title": "Manage your YouTube watch and search history",
+        "source": "Google Help (official)",
+        "type": "Official guide",
+        "url": "https://support.google.com/youtube/answer/95725"
+      },
+      {
+        "title": "Set up YouTube Kids and choose a content level",
+        "source": "YouTube Kids Help (official)",
+        "type": "Official guide",
+        "url": "https://support.google.com/youtubekids/answer/6172308"
+      },
+      {
+        "title": "Manage your child's YouTube settings in Family Link",
+        "source": "Google Help (official)",
+        "type": "Official guide",
+        "url": "https://support.google.com/families/answer/7087030"
+      },
+      {
+        "title": "Parents' guide to YouTube",
+        "source": "Internet Matters (UK)",
+        "type": "Article",
+        "url": "https://www.internetmatters.org/parental-controls/entertainment-search-engines/youtube-safety-settings/",
+        "note": "UK non-profit, with annotated screenshots for each setting."
+      },
+      {
+        "title": "Current supervised content settings",
+        "url": "https://support.google.com/youtube/answer/10315823?hl=en",
+        "source": "Official support",
+        "type": "Official guide"
+      },
+      {
+        "title": "Supervised account controls and Shorts feed limits",
+        "url": "https://support.google.com/youtubekids/answer/13877231?hl=en-GB",
+        "source": "Official support",
+        "type": "Official guide"
+      },
+      {
+        "title": "Standard-account Shorts reminder",
+        "url": "https://support.google.com/youtube/answer/16671528?hl=en",
+        "source": "Official support",
+        "type": "Official guide"
+      }
+    ]
   },
   {
-    slug: "social-lockdown",
-    title: "Lock down a teen's social accounts",
-    device: "Any",
-    summary: "Five settings that matter — private account, discovery off, location off, two-factor on, follower cleanout — with the exact menu path for Instagram, TikTok, Snapchat and Discord.",
-    steps: [
+    "slug": "social-lockdown",
+    "title": "Lock down a teen's social accounts",
+    "device": "Any",
+    "summary": "Review privacy, discovery, location, sign-in security and contacts together. Menus and options vary by app version and account age.",
+    "steps": [
       "Set the account to Private (and confirm the Teen Account default is actually applied)",
       "Turn off 'suggest my account to others' and contact syncing",
       "Strip location: no location tags, no Snap Map, no place in bio",
       "Turn on two-factor authentication with an app, not SMS",
-      "Clean the follower/friend list — remove anyone they cannot name in real life",
+      "Clean the follower/friend list — remove anyone they cannot name in real life"
     ],
-    overview:
-      "Teens rarely need a new app blocked; they need the accounts they already have tightened. Do this sitting next to them, one app at a time — roughly ten minutes each. Explain each change as you make it, or it quietly gets reversed next week.",
-    sections: [
+    "overview": "Review existing accounts together, explaining each change and how your child can ask for help. Privacy settings can reduce exposure; they cannot guarantee that contact or content is safe.",
+    "sections": [
       {
-        title: "1 · Instagram",
-        visual: {
-          youtubeId: "A9PUMeAQRbA",
-          title: "Instagram Teen Accounts",
-          source: "Instagram",
-          sourceUrl: "https://www.youtube.com/watch?v=A9PUMeAQRbA",
-          kind: "Official video",
-          description: "Instagram’s official introduction to automatic teen protections.",
+        "title": "1 · Instagram",
+        "visual": {
+          "youtubeId": "A9PUMeAQRbA",
+          "title": "Instagram Teen Accounts",
+          "source": "Instagram",
+          "sourceUrl": "https://www.youtube.com/watch?v=A9PUMeAQRbA",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Under-18 accounts should already be Teen Accounts (private by default, restricted DMs, sensitive-content limits). Verify rather than assume — and check the age on the account is the real one.",
-        steps: [
+        "intro": "Under-18 accounts should already be Teen Accounts (private by default, restricted DMs, sensitive-content limits). Verify rather than assume — and check the age on the account is the real one.",
+        "steps": [
           "Private: profile → three lines (top right) → Settings and privacy → Account privacy → 'Private account' ON.",
           "Discovery: Settings → 'Suggested content' / 'Similar account suggestions' → turn OFF suggesting their account to others. Also Settings → Account Centre → Your information → turn off contact syncing.",
           "Messages: Settings → Messages and story replies → 'Others on Instagram' = Don't receive requests; Story replies = People you follow.",
           "Tags and mentions: Settings → Tags and mentions → set both to 'People you follow'. Turn on manual approval for tags.",
           "Location: never add a location to a post or Reel; remove any place, school or town from the bio.",
           "2FA: Account Centre → Password and security → Two-factor authentication → Authentication app.",
-          "Supervision: Account Centre → Supervision → invite your account. It shows time spent, new followers and reported accounts — it does not show message content.",
-        ],
+          "Supervision: Account Centre → Supervision → invite your account. It shows time spent, new followers and reported accounts — it does not show message content."
+        ]
       },
       {
-        title: "2 · TikTok",
-        visual: {
-          youtubeId: "kyONXkjYm-s",
-          title: "Teen safety and privacy defaults",
-          source: "TikTok",
-          sourceUrl: "https://www.youtube.com/watch?v=kyONXkjYm-s",
-          kind: "Official video",
-          description: "TikTok’s official explanation of teen-account defaults.",
+        "title": "2 · TikTok",
+        "visual": {
+          "youtubeId": "kyONXkjYm-s",
+          "title": "Teen safety and privacy defaults",
+          "source": "TikTok",
+          "sourceUrl": "https://www.youtube.com/watch?v=kyONXkjYm-s",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "13–15 accounts are private by default with DMs off. 16–17 accounts are not fully locked, so check them properly.",
-        steps: [
+        "intro": "13–15 accounts are private by default with DMs off. 16–17 accounts are not fully locked, so check them properly.",
+        "steps": [
           "Private: profile → three lines → Settings and privacy → Privacy → 'Private account' ON.",
-          "Discovery: Privacy → 'Suggest your account to others' → turn off all four options (contacts, Facebook friends, people who open your links, people with mutual connections).",
+          "In Privacy, review Suggest your account to others and disable unwanted discovery options; the options vary by account.",
           "Sync: Privacy → 'Sync contacts and Facebook friends' → off, and tap 'Remove previously synced contacts'.",
           "Messaging: Privacy → Direct messages → 'No one' (or Friends only for older teens).",
           "Comments, duets, stitches, downloads: Privacy → set each to Friends or No one.",
           "Location: never mention school or town in a bio; TikTok also infers location from the device — turn location permission off in the phone's app settings.",
           "2FA: Settings → Security and permissions → 2-step verification → authenticator app.",
-          "Family Pairing: Settings → Family Pairing → link your phone to set screen time, restricted mode, DM limits and search restrictions that the teen cannot undo.",
-        ],
+          "Family Pairing: Settings → Family Pairing → link your phone to set screen time, restricted mode, DM limits and search restrictions that the teen cannot undo."
+        ]
       },
       {
-        title: "3 · Snapchat",
-        visual: {
-          youtubeId: "3qkNYcRnwYc",
-          title: "Understand your teen's Snapchat experience",
-          source: "Snapchat",
-          sourceUrl: "https://www.youtube.com/watch?v=3qkNYcRnwYc",
-          kind: "Official video",
-          description: "Snapchat’s current official Family Center walkthrough, including friends, messages, location and time use.",
+        "title": "3 · Snapchat",
+        "visual": {
+          "youtubeId": "3qkNYcRnwYc",
+          "title": "Understand your teen's Snapchat experience",
+          "source": "Snapchat",
+          "sourceUrl": "https://www.youtube.com/watch?v=3qkNYcRnwYc",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Snapchat's risk is contact discovery and location, not a public feed. Both are fixable in two minutes.",
-        steps: [
+        "intro": "Review contact discovery, location sharing and public content such as Spotlight and Stories.",
+        "steps": [
           "Contact me: profile → gear icon → Privacy Controls → 'Contact Me' → 'My Friends'.",
           "Story: Privacy Controls → 'View My Story' → 'My Friends' or a custom list.",
           "Snap Map: open the Map → gear icon → 'Ghost Mode' ON. Check it is not set to expire in 3 or 24 hours.",
-          "Quick Add: Privacy Controls → 'See Me in Quick Add' → OFF. This is how strangers find teens.",
+          "Review Find Friends or Quick Add discovery settings and reduce unwanted suggestions where offered.",
           "Contact sync: Settings → 'Mobile Number' / 'Contacts' → turn off syncing and delete previously synced contacts.",
           "2FA: Settings → Two-Factor Authentication → authenticator app.",
           "Family Centre: Settings → Family Centre → invite your account. You see who they message — not what is said.",
-          "Friends list: go through it together and remove anyone they have never met. Snapchat friend lists are where unknown adults accumulate.",
-        ],
+          "Review friends together. Discuss anyone whose identity is uncertain or whose behaviour makes your child uncomfortable."
+        ]
       },
       {
-        title: "4 · Discord",
-        visual: {
-          youtubeId: "uVwBW1b2HlM",
-          title: "The Discord Family Center",
-          source: "Discord",
-          sourceUrl: "https://www.youtube.com/watch?v=uVwBW1b2HlM",
-          kind: "Official video",
-          description: "Discord’s official Family Center introduction and activity overview.",
+        "title": "4 · Discord",
+        "visual": {
+          "youtubeId": "uVwBW1b2HlM",
+          "title": "The Discord Family Center",
+          "source": "Discord",
+          "sourceUrl": "https://www.youtube.com/watch?v=uVwBW1b2HlM",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        intro: "Discord risk lives in servers and DMs from server members, not in a profile. UK accounts now get age-appropriate defaults, but server settings are still per-server.",
-        steps: [
-          "DMs: User Settings → Privacy & Safety → 'Keep me safe' for content filtering, and turn OFF 'Allow direct messages from server members'.",
+        "intro": "Discord risk lives in servers and DMs from server members, not in a profile. UK accounts now get age-appropriate defaults, but server settings are still per-server.",
+        "steps": [
+          "Review Sensitive Content Filters for images and direct-message privacy. Image filtering does not assess every text message.",
           "Friend requests: Privacy & Safety → Who can add you as a friend → uncheck 'Everyone'; leave 'Friends of Friends' and 'Server members' off too if you can.",
           "Per-server: right-click each server → Privacy Settings → turn off direct messages from that server's members.",
           "Servers: open the server list together and ask what each one is. Leave any large public server they cannot explain.",
           "2FA: User Settings → My Account → Enable Two-Factor Auth (authenticator app).",
-          "Family Centre: User Settings → Family Centre → link your account for a weekly email of who they messaged and which servers they joined — content is not shown.",
-        ],
+          "Family Centre: User Settings → Family Centre → link your account for a weekly email of who they messaged and which servers they joined — content is not shown."
+        ]
       },
       {
-        title: "5 · Finish on every account",
-        visual: {
-          youtubeId: "A9PUMeAQRbA",
-          title: "Recheck teen protections",
-          source: "Instagram",
-          sourceUrl: "https://www.youtube.com/watch?v=A9PUMeAQRbA",
-          kind: "Official video",
-          description: "An official example of the protections to verify before completing the cross-platform sweep.",
+        "title": "5 · Finish on every account",
+        "visual": {
+          "youtubeId": "A9PUMeAQRbA",
+          "title": "Recheck teen protections",
+          "source": "Instagram",
+          "sourceUrl": "https://www.youtube.com/watch?v=A9PUMeAQRbA",
+          "kind": "Official video",
+          "description": "Publisher’s overview video. Use the written guidance and current official support links for settings; the video may show older menus."
         },
-        steps: [
-          "Search their username in a signed-out browser — whatever you can see, a stranger can see.",
+        "steps": [
+          "Check the public profile together. A signed-out view is only one view; it cannot reveal every audience or recommendation.",
           "Check the profile photo, bio and pinned posts for school uniform, school name, street or house number.",
-          "Check the date of birth on the account. A teen who signed up as 18+ loses every teen protection — fixing the age is often the biggest single win.",
-          "Save the reporting routes together: in-app report, then CEOP (ceop.police.uk) for adult contact, and Report Remove (childline.org.uk) to get an image taken down.",
-          "Put a date in the calendar to redo this in three months. Apps change defaults; accounts drift.",
-        ],
+          "Check the account birthday. An incorrect age can affect protections; follow the platform’s correction process.",
+          "Save the reporting routes: in-app reporting; CEOP for concerns about online sexual abuse or exploitation of a child; Report Remove for eligible sexual images of under-18s. Removal cannot be guaranteed. Never download, copy or forward sexual images to make a report.",
+          "Put a date in the calendar to redo this in three months. Apps change defaults; accounts drift."
+        ]
+      }
+    ],
+    "capabilities": [
+      {
+        "label": "Privacy",
+        "detail": "Limit audiences and review contacts."
       },
+      {
+        "label": "Discovery",
+        "detail": "Reduce suggestions and contact syncing where supported."
+      },
+      {
+        "label": "Messages",
+        "detail": "Review who can contact the account and available filters."
+      },
+      {
+        "label": "Location",
+        "detail": "Review app sharing, device permissions and revealing posts."
+      },
+      {
+        "label": "Two-factor authentication",
+        "detail": "Adds protection to sign-in; keep recovery codes safe."
+      },
+      {
+        "label": "Family controls",
+        "detail": "Review each platform’s supported linking and privacy limits."
+      }
     ],
-    capabilities: [
-      { label: "Private account", detail: "Stops non-followers seeing posts. The single highest-value toggle on every platform." },
-      { label: "Discovery off", detail: "Removes them from suggestions and Quick Add, where most unknown-adult contact begins." },
-      { label: "DM restriction", detail: "Friends-only or off. On Discord it must also be set per server." },
-      { label: "Ghost Mode / no location tags", detail: "Prevents live or implied location sharing with friends-of-friends." },
-      { label: "Two-factor authentication", detail: "Stops account takeover — a common route into sextortion." },
-      { label: "Parental linking", detail: "Instagram Supervision, TikTok Family Pairing, Snapchat Family Centre, Discord Family Centre." },
+    "notes": [
+      "Family linking offers different visibility on each platform; do not assume it shows private message content.",
+      "Content controls and filters may influence recommendations but cannot guarantee every item.",
+      "Recheck after significant app updates and when your child reports a problem.",
+      "Use the official account-age correction process if the birthday is wrong."
     ],
-    notes: [
-      "None of the parental link-ups show message content. They show who and when. That is by design — plan on conversation, not surveillance.",
-      "Settings protect against strangers finding your child. They do nothing about content the algorithm pushes, or about people your child chooses to add.",
-      "Every platform resets or renames settings periodically. Re-check quarterly; a lockdown done once in Year 7 is not still in place in Year 9.",
-      "If an account was created with a false adult date of birth, correcting it restores teen defaults — but some platforms require ID to change an age, so check before you start.",
-    ],
-    tutorials: [
-      { title: "Instagram Teen Accounts (default protections)", source: "Meta (official)", type: "Official guide", url: "https://about.instagram.com/blog/announcements/instagram-teen-accounts" },
-      { title: "Set your Instagram account to private", source: "Instagram Help (official)", type: "Official guide", url: "https://help.instagram.com/116024195217477" },
-      { title: "TikTok Family Pairing", source: "TikTok (official)", type: "Official guide", url: "https://www.tiktok.com/safety/en/guardians-guide/" },
-      { title: "TikTok privacy settings for teen accounts", source: "TikTok Support (official)", type: "Official guide", url: "https://support.tiktok.com/en/account-and-privacy/account-privacy-settings" },
-      { title: "Snapchat Family Center", source: "Snap (official)", type: "Official guide", url: "https://parents.snapchat.com/" },
-      { title: "Snap Map and Ghost Mode", source: "Snapchat Support (official)", type: "Official guide", url: "https://help.snapchat.com/hc/en-gb/articles/7012301666580" },
-      { title: "Discord Family Centre", source: "Discord (official)", type: "Official guide", url: "https://discord.com/family-center" },
-      { title: "Social media privacy checklists with screenshots", source: "Internet Matters (UK)", type: "Article", url: "https://www.internetmatters.org/parental-controls/social-media/", note: "Step-by-step guides with current screenshots for each platform." },
-      { title: "Report to CEOP", source: "National Crime Agency (UK)", type: "Official guide", url: "https://www.ceop.police.uk/safety-centre/", note: "Use if an adult has contacted your child online." },
-    ],
-  },
+    "tutorials": [
+      {
+        "title": "Instagram Teen Accounts (default protections)",
+        "source": "Meta (official)",
+        "type": "Official guide",
+        "url": "https://about.instagram.com/blog/announcements/instagram-teen-accounts"
+      },
+      {
+        "title": "Set your Instagram account to private",
+        "source": "Instagram Help (official)",
+        "type": "Official guide",
+        "url": "https://help.instagram.com/116024195217477"
+      },
+      {
+        "title": "TikTok Family Pairing",
+        "source": "TikTok (official)",
+        "type": "Official guide",
+        "url": "https://www.tiktok.com/safety/en/guardians-guide/"
+      },
+      {
+        "title": "TikTok privacy settings for teen accounts",
+        "source": "TikTok Support (official)",
+        "type": "Official guide",
+        "url": "https://support.tiktok.com/en/account-and-privacy/account-privacy-settings"
+      },
+      {
+        "title": "Snapchat Family Center",
+        "source": "Snap (official)",
+        "type": "Official guide",
+        "url": "https://parents.snapchat.com/"
+      },
+      {
+        "title": "Snap Map and Ghost Mode",
+        "source": "Snapchat Support (official)",
+        "type": "Official guide",
+        "url": "https://help.snapchat.com/hc/en-gb/articles/7012301666580"
+      },
+      {
+        "title": "Discord Family Centre",
+        "source": "Discord (official)",
+        "type": "Official guide",
+        "url": "https://discord.com/family-center"
+      },
+      {
+        "title": "Social media privacy checklists with screenshots",
+        "source": "Internet Matters (UK)",
+        "type": "Article",
+        "url": "https://www.internetmatters.org/parental-controls/social-media/"
+      },
+      {
+        "title": "Report to CEOP",
+        "source": "National Crime Agency (UK)",
+        "type": "Official guide",
+        "url": "https://www.ceop.police.uk/safety-centre/",
+        "note": "For concerns about online sexual abuse or exploitation of a child; use emergency services for immediate danger."
+      }
+    ]
+  }
 ];

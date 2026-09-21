@@ -55,7 +55,7 @@ const VIDEOS: Video[] = [
       "Social Media and Mental Health for Children and Teens: Why being present matters",
     channel: "Dartmouth Health",
     blurb:
-      "Experts from the Dartmouth Health academic medical centre explain how social media use is linked to rising anxiety and depression in young people — and discuss parental presence and open conversation.",
+      "A Dartmouth Health discussion about social media, young people and parental presence. Use the research section for study methods and limitations.",
   },
   {
     rank: 3,
@@ -72,7 +72,7 @@ const VIDEOS: Video[] = [
       "Chilling warning for parents as MRI scans show phones are damaging kids' brains",
     channel: "10 News",
     blurb:
-      "Australian news outlet 10 News reports on MRI research showing measurable changes in children's brain development linked to heavy phone use — a news interpretation that should be checked against the study’s methods and limitations.",
+      "A 10 News report with a strong claim in its headline. The headline is the publisher’s framing; this guide does not treat it as evidence that phones cause brain damage.",
   },
   {
     rank: 5,
@@ -80,7 +80,7 @@ const VIDEOS: Video[] = [
     title: "How video games can impact your child's mental health",
     channel: "WJHL",
     blurb:
-      "News outlet WJHL speaks with clinicians and parents about how excessive gaming can affect children's mood, sleep and social development — and what the research says about healthy limits.",
+      "WJHL reporting on gaming and children’s mental health. A news discussion does not establish the effects of gaming for an individual child.",
   },
   {
     rank: 6,
@@ -112,7 +112,7 @@ const VIDEOS: Video[] = [
     title: "Social media's impact on your mental health",
     channel: "ABC News",
     blurb:
-      "ABC News explores the growing body of evidence connecting heavy social media use with poorer mental health in adolescents, with clinicians and parents describing what the research looks like in real families' lives.",
+      "ABC News reporting on social media and mental health. Read the linked research separately before drawing conclusions about cause or a child’s needs.",
   },
 ];
 

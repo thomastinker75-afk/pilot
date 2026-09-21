@@ -7,7 +7,7 @@ export const Route = createFileRoute("/apps/")({
   head: () => ({
     meta: [
       { title: "App & game guides for parents — Parent Tech Safety Hub" },
-      { name: "description", content: "What each app and game actually is, the real risks, and the exact settings to change. TikTok, Snapchat, Roblox, Fortnite, Discord and more." },
+      { name: "description", content: "What each app and game actually is, the real risks, and settings to review. TikTok, Snapchat, Roblox, Fortnite, Discord and more." },
     ],
   }),
 });

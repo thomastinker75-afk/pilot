@@ -1,0 +1,255 @@
+[
+  {
+    "slug": "0-4",
+    "original": {
+      "recommended": "The UK government’s March 2026 guidance for parents of under-fives recommends avoiding screens under age 2 except shared activities that support bonding, interaction and conversation. For ages 2–5, aim for no more than 1 hour a day. Choose slow-paced, age-appropriate content and use it together. Avoid screens at meals and during the hour before bed.",
+      "ukContext": "This Department for Education and Department of Health and Social Care guidance replaces the assumption that government advice has no time target for young children. Screen-based assistive technology for children with special educational needs and disabilities should not be restricted in the same way. Separately, WHO’s global guidance does not recommend sedentary screen time for infants or one-year-olds, and recommends at most 1 hour for ages 2–4; less is better.",
+      "sources": [
+        {
+          "label": "The health impacts of screen time — guide for clinicians and parents",
+          "org": "Royal College of Paediatrics and Child Health",
+          "region": "UK",
+          "url": "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents"
+        },
+        {
+          "label": "New screen time guidance for parents of under-5s (26 March 2026)",
+          "org": "Department for Education / Department of Health and Social Care",
+          "region": "UK government",
+          "url": "https://www.gov.uk/government/news/new-screen-time-guidance-for-parents-of-under-5s"
+        },
+        {
+          "label": "Guidelines on physical activity, sedentary behaviour and sleep for children under 5",
+          "org": "World Health Organization",
+          "region": "Global (international guidance)",
+          "url": "https://www.who.int/publications/i/item/9789241550536"
+        },
+        {
+          "label": "Media and Young Minds (policy statement)",
+          "org": "American Academy of Pediatrics",
+          "region": "USA (international guidance)",
+          "url": "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds"
+        },
+        {
+          "label": "Screen time and young children — position statement",
+          "org": "Canadian Paediatric Society",
+          "region": "Canada (international guidance)",
+          "url": "https://cps.ca/en/documents/position/screen-time-and-young-children"
+        }
+      ],
+      "consequences": [
+        "Heavy toddler screen use is associated with delayed language and smaller vocabularies (JAMA Pediatrics, 2020). Screens are one factor among many, not a proven sole cause.",
+        "Evening screen use is associated with shorter, more disrupted sleep.",
+        "More screen time is associated with less parent–child talk — and parent–child interaction is a strong predictor of early development.",
+        "Higher screen use in the pre-school years has been associated with more attention and self-regulation difficulties at school entry (CHILD Cohort Study, Canada, 2019)."
+      ]
+    },
+    "decision": "Corrected population/threshold claims and replaced unsupported precision with qualified findings or practical questions; see current content."
+  },
+  {
+    "slug": "5-7",
+    "original": {
+      "recommended": "There is no official UK hour limit at this age. UK guidance focuses on sleep, physical activity, what is being watched and family context. Some international guidelines (AAP, Canada) suggest around 1 hour a day of recreational screens as a working target.",
+      "ukContext": "Treat “one hour a day” as an international suggestion rather than a UK rule. The practical UK questions are: is your child sleeping enough, moving enough, eating without a screen, and is the content suitable?",
+      "sources": [
+        {
+          "label": "The health impacts of screen time — guide for clinicians and parents",
+          "org": "Royal College of Paediatrics and Child Health",
+          "region": "UK",
+          "url": "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents"
+        },
+        {
+          "label": "Physical activity guidelines: children and young people (5 to 18)",
+          "org": "UK Chief Medical Officers / NHS",
+          "region": "UK",
+          "url": "https://www.gov.uk/government/publications/physical-activity-guidelines-children-and-young-people-aged-5-to-18-years"
+        },
+        {
+          "label": "Media use in school-aged children and adolescents",
+          "org": "American Academy of Pediatrics",
+          "region": "USA (international guidance)",
+          "url": "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents"
+        },
+        {
+          "label": "24-Hour Movement Guidelines for Children and Youth",
+          "org": "Canadian Society for Exercise Physiology",
+          "region": "Canada (international guidance)",
+          "url": "https://csepguidelines.ca/guidelines/children-youth/"
+        }
+      ],
+      "consequences": [
+        "Screen use above about 2 hours a day at this age has been associated with lower developmental screening scores (JAMA Pediatrics, 2019) — an association, not proof of cause.",
+        "Screen-heavy lifestyles are associated with higher obesity rates, largely through reduced activity and snacking while watching (WHO European COSI, 2022).",
+        "Evening screens are associated with delayed sleep onset; short sleep at this age is linked to mood and learning problems.",
+        "Less time in face-to-face play is associated with slower development of friendship and emotional-regulation skills."
+      ]
+    },
+    "decision": "Corrected population/threshold claims and replaced unsupported precision with qualified findings or practical questions; see current content."
+  },
+  {
+    "slug": "8-10",
+    "original": {
+      "recommended": "No UK body sets an hour limit for 8–10s. Some international guidelines suggest around 1.5–2 hours a day of recreational screens; UK guidance instead prioritises sleep, an hour of daily activity, screen-free bedrooms and mealtimes, and knowing what they are using.",
+      "ukContext": "The 1.5–2 hour figure comes from US, Canadian and Australian guidance. Use it as a rough anchor for family rules, not as an established UK standard.",
+      "sources": [
+        {
+          "label": "The health impacts of screen time — guide for clinicians and parents",
+          "org": "Royal College of Paediatrics and Child Health",
+          "region": "UK",
+          "url": "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents"
+        },
+        {
+          "label": "Children and parents: media use and attitudes",
+          "org": "Ofcom",
+          "region": "UK",
+          "url": "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/"
+        },
+        {
+          "label": "Media Use in School-Aged Children and Adolescents",
+          "org": "American Academy of Pediatrics",
+          "region": "USA (international guidance)",
+          "url": "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents"
+        },
+        {
+          "label": "24-Hour Movement Guidelines (5–17 years)",
+          "org": "Canadian Society for Exercise Physiology",
+          "region": "Canada (international guidance)",
+          "url": "https://csepguidelines.ca/guidelines/children-youth/"
+        },
+        {
+          "label": "Guidelines on the use of digital devices by children",
+          "org": "Royal Australasian College of Physicians",
+          "region": "Australia / NZ (international guidance)",
+          "url": "https://www.racp.edu.au/news-and-events/media-releases/screen-time-guidelines"
+        }
+      ],
+      "consequences": [
+        "Each extra hour of evening screen use is associated with roughly 15 minutes less sleep (Sleep Medicine Reviews, 2021).",
+        "Unsupervised group-chat use is associated with higher involvement in cyberbullying, as victim or participant (EU Kids Online, 2020).",
+        "Heavy recreational screen use is associated with weaker reading comprehension (OECD PISA analyses) — other factors such as home reading habits also play a part.",
+        "Watch for early signs of problematic gaming: irritability when stopped, sneaking devices at night, slipping schoolwork."
+      ]
+    },
+    "decision": "Corrected population/threshold claims and replaced unsupported precision with qualified findings or practical questions; see current content."
+  },
+  {
+    "slug": "11-13",
+    "original": {
+      "recommended": "There is no UK hour limit for this age. Protect the non-negotiables first: 9–11 hours of sleep, phones out of the bedroom overnight, an hour of daily activity and a tech-free wind-down. Around 2 hours a day of recreational scrolling is a common family benchmark drawn from international advice.",
+      "ukContext": "Ofcom reports what UK children actually do; it does not set limits. The UK Chief Medical Officers' advice centres on sleep, activity and safe use rather than a daily screen quota.",
+      "sources": [
+        {
+          "label": "Children and parents: media use and attitudes report",
+          "org": "Ofcom",
+          "region": "UK",
+          "url": "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/"
+        },
+        {
+          "label": "The health impacts of screen time — guide for clinicians and parents",
+          "org": "Royal College of Paediatrics and Child Health",
+          "region": "UK",
+          "url": "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents"
+        },
+        {
+          "label": "Social Media and Youth Mental Health — Surgeon General's Advisory",
+          "org": "US Surgeon General",
+          "region": "USA (international guidance)",
+          "url": "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html"
+        },
+        {
+          "label": "Recommendations on the regulation of smartphones for children",
+          "org": "French government expert commission (Enfants et écrans)",
+          "region": "France (international guidance)",
+          "url": "https://www.elysee.fr/emmanuel-macron/2024/04/30/enfants-et-ecrans"
+        }
+      ],
+      "consequences": [
+        "Studies have found an association between more than about 3 hours a day on social media and higher rates of depression and anxiety symptoms (JAMA Psychiatry, 2019). That does not mean screen time alone caused the outcome.",
+        "Keeping phones in bedrooms is associated with around an hour less sleep per night (Sleep Health, 2018).",
+        "Heavy use of image-led platforms is associated with body-image disturbance and disordered eating, particularly among girls.",
+        "Frequent media multitasking is associated with lower working-memory and academic performance scores; the direction of cause is still debated."
+      ]
+    },
+    "decision": "Corrected population/threshold claims and replaced unsupported precision with qualified findings or practical questions; see current content."
+  },
+  {
+    "slug": "14-15",
+    "original": {
+      "recommended": "No hour cap is realistic at this age, and the UK sets none. Protect 8–10 hours of sleep, daily activity, schoolwork and offline friendships; use roughly 2 hours a day of pure social scrolling as a talking point rather than a rule.",
+      "ukContext": "US bodies (Surgeon General, APA) publish the firmest numbers. UK guidance stays focused on sleep, activity, content and support — treat the figures below as international guidance.",
+      "sources": [
+        {
+          "label": "Children and parents: media use and attitudes report",
+          "org": "Ofcom",
+          "region": "UK",
+          "url": "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/"
+        },
+        {
+          "label": "The health impacts of screen time — guide for clinicians and parents",
+          "org": "Royal College of Paediatrics and Child Health",
+          "region": "UK",
+          "url": "https://www.rcpch.ac.uk/resources/health-impacts-screen-time-guide-clinicians-parents"
+        },
+        {
+          "label": "APA Health Advisory on Social Media Use in Adolescence",
+          "org": "American Psychological Association",
+          "region": "USA (international guidance)",
+          "url": "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use"
+        },
+        {
+          "label": "Social Media and Youth Mental Health — Surgeon General's Advisory",
+          "org": "US Surgeon General",
+          "region": "USA (international guidance)",
+          "url": "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html"
+        }
+      ],
+      "consequences": [
+        "Studies have found an association between more than 3 hours a day on social media and depression, self-harm and suicidal ideation (Lancet Child & Adolescent Health, 2019). Sleep loss and cyberbullying appear to explain much of the link — screen time alone is not shown to be the cause.",
+        "Sextortion and image-based abuse have risen sharply; the Internet Watch Foundation recorded record UK case numbers in 2024.",
+        "AI ‘nudify’ tools can turn an ordinary photo into a fake nude in seconds, and UK teens have been targeted in school settings.",
+        "Recommender feeds have been shown to surface pro-anorexia, self-harm and misogynistic content to teen test accounts within minutes (Amnesty International, 2023).",
+        "Chronic short sleep is associated with worse mood, immune function and school performance."
+      ]
+    },
+    "decision": "Corrected population/threshold claims and replaced unsupported precision with qualified findings or practical questions; see current content."
+  },
+  {
+    "slug": "16-17",
+    "original": {
+      "recommended": "No hour cap at this age, and the UK sets none. Protect 8–10 hours of sleep, daily activity and at least one regular offline social activity. Studies have found an association between recreational screen use above about 4 hours a day and worse mental health.",
+      "ukContext": "The firmest numbers come from US research and advisories. UK guidance emphasises sleep, activity and healthy use rather than a daily quota.",
+      "sources": [
+        {
+          "label": "Physical activity guidelines: children and young people (5 to 18)",
+          "org": "UK Chief Medical Officers",
+          "region": "UK",
+          "url": "https://www.gov.uk/government/publications/physical-activity-guidelines-children-and-young-people-aged-5-to-18-years"
+        },
+        {
+          "label": "Children and parents: media use and attitudes report",
+          "org": "Ofcom",
+          "region": "UK",
+          "url": "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/"
+        },
+        {
+          "label": "APA Health Advisory on Social Media Use in Adolescence",
+          "org": "American Psychological Association",
+          "region": "USA (international guidance)",
+          "url": "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use"
+        },
+        {
+          "label": "Social Media and Youth Mental Health — Surgeon General's Advisory",
+          "org": "US Surgeon General",
+          "region": "USA (international guidance)",
+          "url": "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html"
+        }
+      ],
+      "consequences": [
+        "Heavy social media use (over about 3 hours a day) is associated with higher rates of anxiety, depression and loneliness. Association is not proof that screens alone caused it.",
+        "Financial harm from gambling-style game mechanics, crypto scams and money-mule recruitment via TikTok, Snapchat and Telegram — mule accounts can be closed and credit refused for up to six years.",
+        "A lasting digital footprint: nudes, drunken posts and group-chat screenshots resurface during university and job applications.",
+        "Short sleep is linked to poorer driving safety, mood regulation and exam performance."
+      ]
+    },
+    "decision": "Corrected population/threshold claims and replaced unsupported precision with qualified findings or practical questions; see current content."
+  }
+]

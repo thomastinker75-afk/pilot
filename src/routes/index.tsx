@@ -152,7 +152,7 @@ function Home() {
             </h2>
             <p className="mt-4 text-muted-foreground">
               Each guide covers the minimum age, why kids use it, the real risks,
-              and the exact settings to change.
+              and settings to review.
             </p>
             <Link to="/apps" className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all">
               All app guides <ArrowUpRight className="size-4" />

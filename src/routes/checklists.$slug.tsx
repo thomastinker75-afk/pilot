@@ -132,7 +132,7 @@ function ChecklistDetail() {
       {c.emergency && (
         <section className="mt-14 rounded-2xl border border-border bg-secondary p-6 md:p-7">
           <h2 className="flex items-center gap-2 font-display text-xl font-semibold tracking-tight md:text-2xl">
-            <PhoneCall className="size-5 text-primary" /> Emergency calls still work
+            <PhoneCall className="size-5 text-primary" /> Plan how to call for help
           </h2>
           <p className="mt-3 leading-relaxed">{c.emergency}</p>
         </section>

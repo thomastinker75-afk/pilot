@@ -14,6 +14,11 @@ A monthly Codex task is active: check-parent-tech-safety-support-contacts, first
 | Take It Down | Under 18 when taken; existing local image; participating services | https://takeitdown.ncmec.org/ |
 | Samaritans | 116 123, day/night; current alternative contact channels | https://www.samaritans.org/how-we-can-help/contact-samaritan/ |
 | YoungMinds | 0808 802 5544; Mon/Thu/Fri 9.30am–4pm, Tue/Wed 9.30am–6pm; non-crisis service | https://www.youngminds.org.uk/parent/parents-helpline/ |
+| England urgent mental health | 111 mental-health option; urgent GP; emergency distinction | https://www.nhs.uk/nhs-services/mental-health-services/where-to-get-urgent-help-for-mental-health/ |
+| Scotland urgent mental health | GP/usual team when available, otherwise 111 mental-health option | https://www.nhsinform.scot/?illnesses=get-urgent-mental-health-help |
+| Wales urgent mental health | 111 press 2, all ages, 24 hours | https://www.gov.wales/nhs-111-press-2-big-step-forward-access-urgent-mental-health-support |
+| Northern Ireland Lifeline | 0808 808 8000, 24 hours, free | https://www.nidirect.gov.uk/articles/mental-health-emergency-if-youre-crisis-or-despair |
+| Report Fraud | England/Wales/NI reporting; Scotland distinction; replacement of Action Fraud | https://www.reportfraud.police.uk/news/report-fraud-service-goes-live/ |
 
 Record source, date, old/new detail and affected pages for each change. Read the actual official page; a search snippet or HTTP 200 alone is insufficient. Treat blocked requests as inconclusive. If official information conflicts, do not choose a convenient answer: flag it and direct readers to the service's current contact page. Verify visible phone text and tel links together after edits, build, then verify the deployed page.
 

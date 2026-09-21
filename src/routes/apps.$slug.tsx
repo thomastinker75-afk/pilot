@@ -15,7 +15,7 @@ export const Route = createFileRoute("/apps/$slug")({
     const app = loaderData?.app;
     const title = app ? `${app.name} for parents — why ${app.minAge}, real risks & evidence` : "App guide";
     const description = app
-      ? `${app.name}: why the ${app.minAge} age limit, what the evidence actually says, and the exact settings to check. Sourced from regulators, child-safety charities and peer-reviewed research.`
+      ? `${app.name}: why the ${app.minAge} age limit, what the evidence actually says, and settings to review. Sourced from regulators, child-safety charities and peer-reviewed research.`
       : "App guide for parents.";
     return {
       meta: [
@@ -122,7 +122,7 @@ function AppDetail() {
         <p className="eyebrow">Evidence</p>
         <h2 className="mt-3 font-display text-3xl tracking-tight">What the sources say</h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          These sources include platform policies, research and reporting. A historical incident or allegation is not a measure of current prevalence, and platform policies are not independent safety guarantees.
+          These sources include platform policies, research and reporting. Historical findings describe their original dates and samples. Policy descriptions and age-assurance labels are not tests of every UK account. Menus and features can vary; follow the linked current instructions.
         </p>
 
         <ol className="mt-8 space-y-5">

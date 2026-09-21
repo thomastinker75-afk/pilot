@@ -21,7 +21,7 @@ Cloudflare Registrar offers domain purchase and renewal at cost. Check availabil
 
 1. Thomas confirms purchase and the Cloudflare account that will own the site. Do not create DNS records or publish a mailbox based on a proposed purchase.
 2. Connect the repository to Pages with the preview settings above; verify the assigned pages.dev site before attaching the domain.
-3. Complete factual corrections and obtain the independent safeguarding review recorded in safeguarding-review-pack.md. Resolve its required changes.
+3. Complete factual corrections and have Thomas approve the public-launch content. An independent safeguarding review is optional additional assurance, not an established requirement for this educational site; the optional handoff is in safeguarding-review-pack.md.
 4. Attach parenttechsafety.co.uk using Pages Custom domains; configure www as a redirect to the chosen apex domain. Verify TLS and both hostnames. Do not guess the pages.dev target.
 5. Once approved for launch, set VITE_BASE_PATH=/ and VITE_SITE_URL=https://parenttechsafety.co.uk and rebuild. This variable enables indexing, canonicals, publisher markup and sitemap together. It is deliberately not set in the GitHub preview workflow.
 6. Run npm run check:release. Verify the live root robots.txt, all sitemap URLs, canonical host and trailing slashes, actual 404 response, image/video assets and mobile navigation. Editorial /apps-audit pages must stay noindex and out of the sitemap.

@@ -1,0 +1,494 @@
+[
+  {
+    "app": "telegram",
+    "claim": "Telegram sets a minimum sign-up age of 18 in the UK.",
+    "url": "https://telegram.org/tos",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "telegram",
+    "claim": "Telegram’s CEO was arrested in France in 2024 over the platform’s alleged failure to act on CSAM, drug trafficking and fraud in groups and channels.",
+    "url": "https://www.bbc.com/news/articles/c4ng9nz0g5xo",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "telegram",
+    "claim": "Internet Watch Foundation reports Telegram is repeatedly used to share child sexual abuse material via large channels.",
+    "url": "https://www.iwf.org.uk/annual-report-2023/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "tiktok",
+    "claim": "Independent audit found TikTok’s algorithm can push self-harm and eating-disorder content to accounts registered as 13-year-olds within minutes.",
+    "url": "https://counterhate.com/research/deadly-by-design/",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "tiktok",
+    "claim": "Ofcom finds a majority of UK teenagers — and many under-13s — use TikTok, well below the platform’s own age limit.",
+    "url": "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "tiktok",
+    "claim": "Ireland’s Data Protection Commission fined TikTok €345m for failing to protect children’s data, including default public accounts for under-16s.",
+    "url": "https://www.dataprotection.ie/en/news-media/press-releases/DPC-announces-345-million-euro-fine-of-TikTok",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "snapchat",
+    "claim": "Family Centre requires the teen to accept an invitation and provides oversight without showing private conversation content.",
+    "url": "https://parents.snapchat.com/family-center?lang=en-GB",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "snapchat",
+    "claim": "US state lawsuit alleges Snapchat’s design facilitates the supply of fentanyl and illegal drugs to minors via disappearing messages.",
+    "url": "https://nmdoj.gov/press-release/attorney-general-torrez-files-lawsuit-against-snap-inc/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "snapchat",
+    "claim": "NSPCC data shows Snapchat is the platform most often used in recorded child sexual communication offences in England and Wales.",
+    "url": "https://www.nspcc.org.uk/about-us/news-opinion/2024/snapchat-grooming-crimes/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "snapchat",
+    "claim": "CEOP Education warns that Snap Map can expose children’s real-time location to anyone they’ve accepted as a friend.",
+    "url": "https://www.ceopeducation.co.uk/parents/articles/snap-map-what-parents-need-to-know/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "instagram",
+    "claim": "Meta announced expanded Teen Account content settings and age-assurance measures in June 2026; rollout announcements are not independent tests of effectiveness.",
+    "url": "https://about.fb.com/news/2026/06/strengthening-teen-accounts-with-new-safety-updates-on-instagram-and-facebook/",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "instagram",
+    "claim": "Historical reporting on internal Meta research raised concerns about body image among teenage girls already experiencing body-image issues; this should not be presented as a finding about all teenage girls.",
+    "url": "https://www.wsj.com/articles/facebook-knows-instagram-is-toxic-for-teen-girls-company-documents-show-11631620739",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "instagram",
+    "claim": "US Surgeon General formally advised that social media use including Instagram poses a ‘profound risk of harm’ to youth mental health.",
+    "url": "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "instagram",
+    "claim": "41 US states and DC sued Meta, alleging Instagram features (infinite scroll, likes, beauty filters) were designed to be addictive to minors.",
+    "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-co-leads-bipartisan-coalition-suing-meta-harming-youth",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "youtube",
+    "claim": "Parents can set up supervised kid accounts for children below 13 or the relevant local age.",
+    "url": "https://support.google.com/youtube/answer/10314074?hl=en",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "youtube",
+    "claim": "US FTC fined YouTube $170 million for illegally collecting children’s data on the main platform.",
+    "url": "https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "youtube",
+    "claim": "Mozilla’s crowdsourced study found YouTube’s recommendation algorithm is the main driver of regretful viewing experiences.",
+    "url": "https://foundation.mozilla.org/en/youtube/findings/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "youtube",
+    "claim": "Ofcom finds YouTube is the most-used online platform among UK children aged 3–17.",
+    "url": "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "whatsapp",
+    "claim": "WhatsApp documents parent-managed accounts for children below the usual minimum age.",
+    "url": "https://www.whatsapp.com/legal/privacy-disclosure-for-parent-managed-accounts",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "whatsapp",
+    "claim": "Internet Matters reports group chats are one of the most common settings for cyberbullying experienced by UK 9–16s.",
+    "url": "https://www.internetmatters.org/issues/cyberbullying/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "whatsapp",
+    "claim": "UK Safer Internet Centre advises that WhatsApp groups are a key vector for sharing harmful and illegal content between peers.",
+    "url": "https://saferinternet.org.uk/guide-and-resource/parents-and-carers",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "discord",
+    "claim": "Discord says UK users receive protective defaults. Confirmed adult status is required to access age-restricted spaces or change certain content and message-request settings. Its filters cover images and videos, not messages, voice or calls.",
+    "url": "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "discord",
+    "claim": "Discord's own help centre confirms that under the UK Online Safety Act, all new and existing UK users receive updated age-appropriate default settings, and age-restricted content requires an age check.",
+    "url": "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "discord",
+    "claim": "Discord explains how the age check works — facial age estimation or ID via a verification vendor — and which features are gated until it's passed.",
+    "url": "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Assurance-on-Discord",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "discord",
+    "claim": "Discord's leadership acknowledged the backlash to its global age-verification plans and delayed the worldwide 'teen-by-default' rollout to the second half of 2026 to expand verification options.",
+    "url": "https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "discord",
+    "claim": "Discord ended its partnership with verification vendor Persona after a UK age-check test triggered a public outcry over government ID collection.",
+    "url": "https://arstechnica.com/tech-policy/2026/02/discord-and-persona-end-partnership-after-shady-uk-age-test-sparks-outcry/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "discord",
+    "claim": "Reporters defeated Discord and Reddit's UK facial age checks using a video-game character's face from Death Stranding's photo mode — no real adult needed.",
+    "url": "https://www.theverge.com/report/714402/uk-age-verification-bypass-death-stranding-reddit-discord",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "discord",
+    "claim": "NBC News investigation documented dozens of prosecutions over six years for grooming, kidnapping or sexual assault facilitated through Discord.",
+    "url": "https://www.nbcnews.com/tech/social-media/discord-child-safety-grooming-extortion-rcna101620",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "discord",
+    "claim": "UK Safer Internet Centre highlights that Discord servers can expose children to explicit, extremist, and harmful content via communities they join voluntarily.",
+    "url": "https://saferinternet.org.uk/guide-and-resource/parents-and-carers",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "roblox",
+    "claim": "Roblox describes Kids (5–8), Select (9–15) and standard (16+) accounts, Restricted content for 18+, linked parent controls and regional chat differences.",
+    "url": "https://about.roblox.com/newsroom/2026/05/what-families-should-know-roblox-kids-select",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "roblox",
+    "claim": "Roblox made facial age estimation or ID verification mandatory for chat globally in January 2026, the first gaming platform to do so, with chat limited to similar age groups and minors blocked from chatting with unknown adults.",
+    "url": "https://about.roblox.com/newsroom/2026/01/roblox-age-checks-required-to-chat",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "roblox",
+    "claim": "Roblox explains how age checks work — facial age estimation, ID verification and, for minors, parent consent — and what each verified age band can access.",
+    "url": "https://en.help.roblox.com/hc/en-us/articles/39143693116052-Understanding-Age-Checks-on-Roblox",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "roblox",
+    "claim": "BBC News investigation documented sexual and gambling-style content accessible to child accounts on Roblox.",
+    "url": "https://www.bbc.co.uk/news/technology-67772670",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "roblox",
+    "claim": "Revealing Reality researchers found children as young as five could contact adults on Roblox, describing the risks as ‘deeply disturbing’.",
+    "url": "https://www.theguardian.com/technology/2025/apr/14/risks-children-roblox-deeply-disturbing-researchers",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "fortnite",
+    "claim": "Younger players can play with Cabined Accounts while chat and certain purchase features require parental consent.",
+    "url": "https://www.epicgames.com/site/cabinedaccounts",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "fortnite",
+    "claim": "US FTC fined Epic Games $520 million for violating COPPA and using ‘dark patterns’ to trick children and parents into purchases.",
+    "url": "https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "fortnite",
+    "claim": "Common Sense Media review highlights voice chat with strangers as the primary concern for under-13s playing Fortnite.",
+    "url": "https://www.commonsensemedia.org/game-reviews/fortnite",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "twitch",
+    "claim": "Minors above the minimum age must use Twitch with parental supervision and agreement.",
+    "url": "https://legal.twitch.com/en/legal/terms-of-service/",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "twitch",
+    "claim": "BBC investigation found predators using Twitch to target children, with the platform slow to remove offending accounts.",
+    "url": "https://www.bbc.co.uk/news/technology-61628026",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "twitch",
+    "claim": "Bloomberg investigation documented hundreds of accounts following thousands of children on Twitch.",
+    "url": "https://www.bloomberg.com/news/features/2022-05-25/twitch-tv-has-a-child-predator-problem-amazon-knows-it",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "kick",
+    "claim": "KICK requires parental permission and supervision for viewers under 18.",
+    "url": "https://help.kick.com/es/articles/10137486-seguridad-de-adolescentes-y-menores",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "kick",
+    "claim": "New York Times investigation linked Kick’s rise to Stake.com gambling streams openly viewable by minors.",
+    "url": "https://www.nytimes.com/2023/10/07/business/stake-kick-crypto-gambling.html",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "kick",
+    "claim": "Australia’s eSafety Commissioner has named Kick among platforms of concern for child safety due to weak moderation.",
+    "url": "https://www.esafety.gov.au/industry/basic-online-safety-expectations/transparency-reports",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "yubo",
+    "claim": "Yubo requires users to be at least 18 and describes age estimation at sign-up.",
+    "url": "https://www.yubo.live/legal/terms-of-service",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "x-twitter",
+    "claim": "X describes account signals, age estimation and user-provided verification options to restrict sensitive media.",
+    "url": "https://help.x.com/en/rules-and-policies/age-assurance",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "x-twitter",
+    "claim": "X confirms it uses age assurance for UK users: sensitive media is restricted for under-18s, age is estimated from account signals (email, account age) or verified via ID, and known minors receive protected-post defaults.",
+    "url": "https://help.x.com/en/rules-and-policies/age-assurance",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "x-twitter",
+    "claim": "X introduced age assurance measures to comply with Irish, UK and EU regulations; video-sharing platforms that allow pornography must have effective age assurance.",
+    "url": "https://www.rte.ie/news/business/2025/0728/1525685-x-introduces-age-assurance-measures-to-meet-regulations/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "x-twitter",
+    "claim": "X verifies users’ ages using signals such as their email address and contacts book as new rules come in to protect young users from harmful content.",
+    "url": "https://www.thetimes.com/uk/technology-uk/article/x-verification-email-address-contacts-ptdfmpwpw",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "x-twitter",
+    "claim": "EU Commission opened formal proceedings against X under the Digital Services Act over deceptive design and risk to minors.",
+    "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_23_6709",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "reddit",
+    "claim": "Reddit requires age confirmation for UK users accessing mature or restricted content. Its current help page describes Apple account confirmation on iOS or Persona selfie or ID options.",
+    "url": "https://support.reddithelp.com/hc/en-us/articles/47163677520276-United-Kingdom-Online-Safety-Act",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "reddit",
+    "claim": "Reddit confirms UK users must complete age confirmation via Apple account or Persona (selfie/ID) to access restricted content under the Online Safety Act; unverified users face limited access.",
+    "url": "https://support.reddithelp.com/hc/en-us/articles/47163677520276-United-Kingdom-Online-Safety-Act",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "reddit",
+    "claim": "Reddit explains why it asks for your age: account eligibility (13, or local minimum like 16 in Australia), 18+ for NSFW, and automatic teen-protective defaults for 13–18-year-olds. Verification via Apple/Google age-range signal or Persona selfie/ID; Persona deletes data within 3 days and Reddit never sees the photos.",
+    "url": "https://support.reddithelp.com/hc/en-us/articles/36429514849428-Why-is-Reddit-asking-for-my-age",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "reddit",
+    "claim": "UK Online Safety Act restricted-content categories for under-18s include sexually explicit content, self-harm/suicide/eating-disorder content, hate, bullying, graphic violence, dangerous challenges, substance-ingestion content, body-shaming, and content romanticising depression or despair.",
+    "url": "https://support.reddithelp.com/hc/en-us/articles/35409604240020-UK-Online-Safety-Act-Information-for-UK-users",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "reddit",
+    "claim": "Reddit rolled out Persona age verification (selfie or government ID) for UK users in July 2025, ahead of Ofcom’s child-protection deadline, blocking unverified users from restricted mature content.",
+    "url": "https://www.bbc.com/news/articles/cj4ep1znk4zo",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "reddit",
+    "claim": "Reddit uses Persona’s selfie-and-document age verification to comply with the UK Online Safety Act; Reddit stores only birthdates and verification status, not the photos.",
+    "url": "https://www.theverge.com/news/707125/reddit-age-verification-uk-online-safety",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "reddit",
+    "claim": "Ofcom’s Children’s Online User Experiences research highlights Reddit among platforms where children encounter harmful content despite age limits.",
+    "url": "https://www.ofcom.org.uk/online-safety/protecting-children/childrens-online-user-experiences/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "bereal",
+    "claim": "BeReal’s September 2026 terms set a minimum age of 13 and note possible parental-consent requirements.",
+    "url": "https://bereal.com/terms",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "bereal",
+    "claim": "Common Sense Media review warns that BeReal’s default settings expose location and that the ‘authentic’ framing encourages over-sharing.",
+    "url": "https://www.commonsensemedia.org/app-reviews/bereal",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "bereal",
+    "claim": "Internet Matters flags BeReal’s pressure-prompt design as a wellbeing risk for anxious teens.",
+    "url": "https://www.internetmatters.org/hub/esafety-news/bereal-app-what-parents-need-to-know/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "ngl-sendit",
+    "claim": "NGL excludes users under 18.",
+    "url": "https://ngl.link/p/terms",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "ngl-sendit",
+    "claim": "Sendit requires users to be at least 13, with prior parental consent for minors.",
+    "url": "https://iconichearts.com/terms",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "ngl-sendit",
+    "claim": "The FTC announced a 2024 settlement prohibiting NGL from offering anonymous messaging to under-18s and addressing allegedly deceptive messages and subscriptions.",
+    "url": "https://www.ftc.gov/news-events/news/press-releases/2024/07/ftc-order-will-ban-ngl-labs-its-founders-offering-anonymous-messaging-apps-kids-under-18-halt",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "omegle-style",
+    "claim": "Omegle shut down in 2023 after settling a lawsuit brought by a girl groomed on the site aged 11 — the judge ruled the platform’s design itself was the harm.",
+    "url": "https://www.bbc.co.uk/news/technology-67364634",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "omegle-style",
+    "claim": "NCA / CEOP repeatedly warn that random video-chat apps are a primary vector for live-streamed child sexual abuse and sextortion.",
+    "url": "https://www.ceopeducation.co.uk/parents/articles/sextortion-an-alert-for-parents-and-carers/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "minecraft",
+    "claim": "Parents can manage multiplayer, friend and communication permissions for child accounts; the guidance also describes player reporting.",
+    "url": "https://www.minecraft.net/en-us/article/parental-controls",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "minecraft",
+    "claim": "UK NCA / CEOP have repeatedly warned that grooming occurs on third-party Minecraft servers via voice and text chat.",
+    "url": "https://www.ceopeducation.co.uk/parents/articles/minecraft-what-parents-need-to-know/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "minecraft",
+    "claim": "BBC investigation found extremist and grooming content on private Minecraft servers used by UK children.",
+    "url": "https://www.bbc.co.uk/news/technology-65614257",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "vrchat",
+    "claim": "VRChat’s June update says further age-assurance and content-gating work was still in development, without firm release dates.",
+    "url": "https://hello.vrchat.com/blog/june-2026-safety-update",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "vrchat",
+    "claim": "BBC Panorama reporter, posing as a 13-year-old, encountered avatars simulating sex, racist abuse and a grooming attempt within VRChat.",
+    "url": "https://www.bbc.co.uk/news/technology-60415317",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "vrchat",
+    "claim": "Center for Countering Digital Hate found incidents of abuse including harassment of minors every 7 minutes in VRChat ‘Metaverse’ worlds.",
+    "url": "https://counterhate.com/research/facebooks-metaverse/",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "gta-online",
+    "claim": "PEGI rates GTA V 18 for explicit sexual content, drug use and violence — the highest age rating it issues.",
+    "url": "https://pegi.info/search-pegi?q=Grand+Theft+Auto+V",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "gta-online",
+    "claim": "Common Sense Media review states GTA V is ‘not for kids’ and details extensive sexual, violent and drug content.",
+    "url": "https://www.commonsensemedia.org/game-reviews/grand-theft-auto-v",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "character-ai",
+    "claim": "Character.AI announced it would remove open-ended chat for under-18 users and roll out age assurance for all accounts.",
+    "url": "https://blog.character.ai/u18-chat-announcement/",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "character-ai",
+    "claim": "Under-18 verified users are placed in ‘Reading Mode’, where they can browse characters and content but chat features are unavailable.",
+    "url": "https://support.character.ai/hc/en-us/articles/51795669396763-What-is-Reading-Mode",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "character-ai",
+    "claim": "Account holders must be at least 13 years old, and at least 16 years old in Europe.",
+    "url": "https://support.character.ai/hc/en-us/articles/21704914723995-Safety-Center",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "character-ai",
+    "claim": "All users must complete an age assurance check, which determines whether they get the adult or the under-18 experience.",
+    "url": "https://support.character.ai/hc/en-us/articles/53182286684059-What-is-Age-Assurance",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "character-ai",
+    "claim": "US lawsuit alleges Character.AI chatbots encouraged a 14-year-old’s suicide and that the platform’s design was unreasonably dangerous to minors.",
+    "url": "https://www.nytimes.com/2024/10/23/technology/characterai-lawsuit-teen-suicide.html",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "character-ai",
+    "claim": "A second lawsuit alleged the platform exposed a 9-year-old to ‘hypersexualised content’ and suggested self-harm to a 17-year-old.",
+    "url": "https://www.washingtonpost.com/technology/2024/12/10/character-ai-lawsuit-children-harm/",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "character-ai",
+    "claim": "Common Sense Media rates AI companion apps including Character.AI as ‘unacceptable risk’ for under-18s.",
+    "url": "https://www.commonsensemedia.org/ai-ratings/social-ai-companions",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  },
+  {
+    "app": "replika",
+    "claim": "Replika does not authorize under-18s to use the service.",
+    "url": "https://replika.com/legal/terms/en",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "replika",
+    "claim": "Italy’s Garante (data regulator) banned Replika over risks to minors and emotionally vulnerable users.",
+    "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9852506",
+    "decision": "Retained or qualified against source"
+  },
+  {
+    "app": "replika",
+    "claim": "Common Sense Media risk assessment rates Replika as ‘unacceptable risk’ for under-18s.",
+    "url": "https://www.commonsensemedia.org/ai-ratings/social-ai-companions",
+    "decision": "Withheld: precise inherited claim not established by the inspected source, duplicate, inaccessible reference, or superseded policy. Original retained here for traceability."
+  }
+]

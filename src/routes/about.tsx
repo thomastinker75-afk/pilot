@@ -47,7 +47,7 @@ function About() {
 
       <section className="mt-12 border-t border-border pt-8">
         <h2 className="font-display text-3xl tracking-tight">Review scope</h2>
-        <p className="mt-4 text-muted-foreground">On 21 September 2026 we checked the help-page reporting sources, under-five screen-time recommendations, Roblox account-age guidance and selected research references. Other inherited guidance still needs source-by-source review. The glossary has had a separate wording review; it does not measure how often teenagers use a term.</p>
+        <p className="mt-4 text-muted-foreground">On 21 September 2026 we reviewed official help and reporting routes, app guidance, screen-time evidence and setup checklists. We corrected unsupported statistics and removed evidence summaries we could not substantiate. This is a source-based editorial review, not a test of every app setting or a guarantee that every claim is current. The glossary explains possible meanings; its examples do not measure popularity or establish anyone’s intentions.</p>
         <p className="mt-4 text-muted-foreground">This pilot has not been independently reviewed by a safeguarding or clinical professional. Follow the linked official services for individual advice and check current platform instructions before changing settings.</p>
         <p className="mt-4 text-muted-foreground">This site is owned and published by Thomas Tinker. It is an educational guide for parents and carers, not a personal advice or reporting service.</p>
       </section>

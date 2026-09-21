@@ -8,7 +8,7 @@ export const Route = createFileRoute("/help")({
   head: () => ({
     meta: [
       { title: "Worried right now? — Get help | Parent Tech Safety Hub" },
-      { name: "description", content: "If you’ve just found something on your child’s device: a calm, step-by-step guide for the next hour, and where to report serious concerns." },
+      { name: "description", content: "If you’ve just found something on your child’s device: practical first steps and official services for urgent help and reporting serious concerns." },
     ],
   }),
 });
@@ -59,7 +59,7 @@ const ROUTES: { icon: ReactNode; t: string; d: ReactNode }[] = [
     d: (
       <>
         If your child is in immediate danger, call <a className={linkClass} href="tel:999">999</a>.
-        Otherwise, contact your GP for advice. For someone who needs to talk,{' '}
+        If help is urgent but there is no immediate danger, use the urgent mental-health contacts below or ask for an urgent GP appointment. For someone who needs to talk,{' '}
         <a className={linkClass} href="https://www.samaritans.org/how-we-can-help/contact-samaritan/" target="_blank" rel="noopener noreferrer">Samaritans</a>{' '}
         offers free listening support day or night on <a className={linkClass} href="tel:116123">116 123</a>.
         Parents and carers can also use the{' '}
@@ -97,7 +97,7 @@ function Help() {
 
       <h1 className="mt-10 font-display text-5xl leading-tight tracking-tight md:text-6xl">
         You’ve found something.
-        <span className="block italic text-primary">Here’s the next hour.</span>
+        <span className="block italic text-primary">Here’s where to get help.</span>
       </h1>
 
       <p className="mt-5 text-sm text-muted-foreground">Reporting and support links checked 21 September 2026. This is general guidance, not an emergency response service.</p>
@@ -130,6 +130,17 @@ function Help() {
           </div>
         ))}
       </div>
+
+      <section className="mt-10 rounded-2xl border border-border bg-card p-6" aria-labelledby="urgent-mental-health">
+        <h2 id="urgent-mental-health" className="font-display text-2xl">Urgent mental-health help</h2>
+        <p className="mt-3 text-sm">If someone has seriously injured themselves, taken an overdose, or you cannot keep them safe, call <a className={linkClass} href="tel:999">999</a> or go to A&amp;E. Do not wait for a routine appointment.</p>
+        <ul className="mt-4 space-y-3 text-sm">
+          <li><strong>England:</strong> call <a className={linkClass} href="tel:111">111</a> and select the mental-health option, or ask for an urgent GP appointment. <a className={linkClass} href="https://www.nhs.uk/nhs-services/mental-health-services/where-to-get-urgent-help-for-mental-health/" target="_blank" rel="noopener noreferrer">NHS urgent help</a>.</li>
+          <li><strong>Scotland:</strong> contact your GP or usual mental-health team; if you cannot access them and need urgent help, call NHS 24 on <a className={linkClass} href="tel:111">111</a> and choose the mental-health option. <a className={linkClass} href="https://www.nhsinform.scot/?illnesses=get-urgent-mental-health-help" target="_blank" rel="noopener noreferrer">NHS inform urgent help</a>.</li>
+          <li><strong>Wales:</strong> call <a className={linkClass} href="tel:111">111</a> and press 2 for urgent mental-health support, available to all ages, day or night. <a className={linkClass} href="https://www.gov.wales/nhs-111-press-2-big-step-forward-access-urgent-mental-health-support" target="_blank" rel="noopener noreferrer">Welsh Government guidance</a>.</li>
+          <li><strong>Northern Ireland:</strong> call Lifeline on <a className={linkClass} href="tel:08088088000">0808 808 8000</a>, free, 24 hours a day. You can call about yourself or someone you are worried about. <a className={linkClass} href="https://www.nidirect.gov.uk/articles/mental-health-emergency-if-youre-crisis-or-despair" target="_blank" rel="noopener noreferrer">nidirect crisis guidance</a>.</li>
+        </ul>
+      </section>
 
       <WebsiteSupportNotice />
       <div className="mt-16 rounded-2xl border border-border bg-secondary p-7">
