@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import { APPS, GLOSSARY } from '../src/content/data.ts';
+import { explainMessage } from '../src/lib/slang-explainer.ts';
+const app=slug=>APPS.find(a=>a.slug===slug);
+assert.match(app('yubo').officialMinAge,/18/);
+assert.match(app('telegram')?.officialMinAge??'',/18/);
+assert.match(app('ngl-sendit').officialMinAge,/NGL: 18; Sendit: 13/);
+assert.equal(GLOSSARY.find(g=>g.term==='1437').matchable,false);
+assert.equal(explainMessage('1437').length,0);
+assert.ok(!JSON.stringify(APPS).includes('A VPN defeats the whole thing'));
+console.log('PASS: current age distinctions and uncertain-number matching.');

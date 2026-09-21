@@ -1,0 +1,1845 @@
+{
+  "date": "2026-09-21",
+  "status": "Partial factual review; independent safeguarding review pending",
+  "limitations": [
+    "A source link is not proof of every associated example, risk judgement, demographic claim or statistic.",
+    "HTTP failures may indicate blocking and do not prove a link is broken.",
+    "Platform policy checks do not independently test app controls or UK rollout availability."
+  ],
+  "apps": [
+    {
+      "slug": "telegram",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://telegram.org/tos",
+          "claim": "Telegram sets a minimum sign-up age of 18 in the UK."
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/c4ng9nz0g5xo",
+          "claim": "Telegram’s CEO was arrested in France in 2024 over the platform’s alleged failure to act on CSAM, drug trafficking and fraud in groups and channels."
+        },
+        {
+          "url": "https://www.iwf.org.uk/annual-report-2023/",
+          "claim": "Internet Watch Foundation reports Telegram is repeatedly used to share child sexual abuse material via large channels."
+        }
+      ]
+    },
+    {
+      "slug": "tiktok",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://counterhate.com/research/deadly-by-design/",
+          "claim": "Independent audit found TikTok’s algorithm can push self-harm and eating-disorder content to accounts registered as 13-year-olds within minutes."
+        },
+        {
+          "url": "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/",
+          "claim": "Ofcom finds a majority of UK teenagers — and many under-13s — use TikTok, well below the platform’s own age limit."
+        },
+        {
+          "url": "https://www.dataprotection.ie/en/news-media/press-releases/DPC-announces-345-million-euro-fine-of-TikTok",
+          "claim": "Ireland’s Data Protection Commission fined TikTok €345m for failing to protect children’s data, including default public accounts for under-16s."
+        }
+      ]
+    },
+    {
+      "slug": "snapchat",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://parents.snapchat.com/family-center?lang=en-GB",
+          "claim": "Family Centre requires the teen to accept an invitation and provides oversight without showing private conversation content."
+        },
+        {
+          "url": "https://nmdoj.gov/press-release/attorney-general-torrez-files-lawsuit-against-snap-inc/",
+          "claim": "US state lawsuit alleges Snapchat’s design facilitates the supply of fentanyl and illegal drugs to minors via disappearing messages."
+        },
+        {
+          "url": "https://www.nspcc.org.uk/about-us/news-opinion/2024/snapchat-grooming-crimes/",
+          "claim": "NSPCC data shows Snapchat is the platform most often used in recorded child sexual communication offences in England and Wales."
+        },
+        {
+          "url": "https://www.ceopeducation.co.uk/parents/articles/snap-map-what-parents-need-to-know/",
+          "claim": "CEOP Education warns that Snap Map can expose children’s real-time location to anyone they’ve accepted as a friend."
+        }
+      ]
+    },
+    {
+      "slug": "instagram",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://about.fb.com/news/2026/06/strengthening-teen-accounts-with-new-safety-updates-on-instagram-and-facebook/",
+          "claim": "Meta announced expanded Teen Account content settings and age-assurance measures in June 2026; rollout announcements are not independent tests of effectiveness."
+        },
+        {
+          "url": "https://www.wsj.com/articles/facebook-knows-instagram-is-toxic-for-teen-girls-company-documents-show-11631620739",
+          "claim": "Historical reporting on internal Meta research raised concerns about body image among teenage girls already experiencing body-image issues; this should not be presented as a finding about all teenage girls."
+        },
+        {
+          "url": "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html",
+          "claim": "US Surgeon General formally advised that social media use including Instagram poses a ‘profound risk of harm’ to youth mental health."
+        },
+        {
+          "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-co-leads-bipartisan-coalition-suing-meta-harming-youth",
+          "claim": "41 US states and DC sued Meta, alleging Instagram features (infinite scroll, likes, beauty filters) were designed to be addictive to minors."
+        }
+      ]
+    },
+    {
+      "slug": "youtube",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://support.google.com/youtube/answer/10314074?hl=en",
+          "claim": "Parents can set up supervised kid accounts for children below 13 or the relevant local age."
+        },
+        {
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law",
+          "claim": "US FTC fined YouTube $170 million for illegally collecting children’s data on the main platform."
+        },
+        {
+          "url": "https://foundation.mozilla.org/en/youtube/findings/",
+          "claim": "Mozilla’s crowdsourced study found YouTube’s recommendation algorithm is the main driver of regretful viewing experiences."
+        },
+        {
+          "url": "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-children/children-and-parents-media-use-and-attitudes-report-2024/",
+          "claim": "Ofcom finds YouTube is the most-used online platform among UK children aged 3–17."
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://www.whatsapp.com/legal/privacy-disclosure-for-parent-managed-accounts",
+          "claim": "WhatsApp documents parent-managed accounts for children below the usual minimum age."
+        },
+        {
+          "url": "https://www.internetmatters.org/issues/cyberbullying/",
+          "claim": "Internet Matters reports group chats are one of the most common settings for cyberbullying experienced by UK 9–16s."
+        },
+        {
+          "url": "https://saferinternet.org.uk/guide-and-resource/parents-and-carers",
+          "claim": "UK Safer Internet Centre advises that WhatsApp groups are a key vector for sharing harmful and illegal content between peers."
+        }
+      ]
+    },
+    {
+      "slug": "discord",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users",
+          "claim": "Discord says UK users receive protective defaults. Confirmed adult status is required to access age-restricted spaces or change certain content and message-request settings. Its filters cover images and videos, not messages, voice or calls."
+        },
+        {
+          "url": "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users",
+          "claim": "Discord's own help centre confirms that under the UK Online Safety Act, all new and existing UK users receive updated age-appropriate default settings, and age-restricted content requires an age check."
+        },
+        {
+          "url": "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Assurance-on-Discord",
+          "claim": "Discord explains how the age check works — facial age estimation or ID via a verification vendor — and which features are gated until it's passed."
+        },
+        {
+          "url": "https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing",
+          "claim": "Discord's leadership acknowledged the backlash to its global age-verification plans and delayed the worldwide 'teen-by-default' rollout to the second half of 2026 to expand verification options."
+        },
+        {
+          "url": "https://arstechnica.com/tech-policy/2026/02/discord-and-persona-end-partnership-after-shady-uk-age-test-sparks-outcry/",
+          "claim": "Discord ended its partnership with verification vendor Persona after a UK age-check test triggered a public outcry over government ID collection."
+        },
+        {
+          "url": "https://www.theverge.com/report/714402/uk-age-verification-bypass-death-stranding-reddit-discord",
+          "claim": "Reporters defeated Discord and Reddit's UK facial age checks using a video-game character's face from Death Stranding's photo mode — no real adult needed."
+        },
+        {
+          "url": "https://www.nbcnews.com/tech/social-media/discord-child-safety-grooming-extortion-rcna101620",
+          "claim": "NBC News investigation documented dozens of prosecutions over six years for grooming, kidnapping or sexual assault facilitated through Discord."
+        },
+        {
+          "url": "https://saferinternet.org.uk/guide-and-resource/parents-and-carers",
+          "claim": "UK Safer Internet Centre highlights that Discord servers can expose children to explicit, extremist, and harmful content via communities they join voluntarily."
+        }
+      ]
+    },
+    {
+      "slug": "roblox",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://about.roblox.com/newsroom/2026/05/what-families-should-know-roblox-kids-select",
+          "claim": "Roblox describes Kids (5–8), Select (9–15) and standard (16+) accounts, Restricted content for 18+, linked parent controls and regional chat differences."
+        },
+        {
+          "url": "https://about.roblox.com/newsroom/2026/01/roblox-age-checks-required-to-chat",
+          "claim": "Roblox made facial age estimation or ID verification mandatory for chat globally in January 2026, the first gaming platform to do so, with chat limited to similar age groups and minors blocked from chatting with unknown adults."
+        },
+        {
+          "url": "https://en.help.roblox.com/hc/en-us/articles/39143693116052-Understanding-Age-Checks-on-Roblox",
+          "claim": "Roblox explains how age checks work — facial age estimation, ID verification and, for minors, parent consent — and what each verified age band can access."
+        },
+        {
+          "url": "https://www.bbc.co.uk/news/technology-67772670",
+          "claim": "BBC News investigation documented sexual and gambling-style content accessible to child accounts on Roblox."
+        },
+        {
+          "url": "https://www.theguardian.com/technology/2025/apr/14/risks-children-roblox-deeply-disturbing-researchers",
+          "claim": "Revealing Reality researchers found children as young as five could contact adults on Roblox, describing the risks as ‘deeply disturbing’."
+        }
+      ]
+    },
+    {
+      "slug": "fortnite",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://www.epicgames.com/site/cabinedaccounts",
+          "claim": "Younger players can play with Cabined Accounts while chat and certain purchase features require parental consent."
+        },
+        {
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations",
+          "claim": "US FTC fined Epic Games $520 million for violating COPPA and using ‘dark patterns’ to trick children and parents into purchases."
+        },
+        {
+          "url": "https://www.commonsensemedia.org/game-reviews/fortnite",
+          "claim": "Common Sense Media review highlights voice chat with strangers as the primary concern for under-13s playing Fortnite."
+        }
+      ]
+    },
+    {
+      "slug": "twitch",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://legal.twitch.com/en/legal/terms-of-service/",
+          "claim": "Minors above the minimum age must use Twitch with parental supervision and agreement."
+        },
+        {
+          "url": "https://www.bbc.co.uk/news/technology-61628026",
+          "claim": "BBC investigation found predators using Twitch to target children, with the platform slow to remove offending accounts."
+        },
+        {
+          "url": "https://www.bloomberg.com/news/features/2022-05-25/twitch-tv-has-a-child-predator-problem-amazon-knows-it",
+          "claim": "Bloomberg investigation documented hundreds of accounts following thousands of children on Twitch."
+        }
+      ]
+    },
+    {
+      "slug": "kick",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://help.kick.com/es/articles/10137486-seguridad-de-adolescentes-y-menores",
+          "claim": "KICK requires parental permission and supervision for viewers under 18."
+        },
+        {
+          "url": "https://www.nytimes.com/2023/10/07/business/stake-kick-crypto-gambling.html",
+          "claim": "New York Times investigation linked Kick’s rise to Stake.com gambling streams openly viewable by minors."
+        },
+        {
+          "url": "https://www.esafety.gov.au/industry/basic-online-safety-expectations/transparency-reports",
+          "claim": "Australia’s eSafety Commissioner has named Kick among platforms of concern for child safety due to weak moderation."
+        }
+      ]
+    },
+    {
+      "slug": "yubo",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://www.yubo.live/legal/terms-of-service",
+          "claim": "Yubo requires users to be at least 18 and describes age estimation at sign-up."
+        }
+      ]
+    },
+    {
+      "slug": "x-twitter",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://help.x.com/en/rules-and-policies/age-assurance",
+          "claim": "X describes account signals, age estimation and user-provided verification options to restrict sensitive media."
+        },
+        {
+          "url": "https://help.x.com/en/rules-and-policies/age-assurance",
+          "claim": "X confirms it uses age assurance for UK users: sensitive media is restricted for under-18s, age is estimated from account signals (email, account age) or verified via ID, and known minors receive protected-post defaults."
+        },
+        {
+          "url": "https://www.rte.ie/news/business/2025/0728/1525685-x-introduces-age-assurance-measures-to-meet-regulations/",
+          "claim": "X introduced age assurance measures to comply with Irish, UK and EU regulations; video-sharing platforms that allow pornography must have effective age assurance."
+        },
+        {
+          "url": "https://www.thetimes.com/uk/technology-uk/article/x-verification-email-address-contacts-ptdfmpwpw",
+          "claim": "X verifies users’ ages using signals such as their email address and contacts book as new rules come in to protect young users from harmful content."
+        },
+        {
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_23_6709",
+          "claim": "EU Commission opened formal proceedings against X under the Digital Services Act over deceptive design and risk to minors."
+        }
+      ]
+    },
+    {
+      "slug": "reddit",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://support.reddithelp.com/hc/en-us/articles/47163677520276-United-Kingdom-Online-Safety-Act",
+          "claim": "Reddit requires age confirmation for UK users accessing mature or restricted content. Its current help page describes Apple account confirmation on iOS or Persona selfie or ID options."
+        },
+        {
+          "url": "https://support.reddithelp.com/hc/en-us/articles/47163677520276-United-Kingdom-Online-Safety-Act",
+          "claim": "Reddit confirms UK users must complete age confirmation via Apple account or Persona (selfie/ID) to access restricted content under the Online Safety Act; unverified users face limited access."
+        },
+        {
+          "url": "https://support.reddithelp.com/hc/en-us/articles/36429514849428-Why-is-Reddit-asking-for-my-age",
+          "claim": "Reddit explains why it asks for your age: account eligibility (13, or local minimum like 16 in Australia), 18+ for NSFW, and automatic teen-protective defaults for 13–18-year-olds. Verification via Apple/Google age-range signal or Persona selfie/ID; Persona deletes data within 3 days and Reddit never sees the photos."
+        },
+        {
+          "url": "https://support.reddithelp.com/hc/en-us/articles/35409604240020-UK-Online-Safety-Act-Information-for-UK-users",
+          "claim": "UK Online Safety Act restricted-content categories for under-18s include sexually explicit content, self-harm/suicide/eating-disorder content, hate, bullying, graphic violence, dangerous challenges, substance-ingestion content, body-shaming, and content romanticising depression or despair."
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cj4ep1znk4zo",
+          "claim": "Reddit rolled out Persona age verification (selfie or government ID) for UK users in July 2025, ahead of Ofcom’s child-protection deadline, blocking unverified users from restricted mature content."
+        },
+        {
+          "url": "https://www.theverge.com/news/707125/reddit-age-verification-uk-online-safety",
+          "claim": "Reddit uses Persona’s selfie-and-document age verification to comply with the UK Online Safety Act; Reddit stores only birthdates and verification status, not the photos."
+        },
+        {
+          "url": "https://www.ofcom.org.uk/online-safety/protecting-children/childrens-online-user-experiences/",
+          "claim": "Ofcom’s Children’s Online User Experiences research highlights Reddit among platforms where children encounter harmful content despite age limits."
+        }
+      ]
+    },
+    {
+      "slug": "bereal",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://bereal.com/terms",
+          "claim": "BeReal’s September 2026 terms set a minimum age of 13 and note possible parental-consent requirements."
+        },
+        {
+          "url": "https://www.commonsensemedia.org/app-reviews/bereal",
+          "claim": "Common Sense Media review warns that BeReal’s default settings expose location and that the ‘authentic’ framing encourages over-sharing."
+        },
+        {
+          "url": "https://www.internetmatters.org/hub/esafety-news/bereal-app-what-parents-need-to-know/",
+          "claim": "Internet Matters flags BeReal’s pressure-prompt design as a wellbeing risk for anxious teens."
+        }
+      ]
+    },
+    {
+      "slug": "ngl-sendit",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://ngl.link/p/terms",
+          "claim": "NGL excludes users under 18."
+        },
+        {
+          "url": "https://iconichearts.com/terms",
+          "claim": "Sendit requires users to be at least 13, with prior parental consent for minors."
+        },
+        {
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2024/07/ftc-order-will-ban-ngl-labs-its-founders-offering-anonymous-messaging-apps-kids-under-18-halt",
+          "claim": "The FTC announced a 2024 settlement prohibiting NGL from offering anonymous messaging to under-18s and addressing allegedly deceptive messages and subscriptions."
+        }
+      ]
+    },
+    {
+      "slug": "omegle-style",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://www.bbc.co.uk/news/technology-67364634",
+          "claim": "Omegle shut down in 2023 after settling a lawsuit brought by a girl groomed on the site aged 11 — the judge ruled the platform’s design itself was the harm."
+        },
+        {
+          "url": "https://www.ceopeducation.co.uk/parents/articles/sextortion-an-alert-for-parents-and-carers/",
+          "claim": "NCA / CEOP repeatedly warn that random video-chat apps are a primary vector for live-streamed child sexual abuse and sextortion."
+        }
+      ]
+    },
+    {
+      "slug": "minecraft",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://www.minecraft.net/en-us/article/parental-controls",
+          "claim": "Parents can manage multiplayer, friend and communication permissions for child accounts; the guidance also describes player reporting."
+        },
+        {
+          "url": "https://www.ceopeducation.co.uk/parents/articles/minecraft-what-parents-need-to-know/",
+          "claim": "UK NCA / CEOP have repeatedly warned that grooming occurs on third-party Minecraft servers via voice and text chat."
+        },
+        {
+          "url": "https://www.bbc.co.uk/news/technology-65614257",
+          "claim": "BBC investigation found extremist and grooming content on private Minecraft servers used by UK children."
+        }
+      ]
+    },
+    {
+      "slug": "vrchat",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://hello.vrchat.com/blog/june-2026-safety-update",
+          "claim": "VRChat’s June update says further age-assurance and content-gating work was still in development, without firm release dates."
+        },
+        {
+          "url": "https://www.bbc.co.uk/news/technology-60415317",
+          "claim": "BBC Panorama reporter, posing as a 13-year-old, encountered avatars simulating sex, racist abuse and a grooming attempt within VRChat."
+        },
+        {
+          "url": "https://counterhate.com/research/facebooks-metaverse/",
+          "claim": "Center for Countering Digital Hate found incidents of abuse including harassment of minors every 7 minutes in VRChat ‘Metaverse’ worlds."
+        }
+      ]
+    },
+    {
+      "slug": "gta-online",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://pegi.info/search-pegi?q=Grand+Theft+Auto+V",
+          "claim": "PEGI rates GTA V 18 for explicit sexual content, drug use and violence — the highest age rating it issues."
+        },
+        {
+          "url": "https://www.commonsensemedia.org/game-reviews/grand-theft-auto-v",
+          "claim": "Common Sense Media review states GTA V is ‘not for kids’ and details extensive sexual, violent and drug content."
+        }
+      ]
+    },
+    {
+      "slug": "character-ai",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://blog.character.ai/u18-chat-announcement/",
+          "claim": "Character.AI announced it would remove open-ended chat for under-18 users and roll out age assurance for all accounts."
+        },
+        {
+          "url": "https://support.character.ai/hc/en-us/articles/51795669396763-What-is-Reading-Mode",
+          "claim": "Under-18 verified users are placed in ‘Reading Mode’, where they can browse characters and content but chat features are unavailable."
+        },
+        {
+          "url": "https://support.character.ai/hc/en-us/articles/21704914723995-Safety-Center",
+          "claim": "Account holders must be at least 13 years old, and at least 16 years old in Europe."
+        },
+        {
+          "url": "https://support.character.ai/hc/en-us/articles/53182286684059-What-is-Age-Assurance",
+          "claim": "All users must complete an age assurance check, which determines whether they get the adult or the under-18 experience."
+        },
+        {
+          "url": "https://www.nytimes.com/2024/10/23/technology/characterai-lawsuit-teen-suicide.html",
+          "claim": "US lawsuit alleges Character.AI chatbots encouraged a 14-year-old’s suicide and that the platform’s design was unreasonably dangerous to minors."
+        },
+        {
+          "url": "https://www.washingtonpost.com/technology/2024/12/10/character-ai-lawsuit-children-harm/",
+          "claim": "A second lawsuit alleged the platform exposed a 9-year-old to ‘hypersexualised content’ and suggested self-harm to a 17-year-old."
+        },
+        {
+          "url": "https://www.commonsensemedia.org/ai-ratings/social-ai-companions",
+          "claim": "Common Sense Media rates AI companion apps including Character.AI as ‘unacceptable risk’ for under-18s."
+        }
+      ]
+    },
+    {
+      "slug": "replika",
+      "status": "Current guidance reviewed where new platform sources were added; inherited evidence and effectiveness claims require further individual checks",
+      "sources": [
+        {
+          "url": "https://replika.com/legal/terms/en",
+          "claim": "Replika does not authorize under-18s to use the service."
+        },
+        {
+          "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9852506",
+          "claim": "Italy’s Garante (data regulator) banned Replika over risks to minors and emotionally vulnerable users."
+        },
+        {
+          "url": "https://www.commonsensemedia.org/ai-ratings/social-ai-companions",
+          "claim": "Common Sense Media risk assessment rates Replika as ‘unacceptable risk’ for under-18s."
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "67",
+      "source": "https://www.dictionary.com/culture/slang/67",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "212",
+      "source": null,
+      "status": "Uncorroborated or individual check pending",
+      "automaticMatching": false,
+      "note": "Uncertain meaning — not used in automatic matching."
+    },
+    {
+      "term": "420",
+      "source": "https://www.dictionary.com/browse/420",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "1437",
+      "source": null,
+      "status": "Uncorroborated or individual check pending",
+      "automaticMatching": false,
+      "note": "The letter-count interpretation is plausible, but an individual reliable source was not established in this review. Do not assume it is a hidden message."
+    },
+    {
+      "term": "143",
+      "source": "https://www.netlingo.com/acronyms",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "182",
+      "source": "https://www.netlingo.com/acronyms",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "53X",
+      "source": "https://www.dictionary.com/culture/slang/53x",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "CD9",
+      "source": "https://www.netlingo.com/word/cd9.php",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Aight",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Alpha",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "AF",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Ate",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Aura",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Bae",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Banger",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Based",
+      "source": "https://www.dictionary.com/culture/slang/based",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "Basic",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Beef",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Bed rotting",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "The phrase alone does not establish depression, laziness or avoidance. Ask how the person feels."
+    },
+    {
+      "term": "Beige flag",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Beg / Beggy",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Bet",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "BFFR",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Big yikes",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Bop",
+      "source": "https://knowyourmeme.com/memes/bop-slang",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "Bounce",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Brain rot",
+      "source": "https://www.dictionary.com/culture/slang/brainrot",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Brat",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Brokie",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Bruh",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Bussin’",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Canon event",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Cap / No cap",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Caught in 4K",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Cheugy",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Chuzz",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Clapped",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Clown",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Cooked",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Cope",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Cringe",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Cursed",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Curve",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Dank",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Dead / I’m dead",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Deadass",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Deets",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Delulu",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Demure",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Down bad",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Do it for the plot",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Drip",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Dub / W",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Dusty",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Eepy",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Extra",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Feral",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Finsta",
+      "source": "https://www.dictionary.com/culture/slang/finsta",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "Fire",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Fit / Fit check",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Flex",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "FR",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "FYP",
+      "source": "https://arxiv.org/abs/2605.10690",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "Ghosted",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Glazing",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Glow up",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "GOAT / GOATest",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Goblin mode",
+      "source": "https://www.dictionary.com/culture/slang/goblin-mode",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Grind",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Gyatt",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Hits different",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Hop off",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Huzz",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Hype",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Ick",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "IRL",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "IYKYK",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Jarring",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Karen",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "KMS / KYS",
+      "source": "https://www.netlingo.com/acronyms",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Lit",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "L / Take the L",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "LMAO",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Locked in",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Lore",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "LOML",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Lowkey / Highkey",
+      "source": "https://www.dictionary.com/culture/slang/lowkenuinely",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Main character",
+      "source": null,
+      "status": "Uncorroborated or individual check pending",
+      "automaticMatching": true,
+      "note": "Individual source check remains pending."
+    },
+    {
+      "term": "Mango mustard",
+      "source": null,
+      "status": "Uncorroborated or individual check pending",
+      "automaticMatching": false,
+      "note": "Uncertain meaning — not used in automatic matching."
+    },
+    {
+      "term": "Mid",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Mogging",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Mood",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Mute",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "NGL",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Neek",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "NPC",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Normie",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Ohio",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "OOMF",
+      "source": "https://www.dictionary.com/culture/acronyms/oomf",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "OP",
+      "source": "https://support.reddithelp.com/hc/en-us/articles/360043478311-How-can-I-tell-who-s-a-moderator-Reddit-administrator-or-the-original-poster-on-a-comment-thread",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "Opp / Opps",
+      "source": "https://www.dictionary.com/articles/tiktok-slang-words",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Outta pocket",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Periodt",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Pookie",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "POS",
+      "source": "https://www.dictionary.com/browse/pos",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "POV",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Pushing P",
+      "source": "https://www.dictionary.com/culture/slang/pushing-p",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "Ratio",
+      "source": "https://www.dictionary.com/articles/tiktok-slang-words",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "Real",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Rent free",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Rizz",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Roadman",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Salty",
+      "source": "https://www.dictionary.com/browse/salty",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "Serving",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Sheesh",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Ship",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Side eye",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Sigma",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Simp",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Situationship",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Skibidi",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Slay",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Sliding into DMs",
+      "source": "https://www.dictionary.com/culture/slang/slide-into-the-dms",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "Smol",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Smurfing",
+      "source": "https://playvalorant.com/en-us/news/game-updates/riot-mobile-verification-beta/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Snaked",
+      "source": null,
+      "status": "Uncorroborated or individual check pending",
+      "automaticMatching": true,
+      "note": "Individual source check remains pending."
+    },
+    {
+      "term": "Snatched",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Social battery",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Stan",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Sus",
+      "source": "https://www.dictionary.com/culture/slang/pretty-sus",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "TBH",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Tea",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Thirsty / Thirst trap",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Throw shade",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Trad / Tradwife",
+      "source": "https://www.dictionary.com/browse/tradwife",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Unalive",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Valid",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Vibe / Vibe check",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Vent account",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "W",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Womp womp",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "WTF",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "WYA / WYD",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "X-rated",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Yap / Yapper",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Yas",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/teen-slang-dictionary/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core slang sense checked against the linked reference on 21 September 2026. Examples are illustrative; meaning depends on context."
+    },
+    {
+      "term": "Yeet",
+      "source": "https://www.merriam-webster.com/dictionary/yeet",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "YOLO",
+      "source": "https://www.oxfordlearnersdictionaries.com/us/definition/english/yolo",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "Zesty",
+      "source": "https://knowyourmeme.com/memes/zesty-slang/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Core sense checked against the linked reference on 21 September 2026. Examples and context are illustrative, not evidence about a particular child."
+    },
+    {
+      "term": "🍃",
+      "source": "https://emojipedia.org/leaf-fluttering-in-wind",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "💊",
+      "source": "https://emojipedia.org/pill",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🔌",
+      "source": "https://emojipedia.org/electric-plug",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "❄️",
+      "source": "https://emojipedia.org/snowflake",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🍄",
+      "source": "https://emojipedia.org/mushroom",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🍆",
+      "source": "https://emojipedia.org/eggplant",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🍑",
+      "source": "https://emojipedia.org/peach",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "💦",
+      "source": "https://emojipedia.org/sweat-droplets",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "👅",
+      "source": "https://emojipedia.org/tongue",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🌽",
+      "source": "https://emojipedia.org/ear-of-corn",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🥵",
+      "source": "https://emojipedia.org/hot-face",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "😈",
+      "source": "https://emojipedia.org/smiling-face-with-horns",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "💀",
+      "source": "https://emojipedia.org/skull",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "😭",
+      "source": "https://emojipedia.org/loudly-crying-face",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🤡",
+      "source": "https://emojipedia.org/clown-face",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🧢",
+      "source": "https://emojipedia.org/billed-cap",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🐐",
+      "source": "https://emojipedia.org/goat",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🚩",
+      "source": "https://emojipedia.org/triangular-flag",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🫶",
+      "source": "https://emojipedia.org/heart-hands",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "👀",
+      "source": "https://emojipedia.org/eyes",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🦋",
+      "source": "https://emojipedia.org/butterfly",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🖤",
+      "source": "https://emojipedia.org/black-heart",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🌈",
+      "source": "https://emojipedia.org/rainbow",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🍒",
+      "source": "https://emojipedia.org/cherries",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🥶",
+      "source": "https://emojipedia.org/cold-face",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🫠",
+      "source": "https://emojipedia.org/melting-face",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "🥲",
+      "source": "https://emojipedia.org/smiling-face-with-tear",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": "Context-dependent: ordinary and figurative meanings can overlap."
+    },
+    {
+      "term": "Aura farming",
+      "source": "https://www.dictionary.com/culture/slang/aura-farming",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Crash out",
+      "source": "https://www.dictionary.com/culture/slang/crash-out",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Unc",
+      "source": "https://www.dictionary.com/culture/slang/unc",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "Lowkenuinely",
+      "source": "https://www.dictionary.com/culture/slang/lowkenuinely",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "It’s giving",
+      "source": "https://www.dictionary.com/culture/slang/its-giving",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "41",
+      "source": "https://www.dictionary.com/culture/slang/41",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "🔥",
+      "source": "https://emojipedia.org/fire",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "🥀",
+      "source": "https://emojipedia.org/wilted-flower",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "🫩",
+      "source": "https://emojipedia.org/face-with-bags-under-eyes",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "LOL",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "BRB",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "AFK",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "GG",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "DM",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "IKR",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "ILY",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "LMK",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "OMW",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "BTW",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    },
+    {
+      "term": "OMG",
+      "source": "https://weareluna.app/parents/guides/navigating-difficult-scenarios/text-acronyms-guide/",
+      "status": "Core meaning reference linked; context remains illustrative",
+      "automaticMatching": true,
+      "note": null
+    }
+  ]
+}

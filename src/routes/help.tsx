@@ -15,7 +15,7 @@ export const Route = createFileRoute("/help")({
 
 const STEPS = [
   { n: "01", t: "Put your child’s immediate safety first.", d: "If there is immediate danger, call 999 in the UK. You do not need to collect evidence before asking for help. Stay calm and reassure your child that you will help them." },
-  { n: "02", t: "Don’t shout at your child.", d: "Whatever happened, your child needs to feel they can come to you. Anger today closes the door tomorrow." },
+  { n: "02", t: "Listen calmly and reassure your child.", d: "Let them explain in their own words. Make clear that asking for help was the right thing to do, and that you will help them find support." },
   { n: "03", t: "Identify what kind of concern this is.", d: "Bullying, stranger contact, sexual images, self-harm content, scams or coercion all have different next steps. Use the categories below." },
   { n: "04", t: "Get the right help for what happened.", d: "You can note usernames, links, the platform and when it happened. Do not screenshot, photograph, download or forward sexual images of anyone who may be under 18. Ask police how to handle material already on the device; do not delay a report to gather evidence." },
 ];
@@ -61,9 +61,10 @@ const ROUTES: { icon: ReactNode; t: string; d: ReactNode }[] = [
         If your child is in immediate danger, call <a className={linkClass} href="tel:999">999</a>.
         Otherwise, contact your GP for advice. For someone who needs to talk,{' '}
         <a className={linkClass} href="https://www.samaritans.org/how-we-can-help/contact-samaritan/" target="_blank" rel="noopener noreferrer">Samaritans</a>{' '}
-        offers listening support on <a className={linkClass} href="tel:116123">116 123</a>.
+        offers free listening support day or night on <a className={linkClass} href="tel:116123">116 123</a>.
         Parents and carers can also use the{' '}
-        <a className={linkClass} href="https://www.youngminds.org.uk/parent/parents-helpline/" target="_blank" rel="noopener noreferrer">YoungMinds Parents Helpline</a>.
+        <a className={linkClass} href="https://www.youngminds.org.uk/parent/parents-helpline/" target="_blank" rel="noopener noreferrer">YoungMinds Parents Helpline</a>{' '}
+        on <a className={linkClass} href="tel:08088025544">0808 802 5544</a>: Monday, Thursday and Friday, 9.30am–4pm; Tuesday and Wednesday, 9.30am–6pm. This is not a crisis service; check its official page for current hours and online options.
         Ask what your child has seen and help them step away from distressing content while you seek support.
       </>
     ),
