@@ -26,10 +26,11 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="eyebrow">Support</p>
+          <p className="eyebrow">Help &amp; website information</p>
           <ul className="mt-4 space-y-2.5 text-sm">
-            <li><Link to="/help" className="hover:text-primary">Get Help Now</Link></li>
+            <li><Link to="/help" className="hover:text-primary">Worried about a child? Get Help</Link></li>
             <li><Link to="/about" className="hover:text-primary">About this hub</Link></li>
+            <li><Link to="/about" hash="website-support" className="hover:text-primary">Website issues &amp; corrections only</Link></li>
             <li><Link to="/privacy" className="hover:text-primary">Privacy</Link></li>
           </ul>
         </div>

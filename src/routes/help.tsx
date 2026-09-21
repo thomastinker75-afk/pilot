@@ -1,3 +1,4 @@
+import { WebsiteSupportNotice } from "@/components/WebsiteSupportNotice";
 import type { ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PhoneCall, ShieldAlert, MessageSquareHeart, FileWarning } from "lucide-react";
@@ -89,7 +90,7 @@ function Help() {
         <p className="eyebrow !text-destructive">Important</p>
         <p className="mt-2 text-sm">
           This page gives general guidance only. If a child is in immediate danger,
-          contact your local emergency services first.
+          call <a className={linkClass} href="tel:999">999</a> in the UK, or your local emergency number elsewhere. Do not wait for a reply from this website.
         </p>
       </div>
 
@@ -100,6 +101,7 @@ function Help() {
 
       <p className="mt-5 text-sm text-muted-foreground">Reporting and support links checked 21 September 2026. This is general guidance, not an emergency response service.</p>
       <p className="mt-3 text-sm"><a className={linkClass} href="https://www.police.uk/advice/advice-and-information/online-safety/online-safety/sextortion/sextortion-reporting-it-to-us/" target="_blank" rel="noopener noreferrer">Police guidance on reporting and handling evidence</a></p>
+      <p className="mt-5"><a href="#support-services" className="font-semibold underline underline-offset-4">Go straight to support numbers and reporting services</a></p>
       <ol className="mt-12 space-y-8">
         {STEPS.map((s) => (
           <li key={s.n} className="grid gap-4 md:grid-cols-[80px_1fr]">
@@ -112,7 +114,12 @@ function Help() {
         ))}
       </ol>
 
-      <h2 className="mt-20 font-display text-3xl tracking-tight">Where to report or get help</h2>
+      <h2 id="support-services" className="mt-20 font-display text-3xl tracking-tight">Contact a support service</h2>
+      <p className="mt-4 text-muted-foreground">These are external services you can contact directly. This website provides general guidance and cannot respond to safeguarding concerns.</p>
+      <div className="mt-6 space-y-4 rounded-2xl border border-border bg-card p-6">
+        <p><strong>Adults worried about a child — NSPCC:</strong> <a className={linkClass} href="tel:08088005000">0808 800 5000</a>. Phone hours: Monday–Friday, 10am–4pm. <a className={linkClass} href="https://www.nspcc.org.uk/about-us/our-services/nspcc-helpline/" target="_blank" rel="noopener noreferrer">Official contact page, email option and current hours</a>. The NSPCC currently says email is available 11am–4pm daily and emails sent outside those hours are not received. Do not use email for an emergency.</p>
+        <p><strong>Children and young people — Childline:</strong> <a className={linkClass} href="tel:08001111">0800 1111</a>. <a className={linkClass} href="https://www.childline.org.uk/get-support/contacting-childline/" target="_blank" rel="noopener noreferrer">Contact Childline and view online support options</a>.</p>
+      </div>
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
         {ROUTES.map((r) => (
           <div key={r.t} className="rounded-2xl border border-border bg-card p-5">
@@ -123,6 +130,7 @@ function Help() {
         ))}
       </div>
 
+      <WebsiteSupportNotice />
       <div className="mt-16 rounded-2xl border border-border bg-secondary p-7">
         <p className="eyebrow">Once it’s contained</p>
         <p className="mt-3 font-display text-2xl">Walk through the right age guide together.</p>

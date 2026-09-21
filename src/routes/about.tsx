@@ -1,3 +1,4 @@
+import { WebsiteSupportNotice } from "@/components/WebsiteSupportNotice";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/about")({
@@ -33,6 +34,7 @@ function About() {
         into their kitchen tonight and change three settings that matter.
       </p>
 
+      <WebsiteSupportNotice />
       <h2 className="mt-16 font-display text-3xl tracking-tight">How we write</h2>
       <div className="mt-6 space-y-5">
         {PRINCIPLES.map((p) => (
@@ -47,7 +49,7 @@ function About() {
         <h2 className="font-display text-3xl tracking-tight">Review scope</h2>
         <p className="mt-4 text-muted-foreground">On 21 September 2026 we checked the help-page reporting sources, under-five screen-time recommendations, Roblox account-age guidance and selected research references. Other inherited guidance still needs source-by-source review. The glossary has had a separate wording review; it does not measure how often teenagers use a term.</p>
         <p className="mt-4 text-muted-foreground">This pilot has not been independently reviewed by a safeguarding or clinical professional. Follow the linked official services for individual advice and check current platform instructions before changing settings.</p>
-        <p className="mt-4 text-muted-foreground">This site is owned and published by Thomas Tinker. A public corrections email will be added after the domain and its email are set up. Please do not send children’s private messages or images to the site.</p>
+        <p className="mt-4 text-muted-foreground">This site is owned and published by Thomas Tinker. It is an educational guide for parents and carers, not a personal advice or reporting service.</p>
       </section>
       <h2 className="mt-16 font-display text-3xl tracking-tight">What we don’t do</h2>
       <ul className="mt-5 space-y-2.5 text-base text-muted-foreground">
