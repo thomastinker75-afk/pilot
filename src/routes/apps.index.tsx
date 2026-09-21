@@ -6,7 +6,7 @@ export const Route = createFileRoute("/apps/")({
   component: AppsIndex,
   head: () => ({
     meta: [
-      { title: "App & game guides for parents — Parent Tech Safety Hub" },
+      { title: "App & game guides for parents — Parent Tech Safety" },
       { name: "description", content: "What each app and game actually is, the real risks, and settings to review. TikTok, Snapchat, Roblox, Fortnite, Discord and more." },
     ],
   }),

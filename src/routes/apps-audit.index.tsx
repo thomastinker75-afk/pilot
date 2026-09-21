@@ -7,7 +7,7 @@ export const Route = createFileRoute("/apps-audit/")({
   component: AuditIndex,
   head: () => ({
     meta: [
-      { title: "Apps & games — audited format (preview) | Parent Tech Safety Hub" },
+      { title: "Apps & games — audited format (preview) | Parent Tech Safety" },
       {
         name: "description",
         content:

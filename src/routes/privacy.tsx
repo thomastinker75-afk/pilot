@@ -2,7 +2,7 @@ import { WebsiteSupportNotice } from "@/components/WebsiteSupportNotice";
 import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/privacy")({
   component: Privacy,
-  head: () => ({ meta: [{ title: "Privacy — Parent Tech Safety Hub" }, { name: "description", content: "How the message explainer works on your device, and how hosting, fonts and optional video players connect to external services." }] }),
+  head: () => ({ meta: [{ title: "Privacy — Parent Tech Safety" }, { name: "description", content: "How the message explainer works on your device, and how hosting, fonts and optional video players connect to external services." }] }),
 });
 function Privacy() {
   const hostingProvider = import.meta.env.VITE_HOSTING_PROVIDER === "cloudflare" ? "Cloudflare" : "GitHub Pages";

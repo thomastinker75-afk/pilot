@@ -32,7 +32,7 @@ if (siteUrl) {
 }
 writeFileSync(
   `${output}/404.html`,
-  '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Page not found — Parent Tech Safety Hub</title><style>body{font:1.1rem/1.6 system-ui;background:#faf9f6;color:#222;max-width:40rem;margin:15vh auto;padding:2rem}a{color:inherit}</style></head><body><main><h1>Page not found</h1><p>This page does not exist or has moved.</p><a href="/">Return to Parent Tech Safety Hub</a></main></body></html>'.replace(
+  '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Page not found — Parent Tech Safety</title><style>body{font:1.1rem/1.6 system-ui;background:#faf9f6;color:#222;max-width:40rem;margin:15vh auto;padding:2rem}a{color:inherit}</style></head><body><main><h1>Page not found</h1><p>This page does not exist or has moved.</p><a href="/">Return to Parent Tech Safety</a></main></body></html>'.replace(
     'href="/"',
     `href="${basePath}"`,
   ),
