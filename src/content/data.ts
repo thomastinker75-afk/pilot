@@ -1647,10 +1647,10 @@ export const CHECKLISTS: Checklist[] = [
       {
         title: "3 · Screen Time — the most important step",
         visual: {
-          youtubeId: "9AhA8JvuLWg",
+          youtubeId: "8siFNH-brM4",
           title: "Set up Screen Time",
           source: "Apple Support",
-          sourceUrl: "https://www.youtube.com/watch?v=9AhA8JvuLWg",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4",
           kind: "Official video",
           description: "Apple’s official Screen Time walkthrough.",
         },
@@ -1667,10 +1667,10 @@ export const CHECKLISTS: Checklist[] = [
       {
         title: "4 · Content & Privacy Restrictions",
         visual: {
-          youtubeId: "GsQTy0DPLDU",
+          youtubeId: "8siFNH-brM4",
           title: "Set up parental controls",
           source: "Apple Support",
-          sourceUrl: "https://www.youtube.com/watch?v=GsQTy0DPLDU",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4",
           kind: "Official video",
           description: "Apple demonstrates its current parental-control menus.",
         },
@@ -1686,11 +1686,11 @@ export const CHECKLISTS: Checklist[] = [
       {
         title: "5 · Communication, contacts & Messages",
         visual: {
-          youtubeId: "GsQTy0DPLDU",
+          youtubeId: "8siFNH-brM4",
           startSeconds: 62,
           title: "Review communication controls",
           source: "Apple Support",
-          sourceUrl: "https://www.youtube.com/watch?v=GsQTy0DPLDU&t=62s",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4&t=62s",
           kind: "Official video",
           description: "Apple’s parental-controls walkthrough at the communication settings.",
         },
@@ -1703,11 +1703,11 @@ export const CHECKLISTS: Checklist[] = [
       {
         title: "6 · Safety & device security",
         visual: {
-          youtubeId: "9AhA8JvuLWg",
+          youtubeId: "8siFNH-brM4",
           startSeconds: 70,
           title: "Review device safety settings",
           source: "Apple Support",
-          sourceUrl: "https://www.youtube.com/watch?v=9AhA8JvuLWg&t=70s",
+          sourceUrl: "https://www.youtube.com/watch?v=8siFNH-brM4&t=70s",
           kind: "Official video",
           description: "The safety and access controls in Apple’s official walkthrough.",
         },
@@ -1736,11 +1736,11 @@ export const CHECKLISTS: Checklist[] = [
       { title: "Use Screen Time on your iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/108806" },
       { title: "Use parental controls on your child's iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/105121" },
       { title: "Communication Safety on iPhone", source: "Apple Support (official)", type: "Official guide", url: "https://support.apple.com/en-gb/105069" },
-      { title: "How to set up parental controls on iPhone (walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=GsQTy0DPLDU" },
+      { title: "How to set up parental controls on iPhone (walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=8siFNH-brM4" },
       { title: "App Store age ratings values and definitions (4+/9+/13+/16+/18+ on iOS 26)", source: "Apple Developer", type: "Official guide", url: "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/" },
       { title: "Updated age ratings in App Store Connect (July 2025)", source: "Apple Developer News", type: "Official guide", url: "https://developer.apple.com/news/?id=ks775ehf" },
       { title: "iPhone parental controls — UK guide with current screenshots", source: "Internet Matters (UK)", type: "Article", url: "https://www.internetmatters.org/parental-controls/smartphones-and-other-devices/apple-iphone-parental-controls/", note: "Screen-by-screen images kept up to date with the current iOS release." },
-      { title: "Set up Screen Time (video walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=9AhA8JvuLWg" },
+      { title: "Set up Screen Time (video walkthrough)", source: "Apple Support · YouTube", type: "Video", url: "https://www.youtube.com/watch?v=8siFNH-brM4" },
     ],
     notes: [
       "The Screen Time Passcode is the linchpin — if a curious teen learns it, the whole system is bypassed. Don't reuse your phone passcode.",
@@ -1764,7 +1764,7 @@ export const CHECKLISTS: Checklist[] = [
     overview:
       "YouTube is the most-used app by children in the UK. Each setting below is per-account AND per-device: turning Restricted Mode on in the phone app does nothing to the smart TV. Budget five minutes for the phone now, then repeat on any other screen they use. Nothing here replaces talking about what they watch.",
     heroVideo: {
-      youtubeId: "0xDnHWBU4XU",
+      youtubeId: "0dy1St39xeo",
       title: "Parental controls and supervised experiences on YouTube — Google",
       caption: "Official Google walkthrough of supervised experiences. The exact tap-paths for every setting are written out below.",
     },
@@ -1772,10 +1772,10 @@ export const CHECKLISTS: Checklist[] = [
       {
         title: "1 · Turn off Autoplay (30 seconds)",
         visual: {
-          youtubeId: "0xDnHWBU4XU",
+          youtubeId: "0dy1St39xeo",
           title: "YouTube family controls overview",
           source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0xDnHWBU4XU",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo",
           kind: "Official video",
           description: "YouTube’s official family-controls walkthrough; pause while following the written path.",
         },
@@ -1791,11 +1791,11 @@ export const CHECKLISTS: Checklist[] = [
       {
         title: "2 · Set the right account type and content level",
         visual: {
-          youtubeId: "0xDnHWBU4XU",
+          youtubeId: "0dy1St39xeo",
           startSeconds: 18,
           title: "Choose a supervised experience",
           source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0xDnHWBU4XU&t=18s",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=18s",
           kind: "Official video",
           description: "YouTube shows the supervised experience and parent controls.",
         },
@@ -1811,11 +1811,11 @@ export const CHECKLISTS: Checklist[] = [
       {
         title: "3 · Review, clear and pause history",
         visual: {
-          youtubeId: "0xDnHWBU4XU",
+          youtubeId: "0dy1St39xeo",
           startSeconds: 33,
           title: "Review viewing controls",
           source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0xDnHWBU4XU&t=33s",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=33s",
           kind: "Official video",
           description: "The official walkthrough alongside the exact history path.",
         },
@@ -1831,11 +1831,11 @@ export const CHECKLISTS: Checklist[] = [
       {
         title: "4 · Deal with Shorts",
         visual: {
-          youtubeId: "0xDnHWBU4XU",
+          youtubeId: "0dy1St39xeo",
           startSeconds: 42,
           title: "Use YouTube wellbeing controls",
           source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0xDnHWBU4XU&t=42s",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=42s",
           kind: "Official video",
           description: "YouTube’s official parent-control overview beside the Shorts actions.",
         },
@@ -1851,11 +1851,11 @@ export const CHECKLISTS: Checklist[] = [
       {
         title: "5 · Clean subscriptions and retrain recommendations",
         visual: {
-          youtubeId: "0xDnHWBU4XU",
+          youtubeId: "0dy1St39xeo",
           startSeconds: 52,
           title: "Manage what appears on YouTube",
           source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0xDnHWBU4XU&t=52s",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=52s",
           kind: "Official video",
           description: "The platform’s own walkthrough beside recommendation controls.",
         },
@@ -1870,11 +1870,11 @@ export const CHECKLISTS: Checklist[] = [
       {
         title: "6 · Restricted Mode — on every device and browser",
         visual: {
-          youtubeId: "0xDnHWBU4XU",
+          youtubeId: "0dy1St39xeo",
           startSeconds: 62,
           title: "Review content controls",
           source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0xDnHWBU4XU&t=62s",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=62s",
           kind: "Official video",
           description: "YouTube’s official controls overview; use the written device-specific paths.",
         },
@@ -1890,11 +1890,11 @@ export const CHECKLISTS: Checklist[] = [
       {
         title: "7 · Repeat where they actually watch",
         visual: {
-          youtubeId: "0xDnHWBU4XU",
+          youtubeId: "0dy1St39xeo",
           startSeconds: 72,
           title: "Check every viewing device",
           source: "YouTube",
-          sourceUrl: "https://www.youtube.com/watch?v=0xDnHWBU4XU&t=72s",
+          sourceUrl: "https://www.youtube.com/watch?v=0dy1St39xeo&t=72s",
           kind: "Official video",
           description: "The official walkthrough beside the final multi-device check.",
         },
