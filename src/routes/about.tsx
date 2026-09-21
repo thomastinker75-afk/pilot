@@ -29,10 +29,25 @@ function About() {
       </h1>
       <p className="mt-6 text-xl leading-relaxed text-muted-foreground">
         Parent Tech Safety Hub is an independent, plain-English online safety
-        resource for parents and carers. We are not a panic site, a vigilante
-        platform, or a spyware shop. We exist to help an ordinary parent walk
-        into their kitchen tonight and change three settings that matter.
+        resource for parents and carers. It brings together practical information
+        to help families understand children’s digital lives, start conversations
+        and know where to turn when they need help.
       </p>
+
+      <section className="mt-10" aria-labelledby="why-thomas-created-this">
+        <h2 id="why-thomas-created-this" className="font-display text-3xl tracking-tight">Why Thomas created this guide</h2>
+        <p className="mt-4 text-muted-foreground">
+          Thomas Tinker is a parent and works in the digital space. He created
+          this guide to raise awareness of the issues families can face online
+          and make useful information easier for other parents to find.
+        </p>
+        <p className="mt-4 text-muted-foreground">
+          His aim is to help parents feel better informed and more comfortable
+          talking with their children about technology. The guide brings together
+          sources, practical steps and links to organisations that can offer
+          specialist support when it is needed.
+        </p>
+      </section>
 
       <WebsiteSupportNotice />
       <h2 className="mt-16 font-display text-3xl tracking-tight">How we write</h2>
