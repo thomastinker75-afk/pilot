@@ -83,21 +83,13 @@ function ChecklistDetail() {
           <div className="mt-6 space-y-6">
             {c.sections.map((s) => (
               <section key={s.title} className="border-t border-border py-7 first:border-t-0 first:pt-0 md:py-9">
-                <div className={s.visual ? "grid gap-6 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start" : undefined}>
-                  <div>
+                <div className={s.visual ? "grid gap-5 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-x-6 lg:gap-y-4" : undefined}>
+                  <div className="lg:col-start-1 lg:row-start-1">
                     <h3 className="font-display text-xl font-semibold tracking-tight">{s.title}</h3>
                     {s.intro && <p className="mt-2 text-sm text-muted-foreground">{s.intro}</p>}
-                    <ol className="mt-4 space-y-3">
-                      {s.steps.map((step, i) => (
-                        <li key={step} className="flex gap-3 text-base leading-relaxed">
-                          <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-primary text-xs font-semibold text-primary-foreground">{i + 1}</span>
-                          <span>{step}</span>
-                        </li>
-                      ))}
-                    </ol>
                   </div>
                   {s.visual && (
-                    <figure className="overflow-hidden rounded-lg border border-border bg-card">
+                    <figure className="overflow-hidden rounded-lg border border-border bg-card lg:col-start-2 lg:row-span-2 lg:row-start-1">
                       {s.visual.youtubeId ? (
                         <iframe
                           src={`https://www.youtube-nocookie.com/embed/${s.visual.youtubeId}${s.visual.startSeconds ? `?start=${s.visual.startSeconds}` : ""}`}
@@ -118,6 +110,14 @@ function ChecklistDetail() {
                       </figcaption>
                     </figure>
                   )}
+                  <ol className="space-y-3 lg:col-start-1 lg:row-start-2">
+                    {s.steps.map((step, i) => (
+                      <li key={step} className="flex gap-3 text-base leading-relaxed">
+                        <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-primary text-xs font-semibold text-primary-foreground">{i + 1}</span>
+                        <span>{step}</span>
+                      </li>
+                    ))}
+                  </ol>
                 </div>
               </section>
             ))}
