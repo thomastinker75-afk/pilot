@@ -12,6 +12,7 @@ export const Route = createFileRoute("/about")({
 });
 
 const PRINCIPLES = [
+  { t: "Balance and better use", d: "We help families make thoughtful choices about technology, with room for learning, creativity and connection alongside sleep, movement and time together." },
   { t: "Trusted sources first", d: "Guidance is based on reputable child protection organisations, regulators, medical bodies and platform safety documentation." },
   { t: "No fear without action", d: "If we name a risk, we tell you what to do about it. Same page, same scroll." },
   { t: "Age-specific advice", d: "What helps a 7-year-old isn’t what helps a 16-year-old. Age guides distinguish the needs of younger children and teenagers." },
@@ -46,6 +47,25 @@ function About() {
           talking with their children about technology. The guide brings together
           sources, practical steps and links to organisations that can offer
           specialist support when it is needed.
+        </p>
+      </section>
+
+      <section className="mt-10" aria-labelledby="technology-and-balance">
+        <h2 id="technology-and-balance" className="font-display text-3xl tracking-tight">Understanding technology and finding balance</h2>
+        <p className="mt-4 text-muted-foreground">
+          This guide is here to help parents understand technology and use it
+          better with their children, not to encourage a blanket ban. Technology
+          can be part of learning, creating, playing and keeping in touch.
+        </p>
+        <p className="mt-4 text-muted-foreground">
+          Balance matters. We encourage families to make room for sleep, movement,
+          schoolwork, friendships and time together, and to notice when screen use
+          starts taking their place. What a child is doing online, their age and
+          how it fits into their day all deserve attention alongside the hours spent.
+        </p>
+        <p className="mt-4 text-muted-foreground">
+          The aim is to build understanding and agree sensible boundaries together,
+          so children can enjoy technology and learn to use it responsibly.
         </p>
       </section>
 
