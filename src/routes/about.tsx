@@ -5,7 +5,7 @@ export const Route = createFileRoute("/about")({
   component: About,
   head: () => ({
     meta: [
-      { title: "About — Parent Tech Safety Hub" },
+      { title: "About — Parent Tech Safety" },
       { name: "description", content: "An independent, plain-English online safety hub for parents and carers. How we write, review and source our guidance." },
     ],
   }),
@@ -29,7 +29,7 @@ function About() {
         Calm, practical, parent-first.
       </h1>
       <p className="mt-6 text-xl leading-relaxed text-muted-foreground">
-        Parent Tech Safety Hub is an independent, plain-English online safety
+        Parent Tech Safety is an independent, plain-English online safety
         resource for parents and carers. It brings together practical information
         to help families understand children’s digital lives, start conversations
         and know where to turn when they need help.

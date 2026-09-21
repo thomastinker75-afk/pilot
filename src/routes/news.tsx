@@ -14,7 +14,7 @@ export const Route = createFileRoute("/news")({
         content:
           "Research, reporting and discussions about children’s digital lives, with source types and limits explained for parents.",
       },
-      { property: "og:title", content: "News & Research — Parent Tech Safety Hub" },
+      { property: "og:title", content: "News & Research — Parent Tech Safety" },
       {
         property: "og:description",
         content:

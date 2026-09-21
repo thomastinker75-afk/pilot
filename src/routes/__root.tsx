@@ -75,14 +75,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Parent Tech Safety Hub — Online safety guidance for parents" },
+      { title: "Parent Tech Safety — Online safety guidance for parents" },
       {
         name: "description",
         content:
           "Plain-English, age-based online safety advice for parents: apps, games, slang, screen time, and the phone settings worth checking tonight.",
       },
-      { name: "author", content: "Parent Tech Safety Hub" },
-      { property: "og:title", content: "Parent Tech Safety Hub" },
+      { name: "author", content: "Parent Tech Safety" },
+      { property: "og:title", content: "Parent Tech Safety" },
       {
         property: "og:description",
         content: "Online safety guidance for parents — without the panic.",
@@ -123,12 +123,12 @@ function RootShell({ children }: { children: React.ReactNode }) {
         <meta property="og:image" content={socialImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Parent Tech Safety Hub — practical online safety guidance for parents" />
+        <meta property="og:image:alt" content="Parent Tech Safety — practical online safety guidance for parents" />
         <meta name="twitter:image" content={socialImage} />
         {siteUrl && !editorialPreview && (
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
             "@context": "https://schema.org", "@type": "WebSite",
-            name: "Parent Tech Safety Hub", url: `${siteUrl}${import.meta.env.BASE_URL}`,
+            name: "Parent Tech Safety", url: `${siteUrl}${import.meta.env.BASE_URL}`,
             publisher: { "@type": "Person", name: "Thomas Tinker" },
           }).replace(/</g, "\\u003c") }} />
         )}

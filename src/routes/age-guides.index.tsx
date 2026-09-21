@@ -5,7 +5,7 @@ export const Route = createFileRoute("/age-guides/")({
   component: AgeGuidesIndex,
   head: () => ({
     meta: [
-      { title: "Online safety by age — Parent Tech Safety Hub" },
+      { title: "Online safety by age — Parent Tech Safety" },
       { name: "description", content: "Age-by-age online safety guidance for children 0–17: typical behaviours, real risks, settings to change, and how to talk about it." },
     ],
   }),

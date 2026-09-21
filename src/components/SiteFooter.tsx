@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-border bg-secondary/40">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-4 md:px-8">
         <div className="md:col-span-2">
-          <p className="eyebrow">Parent Tech Safety Hub</p>
+          <p className="eyebrow">Parent Tech Safety</p>
           <p className="mt-3 max-w-md font-display text-2xl leading-tight tracking-tight">
             Online safety guidance for parents — without the panic.
           </p>
@@ -38,7 +38,7 @@ export function SiteFooter() {
 
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-5 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between md:px-8">
-          <p>© {new Date().getFullYear()} Parent Tech Safety Hub. Educational content — not a substitute for professional advice.</p>
+          <p>© {new Date().getFullYear()} Parent Tech Safety. Educational content — not a substitute for professional advice.</p>
           <p>If a child is in immediate danger, contact your local emergency services.</p>
         </div>
       </div>

@@ -7,7 +7,7 @@ export const Route = createFileRoute("/help")({
   component: Help,
   head: () => ({
     meta: [
-      { title: "Worried right now? — Get help | Parent Tech Safety Hub" },
+      { title: "Worried right now? — Get help | Parent Tech Safety" },
       { name: "description", content: "If you’ve just found something on your child’s device: practical first steps and official services for urgent help and reporting serious concerns." },
     ],
   }),

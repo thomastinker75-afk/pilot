@@ -24,7 +24,7 @@ export function SiteHeader() {
           <span className="font-display text-[1.05rem] font-semibold leading-none tracking-tight">
             Parent Tech
             <span className="block text-[0.7rem] font-medium uppercase tracking-[0.2em] text-muted-foreground">
-              Safety Hub
+              Safety
             </span>
           </span>
         </Link>
