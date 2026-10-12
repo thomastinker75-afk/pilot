@@ -6,7 +6,7 @@ export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
-      { title: "Parent Tech Safety Hub — Online safety guidance for parents" },
+      { title: "Parent TechSafety — Online safety guidance for parents" },
       { name: "description", content: "Plain-English, age-based online safety advice for parents: apps, games, slang, screen time, and the phone settings worth checking tonight." },
     ],
   }),
