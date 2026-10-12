@@ -7,8 +7,19 @@ export const Route = createFileRoute("/privacy")({
 function Privacy() {
   const hostingProvider = import.meta.env.VITE_HOSTING_PROVIDER === "cloudflare" ? "Cloudflare" : "GitHub Pages";
   return <article className="mx-auto max-w-3xl px-5 py-16 md:px-8">
-    <p className="eyebrow">Updated 21 September 2026</p>
+    <p className="eyebrow">Updated 12 October 2026</p>
     <h1 className="mt-4 font-display text-5xl">Privacy on this site</h1>
+      <h2 className="mt-10 font-display text-2xl">Optional analytics</h2>
+      <p className="mt-4">
+        If you accept analytics, Google Analytics uses cookies to measure page visits and
+        interactions such as scrolling, outbound links and video engagement. Google receives
+        technical information about your browser and visits. We use these reports to improve
+        the site; advertising features are disabled. Analytics does not load until you accept.
+        Your choice is saved on this device. Use Analytics settings in the footer to change it
+        or withdraw consent. Rejecting analytics does not restrict access to any page.
+        Text entered in the message tools is not included in our analytics events.
+      </p>
+      <p className="mt-4"><a className="underline" href="https://policies.google.com/privacy">Google’s privacy policy</a></p>
     <h2 className="mt-10 font-display text-2xl">Messages stay in your browser</h2>
     <p className="mt-4">The dictionary explainer matches text on your device. It does not send the message to an AI service or save it in browser storage. You can clear it with the Clear button. It does not need names or other personal details.</p>
     <h2 className="mt-10 font-display text-2xl">Hosting and external connections</h2>

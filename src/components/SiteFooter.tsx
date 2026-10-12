@@ -32,6 +32,7 @@ export function SiteFooter() {
             <li><Link to="/about" className="hover:text-primary">About this hub</Link></li>
             <li><Link to="/about" hash="website-support" className="hover:text-primary">Website issues &amp; corrections only</Link></li>
             <li><Link to="/privacy" className="hover:text-primary">Privacy</Link></li>
+            <li><button onClick={() => window.dispatchEvent(new Event("pts-open-analytics"))} className="hover:text-primary">Analytics settings</button></li>
           </ul>
         </div>
       </div>

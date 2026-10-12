@@ -12,6 +12,7 @@ import {
 import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { AnalyticsConsent } from "@/components/AnalyticsConsent";
 
 function NotFoundComponent() {
   return (
@@ -140,6 +141,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         {children}
+        <AnalyticsConsent />
         <Scripts />
       </body>
     </html>
