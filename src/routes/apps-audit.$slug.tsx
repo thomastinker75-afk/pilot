@@ -13,7 +13,7 @@ export const Route = createFileRoute("/apps-audit/$slug")({
   head: ({ loaderData }) => {
     const app = loaderData?.app;
     const title = app
-      ? `${app.name} — parent guide (audited format) | Parent TechSafety`
+      ? `${app.name} — parent guide (audited format) | Parent Tech Safety`
       : "App guide (audited format)";
     const description = app
       ? `${app.name}: what it is, who uses it, the official age, UK age controls, the top three risks, what you can change and what you cannot control.`

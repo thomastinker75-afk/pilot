@@ -22,7 +22,7 @@ export function SiteHeader() {
             <ShieldCheck className="size-5" strokeWidth={2.2} />
           </span>
           <span className="font-display text-[1.05rem] font-semibold leading-none tracking-tight">
-            Parent TechSafety
+            Parent Tech Safety
           </span>
         </Link>
 
