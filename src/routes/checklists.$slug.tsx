@@ -1,8 +1,19 @@
+import { GuideReview } from "@/components/GuideReview";
+import { GUIDE_UPDATES } from "@/content/guide-updates";
 import { YouTubeVideo } from "@/components/YouTubeVideo";
 import { publicPath } from "@/lib/public-path";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { CHECKLISTS } from "@/content/data";
-import { ArrowLeft, CheckCircle2, ExternalLink, PlayCircle, BookOpen, ShieldCheck, PhoneCall, Info } from "lucide-react";
+import {
+  ArrowLeft,
+  CheckCircle2,
+  ExternalLink,
+  PlayCircle,
+  BookOpen,
+  ShieldCheck,
+  PhoneCall,
+  Info,
+} from "lucide-react";
 
 export const Route = createFileRoute("/checklists/$slug")({
   component: ChecklistDetail,
@@ -11,10 +22,17 @@ export const Route = createFileRoute("/checklists/$slug")({
     if (!c) return { meta: [{ title: "Checklist not found" }] };
     return {
       meta: [
-        { title: `${c.title} — step-by-step` },
-        { name: "description", content: c.summary },
-        { property: "og:title", content: `${c.title} — step-by-step` },
-        { property: "og:description", content: c.summary },
+        {
+          title:
+            GUIDE_UPDATES[c.slug]?.title ??
+            `${GUIDE_UPDATES[c.slug]?.title ?? c.title} — step-by-step`,
+        },
+        { name: "description", content: GUIDE_UPDATES[c.slug]?.description ?? c.summary },
+        {
+          property: "og:title",
+          content: GUIDE_UPDATES[c.slug]?.title ?? `${c.title} — step-by-step`,
+        },
+        { property: "og:description", content: GUIDE_UPDATES[c.slug]?.description ?? c.summary },
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary" },
       ],
@@ -23,7 +41,9 @@ export const Route = createFileRoute("/checklists/$slug")({
   notFoundComponent: () => (
     <div className="mx-auto max-w-3xl px-5 py-24 text-center">
       <h1 className="font-display text-4xl">Checklist not found</h1>
-      <Link to="/checklists" className="mt-6 inline-block text-primary">All checklists</Link>
+      <Link to="/checklists" className="mt-6 inline-block text-primary">
+        All checklists
+      </Link>
     </div>
   ),
 });
@@ -35,28 +55,44 @@ function ChecklistDetail() {
 
   return (
     <article className="mx-auto max-w-4xl px-5 py-12 md:px-8 md:py-20">
-      <Link to="/checklists" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground">
+      <Link
+        to="/checklists"
+        className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
+      >
         <ArrowLeft className="size-4" /> All checklists
       </Link>
 
       <header className="mt-8">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="rounded-full bg-secondary px-3 py-1 text-xs font-semibold">{c.device}</span>
+          <span className="rounded-full bg-secondary px-3 py-1 text-xs font-semibold">
+            {c.device}
+          </span>
           <p className="eyebrow !mt-0">Check the current settings on your device</p>
         </div>
         <h1 className="mt-4 font-display text-4xl leading-tight tracking-tight md:text-5xl">
           {c.title}
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">{c.summary}</p>
-        {c.overview && (
-          <p className="mt-4 max-w-2xl text-base leading-relaxed">{c.overview}</p>
-        )}
+        {c.overview && <p className="mt-4 max-w-2xl text-base leading-relaxed">{c.overview}</p>}
       </header>
 
+      {GUIDE_UPDATES[c.slug] && (
+        <GuideReview
+          guide={GUIDE_UPDATES[c.slug]}
+          path={`/checklists/${c.slug}/`}
+          category="Checklists"
+          categoryPath="/checklists/"
+        />
+      )}
       {c.heroVideo && (
         <figure className="mt-10 overflow-hidden rounded-2xl border border-border bg-card">
           {c.heroVideo.youtubeId ? (
-            <div className="aspect-video w-full"><YouTubeVideo id={c.heroVideo.youtubeId} title={c.heroVideo.title ?? "Tutorial video"} /></div>
+            <div className="aspect-video w-full">
+              <YouTubeVideo
+                id={c.heroVideo.youtubeId}
+                title={c.heroVideo.title ?? "Tutorial video"}
+              />
+            </div>
           ) : (
             <video
               src={c.heroVideo.src ? publicPath(c.heroVideo.src) : undefined}
@@ -67,18 +103,31 @@ function ChecklistDetail() {
             />
           )}
           {c.heroVideo.caption && (
-            <figcaption className="px-5 py-3 text-sm text-muted-foreground">{c.heroVideo.caption}</figcaption>
+            <figcaption className="px-5 py-3 text-sm text-muted-foreground">
+              {c.heroVideo.caption}
+            </figcaption>
           )}
         </figure>
       )}
 
       {c.sections && c.sections.length > 0 && (
         <section className="mt-14">
-          <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">Step-by-step</h2>
+          <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
+            Step-by-step
+          </h2>
           <div className="mt-6 space-y-6">
             {c.sections.map((s) => (
-              <section key={s.title} className="border-t border-border py-7 first:border-t-0 first:pt-0 md:py-9">
-                <div className={s.visual ? "grid gap-5 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-x-6 lg:gap-y-4" : undefined}>
+              <section
+                key={s.title}
+                className="border-t border-border py-7 first:border-t-0 first:pt-0 md:py-9"
+              >
+                <div
+                  className={
+                    s.visual
+                      ? "grid gap-5 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-x-6 lg:gap-y-4"
+                      : undefined
+                  }
+                >
                   <div className="lg:col-start-1 lg:row-start-1">
                     <h3 className="font-display text-xl font-semibold tracking-tight">{s.title}</h3>
                     {s.intro && <p className="mt-2 text-sm text-muted-foreground">{s.intro}</p>}
@@ -86,13 +135,28 @@ function ChecklistDetail() {
                   {s.visual && (
                     <figure className="overflow-hidden rounded-lg border border-border bg-card lg:col-start-2 lg:row-span-2 lg:row-start-1">
                       {s.visual.youtubeId ? (
-                        <div className="aspect-video w-full"><YouTubeVideo id={s.visual.youtubeId} title={s.visual.title} start={s.visual.startSeconds} /></div>
+                        <div className="aspect-video w-full">
+                          <YouTubeVideo
+                            id={s.visual.youtubeId}
+                            title={s.visual.title}
+                            start={s.visual.startSeconds}
+                          />
+                        </div>
                       ) : null}
                       <figcaption className="p-4">
-                        <p className="text-xs font-semibold uppercase text-primary">{s.visual.kind} · {s.visual.source}</p>
+                        <p className="text-xs font-semibold uppercase text-primary">
+                          {s.visual.kind} · {s.visual.source}
+                        </p>
                         <p className="mt-1 font-semibold leading-snug">{s.visual.title}</p>
-                        <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{s.visual.description}</p>
-                        <a href={s.visual.sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-foreground">
+                        <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                          {s.visual.description}
+                        </p>
+                        <a
+                          href={s.visual.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-foreground"
+                        >
                           Open official source <ExternalLink className="size-3.5" />
                         </a>
                       </figcaption>
@@ -101,7 +165,9 @@ function ChecklistDetail() {
                   <ol className="space-y-3 lg:col-start-1 lg:row-start-2">
                     {s.steps.map((step, i) => (
                       <li key={step} className="flex gap-3 text-base leading-relaxed">
-                        <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-primary text-xs font-semibold text-primary-foreground">{i + 1}</span>
+                        <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-primary text-xs font-semibold text-primary-foreground">
+                          {i + 1}
+                        </span>
                         <span>{step}</span>
                       </li>
                     ))}
@@ -143,7 +209,10 @@ function ChecklistDetail() {
           <h2 className="flex items-center gap-2 font-display text-2xl font-semibold tracking-tight md:text-3xl">
             <BookOpen className="size-6 text-primary" /> Official tutorials & videos
           </h2>
-          <p className="mt-2 text-sm text-muted-foreground">Everything below links directly to Apple, Google, Meta, TikTok, Snap or Discord — no third-party blogs.</p>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Everything below links directly to Apple, Google, Meta, TikTok, Snap or Discord — no
+            third-party blogs.
+          </p>
           <ul className="mt-6 space-y-3">
             {c.tutorials.map((t) => (
               <li key={t.url}>
@@ -160,7 +229,9 @@ function ChecklistDetail() {
                   )}
                   <div className="flex-1">
                     <p className="font-semibold leading-snug group-hover:text-primary">{t.title}</p>
-                    <p className="mt-0.5 text-xs text-muted-foreground">{t.source} · {t.type}</p>
+                    <p className="mt-0.5 text-xs text-muted-foreground">
+                      {t.source} · {t.type}
+                    </p>
                     {t.note && <p className="mt-1 text-sm text-muted-foreground">{t.note}</p>}
                   </div>
                   <ExternalLink className="mt-1 size-4 shrink-0 text-muted-foreground" />
@@ -188,7 +259,10 @@ function ChecklistDetail() {
       )}
 
       <footer className="mt-20">
-        <Link to="/checklists" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground">
+        <Link
+          to="/checklists"
+          className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
+        >
           <ArrowLeft className="size-4" /> Back to all checklists
         </Link>
       </footer>

@@ -1313,9 +1313,9 @@ export const APPS: AppGuide[] = [
     "slug": "roblox",
     "name": "Roblox",
     "category": "Game",
-    "minAge": "All ages (rated by experience)",
+    "minAge": "Varies by game and account age",
     "lastCheckedUK": "21 September 2026",
-    "officialMinAge": "All ages (experience-based)",
+    "officialMinAge": "Account age and content restrictions apply",
     "ukAgeAssurance": "Yes",
     "ukAgeAssuranceNote": "Facial age estimation or ID is required for chat, with age-grouped communication.",
     "why": "Millions of user-made games and a social hangout for under-12s — now with mandatory age checks before anyone can chat.",
@@ -1404,7 +1404,7 @@ export const APPS: AppGuide[] = [
     "slug": "fortnite",
     "name": "Fortnite",
     "category": "Game",
-    "minAge": "12+",
+    "minAge": "Battle Royale: PEGI 12; other experiences vary",
     "lastCheckedUK": "September 2026",
     "officialMinAge": "Experience rating varies; child accounts supported",
     "ukAgeAssurance": "Partial",
@@ -2027,20 +2027,20 @@ export const APPS: AppGuide[] = [
     "officialMinAge": "PEGI 7; child account permissions apply",
     "ukAgeAssurance": "Partial",
     "ukAgeAssuranceNote": "Microsoft child accounts add controls, but no UK identity check.",
-    "why": "Sandbox building game. Solo play is fine; third-party servers are where risk lives.",
+    "why": "Building and exploration, with different considerations for solo play, private worlds and public servers.",
     "risks": [
-      "Open voice chat on third-party servers",
+      "Contact with unfamiliar players through servers or separate chat apps",
       "Grooming on unofficial servers",
       "Skins / mods downloaded from outside stores"
     ],
     "settings": [
-      "Microsoft Family — friends-only multiplayer",
+      "Review Microsoft child-account multiplayer and communication permissions",
       "Disable chat on servers",
-      "Whitelist allowed servers only"
+      "Agree approved servers and review invitations together"
     ],
     "detail": {
       "overview": "Minecraft offers building and exploration in single-player and multiplayer modes. Public servers, other players and third-party downloads need separate consideration from the base game’s content rating. Available controls vary by edition and version.",
-      "ageRationale": "The content rating and account permissions are different. Minecraft’s official parental-control guidance describes parent-managed multiplayer and communication permissions for child accounts. The earlier claim of an official blanket 13+ multiplayer recommendation was not supported by the source checked.",
+      "ageRationale": "Minecraft is PEGI 7 in the UK. The content rating is separate from multiplayer and communication permissions for child accounts. Consider the chosen edition, mode and play partners alongside the rating.",
       "evidence": [
         {
           "claim": "Parents can manage multiplayer, friend and communication permissions for child accounts; the guidance also describes player reporting.",
@@ -4434,9 +4434,9 @@ export const CHECKLISTS: Checklist[] = [
   },
   {
     "slug": "iphone-first-setup",
-    "title": "iPhone for a child — full setup with Family Sharing & Screen Time",
+    "title": "Set Up an iPhone for Your Child: Parental Controls",
     "device": "iOS",
-    "summary": "Create a Child Apple Account inside Family Sharing, then use Screen Time and Communication Safety to lock down content, time and contacts.",
+    "summary": "Set up a child’s Apple Account, Family Sharing, Screen Time and purchase approvals. Review content, contacts and time limits together.",
     "steps": [
       "Create a Child Apple Account through Family Sharing",
       "Sign the child in on their iPhone with the new account",
