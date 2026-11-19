@@ -78,7 +78,7 @@ function AppsIndex() {
                   </div>
 
                   <Link
-                    to="/apps/$slug"
+                    to="/apps/$slug/"
                     params={{ slug: a.slug }}
                     className="mt-6 inline-flex items-center gap-1.5 self-start text-sm font-semibold text-primary hover:gap-2.5 transition-all"
                   >

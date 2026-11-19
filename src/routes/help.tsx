@@ -146,7 +146,7 @@ function Help() {
       <div className="mt-16 rounded-2xl border border-border bg-secondary p-7">
         <p className="eyebrow">Once it’s contained</p>
         <p className="mt-3 font-display text-2xl">Walk through the right age guide together.</p>
-        <Link to="/age-guides" className="mt-4 inline-flex rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background">
+        <Link to="/age-guides/" className="mt-4 inline-flex rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background">
           Open the age guides
         </Link>
       </div>

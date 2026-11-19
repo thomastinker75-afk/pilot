@@ -1,6 +1,7 @@
 import { writeFileSync, existsSync } from "node:fs";
 import { loadEnv } from "vite";
 import { SITE_PATHS, PUBLIC_PATHS } from "../src/content/site-paths.ts";
+import { createCanonicalRedirects } from "../src/lib/canonical-redirects.ts";
 
 const output = "dist/client";
 if (!existsSync(`${output}/index.html`)) throw new Error("Prerendered homepage is missing.");
@@ -14,9 +15,16 @@ const escapeXml = (text) =>
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;");
 writeFileSync(`${output}/.nojekyll`, "");
+writeFileSync(
+  `${output}/_redirects`,
+  [...createCanonicalRedirects(SITE_PATHS, basePath)]
+    .map(([source, destination]) => `${source} ${destination} 308`)
+    .join("\n") + "\n",
+);
 if (siteUrl) {
   const urls = PUBLIC_PATHS.map(
-    (path) => `  <url><loc>${escapeXml(siteUrl + basePath + (path === "/" ? "" : path.slice(1) + "/"))}</loc></url>`,
+    (path) =>
+      `  <url><loc>${escapeXml(siteUrl + basePath + (path === "/" ? "" : path.slice(1) + "/"))}</loc></url>`,
   );
   writeFileSync(
     `${output}/sitemap.xml`,

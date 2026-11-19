@@ -51,7 +51,7 @@ function AuditIndex() {
       </p>
 
       <p className="mt-6">
-        <Link to="/apps" className="text-sm font-medium text-primary hover:underline">
+        <Link to="/apps/" className="text-sm font-medium text-primary hover:underline">
           Compare with the current live guides →
         </Link>
       </p>
@@ -109,7 +109,7 @@ function AuditIndex() {
                     )}
 
                     <Link
-                      to="/apps-audit/$slug"
+                      to="/apps-audit/$slug/"
                       params={{ slug: a.slug }}
                       className="mt-6 inline-flex items-center gap-1.5 self-start text-sm font-semibold text-primary transition-all hover:gap-2.5"
                     >

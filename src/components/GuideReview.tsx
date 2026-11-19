@@ -85,7 +85,7 @@ export function GuideReview({
       </nav>
       <p className="mt-5 text-sm text-muted-foreground">
         By{" "}
-        <Link to="/about" className="underline">
+        <Link to="/about/" className="underline">
           Parent Tech Safety
         </Link>{" "}
         · Updated <time dateTime="2026-11-04">4 November 2026</time>
@@ -120,11 +120,11 @@ export function GuideReview({
           ))}
         </ol>
         <p className="mt-5">
-          <Link to="/age-guides" className="text-primary underline">
+          <Link to="/age-guides/" className="text-primary underline">
             Choose guidance for your child’s age
           </Link>{" "}
           ·{" "}
-          <Link to="/checklists" className="text-primary underline">
+          <Link to="/checklists/" className="text-primary underline">
             Device setup checklists
           </Link>
         </p>

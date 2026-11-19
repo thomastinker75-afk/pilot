@@ -25,7 +25,7 @@ export const Route = createFileRoute("/age-guides/$age")({
   notFoundComponent: () => (
     <div className="mx-auto max-w-3xl px-5 py-24 text-center">
       <h1 className="font-display text-4xl">Guide not found</h1>
-      <Link to="/age-guides" className="mt-6 inline-block text-primary">
+      <Link to="/age-guides/" className="mt-6 inline-block text-primary">
         All age guides
       </Link>
     </div>
@@ -40,7 +40,7 @@ function AgeGuide() {
   return (
     <article className="mx-auto max-w-4xl px-5 py-12 md:px-8 md:py-20">
       <Link
-        to="/age-guides"
+        to="/age-guides/"
         className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
       >
         <ArrowLeft className="size-4" /> All age guides
@@ -77,7 +77,7 @@ function AgeGuide() {
         <p className="eyebrow">Need a hand?</p>
         <p className="mt-3 font-display text-2xl">Worried about something specific you’ve found?</p>
         <Link
-          to="/help"
+          to="/help/"
           className="mt-4 inline-flex rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background"
         >
           Open the get-help guide

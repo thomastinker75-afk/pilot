@@ -32,7 +32,7 @@ export const Route = createFileRoute("/apps-audit/$slug")({
   notFoundComponent: () => (
     <div className="mx-auto max-w-3xl px-5 py-24 text-center">
       <h1 className="font-display text-4xl">App not found</h1>
-      <Link to="/apps-audit" className="mt-6 inline-block text-primary underline">
+      <Link to="/apps-audit/" className="mt-6 inline-block text-primary underline">
         Back to the audited guides
       </Link>
     </div>
@@ -70,7 +70,7 @@ function AuditDetail() {
   return (
     <div className="mx-auto max-w-4xl px-5 py-16 md:px-8 md:py-24">
       <Link
-        to="/apps-audit"
+        to="/apps-audit/"
         className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground"
       >
         <ArrowLeft className="size-4" /> All audited guides
@@ -78,7 +78,7 @@ function AuditDetail() {
 
       <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-3 py-1 text-xs font-medium">
         <FlaskConical className="size-3.5 text-primary" /> Preview format ·{" "}
-        <Link to="/apps/$slug" params={{ slug: app.slug }} className="underline">
+        <Link to="/apps/$slug/" params={{ slug: app.slug }} className="underline">
           see the current live guide
         </Link>
       </div>

@@ -49,13 +49,13 @@ function Home() {
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
-              to="/age-guides"
+              to="/age-guides/"
               className="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-medium text-background transition-opacity hover:opacity-90"
             >
               Start with your child’s age <ArrowUpRight className="size-4" />
             </Link>
             <Link
-              to="/checklists"
+              to="/checklists/"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-3 text-sm font-medium hover:bg-secondary"
             >
               Phone setup checklists
@@ -76,7 +76,7 @@ function Home() {
               Don’t delete anything. Don’t shout. We’ll walk you through the next hour.
             </p>
             <Link
-              to="/help"
+              to="/help/"
               className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"
             >
               Open the calm-first guide <ArrowUpRight className="size-4" />
@@ -96,7 +96,7 @@ function Home() {
           </h2>
           <p className="mt-4 text-muted-foreground">{featured.summary}</p>
           <Link
-            to="/age-guides/$age"
+            to="/age-guides/$age/"
             params={{ age: featured.slug }}
             className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"
           >
@@ -125,7 +125,7 @@ function Home() {
             </h2>
           </div>
           <Link
-            to="/age-guides"
+            to="/age-guides/"
             className="hidden text-sm font-medium text-primary hover:underline md:block"
           >
             All age guides →
@@ -135,7 +135,7 @@ function Home() {
           {tiles.map((band, i) => (
             <Link
               key={band.slug}
-              to="/age-guides/$age"
+              to="/age-guides/$age/"
               params={{ age: band.slug }}
               className={`group flex flex-col justify-between rounded-2xl border border-border bg-card p-5 transition-all hover:-translate-y-0.5 hover:shadow-md ${
                 i === 0 ? "lg:col-span-2 lg:row-span-2 bg-secondary" : ""
@@ -170,7 +170,7 @@ function Home() {
               review.
             </p>
             <Link
-              to="/apps"
+              to="/apps/"
               className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"
             >
               All app guides <ArrowUpRight className="size-4" />
@@ -226,7 +226,7 @@ function Home() {
               rather than a confiscation.
             </p>
             <Link
-              to="/glossary"
+              to="/glossary/"
               className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"
             >
               Open the glossary <ArrowUpRight className="size-4" />

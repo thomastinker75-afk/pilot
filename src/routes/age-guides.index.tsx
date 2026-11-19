@@ -27,7 +27,7 @@ function AgeGuidesIndex() {
         {AGE_BANDS.map((b) => (
           <Link
             key={b.slug}
-            to="/age-guides/$age"
+            to="/age-guides/$age/"
             params={{ age: b.slug }}
             className="group flex flex-col rounded-2xl border border-border bg-card p-7 transition-all hover:-translate-y-0.5 hover:bg-secondary hover:shadow-md"
           >

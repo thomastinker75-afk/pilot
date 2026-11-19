@@ -69,7 +69,7 @@ export function AnalyticsConsent() {
   return (
     <section aria-label="Analytics cookies" className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background p-5 shadow-lg">
       <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-4">
-        <p className="flex-1 text-sm">May we use Google Analytics cookies to understand visits and improve this site? Optional analytics stays off until you accept. <Link to="/privacy" className="underline">Privacy details</Link></p>
+        <p className="flex-1 text-sm">May we use Google Analytics cookies to understand visits and improve this site? Optional analytics stays off until you accept. <Link to="/privacy/" className="underline">Privacy details</Link></p>
         <button onClick={() => choose(false)} className="rounded-md border border-input px-4 py-2 text-sm">Reject analytics</button>
         <button onClick={() => choose(true)} className="rounded-md border border-input px-4 py-2 text-sm">Accept analytics</button>
       </div>

@@ -3,12 +3,12 @@ import { useState } from "react";
 import { Menu, X, ShieldCheck } from "lucide-react";
 
 const NAV = [
-  { to: "/age-guides", label: "Age Guides" },
-  { to: "/apps", label: "Apps & Games" },
-  { to: "/glossary", label: "Slang & Emoji" },
-  { to: "/checklists", label: "Checklists" },
-  { to: "/news", label: "News" },
-  { to: "/help", label: "Get Help" },
+  { to: "/age-guides/", label: "Age Guides" },
+  { to: "/apps/", label: "Apps & Games" },
+  { to: "/glossary/", label: "Slang & Emoji" },
+  { to: "/checklists/", label: "Checklists" },
+  { to: "/news/", label: "News" },
+  { to: "/help/", label: "Get Help" },
 ] as const;
 
 export function SiteHeader() {
@@ -41,7 +41,7 @@ export function SiteHeader() {
 
         <div className="desktop-navigation hidden md:block">
           <Link
-            to="/help"
+            to="/help/"
             className="inline-flex items-center rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-opacity hover:opacity-90"
           >
             Worried right now?
@@ -74,7 +74,7 @@ export function SiteHeader() {
               </Link>
             ))}
             <Link
-              to="/help"
+              to="/help/"
               onClick={() => setOpen(false)}
               className="mt-4 inline-flex items-center justify-center rounded-full bg-foreground px-4 py-3 text-sm font-medium text-background"
             >

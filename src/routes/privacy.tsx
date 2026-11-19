@@ -29,6 +29,6 @@ function Privacy() {
     <h2 className="mt-10 font-display text-2xl">Contact details</h2>
     <p className="mt-4">Thomas Tinker owns this site. The website contact is for technical problems, broken links and content corrections only.</p>
     <WebsiteSupportNotice />
-    <p className="mt-6"><Link to="/help" className="underline underline-offset-4">Get help with a safety concern</Link></p>
+    <p className="mt-6"><Link to="/help/" className="underline underline-offset-4">Get help with a safety concern</Link></p>
   </article>;
 }

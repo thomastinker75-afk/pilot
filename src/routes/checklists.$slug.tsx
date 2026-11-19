@@ -42,7 +42,7 @@ export const Route = createFileRoute("/checklists/$slug")({
   notFoundComponent: () => (
     <div className="mx-auto max-w-3xl px-5 py-24 text-center">
       <h1 className="font-display text-4xl">Checklist not found</h1>
-      <Link to="/checklists" className="mt-6 inline-block text-primary">
+      <Link to="/checklists/" className="mt-6 inline-block text-primary">
         All checklists
       </Link>
     </div>
@@ -57,7 +57,7 @@ function ChecklistDetail() {
   return (
     <article className="mx-auto max-w-4xl px-5 py-12 md:px-8 md:py-20">
       <Link
-        to="/checklists"
+        to="/checklists/"
         className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
       >
         <ArrowLeft className="size-4" /> All checklists
@@ -262,7 +262,7 @@ function ChecklistDetail() {
       <GuideNextSteps kind="checklist" slug={c.slug} />
       <footer className="mt-20">
         <Link
-          to="/checklists"
+          to="/checklists/"
           className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
         >
           <ArrowLeft className="size-4" /> Back to all checklists

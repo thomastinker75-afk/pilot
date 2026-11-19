@@ -47,7 +47,7 @@ export const Route = createFileRoute("/apps/$slug")({
   notFoundComponent: () => (
     <div className="mx-auto max-w-3xl px-5 py-24 text-center">
       <h1 className="font-display text-4xl">App not found</h1>
-      <Link to="/apps" className="mt-6 inline-block text-primary underline">
+      <Link to="/apps/" className="mt-6 inline-block text-primary underline">
         Back to all apps
       </Link>
     </div>
@@ -73,7 +73,7 @@ function AppDetail() {
   return (
     <div className="mx-auto max-w-4xl px-5 py-16 md:px-8 md:py-24">
       <Link
-        to="/apps"
+        to="/apps/"
         className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground"
       >
         <ArrowLeft className="size-4" /> All apps & games
@@ -161,8 +161,8 @@ function AppDetail() {
         aria-label="Related help"
         className="mt-8 flex flex-wrap gap-5 text-sm font-semibold underline underline-offset-4"
       >
-        <Link to="/checklists">Device and privacy setup checklists</Link>
-        <Link to="/help">Help with an immediate concern</Link>
+        <Link to="/checklists/">Device and privacy setup checklists</Link>
+        <Link to="/help/">Help with an immediate concern</Link>
       </nav>
       <hr className="rule my-12" />
 

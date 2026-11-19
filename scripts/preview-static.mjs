@@ -5,6 +5,17 @@ import { resolve, extname, sep } from "node:path";
 const root = resolve("dist/client");
 const basePath = JSON.parse(readFileSync(".static-build.json", "utf8")).basePath ?? "/";
 const port = Number(process.env.PORT || 4173);
+const redirects = new Map(
+  readFileSync(`${root}/_redirects`, "utf8")
+    .trim()
+    .split(/\r?\n/)
+    .filter(Boolean)
+    .map((line) => {
+      const [source, destination, status] = line.split(/\s+/);
+      if (status !== "308") throw new Error("Unexpected preview redirect status");
+      return [source, destination];
+    }),
+);
 const types = {
   ".html": "text/html; charset=utf-8",
   ".js": "text/javascript",
@@ -32,8 +43,10 @@ createServer((request, response) => {
     response.end();
     return;
   }
-  if (basePath !== "/" && pathname === basePath.slice(0, -1)) {
-    response.writeHead(302, { location: basePath });
+  if (redirects.has(pathname)) {
+    response.writeHead(308, {
+      location: redirects.get(pathname) + new URL(request.url, "http://localhost").search,
+    });
     response.end();
     return;
   }

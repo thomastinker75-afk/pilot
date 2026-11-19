@@ -47,7 +47,7 @@ function Checklists() {
                 {c.sections ? `${c.sections.length}-part full walkthrough with official tutorials` : "Quick setup — under 5 minutes."}
               </p>
               <Link
-                to="/checklists/$slug"
+                to="/checklists/$slug/"
                 params={{ slug: c.slug }}
                 className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90"
               >
