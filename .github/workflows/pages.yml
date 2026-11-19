@@ -23,6 +23,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run typecheck
+      - run: node --test scripts/test-analytics-consent.mjs
       - run: node --test scripts/test-slang-explainer.mjs
       - run: node scripts/check-factual-review.mjs
       - run: npm run build

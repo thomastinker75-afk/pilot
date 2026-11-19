@@ -4,7 +4,7 @@ import { Link } from "@tanstack/react-router";
 const measurementId = "G-Q4PSPWFXKX";
 const preferenceKey = "pts-analytics-consent";
 type AnalyticsWindow = Window & {
-  dataLayer?: unknown[][];
+  dataLayer?: unknown[];
   gtag?: (...args: unknown[]) => void;
 };
 
@@ -12,7 +12,10 @@ function startAnalytics() {
   const target = window as AnalyticsWindow;
   if (target.gtag) return;
   target.dataLayer = target.dataLayer || [];
-  target.gtag = (...args) => target.dataLayer!.push(args);
+  // Google processes gtag commands as Arguments objects, not JavaScript arrays.
+  target.gtag = function (..._args: unknown[]) {
+    target.dataLayer!.push(arguments);
+  };
   target.gtag("consent", "default", {
     analytics_storage: "granted",
     ad_storage: "denied",
