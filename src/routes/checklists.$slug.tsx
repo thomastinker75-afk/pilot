@@ -1,4 +1,6 @@
 import { GuideNextSteps } from "@/components/GuideNextSteps";
+import { GuideEditorial } from "@/components/GuideEditorial";
+import { CHECKLIST_EDITORIAL } from "@/content/guide-editorial";
 import { GuideReview } from "@/components/GuideReview";
 import { GUIDE_UPDATES } from "@/content/guide-updates";
 import { YouTubeVideo } from "@/components/YouTubeVideo";
@@ -21,19 +23,18 @@ export const Route = createFileRoute("/checklists/$slug")({
   head: ({ params }) => {
     const c = CHECKLISTS.find((x) => x.slug === params.slug);
     if (!c) return { meta: [{ title: "Checklist not found" }] };
+    const guide = GUIDE_UPDATES[c.slug] ?? CHECKLIST_EDITORIAL[c.slug];
     return {
       meta: [
         {
-          title:
-            GUIDE_UPDATES[c.slug]?.title ??
-            `${GUIDE_UPDATES[c.slug]?.title ?? c.title} — step-by-step`,
+          title: guide?.title ?? `${c.title} — step-by-step`,
         },
-        { name: "description", content: GUIDE_UPDATES[c.slug]?.description ?? c.summary },
+        { name: "description", content: guide?.description ?? c.summary },
         {
           property: "og:title",
-          content: GUIDE_UPDATES[c.slug]?.title ?? `${c.title} — step-by-step`,
+          content: guide?.title ?? `${c.title} — step-by-step`,
         },
-        { property: "og:description", content: GUIDE_UPDATES[c.slug]?.description ?? c.summary },
+        { property: "og:description", content: guide?.description ?? c.summary },
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary" },
       ],
@@ -53,6 +54,7 @@ function ChecklistDetail() {
   const { slug } = Route.useParams();
   const c = CHECKLISTS.find((x) => x.slug === slug);
   if (!c) throw notFound();
+  const editorial = CHECKLIST_EDITORIAL[slug];
 
   return (
     <article className="mx-auto max-w-4xl px-5 py-12 md:px-8 md:py-20">
@@ -71,12 +73,21 @@ function ChecklistDetail() {
           <p className="eyebrow !mt-0">Check the current settings on your device</p>
         </div>
         <h1 className="mt-4 font-display text-4xl leading-tight tracking-tight md:text-5xl">
-          {c.title}
+          {GUIDE_UPDATES[slug]?.title ?? editorial?.title ?? c.title}
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">{c.summary}</p>
         {c.overview && <p className="mt-4 max-w-2xl text-base leading-relaxed">{c.overview}</p>}
       </header>
 
+      {editorial && !GUIDE_UPDATES[slug] && (
+        <GuideEditorial
+          guide={editorial}
+          path={`/checklists/${slug}/`}
+          category="Checklists"
+          categoryPath="/checklists/"
+          scope="Use the current official setup instructions alongside this checklist. Menus and available controls depend on your child’s account, device and software version."
+        />
+      )}
       {GUIDE_UPDATES[c.slug] && (
         <GuideReview
           guide={GUIDE_UPDATES[c.slug]}

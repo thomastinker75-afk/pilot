@@ -1200,26 +1200,16 @@ export const APPS: AppGuide[] = [
       ],
       "videoTutorials": [
         {
-          "title": "Search: WhatsApp privacy & group settings walkthrough",
-          "channel": "YouTube search results — check the uploader and date",
-          "url": "https://www.youtube.com/results?search_query=WhatsApp+privacy+settings+how+to"
-        },
-        {
-          "title": "Search: WhatsApp for parents — what you need to know",
-          "channel": "YouTube search results — check the uploader and date",
-          "url": "https://www.youtube.com/results?search_query=Internet+Matters+WhatsApp+parents+guide"
-        },
-        {
-          "title": "Search: Two-step verification on WhatsApp",
-          "channel": "YouTube search results — check the uploader and date",
-          "url": "https://www.youtube.com/results?search_query=WhatsApp+two+step+verification+setup"
+          "title": "Parental controls for parent-managed accounts on WhatsApp",
+          "channel": "WhatsApp — official channel · 11 March 2026",
+          "url": "https://www.youtube.com/watch?v=Tan9jBmKIjI"
         }
       ],
       "riskVideo": {
-        "title": "Parental controls for messaging & devices — real advice from a mum of two",
-        "channel": "Internet Matters",
-        "youtubeId": "zplUsBQeV_8",
-        "note": "Covers messaging-app risks including WhatsApp group chats."
+        "title": "Parental controls for parent-managed accounts on WhatsApp",
+        "channel": "WhatsApp · official tutorial · 11 March 2026",
+        "youtubeId": "Tan9jBmKIjI",
+        "note": "WhatsApp’s own walkthrough of contact and group permissions, privacy settings and activity notifications for parent-managed accounts. These controls depend on account type and availability; they are not the settings for every independent teen account. Tutorial source checked 19 November 2026."
       }
     }
   },

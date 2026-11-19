@@ -1,4 +1,6 @@
 import { GuideNextSteps } from "@/components/GuideNextSteps";
+import { GuideEditorial } from "@/components/GuideEditorial";
+import { AGE_EDITORIAL } from "@/content/guide-editorial";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { AGE_BANDS, type ScreenTimeGuidance, type ExpertResource } from "@/content/data";
 import {
@@ -15,10 +17,14 @@ export const Route = createFileRoute("/age-guides/$age")({
   head: ({ params }) => {
     const band = AGE_BANDS.find((a) => a.slug === params.age);
     if (!band) return { meta: [{ title: "Age guide not found" }] };
+    const guide = AGE_EDITORIAL[band.slug];
     return {
       meta: [
-        { title: `Online safety for ages ${band.range} — ${band.headline}` },
-        { name: "description", content: band.summary },
+        { title: guide.title },
+        { name: "description", content: guide.description },
+        { property: "og:title", content: guide.title },
+        { property: "og:description", content: guide.description },
+        { property: "og:type", content: "article" },
       ],
     };
   },
@@ -49,13 +55,20 @@ function AgeGuide() {
       <header className="mt-8">
         <p className="eyebrow">Ages {band.range}</p>
         <h1 className="mt-4 font-display text-5xl leading-tight tracking-tight md:text-6xl">
-          Screen time and online safety for ages {band.range}
+          {AGE_EDITORIAL[age].title}
         </h1>
         <p className="mt-5 max-w-2xl text-xl leading-relaxed text-muted-foreground">
           {band.summary}
         </p>
       </header>
 
+      <GuideEditorial
+        guide={AGE_EDITORIAL[age]}
+        path={`/age-guides/${age}/`}
+        category="Age guides"
+        categoryPath="/age-guides/"
+        scope="These are parenting prompts for this age range, not permission to use every app mentioned. Check each service’s account rules separately. Screen-time sources and research are dated in the guidance below."
+      />
       <div className="mt-14 space-y-12">
         {age === "0-4" && (
           <p className="text-sm text-muted-foreground">

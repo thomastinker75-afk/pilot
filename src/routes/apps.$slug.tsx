@@ -1,4 +1,6 @@
 import { GuideNextSteps } from "@/components/GuideNextSteps";
+import { GuideEditorial } from "@/components/GuideEditorial";
+import { APP_EDITORIAL } from "@/content/guide-editorial";
 import { GuideReview } from "@/components/GuideReview";
 import { GUIDE_UPDATES } from "@/content/guide-updates";
 import { YouTubeVideo } from "@/components/YouTubeVideo";
@@ -26,7 +28,7 @@ export const Route = createFileRoute("/apps/$slug")({
   },
   head: ({ loaderData }) => {
     const app = loaderData?.app;
-    const update = app ? GUIDE_UPDATES[app.slug] : undefined;
+    const update = app ? (GUIDE_UPDATES[app.slug] ?? APP_EDITORIAL[app.slug]) : undefined;
     const title =
       update?.title ??
       (app ? `${app.name} for parents — why ${app.minAge}, real risks & evidence` : "App guide");
@@ -69,6 +71,7 @@ function evidenceIcon(t: Evidence["type"]) {
 function AppDetail() {
   const { app } = Route.useLoaderData() as { app: AppGuide };
   const update = GUIDE_UPDATES[app.slug];
+  const editorial = APP_EDITORIAL[app.slug];
 
   return (
     <div className="mx-auto max-w-4xl px-5 py-16 md:px-8 md:py-24">
@@ -80,12 +83,9 @@ function AppDetail() {
       </Link>
 
       <header className="mt-8">
-        <p className="eyebrow">
-          {app.category} ·{" "}
-          {update ? "Age rating and account permissions" : `Minimum age ${app.minAge}`}
-        </p>
+        <p className="eyebrow">{app.category} · Age rules, content and account permissions</p>
         <h1 className="mt-3 font-display text-5xl leading-tight tracking-tight md:text-6xl">
-          {update?.title ?? `${app.name}: a guide for parents`}
+          {update?.title ?? editorial?.title ?? `${app.name}: a guide for parents`}
         </h1>
         <p className="mt-5 max-w-2xl text-lg text-muted-foreground">{app.detail.overview}</p>
 
@@ -120,6 +120,15 @@ function AppDetail() {
         </dl>
       </header>
 
+      {editorial && !update && (
+        <GuideEditorial
+          guide={editorial}
+          path={`/apps/${app.slug}/`}
+          category="Apps & games"
+          categoryPath="/apps/"
+          scope={`Account minimums, content ratings and suitability are different decisions. Existing policy summary: ${app.lastCheckedUK}. Follow the linked current guidance for settings.`}
+        />
+      )}
       {update && (
         <GuideReview
           guide={update}
@@ -167,7 +176,7 @@ function AppDetail() {
       <hr className="rule my-12" />
 
       <section>
-        <p className="eyebrow">Why {app.minAge}?</p>
+        <p className="eyebrow">Account eligibility and suitability</p>
         <h2 className="mt-3 font-display text-3xl tracking-tight">The age limit, explained</h2>
         <p className="mt-4 text-muted-foreground">{app.detail.ageRationale}</p>
       </section>
