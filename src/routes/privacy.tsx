@@ -7,7 +7,7 @@ export const Route = createFileRoute("/privacy")({
 function Privacy() {
   const hostingProvider = import.meta.env.VITE_HOSTING_PROVIDER === "cloudflare" ? "Cloudflare" : "GitHub Pages";
   return <article className="mx-auto max-w-3xl px-5 py-16 md:px-8">
-    <p className="eyebrow">Updated 12 October 2026</p>
+    <p className="eyebrow">Updated 19 November 2026</p>
     <h1 className="mt-4 font-display text-5xl">Privacy on this site</h1>
       <h2 className="mt-10 font-display text-2xl">Optional analytics</h2>
       <p className="mt-4">
@@ -18,6 +18,12 @@ function Privacy() {
         Your choice is saved on this device. Use Analytics settings in the footer to change it
         or withdraw consent. Rejecting analytics does not restrict access to any page.
         Text entered in the message tools is not included in our analytics events.
+      </p>
+      <p className="mt-4">
+        We also measure when a visitor opens a setup checklist from a guide or opens an embedded
+        tutorial. These events use public guide paths and checklist or tutorial identifiers;
+        they do not include message text, names or help choices. Opening a checklist does not
+        mean the setup tasks have been completed.
       </p>
       <p className="mt-4"><a className="underline" href="https://policies.google.com/privacy">Google’s privacy policy</a></p>
     <h2 className="mt-10 font-display text-2xl">Messages stay in your browser</h2>

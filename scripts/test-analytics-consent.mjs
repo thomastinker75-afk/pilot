@@ -52,6 +52,7 @@ test('no Google script or commands before consent, or after initial rejection', 
 });
 test('acceptance queues valid Google Arguments commands before loading the tag', () => {
   const s = session(); s.render(); s.choose('Accept analytics');
+  assert.equal(s.window.ptsAnalyticsGranted, true);
   assert.equal(s.scripts.length, 1); assert.match(s.scripts[0].src, /id=G-Q4PSPWFXKX$/);
   assert.equal(s.scripts[0].async, true);
   const queue = s.window.dataLayer;
@@ -71,6 +72,7 @@ test('returning consent and reopening settings do not initialise tracking twice'
 });
 test('withdrawing consent clears Analytics cookies, reloads, and stays off next visit', () => {
   const s = session({ preference: 'accepted' }); s.render(); s.listeners.get('pts-open-analytics')(); s.choose('Reject analytics');
+  assert.equal(s.window.ptsAnalyticsGranted, false);
   assert.equal(s.values.get('pts-analytics-consent'), 'rejected'); assert.equal(s.reloads(), 1);
   assert(s.cookieWrites.some(value => value.startsWith('_ga=;'))); assert(s.cookieWrites.some(value => value.startsWith('_ga_Q4PSPWFXKX=;')));
   assert(s.cookieWrites.every(value => !value.startsWith('unrelated=')));

@@ -25,6 +25,7 @@ jobs:
       - run: npm run typecheck
       - run: node --test scripts/test-canonical-redirects.mjs
       - run: node --test scripts/test-analytics-consent.mjs
+      - run: node --test scripts/test-guide-analytics.mjs
       - run: node --test scripts/test-slang-explainer.mjs
       - run: node scripts/check-factual-review.mjs
       - run: npm run build

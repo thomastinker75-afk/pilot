@@ -4,12 +4,14 @@ import { Link } from "@tanstack/react-router";
 const measurementId = "G-Q4PSPWFXKX";
 const preferenceKey = "pts-analytics-consent";
 type AnalyticsWindow = Window & {
+  ptsAnalyticsGranted?: boolean;
   dataLayer?: unknown[];
   gtag?: (...args: unknown[]) => void;
 };
 
 function startAnalytics() {
   const target = window as AnalyticsWindow;
+  target.ptsAnalyticsGranted = true;
   if (target.gtag) return;
   target.dataLayer = target.dataLayer || [];
   // Google processes gtag commands as Arguments objects, not JavaScript arrays.
@@ -49,6 +51,7 @@ export function AnalyticsConsent() {
   }, []);
 
   function choose(accepted: boolean) {
+    (window as AnalyticsWindow).ptsAnalyticsGranted = accepted;
     try { localStorage.setItem(preferenceKey, accepted ? "accepted" : "rejected"); } catch { /* Choice still applies to this page. */ }
     setVisible(false);
     if (accepted) startAnalytics();

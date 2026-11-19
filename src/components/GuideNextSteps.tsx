@@ -1,6 +1,7 @@
 import { AGE_BANDS, APPS, CHECKLISTS } from "@/content/data";
 import { AGE_JOURNEYS, CHECKLIST_JOURNEYS } from "@/content/guide-journeys";
 import { publicPath } from "@/lib/public-path";
+import { trackGuideToChecklist } from "@/lib/guide-analytics";
 
 type Props = { kind: "age" | "app" | "checklist"; slug: string };
 export function GuideNextSteps({ kind, slug }: Props) {
@@ -75,6 +76,10 @@ export function GuideNextSteps({ kind, slug }: Props) {
                 <li key={item.href}>
                   <a
                     href={publicPath(item.href)}
+                    onClick={() => trackGuideToChecklist(
+                      `/${kind === "age" ? "age-guides" : kind === "app" ? "apps" : "checklists"}/${slug}/`,
+                      item.href,
+                    )}
                     className="group block h-full rounded-xl border border-border bg-card p-4 transition-colors hover:border-primary/50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
                   >
                     <span className="font-semibold text-primary group-hover:underline">

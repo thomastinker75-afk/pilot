@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
 import { publicPath } from "@/lib/public-path";
+import { trackTutorialOpen } from "@/lib/guide-analytics";
 
 type VideoProps = { id: string; title: string; start?: number };
 
@@ -20,7 +21,7 @@ function YouTubePlayer({ id, title, start = 0 }: VideoProps) {
         {loaded ? (
           <iframe className="absolute inset-0 h-full w-full" src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1${start ? `&start=${start}` : ""}`} title={title} referrerPolicy="strict-origin-when-cross-origin" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" onLoad={(event) => event.currentTarget.focus()} allowFullScreen />
         ) : (
-          <button type="button" onClick={() => setLoaded(true)} className="group absolute inset-0 flex h-full w-full items-center justify-center overflow-hidden bg-foreground focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-inset focus-visible:ring-white" aria-label={`Play video: ${title}`}>
+          <button type="button" onClick={() => { trackTutorialOpen(id); setLoaded(true); }} className="group absolute inset-0 flex h-full w-full items-center justify-center overflow-hidden bg-foreground focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-inset focus-visible:ring-white" aria-label={`Play video: ${title}`}>
             {!posterFailed && <img ref={(element) => { if (element?.complete && element.naturalWidth === 0) setPosterFailed(true); }} src={publicPath(`/media/video-posters/${id}.jpg`)} alt="" width="480" height="360" loading="lazy" decoding="async" onError={() => setPosterFailed(true)} className="absolute inset-0 h-full w-full object-cover opacity-80 group-hover:opacity-100" />}
             <span className="relative flex items-center gap-2 rounded-full bg-black/90 px-5 py-3 text-sm font-semibold text-white shadow-lg"><Play className="size-5 fill-current" aria-hidden="true" /> Play video</span>
             {posterFailed && <span className="absolute inset-x-3 top-3 line-clamp-2 text-sm text-white">{title}</span>}
