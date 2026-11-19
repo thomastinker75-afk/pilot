@@ -1,3 +1,4 @@
+import { GuideNextSteps } from "@/components/GuideNextSteps";
 import { GuideReview } from "@/components/GuideReview";
 import { GUIDE_UPDATES } from "@/content/guide-updates";
 import { YouTubeVideo } from "@/components/YouTubeVideo";
@@ -258,6 +259,7 @@ function ChecklistDetail() {
         </section>
       )}
 
+      <GuideNextSteps kind="checklist" slug={c.slug} />
       <footer className="mt-20">
         <Link
           to="/checklists"

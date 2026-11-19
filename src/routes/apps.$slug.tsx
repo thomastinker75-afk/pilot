@@ -1,3 +1,4 @@
+import { GuideNextSteps } from "@/components/GuideNextSteps";
 import { GuideReview } from "@/components/GuideReview";
 import { GUIDE_UPDATES } from "@/content/guide-updates";
 import { YouTubeVideo } from "@/components/YouTubeVideo";
@@ -305,6 +306,7 @@ function AppDetail() {
         </div>
       </section>
 
+      <GuideNextSteps kind="app" slug={app.slug} />
       <p className="mt-16 text-xs text-muted-foreground">
         Platform controls and guidance can change. Follow the official links for current
         instructions; the About page explains which checks have been completed.

@@ -1,5 +1,14 @@
+import { publicPath } from "@/lib/public-path";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, ShieldCheck, MessageSquare, Smartphone, Gamepad2, Sparkles, AlertTriangle } from "lucide-react";
+import {
+  ArrowUpRight,
+  ShieldCheck,
+  MessageSquare,
+  Smartphone,
+  Gamepad2,
+  Sparkles,
+  AlertTriangle,
+} from "lucide-react";
 import { AGE_BANDS, APPS, GLOSSARY } from "@/content/data";
 
 export const Route = createFileRoute("/")({
@@ -7,7 +16,11 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Parent Tech Safety — Online safety guidance for parents" },
-      { name: "description", content: "Plain-English, age-based online safety advice for parents: apps, games, slang, screen time, and the phone settings worth checking tonight." },
+      {
+        name: "description",
+        content:
+          "Plain-English, age-based online safety advice for parents: apps, games, slang, screen time, and the phone settings worth checking tonight.",
+      },
     ],
   }),
 });
@@ -30,9 +43,9 @@ function Home() {
             <br className="hidden md:block" /> before it becomes a problem.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            A trusted, plain-English hub for parents and carers. Age-based guidance,
-            app and game explainers, slang you don’t recognise, and the phone
-            settings worth checking tonight — without the panic.
+            A trusted, plain-English hub for parents and carers. Age-based guidance, app and game
+            explainers, slang you don’t recognise, and the phone settings worth checking tonight —
+            without the panic.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
@@ -60,8 +73,7 @@ function Home() {
               If you’ve just found something on your child’s phone, take a breath.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
-              Don’t delete anything. Don’t shout. We’ll walk you through the next
-              hour.
+              Don’t delete anything. Don’t shout. We’ll walk you through the next hour.
             </p>
             <Link
               to="/help"
@@ -112,7 +124,10 @@ function Home() {
               Pick a year. Get a plan.
             </h2>
           </div>
-          <Link to="/age-guides" className="hidden text-sm font-medium text-primary hover:underline md:block">
+          <Link
+            to="/age-guides"
+            className="hidden text-sm font-medium text-primary hover:underline md:block"
+          >
             All age guides →
           </Link>
         </div>
@@ -151,22 +166,35 @@ function Home() {
               The platforms in your child’s pocket.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Each guide covers the minimum age, why kids use it, the real risks,
-              and settings to review.
+              Each guide covers the minimum age, why kids use it, the real risks, and settings to
+              review.
             </p>
-            <Link to="/apps" className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all">
+            <Link
+              to="/apps"
+              className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"
+            >
               All app guides <ArrowUpRight className="size-4" />
             </Link>
           </div>
           <div className="md:col-span-8">
             <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
               {APPS.slice(0, 6).map((a) => (
-                <div key={a.slug} className="flex items-start gap-4 bg-card p-5">
+                <a
+                  key={a.slug}
+                  href={publicPath(`/apps/${a.slug}/`)}
+                  aria-label={`Read the ${a.name} parent guide`}
+                  className="group flex items-start gap-4 bg-card p-5 transition-colors hover:bg-secondary/60 focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-primary"
+                >
                   <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-secondary text-primary">
-                    {a.category === "Game" ? <Gamepad2 className="size-5" /> :
-                     a.category === "Messaging" ? <MessageSquare className="size-5" /> :
-                     a.category === "Video" ? <Sparkles className="size-5" /> :
-                     <Smartphone className="size-5" />}
+                    {a.category === "Game" ? (
+                      <Gamepad2 className="size-5" />
+                    ) : a.category === "Messaging" ? (
+                      <MessageSquare className="size-5" />
+                    ) : a.category === "Video" ? (
+                      <Sparkles className="size-5" />
+                    ) : (
+                      <Smartphone className="size-5" />
+                    )}
                   </span>
                   <div>
                     <div className="flex items-baseline gap-2">
@@ -174,8 +202,9 @@ function Home() {
                       <p className="text-xs text-muted-foreground">{a.minAge}</p>
                     </div>
                     <p className="mt-1 text-sm text-muted-foreground line-clamp-2">{a.why}</p>
+                    <p className="mt-3 text-xs font-semibold text-primary group-hover:underline">Read parent guide →</p>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -193,18 +222,26 @@ function Home() {
               Slang, acronyms, emoji.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              We tell you what a term <em>can</em> mean — and when it’s worth a
-              calm conversation rather than a confiscation.
+              We tell you what a term <em>can</em> mean — and when it’s worth a calm conversation
+              rather than a confiscation.
             </p>
-            <Link to="/glossary" className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all">
+            <Link
+              to="/glossary"
+              className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"
+            >
               Open the glossary <ArrowUpRight className="size-4" />
             </Link>
           </div>
           <ul className="md:col-span-7 divide-y divide-border rounded-2xl border border-border bg-card">
             {GLOSSARY.slice(0, 5).map((g) => (
-              <li key={g.term} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 p-4 sm:flex sm:gap-4">
+              <li
+                key={g.term}
+                className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 p-4 sm:flex sm:gap-4"
+              >
                 <p className="shrink-0 font-display text-lg font-semibold sm:w-24">{g.term}</p>
-                <p className="col-span-2 row-start-2 min-w-0 text-sm text-muted-foreground sm:flex-1">{g.meaning}</p>
+                <p className="col-span-2 row-start-2 min-w-0 text-sm text-muted-foreground sm:flex-1">
+                  {g.meaning}
+                </p>
                 <RiskPill level={g.riskLevel} />
               </li>
             ))}
@@ -215,7 +252,15 @@ function Home() {
   );
 }
 
-function ColumnList({ title, items, accent = false }: { title: string; items: string[]; accent?: boolean }) {
+function ColumnList({
+  title,
+  items,
+  accent = false,
+}: {
+  title: string;
+  items: string[];
+  accent?: boolean;
+}) {
   return (
     <div className={`rounded-2xl border border-border p-5 ${accent ? "bg-secondary" : "bg-card"}`}>
       <p className="eyebrow">{title}</p>
@@ -236,7 +281,11 @@ export function RiskPill({ level }: { level: "Usually fine" | "Worth a chat" | "
     level === "Usually fine"
       ? "bg-secondary text-secondary-foreground"
       : level === "Worth a chat"
-      ? "bg-accent text-accent-foreground"
-      : "bg-destructive/10 text-destructive";
-  return <span className={`shrink-0 rounded-full px-2.5 py-1 text-[0.68rem] font-semibold ${tone}`}>{level}</span>;
+        ? "bg-accent text-accent-foreground"
+        : "bg-destructive/10 text-destructive";
+  return (
+    <span className={`shrink-0 rounded-full px-2.5 py-1 text-[0.68rem] font-semibold ${tone}`}>
+      {level}
+    </span>
+  );
 }

@@ -1,7 +1,14 @@
+import { GuideNextSteps } from "@/components/GuideNextSteps";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { AGE_BANDS, type ScreenTimeGuidance, type ExpertResource } from "@/content/data";
-import { ArrowLeft, Clock, AlertTriangle, BookOpen, ExternalLink, GraduationCap } from "lucide-react";
-
+import {
+  ArrowLeft,
+  Clock,
+  AlertTriangle,
+  BookOpen,
+  ExternalLink,
+  GraduationCap,
+} from "lucide-react";
 
 export const Route = createFileRoute("/age-guides/$age")({
   component: AgeGuide,
@@ -18,7 +25,9 @@ export const Route = createFileRoute("/age-guides/$age")({
   notFoundComponent: () => (
     <div className="mx-auto max-w-3xl px-5 py-24 text-center">
       <h1 className="font-display text-4xl">Guide not found</h1>
-      <Link to="/age-guides" className="mt-6 inline-block text-primary">All age guides</Link>
+      <Link to="/age-guides" className="mt-6 inline-block text-primary">
+        All age guides
+      </Link>
     </div>
   ),
 });
@@ -30,7 +39,10 @@ function AgeGuide() {
 
   return (
     <article className="mx-auto max-w-4xl px-5 py-12 md:px-8 md:py-20">
-      <Link to="/age-guides" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground">
+      <Link
+        to="/age-guides"
+        className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
+      >
         <ArrowLeft className="size-4" /> All age guides
       </Link>
 
@@ -45,23 +57,29 @@ function AgeGuide() {
       </header>
 
       <div className="mt-14 space-y-12">
-        {age === "0-4" && <p className="text-sm text-muted-foreground">Screen-time recommendations and selected research references checked 21 September 2026. Other guidance is general parenting advice.</p>}
+        {age === "0-4" && (
+          <p className="text-sm text-muted-foreground">
+            Screen-time recommendations and selected research references checked 21 September 2026.
+            Other guidance is general parenting advice.
+          </p>
+        )}
         <ScreenTimeBlock data={band.screenTime} />
         <Section title="Typical digital behaviours" items={band.behaviours} />
         <Section title="Risks that actually matter" items={band.risks} accent="danger" />
         <Section title="Settings worth changing tonight" items={band.settings} accent="action" />
+        <GuideNextSteps kind="age" slug={age} />
         <Section title="How to talk about it" items={band.conversation} />
         <Section title="Red flags worth investigating" items={band.redFlags} accent="danger" />
         <DeepDive items={band.deepDive} />
-
       </div>
 
       <footer className="mt-20 rounded-2xl border border-border bg-secondary p-7">
         <p className="eyebrow">Need a hand?</p>
-        <p className="mt-3 font-display text-2xl">
-          Worried about something specific you’ve found?
-        </p>
-        <Link to="/help" className="mt-4 inline-flex rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background">
+        <p className="mt-3 font-display text-2xl">Worried about something specific you’ve found?</p>
+        <Link
+          to="/help"
+          className="mt-4 inline-flex rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background"
+        >
           Open the get-help guide
         </Link>
       </footer>
@@ -69,9 +87,21 @@ function AgeGuide() {
   );
 }
 
-function Section({ title, items, accent }: { title: string; items: string[]; accent?: "danger" | "action" }) {
+function Section({
+  title,
+  items,
+  accent,
+}: {
+  title: string;
+  items: string[];
+  accent?: "danger" | "action";
+}) {
   const dot =
-    accent === "danger" ? "bg-destructive" : accent === "action" ? "bg-primary" : "bg-foreground/60";
+    accent === "danger"
+      ? "bg-destructive"
+      : accent === "action"
+        ? "bg-primary"
+        : "bg-foreground/60";
   return (
     <section>
       <h2 className="font-display text-2xl tracking-tight">{title}</h2>
@@ -94,9 +124,7 @@ function ScreenTimeBlock({ data }: { data: ScreenTimeGuidance }) {
         <Clock className="size-4" />
         <p className="eyebrow !text-primary">Screen time — what experts recommend</p>
       </div>
-      <p className="mt-4 font-display text-2xl leading-snug tracking-tight">
-        {data.recommended}
-      </p>
+      <p className="mt-4 font-display text-2xl leading-snug tracking-tight">{data.recommended}</p>
       {data.ukContext && (
         <p className="mt-3 rounded-xl border border-border bg-background/60 p-4 text-sm leading-relaxed text-muted-foreground">
           <span className="font-medium text-foreground">UK context: </span>
@@ -104,7 +132,8 @@ function ScreenTimeBlock({ data }: { data: ScreenTimeGuidance }) {
         </p>
       )}
       <p className="mt-2 text-sm text-muted-foreground">
-        Total time across phone, tablet, TV, console and computer combined (school work usually excluded).
+        Total time across phone, tablet, TV, console and computer combined (school work usually
+        excluded).
       </p>
 
       <div className="mt-7 grid gap-7 md:grid-cols-2">
@@ -170,7 +199,8 @@ function DeepDive({ items }: { items: ExpertResource[] }) {
         Studies, guidance and background reading
       </h2>
       <p className="mt-2 text-sm text-muted-foreground">
-        Hand-picked from paediatricians, regulators, academic journals and investigative reporting around the world. Open in a new tab.
+        Hand-picked from paediatricians, regulators, academic journals and investigative reporting
+        around the world. Open in a new tab.
       </p>
       <ul className="mt-6 divide-y divide-border">
         {items.map((r) => (
@@ -181,17 +211,23 @@ function DeepDive({ items }: { items: ExpertResource[] }) {
               rel="noopener noreferrer"
               className="group flex items-start gap-4"
             >
-              <span className={`mt-0.5 shrink-0 rounded-full px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wide ${typeStyles[r.type]}`}>
+              <span
+                className={`mt-0.5 shrink-0 rounded-full px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wide ${typeStyles[r.type]}`}
+              >
                 {r.type}
               </span>
               <span className="min-w-0 flex-1">
                 <span className="flex items-start gap-1.5">
-                  <span className="font-medium leading-snug group-hover:text-primary">{r.title}</span>
+                  <span className="font-medium leading-snug group-hover:text-primary">
+                    {r.title}
+                  </span>
                   <ExternalLink className="mt-1 size-3.5 shrink-0 opacity-60 group-hover:opacity-100" />
                 </span>
                 <span className="mt-1 block text-xs text-muted-foreground">{r.source}</span>
                 {r.note && (
-                  <span className="mt-1.5 block text-sm leading-relaxed text-foreground/75">{r.note}</span>
+                  <span className="mt-1.5 block text-sm leading-relaxed text-foreground/75">
+                    {r.note}
+                  </span>
                 )}
               </span>
             </a>
