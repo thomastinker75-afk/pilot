@@ -1510,8 +1510,8 @@ export const APPS: AppGuide[] = [
       ],
       "settingsHowTo": [
         {
-          "label": "Twitch safety & privacy settings",
-          "url": "https://safety.twitch.tv/s/article/Guide-Personal-Safety-Settings"
+          "label": "Twitch: How to Manage Harassment in Chat",
+          "url": "https://help.twitch.tv/s/article/how-to-manage-harassment-in-chat?language=en_US"
         },
         {
           "label": "Internet Matters: Twitch guide",
@@ -1706,10 +1706,6 @@ export const APPS: AppGuide[] = [
         {
           "label": "X safety and privacy settings",
           "url": "https://help.x.com/en/safety-and-security"
-        },
-        {
-          "label": "Common Sense Media: X parent guide",
-          "url": "https://www.commonsensemedia.org/articles/parents-ultimate-guide-to-twitter-x"
         }
       ],
       "videoTutorials": [
