@@ -1,0 +1,451 @@
+{
+  "checkedAt": "2026-11-20T10:58:09.710Z",
+  "checks": [
+    {
+      "url": "https://www.internetmatters.org/hub/esafety-news/twitch-what-parents-need-to-know/",
+      "verdict": "404 confirmed",
+      "replacement": "https://www.internetmatters.org/advice/apps-and-platforms/entertainment/twitch/"
+    },
+    {
+      "url": "https://www.internetmatters.org/hub/news-blogs/what-is-telegram-app-what-parents-need-to-know/",
+      "final": "https://www.internetmatters.org/hub/news-blogs/what-is-telegram-app-what-parents-need-to-know/",
+      "headings": [
+        "  - generic: \"Error 404: Page not found\"",
+        "- heading \"404 – page not found\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://www.internetmatters.org/parental-controls/social-media/tiktok-privacy-and-safety-settings/",
+      "final": "https://www.internetmatters.org/parental-controls/social-media/tiktok-privacy-and-safety-settings/",
+      "headings": [
+        "- heading \"TikTok parental controls\" [level=1]",
+        "    - /url: \"#step-block-5f3519bba4404b7223929b5a284ba533\"",
+        "    - /url: \"#step-block-5f3519bba4404b7223929b5a284ba533\""
+      ]
+    },
+    {
+      "url": "https://www.internetmatters.org/hub/guidance/fortnite-battle-royale-parents-guide/",
+      "final": "https://www.internetmatters.org/hub/guidance/fortnite-battle-royale-parents-guide/",
+      "headings": [
+        "  - generic: \"Error 404: Page not found\"",
+        "- heading \"404 – page not found\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://www.internetmatters.org/parental-controls/gaming-consoles/roblox-parental-controls/",
+      "final": "https://www.internetmatters.org/parental-controls/gaming-consoles/roblox-parental-controls/",
+      "headings": [
+        "- heading \"Roblox parental controls\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://www.internetmatters.org/parental-controls/social-media/instagram-privacy-and-safety-settings/",
+      "final": "https://www.internetmatters.org/parental-controls/social-media/instagram-privacy-and-safety-settings/",
+      "headings": [
+        "  - generic: \"Error 404: Page not found\"",
+        "- heading \"404 – page not found\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://www.internetmatters.org/hub/esafety-news/yubo-app-what-parents-need-to-know/",
+      "final": "https://www.internetmatters.org/hub/esafety-news/yubo-app-what-parents-need-to-know/",
+      "headings": [
+        "  - generic: \"Error 404: Page not found\"",
+        "- heading \"404 – page not found\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://www.internetmatters.org/hub/esafety-news/bereal-app-what-parents-need-to-know/",
+      "final": "https://www.internetmatters.org/hub/esafety-news/bereal-app-what-parents-need-to-know/",
+      "headings": [
+        "  - generic: \"Error 404: Page not found\"",
+        "- heading \"404 – page not found\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://www.internetmatters.org/hub/guidance/minecraft-a-parents-guide/",
+      "final": "https://www.internetmatters.org/hub/guidance/minecraft-a-parents-guide/",
+      "headings": [
+        "  - generic: \"Error 404: Page not found\"",
+        "- heading \"404 – page not found\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users",
+      "final": "https://support.discord.com/hc/en-us/articles/33362401287959-How-Teens-Experience-Discord-in-the-UK",
+      "headings": [
+        "    - heading \"How Teens Experience Discord in the UK\" [level=1]",
+        "    - heading \"What Stays the Same\" [level=1]",
+        "    - heading \"What are the Additional Safety Protections\" [level=1]",
+        "    - heading \"Frequently Asked Questions\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Assurance-on-Discord",
+      "final": "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Confirm-Your-Age-Group-on-Discord",
+      "headings": [
+        "    - heading \"How to Confirm Your Age Group on Discord\" [level=1]",
+        "    - heading \"Before You Start\" [level=1]",
+        "    - 'heading \"Step 1: Go to User Settings > Account Status\" [level=1]'",
+        "    - 'heading \"Step 2: Choose a Method to Confirm Your Age Group\" [level=1]'"
+      ]
+    },
+    {
+      "url": "https://www.epicgames.com/site/en-US/parental-controls",
+      "final": "https://safety.epicgames.com/parental-controls",
+      "headings": [
+        "- heading \"Parental Controls\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://en.help.roblox.com/hc/en-us/articles/39143693116052-Understanding-Age-Checks-on-Roblox",
+      "final": "https://en.help.roblox.com/hc/en-us/articles/39143693116052-Understanding-Age-Checks-on-Roblox",
+      "headings": [
+        "    - heading \"Understanding Age Checks on Roblox\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://en.help.roblox.com/hc/en-us/articles/203313120-Parents-Safety-and-Moderation-Guide",
+      "final": "https://en.help.roblox.com/hc/en-us/articles/203313120-Safety-Features-Chat-Privacy-Filtering",
+      "headings": [
+        "    - 'heading \"Safety Features: Chat, Privacy & Filtering\" [level=1]'"
+      ]
+    },
+    {
+      "url": "https://help.x.com/en/rules-and-policies/age-assurance",
+      "final": "https://help.x.com/en/rules-and-policies/age-assurance",
+      "headings": [
+        "    - heading \"Age Assurance on >x<\" [level=1]:"
+      ]
+    },
+    {
+      "url": "https://help.x.com/en/safety-and-security",
+      "final": "https://help.x.com/en/safety-and-security",
+      "headings": [
+        "    - heading \"Safety and Security\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://www.yubo.live/legal/terms-of-service",
+      "final": "https://www.yubo.live/legal/terms-of-service",
+      "headings": [
+        "  - heading \"Legal\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://support.reddithelp.com/hc/en-us/articles/47163677520276-United-Kingdom-Online-Safety-Act",
+      "final": "https://support.reddithelp.com/hc/en-us/articles/47163677520276-United-Kingdom-Online-Safety-Act",
+      "headings": [
+        "  - 'heading \"United Kingdom: Online Safety Act\" [level=1]'"
+      ]
+    },
+    {
+      "url": "https://support.reddithelp.com/hc/en-us/articles/36429514849428-Why-is-Reddit-asking-for-my-age",
+      "final": "https://support.reddithelp.com/hc/en-us/articles/36429514849428-Why-is-Reddit-asking-for-my-age",
+      "headings": [
+        "  - heading \"Why is Reddit asking for my age?\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://support.reddithelp.com/hc/en-us/articles/35409604240020-UK-Online-Safety-Act-Information-for-UK-users",
+      "final": "https://support.reddithelp.com/hc/en-us/articles/35409604240020-UK-Online-Safety-Act-Information-for-UK-users",
+      "headings": [
+        "  - 'heading \"UK Online Safety Act: Information for UK users\" [level=1]'"
+      ]
+    },
+    {
+      "url": "https://support.reddithelp.com/hc/en-us/articles/360043068032",
+      "final": "https://support.reddithelp.com/hc/en-us/articles/360043068032",
+      "headings": [
+        "  - heading \"The page you were looking for doesn't exist\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://help.bereal.com/hc/en-us/categories/4406950928657-Safety-Privacy",
+      "final": "https://help.bereal.com/hc/en-us/categories/4406950928657-Safety-Privacy",
+      "headings": [
+        "  - heading \"We're here to help\" [level=1]",
+        "  - text: The page you were looking for doesn't exist"
+      ]
+    },
+    {
+      "url": "https://support.character.ai/hc/en-us/categories/50705410179995-Age-Assurance",
+      "final": "https://support.character.ai/hc/en-us/categories/50705410179995-Age-Assurance",
+      "headings": [
+        "  - heading \"Age Assurance\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://support.character.ai/hc/en-us/articles/51795669396763-What-is-Reading-Mode",
+      "final": "https://support.character.ai/hc/en-us/articles/51795669396763-What-is-Reading-Mode",
+      "headings": [
+        "    - heading \"What is Reading Mode?\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://support.character.ai/hc/en-us/articles/21704914723995-Safety-Center",
+      "final": "https://support.character.ai/hc/en-us/articles/21704914723995-Safety-Center",
+      "headings": [
+        "    - heading \"Safety Center\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://www.commonsensemedia.org/ai-ratings/social-ai-companions",
+      "final": "https://www.commonsensemedia.org/node/105559",
+      "headings": [
+        "  - heading \"Sign In\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://safety.yubo.live/",
+      "error": "Error: Browser Use cannot open https://safety.yubo.live in tab 56. Browser reported: net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "url": "https://www.net-aware.org.uk/networks/whatsapp/",
+      "error": "Error: Blocked browser navigation by Browser Use URL policy: data:text/html;charset=utf-8,%3C!DOCTYPE%20html%3E%0A%3Chtml%20dir%3D%22ltr%22%20lang%3D%22en-US%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20chars"
+    },
+    {
+      "url": "https://support.google.com/youtubekids/answer/10314940",
+      "final": "https://support.google.com/youtubekids/answer/10314940",
+      "headings": [
+        "    - heading \"What is a supervised kid account on YouTube?\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://support.google.com/youtubekids/answer/13877231?hl=en-GB",
+      "final": "https://support.google.com/youtubekids/answer/13877231?hl=en-GB",
+      "headings": [
+        "    - heading \"Parental controls and conversation topics for supervised kid accounts on YouTube\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://support.google.com/youtube/answer/10315823?hl=en",
+      "final": "https://support.google.com/youtube/answer/10315823?hl=en",
+      "headings": [
+        "    - heading \"Content settings for kids & teens on YouTube\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://faq.whatsapp.com/3196575617535613",
+      "final": "https://faq.whatsapp.com/3196575617535613",
+      "headings": [],
+      "verdict": "Soft 404: page says it does not exist"
+    },
+    {
+      "url": "https://families.google/familylink/",
+      "final": "https://families.google/familylink/",
+      "headings": [
+        "  - heading \"Help keep your family safer online\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://parents.snapchat.com/family-center?lang=en-GB",
+      "final": "https://parents.snapchat.com/family-center?lang=en-GB",
+      "headings": [
+        "    - heading \"Family Centre\" [level=1]:"
+      ]
+    },
+    {
+      "url": "https://parents.snapchat.com/",
+      "final": "https://parents.snapchat.com/",
+      "headings": [
+        "    - heading \"Snapchat Safety Hub\" [level=1]:"
+      ]
+    },
+    {
+      "url": "https://telegram.org/faq#q-what-are-your-thoughts-on-internet-privacy",
+      "final": "https://telegram.org/faq#q-what-are-your-thoughts-on-internet-privacy",
+      "headings": [
+        "- heading \"Telegram FAQ\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://discord.com/family-center",
+      "final": "https://discord.com/family-center",
+      "headings": []
+    },
+    {
+      "url": "https://discord.com/safety-parents",
+      "final": "https://discord.com/safety-parents",
+      "headings": [
+        "  - heading \"Discord parent hub\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://www.ofcom.org.uk/online-safety/protecting-children/age-checks-for-online-safety--what-you-need-to-know-as-a-user",
+      "final": "https://www.ofcom.org.uk/online-safety/protecting-children/age-checks-for-online-safety--what-you-need-to-know-as-a-user",
+      "headings": [
+        "  - heading \"Age checks for online safety – what you need to know as a user\" [level=1]:"
+      ]
+    },
+    {
+      "url": "https://www.whatsapp.com/security/parent-managed-accounts",
+      "final": "https://www.whatsapp.com/parentalcontrols",
+      "headings": [
+        "- heading \"Guide your family’s messaging experience with parental controls\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://about.roblox.com/newsroom/2026/05/what-families-should-know-roblox-kids-select",
+      "final": "https://about.roblox.com/newsroom/2026/05/what-families-should-know-roblox-kids-select",
+      "headings": [
+        "    - heading \"What Families Need to Know About Roblox’s New Age-Based Protections\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://familycenter.instagram.com/",
+      "final": "https://www.instagram.com/privacy/checks/?cookie_consent=1&next=https%3A%2F%2Ffamilycenter.instagram.com%2F%3F__coig_consent%3D1#",
+      "headings": []
+    },
+    {
+      "url": "https://www.tiktok.com/safety/en/guardians-guide/",
+      "final": "https://www.tiktok.com/safety/en/tools-and-guides/guardians-guide",
+      "headings": [
+        "  - heading \"Guardian's Guide\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://kick.com/community-guidelines",
+      "final": "https://kick.com/community-guidelines",
+      "headings": [
+        "  - heading \"KICK Community Guidelines\" [level=1]:"
+      ]
+    },
+    {
+      "url": "https://www.commonsensemedia.org/website-reviews/reddit",
+      "final": "https://www.commonsensemedia.org/website-reviews/reddit",
+      "headings": [
+        "  - heading \"Parents' Guide to Reddit\" [level=1]:"
+      ]
+    },
+    {
+      "url": "https://www.xbox.com/en-GB/apps/family-settings-app",
+      "final": "https://www.xbox.com/en-GB/apps/family-settings-app",
+      "headings": []
+    },
+    {
+      "url": "https://www.playstation.com/en-gb/support/account/ps5-parental-controls-spending-limits/",
+      "final": "https://www.playstation.com/en-gb/support/account/ps5-parental-controls-spending-limits/",
+      "headings": [
+        "- heading \"How to set parental controls on PlayStation consoles\" [level=1]"
+      ]
+    },
+    {
+      "url": "https://support.apple.com/en-gb/HT201304",
+      "final": "https://support.apple.com/en-gb/105121",
+      "headings": [
+        "  - heading \"Set up parental controls to manage your child's iPhone or iPad\" [level=1]"
+      ]
+    }
+  ],
+  "replacements": [
+    {
+      "url": "https://www.internetmatters.org/advice/apps-and-platforms/social-media/telegram-messenger/",
+      "headings": [
+        "    - heading \"Trending Topics\" [level=2]",
+        "- heading \"Is Telegram Messenger safe?\" [level=1]",
+        "- heading \"What parents need to know\" [level=2]",
+        "- heading \"In this guide\" [level=2]",
+        "- heading \"What is the Telegram Messenger app?\" [level=2]",
+        "- heading \"What is the age rating?\" [level=2]",
+        "- heading \"Is Telegram included in the UK social media ban?\" [level=2]",
+        "- heading \"How the Telegram app works\" [level=2]"
+      ]
+    },
+    {
+      "url": "https://www.internetmatters.org/advice/apps-and-platforms/online-gaming/fortnite/",
+      "headings": [
+        "    - heading \"Trending Topics\" [level=2]",
+        "- heading \"What is Fortnite?\" [level=1]",
+        "- heading \"What’s in the guide\" [level=2]",
+        "- heading \"What is Fortnite? Safety guide for parents\" [level=2]",
+        "- heading \"What is the age rating?\" [level=2]",
+        "- heading \"What are Fortnite chapters?\" [level=2]",
+        "- heading \"What is a 'Battle Pass'?\" [level=2]",
+        "- heading \"Available parental controls\" [level=2]"
+      ]
+    },
+    {
+      "url": "https://www.internetmatters.org/parental-controls/social-media/instagram/",
+      "headings": [
+        "    - heading \"Trending Topics\" [level=2]",
+        "- heading \"Instagram parental controls\" [level=1]",
+        "- heading \"Controls & Settings guide\" [level=2]",
+        "- heading \"Quick advice\" [level=2]",
+        "- heading \"Step by step instructions\" [level=2]",
+        "- heading \"Step by step instructions\" [level=2]",
+        "- heading \"More resources\" [level=2]"
+      ]
+    },
+    {
+      "url": "https://www.internetmatters.org/advice/apps-and-platforms/social-media/yubo/",
+      "headings": [
+        "    - heading \"Trending Topics\" [level=2]",
+        "- heading \"What is Yubo?\" [level=1]",
+        "- heading \"What parents need to know\" [level=2]",
+        "- heading \"In this guide\" [level=2]",
+        "- heading \"What is Yubo?\" [level=2]",
+        "- heading \"How it works\" [level=2]",
+        "- heading \"Yubo’s age verification process\" [level=2]",
+        "- heading \"Risks and concerns about Yubo\" [level=2]"
+      ]
+    },
+    {
+      "url": "https://www.internetmatters.org/advice/apps-and-platforms/social-media/bereal/",
+      "headings": [
+        "    - heading \"Trending Topics\" [level=2]",
+        "- heading \"What is BeReal?\" [level=1]",
+        "- heading \"What parents need to know\" [level=2]",
+        "- heading \"In this guide\" [level=2]",
+        "- heading \"What is the BeReal app?\" [level=2]",
+        "- heading \"Is BeReal included in the UK social media ban?\" [level=2]",
+        "- heading \"How it works\" [level=2]",
+        "- heading \"What is the age restriction?\" [level=2]"
+      ]
+    },
+    {
+      "url": "https://www.internetmatters.org/advice/apps-and-platforms/online-gaming/minecraft/",
+      "headings": [
+        "    - heading \"Trending Topics\" [level=2]",
+        "- heading \"What is Minecraft?\" [level=1]",
+        "- heading \"What parents need to know\" [level=2]",
+        "- heading \"In this guide\" [level=2]",
+        "- heading \"What is Minecraft?\" [level=2]",
+        "- heading \"Minecraft parental controls\" [level=2]",
+        "- heading \"How it works\" [level=2]",
+        "- heading \"Educational version\" [level=2]"
+      ]
+    },
+    {
+      "url": "https://help.minecraft.net/hc/en-us/articles/4408968616077-Minecraft-Multiplayer-Troubleshooting",
+      "final": "https://help.minecraft.net/hc/en-us/articles/4408968616077-Minecraft-Multiplayer-Troubleshooting",
+      "headings": [
+        "  - heading \"Helpful Links\" [level=2]",
+        "  - heading \"Follow Minecraft\" [level=2]",
+        "    - heading \"Games\" [level=2]",
+        "    - heading \"Community\" [level=2]",
+        "    - heading \"Shop\" [level=2]",
+        "    - heading \"Support\" [level=2]",
+        "    - heading \"Account\" [level=2]"
+      ]
+    },
+    {
+      "url": "https://www.meta.com/help/quest/431201291704430/",
+      "final": "https://www.meta.com/en-gb/help/quest/431201291704430/",
+      "headings": [
+        "  - heading [level=1]: About supervision on Meta Horizon",
+        "  - heading [level=2]: For parents",
+        "  - heading [level=2]: For teens",
+        "    - heading [level=2]: Was this article helpful?",
+        "  - heading \"Allow the use of cookies from Meta on this browser?\" [active] [level=2]:"
+      ]
+    },
+    {
+      "url": "https://support.reddithelp.com/hc/en-us/categories/360003246511-Privacy-Security",
+      "final": "https://support.reddithelp.com/hc/en-us/categories/360003246511-Privacy-Security",
+      "headings": [
+        "  - heading \"Privacy & Security\" [level=1]"
+      ]
+    }
+  ]
+}

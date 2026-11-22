@@ -799,7 +799,7 @@ export const APPS: AppGuide[] = [
         },
         {
           "label": "Internet Matters: Telegram parents’ guide",
-          "url": "https://www.internetmatters.org/hub/news-blogs/what-is-telegram-app-what-parents-need-to-know/"
+          "url": "https://www.internetmatters.org/advice/apps-and-platforms/social-media/telegram-messenger/"
         }
       ],
       "videoTutorials": [
@@ -1030,7 +1030,7 @@ export const APPS: AppGuide[] = [
         },
         {
           "label": "Internet Matters: Instagram safety guide",
-          "url": "https://www.internetmatters.org/parental-controls/social-media/instagram-privacy-and-safety-settings/"
+          "url": "https://www.internetmatters.org/parental-controls/social-media/instagram/"
         }
       ],
       "videoTutorials": [
@@ -1190,12 +1190,12 @@ export const APPS: AppGuide[] = [
           "url": "https://www.whatsapp.com/security/parent-managed-accounts"
         },
         {
-          "label": "WhatsApp privacy settings",
-          "url": "https://faq.whatsapp.com/3196575617535613"
+          "label": "WhatsApp: how to change your privacy settings",
+          "url": "https://faq.whatsapp.com/3307102709559968/"
         },
         {
-          "label": "NSPCC Net Aware: WhatsApp",
-          "url": "https://www.net-aware.org.uk/networks/whatsapp/"
+          "label": "NSPCC: WhatsApp and chat-app safety",
+          "url": "https://www.nspcc.org.uk/keeping-children-safe/online-safety/social-media/chat-apps/"
         }
       ],
       "videoTutorials": [
@@ -1442,7 +1442,7 @@ export const APPS: AppGuide[] = [
         },
         {
           "label": "Internet Matters: Fortnite guide",
-          "url": "https://www.internetmatters.org/hub/guidance/fortnite-battle-royale-parents-guide/"
+          "url": "https://www.internetmatters.org/advice/apps-and-platforms/online-gaming/fortnite/"
         }
       ],
       "videoTutorials": [
@@ -1515,7 +1515,7 @@ export const APPS: AppGuide[] = [
         },
         {
           "label": "Internet Matters: Twitch guide",
-          "url": "https://www.internetmatters.org/hub/esafety-news/twitch-what-parents-need-to-know/"
+          "url": "https://www.internetmatters.org/advice/apps-and-platforms/entertainment/twitch/"
         }
       ],
       "videoTutorials": [
@@ -1637,11 +1637,11 @@ export const APPS: AppGuide[] = [
         },
         {
           "label": "Yubo safety centre",
-          "url": "https://safety.yubo.live/"
+          "url": "https://www.yubo.live/safety/our-approach"
         },
         {
           "label": "Internet Matters: Yubo guide",
-          "url": "https://www.internetmatters.org/hub/esafety-news/yubo-app-what-parents-need-to-know/"
+          "url": "https://www.internetmatters.org/advice/apps-and-platforms/social-media/yubo/"
         }
       ],
       "videoTutorials": [
@@ -1780,8 +1780,8 @@ export const APPS: AppGuide[] = [
           "url": "https://support.reddithelp.com/hc/en-us/articles/35409604240020-UK-Online-Safety-Act-Information-for-UK-users"
         },
         {
-          "label": "Reddit safety and privacy settings",
-          "url": "https://support.reddithelp.com/hc/en-us/articles/360043068032"
+          "label": "Reddit: privacy and account security",
+          "url": "https://support.reddithelp.com/hc/en-us/categories/360003246511-Privacy-Security"
         },
         {
           "label": "Common Sense Media: Reddit guide",
@@ -1846,12 +1846,12 @@ export const APPS: AppGuide[] = [
       ],
       "settingsHowTo": [
         {
-          "label": "BeReal safety and privacy",
-          "url": "https://help.bereal.com/hc/en-us/categories/4406950928657-Safety-Privacy"
+          "label": "BeReal: safety, reporting and blocking",
+          "url": "https://help.bereal.com/hc/en-us/categories/10449460450589-Safety"
         },
         {
           "label": "Internet Matters: BeReal guide",
-          "url": "https://www.internetmatters.org/hub/esafety-news/bereal-app-what-parents-need-to-know/"
+          "url": "https://www.internetmatters.org/advice/apps-and-platforms/social-media/bereal/"
         }
       ],
       "videoTutorials": [
@@ -1923,8 +1923,8 @@ export const APPS: AppGuide[] = [
       ],
       "settingsHowTo": [
         {
-          "label": "FTC consumer advice: anonymous messaging apps",
-          "url": "https://consumer.ftc.gov/consumer-alerts/2024/07/parents-anonymous-messaging-apps-are-bad-news-teens"
+          "label": "FTC consumer advice: NGL and anonymous messaging",
+          "url": "https://consumer.ftc.gov/consumer-alerts/2024/07/anonymous-messaging-app-ngl-barred-marketing-kids-must-refund-unauthorized-charges"
         },
         {
           "label": "How to uninstall apps & block re-install (Apple)",
@@ -2043,12 +2043,12 @@ export const APPS: AppGuide[] = [
       ],
       "settingsHowTo": [
         {
-          "label": "Microsoft Family Safety for Minecraft",
-          "url": "https://www.minecraft.net/en-us/article/minecraft-and-microsoft-family"
+          "label": "Minecraft: Microsoft family groups and parental controls",
+          "url": "https://help.minecraft.net/hc/en-us/articles/4408968616077-Minecraft-Multiplayer-Troubleshooting"
         },
         {
           "label": "Internet Matters: Minecraft guide",
-          "url": "https://www.internetmatters.org/hub/guidance/minecraft-a-parents-guide/"
+          "url": "https://www.internetmatters.org/advice/apps-and-platforms/online-gaming/minecraft/"
         }
       ],
       "videoTutorials": [
@@ -2112,12 +2112,12 @@ export const APPS: AppGuide[] = [
       ],
       "settingsHowTo": [
         {
-          "label": "Meta Quest parental supervision",
-          "url": "https://www.meta.com/help/quest/articles/accounts/account-settings-and-management/parent-account/"
+          "label": "Meta: parental supervision on Meta Horizon",
+          "url": "https://www.meta.com/help/quest/431201291704430/"
         },
         {
           "label": "VRChat safety & trust system",
-          "url": "https://hello.vrchat.com/blog/vrchat-safety-and-trust-system"
+          "url": "https://docs.vrchat.com/docs/vrchat-safety-and-trust-system"
         }
       ],
       "videoTutorials": [
