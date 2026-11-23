@@ -8,6 +8,7 @@ const NAV = [
   { to: "/glossary/", label: "Slang & Emoji" },
   { to: "/checklists/", label: "Checklists" },
   { to: "/news/", label: "News" },
+  { to: "/search/", label: "Search" },
   { to: "/help/", label: "Get Help" },
 ] as const;
 
@@ -26,7 +27,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="desktop-navigation hidden items-center gap-7 md:flex">
+        <nav aria-label="Main navigation" className="desktop-navigation hidden items-center gap-5 md:flex">
           {NAV.map((n) => (
             <Link
               key={n.to}

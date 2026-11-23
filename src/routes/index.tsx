@@ -10,6 +10,7 @@ import {
   AlertTriangle,
 } from "lucide-react";
 import { AGE_BANDS, APPS, GLOSSARY } from "@/content/data";
+import { ConcernFinder } from "@/components/ConcernFinder";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -85,7 +86,7 @@ function Home() {
         </aside>
       </section>
 
-      <hr className="rule" />
+      <ConcernFinder />
 
       {/* FEATURED — magazine lead story */}
       <section className="grid gap-10 py-16 md:grid-cols-12 md:py-24">

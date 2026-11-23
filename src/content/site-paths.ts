@@ -9,6 +9,7 @@ export const SITE_PATHS = [
   "/apps-audit",
   ...APPS.map(({ slug }) => `/apps-audit/${slug}`),
   "/glossary",
+  "/search",
   "/checklists",
   ...CHECKLISTS.map(({ slug }) => `/checklists/${slug}`),
   "/news",
@@ -18,4 +19,4 @@ export const SITE_PATHS = [
 ];
 
 // Editorial alternatives remain available for review, but never enter the public sitemap.
-export const PUBLIC_PATHS = SITE_PATHS.filter(path => !/^\/apps-audit(?:\/|$)/.test(path));
+export const PUBLIC_PATHS = SITE_PATHS.filter(path => path !== "/search" && !/^\/apps-audit(?:\/|$)/.test(path));

@@ -22,13 +22,24 @@ for (const path of SITE_PATHS) {
   ])
     assert.match(html, pattern, `Missing rendered content: ${path}`);
   if (manifest.siteUrl && PUBLIC_PATHS.includes(path)) {
-    assert.doesNotMatch(html, /<meta[^>]*name="robots"[^>]*content="[^"]*noindex/i,
-      `Public page blocks indexing: ${path}`);
+    assert.doesNotMatch(
+      html,
+      /<meta[^>]*name="robots"[^>]*content="[^"]*noindex/i,
+      `Public page blocks indexing: ${path}`,
+    );
     assert.ok(
-      html.includes(`rel="canonical" href="${manifest.siteUrl}${basePath}${path === "/" ? "" : path.slice(1) + "/"}"`),
+      html.includes(
+        `rel="canonical" href="${manifest.siteUrl}${basePath}${path === "/" ? "" : path.slice(1) + "/"}"`,
+      ),
       `Canonical mismatch: ${path}`,
     );
-  } else
+  } else if (manifest.siteUrl && path === "/search")
+    assert.match(
+      html,
+      /name="robots" content="noindex, follow"/,
+      "Search page must not be indexed.",
+    );
+  else
     assert.match(
       html,
       /name="robots" content="noindex, nofollow"/,
@@ -68,7 +79,11 @@ if (manifest.siteUrl) {
   const sitemap = readFileSync(join(root, "sitemap.xml"), "utf8");
   assert.equal([...sitemap.matchAll(/<loc>/g)].length, PUBLIC_PATHS.length);
   for (const path of PUBLIC_PATHS)
-    assert.ok(sitemap.includes(`<loc>${manifest.siteUrl}${basePath}${path === "/" ? "" : path.slice(1) + "/"}</loc>`));
+    assert.ok(
+      sitemap.includes(
+        `<loc>${manifest.siteUrl}${basePath}${path === "/" ? "" : path.slice(1) + "/"}</loc>`,
+      ),
+    );
   assert.ok(
     readFileSync(join(root, "robots.txt"), "utf8").includes(
       `Sitemap: ${manifest.siteUrl}${basePath}sitemap.xml`,
